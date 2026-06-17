@@ -9,6 +9,7 @@ export enum SessionEvent {
 export enum CopyDataType {
     CopyText = 0, // 复制文本
     CopyImage = 1, // 复制图片
+    CopyHtml = 2, // 复制HTML（图文混合）
 }
 
 export enum ContentType {
@@ -23,6 +24,9 @@ export enum ContentType {
     CntDocCard = "doc_card", // 文档卡片
     CntGuessYouWant = "guess_you_want", // 猜你想要
     CntError = "error", // 错误
+    CntWebSearch = "web_search", // 网页搜索
+    CntCommandCard = "command_card", // 指令卡片
+    CntIComps = "interactive_components", // 交互组件卡片
 }
 
 /**

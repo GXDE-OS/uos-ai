@@ -8,6 +8,7 @@
 #include <QUrlQuery>
 #include <QLoggingCategory>
 #include <QDBusPendingCall>
+#include <QTimer>
 
 Q_DECLARE_LOGGING_CATEGORY(logOsControl)
 using namespace uos_ai;
@@ -15,6 +16,7 @@ using namespace uos_ai;
 const QString StoreAPI::APPSTORE_CLIENT_SERVICE = "com.home.appstore.client";
 const QString StoreAPI::APPSTORE_CLIENT_PATH = "/com/home/appstore/client";
 const QString StoreAPI::APPSTORE_CLIENT_INTERFACE = "com.home.appstore.client";
+inline constexpr int kStoreAppBriefInfoTimeoutMs = 10000;
 
 StoreAPI::StoreAPI(QObject *parent)
     : QObject(parent)
@@ -94,6 +96,43 @@ void StoreAPI::searchApps(const QString &keyword, int page, int maxResults)
     qCDebug(logOsControl) << "Search URL:" << url.toString();
 }
 
+void StoreAPI::getAppBriefInfo(const QString &packageName)
+{
+    const QString trimmedPackageName = packageName.trimmed();
+    if (trimmedPackageName.isEmpty()) {
+        emit appBriefInfoFinished(false, QStringLiteral("package name is empty"), {});
+        return;
+    }
+
+    const QString urlString = QStringLiteral("%1/store-dist-app/getAppBriefInfo?pkg_name_install_modes=%2:1")
+                                  .arg(m_serverUrl, trimmedPackageName);
+    QUrl url(urlString);
+    QNetworkRequest request(url);
+
+    initRequestHeader(request);
+    request.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
+
+    QNetworkReply *reply = m_networkManager->get(request);
+    auto *timeoutTimer = new QTimer(reply);
+    timeoutTimer->setSingleShot(true);
+    connect(timeoutTimer, &QTimer::timeout, this, [reply]() {
+        if (!reply) {
+            return;
+        }
+
+        reply->setProperty("storeapi_timeout", true);
+        reply->abort();
+    });
+    connect(reply, &QNetworkReply::finished, this, [this, reply, timeoutTimer]() {
+        timeoutTimer->stop();
+        timeoutTimer->deleteLater();
+        onAppBriefInfoReply(reply);
+    });
+    timeoutTimer->start(kStoreAppBriefInfoTimeoutMs);
+
+    qCDebug(logOsControl) << "App brief info URL:" << url.toString();
+}
+
 void StoreAPI::initRequestHeader(QNetworkRequest &request)
 {
     request.setRawHeader("arch", m_requestHeader.arch.toUtf8());
@@ -142,6 +181,32 @@ void StoreAPI::onSearchReply(QNetworkReply *reply)
     }
 
     emit searchFinished(success, error, results);
+
+    reply->deleteLater();
+}
+
+void StoreAPI::onAppBriefInfoReply(QNetworkReply *reply)
+{
+    QJsonObject appInfo;
+    QString error;
+    bool success = false;
+
+    if (reply->error() == QNetworkReply::NoError) {
+        const QByteArray data = reply->readAll();
+        success = parseAppBriefInfo(data, appInfo);
+        if (!success) {
+            error = QStringLiteral("Failed to parse app brief info");
+            qCDebug(logOsControl) << "Failed to parse app brief info response:" << data;
+        }
+    } else if (reply->property("storeapi_timeout").toBool()) {
+        error = QStringLiteral("App brief info request timeout");
+        qCWarning(logOsControl) << error;
+    } else {
+        error = reply->errorString();
+        qCWarning(logOsControl) << "App brief info request error:" << error;
+    }
+
+    emit appBriefInfoFinished(success, error, appInfo);
 
     reply->deleteLater();
 }
@@ -213,6 +278,52 @@ bool StoreAPI::parseSearchResult(const QByteArray &data, QList<SearchResult> &re
 
     qCDebug(logOsControl) << "Parsed" << results.size() << "search results";
     return true;
+}
+
+bool StoreAPI::parseAppBriefInfo(const QByteArray &data, QJsonObject &appInfo)
+{
+    QJsonParseError parseError;
+    QJsonDocument doc = QJsonDocument::fromJson(data, &parseError);
+
+    if (parseError.error != QJsonParseError::NoError) {
+        qCWarning(logOsControl) << "JSON parse error:" << parseError.errorString();
+        return false;
+    }
+
+    if (!doc.isObject()) {
+        qCWarning(logOsControl) << "App brief info JSON is not an object";
+        return false;
+    }
+
+    const QJsonObject rootObj = doc.object();
+    if (rootObj.contains("code")) {
+        const int code = rootObj.value("code").toInt();
+        if (code != 200) {
+            const QString message = rootObj.value("message").toString();
+            qCWarning(logOsControl) << "App brief info API error:" << code << message;
+            return false;
+        }
+    }
+
+    if (rootObj.contains("datas") && rootObj.value("datas").isArray()) {
+        const QJsonArray datasArray = rootObj.value("datas").toArray();
+        for (const QJsonValue &item : datasArray) {
+            if (!item.isObject()) {
+                continue;
+            }
+
+            const QJsonObject candidate = item.toObject();
+            if (!candidate.contains("package_version")) {
+                continue;
+            }
+
+            appInfo = candidate;
+            return true;
+        }
+    }
+
+    qCWarning(logOsControl) << "App brief info response does not contain package_version";
+    return false;
 }
 
 bool StoreAPI::openInAppStore(const QString &appid)

@@ -1,0 +1,224 @@
+/* Avatar 组件样式 */
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.avatar__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.avatar__icon_img {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.avatar__icon_img img {
+    width: 26px;
+    height: 26px;
+}
+
+/* ====== 方形头像动效 ====== */
+
+.avatar__icon--square {
+    position: relative;
+}
+
+.avatar__icon__inner {
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+}
+
+/* 加载中：静态缩放 + 圆形裁剪（对应 ultimate-morph 0%-60%） */
+.avatar__icon__inner--loading {
+    transform: scale(0.7);
+    clip-path: circle(50% at 50% 50%);
+}
+
+/* 加载完成：弹性回弹还原（对应 ultimate-morph 60%-100%） */
+.avatar__icon__inner--loaded {
+    animation: square-loaded-morph 3.2s cubic-bezier(0.68, -0.6, 0.32, 1.6) forwards;
+}
+
+@keyframes square-loaded-morph {
+    0% {
+        transform: scale(0.7);
+        clip-path: circle(50% at 50% 50%);
+    }
+    /* 65% 停止瞬间：过冲放大到 1.15 倍实现弹性感 */
+    12.5% {
+        transform: scale(1.15);
+        clip-path: circle(100% at 50% 50%);
+    }
+    /* 70%-95% 静止展示：稳定在原始 1.0 比例 */
+    25%,
+    87.5% {
+        transform: scale(1);
+        clip-path: circle(100% at 50% 50%);
+    }
+    100% {
+        transform: scale(1);
+        clip-path: circle(100% at 50% 50%);
+    }
+}
+
+/* ====== 圆形头像动效 ====== */
+
+.avatar__icon--circle {
+    position: relative;
+}
+
+.avatar__icon__inner--circle-loading {
+    transform: scale(0.78);
+}
+
+.avatar__icon__inner--circle-loaded {
+    animation: circle-loaded-morph 3.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes circle-loaded-morph {
+    0% {
+        transform: scale(0.78);
+    }
+    12.5% {
+        transform: scale(1.1);
+    }
+    25%,
+    87.5% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ====== 六边形头像动效 ====== */
+
+.avatar__icon--hexagon {
+    position: relative;
+}
+
+.avatar__icon__inner--hex-loading {
+    transform: scale(0.78);
+}
+
+/* 基于 HTML icon-logic 的 60%-100% 归一化 */
+.avatar__icon__inner--hex-loaded {
+    animation: hex-loaded-morph 3.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes hex-loaded-morph {
+    0% {
+        transform: scale(0.78);
+    }
+    /* 12.5% = icon-logic 65% 归一化: 弹性过冲 */
+    12.5% {
+        transform: scale(1.1);
+    }
+    /* 25% = icon-logic 70% 归一化: 静止展示 */
+    25%,
+    87.5% {
+        transform: scale(1);
+    }
+    /* 保持静止态，不回缩（区别于 HTML 的循环动画） */
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* 外圈轨道 */
+.avatar__orbit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.avatar__orbit--active {
+    opacity: 1;
+}
+
+/* 外圈线段：紫粉橙流光渐变 */
+.orbit-line {
+    fill: none;
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    transform-origin: center;
+    stroke-dasharray: 16 53.1;
+}
+
+.orbit-line-2 {
+    stroke-dashoffset: -34.5;
+}
+
+.avatar__orbit--active .orbit-line {
+    animation: rhythmic-rotate 4.5s linear infinite;
+}
+
+@keyframes rhythmic-rotate {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    /* 第1圈 慢 */
+    22.222222% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+    /* 第2圈 快 */
+    33.333333% {
+        transform: rotate(720deg);
+        opacity: 1;
+    }
+    /* 第3圈 慢 */
+    55.555555% {
+        transform: rotate(1080deg);
+        opacity: 1;
+    }
+    /* 第4圈 快 */
+    66.666666% {
+        transform: rotate(1440deg);
+        opacity: 1;
+    }
+    /* 第5圈 慢 */
+    88.888888% {
+        transform: rotate(1800deg);
+        opacity: 1;
+    }
+    /* 第6圈 快 */
+    100% {
+        transform: rotate(2160deg);
+        opacity: 1;
+    }
+}
+
+/* 渐变流光配色 */
+.avatar__orbit--active .glow-stop {
+    animation: color-flow 4s linear infinite alternate;
+}
+
+@keyframes color-flow {
+    0% {
+        stop-color: #6448ff;
+    }
+    50% {
+        stop-color: #ff37df;
+    }
+    100% {
+        stop-color: #fca506;
+    }
+}

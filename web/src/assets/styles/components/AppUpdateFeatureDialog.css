@@ -1,0 +1,53 @@
+html {
+    --app-update-feature-dialog-content-color: rgba(0, 0, 0, 0.7);
+}
+
+html.dark {
+    --app-update-feature-dialog-content-color: rgba(255, 255, 255, 0.7);
+}
+
+.app-update-feature-dialog {
+    width: 450px;
+    max-width: calc(100vw - 32px);
+    min-height: 240px;
+    max-height: min(430px, calc(100vh - 32px));
+}
+
+.app-update-feature-dialog .dialog__title {
+    font-size: var(--uosai-font-size-base);
+    font-weight: 500;
+    line-height: var(--uosai-line-height-normal);
+}
+
+.app-update-feature-dialog .dialog__body {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    padding: 0;
+}
+
+.app-update-feature-dialog__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    padding: 12px 0;
+    box-sizing: border-box;
+}
+
+.app-update-feature-dialog__body .scroll-bar-container {
+    flex: 1;
+    min-height: 0;
+}
+
+.app-update-feature-dialog__content {
+    margin: 0 16px;
+    display: block;
+    color: var(--app-update-feature-dialog-content-color);
+    font-size: var(--uosai-font-size-xs);
+    font-weight: 400;
+    line-height: var(--uosai-line-height-normal);
+    white-space: pre-wrap;
+    word-break: break-word;
+    text-align: left;
+}

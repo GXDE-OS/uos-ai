@@ -50,6 +50,10 @@ export default defineComponent({
         const paragraphKeyMap = new WeakMap<OutlineParagraph, string>();
         let paragraphKeySeed = 0;
 
+        // 从初始数据检测并缓存序号风格，供后续新增章节无参考时兜底
+        const cachedParagraphStyle = ref<ParagraphStyle | null>(null);
+        const cachedSubsectionStyle = ref<SubsectionStyle | null>(null);
+
         // 国际化文案
         const generateDocFromOutlineText = computed(() => backend.translate("Generate document from outline"));
         const enterChapterTitleText = computed(() => backend.translate("Enter chapter title"));
@@ -221,12 +225,17 @@ export default defineComponent({
 
             const mDelim = text.match(/^(\d+|[零一二三四五六七八九十百千万]+)\s*([、.．:：)）\-－—])(\s*)/);
             if (mDelim) {
-                return {
-                    kind: "delim",
-                    numberingType: detectNumberingType(mDelim[1] || ""),
-                    delimiter: mDelim[2] || ".",
-                    hasSpace: (mDelim[3] || "").length > 0,
-                };
+                // "5.4青年节" 类日期格式：点号后紧跟数字且无空格 → 不识别为序号
+                if ((mDelim[2] === "." || mDelim[2] === "．") && !mDelim[3] && /\d/.test(text[mDelim[0].length] || "")) {
+                    // fall through
+                } else {
+                    return {
+                        kind: "delim",
+                        numberingType: detectNumberingType(mDelim[1] || ""),
+                        delimiter: mDelim[2] || ".",
+                        hasSpace: (mDelim[3] || "").length > 0,
+                    };
+                }
             }
 
             const mSpace = text.match(/^(\d+|[零一二三四五六七八九十百千万]+)\s+/);
@@ -259,21 +268,25 @@ export default defineComponent({
                 if (style.kind !== "default") return style;
             }
 
-            return detectParagraphStyle("");
+            return cachedParagraphStyle.value || detectParagraphStyle("");
         };
 
         const detectSubsectionStyle = (title: string): SubsectionStyle | null => {
             const text = (title || "").trimStart();
 
-            // compound: 1.1 / 1．1
+            // compound: 1.1 / 1．1（compound 后必须跟分隔符或空格，排除 "5.4青年节" 日期格式）
             const mCompound = text.match(/^(\d+)\s*([.．])\s*(\d+)(?:\s*([、.．:：)）\-－—]))?(\s*)/);
             if (mCompound) {
-                return {
-                    kind: "compound",
-                    separator: (mCompound[2] as "." | "．") || ".",
-                    suffix: mCompound[4] || "",
-                    hasSpace: (mCompound[5] || "").length > 0,
-                };
+                if (!mCompound[4] && !mCompound[5] && text.slice(mCompound[0].length)) {
+                    // compound 数字后无分隔符无空格且有后续内容 → 可能是日期，跳过
+                } else {
+                    return {
+                        kind: "compound",
+                        separator: (mCompound[2] as "." | "．") || ".",
+                        suffix: mCompound[4] || "",
+                        hasSpace: (mCompound[5] || "").length > 0,
+                    };
+                }
             }
 
             // simple: （1）/ (1) / 一、/ 1、 / 1. 等（与章节相同的简单序号模式）
@@ -290,12 +303,16 @@ export default defineComponent({
 
             const mDelim = text.match(/^(\d+|[零一二三四五六七八九十百千万]+)\s*([、.．:：)）\-－—])(\s*)/);
             if (mDelim) {
-                return {
-                    kind: "delim",
-                    numberingType: detectNumberingType(mDelim[1] || ""),
-                    delimiter: mDelim[2] || ".",
-                    hasSpace: (mDelim[3] || "").length > 0,
-                };
+                if ((mDelim[2] === "." || mDelim[2] === "．") && !mDelim[3] && /\d/.test(text[mDelim[0].length] || "")) {
+                    // fall through
+                } else {
+                    return {
+                        kind: "delim",
+                        numberingType: detectNumberingType(mDelim[1] || ""),
+                        delimiter: mDelim[2] || ".",
+                        hasSpace: (mDelim[3] || "").length > 0,
+                    };
+                }
             }
 
             const mSpace = text.match(/^(\d+|[零一二三四五六七八九十百千万]+)\s+/);
@@ -320,18 +337,37 @@ export default defineComponent({
                 const style = detectSubsectionStyle(siblings[i]?.title || "");
                 if (style) return style;
             }
-            // 包含自身
+            // 包含自身，无参考时用缓存的初始风格兜底
             const current = siblings[subsectionIndex]?.title || "";
-            return detectSubsectionStyle(current);
+            return detectSubsectionStyle(current) || cachedSubsectionStyle.value;
         };
+
+        const refreshCachedStyles = (data: OutlineData) => {
+            const firstPara = data.paragraphs[0];
+            if (firstPara) {
+                const ps = detectParagraphStyle(firstPara.title);
+                if (ps.kind !== "default") cachedParagraphStyle.value = ps;
+                if (firstPara.content?.[0]) {
+                    const ss = detectSubsectionStyle(firstPara.content[0].title);
+                    if (ss) cachedSubsectionStyle.value = ss;
+                }
+            }
+        };
+
+        refreshCachedStyles(localData.value);
 
         const stripParagraphNumberPrefix = (title: string) => {
             const text = (title || "").trim();
 
-            // 匹配：1. 标题 / 一、标题 / 1) 标题 / (1) 标题 / （一）标题
+            // 最小化修复：分隔符或空白是必须的，避免 "2025年规划" 被误剥离；点号后紧跟数字且无空格（如 "5.4青年节"）视为日期/小数，不剥离。
+            // 后续完善方案：将用户输入视为标题全文，自动序号根据条目数自动分配，后端返回数据中可携带序号风格或提供配置入口。
             const stripped = text
                 .replace(/^\s*[（(]\s*(\d+|[零一二三四五六七八九十百千万]+)\s*[)）]\s*/, "")
-                .replace(/^\s*(\d+|[零一二三四五六七八九十百千万]+)\s*([.．、:：)）\-－—])?\s*/, "");
+                .replace(
+                    /^\s*(\d+|[零一二三四五六七八九十百千万]+)\s*([.．、:：)）\-－—])\s*/,
+                    (m, _n, d) => ((d === "." || d === "．") && m.endsWith(d) && /\d/.test(text[m.length] || "")) ? m : "",
+                )
+                .replace(/^\s*(\d+|[零一二三四五六七八九十百千万]+)\s+/, "");
 
             return stripped.trim();
         };
@@ -339,11 +375,15 @@ export default defineComponent({
         const stripSubsectionNumberPrefix = (title: string) => {
             const text = (title || "").trim();
 
-            // 匹配：1.1 标题 / 1．1 标题 / 1.1. 标题 / 1.1、标题
+            // compound 后必须跟分隔符或空格，避免 "5.4青年节" 被误剥离
             const stripped = text
-                .replace(/^\s*\d+\s*[.．]\s*\d+\s*([.．、:：)）\-－—])?\s*/, "")
+                .replace(/^\s*\d+\s*[.．]\s*\d+(?:[.．、:：)）\-－—]|\s)\s*/, "")
                 .replace(/^\s*[（(]\s*\d+\s*[)）]\s*/, "")
-                .replace(/^\s*\d+\s*([.．、:：)）\-－—])?\s*/, "");
+                .replace(
+                    /^\s*\d+\s*([.．、:：)）\-－—])\s*/,
+                    (m, d) => ((d === "." || d === "．") && m.endsWith(d) && /\d/.test(text[m.length] || "")) ? m : "",
+                )
+                .replace(/^\s*\d+\s+/, "");
 
             return stripped.trim();
         };
@@ -400,6 +440,7 @@ export default defineComponent({
             () => props.data,
             (value) => {
                 localData.value = JSON.parse(JSON.stringify(value)) as OutlineData;
+                refreshCachedStyles(localData.value);
                 // 注意：此处是外部 props 变化导致的更新，不需要再向上通知
             },
             { deep: true },

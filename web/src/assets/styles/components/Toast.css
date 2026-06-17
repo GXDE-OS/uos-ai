@@ -159,8 +159,19 @@ html.dark {
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background 0.2s;
+    transition:
+        background 0.2s,
+        color 0.2s,
+        box-shadow 0.2s;
     white-space: nowrap;
+}
+
+.toast-item__action + .toast-item__action {
+    margin-left: 6px;
+}
+
+.toast-item__action--primary {
+    color: var(--system-active-color);
 }
 
 .toast-item__action:hover {
@@ -169,10 +180,18 @@ html.dark {
     box-shadow: var(--toast-item__action-hover-box-shadow);
 }
 
+.toast-item__action--primary:hover {
+    color: var(--system-active-color);
+}
+
 .toast-item__action:active {
     color: var(--system-active-color);
     background: var(--toast-item__action-press-bg);
     box-shadow: var(--toast-item__action-press-box-shadow);
+}
+
+.toast-item__action--primary:active {
+    color: var(--system-active-color);
 }
 
 /* 关闭按钮 */
@@ -199,4 +218,18 @@ html.dark {
 .toast-item__close svg {
     width: 12px;
     height: 12px;
+}
+
+/* Qt5 兼容降级：移除 inset、0.5px → 1px、去重 */
+html[data-legacy-css] {
+    --toast-item-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.3),
+        0 0 0 1px rgba(0, 0, 0, 0.1), 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+}
+html.dark[data-legacy-css] {
+    --toast-item-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 0 0 1px rgba(0, 0, 0, 0.7), 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+    --toast-item__actionbox-normal-shadow: none;
+    --toast-item__action-hover-box-shadow: none;
 }

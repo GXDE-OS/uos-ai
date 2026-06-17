@@ -12,7 +12,7 @@
 #include <QTemporaryDir>
 #include <QScopedPointer>
 #include <QVariantList>
-#include <QSet>
+#include <QVariantMap>
 #include "dbus/shortcutmanager.h"
 
 class QDBusInterface;
@@ -37,7 +37,8 @@ class SystemChannel : public QObject
 public:
     enum CopyDataType {
         CopyText,
-        CopyImage
+        CopyImage,
+        CopyHtml
     };
     Q_ENUM(CopyDataType)
 
@@ -50,8 +51,8 @@ signals:
     void themeColorChanged(int value);
     void themeIconChanged();
     void fontChanged(const QString fontInfo);
-    void notificationActionInvoked(uint notificationId, const QString &actionKey);
-    void notificationClosed(uint notificationId, int reason);
+    void notificationActionInvoked(const QString &actionId);
+    void appUpdateAvailable(const QJsonObject &info);
 public slots:
     /**
      * @brief Get icon from system theme and convert to base64
@@ -63,6 +64,9 @@ public slots:
     QString getIconBase64(const QString &iconName, int width = 64, int height = 64);
 
     QJsonObject loadTranslations();
+
+    // 是否中文环境
+    bool checkChineseLanguage();
 
     // 是否启用高级CSS特性（如backdrop-filter等）
     bool isEnableAdvancedCssFeatures();
@@ -76,13 +80,34 @@ public slots:
     /**
      * @brief Copy content to clipboard (text or image)
      * @param data Content to copy (text string or image path)
-     * @param type Type of content to copy (CopyText or CopyImage)
+     * @param type Type of content to copy (CopyText, CopyImage or CopyHtml)
      */
     void copyToClipboard(const QString &data, int type);
+
+    /**
+     * @brief Copy HTML content to clipboard (supports mixed text and images)
+     * @param html HTML string with inline base64 images
+     */
+    void copyHtmlToClipboard(const QString &html);
 
     Q_DECL_DEPRECATED void copyReplyText(const QString &reply);
 
     Q_DECL_DEPRECATED void copyImage2Clipboard(const QString &imagePath);
+
+    /**
+     * @brief Read an image file and return base64 encoded data
+     * @param imagePath Image path (supports qrc://, file://, and absolute local paths)
+     * @return base64 encoded image data (without data URI prefix), or empty string on failure
+     */
+    QString readImageAsBase64(const QString &imagePath);
+
+    /**
+     * @brief Save image to file (supports base64 data or local file path)
+     * @param imageData base64 encoded image data, or local file path (qrc://, file://, absolute)
+     * @param saveAs true to show save dialog, false to save to temp directory
+     * @return saved file path, or empty string on failure
+     */
+    QString saveImageAs(const QString &imageData, bool saveAs);
 
     bool isNetworkAvailable();
     void openFile(const QString &filePath);
@@ -177,30 +202,35 @@ public slots:
      * @param icon 图标名或图标路径
      * @param actions 操作列表，支持：
      *        1) [{ key: "view_now", text: "立即查看" }, ...]
-     *        2) ["view_now", "立即查看", "remind_later", "稍后再说"]
+     *        2) ["view_now", "立即查看", "icomp:bash_approved:id:conv:msg", "Allow"]
      * @param timeoutMs 持续时间（毫秒），-1 表示服务端默认
-     * @return 通知 ID，失败返回 0
      */
-    uint notify(const QString &title,
+    void notify(const QString &title,
                 const QString &body,
                 const QString &icon = QString(),
                 const QVariantList &actions = QVariantList(),
                 int timeoutMs = -1);
 
     /**
-     * @brief 关闭指定通知
-     * @param notificationId 通知 ID
+     * @brief 前端窗口创建后主动触发应用更新检查。
      */
-    void closeNotification(uint notificationId);
+    void checkAppUpdate();
+
+    /**
+     * @brief 标记指定更新版本的提醒已被消费。
+     */
+    void markAppUpdateReminderConsumed(const QString &availableVersion);
 
 private slots:
     void onThemeTypeChanged(DTK_GUI_NAMESPACE::DGuiApplicationHelper::ColorType themeType);
     void onFontChanged(const QFont &);
     void onNotificationActionInvoked(uint notificationId, const QString &actionKey);
-    void onNotificationClosed(uint notificationId, uint reason);
+public slots:
+    void emitNotificationAction(const QString &actionId);
 private:
     void searchShortCut();
     QStringList normalizeNotificationActions(const QVariantList &actions) const;
+    QVariantMap buildNotificationHints(const QStringList &normalizedActions) const;
 
 private:
     QString m_activeColor;
@@ -209,7 +239,6 @@ private:
     ShortcutInfo m_uosAiShortcut;
     ShortcutInfo m_uosAiTalkShortcut;
     QScopedPointer<QDBusInterface> m_notificationProxy;
-    QSet<uint> m_ownedNotificationIds;
 };
 
 } // namespace uos_ai

@@ -1,6 +1,7 @@
 import { defineComponent, ref, onMounted, onUnmounted, computed, nextTick, watch, type VNodeRef } from "vue";
 import { useBackendStore, useMainWindowStore, useModelInfosStore, useAssistantInfosStore } from "@/stores";
 import IconButton from "@/components/IconButton";
+import TitleButton from "@/components/TitleButton";
 import ComboBox from "@/components/combobox/ComboBox";
 import Menu from "@/components/menu/Menu";
 import SvgIcon from "@/components/SvgIcon";
@@ -320,7 +321,7 @@ export default defineComponent({
         // 吸附于分界线的容器样式
         const splitterAttachedStyle = computed(() => {
             const sidebarWidth = mainWindowStore.sidebarWidth;
-            const leadingReserve = mainWindowStore.isCollapsed
+            const leadingReserve = mainWindowStore.isSidebarCollapsed
                 ? TITLE_BAR_SPLITTER_GAP + NEW_CONVERSATION_SLOT_WIDTH + TITLE_BAR_SPLITTER_GAP
                 : TITLE_BAR_SPLITTER_GAP;
             const leftAreaRight =
@@ -393,6 +394,9 @@ export default defineComponent({
             }
 
             switch (item.id) {
+                case "changelog":
+                    backend.requestWindow("showUpdateLogWindow");
+                    break;
                 case "settings":
                     handleOpenSettings();
                     break;
@@ -440,6 +444,11 @@ export default defineComponent({
         };
 
         const titleBarMenuItems = computed<MenuItem[]>(() => [
+            {
+                type: "item",
+                id: "changelog",
+                label: backend.translate("Changelog"),
+            },
             {
                 type: "item",
                 id: "settings",
@@ -514,7 +523,7 @@ export default defineComponent({
 
         watch(
             () => [
-                mainWindowStore.isCollapsed,
+                mainWindowStore.isSidebarCollapsed,
                 currentWorkspaceBackButton.value,
                 selectedModelId.value,
                 modelOptions.value.length,
@@ -537,7 +546,7 @@ export default defineComponent({
             toggleSidebarCollapse,
             handleCreateConversation,
             appIconUrl,
-            isSidebarCollapsed: () => mainWindowStore.isCollapsed,
+            isSidebarCollapsed: () => mainWindowStore.isSidebarCollapsed,
             modelList: () => modelInfosStore.getModelList,
             modelOptions,
             selectedModelId,
@@ -640,15 +649,14 @@ export default defineComponent({
                         </div>
                     </div>
                     {this.currentWorkspaceBackButton ? (
-                        <button
+                        <div
                             class="title-bar__back-button"
-                            type="button"
                             onClick={this.handleWorkspaceBack}
                             onMousedown={this.handleNoDragMouseDown}
                         >
                             <SvgIcon class="title-bar__back-button-icon" icon="icon_arrow" size={[16, 16]} />
                             <span class="title-bar__back-button-text">{this.currentWorkspaceBackButton.text}</span>
-                        </button>
+                        </div>
                     ) : (
                         <ComboBox
                             options={this.modelOptions}
@@ -680,9 +688,12 @@ export default defineComponent({
                     onDblclick={this.handleInteractiveDoubleClick}
                 >
                     {/* 数字人按钮 */}
-                    <IconButton
+                    <TitleButton
                         icon="digital_human"
-                        class={this.isDigitalHumanPage ? "title-bar__button--digital_human_active" : ""}
+                        class={[
+                            "title-bar__button",
+                            this.isDigitalHumanPage && "title-bar__button--digital_human_active",
+                        ]}
                         tooltip={
                             this.isDigitalHumanPage
                                 ? useBackendStore().translate("Exit Voice Chat")
@@ -694,7 +705,7 @@ export default defineComponent({
                     />
                     {/* 菜单按钮 */}
                     <div ref={this.setTitleBarMenuTriggerRef}>
-                        <IconButton
+                        <TitleButton
                             class="title-bar__button"
                             icon="icon_titlebar_menu"
                             iconSize={[16, 16]}
@@ -703,7 +714,7 @@ export default defineComponent({
                         />
                     </div>
                     {/* 最小化按钮 */}
-                    <IconButton
+                    <TitleButton
                         class="title-bar__button"
                         icon="icon_titlebar_minimize"
                         iconSize={[16, 16]}
@@ -713,7 +724,7 @@ export default defineComponent({
 
                     {/* 根据isMaximized的值来判断显示最大化按钮还是还原按钮 */}
                     {!this.isMaximized ? (
-                        <IconButton
+                        <TitleButton
                             class="title-bar__button"
                             icon="icon_titlebar_maximize"
                             iconSize={[16, 16]}
@@ -721,7 +732,7 @@ export default defineComponent({
                             onClick={this.handleMaximize}
                         />
                     ) : (
-                        <IconButton
+                        <TitleButton
                             class="title-bar__button"
                             icon="icon_titlebar_unmaxmize"
                             iconSize={[16, 16]}
@@ -730,7 +741,7 @@ export default defineComponent({
                         />
                     )}
                     {/* 关闭按钮 */}
-                    <IconButton
+                    <TitleButton
                         class="title-bar__button"
                         icon="icon_titlebar_close"
                         iconSize={[16, 16]}

@@ -1,4 +1,8 @@
-import type { ChatInputAction, ChatInputActionContext } from "@/types/chat-input";
+import type {
+    ChatInputAction,
+    ChatInputActionContext,
+    ChatInputActionMenuContext,
+} from "@/types/chat-input";
 import type { MenuItem } from "@/types/menu";
 import { useBackendStore } from "@/stores";
 import { FileCategory } from "@/types/uploadfile";
@@ -44,6 +48,7 @@ export const SCREENSHOT_INPUT_ACTION: ChatInputAction = {
             icon: "icon_screenshot",
         };
     },
+    isVisible: ({ isScreenshotVisible = true }: ChatInputActionMenuContext = {}) => isScreenshotVisible,
     run: async ({ startScreenshot }) => {
         try {
             await startScreenshot();
@@ -93,9 +98,22 @@ export const LOCAL_FILE_INPUT_ACTION: ChatInputAction = {
     },
 };
 
-export const getInputAreaActionMenuItems = (actions: ChatInputAction[] = []): MenuItem[] => {
+export const getInputAreaActionMenuItems = (
+    actions: ChatInputAction[] = [],
+    context: ChatInputActionMenuContext = {},
+): MenuItem[] => {
     return actions.flatMap((action) => {
+        if (action.isVisible && !action.isVisible(context)) {
+            return [];
+        }
+
         const menuItem = { ...action.menuItem };
+        const shouldDisable = menuItem.disabled || context.isInputDisabled;
+
+        if (shouldDisable) {
+            menuItem.disabled = true;
+        }
+
         return [menuItem];
     });
 };

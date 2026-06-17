@@ -27,6 +27,7 @@ public slots:
     void showTranslate();
     void startScreenshot();
     void launchChatWindow(int index);
+    void launchChatWindowWithToken(int index, const QString &token);
     void launchWordWizard();
     void launchAiQuick(int type, QString query, QPoint pos, bool isCustom, QString imagePath = "");
     void uploadImage(const QString &imagePath);

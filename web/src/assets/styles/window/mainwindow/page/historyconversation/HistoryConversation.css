@@ -2,13 +2,21 @@
 html {
     --historyconversation-title-color: rgba(0, 0, 0, 1);
     --historyconversation-empty-color: rgba(0, 0, 0, 1);
-    --historyconversation-placeholder-color: rgba(0, 0, 0, 0.7);
+    --historyconversation-loading-color: rgba(0, 0, 0, 0.7);
+    --historyconversation-search-icon-color: rgba(0, 0, 0, 0.7);
+    --historyconversation-search-text-color: rgba(0, 0, 0, 0.7);
+    --historyconversation-placeholder-color: rgba(85, 85, 85, 1);
+    --placeholder-opacity: 0.4;
 }
 
 html.dark {
     --historyconversation-title-color: rgba(255, 255, 255, 1);
     --historyconversation-empty-color: rgba(255, 255, 255, 1);
-    --historyconversation-placeholder-color: rgba(255, 255, 255, 0.7);
+    --historyconversation-loading-color: rgba(255, 255, 255, 0.7);
+    --historyconversation-search-icon-color: rgba(255, 255, 255, 0.7);
+    --historyconversation-search-text-color: rgba(255, 255, 255, 0.7);
+    --historyconversation-placeholder-color: rgba(255, 255, 255, 1);
+    --placeholder-opacity: 0.3;
 }
 
 .history-conversation {
@@ -18,6 +26,14 @@ html.dark {
     background-color: transparent;
     position: relative;
     width: 100%;
+}
+
+.history-conversation__content-wrapper {
+    flex: 1;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .history-conversation__header-container {
@@ -32,18 +48,23 @@ html.dark {
     margin-right: auto;
     margin-left: auto;
     max-width: 1000px;
+    height: 60px;
 }
 
 .history-conversation__title {
     font-size: var(--uosai-font-size-xl);
     font-weight: 700;
     color: var(--historyconversation-title-color);
-    margin-right: 10px;
+    flex-shrink: 0;
 }
 
 .history-conversation__actions {
     display: flex;
     align-items: center;
+    flex: 1;
+    min-width: 0;
+    justify-content: flex-end;
+    margin-left: 10px;
 }
 
 .history-conversation__icon-button {
@@ -57,17 +78,16 @@ html.dark {
     border-radius: 6px;
     box-shadow: 0 0 0 2px var(--system-active-color);
     background-color: var(--el-bg-color);
-    width: 240px;
-    max-width: 240px;
-    min-width: 160px;
+    flex: 1 1 160px;
+    max-width: 360px;
     height: 30px;
-    padding: 0 10px;
+    padding: 0 6px;
 }
 
 .history-conversation__search-icon {
     width: 16px;
     height: 16px;
-    color: var(--historyconversation-placeholder-color);
+    color: var(--historyconversation-search-icon-color);
     flex-shrink: 0;
     margin-right: 6px;
 }
@@ -109,11 +129,14 @@ html.dark {
     box-sizing: border-box !important;
     padding: 0 !important;
     margin: 0 !important;
-    color: var(--historyconversation-title-color) !important;
+    color: var(--historyconversation-search-text-color) !important;
+    font-weight: 400 !important;
 }
 
 .history-conversation__search-input .el-input__inner::placeholder {
     color: var(--historyconversation-placeholder-color) !important;
+    opacity: var(--placeholder-opacity) !important;
+    font-weight: 500 !important;
 }
 
 .history-conversation__search-input .el-input__wrapper:hover,
@@ -131,7 +154,6 @@ html.dark {
 
 .history-conversation__content-container {
     width: 100%;
-    flex: 1;
     position: relative;
 }
 
@@ -147,12 +169,13 @@ html.dark {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex: 1;
     opacity: 0.4;
     color: var(--historyconversation-empty-color);
     font-weight: 500;
     width: 100%;
-    height: 100%;
     min-height: 200px;
+    margin-bottom: 100px;
 }
 
 .history-conversation__empty img {
@@ -163,4 +186,43 @@ html.dark {
 .history-conversation__empty span {
     margin-top: 20px;
     font-size: var(--uosai-font-size-md);
+}
+
+.history-conversation--loading {
+    cursor: wait;
+}
+
+.history-conversation__loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    color: var(--historyconversation-loading-color);
+    font-weight: 400;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 100px;
+}
+
+.history-conversation__loading span {
+    margin-top: 20px;
+    font-size: var(--uosai-font-size-md);
+}
+
+.history-conversation__loading-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    animation: history-conversation-loading 0.9s linear infinite;
+}
+
+@keyframes history-conversation-loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }

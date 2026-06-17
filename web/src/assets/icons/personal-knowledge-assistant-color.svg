@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>知识库</title>
     <defs>
-        <filter x="-4.4%" y="-4.4%" width="108.8%" height="108.8%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
+        <path d="M12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 Z" id="path-1"></path>
         <linearGradient x1="50%" y1="3.58929639%" x2="50%" y2="98.2364023%" id="linearGradient-2">
             <stop stop-color="#4D97F2" offset="0%"></stop>
             <stop stop-color="#4A69F4" offset="100%"></stop>
@@ -19,10 +12,10 @@
             <stop stop-color="#F0FBFF" offset="100%"></stop>
         </linearGradient>
     </defs>
-    <g id="icon/智能体/主页-知识库" stroke="none" fill="none" fill-rule="evenodd" stroke-width="1">
-        <g id="编组" filter="url(#filter-1)" transform="translate(1, 1)">
-            <rect id="矩形-2" fill="url(#linearGradient-2)" x="0" y="0" width="34" height="34" rx="17"></rect>
-            <path d="M14,8 C15.1952121,8 16.2679883,8.52421057 17.0009561,9.35525927 C17.7320117,8.52421057 18.8047879,8 20,8 L25,8 C26.1045695,8 27,8.8954305 27,10 L27,24 C27,25.1045695 26.1045695,26 25,26 L18,26 L18,28 L16,28 L16,26 L9,26 C7.8954305,26 7,25.1045695 7,24 L7,10 C7,8.8954305 7.8954305,8 9,8 L14,8 Z M14,10 L9.00000002,10 L9.00000002,24 L16,24 L16,11.999 L15.9945143,11.8507377 C15.9181651,10.8158778 15.0543618,10 14,10 Z M25,10 L20,10 C18.8954305,10 18,10.8954305 18,12 L18,24 L25,24 L25,10 Z M14,17 L14,19 L11,19 L11,17 L14,17 Z M14,13 L14,15 L11,15 L11,13 L14,13 Z" id="形状结合" fill="url(#linearGradient-3)" fill-rule="nonzero" opacity="0.998"></path>
+    <g id="知识库" stroke="none" fill="none" xlink:href="#path-1" fill-rule="evenodd" stroke-width="1">
+        <g id="编组" transform="translate(1, 1)">
+            <path d="M11,0 C17.0751322,0 22,4.92486775 22,11 C22,17.0751322 17.0751322,22 11,22 C4.92486775,22 0,17.0751322 0,11 C0,4.92486775 4.92486775,0 11,0 Z" id="矩形-2" fill="url(#linearGradient-2)"></path>
+            <path d="M9.41176471,5 C10.2695198,5 11.0298205,5.41725224 11.500768,6.05985806 C11.9701795,5.41725224 12.7304802,5 13.5882353,5 L16.7058824,5 C17.4206038,5 18,5.57939621 18,6.29411765 L18,15.7058824 C18,16.4206038 17.4206038,17 16.7058824,17 L11.9994118,16.9994706 L12,18 L11,18 L11,17 L6.29411765,17 C5.57939621,17 5,16.4206038 5,15.7058824 L5,6.29411765 C5,5.57939621 5.57939621,5 6.29411765,5 L9.41176471,5 Z M6,6 L6,16 L11,16 L11,7.29411765 C11,6.57939621 10.4206038,6 9.70588235,6 L6,6 Z M13.2941177,6 C12.5793962,6 12,6.57939621 12,7.29411765 L12,16 L17,16 L17,6 L13.2941177,6 Z M10,11 L10,12 L7,12 L7,11 L10,11 Z M10,8 L10,9 L7,9 L7,8 L10,8 Z" id="形状" fill="url(#linearGradient-3)" fill-rule="nonzero" opacity="0.998"></path>
         </g>
     </g>
 </svg>

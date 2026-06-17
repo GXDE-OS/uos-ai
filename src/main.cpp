@@ -10,12 +10,17 @@
 #include "dbus/dbusinterface.h"
 #include "network/networkproxyhelper.h"
 
+#ifdef QT_DEBUG
+#include "network/websocketforwardserver.h"
+#endif
+
 // 3.0
 #include "gui/window/windowmanager.h"
 #include "model/modelvendor.h"
 #include "database/appdatabase.h"
 #include "datamigration/migrationmanager3.h"
 #include "externalllm/externalpluginmanager.h"
+#include "conversation/conversationsearch.h"
 
 #include <QtDBus>
 
@@ -27,6 +32,24 @@ Q_DECLARE_LOGGING_CATEGORY(logMain)
 
 using namespace uos_ai;
 
+static QString getDmiInfo() {
+    QString result;
+    QProcess process;
+    process.start("dmidecode", QStringList());
+    process.waitForFinished();
+    QString output = process.readAllStandardOutput();
+
+    // 过滤
+    QStringList lines = output.split('\n');
+    for (const QString& line : lines) {
+        if (line.contains("String 4", Qt::CaseInsensitive)) {
+            result.append(line);
+        }
+    }
+
+    return result;
+}
+
 int main(int argc, char *argv[])
 {
     qCInfo(logMain) << "Starting UOS AI application";
@@ -36,11 +59,15 @@ int main(int argc, char *argv[])
 
 #ifdef QT_DEBUG
     qputenv("QTWEBENGINE_REMOTE_DEBUGGING", "10777");
-    qCDebug(logMain) << "Enabled remote debugging for WebEngine";
+    qCInfo(logMain) << "Enabled remote debugging for WebEngine";
+    WebSocketForwardServer wsServer(8081);
+    QMetaObject::invokeMethod(&wsServer, "start", Qt::QueuedConnection);
 #endif
-    qputenv("QTWEBENGINE_CHROMIUM_FLAGS", "--enable-logging --log-level=2 --no-sandbox");
-#ifdef Q_PROCESSOR_SW_64
+
+#if defined(COMPILE_ON_V25) && defined(Q_PROCESSOR_SW_64)
     qputenv("QTWEBENGINE_CHROMIUM_FLAGS", "--enable-logging --log-level=2 --no-sandbox --js-flags=--jitless --disable-gpu");
+#else
+    qputenv("QTWEBENGINE_CHROMIUM_FLAGS", "--enable-logging --log-level=2 --no-sandbox");
 #endif
     // 修复通过 dbus 启动 uos ai 时 UI 显示异常的问题
     qputenv("QT_QPA_PLATFORMTHEME", "deepin");
@@ -48,7 +75,7 @@ int main(int argc, char *argv[])
 
     Application a(argc, argv);
 
-    uos_ai::enableQtSystemProxyConfiguration();
+    ProxySettingsWrapper::enableQtSystemProxyConfiguration();
     qCInfo(logMain) << "Enabled Qt system proxy configuration";
 
     if (!QDBusConnection::sessionBus().isConnected()) {
@@ -68,7 +95,18 @@ int main(int argc, char *argv[])
 
     if (!ServerWrapper::registerService()) {
         qCInfo(logMain) << "Service already registered, handling existing arguments";
-        return Application::handleExistingArgument(argc, argv);
+        //无命令行参数执行uos-ai，触发单实例时走--chat逻辑，用于autostart.desktop激活窗口
+        if (argc < 2) {
+            QDBusInterface notification(DBUS_SERVER, DBUS_SERVER_PATH, DBUS_SERVER_INTERFACE, QDBusConnection::sessionBus());
+            QString error = notification.call("launchChatPage").errorMessage();
+            if (!error.isEmpty()) {
+                qCCritical(logMain) << "Failed to launch chat page via D-Bus:" << error;
+                return -1;
+            }
+            return 0;
+        } else {
+            return Application::handleExistingArgument(argc, argv);
+        }
     }
 
 #ifndef COMPILE_ON_V25
@@ -76,10 +114,7 @@ int main(int argc, char *argv[])
         qCInfo(logMain) << "Running on Wayland, configuring environment";
         qputenv("QT_WAYLAND_SHELL_INTEGRATION", "kwayland-shell");
 
-        QProcess process;
-        process.start("sh", QStringList() << "-c" << "dmidecode | grep -i \"String 4\"");
-        process.waitForFinished();
-        QString outputString = QString::fromLocal8Bit(process.readAllStandardOutput());
+        QString outputString = getDmiInfo();
         //以下机型释放webengien时会在mali驱动中闪退，华为海思修复改问题会带来系统整体性能问题，所以我们通过不使用客户端缓存来针对性解决闪退问题
         if (outputString.contains("PWC30")) {
             qCWarning(logMain) << "Detected special hardware, disabling client buffer integration";
@@ -115,6 +150,9 @@ int main(int argc, char *argv[])
             migration.runMigrations();
     }
 
+    // 搜索文件初始化：3.0老用户适配
+    ConversationSearch::instance()->initSearchIndexes();
+
     // 初始化埋点
     ReportIns();
 
@@ -125,12 +163,9 @@ int main(int argc, char *argv[])
     // 提前初始化
     WelcomeDialog::instance();
 
-    // TODO
-    //QObject::connect(WelcomeDialog::instance(), &WelcomeDialog::signalShowMgmtWindowAfterChatInitFinished, &a, &Application::onSignalShowMgmtWindowAfterChatInitFinished);
+    QPointer<WordWizard> wizard(new WordWizard());
 
-    WordWizard *wizard = new WordWizard;//未释放
-
-    a.initWordWizard(wizard);
+    a.initWordWizard(wizard.data());
     a.initialization();
 
     qCInfo(logMain) << "UOS AI initialization completed, entering main event loop";

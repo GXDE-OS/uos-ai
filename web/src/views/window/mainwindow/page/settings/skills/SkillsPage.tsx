@@ -1,4 +1,5 @@
 import { computed, defineComponent, onMounted } from "vue";
+import TextButton from "@/components/TextButton";
 import ScrollBar from "@/components/ScrollBar";
 import { useSkillsStore, useBackendStore, useNotifyStore } from "@/stores";
 import ToolManagementList from "@/views/window/mainwindow/page/settings/common/components/ToolManagementList";
@@ -187,16 +188,8 @@ export default defineComponent({
                             </div>
 
                             <div class="skills-page__actions">
-                                <button class="skills-page__action-button" onClick={this.handleRefresh} type="button">
-                                    <span class="skills-page__action-button-text">{this.refreshButtonText}</span>
-                                </button>
-                                <button
-                                    class="skills-page__action-button"
-                                    onClick={this.handleImportSkill}
-                                    type="button"
-                                >
-                                    <span class="skills-page__action-button-text">{this.importButtonText}</span>
-                                </button>
+                                <TextButton text={this.refreshButtonText} onClick={this.handleRefresh} />
+                                <TextButton text={this.importButtonText} onClick={this.handleImportSkill} />
                             </div>
                         </div>
                     </div>

@@ -79,6 +79,7 @@ void UserAgreementDialog::initUI()
     pAgrCheckbox->setText(tr("I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company."));
     pAgrCheckbox->setCheckState(Qt::Checked);
     pAgrCheckbox->setDisabled(true);
+    pAgrCheckbox->setFontSize(DFontSizeManager::T6, QFont::Medium);
 
     auto agrLayout = new QHBoxLayout();
     agrLayout->setContentsMargins(20, 0, 20, 0);

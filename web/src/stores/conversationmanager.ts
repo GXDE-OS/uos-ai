@@ -7,12 +7,66 @@ import type {
     OutlineData,
     Root,
     ConversationIndexWithStatus,
+    BashApproveData,
+    FileChangeApproveData,
 } from "@/types/conversation";
-import { ConversationScene, ConversationStatus } from "@/types/conversation";
+import { ConversationScene, ConversationStatus, InteractiveCompStatus } from "@/types/conversation";
 import type { Assistant } from "@/types/assistant";
 import { ConversationRecord, useBackendStore, useAssistantInfosStore, useExtensionPanelStore } from "@/stores";
 import { useNotifyStore } from "@/stores/notify";
 import { WindowMode } from "@/types/windowinfo";
+
+// ============================================================
+// 系统通知 Action 常量定义
+// ============================================================
+
+/** Action ID 格式: {scene}:{operation}:{params...} */
+const ACTION_SEPARATOR = ":";
+
+/** Scene 枚举 - 通知场景 */
+const NotificationScene = {
+    AI_REPLY: "ai_reply",
+    ICOMP: "icomp",
+} as const;
+
+/** Operation 枚举 - 操作类型 */
+const NotificationOperation = {
+    VIEW_NOW: "view_now",
+    REMIND_LATER: "remind_later",
+    BASH_APPROVED: "bash_approved",
+    BASH_ALWAYS: "bash_always",
+    BASH_REJECTED: "bash_rejected",
+    FILE_APPLY: "file_apply",
+    FILE_REJECTED: "file_rejected",
+} as const;
+
+/** IComp 类型映射 */
+const ICOMP_TYPE_MAP: Record<string, string> = {
+    [NotificationOperation.BASH_APPROVED]: "bash_approve",
+    [NotificationOperation.BASH_ALWAYS]: "bash_approve",
+    [NotificationOperation.BASH_REJECTED]: "bash_approve",
+    [NotificationOperation.FILE_APPLY]: "file_change_approve",
+    [NotificationOperation.FILE_REJECTED]: "file_change_approve",
+};
+
+/** 审批操作配置 */
+const APPROVAL_CONFIG: Record<string, { approved: boolean; alwaysApprove?: boolean }> = {
+    [NotificationOperation.BASH_APPROVED]: { approved: true },
+    [NotificationOperation.BASH_ALWAYS]: { approved: true, alwaysApprove: true },
+    [NotificationOperation.BASH_REJECTED]: { approved: false },
+    [NotificationOperation.FILE_APPLY]: { approved: true },
+    [NotificationOperation.FILE_REJECTED]: { approved: false },
+};
+
+/**
+ * 解析 Action ID 第一部分
+ * @returns [part, rest] 或 null 如果格式无效
+ */
+const parseActionPart = (actionId: string): [string, string] | null => {
+    const idx = actionId.indexOf(ACTION_SEPARATOR);
+    if (idx === -1) return null;
+    return [actionId.substring(0, idx), actionId.substring(idx + 1)];
+};
 
 // 打印组件
 // import cloneDeep from "lodash/cloneDeep";
@@ -26,22 +80,36 @@ const handleConversationRecordStateChange = () => {
     conversationManagerStore.conversionList = new Map(conversationManagerStore.conversionList);
 };
 
+// ConversationRecord 新增 IComp 时触发系统通知（仅窗口未获焦点时）。
+const handleICompAdded = async (
+    data: BashApproveData | FileChangeApproveData,
+    messageId: string,
+    conversationRecord: ConversationRecord,
+) => {
+    const conversationId = conversationRecord.root?.id;
+    if (!conversationId) return;
+    const manager = useConversationManagerStore();
+    const isActive = await manager.isMainWindowActive();
+    if (isActive) return;
+    manager.showICompNotification(conversationId, messageId, data);
+};
+
 export const useConversationManagerStore = defineStore("conversationmanager", {
     state: () => ({
         conversationIndexList: [] as ConversationIndex[], // 会话索引列表
+        historyConversationIndexList: [] as ConversationIndex[], // 历史会话索引列表（搜索）
         conversionList: new Map<string, ConversationRecord>(), // 所有正在回答中的会话，及当前会话
         answeringSession: new Map<string, string>(), // 当前sessionId对应的conversationId, key: sessionId, value: conversationId
         currentConversationId: "", // 当前聊天窗口展示的会话id
         aiReplyNotifyTimer: null as number | null, // 回复完成通知防抖 timer（500ms）
         aiReplyLatestConversationId: "", // 本轮防抖窗口中的最新会话
-        aiReplyLatestMessageId: "", // 本轮防抖窗口中的最新消息
-        aiReplyNotificationTargets: {} as Record<number, { conversationId: string; messageId: string }>, // 通知ID -> 跳转目标
-        aiReplyNotificationListenerInitialized: false, // 系统通知 action 监听是否已注册
+        systemNotificationListenerInitialized: false, // 系统通知 action 监听是否已注册
     }),
 
     getters: {
         getConversationById: (state) => (conversationId: string) => state.conversionList.get(conversationId), // 根据id获取会话
         getConversationIndexList: (state) => state.conversationIndexList, // 获取会话索引列表
+        getHistoryConversationIndexList: (state) => state.historyConversationIndexList, // 获取历史会话索引列表（搜索）
         getCurrentConversationId: (state) => state.currentConversationId, // 获取当前聊天窗口展示的会话id，新建会话或点击侧边栏或在历史对话管理界面点击会话时，更新当前会话id，当前展示的只会有一个会话
         // 对外暴露当前会话 record / scene，供展示层和行为层复用统一抽象。
         getCurrentConversationRecord: (state) => state.conversionList.get(state.currentConversationId),
@@ -65,6 +133,17 @@ export const useConversationManagerStore = defineStore("conversationmanager", {
 
                 return state.answeringSession.get(sessionId) === conversationId;
             },
+        hasActivePendingApproval:
+            (state) =>
+            (conversationId: string): boolean => {
+                const conversationRecord = state.conversionList.get(conversationId);
+                if (!conversationRecord?.hasPendingApproval) {
+                    return false;
+                }
+
+                const sessionId = conversationRecord.sessionId;
+                return !!sessionId && state.answeringSession.get(sessionId) === conversationId;
+            },
         // 统一从 ConversationRecord 读取会话状态，避免在 manager 中再维护一份重复状态。
         getConversationStatus:
             (state) =>
@@ -84,9 +163,14 @@ export const useConversationManagerStore = defineStore("conversationmanager", {
             for (const conversationIndex of this.conversationIndexList) {
                 const conversationRecord = this.conversionList.get(conversationIndex.id);
                 conversationIndexMap.set(conversationIndex.id, {
-                    ...conversationIndex,
+                    id: conversationIndex.id,
+                    title: conversationIndex.title,
+                    assistant: conversationIndex.assistant,
+                    assistant_name: conversationIndex.assistant_name,
+                    introduction: conversationIndex.introduction,
                     updated_at: conversationRecord?.activityAt ?? conversationIndex.updated_at,
                     conversationStatus: this.getConversationStatus(conversationIndex.id),
+                    hasPendingApproval: this.hasActivePendingApproval(conversationIndex.id),
                 });
             }
 
@@ -99,10 +183,11 @@ export const useConversationManagerStore = defineStore("conversationmanager", {
                     continue;
                 }
 
-                // 还未落盘的会话只有在“当前会话”或“存在未读/生成中状态”时才需要出现在侧边栏。
+                // 还未落盘的会话只有在“当前会话”、存在未读/生成中状态或活跃待审批时才需要出现在侧边栏。
                 const shouldShowFallbackConversation =
                     this.currentConversationId === conversationId ||
-                    this.getConversationStatus(conversationId) !== ConversationStatus.Read;
+                    this.getConversationStatus(conversationId) !== ConversationStatus.Read ||
+                    this.hasActivePendingApproval(conversationId);
 
                 if (!shouldShowFallbackConversation) {
                     continue;
@@ -121,6 +206,11 @@ export const useConversationManagerStore = defineStore("conversationmanager", {
             this.conversationIndexList = conversationIndexList;
         },
 
+        // 设置历史会话索引列表
+        setHistoryConversationIndexList(historyConversationIndexList: ConversationIndex[]) {
+            this.historyConversationIndexList = historyConversationIndexList;
+        },
+
         // 加载会话索引列表
         async loadConversationIndexList(backend: any) {
             try {
@@ -131,6 +221,19 @@ export const useConversationManagerStore = defineStore("conversationmanager", {
             } catch (error) {
                 console.error("Failed to load conversation index list:", error);
                 this.setConversationIndexList([]);
+            }
+        },
+
+        // 加载历史会话索引列表（搜索）
+        async loadHistoryConversationIndexList(backend: any) {
+            try {
+                const result = await backend.requestConversation("getHistoryConversationIndexes");
+                console.info("Loaded history conversation indexes:", result);
+                this.setHistoryConversationIndexList(result ? JSON.parse(result as string) : []);
+                console.info("Loaded history conversation index list:", this.historyConversationIndexList);
+            } catch (error) {
+                console.error("Failed to load history conversation index list:", error);
+                this.setHistoryConversationIndexList([]);
             }
         },
 
@@ -176,6 +279,9 @@ export const useConversationManagerStore = defineStore("conversationmanager", {
             this.currentConversationId = conversationId; // 更新当前会话id，新建会话时，展示新会话
             // 新建会话只是进入编辑态，尚未产生新回复，因此默认视为已读。
             conversationRecord.markAsRead();
+
+            // 清理过期会话
+            this.cleanExpiredRecords();
         },
 
         // 创建临时会话
@@ -286,14 +392,14 @@ export const useConversationManagerStore = defineStore("conversationmanager", {
         },
 
         initializeAiReplyNotificationHandlers() {
-            if (this.aiReplyNotificationListenerInitialized) {
+            if (this.systemNotificationListenerInitialized) {
                 return;
             }
             const notifyStore = useNotifyStore();
-            notifyStore.onSystemNotificationAction(({ notificationId, actionKey }) => {
-                void this.handleAiReplyNotificationAction(notificationId, actionKey);
+            notifyStore.onSystemNotificationAction(({ actionId }) => {
+                void this.handleSystemNotificationAction(actionId);
             });
-            this.aiReplyNotificationListenerInitialized = true;
+            this.systemNotificationListenerInitialized = true;
         },
 
         async isMainWindowActive() {
@@ -315,7 +421,6 @@ export const useConversationManagerStore = defineStore("conversationmanager", {
         scheduleAiReplyCompletedNotification(conversationId: string, messageId: string) {
             this.initializeAiReplyNotificationHandlers();
             this.aiReplyLatestConversationId = conversationId;
-            this.aiReplyLatestMessageId = messageId;
 
             if (this.aiReplyNotifyTimer !== null) {
                 clearTimeout(this.aiReplyNotifyTimer);
@@ -329,9 +434,7 @@ export const useConversationManagerStore = defineStore("conversationmanager", {
 
         async flushAiReplyCompletedNotification() {
             const unreadCount = this.getUnreadConversationCount();
-            console.log("[AiReplyNotification] Flushing notification, unreadCount:", unreadCount);
             if (unreadCount <= 0) {
-                console.log("[AiReplyNotification] No unread conversations, skip notification");
                 return;
             }
 
@@ -340,88 +443,210 @@ export const useConversationManagerStore = defineStore("conversationmanager", {
             const countText = String(unreadCount);
             const body = backend.translate("You have %1 newly answered chats").replace("%1", countText);
 
-            console.log("[AiReplyNotification] Showing notification, body:", body);
-            const notificationId = await notifyStore.showSystemNotification({
+            const conversationId = this.aiReplyLatestConversationId;
+            await notifyStore.showSystemNotification({
                 body,
                 actions: [
-                    { key: "remind_later", text: backend.translate("Remind Me Later") },
-                    { key: "view_now", text: backend.translate("View Now") },
+                    {
+                        key: `${NotificationScene.AI_REPLY}:${NotificationOperation.REMIND_LATER}`,
+                        text: backend.translate("Remind Me Later"),
+                    },
+                    {
+                        key: `${NotificationScene.AI_REPLY}:${NotificationOperation.VIEW_NOW}:${conversationId}`,
+                        text: backend.translate("View Now"),
+                    },
                 ],
                 timeoutMs: 5000,
             });
-
-            console.log("[AiReplyNotification] Notification shown, id:", notificationId);
-            if (!notificationId) {
-                return;
-            }
-
-            this.aiReplyNotificationTargets[notificationId] = {
-                conversationId: this.aiReplyLatestConversationId,
-                messageId: this.aiReplyLatestMessageId,
-            };
-            console.log("[AiReplyNotification] Target saved:", this.aiReplyNotificationTargets[notificationId]);
         },
 
-        getLatestUnreadConversationTarget() {
-            const unreadList = this.getConversationIndexListWithStatus.filter(
-                (conversation) => conversation.conversationStatus === ConversationStatus.Unread,
-            );
-            if (unreadList.length === 0) {
-                return null;
-            }
-
-            const latestConversation = unreadList[0];
-            if (!latestConversation) {
-                return null;
-            }
-            const latestConversationRecord = this.conversionList.get(latestConversation.id);
-            return {
-                conversationId: latestConversation.id,
-                messageId: latestConversationRecord?.messageId ?? "",
-            };
-        },
-
-        async handleAiReplyNotificationAction(notificationId: number, actionKey: string) {
-            console.log(
-                "[AiReplyNotification] Action received, notificationId:",
-                notificationId,
-                "actionKey:",
-                actionKey,
-            );
-            if (!actionKey) {
-                console.log("[AiReplyNotification] No actionKey, skip");
-                return;
-            }
-
-            const notifyStore = useNotifyStore();
-            const target = this.aiReplyNotificationTargets[notificationId] ?? this.getLatestUnreadConversationTarget();
-            console.log("[AiReplyNotification] Target:", target);
-
-            if (actionKey === "remind_later") {
-                console.log("[AiReplyNotification] User chose remind_later, closing notification");
-                await notifyStore.closeSystemNotification(notificationId);
-                delete this.aiReplyNotificationTargets[notificationId];
-                return;
-            }
-
-            if (actionKey !== "view_now") {
-                console.log("[AiReplyNotification] Unknown actionKey:", actionKey, ", skip");
-                return;
-            }
-
-            console.log("[AiReplyNotification] User chose view_now, switching to conversation");
-            await notifyStore.closeSystemNotification(notificationId);
-            delete this.aiReplyNotificationTargets[notificationId];
-
-            if (!target?.conversationId) {
-                console.log("[AiReplyNotification] No target conversationId, skip");
-                return;
-            }
-
-            console.log("[AiReplyNotification] Switching to conversation:", target.conversationId);
+        /**
+         * 切换到指定会话（公共辅助方法）
+         */
+        async switchToConversation(conversationId: string) {
             await useBackendStore().requestWindow("switchMode", WindowMode.Main);
             useExtensionPanelStore().closeExtensionPanel();
-            await this.switchConversation(target.conversationId);
+            await this.switchConversation(conversationId);
+        },
+
+        async handleSystemNotificationAction(actionId: string) {
+            if (!actionId) return;
+
+            const parsed = parseActionPart(actionId);
+            if (!parsed) return;
+            const [scene, rest] = parsed;
+
+            switch (scene) {
+                case NotificationScene.AI_REPLY:
+                    await this.handleAiReplyAction(rest);
+                    break;
+                case NotificationScene.ICOMP:
+                    await this.handleICompAction(rest);
+                    break;
+            }
+        },
+
+        async handleAiReplyAction(rest: string) {
+            const parsed = parseActionPart(rest);
+            if (!parsed) return;
+            const [operation, params] = parsed;
+
+            if (operation !== NotificationOperation.VIEW_NOW) return;
+
+            const conversationId = params;
+            if (!conversationId) return;
+
+            await this.switchToConversation(conversationId);
+        },
+
+        // ============================================================
+        // IComp 系统通知
+        initializeICompNotificationHandlers() {
+            this.initializeAiReplyNotificationHandlers();
+        },
+
+        async showICompNotification(
+            conversationId: string,
+            messageId: string,
+            data: BashApproveData | FileChangeApproveData,
+        ) {
+            this.initializeICompNotificationHandlers();
+            const notifyStore = useNotifyStore();
+            const backend = useBackendStore();
+            const requestId = data.id;
+
+            const actions: Array<{ key: string; text: string }> = [];
+
+            if (data.ic_type === "bash_approve") {
+                actions.push(
+                    {
+                        key: `${NotificationScene.ICOMP}:${NotificationOperation.VIEW_NOW}:${conversationId}`,
+                        text: backend.translate("View Now"),
+                    },
+                    {
+                        key: `${NotificationScene.ICOMP}:${NotificationOperation.BASH_APPROVED}:${requestId}:${conversationId}:${messageId}`,
+                        text: backend.translate("Allow Once"),
+                    },
+                    {
+                        key: `${NotificationScene.ICOMP}:${NotificationOperation.BASH_ALWAYS}:${requestId}:${conversationId}:${messageId}`,
+                        text: backend.translate("Allow Chat"),
+                    },
+                    {
+                        key: `${NotificationScene.ICOMP}:${NotificationOperation.BASH_REJECTED}:${requestId}:${conversationId}:${messageId}`,
+                        text: backend.translate("Reject"),
+                    },
+                );
+            } else if (data.ic_type === "file_change_approve") {
+                actions.push(
+                    {
+                        key: `${NotificationScene.ICOMP}:${NotificationOperation.VIEW_NOW}:${conversationId}`,
+                        text: backend.translate("View Now"),
+                    },
+                    {
+                        key: `${NotificationScene.ICOMP}:${NotificationOperation.FILE_APPLY}:${requestId}:${conversationId}:${messageId}`,
+                        text: backend.translate("Apply"),
+                    },
+                    {
+                        key: `${NotificationScene.ICOMP}:${NotificationOperation.FILE_REJECTED}:${requestId}:${conversationId}:${messageId}`,
+                        text: backend.translate("Reject"),
+                    },
+                );
+            }
+
+            let body = data.title;
+            if (data.ic_type === "file_change_approve") {
+                const changes = (data as FileChangeApproveData).changes;
+                const created = changes.filter((c) => c.kind.trim().toLowerCase() === "created").length;
+                const modified = changes.filter((c) => c.kind.trim().toLowerCase() === "modified").length;
+                const deleted = changes.filter((c) => c.kind.trim().toLowerCase() === "deleted").length;
+                body = backend
+                    .translate("%1 file changes (%2 added, %3 modified, %4 deleted)")
+                    .replace("%1", String(changes.length))
+                    .replace("%2", String(created))
+                    .replace("%3", String(modified))
+                    .replace("%4", String(deleted));
+            }
+
+            await notifyStore.showSystemNotification({
+                title: backend.translate("Awaiting Approval"),
+                body,
+                actions,
+                timeoutMs: 5000,
+            });
+        },
+
+        async handleICompAction(rest: string) {
+            const parsed = parseActionPart(rest);
+            if (!parsed) return;
+            const [operation, params] = parsed;
+
+            // view_now:conversationId
+            if (operation === NotificationOperation.VIEW_NOW) {
+                const conversationId = params;
+                if (!conversationId) return;
+                await this.switchToConversation(conversationId);
+                return;
+            }
+
+            // 审批类操作: requestId:conversationId:messageId
+            const parts = params.split(ACTION_SEPARATOR);
+            if (parts.length < 3) return;
+            const [requestId, conversationId, messageId] = parts;
+
+            const conversationRecord = this.conversionList.get(conversationId) as ConversationRecord | undefined;
+            if (!conversationRecord) return;
+
+            // 查找操作配置
+            const config = APPROVAL_CONFIG[operation];
+            if (!config) return;
+
+            const icType = ICOMP_TYPE_MAP[operation];
+            if (!icType) return;
+
+            const status = config.approved ? InteractiveCompStatus.APPROVED : InteractiveCompStatus.REJECTED;
+            conversationRecord.updateICompStatus(messageId, requestId, status);
+
+            const sessionId = conversationRecord.sessionId;
+            if (sessionId) {
+                const backend = useBackendStore();
+                backend.requestSession(
+                    "invokeAction",
+                    sessionId,
+                    JSON.stringify({
+                        request_id: requestId,
+                        type: icType,
+                        approved: config.approved,
+                        always_approve: config.alwaysApprove ?? false,
+                        reject_msg: "",
+                    }),
+                );
+            }
+        },
+
+        // 清理过期会话
+        cleanExpiredRecords() {
+            // 收集需要删除的会话ID并清理
+            const conversationIds = [...this.conversionList.values()]
+                .filter(
+                    (record) =>
+                        record.root?.id !== this.currentConversationId &&
+                        record.conversationStatus === ConversationStatus.Read,
+                )
+                .map((record) => record.root?.id as string);
+
+            // 重新构建 Map，排除待删除的会话
+            if (conversationIds.length > 0) {
+                const deleteIdSet = new Set(conversationIds);
+                this.conversionList = new Map([...this.conversionList].filter(([id]) => !deleteIdSet.has(id)));
+
+                // 清理后端过期会话记录
+                useBackendStore().requestConversation("releaseConversation", conversationIds);
+
+                console.log(
+                    "[ConversationManager cleanExpiredRecords] After cleaning expired records:",
+                    conversationIds,
+                );
+            }
         },
 
         // ============================================================
@@ -531,10 +756,13 @@ export const useConversationManagerStore = defineStore("conversationmanager", {
             // 重复 attach 时先解绑，避免同一个 record 叠加多个监听器。
             conversationRecord.off("conversationStateChange", handleConversationRecordStateChange);
             conversationRecord.on("conversationStateChange", handleConversationRecordStateChange);
+            conversationRecord.off("iCompAdded", handleICompAdded);
+            conversationRecord.on("iCompAdded", handleICompAdded);
         },
 
         detachConversationRecord(conversationRecord: ConversationRecord) {
             conversationRecord.off("conversationStateChange", handleConversationRecordStateChange);
+            conversationRecord.off("iCompAdded", handleICompAdded);
         },
 
         createConversationIndexWithStatus(conversationId: string): ConversationIndexWithStatus {
@@ -551,6 +779,7 @@ export const useConversationManagerStore = defineStore("conversationmanager", {
                 assistant_name: assistantInfo?.name || "",
                 introduction: "",
                 conversationStatus: conversationRecord?.conversationStatus ?? ConversationStatus.Read,
+                hasPendingApproval: this.hasActivePendingApproval(conversationId),
             };
         },
 

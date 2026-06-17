@@ -4,8 +4,6 @@ import SvgIcon from "@/components/SvgIcon";
 import Switch from "@/components/Switch";
 import { useBackendStore } from "@/stores";
 import CardBase from "./CardBase";
-import "./CardBase.css";
-import "./CommandCard.css";
 
 /**
  * 开关卡片组件
@@ -71,7 +69,7 @@ export default defineComponent({
         if (props.data.title === "Eye Comfort") {
           module = "display";
         } else if (props.data.title === "Wireless Network") {
-          module = "wifi";
+          module = "network";
         } else if (props.data.title === "Bluetooth") {
           module = "bluetooth";
         } else if (props.data.title === "DND Mode") {

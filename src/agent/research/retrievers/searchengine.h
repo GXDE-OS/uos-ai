@@ -15,6 +15,8 @@ public:
     virtual ~SearchEngine() {}
 
     virtual QJsonArray search(const QString &query, int maxResults = 5) = 0;
+signals:
+    void requestAbort();
 };
 
 } // namespace uos_ai

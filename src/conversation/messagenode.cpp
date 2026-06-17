@@ -408,6 +408,60 @@ QJsonObject RenderMessage::toJson() const
             dataJson[STR_KEY_ELAPSED] = dataHash.value(STR_KEY_ELAPSED).toInt();
         }
         break;
+    case CntWebSearch:
+    /*
+    {
+        "title": "Online Search",
+        // 0: searching, 1: reading, 2: completed, 3: failed
+        "status": 0, // "searching" | "reading" | "completed" | "failed"
+        "content": [
+            {
+                "url": "https://www.baidu.com",
+                "title": "网页搜索标题"
+            }
+        ]
+    }
+    */
+        if (dataHash.contains(STR_KEY_TITLE)) {
+            dataJson[STR_KEY_TITLE] = dataHash.value(STR_KEY_TITLE).toString();
+        }
+        if (dataHash.contains(STR_KEY_STATUS)) {
+            dataJson[STR_KEY_STATUS] = dataHash.value(STR_KEY_STATUS).toInt();
+        }
+        if (dataHash.contains(STR_KEY_CONTENT)) {
+            QVariantList contentList = dataHash.value(STR_KEY_CONTENT).toList();
+            QJsonArray contentArray;
+            for (const QVariant &item : contentList) {
+                QVariantHash itemHash;
+                if (item.type() == QVariant::Hash)
+                    itemHash = item.toHash();
+                else if (item.type() == QVariant::Map) {
+                    const auto map = item.toMap();
+                    for (auto it = map.constBegin(); it != map.constEnd(); ++it)
+                        itemHash[it.key()] = it.value();
+                }
+                if (itemHash.isEmpty()) continue;
+                QJsonObject itemJson;
+                if (itemHash.contains(STR_KEY_URL))
+                    itemJson[STR_KEY_URL] = itemHash.value(STR_KEY_URL).toString();
+                if (itemHash.contains(STR_KEY_TITLE))
+                    itemJson[STR_KEY_TITLE] = itemHash.value(STR_KEY_TITLE).toString();
+                contentArray.append(itemJson);
+            }
+            dataJson[STR_KEY_CONTENT] = contentArray;
+        }
+        break;
+    case CntIComps:
+    /*
+    {
+        "id": "request_id",
+        "ic_type": "bash_approve",
+        "title": "...",
+        ... (subtype-specific fields)
+    }
+    */
+        dataJson = QJsonObject::fromVariantHash(dataHash);
+        break;
     case CntAgentStep:
         if (dataHash.contains(STR_KEY_TITLE)) {
             dataJson[STR_KEY_TITLE] = dataHash.value(STR_KEY_TITLE).toString();
@@ -595,12 +649,14 @@ RenderMessage RenderMessage::fromJson(QJsonObject obj)
     } else if (renderMsg.type == CntFile
                || renderMsg.type == CntImage
                || renderMsg.type == CntReasoning
+               || renderMsg.type == CntWebSearch
                || renderMsg.type == CntAgentStep
                || renderMsg.type == CntTool
                || renderMsg.type == CntOutline
                || renderMsg.type == CntDocCard
                || renderMsg.type == CntCommandCard
-               || renderMsg.type == CntError) {
+               || renderMsg.type == CntError
+               || renderMsg.type == CntIComps) {
         // For structured render types, extract the entire data object to preserve nested structures
         QJsonObject dataObj = obj.value(STR_KEY_DATA).toObject();
         QVariantHash variantData = dataObj.toVariantHash();

@@ -9,7 +9,8 @@ using namespace uos_ai;
 
 UosAccountEncoder::UosAccountEncoder()
     : m_encryptor(new EncryptBase(EVP_aes_128_ecb()))
-    , m_passwd("f5739d638610d5e1")
+    //, m_passwd("f5739d638610d5e1")
+    , m_passwd("50fbee4823404d69")
 {
     m_encryptor->setkey(m_passwd.toStdString().c_str(), "");
 }

@@ -123,6 +123,32 @@ void BuiltinProvider::initializeProviders()
             m_models.insert(model.id, model);
         }
 
+        // DeepSeek-V4-Pro
+        {
+            ModelInfo model;
+            model.id = UOS_FREE_DEEPSEEK_V4_PRO;
+            model.name = tr("DeepSeek-V4-Pro");
+            model.arch = MaLanguage;
+            model.ability = ModelAbilities(ModelAbility::MaText | ModelAbility::MaToolCall | ModelAbility::MaReasoning);
+            model.modelId = "deepseek-v4-pro-260425";
+
+            uosFree.models.append(model.id);
+            m_models.insert(model.id, model);
+        }
+
+        // DeepSeek-V4-Flash
+        {
+            ModelInfo model;
+            model.id = UOS_FREE_DEEPSEEK_V4_FLASH;
+            model.name = tr("DeepSeek-V4-Flash");
+            model.arch = MaLanguage;
+            model.ability = ModelAbilities(ModelAbility::MaText | ModelAbility::MaToolCall | ModelAbility::MaReasoning);
+            model.modelId = "deepseek-v4-flash-260425";
+
+            uosFree.models.append(model.id);
+            m_models.insert(model.id, model);
+        }
+
 #if 0
         // Doubao-Seed-1.8
         {
@@ -332,6 +358,32 @@ void BuiltinProvider::initializeProviders()
             m_models.insert(model.id, model);
         }
 
+        // MiniMax-M2.7
+        {
+            ModelInfo model;
+            model.id = MINIMAX_MINIMAX_M2_7;
+            model.name = tr("MiniMax-M2.7");
+            model.arch = MaLanguage;
+            model.ability = ModelAbilities(ModelAbility::MaText | ModelAbility::MaToolCall | ModelAbility::MaReasoning);
+            model.modelId = "MiniMax-M2.7";
+
+            minimax.models.append(model.id);
+            m_models.insert(model.id, model);
+        }
+
+        // MiniMax-M2.7
+        {
+            ModelInfo model;
+            model.id = MINIMAX_MINIMAX_M2_7_HIGHSPEED;
+            model.name = tr("MiniMax-M2.7-highspeed");
+            model.arch = MaLanguage;
+            model.ability = ModelAbilities(ModelAbility::MaText | ModelAbility::MaToolCall | ModelAbility::MaReasoning);
+            model.modelId = "MiniMax-M2.7-highspeed";
+
+            minimax.models.append(model.id);
+            m_models.insert(model.id, model);
+        }
+
         m_providers.insert(minimax.id, minimax);
     }
 
@@ -340,18 +392,18 @@ void BuiltinProvider::initializeProviders()
         ProviderInfo moonshot;
         moonshot.id = STR_KEY_MOONSHOT;
         moonshot.name = tr("Moonshot (KIMI)");
-        // KIMI k2
-        {
-            ModelInfo model;
-            model.id = MOONSHOT_KIMI_2;
-            model.name = tr("Kimi K2");
-            model.arch = MaLanguage;
-            model.ability = ModelAbilities(ModelAbility::MaText | ModelAbility::MaToolCall);
-            model.modelId = "kimi-k2-0905-preview";
+//        // KIMI k2
+//        {
+//            ModelInfo model;
+//            model.id = MOONSHOT_KIMI_2;
+//            model.name = tr("Kimi K2");
+//            model.arch = MaLanguage;
+//            model.ability = ModelAbilities(ModelAbility::MaText | ModelAbility::MaToolCall);
+//            model.modelId = "kimi-k2-0905-preview";
 
-            moonshot.models.append(model.id);
-            m_models.insert(model.id, model);
-        }
+//            moonshot.models.append(model.id);
+//            m_models.insert(model.id, model);
+//        }
 
         // KIMI k2.5
         {
@@ -366,6 +418,18 @@ void BuiltinProvider::initializeProviders()
             m_models.insert(model.id, model);
         }
 
+        // KIMI k2.6
+        {
+            ModelInfo model;
+            model.id = MOONSHOT_KIMI_2_6;
+            model.name = tr("Kimi K2.6");
+            model.arch = MaLanguage;
+            model.ability = ModelAbilities(ModelAbility::MaText | ModelAbility::MaToolCall | ModelAbility::MaReasoning | ModelAbility::MaImage);
+            model.modelId = "kimi-k2.6";
+
+            moonshot.models.append(model.id);
+            m_models.insert(model.id, model);
+        }
         m_providers.insert(moonshot.id, moonshot);
     }
 
@@ -387,7 +451,7 @@ void BuiltinProvider::initializeProviders()
             m_models.insert(model.id, model);
         }
 
-        // GLM 5.0
+        // GLM 5
         {
             ModelInfo model;
             model.id = BIGMODEL_GLM_5;
@@ -400,6 +464,44 @@ void BuiltinProvider::initializeProviders()
             m_models.insert(model.id, model);
         }
 
+        // GLM 5 turbo
+        {
+            ModelInfo model;
+            model.id = BIGMODEL_GLM_5_TURBO;
+            model.name = tr("GLM-5-Turbo");
+            model.arch = MaLanguage;
+            model.ability = ModelAbilities(ModelAbility::MaText | ModelAbility::MaToolCall | ModelAbility::MaReasoning);
+            model.modelId = "glm-5-turbo";
+
+            bigmodel.models.append(model.id);
+            m_models.insert(model.id, model);
+        }
+
+        // GLM 5V turbo
+        {
+            ModelInfo model;
+            model.id = BIGMODEL_GLM_5V_TURBO;
+            model.name = tr("GLM-5V-Turbo");
+            model.arch = MaLanguage;
+            model.ability = ModelAbilities(ModelAbility::MaText | ModelAbility::MaToolCall | ModelAbility::MaReasoning | ModelAbility::MaImage);
+            model.modelId = "glm-5v-turbo";
+
+            bigmodel.models.append(model.id);
+            m_models.insert(model.id, model);
+        }
+
+        // GLM 5.1
+        {
+            ModelInfo model;
+            model.id = BIGMODEL_GLM_5_1;
+            model.name = tr("GLM-5.1");
+            model.arch = MaLanguage;
+            model.ability = ModelAbilities(ModelAbility::MaText | ModelAbility::MaToolCall | ModelAbility::MaReasoning);
+            model.modelId = "glm-5.1";
+
+            bigmodel.models.append(model.id);
+            m_models.insert(model.id, model);
+        }
         m_providers.insert(bigmodel.id, bigmodel);
     }
 
@@ -435,6 +537,44 @@ void BuiltinProvider::initializeProviders()
             m_models.insert(model.id, model);
         }
 
+        // Qwen3.6 max preview
+        {
+            ModelInfo model;
+            model.id = BAILIAN_QWEN_3_6_MAX_PREVIEW;
+            model.name = tr("Qwen3.6-Max-Preview");
+            model.arch = MaLanguage;
+            model.ability = ModelAbilities(ModelAbility::MaText | ModelAbility::MaToolCall | ModelAbility::MaReasoning);
+            model.modelId = "qwen3.6-max-preview";
+
+            bailian.models.append(model.id);
+            m_models.insert(model.id, model);
+        }
+
+        // Qwen3.6 plus
+        {
+            ModelInfo model;
+            model.id = BAILIAN_QWEN_3_6_PLUS;
+            model.name = tr("Qwen3.6-Plus");
+            model.arch = MaLanguage;
+            model.ability = ModelAbilities(ModelAbility::MaText | ModelAbility::MaToolCall | ModelAbility::MaImage | ModelAbility::MaReasoning);
+            model.modelId = "qwen3.6-plus";
+
+            bailian.models.append(model.id);
+            m_models.insert(model.id, model);
+        }
+
+        // Qwen3.6 flash
+        {
+            ModelInfo model;
+            model.id = BAILIAN_QWEN_3_6_FLASH;
+            model.name = tr("Qwen3.6-Flash");
+            model.arch = MaLanguage;
+            model.ability = ModelAbilities(ModelAbility::MaText | ModelAbility::MaToolCall | ModelAbility::MaImage | ModelAbility::MaReasoning);
+            model.modelId = "qwen3.6-flash";
+
+            bailian.models.append(model.id);
+            m_models.insert(model.id, model);
+        }
         m_providers.insert(bailian.id, bailian);
     }
 

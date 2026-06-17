@@ -1,5 +1,6 @@
 import { defineComponent, ref, onMounted, onUnmounted, computed, provide, watch, type PropType } from "vue";
 import { useMainWindowStore, useExtensionPanelStore, useUploadFilesStore, useBackendStore } from "@/stores";
+import { MAIN_WINDOW_WORKSPACE_PAGES } from "@/types/mainwindow";
 import { EXTENSION_PANEL_KEY, type ExtensionPanelAPI } from "@/types/extension-panel";
 import ExtensionPanel from "@/components/ExtensionPanel";
 import Splitter from "@/components/Splitter";
@@ -316,8 +317,13 @@ export default defineComponent({
             window.removeEventListener("dragend", resetDragState);
         });
 
+        const isHistoryConversation = computed(
+            () => mainWindowStore.workspacePage === MAIN_WINDOW_WORKSPACE_PAGES.HISTORY_CONVERSATION,
+        );
+
         return {
             extensionStore,
+            isHistoryConversation,
             containerClass,
             showSplitter,
             handlePanelClose,
@@ -345,7 +351,7 @@ export default defineComponent({
         const defaultSlot = this.$slots.default ? this.$slots.default() : null;
 
         return (
-            <div class={["workspace", this.extensionStore.panelFullscreen && "workspace--editor-fullscreen"]}>
+            <div class={["workspace", this.extensionStore.panelFullscreen && "workspace--editor-fullscreen", this.isHistoryConversation && "workspace--history-conversation"]}>
                 {/* 40px 标题栏——替代原有 padding-top，用于防止内容被窗口标题栏遮挡，同时在助手名滚出时显示名称 */}
                 <div
                     class={["workspace__titlebar", this.titleBarScrolled && "workspace__titlebar--scrolled"]}
@@ -396,7 +402,7 @@ export default defineComponent({
                     )}
 
                     {/* Splitter - only show when both areas are visible */}
-                    {this.showSplitter && <Splitter />}
+                    {this.showSplitter && <Splitter disabled={true} />}
 
                     {/* Extension Panel */}
                     <ExtensionPanel visible={this.extensionStore.showExtensionPanel} onClose={this.handlePanelClose}>

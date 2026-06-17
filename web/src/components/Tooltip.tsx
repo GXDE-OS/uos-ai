@@ -19,12 +19,24 @@ export default defineComponent({
         /** 显示位置 */
         placement: {
             type: String as PropType<
-                | "top" | "top-start" | "top-end"
-                | "bottom" | "bottom-start" | "bottom-end"
-                | "left" | "left-start" | "left-end"
-                | "right" | "right-start" | "right-end"
+                | "top"
+                | "top-start"
+                | "top-end"
+                | "bottom"
+                | "bottom-start"
+                | "bottom-end"
+                | "left"
+                | "left-start"
+                | "left-end"
+                | "right"
+                | "right-start"
+                | "right-end"
             >,
             default: "bottom",
+        },
+        offset: {
+            type: Number,
+            default: 4,
         },
         /** 是否禁用 tooltip */
         disabled: {
@@ -99,6 +111,7 @@ export default defineComponent({
                 hide-after={props.hideAfter}
                 popper-class={computedPopperClass()}
                 raw-content={props.isRawContent}
+                offset={props.offset}
                 v-slots={{
                     // 保持现有纯文本/HTML content 用法不变，同时允许复杂 tooltip 走具名 slot。
                     default: () => slots.default?.(),

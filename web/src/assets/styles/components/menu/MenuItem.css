@@ -59,6 +59,12 @@
     font-style: normal;
 }
 
+/* Qt5 兼容降级：移除 inset */
+html[data-legacy-css] .menu-item:hover:not(.menu-item--disabled),
+html[data-legacy-css] .menu-item:active:not(.menu-item--disabled) {
+    box-shadow: none;
+}
+
 /* 层级缩进 */
 .menu-item--level-1 {
     padding-left: var(--spacing-xl);

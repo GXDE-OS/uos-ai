@@ -95,8 +95,9 @@ export default defineComponent({
                     <IconButton
                         icon={item.rightButtonIcon as string}
                         iconSize={[16, 16]}
-                        size={[24, 24]}
+                        size={[16, 16]}
                         shape={ButtonShape.Rounded}
+                        colorOnly={true}
                         onClick={this.handleRightButtonClick}
                     />
                 </span>
@@ -109,35 +110,25 @@ export default defineComponent({
             "base-item--dragging": this.dragging,
             "base-item--ghost": this.ghost,
             "base-item--feedback-suppressed": this.suppressHover,
+            "base-item--has-right-content": !!rightMoreButton || !!rightContent,
         };
 
-        // 渲染图标
         const renderIcon = (): VNode | null => {
             if (!item.icon) return null;
-            if (typeof item.icon === "string") {
-                let isThirdPartyAssistant = false;
-                if (item.icon.startsWith("file://")) {
-                    isThirdPartyAssistant = true;
-                }
-                return !isThirdPartyAssistant ? (
-                    <div class="base-item__icon-wrapper">
-                        <SvgIcon icon={item.icon} size={[16, 16]} />
-                    </div>
-                ) : (
+
+            if (item.icon.startsWith("file://")) {
+                return (
                     <div class="base-item__icon-wrapper">
                         <img src={item.icon} />
                     </div>
                 );
             }
-            return item.icon();
-        };
 
-        // 渲染名称
-        const renderName = (): VNode => {
-            if (typeof item.name === "string") {
-                return <span class="base-item__name">{item.name}</span>;
-            }
-            return item.name();
+            return (
+                <div class="base-item__icon-wrapper">
+                    <SvgIcon icon={item.icon} size={[16, 16]} />
+                </div>
+            );
         };
 
         return (
@@ -152,7 +143,7 @@ export default defineComponent({
                 <div class="base-item__content">
                     <div class="base-item__left">
                         {renderIcon()}
-                        {renderName()}
+                        <span class="base-item__name">{item.name}</span>
                     </div>
                     {rightContent && <div class="base-item__right">{rightContent}</div>}
                     {rightMoreButton && <div class="base-item__right">{rightMoreButton}</div>}

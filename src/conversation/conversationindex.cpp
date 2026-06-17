@@ -13,14 +13,15 @@ Q_DECLARE_LOGGING_CATEGORY(logConv)
 
 using namespace uos_ai;
 
-ConversationIndexItem::ConversationIndexItem(const QString &id, const QString &title, qint64 updateTime, const QString &assistant, const QString &assistantName, const QString &introduction)
-    : id(id)
-    , title(title)
-    , updateTime(updateTime)
-    , assistant(assistant)
-    , assistantName(assistantName)
-    , introduction(introduction)
+ConversationIndexItem ConversationIndexItem::fromRecord(const ConversationRecordPtr &record)
 {
+    ConversationIndexItem item;
+    item.id = record->id();
+    item.title = record->title();
+    item.updateTime = record->updateTime().toMSecsSinceEpoch();
+    item.assistant = record->assistantId();
+    item.introduction = record->generateSummary();
+    return item;
 }
 
 QJsonObject ConversationIndexItem::toJson() const
@@ -85,7 +86,7 @@ bool ConversationIndex::addOrUpdateIndex(const ConversationRecordPtr &record)
     item.introduction = record->generateSummary();
     
     m_indexes[item.id] = item;
-    
+
     // 保存到文件
     return save();
 }
@@ -213,7 +214,7 @@ bool ConversationIndex::load()
             }
         }
     }
-    
+
     qCDebug(logConv) << "Conversation index loaded, total items:" << m_indexes.size();
     return true;
 }

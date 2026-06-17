@@ -1,8 +1,6 @@
 #ifndef UPDATELOGDIALOG_H
 #define UPDATELOGDIALOG_H
 
-
-
 #include <DDialog>
 #include <DLabel>
 #include <DPushButton>
@@ -10,18 +8,20 @@
 #include <DScrollArea>
 #include <DGuiApplicationHelper>
 #include <DIconButton>
+#include <DFrame>
 
 #include <QVBoxLayout>
 #include <QJsonObject>
 #include <QJsonArray>
-
-DWIDGET_USE_NAMESPACE
+#include <QJsonValue>
+#include <QStringList>
 
 namespace uos_ai {
 
 struct UpdateLogItem {
     QString type;        // "new", "improvement", "fix"
     QString description;
+    QStringList descriptionImages;
 };
 
 struct UpdateLogVersion {
@@ -30,7 +30,15 @@ struct UpdateLogVersion {
     QList<UpdateLogItem> items;
 };
 
-class UpdateLogDialog : public DDialog
+class UpdateLogVersionCard : public DTK_WIDGET_NAMESPACE::DFrame
+{
+public:
+    explicit UpdateLogVersionCard(QWidget *parent = nullptr);
+protected:
+    void paintEvent(QPaintEvent *event) override;
+};
+
+class UpdateLogDialog : public DTK_WIDGET_NAMESPACE::DDialog
 {
     Q_OBJECT
 public:
@@ -43,12 +51,16 @@ private:
     void initUI();
     void initConnect();
     void loadUpdateLogs();
+    static bool isSupportedDescriptionImage(const QString &path);
+    static QString updateLogImagePath(const QString &path);
+    static QStringList parseDescriptionImages(const QJsonValue &value);
+    static void parseDescription(const QJsonValue &descriptionValue, QString *description, QStringList *images);
     QHBoxLayout* createVersionWidget(const UpdateLogVersion &version);
     QHBoxLayout* createItemWidget(const UpdateLogItem &item, int index);
     
 private:
-    DScrollArea *m_scrollArea;
-    DWidget *m_contentWidget;
+    DTK_WIDGET_NAMESPACE::DScrollArea *m_scrollArea;
+    DTK_WIDGET_NAMESPACE::DWidget *m_contentWidget;
     QVBoxLayout *m_contentLayout;
     
     QList<UpdateLogVersion> m_updateLogs;

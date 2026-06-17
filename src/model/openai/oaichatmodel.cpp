@@ -34,6 +34,10 @@ QVariantHash OaiChatModel::chatCompletion(const QList<ModelMessage> &messages, c
     if (m_protocol.isNull())
         m_protocol.reset(new OaiMessageProtocol);
 
+    // 未开启思考功能移除回传
+    if (!modelParams.value(STR_KEY_THINKING, false).toBool())
+        m_parameters.remove(STR_KEY_ATTACH_REASONING);
+
     if (m_parameters.value(STR_KEY_ATTACH_REASONING, false).toBool())
         m_protocol->setEnableReasoning(true);
 

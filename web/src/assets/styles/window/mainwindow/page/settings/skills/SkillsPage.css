@@ -64,30 +64,6 @@ html.dark {
     line-height: var(--uosai-line-height-normal);
 }
 
-.skills-page__action-button {
-    display: inline-flex;
-    align-items: center;
-    height: 30px;
-    padding: 0;
-    border: none;
-    background: transparent;
-    color: var(--system-active-color);
-    cursor: pointer;
-}
-
-.skills-page__action-button:hover {
-    opacity: 0.7;
-}
-
-.skills-page__action-button:active {
-    opacity: 1;
-}
-
-.skills-page__action-button-text {
-    font-size: var(--uosai-font-size-base);
-    line-height: var(--uosai-line-height-relaxed);
-}
-
 .skills-page__content {
     display: flex;
     flex-direction: column;

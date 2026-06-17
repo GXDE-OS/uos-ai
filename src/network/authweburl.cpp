@@ -44,7 +44,7 @@ QSharedPointer<QWebSocket> AuthWebUrl::webSocket()
 
     // AuthWebUrl only needs a secure-websocket proxy policy context here.
     // Avoid coupling proxy resolution to concrete business endpoints.
-    uos_ai::applyProxyToWebSocket(websocket.data(),
+    ProxySettingsWrapper::applyProxyToWebSocket(websocket.data(),
                                   QUrl(QStringLiteral("wss://proxy-context.invalid")),
                                   logNet(), "AuthWebUrl");
     return websocket;

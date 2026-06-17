@@ -12,14 +12,14 @@ const buildWritingDefaultPrompt = (): string => {
 const ASSISTANT_VIEW_CONFIG_MAP: Partial<Record<AssistantID, AssistantViewConfig>> = {
     [AssistantID.UOS_AI_WRITING]: {
         chat: { showFilePrivacyDialog: true },
-        input: { showDeepThink: false, showSearch: 1 },
+        input: { showDeepThink: false, showSearch: true },
         message: { showRetry: false },
         get defaultPrompt() {
             return buildWritingDefaultPrompt();
         },
     },
     [AssistantID.UOS_AI]: {
-        input: { showSearch: 2 },
+        input: { showSearch: true },
     },
     [AssistantID.UOS_AI_TRANSLATION]: {
         input: { showDeepThink: false },

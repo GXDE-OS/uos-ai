@@ -23,8 +23,11 @@ AbstractModel* VolcengineProvider::createModel(const ModelAccountPtr &acc)
         qWarning() << "VolcengineProvider: Invalid account";
         return nullptr;
     }
+    QVariantHash parameters;
+    parameters.insert(STR_KEY_ATTACH_REASONING, true);
 
     OaiChatModel *model = new OaiChatModel();
+    model->setParameters(parameters);
     model->setAccount(acc);
     model->setApiHost(host());
 

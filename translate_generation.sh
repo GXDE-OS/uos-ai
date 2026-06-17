@@ -34,3 +34,13 @@ do
     printf "\nprocess ${ts}\n"
     ${lrelease} "${ts}"
 done
+
+# Process shortcuts translations
+if [ -d "shortcuts/translations" ]; then
+    shortcuts_ts_list=(`ls shortcuts/translations/*.ts`)
+    for ts in "${shortcuts_ts_list[@]}"
+    do
+        printf "\nprocess ${ts}\n"
+        ${lrelease} "${ts}"
+    done
+fi

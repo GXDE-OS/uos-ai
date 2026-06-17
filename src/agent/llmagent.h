@@ -67,6 +67,12 @@ public Q_SLOTS:
      */
     virtual void cancel();
 
+    /**
+     * 执行回调
+     * 处理agent工作流中需要用户介入的回调的请求
+     * @param {QJsonObject} action - 回调请求的JSON对象，包含请求类型和参数
+     */
+    virtual void invokeAction(const QJsonObject &action);
 protected:
     /**
      * 初始化聊天记录

@@ -13,8 +13,10 @@ public:
 
     void cancel() override;
     static QString faq();
+    void invokeAction(const QJsonObject &action) override;
 Q_SIGNALS:
     void requestCancel();
+    void requestAgentAction(const QJsonObject &action);
 protected:
     void processMessage(ModelMessage &currentMessage, QList<ModelMessage> &historyMsg, bool retry);
 protected:

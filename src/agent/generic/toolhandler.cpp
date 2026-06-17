@@ -11,6 +11,21 @@ Q_DECLARE_LOGGING_CATEGORY(logAgent)
 
 namespace uos_ai {
 
+void ToolHandler::fillToolResult(ToolCallResult &result, const OSCallContext &ctx)
+{
+    if (ctx.error == OSCallContext::NonError) {
+        result.errorCode = 0;
+        result.message = ctx.output.isEmpty() ? "操作成功" : ctx.output;
+    } else {
+        result.errorCode = static_cast<int>(ctx.error);
+        result.message = ctx.errorInfo.isEmpty() ? "操作失败" : ctx.errorInfo;
+        if (!ctx.output.isEmpty()) {
+            result.message += " - " + ctx.output;
+        }
+        result.cardType = CardType::None;
+    }
+}
+
 ToolCallResult ToolHandler::callTool(const QString &toolName, const QJsonObject &params)
 {
     // 系统控制工具
@@ -170,10 +185,10 @@ ToolCallResult ToolHandler::handleSystemTool(const QString &toolName, const QJso
         result.cardType = CardType::None; // 系统内存信息直接输出结果
     }
     else if (toolName == "systemFontSize") {
-        float size = params.value("size").toVariant().toFloat();
+        int size = params.value("size").toString().toInt();
         ctx = UosAbility()->doSystemFontSize(size);
         result.cardType = CardType::SliderCard;
-        result.cardData["size"] = ctx.result.contains("fontSize") ? ctx.result.value("fontSize").toDouble() : static_cast<double>(size);
+        result.cardData["size"] = ctx.result.contains("fontSize") ? ctx.result.value("fontSize").toInt() : size;
         result.cardData["title"] = "Font Size";
         result.cardData["icon"] = "font_size";
         result.cardData["min"] = 11.0;
@@ -190,16 +205,7 @@ ToolCallResult ToolHandler::handleSystemTool(const QString &toolName, const QJso
     }
 
     // 处理返回值
-    if (ctx.error == OSCallContext::NonError) {
-        result.errorCode = 0;
-        result.message = ctx.output.isEmpty() ? "操作成功" : ctx.output;
-    } else {
-        result.errorCode = static_cast<int>(ctx.error);
-        result.message = ctx.errorInfo.isEmpty() ? "操作失败" : ctx.errorInfo;
-        if (!ctx.output.isEmpty()) {
-            result.message += " - " + ctx.output;
-        }
-    }
+    fillToolResult(result, ctx);
 
     return result;
 }
@@ -254,16 +260,7 @@ ToolCallResult ToolHandler::handleFileTool(const QString &toolName, const QJsonO
     }
 
     // 处理返回值
-    if (ctx.error == OSCallContext::NonError) {
-        result.errorCode = 0;
-        result.message = ctx.output.isEmpty() ? "操作成功" : ctx.output;
-    } else {
-        result.errorCode = static_cast<int>(ctx.error);
-        result.message = ctx.errorInfo.isEmpty() ? "操作失败" : ctx.errorInfo;
-        if (!ctx.output.isEmpty()) {
-            result.message += " - " + ctx.output;
-        }
-    }
+    fillToolResult(result, ctx);
 
     return result;
 }
@@ -306,7 +303,7 @@ ToolCallResult ToolHandler::handleCommunicationTool(const QString &toolName, con
         result.cardData["subject"] = subject;
         result.cardData["startTime"] = startTime;
         result.cardData["endTime"] = endTime;
-        result.cardData["title"] = "日程";
+        result.cardData["title"] = "Schedule";
         result.cardData["icon"] = "schedule";
     } else if (toolName == "sendMail") {
         QString to = params.value("to").toString();
@@ -324,16 +321,7 @@ ToolCallResult ToolHandler::handleCommunicationTool(const QString &toolName, con
     }
 
     // 处理返回值
-    if (ctx.error == OSCallContext::NonError) {
-        result.errorCode = 0;
-        result.message = ctx.output.isEmpty() ? "操作成功" : ctx.output;
-    } else {
-        result.errorCode = static_cast<int>(ctx.error);
-        result.message = ctx.errorInfo.isEmpty() ? "操作失败" : ctx.errorInfo;
-        if (!ctx.output.isEmpty()) {
-            result.message += " - " + ctx.output;
-        }
-    }
+    fillToolResult(result, ctx);
 
     return result;
 }
@@ -350,7 +338,7 @@ ToolCallResult ToolHandler::handleStoreTool(const QString &toolName, const QJson
         int maxResults = params.value("maxResults").toInt(3);
         ctx = UosAbility()->doSearchApp(keyword, page, maxResults);
         result.cardType = CardType::AppStoreCard;
-        result.cardData["title"] = "应用商店";
+        result.cardData["title"] = "App Store";
         result.cardData["icon"] = "appstore";
 
         // 解析搜索结果
@@ -379,16 +367,7 @@ ToolCallResult ToolHandler::handleStoreTool(const QString &toolName, const QJson
     }
 
     // 处理返回值
-    if (ctx.error == OSCallContext::NonError) {
-        result.errorCode = 0;
-        result.message = ctx.output.isEmpty() ? "操作成功" : ctx.output;
-    } else {
-        result.errorCode = static_cast<int>(ctx.error);
-        result.message = ctx.errorInfo.isEmpty() ? "操作失败" : ctx.errorInfo;
-        if (!ctx.output.isEmpty()) {
-            result.message += " - " + ctx.output;
-        }
-    }
+    fillToolResult(result, ctx);
 
     return result;
 }

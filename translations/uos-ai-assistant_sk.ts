@@ -2,4332 +2,709 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="sk">
 <context>
-    <name>AddModelDialog</name>
-    <message>
-        <source>Add model</source>
-        <translation type="vanished">Pridať model</translation>
-    </message>
-    <message>
-        <source>LLM</source>
-        <translation type="vanished">LLM</translation>
-    </message>
-    <message>
-        <source>APPID</source>
-        <translation type="vanished">APPID</translation>
-    </message>
-    <message>
-        <source>Required, please input</source>
-        <translation type="vanished">Povinné, prosím zadajte</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">API kľúč</translation>
-    </message>
-    <message>
-        <source>APISecret</source>
-        <translation type="vanished">API tajomstvo</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Účet</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Povinné na rozlíšenie viacerých modelov</translation>
-    </message>
-    <message>
-        <source>Optional</source>
-        <translation type="vanished">Voliteľné</translation>
-    </message>
-    <message>
-        <source>Optional. The default address will be used if not filled in.</source>
-        <translation type="vanished">Voliteľné. Ak nie je vyplnené, použije sa predvolená adresa.</translation>
-    </message>
-    <message>
-        <source>Models List</source>
-        <translation type="vanished">Zoznam modelov</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="vanished">Vlastné</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Nepodarilo sa pripojiť k serveru, skontrolujte sieť alebo skúste neskôr.</translation>
-    </message>
-    <message>
-        <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="vanished">Pre nastavenia proxy prejdite do systémových nastavení proxy</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Prejsť do nastavení</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Zrušiť</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Názov modelu</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Doména</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Potvrdiť</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Uloženie zlyhalo, skúste neskôr</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">Názov účtu už existuje, prosím zmeňte ho</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">Najviac 20 znakov</translation>
-    </message>
-    <message>
-        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="vanished">Na testovanie dostupnosti modelu systém odošle testovacie informácie do veľkého modelu, čo spotrebuje malé množstvo tokenov.</translation>
-    </message>
-    <message>
-        <source>This LLM already exists, please do not add it again.</source>
-        <translation type="vanished">Tento LLM už existuje, nepridávajte ho znova.</translation>
-    </message>
-</context>
-<context>
-    <name>AiCodeTranslation</name>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Momentálne je príliš veľa návštevníkov, skúste neskôr.</translation>
-    </message>
-</context>
-<context>
-    <name>AiQuickDialog</name>
-    <message>
-        <source>type</source>
-        <translation type="vanished">typ</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Zrušiť</translation>
-    </message>
-    <message>
-        <source>Read Aloud</source>
-        <translation type="vanished">Čítať nahlas</translation>
-    </message>
-    <message>
-        <source>The audio device is not detected, please check and try again.</source>
-        <translation type="vanished">Zvukové zariadenie nebolo detekované, skontrolujte a skúste znova.</translation>
-    </message>
-    <message>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="vanished">Obsah generovaný AI je len na referenčné účely, venujte pozornosť presnosti informácií.</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="vanished">Kopírovať</translation>
-    </message>
-    <message>
-        <source>Polish this passage for me and just give me the result without any extra content.
-text：</source>
-        <translation type="vanished">Vylepšite tento text pre mňa a uveďte len výsledok bez akýchkoľvek ďalších informácií.
-
-text:</translation>
-    </message>
-    <message>
-        <source>Current model: </source>
-        <translation type="vanished">Aktuálny model: </translation>
-    </message>
-    <message>
-        <source>Regenerate</source>
-        <translation type="vanished">Obnoviť</translation>
-    </message>
-    <message>
-        <source>simplified Chinese</source>
-        <translation type="vanished">zjednodušená čínština</translation>
-    </message>
-    <message>
-        <source>traditional Chinese</source>
-        <translation type="vanished">tradičná čínština</translation>
-    </message>
-    <message>
-        <source>Tibetan</source>
-        <translation type="vanished">tibetčina</translation>
-    </message>
-    <message>
-        <source>English</source>
-        <translation type="vanished">angličtina</translation>
-    </message>
-    <message>
-        <source>Japanese </source>
-        <translation type="vanished">japončina</translation>
-    </message>
-    <message>
-        <source>German</source>
-        <translation type="vanished">nemčina</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation type="vanished">španielčina</translation>
-    </message>
-    <message>
-        <source>French</source>
-        <translation type="vanished">francúzština</translation>
-    </message>
-    <message>
-        <source>Italian</source>
-        <translation type="vanished">taliančina</translation>
-    </message>
-    <message>
-        <source>Korean</source>
-        <translation type="vanished">kórejčina</translation>
-    </message>
-    <message>
-        <source>Malay</source>
-        <translation type="vanished">malajčina</translation>
-    </message>
-    <message>
-        <source>Portuguese</source>
-        <translation type="vanished">portugalčina</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation type="vanished">ruština</translation>
-    </message>
-    <message>
-        <source>Thai</source>
-        <translation type="vanished">thajčina</translation>
-    </message>
-    <message>
-        <source>Vietnamese</source>
-        <translation type="vanished">vietnamčina</translation>
-    </message>
-    <message>
-        <source>Continue Dialog</source>
-        <translation type="vanished">Pokračovať v dialógu</translation>
-    </message>
-    <message>
-        <source>Automatic Detection</source>
-        <translation type="vanished">Automatická detekcia</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Hľadať</translation>
-    </message>
-    <message>
-        <source>Explain</source>
-        <translation type="vanished">Vysvetliť</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation type="vanished">Preložiť</translation>
-    </message>
-    <message>
-        <source>Expand</source>
-        <translation type="vanished">Rozšíriť</translation>
-    </message>
-    <message>
-        <source>Correct</source>
-        <translation type="vanished">Opraviť</translation>
-    </message>
-    <message>
-        <source>Add to the AI knowledge base</source>
-        <translation type="vanished">Pridať do znalostnej bázy AI</translation>
-    </message>
-    <message>
-        <source>Added</source>
-        <translation type="vanished">Pridané</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Konfigurácia modelu</translation>
-    </message>
-    <message>
-        <source>Copied</source>
-        <translation type="vanished">Skopírované</translation>
-    </message>
-    <message>
-        <source>No text recognized.</source>
-        <translation type="vanished">Nebol rozpoznaný žiadny text.</translation>
-    </message>
-    <message>
-        <source>The added content must be more than 10 words</source>
-        <translation type="vanished">Pridaný obsah musí mať viac ako 10 slov</translation>
-    </message>
-    <message>
-        <source>Summary</source>
-        <translation type="vanished">Zhrnutie</translation>
-    </message>
-    <message>
-        <source>Paste to Text</source>
-        <translation type="vanished">Vložiť do textu</translation>
-    </message>
-    <message>
-        <source>Continue writing</source>
-        <translation type="vanished">Pokračovať v písaní</translation>
-    </message>
-    <message>
-        <source>Polish</source>
-        <translation type="vanished">Upraviť</translation>
-    </message>
-    <message>
-        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation type="vanished">Výsledok prekladu je obmedzený schopnosťami modelu. Ak ste s prekladom nespokojní, prejdite na iné modely na domovskej stránke UOS AI.</translation>
-    </message>
-    <message>
-        <source>Translate this passage into %1 and give me a clear result directly.
-text：</source>
-        <translation type="vanished">Preložte tento text do %1 a poskytnite mi priamy a jasný výsledok. text：</translation>
-    </message>
-    <message>
-        <source>Not clickable</source>
-        <translation type="vanished">Neklikateľné</translation>
-    </message>
-    <message>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation type="vanished">Funkciu je možné použiť až po reštartovaní vstupnej metódy. Návod je nasledovný: 1. Kliknite pravým tlačidlom na ikonu vstupnej metódy v paneli úloh. 2. Kliknite na &quot;Reštartovať&quot;.</translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <comment>button</comment>
-        <translation type="vanished">OK</translation>
-    </message>
-    <message>
-        <source>Fill failed</source>
-        <translation type="vanished">Vyplnenie zlyhalo</translation>
-    </message>
-    <message>
-        <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="vanished">Nie je vybrané žiadne vstupné pole, vyberte vstupné pole a znova ho vyplňte.</translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <translation type="vanished">OK</translation>
-    </message>
-    <message>
-        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
-text：</source>
-        <translation type="vanished">Vysvetlite tento text jednoduchým jazykom. Poskytnite mi jasný výsledok bez zbytočného obsahu. text：</translation>
-    </message>
-    <message>
-        <source>Summarize this passage and give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="vanished">Zhrňte tento text a poskytnite mi priamy a jasný výsledok bez akéhokoľvek zbytočného obsahu. text：</translation>
-    </message>
-    <message>
-        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="vanished">Vhodne pokračujte v tomto texte. Netreba veľa slov. Poskytnite mi jasný výsledok bez zbytočného obsahu. text：</translation>
-    </message>
-    <message>
-        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="vanished">Vhodne rozšírte tento text. Netreba veľmi dlhý text. Poskytnite mi jasný výsledok bez zbytočného obsahu. text：</translation>
-    </message>
-    <message>
-        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="vanished">Skontrolujte, či sú v tomto texte nejaké preklepy. Ak áno, označte miesto chýb. Poskytnite mi priamy a jasný výsledok bez zbytočného obsahu. text：</translation>
-    </message>
-    <message>
-        <source> &quot;%1&quot; </source>
-        <translation type="vanished">&quot;%1&quot;</translation>
-    </message>
-    <message>
-        <source>Currently no model</source>
-        <translation type="vanished">Momentálne žiadny model</translation>
-    </message>
-    <message>
-        <source>Go to configure  </source>
-        <translation type="vanished">Prejsť na konfiguráciu</translation>
-    </message>
-</context>
-<context>
-    <name>AiToastMessage</name>
-    <message>
-        <source>Chat history cleared</source>
-        <translation type="vanished">História konverzácie vymazaná</translation>
-    </message>
-    <message>
-        <source>Copied successfully</source>
-        <translation type="vanished">Úspešne skopírované</translation>
-    </message>
-</context>
-<context>
-    <name>Application</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="vanished">UOS AI je inteligentný asistent pre počítač, váš osobný asistent! Môžete s ním komunikovať pomocou textu alebo hlasu a on vám pomôže odpovedať na otázky, poskytnúť informácie a generovať obrázky na základe vašich popisov.</translation>
-    </message>
-    <message>
-        <source>UOS AI FollowAlong/Write</source>
-        <translation type="vanished">UOS AI Sledovanie/Písanie</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Správa znalostnej bázy</translation>
-    </message>
-</context>
-<context>
     <name>AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="146"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Nepodarilo sa pripojiť k serveru, skontrolujte svoje sieťové pripojenie alebo skúste neskôr.</translation>
-    </message>
-</context>
-<context>
-    <name>ChatSeesion</name>
-    <message>
-        <source>function parsing failed</source>
-        <translation type="vanished">analýza funkcie zlyhala</translation>
-    </message>
-    <message>
-        <source>Application file does not exist</source>
-        <translation type="vanished">Aplikačný súbor neexistuje</translation>
-    </message>
-    <message>
-        <source>Started successfully</source>
-        <translation type="vanished">Úspešne spustené</translation>
-    </message>
-    <message>
-        <source>Startup failed</source>
-        <translation type="vanished">Spustenie zlyhalo</translation>
-    </message>
-    <message>
-        <source> The execution output content is </source>
-        <translation type="vanished">Výstupný obsah vykonania je</translation>
-    </message>
-</context>
-<context>
-    <name>ChatWindow</name>
-    <message>
-        <source>Mode</source>
-        <translation type="vanished">Režim</translation>
-    </message>
-    <message>
-        <source>Window Mode</source>
-        <translation type="vanished">Režim okna</translation>
-    </message>
-    <message>
-        <source>Sidebar Mode</source>
-        <translation type="vanished">Režim bočného panela</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Nastavenia</translation>
-    </message>
-    <message>
-        <source>Update Log</source>
-        <translation type="vanished">Denník aktualizácií</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Hlasový rozhovor</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Zrušiť</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Odstrániť</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Potvrdiť</translation>
-    </message>
-    <message>
-        <source>Confirm deletion %1?</source>
-        <translation type="vanished">Potvrdiť odstránenie %1?</translation>
-    </message>
-    <message>
-        <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation type="vanished">Po odstránení bude tento server nedostupný. Postupujte opatrne.</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="obsolete">Aktualizovať</translation>
-    </message>
-    <message>
-        <source>Non-vectorized plugin</source>
-        <translation type="vanished">Nevektorizovaný plugin</translation>
-    </message>
-    <message>
-        <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
-        <translation type="vanished">Pred použitím [Znalostnej bázy AI] musíte najskôr nainštalovať plugin na vektorizáciu, aby funkcia znalostnej bázy AI správne fungovala.</translation>
-    </message>
-    <message>
-        <source>Install</source>
-        <translation type="obsolete">Inštalovať</translation>
-    </message>
-    <message>
-        <source>The knowledge base is empty</source>
-        <translation type="vanished">Znalostná báza je prázdna</translation>
-    </message>
-    <message>
-        <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
-        <translation type="vanished">Pred použitím [Znalostnej bázy AI] musíte najskôr pridať dokumenty do znalostnej bázy. Po pridaní bude AI odpovedať na otázky na základe obsahu, ktorý ste pridali do znalostnej bázy.</translation>
-    </message>
-    <message>
-        <source>Add Files</source>
-        <translation type="vanished">Pridať súbory</translation>
-    </message>
-    <message>
-        <source>The following file has expired and cannot be used. Continue?</source>
-        <translation type="vanished">Nasledujúci súbor vypršal a nie je možné ho použiť. Pokračovať?</translation>
-    </message>
-    <message>
-        <source>Use later</source>
-        <translation type="vanished">Použiť neskôr</translation>
-    </message>
-    <message>
-        <source>Install Now</source>
-        <translation type="vanished">Nainštalovať teraz</translation>
-    </message>
-    <message>
-        <source>MCP environment missing</source>
-        <translation type="vanished">Chýba prostredie MCP</translation>
-    </message>
-    <message>
-        <source>Please go to the App Store to install UOS AI Agent</source>
-        <translation type="vanished">Prejdite do Obchodu aplikácií a nainštalujte agenta UOS AI</translation>
-    </message>
-    <message>
-        <source>Not Now</source>
-        <translation type="vanished">Teraz nie</translation>
-    </message>
-    <message>
-        <source>Claim Credits</source>
-        <translation type="vanished">Nárokovať kredity</translation>
-    </message>
-    <message>
-        <source>Free Credits Delivered</source>
-        <translation type="vanished">Doručené bezplatné kredity</translation>
-    </message>
-    <message>
-        <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation type="vanished">Vyčerpali ste bezplatné generačné kredity pre váš skúšobný účet. Dali sme vám ďalších 200 bezplatných kreditov platných tento mesiac. Preskúmajte viac funkcií a odomknite neobmedzené možnosti UOS AI!</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="vanished">Úspešne nárokované</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="vanished">Nepodarilo sa nárokovať. Skúste to znova.</translation>
-    </message>
-    <message>
-        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="vanished">UOS AI je inteligentný asistent pre počítače, váš osobný asistent! Môžete s ním komunikovať pomocou textu alebo hlasu a môže vám pomôcť odpovedať na otázky, poskytnúť informácie a generovať obrázky na základe vašich popisov.</translation>
-    </message>
-    <message>
-        <source>Filing Information</source>
-        <translation type="vanished">Informácie o archivácii</translation>
-    </message>
-</context>
-<context>
-    <name>CodeTranslation360</name>
-    <message>
-        <source>Authentication failed, insufficient balance</source>
-        <translation type="vanished">Autentifikácia zlyhala, nedostatok prostriedkov</translation>
-    </message>
-    <message>
-        <source>Authentication failed, daily limit exceeded</source>
-        <translation type="vanished">Autentifikácia zlyhala, prekročený denný limit</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Momentálne je príliš veľa návštevníkov, skúste to neskôr.</translation>
-    </message>
-    <message>
-        <source>The service is abnormal. Please contact the development team for troubleshooting.</source>
-        <translation type="vanished">Služba je nefunkčná. Pre riešenie problémov kontaktujte vývojový tím.</translation>
-    </message>
-</context>
-<context>
-    <name>CommonFailDialog</name>
-    <message>
-        <source>Error</source>
-        <translation type="vanished">Chyba</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <comment>button</comment>
-        <translation type="vanished">OK</translation>
+        <translation>Nepodarilo sa pripojiť k serveru, skontrolujte svoju sieť alebo to skúste znova neskôr.</translation>
     </message>
 </context>
 <context>
     <name>DocParse</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/docparse.cpp" line="24"/>
         <source>The document content is invalid or empty.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>EAiExecutor</name>
-    <message>
-        <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation type="vanished">Asistent pre osobnú vedomostnú bázu je možné používať až po nakonfigurovaní vedomostnej bázy.</translation>
-    </message>
-    <message>
-        <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">Asistent pre osobnú vedomostnú bázu je možné používať až po nakonfigurovaní modelového pluginu.</translation>
-    </message>
-    <message>
-        <source>The Deep System Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">Hlboký systémový asistent je možné používať až po nakonfigurovaní modelového pluginu.</translation>
-    </message>
-    <message>
-        <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">Asistent systému UOS je možné používať až po nakonfigurovaní modelového pluginu.</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Správa vedomostnej bázy</translation>
-    </message>
-    <message>
-        <source>MCP Server</source>
-        <translation type="vanished">MCP Server</translation>
-    </message>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI vyžaduje konfiguráciu účtu AI modelu pred použitím. Najprv nakonfigurujte modelový účet.</translation>
-    </message>
-    <message>
-        <source>Please configure the knowledge base.</source>
-        <translation type="vanished">Nakonfigurujte znalostnú bázu.</translation>
-    </message>
-    <message>
-        <source>Please install the model plug.</source>
-        <translation type="vanished">Nainštalujte zásuvný modul modelu.</translation>
-    </message>
-    <message>
-        <source>Export Image As</source>
-        <translation type="vanished">Exportovať obrázok ako</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="obsolete">Úspešne nárokované</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="obsolete">Nepodarilo sa nárokovať. Skúste to znova.</translation>
-    </message>
-    <message>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="vanished">Môžete nahrať maximálne 3 súbory alebo obrázky</translation>
-    </message>
-</context>
-<context>
-    <name>EAiFAQInit</name>
-    <message>
-        <source>Translate the following text into English for me.</source>
-        <translation type="vanished">Preložte nasledujúci text do angličtiny.</translation>
-    </message>
-    <message>
-        <source>Translate the following document into Chinese.</source>
-        <translation type="vanished">Preložte nasledujúci dokument do čínštiny.</translation>
-    </message>
-    <message>
-        <source>What does the word “Agent” mean in the AI industry?</source>
-        <translation type="vanished">Čo znamená slovo „Agent“ v odvetví AI?</translation>
-    </message>
-    <message>
-        <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation type="vanished">Preložte nasledujúci obsah do čínštiny. Požiadavky: Presný význam, formálny a profesionálny jazyk.</translation>
-    </message>
-    <message>
-        <source>What are some colloquial ways to address a friend in English?</source>
-        <translation type="vanished">Aké sú niektoré hovorové spôsoby oslovovania priateľa v angličtine?</translation>
-    </message>
-    <message>
-        <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation type="vanished">Preložte nasledujúci klasický čínsky text do moderného čínskeho jazyka.</translation>
-    </message>
-    <message>
-        <source>Summarize</source>
-        <translation type="vanished">Zhrnúť</translation>
-    </message>
-    <message>
-        <source>Proofread</source>
-        <translation type="vanished">Korektúra</translation>
-    </message>
-    <message>
-        <source>Explain</source>
-        <translation type="vanished">Vysvetliť</translation>
-    </message>
-    <message>
-        <source>Expand</source>
-        <translation type="vanished">Rozšíriť</translation>
-    </message>
-    <message>
-        <source>Continue</source>
-        <translation type="vanished">Pokračovať</translation>
-    </message>
-    <message>
-        <source>Polish</source>
-        <translation type="vanished">Vylepšiť</translation>
-    </message>
-    <message>
-        <source>Please help me write a work summary based on this document</source>
-        <translation type="vanished">Pomôžte mi napísať pracovné zhrnutie na základe tohto dokumentu</translation>
-    </message>
-    <message>
-        <source>I need a work summary for Project A, please help me organize the key points</source>
-        <translation type="vanished">Potrebujem pracovné zhrnutie pre Projekt A, pomôžte mi zorganizovať kľúčové body</translation>
-    </message>
-    <message>
-        <source>Please generate a concise work summary based on my input text</source>
-        <translation type="vanished">Vygenerujte stručné pracovné zhrnutie na základe môjho vstupného textu</translation>
-    </message>
-    <message>
-        <source>Analyze this report and extract key points for the work summary</source>
-        <translation type="vanished">Analyzujte túto správu a extrahujte kľúčové body pre pracovné zhrnutie</translation>
-    </message>
-    <message>
-        <source>I need a work summary including quarterly data, please refer to the attachment</source>
-        <translation type="vanished">Potrebujem pracovné zhrnutie vrátane štvrťročných údajov, pozrite si prílohu</translation>
-    </message>
-    <message>
-        <source>Help me write a work summary highlighting personal contributions</source>
-        <translation type="vanished">Pomôžte mi napísať pracovné zhrnutie s dôrazom na osobné príspevky</translation>
-    </message>
-    <message>
-        <source>Generate a work summary from meeting notes, focusing on action items</source>
-        <translation type="vanished">Vygenerujte pracovné zhrnutie zo zápisov z rokovania so zameraním na akčné body</translation>
-    </message>
-    <message>
-        <source>I need a bilingual work summary in Chinese and English, please refer to the provided materials</source>
-        <translation type="vanished">Potrebujem dvojjazyčné pracovné zhrnutie v čínštine a angličtine, pozrite si poskytnuté materiály</translation>
-    </message>
-    <message>
-        <source>Help me organize last month&apos;s work content and generate a summary</source>
-        <translation type="vanished">Pomôžte mi zorganizovať pracovný obsah z minulého mesiaca a vygenerovať zhrnutie</translation>
-    </message>
-    <message>
-        <source>Write a work summary based on these task lists, emphasizing completion status</source>
-        <translation type="vanished">Napíšte pracovné zhrnutie na základe týchto zoznamov úloh s dôrazom na stav dokončenia</translation>
-    </message>
-    <message>
-        <source>Check for grammatical errors in this passage</source>
-        <translation type="vanished">Skontrolujte gramatické chyby v tomto úryvku</translation>
-    </message>
-    <message>
-        <source>Help me find spelling mistakes in this article</source>
-        <translation type="vanished">Pomôžte mi nájsť pravopisné chyby v tomto článku</translation>
-    </message>
-    <message>
-        <source>Correct the inappropriate word choices in this dialogue</source>
-        <translation type="vanished">Opravte nevhodný výber slov v tomto dialógu</translation>
-    </message>
-    <message>
-        <source>Fix the punctuation issues in this document</source>
-        <translation type="vanished">Opravte problémy s interpunkciou v tomto dokumente</translation>
-    </message>
-    <message>
-        <source>Revise the unclear expressions in this text</source>
-        <translation type="vanished">Revidujte nejasné výrazy v tomto texte</translation>
-    </message>
-    <message>
-        <source>Edit the language errors in this email</source>
-        <translation type="vanished">Upravte jazykové chyby v tomto e-maile</translation>
-    </message>
-    <message>
-        <source>Check if this text follows standard English conventions</source>
-        <translation type="vanished">Skontrolujte, či tento text dodržiava štandardné anglické konvencie</translation>
-    </message>
-    <message>
-        <source>Correct the logical flaws in this report</source>
-        <translation type="vanished">Opravte logické chyby v tejto správe</translation>
-    </message>
-    <message>
-        <source>Identify language errors in this code comment</source>
-        <translation type="vanished">Identifikujte jazykové chyby v tomto komentári kódu</translation>
-    </message>
-    <message>
-        <source>Fix the ambiguous statements in this contract</source>
-        <translation type="vanished">Opravte nejednoznačné vyhlásenia v tejto zmluve</translation>
-    </message>
-    <message>
-        <source>Explain the basic principles of quantum computing</source>
-        <translation type="vanished">Vysvetlite základné princípy kvantového počítania</translation>
-    </message>
-    <message>
-        <source>Describe photosynthesis in simple terms</source>
-        <translation type="vanished">Opíšte fotosyntézu jednoduchými slovami</translation>
-    </message>
-    <message>
-        <source>Detail how blockchain technology works</source>
-        <translation type="vanished">Podrobne popíšte, ako funguje technológia blockchain</translation>
-    </message>
-    <message>
-        <source>Explain relativity from a professional perspective</source>
-        <translation type="vanished">Vysvetlite relativitu z profesionálneho hľadiska</translation>
-    </message>
-    <message>
-        <source>Use metaphors to describe what artificial intelligence is</source>
-        <translation type="vanished">Použite metafóry na opis toho, čo je umelá inteligencia</translation>
-    </message>
-    <message>
-        <source>Describe climate change in layman&apos;s terms</source>
-        <translation type="vanished">Popíšte klimatické zmeny zrozumiteľným spôsobom</translation>
-    </message>
-    <message>
-        <source>Explain the structure of the solar system to elementary students</source>
-        <translation type="vanished">Vysvetlite štruktúru slnečnej sústavy žiakom základných škôl</translation>
-    </message>
-    <message>
-        <source>Expand this text to 300 words, focusing on scene details and character emotions</source>
-        <translation type="vanished">Rozšírte tento text na 300 slov so zameraním na detaily scény a emócie postáv</translation>
-    </message>
-    <message>
-        <source>Rewrite this paragraph into 500 words in an academic style, adding data support and citations</source>
-        <translation type="vanished">Prepíšte tento odsek do 500 slov v akademickom štýle s pridaním údajov a citácií</translation>
-    </message>
-    <message>
-        <source>Expand this passage with more metaphors and rhetorical devices to make it more vivid</source>
-        <translation type="vanished">Rozšírte tento úryvok o viac metafor a rétorických prostriedkov, aby bol živší</translation>
-    </message>
-    <message>
-        <source>Please extend this short article to 1000 words, supplementing with specific cases and practical steps</source>
-        <translation type="vanished">Rozšírte tento krátky článok na 1000 slov s pridaním konkrétnych prípadov a praktických krokov</translation>
-    </message>
-    <message>
-        <source>Expand this dialogue by adding characters&apos; psychological activities and dialogue details</source>
-        <translation type="vanished">Rozšírte tento dialóg o psychologické aktivity postáv a detaily rozhovoru</translation>
-    </message>
-    <message>
-        <source>Rewrite the content of this document into a report format, including abstract, body, and conclusion</source>
-        <translation type="vanished">Prepíšte obsah tohto dokumentu do formátu správy vrátane abstraktu, hlavnej časti a záveru</translation>
-    </message>
-    <message>
-        <source>Expand this technical description to 800 words, adding more technical parameters and diagram explanations</source>
-        <translation type="vanished">Rozšírte tento technický popis na 800 slov s pridaním technických parametrov a vysvetlení diagramov</translation>
-    </message>
-    <message>
-        <source>Rewrite this email to be more formal and professional, supplementing relevant background information</source>
-        <translation type="vanished">Prepíšte tento e-mail formálnejšie a profesionálnejšie s doplnením relevantných informácií</translation>
-    </message>
-    <message>
-        <source>Expand this story to 1500 words, adding more plot twists and character backgrounds</source>
-        <translation type="vanished">Rozšírte tento príbeh na 1500 slov s pridaním viacerých zápletek a pozadí postáv</translation>
-    </message>
-    <message>
-        <source>Please expand this summary, highlighting key achievements and future plans, word count unlimited</source>
-        <translation type="vanished">Rozšírte tento súhrn s dôrazom na kľúčové úspechy a budúce plány, počet slov nie je obmedzený</translation>
-    </message>
-    <message>
-        <source>Please continue writing this short passage about future technology, focusing on how AI changes daily life, around 300 words, in a popular science style</source>
-        <translation type="vanished">Pokračujte v písaní tohto krátkeho textu o budúcej technológii so zameraním na to, ako AI mení každodenný život, približne 300 slov v populárno-vedeckom štýle</translation>
-    </message>
-    <message>
-        <source>Help me expand the last paragraph of this business plan, emphasizing market potential and competitive advantages, no word limit, formal style</source>
-        <translation type="vanished">Pomôžte mi rozšíriť posledný odsek tohto obchodného plánu s dôrazom na trhový potenciál a konkurenčné výhody, bez obmedzenia počtu slov, formálny štýl</translation>
-    </message>
-    <message>
-        <source>Continue the ending of this fairy tale, warm and touching, the protagonist achieves their dream, about 200 words</source>
-        <translation type="vanished">Pokračujte v závere tejto rozprávky, teplo a dojímavo, hlavná postava dosiahne svoj sen, približne 200 slov</translation>
-    </message>
-    <message>
-        <source>Please write the second half of this email, tone friendly and professional, focusing on collaboration details, within 150 words</source>
-        <translation type="vanished">Napíšte druhú polovicu tohto e-mailu, priateľským a profesionálnym tónom, so zameraním na detaily spolupráce, do 150 slov</translation>
-    </message>
-    <message>
-        <source>Expand the next paragraph of this travelogue, describing the scenery in the valley, vivid and imaginative, around 200 words</source>
-        <translation type="vanished">Rozšírte ďalší odsek tohto cestopisu, popisujúci scenériu v údolí, živý a nápaditý, približne 200 slov</translation>
-    </message>
-    <message>
-        <source>Continue the next chapter of this mystery novel, with a plot twist, maintaining suspense, no word limit</source>
-        <translation type="vanished">Pokračujte v ďalšej kapitole tohto mysteriózneho románu s prekvapivou zápletkou, zachovajte napätie, bez obmedzenia počtu slov</translation>
-    </message>
-    <message>
-        <source>Help me write the conclusion of this speech, inspiring and emphasizing teamwork, about 100 words</source>
-        <translation type="vanished">Pomôžte mi napísať záver tohto prejavu, inšpiratívny a s dôrazom na tímovú prácu, približne 100 slov</translation>
-    </message>
-    <message>
-        <source>Expand the performance description section of this product manual, detailed and accurate, around 300 words</source>
-        <translation type="vanished">Rozšírte sekciu popisu výkonu tohto návodu na produkt, podrobne a presne, približne 300 slov</translation>
-    </message>
-    <message>
-        <source>Continue the beginning of this love story, set in rainy Paris, romantic style, 150 words</source>
-        <translation type="vanished">Pokračujte v úvode tohto romantického príbehu zasadeného do daždivého Paríža, romantický štýl, 150 slov</translation>
-    </message>
-    <message>
-        <source>Please write the discussion section of this paper, focusing on the limitations of the experimental result, academic style, no word limit</source>
-        <translation type="vanished">Napíšte diskusnú časť tejto práce so zameraním na obmedzenia experimentálnych výsledkov, akademický štýl, bez obmedzenia počtu slov</translation>
-    </message>
-    <message>
-        <source>Please polish this text to make it more formal and professional for a business email</source>
-        <translation type="vanished">Upravte tento text, aby bol formálnejší a profesionálnejší pre obchodný e-mail</translation>
-    </message>
-    <message>
-        <source>Rewrite this passage to be more lively and engaging for social media posts</source>
-        <translation type="vanished">Prepíšte tento text, aby bol živší a pútavejší pre príspevky na sociálnych sieťach</translation>
-    </message>
-    <message>
-        <source>I need to refine the abstract of this academic paper to be more concise and clear within 200 words</source>
-        <translation type="vanished">Potrebujem upraviť abstrakt tejto akademickej práce, aby bol stručnejší a jasnejší, do 200 slov</translation>
-    </message>
-    <message>
-        <source>Polish this dialogue to make it more natural and fluent for spoken communication</source>
-        <translation type="vanished">Upravte tento dialóg, aby bol prirodzenejší a plynulejší pre hovorenú komunikáciu</translation>
-    </message>
-    <message>
-        <source>Enhance this product description to highlight its premium and innovative features for potential customers</source>
-        <translation type="vanished">Vylepšite tento popis produktu, aby zvýraznil jeho prémiové a inovatívne vlastnosti pre potenciálnych zákazníkov</translation>
-    </message>
-    <message>
-        <source>Help me polish this cover letter to make it more persuasive and personalized</source>
-        <translation type="vanished">Pomôžte mi upraviť tento sprievodný list, aby bol presvedčivejší a personalizovanejší</translation>
-    </message>
-    <message>
-        <source>Rewrite this blog post to be more humorous and appealing to young readers</source>
-        <translation type="vanished">Prepíšte tento blogový príspevok, aby bol vtipnejší a príťažlivejší pre mladých čitateľov</translation>
-    </message>
-    <message>
-        <source>Refine the opening section of this report to make it more captivating</source>
-        <translation type="vanished">Upravte úvodnú časť tejto správy, aby bola pútavejšia</translation>
-    </message>
-    <message>
-        <source>I need to polish this technical document to make it more accessible for non-experts</source>
-        <translation type="vanished">Potrebujem upraviť tento technický dokument, aby bol prístupnejší pre laikov</translation>
-    </message>
-    <message>
-        <source>Please help me rewrite this apology letter to sound more sincere and appropriate</source>
-        <translation type="vanished">Prosím, pomôžte mi prepísať tento list s ospravedlnením, aby znel úprimnejšie a vhodnejšie</translation>
-    </message>
-    <message>
-        <source>Articles</source>
-        <translation type="vanished">Články</translation>
-    </message>
-    <message>
-        <source>Speeches</source>
-        <translation type="vanished">Prejavy</translation>
-    </message>
-    <message>
-        <source>Outlines</source>
-        <translation type="vanished">Osnovy</translation>
-    </message>
-    <message>
-        <source>Notifications</source>
-        <translation type="vanished">Oznámenia</translation>
-    </message>
-    <message>
-        <source>Posts</source>
-        <translation type="vanished">Príspevky</translation>
-    </message>
-    <message>
-        <source>Work Report</source>
-        <translation type="vanished">Pracovná správa</translation>
-    </message>
-    <message>
-        <source>Research Report</source>
-        <translation type="vanished">Výskumná správa</translation>
-    </message>
-    <message>
-        <source>Please summarize the key points of this document</source>
-        <translation type="vanished">Zhrňte, prosím, kľúčové body tohto dokumentu</translation>
-    </message>
-    <message>
-        <source>List the main ideas of this file for me</source>
-        <translation type="vanished">Vymenujte pre mňa hlavné myšlienky tohto súboru</translation>
-    </message>
-    <message>
-        <source>Summarize the core idea of this passage</source>
-        <translation type="vanished">Zhrňte hlavnú myšlienku tohto úryvku</translation>
-    </message>
-    <message>
-        <source>Use concise language to summarize this article</source>
-        <translation type="vanished">Použite stručný jazyk na zhrnutie tohto článku</translation>
-    </message>
-    <message>
-        <source>I need a summary of this report, no more than 200 words</source>
-        <translation type="vanished">Potrebujem zhrnutie tejto správy, nie viac ako 200 slov</translation>
-    </message>
-    <message>
-        <source>Extract the main data and conclusions from this document</source>
-        <translation type="vanished">Extrahujte hlavné údaje a závery z tohto dokumentu</translation>
-    </message>
-    <message>
-        <source>Summarize the main sections and points of this lengthy content</source>
-        <translation type="vanished">Zhrňte hlavné časti a body tohto rozsiahleho obsahu</translation>
-    </message>
-    <message>
-        <source>Help me summarize the research methods and findings of this paper</source>
-        <translation type="vanished">Pomôžte mi zhrnúť výskumné metódy a zistenia tejto práce</translation>
-    </message>
-    <message>
-        <source>Please summarize the key points of this article in a table format</source>
-        <translation type="vanished">Zhrňte, prosím, kľúčové body tohto článku vo forme tabuľky</translation>
-    </message>
-    <message>
-        <source>Summarize the operational steps in this file using bullet points</source>
-        <translation type="vanished">Zhrňte operačné kroky v tomto súbore pomocou odrážok</translation>
-    </message>
-    <message>
-        <source>Display the key clauses of this contract in bullet list format</source>
-        <translation type="vanished">Zobrazte kľúčové klauzuly tejto zmluvy vo formate zoznamu s odrážkami</translation>
-    </message>
-    <message>
-        <source>Create an outline for a report on AI trends, covering technology, ethics, and applications</source>
-        <translation type="vanished">Vytvorte osnovu správy o trendoch umelej inteligencie, ktorá pokrýva technológiu, etiku a aplikácie</translation>
-    </message>
-    <message>
-        <source>Organize the uploaded paper into a structured research framework outline</source>
-        <translation type="vanished">Usporiadajte nahratý dokument do štruktúrovanej osnovy výskumného rámca</translation>
-    </message>
-    <message>
-        <source>I need a business plan outline including market analysis, product description, and financial planning</source>
-        <translation type="vanished">Potrebujem osnovu podnikateľského plánu vrátane analýzy trhu, popisu produktu a finančného plánovania</translation>
-    </message>
-    <message>
-        <source>Convert this speech into a PowerPoint outline with bullet points for each section</source>
-        <translation type="vanished">Preveďte tento prejav do osnovy PowerPointu s odrážkami pre každú časť</translation>
-    </message>
-    <message>
-        <source>Write a book summary outline covering key points and my personal reflections</source>
-        <translation type="vanished">Napíšte osnovu zhrnutia knihy, ktorá pokrýva kľúčové body a moje osobné úvahy</translation>
-    </message>
-    <message>
-        <source>Summarize the meeting notes file into a project execution plan outline</source>
-        <translation type="vanished">Zhrňte súbor so zápisnicou z porady do osnovy plánu realizácie projektu</translation>
-    </message>
-    <message>
-        <source>I need a thesis chapter outline including introduction, literature review, and methodology</source>
-        <translation type="vanished">Potrebujem osnovu kapitoly dizertačnej práce vrátane úvodu, prehľadu literatúry a metodológie</translation>
-    </message>
-    <message>
-        <source>Create a product requirements document (PRD) outline with feature descriptions and user flows</source>
-        <translation type="vanished">Vytvorte osnovu dokumentu s požiadavkami na produkt (PRD) s popisom funkcií a tokov používateľov</translation>
-    </message>
-    <message>
-        <source>Extract key data from this industry report to make a summary outline</source>
-        <translation type="vanished">Extrahujte kľúčové údaje z tejto priemyselnej správy, aby ste vytvorili zhrnutú osnovu</translation>
-    </message>
-    <message>
-        <source>Write an event planning outline including schedule, team roles, and budget</source>
-        <translation type="vanished">Napíšte osnovu plánovania udalosti vrátane harmonogramu, rolí tímu a rozpočtu</translation>
-    </message>
-    <message>
-        <source>Generate a three-level outline from this document</source>
-        <translation type="vanished">Vytvoriť trojúrovňový náčrt z tohto dokumentu</translation>
-    </message>
-    <message>
-        <source>Extract core framework from meeting notes</source>
-        <translation type="vanished">Extrahovať základný rámec zo zápisov z porady</translation>
-    </message>
-    <message>
-        <source>Organize research report structure</source>
-        <translation type="vanished">Organizovať štruktúru výskumnej správy</translation>
-    </message>
-    <message>
-        <source>Create product feature overview</source>
-        <translation type="vanished">Vytvoriť prehľad vlastností produktu</translation>
-    </message>
-    <message>
-        <source>Design training course syllabus</source>
-        <translation type="vanished">Navrhnúť osnovu školiaceho kurzu</translation>
-    </message>
-    <message>
-        <source>Analyze literature review framework</source>
-        <translation type="vanished">Analyzovať rámec prehľadu literatúry</translation>
-    </message>
-    <message>
-        <source>Generate business plan table of contents</source>
-        <translation type="vanished">Vytvoriť obsah obchodného plánu</translation>
-    </message>
-    <message>
-        <source>Write event planning flow points</source>
-        <translation type="vanished">Napísať body plánovania udalosti</translation>
-    </message>
-    <message>
-        <source>Help me write a meeting notice for tomorrow at 3 PM in Conference Room A about project progress reporting</source>
-        <translation type="vanished">Pomôžte mi napísať oznámenie o stretnutí na zajtra o 15:00 v Konferenčnej miestnosti A o hlásení pokroku projektu</translation>
-    </message>
-    <message>
-        <source>Create a concise notice based on this document highlighting the deadline and submission method</source>
-        <translation type="vanished">Vytvorte stručné oznámenie na základe tohto dokumentu, ktoré zdôrazní termín a spôsob odovzdania</translation>
-    </message>
-    <message>
-        <source>Draft a holiday notice for Spring Festival from February 10 to 17 with work resuming on February 18</source>
-        <translation type="vanished">Pripraviť oznámenie o sviatkoch na Jarový festival od 10. februára do 17. februára s obnovením práce 18. februára</translation>
-    </message>
-    <message>
-        <source>I need an activity notice for staff training all day next Wednesday at the company auditorium</source>
-        <translation type="vanished">Potrebujem oznámenie o aktivite pre školenie zamestnancov celý deň budúcu stredu v firemnej auditóriu</translation>
-    </message>
-    <message>
-        <source>Format the provided text materials into a formal notice with standard formatting and professional tone</source>
-        <translation type="vanished">Formátovať poskytnuté textové materiály do formálneho oznámenia so štandardným formátovaním a profesionálnym tónom</translation>
-    </message>
-    <message>
-        <source>Write a power outage notice for this Saturday from 9 AM to 5 PM affecting the entire office building</source>
-        <translation type="vanished">Napísať oznámenie o výpadku elektriny na túto sobotu od 9:00 do 17:00, ktorý postihne celú administratívnu budovu</translation>
-    </message>
-    <message>
-        <source>Generate a meeting change notice shifting the original time to Friday at 10 AM keeping other details same</source>
-        <translation type="vanished">Vytvoriť oznámenie o zmene stretnutia, ktoré posunie pôvodný čas na piatok o 10:00, pričom ostatné podrobnosti zostanú rovnaké</translation>
-    </message>
-    <message>
-        <source>Prepare a brief notice based on the attached meeting minutes for absent attendees</source>
-        <translation type="vanished">Pripraviť stručné oznámenie na základe priložených zápisov z porady pre neprítomných účastníkov</translation>
-    </message>
-    <message>
-        <source>Draft a system upgrade notice scheduled tonight from midnight to 3 AM with system downtime</source>
-        <translation type="vanished">Pripraviť oznámenie o aktualizácii systému naplánovanej na dnešnú noc od polnoci do 3:00 s výpadkom systému</translation>
-    </message>
-    <message>
-        <source>Write a concise holiday duty arrangement notice listing on-duty staff and contact information</source>
-        <translation type="vanished">Napísať stručné oznámenie o služobnom poriadku počas sviatkov s uvedením zamestnancov na službe a kontaktných údajov</translation>
-    </message>
-    <message>
-        <source>Help me write a public health article about healthy eating in simple language for general readers</source>
-        <translation type="vanished">Pomôžte mi napísať článok o verejnom zdraví o zdravom stravovaní jednoduchým jazykom pre všeobecných čitateľov</translation>
-    </message>
-    <message>
-        <source>Create a fun and engaging tech trend post based on this document</source>
-        <translation type="vanished">Vytvorte zábavný a pútavý príspevok o technologických trendoch na základe tohto dokumentu</translation>
-    </message>
-    <message>
-        <source>Draft a holiday promotion post highlighting discounts and event schedule</source>
-        <translation type="vanished">Pripraviť príspevok o sviatkovej akcii, ktorý zdôrazní zľavy a rozvrh udalostí</translation>
-    </message>
-    <message>
-        <source>I need a product launch article focusing on features and customer reviews</source>
-        <translation type="vanished">Potrebujem článok o uvedení produktu, ktorý sa zameriava na vlastnosti a recenzie zákazníkov</translation>
-    </message>
-    <message>
-        <source>Turn this interview transcript into a casual personality profile post</source>
-        <translation type="vanished">Premeňte tento prepis rozhovoru na neformálny profil osobnosti</translation>
-    </message>
-    <message>
-        <source>Write a travel guide recommending three popular spots with practical tips</source>
-        <translation type="vanished">Napísať cestovný sprievodca, ktorý odporučí tri populárne miesta s praktickými tipmi</translation>
-    </message>
-    <message>
-        <source>Generate an anniversary post reviewing company history and thanking customers</source>
-        <translation type="vanished">Vytvoriť výročný príspevok, ktorý zhodnotí históriu spoločnosti a poďakuje zákazníkom</translation>
-    </message>
-    <message>
-        <source>Analyze this industry report with visualized data for an insightful post</source>
-        <translation type="vanished">Analyzovať túto priemyselnú správu s vizualizovanými údajmi pre informatívny príspevok</translation>
-    </message>
-    <message>
-        <source>Draft a charity campaign post encouraging participation with clear instructions</source>
-        <translation type="vanished">Pripraviť príspevok o charitatívnej kampani, ktorý povzbudí k účasti s jasnými pokynmi</translation>
-    </message>
-    <message>
-        <source>Write a career skills article with five actionable tips and real examples</source>
-        <translation type="vanished">Napísať článok o kariérnych zručnostiach s piatimi praktickými tipmi a reálnymi príkladmi</translation>
-    </message>
-    <message>
-        <source>Help me write a weekly work summary focusing on project progress and team collaboration</source>
-        <translation type="vanished">Pomôžte mi napísať týždenný pracovný súhrn, ktorý sa zameriava na pokrok projektu a spoluprácu tímu</translation>
-    </message>
-    <message>
-        <source>Generate a concise work summary based on the meeting notes file I uploaded</source>
-        <translation type="vanished">Vytvoriť stručný pracovný súhrn na základe nahratého súboru so zápismi z porady</translation>
-    </message>
-    <message>
-        <source>I need a quarterly work summary including data analysis and personal growth reflection</source>
-        <translation type="vanished">Potrebujem štvrťročnú pracovnú sumarizáciu vrátane analýzy údajov a úvahy o osobnom raste</translation>
-    </message>
-    <message>
-        <source>Create a work summary based on the following text [paste text]</source>
-        <translation type="vanished">Vytvorte pracovnú sumarizáciu na základe nasledujúceho textu [vložte text]</translation>
-    </message>
-    <message>
-        <source>Write a work summary highlighting this month&apos;s KPI achievements and challenges encountered</source>
-        <translation type="vanished">Napíšte pracovnú sumarizáciu, ktorá zdôrazní úspechy KPI tohto mesiaca a stretnuté výzvy</translation>
-    </message>
-    <message>
-        <source>Help me summarize last week&apos;s work categorized by projects</source>
-        <translation type="vanished">Pomôžte mi zhrnúť minulotýždennú prácu zoradenú podľa projektov</translation>
-    </message>
-    <message>
-        <source>Generate a work summary from email content emphasizing pending tasks and completions</source>
-        <translation type="vanished">Vytvorte pracovnú sumarizáciu z obsahu e-mailu s dôrazom na čakajúce úlohy a dokončenia</translation>
-    </message>
-    <message>
-        <source>I need an annual summary including work highlights and improvement plans</source>
-        <translation type="vanished">Potrebujem ročnú sumarizáciu vrátane pracovných vrcholov a plánov zlepšenia</translation>
-    </message>
-    <message>
-        <source>Generate a monthly work report from the data I uploaded</source>
-        <translation type="vanished">Vytvorte mesačnú pracovnú správu z nahraných údajov</translation>
-    </message>
-    <message>
-        <source>Help me organize scattered work notes into a structured work summary</source>
-        <translation type="vanished">Pomôžte mi usporiadať roztrúsené pracovné poznámky do štruktúrovanej pracovnej sumarizácie</translation>
-    </message>
-    <message>
-        <source>Analyze the uploaded data and generate a market trend report</source>
-        <translation type="vanished">Analyzujte nahrané údaje a vytvorte správu o trhových trendoch</translation>
-    </message>
-    <message>
-        <source>Extract key information from the text and compile an industry analysis report</source>
-        <translation type="vanished">Extrahujte kľúčové informácie z textu a zostavte správu o analýze odvetvia</translation>
-    </message>
-    <message>
-        <source>Combine the contents of the file to write a competitor research report</source>
-        <translation type="vanished">Spojte obsah súboru a napíšte správu o výskume konkurencie</translation>
-    </message>
-    <message>
-        <source>Generate a user needs research summary based on the provided interview records</source>
-        <translation type="vanished">Vytvorte sumarizáciu výskumu používateľských potrieb na základe poskytnutých záznamov rozhovorov</translation>
-    </message>
-    <message>
-        <source>Analyze these sales data and produce a quarterly market performance report</source>
-        <translation type="vanished">Analyzujte tieto predajné údaje a vytvorte štvrťročnú správu o výkone trhu</translation>
-    </message>
-    <message>
-        <source>Write a technical research report based on the given product description</source>
-        <translation type="vanished">Napíšte technickú výskumnú správu na základe poskytnutého popisu produktu</translation>
-    </message>
-    <message>
-        <source>Organize these user feedback and generate a product improvement suggestion report</source>
-        <translation type="vanished">Usporiadajte tieto spätné väzby používateľov a vytvorte správu s návrhmi na zlepšenie produktu</translation>
-    </message>
-    <message>
-        <source>Please write a market opportunity analysis report based on the provided file</source>
-        <translation type="vanished">Napíšte správu o analýze trhových príležitostí na základe poskytnutého súboru</translation>
-    </message>
-    <message>
-        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation type="vanished">Pomôžte mi napísať esej na tému [%1] s [jasnou štruktúrou a bohatým obsahom].</translation>
-    </message>
-    <message>
-        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation type="vanished">Pomôžte mi napísať verejný tweet na tému [%1], ktorý vyžaduje [jasnú štruktúru] a [uvoľnený] tón.</translation>
-    </message>
-    <message>
-        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation type="vanished">Pomôžte mi napísať zhrnutie mojej nedávnej práce, vrátane [%1] a [výsledkov], ktoré vyžaduje [formálny] tón.</translation>
-    </message>
-    <message>
-        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation type="vanished">Pomôžte mi napísať výskumnú správu o [%1], ktorá musí obsahovať aspoň [popis stavu, analýzu problému, protiopatrenia a návrhy, závery výskumu].</translation>
-    </message>
-    <message>
-        <source>Artificial Intelligence</source>
-        <translation type="vanished">Umelá inteligencia</translation>
-    </message>
-    <message>
-        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation type="vanished">Pomôžte mi napísať reč na tému [%1] pre [Vedenie spoločnosti], ktorá vyžaduje [jasnú štruktúru a živý jazyk].</translation>
-    </message>
-    <message>
-        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation type="vanished">Pomôžte mi napísať osnovu na tému [%1], ktorá sa použije na [výrobu PPT].</translation>
-    </message>
-    <message>
-        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation type="vanished">Pomôžte mi napísať oznámenie o [%1], príjemcom sú [Všetci zamestnanci] a odosielateľom je [Administratívne oddelenie].</translation>
-    </message>
-    <message>
-        <source>National Day Holiday</source>
-        <translation type="vanished">Sviatok národného dňa</translation>
-    </message>
-    <message>
-        <source>work content</source>
-        <translation type="vanished">pracovný obsah</translation>
-    </message>
-</context>
-<context>
-    <name>EAiPrompt</name>
-    <message>
-        <source>---Role---
-You are a helpful assistant, answering questions about the background knowledge provided.
-
----Goal---
-Respond to users&apos; questions, incorporating any relevant common sense.If you don&apos;t know the answer, just say so. Don&apos;t make it up.
-
----knowledge---
-%1
-
----question---
-%2
-</source>
-        <translation type="vanished">---Rola---
-
-Ste nápomocný asistent, ktorý odpovedá na otázky o poskytnutých poznatkoch.
-
----Cieľ---
-
-Odpovedzte na používateľove otázky a začleňte všetky relevantné všeobecné poznatky. Ak neviete odpoveď, jednoducho to povedzte. Nevymýšľajte si.
-
----znalosti---
-
-%1
-
----otázka---
-
-%2</translation>
-    </message>
-    <message>
-        <source>The output answer starts with &quot;No relevant information was found in your knowledge base.&quot;---question--
-:%1
-</source>
-        <translation type="vanished">Výstupná odpoveď začína &quot;Vo vašej znalostnej báze sa nenašli žiadne relevantné informácie.&quot;---otázka--
-
-:%1</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a helpful assistant, answering questions about the background knowledge provided.
-
----Goal---
-Respond to users&apos; questions, incorporating any relevant common sense.If you don&apos;t know the answer, just say so. Don&apos;t make it up.
-
----knowledge---
-%1
-
----question---
-%2</source>
-        <translation type="vanished">---Rola---
-
-Ste nápomocný asistent, ktorý odpovedá na otázky o poskytnutých poznatkoch.
-
----Cieľ---
-
-Odpovedzte na používateľove otázky a začleňte všetky relevantné všeobecné poznatky. Ak neviete odpoveď, jednoducho to povedzte. Nevymýšľajte si.
-
----znalosti---
-
-%1
-
----otázka---
-
-%2</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a professional writer with expertise in various writing styles and formats.
-
----Goal---
-Based on the user&apos;s request, create high-quality content that meets their specific needs.
-
----Writing Types---
-1. Article: Write well-structured articles with clear arguments and engaging content
-2. Speeches: Create compelling speeches with proper opening, body, and conclusion
-
-3. Outlines: Create a structured outline for the given topic
-4. Notifications: Write formal notices or announcements
-5. Posts: Create engaging social media content
-6. Work Report: Write comprehensive work reports
-7. Research Report: Create detailed research reports
----Input---
-%1
-
----Output Format---
-Please provide the content in the following format:
-Title:
-Content:</source>
-        <translation type="vanished">---Rola---
-
-Ste profesionálny spisovateľ so skúsenosťami v rôznych štýloch a formátoch písania.
-
----Cieľ---
-
-Na základe požiadavky používateľa vytvorte kvalitný obsah, ktorý spĺňa jeho konkrétne potreby.
-
----Typy písania---
-
-1. Článok: Píšte dobre štruktúrované články s jasnými argumentmi a pútavým obsahom
-2. Reči: Vytvárajte presvedčivé reči so správnym úvodom, jadrom a záverom
-
-3. Osnovy: Vytvorte štruktúrovanú osnovu pre danú tému
-4. Oznámenia: Píšte formálne oznámenia alebo upozornenia
-5. Príspevky: Vytvárajte pútavý obsah pre sociálne médiá
-6. Pracovná správa: Píšte komplexné pracovné správy
-7. Výskumná správa: Vytvárajte podrobné výskumné správy
----Vstup---
-
-%1
-
----Výstupný formát---
-
-Uveďte obsah v nasledujúcom formáte:
-Názov:
-Obsah:</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a text processing expert with deep expertise in language analysis, writing techniques, and text optimization.
-
----Goal---
-Process and improve the input text while maintaining its original meaning and style.
-
----Processing Types---
-1. Summary: Create a concise summary of the main points
-2. Proofread: Identify and fix grammatical, spelling, and stylistic errors
-3. Explain: Provide detailed explanations of complex concepts or passages
-4. Expand: Elaborate on key points while maintaining the original style
-5. Continue: Continue the text in a coherent and natural way
-6. Polish: Enhance the text&apos;s clarity, flow, and impact while preserving its essence
-
----Input---
-%1
-
----Output Format---
-Please provide the processed text directly without any additional characters or formatting.</source>
-        <translation type="vanished">---Rola---
-
-Ste expert na spracovanie textu s hlbokými znalosťami jazykovej analýzy, písacích techník a optimalizácie textu.
-
----Cieľ---
-
-Spracujte a vylepšite vstupný text pri zachovaní jeho pôvodného významu a štýlu.
-
----Typy spracovania---
-
-1. Súhrn: Vytvorte stručný súhrn hlavných bodov
-2. Korektúra: Identifikujte a opravte gramatické, pravopisné a štýlistické chyby
-3. Vysvetlenie: Poskytnite podrobné vysvetlenia zložitých konceptov alebo pasáží
-4. Rozšírenie: Rozpracujte kľúčové body pri zachovaní pôvodného štýlu
-5. Pokračovanie: Pokračujte v texte súvislým a prirodzeným spôsobom
-6. Vylepšenie: Zlepšite jasnosť, tok a dopad textu pri zachovaní jeho podstaty
-
----Vstup---
-
-%1
-
----Výstupný formát---
-
-Uveďte spracovaný text priamo bez akýchkoľvek ďalších znakov alebo formátovania.</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a professional translator and language expert. Your task is to:
-1. Accurately translate text as requested
-2. Answer language-related questions
-3. Identify and handle specific translation requests
-
----Goal---
-Carefully analyze the user&apos;s input to determine their intent:
-1. If the input contains phrases like &apos;what does this mean&apos;, &apos;explain this phrase&apos;, or similar - provide ONLY a language explanation (no translation)
-2. If the input specifies a particular sentence/paragraph to translate (e.g. &apos;Translate this sentence:...&apos;) - translate ONLY the specified portion (no full translation)
-3. Only when no specific request is detected, perform full translation between Chinese and English
-
-Always maintain the original meaning, tone, and style. For translations:
-- Chinese → English
-- English → Chinese
-
-For language questions, provide clear, concise explanations.
-
----Input---
-%1
-
----Output Format---
-1. For full translations: Provide only the translation without additional formatting
-2. For partial translations: Provide only the specified portion&apos;s translation
-3. For explanations: Provide only the explanation in the same language as the question
-Never combine explanation with translation or provide full translation after partial translation</source>
-        <translation type="vanished">---Rola---
-
-Ste profesionálny prekladateľ a jazykový expert. Vašou úlohou je:
-1. Presne prekladať text podľa požiadavky
-2. Odpovedať na jazykovo orientované otázky
-3. Identifikovať a spracovať konkrétne prekladové požiadavky
-
----Cieľ---
-
-Starostlivo analyzujte vstup používateľa a určte jeho zámer:
-1. Ak vstup obsahuje frázy ako &apos;čo to znamená&apos;, &apos;vysvetlite túto frázu&apos; alebo podobné - poskytnite IBA jazykové vysvetlenie (bez prekladu)
-2. Ak vstup špecifikuje konkrétnu vetu/odsek na preklad (napr. &apos;Preložte túto vetu:...&apos;) - preložte IBA špecifikovanú časť (bez úplného prekladu)
-3. Iba keď nie je zistená žiadna špecifická požiadavka, vykonajte úplný preklad medzi čínštinou a angličtinou
-
-Vždy zachovajte pôvodný význam, tón a štýl. Pre preklady:
-- Čínština → Angličtina
-- Angličtina → Čínština
-
-Pre jazykové otázky poskytnite jasné a stručné vysvetlenia.
-
----Vstup---
-
-%1
-
----Výstupný formát---
-1. Pre úplné preklady: Poskytnite iba preklad bez ďalšieho formátovania
-2. Pre čiastočné preklady: Poskytnite iba preklad špecifikovanej časti
-3. Pre vysvetlenia: Poskytnite iba vysvetlenie v rovnakom jazyku ako otázka
-Nikdy nekombinujte vysvetlenie s prekladom ani neposkytujte úplný preklad po čiastočnom preklade</translation>
-    </message>
-</context>
-<context>
-    <name>EAiProxy</name>
-    <message>
-        <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
-        <translation type="vanished">Aktualizujte UOS Screen Recorder na verziu 6.6 alebo novšiu a reštartujte počítač, aby ste povolili Screenshot Q&amp;A.</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Konfigurácia modelu</translation>
-    </message>
-    <message>
-        <source>Go to configuration</source>
-        <translation type="vanished">Prejsť na konfiguráciu</translation>
-    </message>
-    <message>
-        <source>No account</source>
-        <translation type="vanished">Žiadny účet</translation>
-    </message>
-    <message>
-        <source>Input question</source>
-        <translation type="vanished">Vstupná otázka</translation>
-    </message>
-    <message>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="vanished">Obsah generovaný AI je len na referenčné účely, venujte pozornosť presnosti informácií.</translation>
-    </message>
-    <message>
-        <source>Welcome to UOS AI</source>
-        <translation type="vanished">Vitajte v UOS AI</translation>
-    </message>
-    <message>
-        <source>Here are some of the things UOS AI can help you do</source>
-        <translation type="vanished">Tu je niekoľko vecí, s ktorými vám UOS AI môže pomôcť</translation>
-    </message>
-    <message>
-        <source>Stop</source>
-        <translation type="vanished">Zastaviť</translation>
-    </message>
-    <message>
-        <source>Regenerate</source>
-        <translation type="vanished">Obnoviť</translation>
-    </message>
-    <message>
-        <source>Clear conversation history</source>
-        <translation type="vanished">Vymazať históriu konverzácie</translation>
-    </message>
-    <message>
-        <source>Please connect the microphone and try again</source>
-        <translation type="vanished">Pripojte mikrofón a skúste to znova</translation>
-    </message>
-    <message>
-        <source>Chat history cleared</source>
-        <translation type="vanished">História chatu vymazaná</translation>
-    </message>
-    <message>
-        <source>Click to start/stop recording</source>
-        <translation type="vanished">Kliknutím začnete/ukončíte nahrávanie</translation>
-    </message>
-    <message>
-        <source>Listening</source>
-        <translation type="vanished">Počúvanie</translation>
-    </message>
-    <message>
-        <source>Sleeping</source>
-        <translation type="vanished">Spánok</translation>
-    </message>
-    <message>
-        <source>Microphone not detected</source>
-        <translation type="vanished">Mikrofón nebol detekovaný</translation>
-    </message>
-    <message>
-        <source>Connection failed, click to try again</source>
-        <translation type="vanished">Pripojenie zlyhalo, kliknutím skúste znova</translation>
-    </message>
-    <message>
-        <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation type="vanished">Kliknite na animáciu alebo stlačte Ctrl+Super+Medzerník na aktiváciu</translation>
-    </message>
-    <message>
-        <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation type="vanished">Hlasový vstup je dočasne nedostupný, skontrolujte sieť!</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Nepodarilo sa pripojiť k serveru, skontrolujte sieť alebo skúste neskôr.</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Hlasová konverzácia</translation>
-    </message>
-    <message>
-        <source>Click the animation or press Enter to send</source>
-        <translation type="vanished">Kliknite na animáciu alebo stlačte Enter na odoslanie</translation>
-    </message>
-    <message>
-        <source>Stop recording after %1 seconds</source>
-        <translation type="vanished">Zastaviť nahrávanie po %1 sekundách</translation>
-    </message>
-    <message>
-        <source>Thinking</source>
-        <translation type="vanished">Premýšľanie</translation>
-    </message>
-    <message>
-        <source>Click animation to interrupt</source>
-        <translation type="vanished">Kliknite na animáciu na prerušenie</translation>
-    </message>
-    <message>
-        <source>Answering</source>
-        <translation type="vanished">Odpovedanie</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="vanished">Kvóta vášho bezplatného účtu bola vyčerpaná, nakonfigurujte si účet modelu na pokračovanie v používaní.</translation>
-    </message>
-    <message>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="vanished">Platnosť vášho bezplatného účtu vypršala, nakonfigurujte si účet modelu na pokračovanie v používaní.</translation>
-    </message>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI vyžaduje konfiguráciu účtu AI modelu pred použitím. Najprv prosím nakonfigurujte účet modelu.</translation>
-    </message>
-    <message>
-        <source>Activate</source>
-        <translation type="vanished">Aktivovať</translation>
-    </message>
-    <message>
-        <source>Voice input</source>
-        <translation type="vanished">Hlasový vstup</translation>
-    </message>
-    <message>
-        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation type="vanished">Hlasové vysielanie je dočasne nedostupné, skontrolujte sieť!</translation>
-    </message>
-    <message>
-        <source>Turn off voice conversation</source>
-        <translation type="vanished">Vypnúť hlasový rozhovor</translation>
-    </message>
-    <message>
-        <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation type="vanished">Obrázok bol vygenerovaný, pre zobrazenie prepnite na rozhranie chatu.</translation>
-    </message>
-    <message>
-        <source>No account, please configure an account</source>
-        <translation type="vanished">Žiadny účet, prosím nakonfigurujte účet</translation>
-    </message>
-    <message>
-        <source>Answer each question up to 5 times</source>
-        <translation type="vanished">Odpovedať na každú otázku maximálne 5-krát</translation>
-    </message>
-    <message>
-        <source>Copied successfully</source>
-        <translation type="vanished">Úspešne skopírované</translation>
-    </message>
-    <message>
-        <source>Sound output device not detected</source>
-        <translation type="vanished">Výstupné zvukové zariadenie nebolo detekované</translation>
-    </message>
-    <message>
-        <source>The sound output device is not detected, please check and try again!</source>
-        <translation type="vanished">Výstupné zvukové zariadenie nebolo detekované, skontrolujte a skúste znova!</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Nastavenia</translation>
-    </message>
-    <message>
-        <source>About</source>
-        <translation type="vanished">O aplikácii</translation>
-    </message>
-    <message>
-        <source>Mode</source>
-        <translation type="vanished">Režim</translation>
-    </message>
-    <message>
-        <source>Window Mode</source>
-        <translation type="vanished">Režim okna</translation>
-    </message>
-    <message>
-        <source>Sidebar Mode</source>
-        <translation type="vanished">Režim bočného panelu</translation>
-    </message>
-    <message>
-        <source>Assistant List</source>
-        <translation type="vanished">Zoznam asistentov</translation>
-    </message>
-    <message>
-        <source>Agent List</source>
-        <translation type="vanished">Zoznam agentov</translation>
-    </message>
-    <message>
-        <source>Agent Store</source>
-        <translation type="vanished">Obchod s agentmi</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">Systémový asistent UOS</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Systémový asistent Deepin</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Osobný asistent pre vedomosti</translation>
-    </message>
-    <message>
-        <source>Please configure the knowledge base</source>
-        <translation type="vanished">Prosím nakonfigurujte vedomostnú bázu</translation>
-    </message>
-    <message>
-        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation type="vanished">Pred použitím [Osobného asistenta pre vedomosti] je potrebné nakonfigurovať vedomostnú bázu. Po konfigurácii vedomostnej bázy bude AI odpovedať na otázky alebo generovať obsah na základe obsahu, ktorý ste nakonfigurovali v vedomostnej báze.</translation>
-    </message>
-    <message>
-        <source>Please configure the large model</source>
-        <translation type="vanished">Prosím nakonfigurujte veľký model</translation>
-    </message>
-    <message>
-        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation type="vanished">Osobný asistent pre vedomosti je možné použiť až po nakonfigurovaní veľkého modelu.</translation>
-    </message>
-    <message>
-        <source>To configure</source>
-        <translation type="vanished">Konfigurovať</translation>
-    </message>
-    <message>
-        <source>To install</source>
-        <translation type="vanished">Inštalovať</translation>
-    </message>
-    <message>
-        <source>Please install [EmbeddingPlugins]</source>
-        <translation type="vanished">Prosím nainštalujte [EmbeddingPlugins]</translation>
-    </message>
-    <message>
-        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation type="vanished">Tento asistent vyžaduje inštaláciu EmbeddingPlugins na fungovanie</translation>
-    </message>
-    <message>
-        <source>Drag files here to add them.</source>
-        <translation type="vanished">Presuňte súbory sem, aby ste ich pridali.</translation>
-    </message>
-    <message>
-        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation type="vanished">Môžete pridať maximálne 3 súbory, podporované typy súborov zahŕňajú: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, súbory kódu atď.</translation>
-    </message>
-    <message>
-        <source>MCP Server</source>
-        <translation type="vanished">MCP Server</translation>
-    </message>
-    <message>
-        <source>Add Mcp Server</source>
-        <translation type="vanished">Pridať Mcp Server</translation>
-    </message>
-    <message>
-        <source>Add Server</source>
-        <translation type="vanished">Pridať server</translation>
-    </message>
-    <message>
-        <source>Add failed! Error reason:</source>
-        <translation type="vanished">Pridanie zlyhalo! Dôvod chyby:</translation>
-    </message>
-    <message>
-        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation type="vanished">Chýba prostredie MCP. Nainštalujte prosím 【UOS AI Agent】</translation>
-    </message>
-    <message>
-        <source>Calling</source>
-        <translation type="vanished">Volanie</translation>
-    </message>
-    <message>
-        <source>Completed</source>
-        <translation type="vanished">Dokončené</translation>
-    </message>
-    <message>
-        <source>Call Failed</source>
-        <translation type="vanished">Volanie zlyhalo</translation>
-    </message>
-    <message>
-        <source>Cancelled</source>
-        <translation type="vanished">Zrušené</translation>
-    </message>
-    <message>
-        <source>params</source>
-        <translation type="vanished">parametre</translation>
-    </message>
-    <message>
-        <source>result</source>
-        <translation type="vanished">výsledok</translation>
-    </message>
-    <message>
-        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="vanished">Pre MCP Server prepnite na oficiálne vydaný model „DeepSeek-Trial Account“</translation>
-    </message>
-    <message>
-        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation type="vanished">Zadajte príkaz pre MCP Server, napr. „Zmeň systém na tmavý režim“</translation>
-    </message>
-    <message>
-        <source>Agent server is not available</source>
-        <translation type="vanished">Agent server nie je dostupný</translation>
-    </message>
-    <message>
-        <source>Agent server exception</source>
-        <translation type="vanished">Výnimka agent servera</translation>
-    </message>
-    <message>
-        <source>MCP server is not available</source>
-        <translation type="vanished">MCP server nie je dostupný</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Zrušiť</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="obsolete">Potvrdiť</translation>
-    </message>
-    <message>
-        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation type="vanished">Automatizujte úlohy s viacerými súbormi a aplikáciami jedným príkazom pomocou služby MCP. Vyskúšajte teraz!</translation>
-    </message>
-    <message>
-        <source>Use later</source>
-        <translation type="vanished">Použiť neskôr</translation>
-    </message>
-    <message>
-        <source>Install Now</source>
-        <translation type="vanished">Nainštalovať teraz</translation>
-    </message>
-    <message>
-        <source>Enable MCP Server</source>
-        <translation type="vanished">Povoliť MCP Server</translation>
-    </message>
-    <message>
-        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation type="vanished">Po nainštalovaní prostredia MCP „UOS AI Agent“ kliknite na </translation>
-    </message>
-    <message>
-        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation type="vanished"> a vyberte „uos-mcp“ v zozname MCP serverov.</translation>
-    </message>
-    <message>
-        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation type="vanished">Skúste povedať: „Zmeň systém na tmavý režim“.</translation>
-    </message>
-    <message>
-        <source>Try it now</source>
-        <translation type="vanished">Vyskúšajte teraz</translation>
-    </message>
-    <message>
-        <source>Add Mcp Server[GuidePage]</source>
-        <translation type="vanished">Pridať MCP Server [Sprievodca]</translation>
-    </message>
-    <message>
-        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation type="vanished">Pre nových používateľov: Nainštalujte prostredie MCP „UOS AI Agent“ cez Obchod s aplikáciami.</translation>
-    </message>
-    <message>
-        <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation type="vanished">Formát súboru JSON je nesprávny, skontrolujte ho a odošlite znova</translation>
-    </message>
-    <message>
-        <source>Install Now &gt;</source>
-        <translation type="vanished">Nainštalovať teraz &gt;</translation>
-    </message>
-    <message>
-        <source>General Chat</source>
-        <translation type="vanished">Všeobecný chat</translation>
-    </message>
-    <message>
-        <source>Private Chat</source>
-        <translation type="vanished">Súkromný chat</translation>
-    </message>
-    <message>
-        <source>Now in Private Chat</source>
-        <translation type="vanished">Teraz v súkromnom chate</translation>
-    </message>
-    <message>
-        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation type="vanished">Správy v súkromnom chate sa neukladajú do histórie a pri opustení chatu budú natrvalo odstránené.</translation>
-    </message>
-    <message>
-        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation type="vanished">Snímka obrazovky Q&amp;A Skratka (Ctrl+Alt+Q), podporuje až 3 obrázky.</translation>
-    </message>
-    <message>
-        <source>Cannot be used during screen recording</source>
-        <translation type="vanished">Nedá sa použiť počas nahrávania obrazovky</translation>
-    </message>
-    <message>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="vanished">Môžete nahrať maximálne 3 súbory alebo obrázky</translation>
-    </message>
-    <message>
-        <source>Upload Files</source>
-        <translation type="vanished">Nahrať súbory</translation>
-    </message>
-    <message>
-        <source>Please delete the abnormal file and send it again</source>
-        <translation type="vanished">Prosím, odstráňte chybný súbor a pošlite ho znova</translation>
-    </message>
-    <message>
-        <source>Add Private Chat</source>
-        <translation type="vanished">Pridať súkromný chat</translation>
-    </message>
-    <message>
-        <source>Add [Screenshot Q&amp;A]</source>
-        <translation type="vanished">Pridať [Snímka obrazovky Q&amp;A]</translation>
-    </message>
-    <message>
-        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation type="vanished">Urobte snímku obrazovky a odošlite obsah do UOS AI. Môžete tiež priamo nahrať obrázok.</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
-    <message>
-        <source>Next</source>
-        <translation type="vanished">Ďalej</translation>
-    </message>
-    <message>
-        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation type="vanished">Pridať [Režim súkromného chatu] – chaty sa neuložia.</translation>
-    </message>
-    <message>
-        <source>No text extracted</source>
-        <translation type="vanished">Nebol extrahovaný žiadny text</translation>
-    </message>
-    <message>
-        <source>Image size exceeds 15 MB</source>
-        <translation type="vanished">Veľkosť obrázka presahuje 15 MB</translation>
-    </message>
-    <message>
-        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation type="vanished">Po otvorení znalostnej databázy budú odpovede vychádzať z jej obsahu. Rýchlosť odozvy závisí od výkonu počítača a veľkosti databázy.</translation>
-    </message>
-    <message>
-        <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation type="vanished">Znalostná databáza nie je dostupná, ak je vybraný akýkoľvek príkaz alebo MCP.</translation>
-    </message>
-    <message>
-        <source>MCP is disabled while the knowledge base is active.</source>
-        <translation type="vanished">MCP je vypnuté, keď je znalostná databáza aktívna.</translation>
-    </message>
-    <message>
-        <source>Commands disabled while knowledge base is active.</source>
-        <translation type="vanished">Príkazy sú vypnuté, keď je znalostná databáza aktívna.</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="obsolete">Kopírovať</translation>
-    </message>
-    <message>
-        <source>Re-edit</source>
-        <translation type="vanished">Upraviť znova</translation>
-    </message>
-    <message>
-        <source>Copy succeeded.</source>
-        <translation type="vanished">Kopírovanie bolo úspešné.</translation>
-    </message>
-    <message>
-        <source>Copy failed. Please try again.</source>
-        <translation type="vanished">Kopírovanie zlyhalo. Skúste to znova.</translation>
-    </message>
-    <message>
-        <source>Searching</source>
-        <translation type="vanished">Vyhľadávanie</translation>
-    </message>
-    <message>
-        <source>%1 reference documents have been obtained (%2s)</source>
-        <translation type="vanished">Získaných %1 referenčných dokumentov (%2 s)</translation>
-    </message>
-    <message>
-        <source>Clear History</source>
-        <translation type="vanished">Vymazať históriu</translation>
-    </message>
-    <message>
-        <source>Delete all records?</source>
-        <translation type="vanished">Odstrániť všetky záznamy?</translation>
-    </message>
-    <message>
-        <source>Once deleted, the content cannot be recovered!</source>
-        <translation type="vanished">Po odstránení sa obsah nedá obnoviť!</translation>
-    </message>
-    <message>
-        <source>Recommend official models</source>
-        <translation type="vanished">Odporúčať oficiálne modely</translation>
-    </message>
-    <message>
-        <source>Disable MCP</source>
-        <translation type="vanished">Vypnúť MCP</translation>
-    </message>
-    <message>
-        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="vanished">Odporúča sa použiť oficiálny model „DeepSeek-Trial Account“</translation>
-    </message>
-    <message>
-        <source>Quick Open</source>
-        <translation type="vanished">Rýchle otvorenie</translation>
-    </message>
-    <message>
-        <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation type="vanished">MCP Server – aktualizácia na automatický režim</translation>
-    </message>
-    <message>
-        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation type="vanished">MCP Server boli aktualizované na automatický režim, ktorý umožňuje pristupovať ku všetkým MCP Serverom jediným kliknutím</translation>
-    </message>
-    <message>
-        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation type="vanished">. To vám umožní automatizovať úlohy ako konfiguráciu systému a spracovanie súborov jediným kliknutím.</translation>
-    </message>
-    <message>
-        <source>Adding MCP Server has been moved to Settings.</source>
-        <translation type="vanished">Pridanie MCP servera bolo presunuté do Nastavení.</translation>
-    </message>
-    <message>
-        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation type="vanished">Ak chcete pridať ďalší MCP server, prejdite do Nastavenia &gt; MCP Server.</translation>
-    </message>
-    <message>
-        <source>Got it</source>
-        <translation type="obsolete">Rozumiem</translation>
-    </message>
-    <message>
-        <source>Complimentary Model Credits</source>
-        <translation type="vanished">Bezplatné kredity modelu</translation>
-    </message>
-    <message>
-        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation type="vanished">Aktuálny systém ponúka skúšobný účetový model DeepSeek, ktorý automaticky obnoví bezplatnú kvótu na začiatku každého mesiaca, čo vám umožní používať ho bez obáv.</translation>
-    </message>
-    <message>
-        <source>Claim Credits</source>
-        <translation type="vanished">Nárokovať kredity</translation>
-    </message>
-    <message>
-        <source>Get a free account</source>
-        <translation type="obsolete">Získať bezplatný účet</translation>
-    </message>
-    <message>
-        <source>Claim Free Credits</source>
-        <translation type="vanished">Nárokovať bezplatné kredity</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="vanished">Úspešne nárokované</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="vanished">Nepodarilo sa nárokovať. Skúste to znova.</translation>
-    </message>
-    <message>
-        <source>Enable MCP Server&amp;</source>
-        <translation type="vanished">Povoliť MCP Server&amp;</translation>
-    </message>
-    <message>
-        <source>Disable MCP Server</source>
-        <translation type="vanished">Zakázať MCP Server</translation>
-    </message>
-    <message>
-        <source>Configure MCP Server</source>
-        <translation type="vanished">Konfigurovať MCP Server</translation>
-    </message>
-    <message>
-        <source>You can only add a maximum of one file.</source>
-        <translation type="vanished">Môžete pridať maximálne jeden súbor.</translation>
-    </message>
-    <message>
-        <source>The file format is not supported.</source>
-        <translation type="vanished">Formát súboru nie je podporovaný.</translation>
-    </message>
-    <message>
-        <source>Summarize the key content of the file.</source>
-        <translation type="vanished">Zhrňte kľúčový obsah súboru.</translation>
-    </message>
-    <message>
-        <source>Parsing...</source>
-        <translation type="vanished">Spracovávanie...</translation>
-    </message>
-    <message>
-        <source>File Error</source>
-        <translation type="vanished">Chyba súboru</translation>
-    </message>
-    <message>
-        <source>File has been deleted.</source>
-        <translation type="vanished">Súbor bol odstránený.</translation>
-    </message>
-    <message>
-        <source>The file size exceeds the 100MB limit.</source>
-        <translation type="vanished">Veľkosť súboru prekračuje limit 100MB.</translation>
-    </message>
-    <message>
-        <source>Upload a document</source>
-        <translation type="vanished">Nahrať dokument</translation>
-    </message>
-    <message>
-        <source>File deleted</source>
-        <translation type="vanished">Súbor odstránený</translation>
-    </message>
-    <message>
-        <source>No text was parsed</source>
-        <translation type="vanished">Nebol spracovaný žiadny text</translation>
-    </message>
-    <message>
-        <source>Reference</source>
-        <translation type="vanished">Referencia</translation>
-    </message>
-    <message>
-        <source>Instruction</source>
-        <translation type="vanished">Inštrukcia</translation>
-    </message>
-    <message>
-        <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation type="vanished">Zadajte &quot;/&quot; do vstupného poľa na aktiváciu.</translation>
-    </message>
-    <message>
-        <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation type="vanished">Zadajte; “Ctrl+Enter” na zmenu riadku.</translation>
-    </message>
-    <message>
-        <source>Enter your question, or enter &quot;/&quot; to select a command
-&quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation type="vanished">Zadajte svoju otázku alebo zadajte &quot;/&quot; na výber príkazu
-&quot;Ctrl+Enter&quot; na začatie nového riadku</translation>
-    </message>
-    <message>
-        <source>Search complete.</source>
-        <translation type="vanished">Vyhľadávanie dokončené.</translation>
-    </message>
-    <message>
-        <source>Click to view results</source>
-        <translation type="vanished">Kliknutím zobrazíte výsledky</translation>
-    </message>
-    <message>
-        <source>edit</source>
-        <translation type="vanished">upraviť</translation>
-    </message>
-    <message>
-        <source>save</source>
-        <translation type="vanished">uložiť</translation>
-    </message>
-    <message>
-        <source>copy</source>
-        <translation type="vanished">kopírovať</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Hľadať</translation>
-    </message>
-    <message>
-        <source>DeepThink(R1)</source>
-        <translation type="vanished">DeepThink(R1)</translation>
-    </message>
-    <message>
-        <source>Thinking has stopped</source>
-        <translation type="vanished">Myslenie bolo zastavené</translation>
-    </message>
-    <message>
-        <source>Back to bottom</source>
-        <translation type="vanished">Späť na spodok</translation>
-    </message>
-    <message>
-        <source>Deeply thought (%1 seconds)</source>
-        <translation type="vanished">Hlboko premýšľané (%1 sekúnd)</translation>
-    </message>
-    <message>
-        <source>New Conversation</source>
-        <translation type="vanished">Nová konverzácia</translation>
-    </message>
-    <message>
-        <source>History</source>
-        <translation type="vanished">História</translation>
-    </message>
-    <message>
-        <source>No History Records</source>
-        <translation type="vanished">Žiadne záznamy histórie</translation>
-    </message>
-    <message>
-        <source>Today</source>
-        <translation type="vanished">Dnes</translation>
-    </message>
-    <message>
-        <source>Yesterday</source>
-        <translation type="vanished">Včera</translation>
-    </message>
-    <message>
-        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation type="vanished">Naozaj chcete konverzáciu vymazať? Po vymazaní ju nebude možné obnoviť.</translation>
-    </message>
-    <message>
-        <source>The %1 agent used in this conversation has been deleted</source>
-        <translation type="vanished">Agent %1 použitý v tejto konverzácii bol vymazaný</translation>
-    </message>
-    <message>
-        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation type="vanished">Túto konverzáciu nie je možné zobraziť. Ak ju chcete vidieť, nainštalujte si agenta %1 a skúste to znova.</translation>
-    </message>
-    <message>
-        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation type="vanished">Pôvodný model konverzácie bol vymazaný. Pre pokračovanie v konverzácii sme pre vás prepnuli na nový model.</translation>
-    </message>
-    <message>
-        <source>Recommendations</source>
-        <translation type="vanished">Odporúčania</translation>
-    </message>
-    <message>
-        <source>More</source>
-        <translation type="vanished">Viac</translation>
-    </message>
-    <message>
-        <source>Add Model</source>
-        <translation type="vanished">Pridať model</translation>
-    </message>
-    <message>
-        <source>No Model</source>
-        <translation type="vanished">Žiadny model</translation>
-    </message>
-    <message>
-        <source>No model available. Please install or configure a model in the settings.</source>
-        <translation type="vanished">Nie je k dispozícii žiadny model. Nainštalujte alebo nakonfigurujte model v nastaveniach.</translation>
-    </message>
-    <message>
-        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation type="vanished">Opíšte tému obsahu a požiadavky na vaše dielo.</translation>
-    </message>
-    <message>
-        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation type="vanished">Zadajte obsah, ktorý chcete preložiť, a určte cieľový jazyk. Predvolený preklad je do čínštiny.</translation>
-    </message>
-    <message>
-        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation type="vanished">Zadajte text, ktorý potrebujete spracovať, a určte svoje požiadavky.</translation>
-    </message>
-    <message>
-        <source>New Agent Added</source>
-        <translation type="vanished">Pridaný nový agent</translation>
-    </message>
-    <message>
-        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation type="vanished">Boli pridaní noví agenti na písanie, spracovanie textu a preklad. Pozrite si ich teraz.</translation>
-    </message>
-    <message>
-        <source>Try it</source>
-        <translation type="vanished">Vyskúšajte</translation>
-    </message>
-    <message>
-        <source>Write an article based on the following document:</source>
-        <translation type="vanished">Napíšte článok na základe nasledujúceho dokumentu:</translation>
-    </message>
-    <message>
-        <source>Translate the following document into English:</source>
-        <translation type="vanished">Preložte nasledujúci dokument do angličtiny:</translation>
-    </message>
-</context>
-<context>
-    <name>EChatButton</name>
-    <message>
-        <source>Turn off voice conversation</source>
-        <translation type="vanished">Vypnúť hlasovú konverzáciu</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Hlasová konverzácia</translation>
-    </message>
-</context>
-<context>
-    <name>EPPTWebView</name>
-    <message>
-        <source>Export Item As</source>
-        <translation type="vanished">Exportovať položku ako</translation>
-    </message>
-</context>
-<context>
-    <name>EParserDocument</name>
-    <message>
-        <source>Supported files</source>
-        <translation type="vanished">Podporované súbory</translation>
+        <translation>Obsah dokumentu je neplatný alebo prázdny.</translation>
     </message>
 </context>
 <context>
     <name>FileParser</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/fileparser.cpp" line="83"/>
         <source>Unsupported file format</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FunctionsParser</name>
-    <message>
-        <source>Function not available</source>
-        <translation type="vanished">Funkcia nie je k dispozícii</translation>
-    </message>
-</context>
-<context>
-    <name>GetFreeAccountDialog</name>
-    <message>
-        <source>Get a free trial account</source>
-        <translation type="vanished">Získajte bezplatný skúšobný účet</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Zrušiť</translation>
-    </message>
-    <message>
-        <source>Get account</source>
-        <comment>button</comment>
-        <translation type="vanished">Získať účet</translation>
-    </message>
-    <message>
-        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="vanished">Prijatie účtu znamená, že rozumiete a súhlasíte s podmienkami akcie,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Podrobnosti akcie&gt;&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Skúšobný účet</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Uloženie zlyhalo, skúste to prosím neskôr</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Potvrdiť</translation>
-    </message>
-    <message>
-        <source>Trial account received successfully.</source>
-        <translation type="vanished">Skúšobný účet bol úspešne prijatý.</translation>
-    </message>
-    <message>
-        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="vanished">Počet použití a trvanie skúšobného účtu sú obmedzené, prosím, včas si nakonfigurujte svoj osobný modelový účet! Podrobnosti nájdete v podrobnostiach udalosti.</translation>
-    </message>
-    <message>
-        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="vanished">Anglická podpora pre skúšobné účty nie je uspokojivá. Počet použití a trvanie skúšobného účtu sú obmedzené. Včas si, prosím, nakonfigurujte svoj osobný účet modelu!</translation>
-    </message>
-    <message>
-        <source>Start trial</source>
-        <comment>button</comment>
-        <translation type="vanished">Začať skúšobnú verziu</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">Aktivita bezplatného účtu končí.</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Nie je možné sa pripojiť k serveru, skontrolujte svoje sieťové pripojenie alebo skúste neskôr.</translation>
+        <translation>Nepodporovaný formát súboru</translation>
     </message>
 </context>
 <context>
     <name>IatCodeTranslation</name>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="10"/>
         <source>appid authorization failed</source>
         <translation>autorizácia appid zlyhala</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="11"/>
         <source>Failed to obtain a certain parameter</source>
-        <translation>Nepodarilo sa získať určitý parameter</translation>
+        <translation>Zlyhalo získanie určitého parametra</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="12"/>
         <source>Parameter value is illegal</source>
         <translation>Hodnota parametra je neplatná</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="13"/>
         <source>Insufficient engine authorization</source>
-        <translation>Nedostatočná autorizácia motora</translation>
+        <translation>Nedostatočná autorizácia enginu</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="14"/>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="15"/>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="18"/>
         <source>Session timeout</source>
-        <translation>Časový limit relácie vypršal</translation>
+        <translation>Časový limit relácie</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="16"/>
         <source>Audio decoding failed</source>
-        <translation>Dekódovanie zvuku zlyhalo</translation>
+        <translation>Dekódovanie audia zlyhalo</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="17"/>
         <source>Engine session ended</source>
-        <translation>Relácia motora skončila</translation>
+        <translation>Relácia enginu ukončená</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="19"/>
         <source>Parameter error</source>
         <translation>Chyba parametra</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="20"/>
         <source>appid cannot be empty</source>
-        <translation>appid nemôže byť prázdny</translation>
+        <translation>appid nemôže byť prázdne</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="21"/>
         <source>Illegal version</source>
         <translation>Neplatná verzia</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="22"/>
         <source>permission denied</source>
-        <translation>prístup zamietnutý</translation>
+        <translation>prístup odmietnutý</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="23"/>
         <source>Daily flow control exceeds limit</source>
-        <translation>Denné riadenie toku prekročilo limit</translation>
+        <translation>Denný limit tokenu bol prekročený</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="24"/>
         <source>The request data format is illegal</source>
-        <translation>Formát požadovaných údajov je neplatný</translation>
+        <translation>Formát údajov požiadavky je neplatný</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="25"/>
         <source>base64 decoding failed</source>
-        <translation>Dekódovanie base64 zlyhalo</translation>
+        <translation>dekódovanie base64 zlyhalo</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="26"/>
         <source>Required parameters are missing or the parameters are illegal</source>
-        <translation>Chýbajú požadované parametre alebo parametre sú neplatné</translation>
+        <translation>Chýbajú povinné parametre alebo sú parametre neplatné</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="27"/>
         <source>Invalid handle</source>
-        <translation>Neplatný handle</translation>
+        <translation>Neplatný obslužný program</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="28"/>
         <source>Reading data timeout</source>
-        <translation>Časový limit čítania údajov vypršal</translation>
+        <translation>Časový limit pri čítaní údajov</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="37"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>Pripojenie zlyhalo, skontrolujte vyplnené informácie.</translation>
-    </message>
-</context>
-<context>
-    <name>IconButtonEx</name>
-    <message>
-        <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation type="vanished">Novo pridané súbory vyžadujú predspracovanie pred použitím a počas spracovania údajov môže spotrebovať značné množstvo výpočtových a úložných zdrojov. Spracovanie údajov sa zastaví po odstránení údajov.</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseItem</name>
-    <message>
-        <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation type="vanished">Naozaj chcete odstrániť tento súbor znalostnej bázy?</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Zrušiť</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Potvrdiť</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseListWidget</name>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Odstrániť</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">Pridať</translation>
-    </message>
-    <message>
-        <source>Please install the embedding model plugins first</source>
-        <translation type="vanished">Najprv nainštalujte doplnky vkladacieho modelu</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Správa vedomostnej bázy</translation>
-    </message>
-    <message>
-        <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation type="vanished">Tu je možné definovať vedomostnú bázu Osobného vedomostného asistenta, ktorý bude odpovedať na otázky na základe nižšie pridaných súborov.</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Hotovo</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="vanished">Žiadne</translation>
-    </message>
-    <message>
-        <source>File already exist</source>
-        <translation type="vanished">Súbor už existuje</translation>
-    </message>
-    <message>
-        <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation type="vanished">Súbor %1 už existuje a nemôže byť pridaný znova. Pred opätovným pridaním upravte názov súboru alebo odstráňte existujúci súbor.</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation type="vanished">Všetky súbory</translation>
-    </message>
-    <message>
-        <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation type="vanished">Táto funkcia vyžaduje vysoké hardvérové zdroje a referenčná konfigurácia je: CPU Intel 11. generácia i7 alebo vyššie; Pamäť 16GB alebo viac; Najlepšou voľbou je mať grafickú kartu NVIDIA série 10 alebo vyššie. Ak je konfigurácia príliš nízka, môžu sa vyskytnúť problémy ako oneskorenie a nepresné odpovede.</translation>
+        <translation>Pripojenie zlyhalo, skontrolujte, prosím, vyplnené informácie.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseManager</name>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="275"/>
         <source>FollowAlong</source>
-        <translation>SledujSpolu</translation>
+        <translation>Sledovať</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="284"/>
         <source>Insufficient knowledge base capacity</source>
-        <translation type="unfinished">Nedostatočná kapacita vedomostnej bázy</translation>
+        <translation>Nedostatočná kapacita knowledge base</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="285"/>
         <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
-        <translation type="unfinished">Celková kapacita vedomostnej bázy je %1M, zostáva %2. Celkový počet súborov pridaných tentoraz je %3. Operáciu pridania do vedomostnej bázy nie je možné dokončiť.</translation>
+        <translation>Celková kapacita knowledge base je % a zostáva %. Celkový počet súborov pridaných tento krát je %. Operáciu pridania do knowledge base sa nepodarilo dokončiť.</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="291"/>
-        <source>OK</source>
-        <comment>button</comment>
-        <translation type="unfinished">OK</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="305"/>
-        <source>Not enough disk space</source>
-        <translation type="unfinished">Nedostatok miesta na disku</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="306"/>
-        <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
-        <translation type="unfinished">Na uloženie nových súborov je potrebných aspoň %1 miesta na disku. Aktuálne zostávajúce miesto je %2. Uvoľnite dostatok miesta na pevnom disku a skúste to znova.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="324"/>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="unfinished">Pridanie do vedomostnej databázy vyžaduje inštaláciu pluginu vektorizačného modelu. Prejdite do obchodu s aplikáciami a nainštalujte ho.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="332"/>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="unfinished">Neinštalovať</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="333"/>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="unfinished">Okamžite nainštalovať</translation>
-    </message>
-</context>
-<context>
-    <name>LLM</name>
-    <message>
-        <source>Vincent picture service is not supported</source>
-        <translation type="vanished">Služba Vincent picture nie je podporovaná</translation>
-    </message>
-</context>
-<context>
-    <name>LLMServerProxy</name>
-    <message>
-        <source>GPT3.5（OpenAI）</source>
-        <translation type="vanished">GPT3.5（OpenAI）</translation>
-    </message>
-    <message>
-        <source>GPT4（OpenAI）</source>
-        <translation type="vanished">GPT4（OpenAI）</translation>
-    </message>
-    <message>
-        <source>星火大模型1.5（讯飞）</source>
-        <translation type="vanished">Spark veľký model 1.5（iFLYTEK）</translation>
-    </message>
-    <message>
-        <source>星火大模型2.0（讯飞）</source>
-        <translation type="vanished">Spark veľký model 2.0（iFLYTEK）</translation>
-    </message>
-    <message>
-        <source>星火大模型3.0（讯飞）</source>
-        <translation type="vanished">Spark veľký model 3.0（iFLYTEK）</translation>
-    </message>
-    <message>
-        <source>ERNIE 3.5</source>
-        <translation type="vanished">ERNIE 3.5</translation>
-    </message>
-    <message>
-        <source>ERNIE-Bot-turbo</source>
-        <translation type="vanished">ERNIE-Bot-turbo</translation>
-    </message>
-    <message>
-        <source>ERNIE-Bot-4</source>
-        <translation type="vanished">ERNIE-Bot-4</translation>
-    </message>
-    <message>
-        <source>360 AI</source>
-        <translation type="vanished">360 AI</translation>
-    </message>
-    <message>
-        <source>iFLYTEK-Spark</source>
-        <translation type="vanished">iFLYTEK-Spark</translation>
-    </message>
-    <message>
-        <source>Baidu-Ernie</source>
-        <translation type="vanished">Baidu-Ernie</translation>
-    </message>
-    <message>
-        <source>ChatGLM-turbo</source>
-        <translation type="vanished">ChatGLM-turbo</translation>
-    </message>
-    <message>
-        <source>Gemini 1.5 Flash</source>
-        <translation type="vanished">Gemini 1.5 Flash</translation>
-    </message>
-    <message>
-        <source>Gemini 1.5 Pro</source>
-        <translation type="vanished">Gemini 1.5 Pro</translation>
-    </message>
-    <message>
-        <source>TextToImage(Local)</source>
-        <translation type="vanished">TextToImage(Lokálne)</translation>
-    </message>
-    <message>
-        <source>YouRong 1.5B</source>
-        <translation type="vanished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <source>YouRong 7B</source>
-        <translation type="vanished">YouRong 7B</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="vanished">Vlastné</translation>
-    </message>
-    <message>
-        <source>Private deployment model</source>
-        <translation type="vanished">Súkromný model nasadenia</translation>
-    </message>
-    <message>
-        <source>OpenRouter</source>
-        <translation type="vanished">OpenRouter</translation>
-    </message>
-    <message>
-        <source>DeepSeek-R1</source>
-        <translation type="vanished">DeepSeek-R1</translation>
-    </message>
-    <message>
-        <source>DeepSeek</source>
-        <translation type="vanished">DeepSeek</translation>
-    </message>
-    <message>
-        <source>unknown model</source>
-        <translation type="vanished">neznámy model</translation>
-    </message>
-</context>
-<context>
-    <name>LLMUtils</name>
-    <message>
-        <source>Your system environment is Linux, and the user home path is</source>
-        <translation type="vanished">Vaše systémové prostredie je Linux a domovská cesta používateľa je</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelItem</name>
-    <message>
-        <source>Install</source>
-        <translation type="vanished">Inštalovať</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="vanished">Aktualizovať</translation>
-    </message>
-    <message>
-        <source>Uninstall</source>
-        <translation type="vanished">Odinštalovať</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelListItem</name>
-    <message>
-        <source>uninstall</source>
-        <translation type="vanished">odinštalovať</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelListWidget</name>
-    <message>
-        <source>Local model</source>
-        <translation type="vanished">Lokálny model</translation>
-    </message>
-    <message>
-        <source>Text to image model</source>
-        <translation type="vanished">Model pre text na obrázok</translation>
-    </message>
-    <message>
-        <source>Use a local model to generate images. After turning it on, you can select the model in the model list in the chat interface.</source>
-        <translation type="vanished">Použite lokálny model na generovanie obrázkov. Po zapnutí môžete vybrať model v zozname modelov v rozhraní chatu.</translation>
-    </message>
-    <message>
-        <source>speech model</source>
-        <translation type="vanished">model reči</translation>
-    </message>
-    <message>
-        <source>When turned on, the speech recognition and speech reading in the chat interface will use the local model without requiring an Internet connection.</source>
-        <translation type="vanished">Po zapnutí bude rozpoznávanie reči a čítanie reči v rozhraní chatu používať lokálny model bez potreby internetového pripojenia.</translation>
-    </message>
-    <message>
-        <source>ULLM-1.5B</source>
-        <translation type="vanished">ULLM-1.5B</translation>
-    </message>
-    <message>
-        <source>ULLM-7B</source>
-        <translation type="vanished">ULLM-7B</translation>
-    </message>
-    <message>
-        <source>DeepSeek-R1-1.5B</source>
-        <translation type="vanished">DeepSeek-R1-1.5B</translation>
-    </message>
-    <message>
-        <source>UOS AI large model</source>
-        <translation type="vanished">Veľký model UOS AI</translation>
-    </message>
-    <message>
-        <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation type="vanished">Po inštalácii nepotrebujete internetové pripojenie na používanie UOS AI.</translation>
-    </message>
-    <message>
-        <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation type="vanished">Stiahnite si z open-source komunity na vlastné riziko. Po inštalácii ho používajte v asistentovi UOS AI.</translation>
-    </message>
-    <message>
-        <source>Embedding Plugins</source>
-        <translation type="vanished">Vkladacie pluginy</translation>
-    </message>
-    <message>
-        <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation type="vanished">Po inštalácii modelu môžu byť spustený Systémový asistent a Asistent osobných znalostí.</translation>
-    </message>
-</context>
-<context>
-    <name>MgmtWindow</name>
-    <message>
-        <source>Successfully connected</source>
-        <translation type="vanished">Úspešne pripojené</translation>
-    </message>
-    <message>
-        <source>User Agreement</source>
-        <translation type="vanished">Používateľská zmluva</translation>
-    </message>
-    <message>
-        <source>UOS AI User Agreement</source>
-        <translation type="vanished">Používateľská zmluva UOS AI</translation>
-    </message>
-    <message>
-        <source>Read and agreed</source>
-        <translation type="vanished">Prečítané a súhlasím</translation>
-    </message>
-    <message>
-        <source>Proxy Settings</source>
-        <translation type="vanished">Nastavenia proxy</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Prejsť do nastavení</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Konfigurácia modelu</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">Aktivita bezplatného účtu končí.</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Potvrdiť</translation>
-    </message>
-    <message>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="vanished">Pridanie do vedomostnej databázy vyžaduje inštaláciu pluginu vektorizačného modelu. Prejdite do obchodu s aplikáciami a nainštalujte ho.</translation>
-    </message>
-    <message>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="vanished">Neinštalovať</translation>
-    </message>
-    <message>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="vanished">Okamžite nainštalovať</translation>
-    </message>
-</context>
-<context>
-    <name>ModelListItem</name>
-    <message>
-        <source>Are you sure you want to delete this model?</source>
-        <translation type="vanished">Naozaj chcete odstrániť tento model?</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Zrušiť</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Potvrdiť</translation>
-    </message>
-</context>
-<context>
-    <name>ModelListWidget</name>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">Získať bezplatný účet</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Odstrániť</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">Pridať</translation>
-    </message>
-    <message>
-        <source>Online model</source>
-        <translation type="vanished">Online model</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Hotovo</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="vanished">Žiadne</translation>
-    </message>
-</context>
-<context>
-    <name>ModifyModelDialog</name>
-    <message>
-        <source>LLM</source>
-        <translation type="vanished">LLM</translation>
-    </message>
-    <message>
-        <source>APPID</source>
-        <translation type="vanished">APPID</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">API kľúč</translation>
-    </message>
-    <message>
-        <source>APISecret</source>
-        <translation type="vanished">API tajomstvo</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Účet</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Názov modelu</translation>
-    </message>
-    <message>
-        <source>API Address</source>
-        <translation type="vanished">API adresa</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Povinné na rozlíšenie viacerých modelov</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Doména</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Zrušiť</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Potvrdiť</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">Najviac 20 znakov</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">Názov účtu už existuje, prosím, zmeňte ho</translation>
-    </message>
-</context>
-<context>
-    <name>OcrParse</name>
-    <message>
-        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="25"/>
-        <source>The image file does not exist: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="34"/>
-        <source>OCR did not recognize the text content</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>OperatingLineWidget</name>
-    <message>
-        <source>In data processing</source>
-        <translation type="vanished">Prebieha spracovanie údajov</translation>
-    </message>
-    <message>
-        <source>Data processing error</source>
-        <translation type="vanished">Chyba pri spracovaní údajov</translation>
-    </message>
-    <message>
-        <source>File error, unable to process, please delete.</source>
-        <translation type="vanished">Chyba súboru, nie je možné spracovať, prosím, vymažte ho.</translation>
-    </message>
-</context>
-<context>
-    <name>QObject</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">Asistent systému UOS</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Asistent systému Deepin</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Osobný asistent pre vedomosti</translation>
-    </message>
-    <message>
-        <source>AI Writing</source>
-        <translation type="vanished">AI písanie</translation>
-    </message>
-    <message>
-        <source>AI Text Processing</source>
-        <translation type="vanished">Spracovanie textu pomocou AI</translation>
-    </message>
-    <message>
-        <source>AI Translation</source>
-        <translation type="vanished">AI preklad</translation>
-    </message>
-    <message>
-        <source>System&apos;s Comprehensive AI Assistant.</source>
-        <translation type="vanished">Komplexný asistent systému s AI.</translation>
-    </message>
-    <message>
-        <source>Assists you with UOS system-related inquiries.</source>
-        <translation type="vanished">Pomáha vám pri otázkach týkajúcich sa systému UOS.</translation>
-    </message>
-    <message>
-        <source>Assists you with Deepin system-related inquiries.</source>
-        <translation type="vanished">Pomáha vám pri otázkach týkajúcich sa systému Deepin.</translation>
-    </message>
-    <message>
-        <source>Write Based on Your Topic and Requirements.</source>
-        <translation type="vanished">Píšte na základe vašej témy a požiadaviek.</translation>
-    </message>
-    <message>
-        <source>Answers questions based on your personal knowledge base.</source>
-        <translation type="vanished">Odpovedá na otázky na základe vašej osobnej vedomostnej databázy.</translation>
-    </message>
-    <message>
-        <source>Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting.</source>
-        <translation type="vanished">Schopný spracovávať textové úlohy ako súhrny, korektúry a prepisovanie.</translation>
-    </message>
-    <message>
-        <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation type="vanished">Váš prekladateľský asistent, ovládajúci viaceré jazyky.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="311"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="222"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="831"/>
-        <source>Search</source>
-        <translation>Hľadať</translation>
+        <source>Not enough disk space</source>
+        <translation>Nedostatok miesta na disku</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="833"/>
-        <source>Explain</source>
-        <translation>Vysvetliť</translation>
+        <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
+        <translation>Na uloženie novo pridaných súborov je potrebných aspoň % miesta na disku. Aktuálne voľné miesto je %. Prosím, uvoľnite dostatok miesta na pevnom disku a skúste to znova.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="835"/>
-        <source>Summary</source>
-        <translation>Súhrn</translation>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation>Pridanie do knowledge base vyžaduje inštaláciu pluginu vektorizačného modelu. Prosím, prejdite do obchodu s aplikáciami na stiahnutie a inštaláciu.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="837"/>
-        <source>Translate</source>
-        <translation>Preložiť</translation>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation>Neinštalovať</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="839"/>
-        <source>Continue Writing</source>
-        <translation>Pokračovať v písaní</translation>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation>Inštalovať ihneď</translation>
+    </message>
+</context>
+<context>
+    <name>MarkdownEditor</name>
+    <message>
+        <source>Outline</source>
+        <translation>Osnova</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="841"/>
-        <source>Expand</source>
-        <translation>Rozšíriť</translation>
+        <source>No outline</source>
+        <translation>Žiadna osnova</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="843"/>
-        <source>Polish</source>
-        <translation>Upraviť</translation>
+        <source>References</source>
+        <translation>Odkazy</translation>
+    </message>
+</context>
+<context>
+    <name>OcrParse</name>
+    <message>
+        <source>The image file does not exist: %1</source>
+        <translation>Súbor obrázka neexistuje: %</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="845"/>
-        <source>Correct</source>
-        <translation>Opraviť</translation>
+        <source>OCR did not recognize the text content</source>
+        <translation>OCR nerozpoznal textový obsah</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>System AI Intelligent ButlerFunction
+Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
+Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
+        <translation>Systémový AI inteligentný asistent
+Úvod: Inteligentne plánuje systémové nástroje na vykonávanie zložitých systémových operácií, podporuje ovládanie systému, správu súborov, správu aplikácií a sieťové protokoly.
+Príklad výzvy: Pomenujte všetky súbory v novo vytvorenom priečinku na ploche ako projektové materiály a usporiadajte ich v číselnom poradí.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="847"/>
-        <source>Add to the AI knowledge base</source>
-        <translation>Pridať do znalostnej báze AI</translation>
+        <source>Ask a question...</source>
+        <translation>Opýtať sa...</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/selectiontagobject.cpp" line="235"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="32"/>
+        <source>Discord gateway error: %1</source>
+        <translation>Chyba brány Discord: %</translation>
+    </message>
+    <message>
+        <source>Missing Discord bot token.</source>
+        <translation>Chýba token bota Discord.</translation>
+    </message>
+    <message>
+        <source>Generating...</source>
+        <translation>Generovanie...</translation>
+    </message>
+    <message>
+        <source>Discord placeholder message missing id.</source>
+        <translation>Chýba ID v správe zástupného znaku Discordu.</translation>
+    </message>
+    <message>
+        <source>Discord gateway URL is empty.</source>
+        <translation>URL adresa brány Discordu je prázdna.</translation>
+    </message>
+    <message>
+        <source>Ask UOS AI a question</source>
+        <translation>Opýtať sa UOS AI</translation>
+    </message>
+    <message>
+        <source>Question for UOS AI</source>
+        <translation>Otázka pre UOS AI</translation>
+    </message>
+    <message>
+        <source>Missing Telegram bot token.</source>
+        <translation>Chýba token bota Telegramu.</translation>
+    </message>
+    <message>
+        <source>Telegram placeholder message missing message_id.</source>
+        <translation>Chýba message_id v správe zástupného znaku Telegramu.</translation>
+    </message>
+    <message>
+        <source>Telegram API request failed.</source>
+        <translation>Požiadavka na API Telegramu zlyhala.</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <comment>button</comment>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>OpenAI</source>
+        <translation>OpenAI</translation>
+    </message>
+    <message>
+        <source>DeepSeek</source>
+        <translation>DeepSeek</translation>
+    </message>
+    <message>
+        <source>UOS AI Trial Account</source>
+        <translation>Skúšobný účet UOS AI</translation>
+    </message>
+    <message>
+        <source>Custom</source>
+        <translation>Vlastné</translation>
+    </message>
+    <message>
+        <source>Private deployment model</source>
+        <translation>Model súkromného nasadenia</translation>
+    </message>
+    <message>
         <source>{selection}</source>
         <translation>{selection}</translation>
     </message>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="237"/>
         <source>Cancel</source>
         <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="238"/>
         <source>Restart immediately</source>
-        <translation>Okamžite reštartovať</translation>
+        <translation>Reštartovať ihneď</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="97"/>
         <source>Simplified Chinese</source>
         <translation>Zjednodušená čínština</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="100"/>
         <source>Traditional Chinese</source>
         <translation>Tradičná čínština</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="103"/>
         <source>Tibetan</source>
-        <translation type="unfinished">tibetčina</translation>
+        <translation>Tibetčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="106"/>
         <source>English</source>
-        <translation type="unfinished">angličtina</translation>
+        <translation>Angličtina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="109"/>
         <source>Japanese</source>
         <translation>Japončina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="112"/>
         <source>German</source>
-        <translation type="unfinished">nemčina</translation>
+        <translation>Nemčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="115"/>
         <source>Spanish</source>
-        <translation type="unfinished">španielčina</translation>
+        <translation>Španielčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="118"/>
         <source>French</source>
-        <translation type="unfinished">francúzština</translation>
+        <translation>Francúzština</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="121"/>
         <source>Italian</source>
-        <translation type="unfinished">taliančina</translation>
+        <translation>Taliančina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="124"/>
         <source>Korean</source>
-        <translation type="unfinished">kórejčina</translation>
+        <translation>Kórejčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="127"/>
         <source>Malay</source>
-        <translation type="unfinished">malajčina</translation>
+        <translation>Malajčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="130"/>
         <source>Portuguese</source>
-        <translation type="unfinished">portugalčina</translation>
+        <translation>Portugalčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="133"/>
         <source>Russian</source>
-        <translation type="unfinished">ruština</translation>
+        <translation>Ruština</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="136"/>
         <source>Thai</source>
-        <translation type="unfinished">thajčina</translation>
+        <translation>Thajčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="139"/>
         <source>Vietnamese</source>
-        <translation type="unfinished">vietnamčina</translation>
+        <translation>Vietnamčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="142"/>
         <source>Arabic (SA)</source>
         <translation>Arabčina (SA)</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/defaultmcpserver.cpp" line="20"/>
-        <source>System AI Intelligent ButlerFunction
-Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
-Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
-        <translation>Systém AI Inteligentný komorník
-
-Úvod: Inteligentne plánuje systémové nástroje na vykonávanie zložitých systémových operácií, podporuje správu systému, správu súborov, správu aplikácií a sieťové protokoly.
-
-Príklad výzvy: Pomenujte všetky súbory v novo vytvorenom priečinku na pracovnej ploche ako projektové materiály a usporiadajte ich v číselnom poradí.</translation>
+        <source>Search</source>
+        <translation>Hľadať</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantinfo.h" line="23"/>
-        <source>Ask a question...</source>
-        <translation type="unfinished"></translation>
+        <source>Explain</source>
+        <translation>Vysvetliť</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="99"/>
-        <source>OpenAI</source>
-        <translation type="unfinished"></translation>
+        <source>Summary</source>
+        <translation>Zhrnutie</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="118"/>
-        <source>DeepSeek</source>
-        <translation type="unfinished">DeepSeek</translation>
+        <source>Translate</source>
+        <translation>Preložiť</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="137"/>
-        <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <source>Continue Writing</source>
+        <translation>Pokračovať v písaní</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="182"/>
-        <source>Custom</source>
-        <translation type="unfinished">Vlastné</translation>
+        <source>Expand</source>
+        <translation>Rozšíriť</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="232"/>
-        <source>Private deployment model</source>
-        <translation type="unfinished"></translation>
+        <source>Polish</source>
+        <translation>Upraviť</translation>
     </message>
     <message>
-        <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation type="obsolete">Chýba pole &apos;mcpServers&apos;.</translation>
+        <source>Correct</source>
+        <translation>Opraviť</translation>
     </message>
     <message>
-        <source>no valid mcp server.</source>
-        <translation type="obsolete">žiadny platný MCP server.</translation>
-    </message>
-    <message>
-        <source>url field cannot be empty.</source>
-        <translation type="obsolete">pole url nemôže byť prázdne.</translation>
-    </message>
-    <message>
-        <source>command field cannot be empty.</source>
-        <translation type="obsolete">pole command nemôže byť prázdne.</translation>
-    </message>
-    <message>
-        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation type="obsolete">Chýba pole &apos;command&apos; alebo &apos;url&apos;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/taskchannel.cpp" line="198"/>
-        <source>Knowledge Base Management</source>
-        <translation type="unfinished"></translation>
+        <source>Add to the AI knowledge base</source>
+        <translation>Pridať do znalostnej bázy AI</translation>
     </message>
 </context>
 <context>
     <name>ResearchTools</name>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="60"/>
         <source>The uos-ai-agent plugin (approximately %1) must be installed to save documents.</source>
-        <translation type="unfinished"></translation>
+        <translation>Na uloženie dokumentov musí byť nainštalovaný doplnok uos-ai-agent (približne %1).</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="62"/>
         <source>The uos-ai-agent plugin must be installed to save documents.</source>
-        <translation type="unfinished"></translation>
+        <translation>Na uloženie dokumentov musí byť nainštalovaný doplnok uos-ai-agent.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="69"/>
         <source>Note</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámka</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="71"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušiť</translation>
+        <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="72"/>
         <source>Download Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ServerCodeTranslation</name>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Nepodarilo sa pripojiť k serveru, skontrolujte sieťové pripojenie alebo skúste neskôr.</translation>
-    </message>
-    <message>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation type="vanished">Pripojenie zlyhalo, skontrolujte zadané údaje.</translation>
-    </message>
-    <message>
-        <source>Sorry, according to relevant laws, regulations and policies, the results are not displayed for the time being.</source>
-        <translation type="vanished">Ospravedlňujeme sa, ale podľa platných zákonov, predpisov a politík sa výsledky dočasne nezobrazujú.</translation>
-    </message>
-    <message>
-        <source>Operation canceled.</source>
-        <translation type="vanished">Operácia zrušená.</translation>
-    </message>
-    <message>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="vanished">Platnosť vášho bezplatného účtu vypršala, nakonfigurujte si účet modelu pre pokračovanie v používaní.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="vanished">Vyčerpali ste kvótu bezplatného účtu, nakonfigurujte si účet modelu pre pokračovanie v používaní.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation type="vanished">Vyčerpali ste kvótu bezplatného účtu pre chat, nakonfigurujte si účet modelu pre pokračovanie v používaní.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted for text2image, please configure your model account to continue using it.</source>
-        <translation type="vanished">Vyčerpali ste kvótu bezplatného účtu pre text2image, nakonfigurujte si účet modelu pre pokračovanie v používaní.</translation>
-    </message>
-    <message>
-        <source>Invalid input device</source>
-        <translation type="vanished">Neplatné vstupné zariadenie</translation>
-    </message>
-    <message>
-        <source>Invalid output device</source>
-        <translation type="vanished">Neplatné výstupné zariadenie</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Ospravedlňujeme sa, nenašli sa žiadne zodpovedajúce operácie.</translation>
-    </message>
-    <message>
-        <source>The total number of characters in the conversation has exceeded the limit, please clear the conversation history and try again.</source>
-        <translation type="vanished">Celkový počet znakov v konverzácii prekročil limit, vymažte históriu konverzácie a skúste znova.</translation>
+        <translation>Stiahnuť teraz</translation>
     </message>
 </context>
 <context>
     <name>ServiceConfigChannel</name>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="123"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation type="unfinished">Chýba pole &apos;mcpServers&apos;.</translation>
+        <translation>Chýba pole &apos;mcpServers&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="132"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="145"/>
         <source>no valid mcp server.</source>
-        <translation type="unfinished">žiadny platný MCP server.</translation>
+        <translation>žiadny platný mcp server.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="138"/>
         <source>Only one MCP service can be edited at a time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Súčasne je možné upravovať iba jednu službu MCP.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="152"/>
         <source>url field cannot be empty.</source>
-        <translation type="unfinished">pole url nemôže byť prázdne.</translation>
+        <translation>Pole url nemôže byť prázdne.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="161"/>
         <source>command field cannot be empty.</source>
-        <translation type="unfinished">pole command nemôže byť prázdne.</translation>
+        <translation>Pole príkazu nemôže byť prázdne.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="168"/>
         <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation type="unfinished">Chýba pole &apos;command&apos; alebo &apos;url&apos;</translation>
+        <translation>Chýba pole &apos;command&apos; alebo &apos;url&apos;</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="219"/>
         <source>JSON configuration format is invalid.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Session</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">Asistent systému UOS</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Asistent systému Deepin</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Osobný asistent pre vedomosti</translation>
-    </message>
-    <message>
-        <source>AI Writing</source>
-        <translation type="vanished">AI písanie</translation>
-    </message>
-    <message>
-        <source>AI Text Processing</source>
-        <translation type="vanished">AI spracovanie textu</translation>
-    </message>
-    <message>
-        <source>AI Translation</source>
-        <translation type="vanished">AI preklad</translation>
-    </message>
-</context>
-<context>
-    <name>SessionPrivate</name>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI vyžaduje nakonfigurovaný účet modelu AI pred použitím. Najprv nakonfigurujte účet modelu.</translation>
-    </message>
-    <message>
-        <source>Agent server is not available.</source>
-        <translation type="vanished">Agent server nie je dostupný.</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="obsolete">Úspešne nárokované</translation>
-    </message>
-    <message>
-        <source>Account not found</source>
-        <translation type="vanished">Účet nebol nájdený</translation>
-    </message>
-    <message>
-        <source>Only support deepseek account</source>
-        <translation type="vanished">Podporuje iba účet deepseek</translation>
-    </message>
-    <message>
-        <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation type="vanished">Už ste sa zúčastnili akcie a nemôžete si znova nárokovať odmenu.</translation>
-    </message>
-    <message>
-        <source>Server system error</source>
-        <translation type="vanished">Chyba serverového systému</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="obsolete">Nepodarilo sa nárokovať. Skúste to znova.</translation>
+        <translation>Formát konfigurácie JSON je neplatný.</translation>
     </message>
 </context>
 <context>
     <name>TextParse</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="22"/>
         <source>Unable to open file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodarilo sa otvoriť súbor: %1</translation>
     </message>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="31"/>
         <source>The file content is in binary format</source>
-        <translation type="unfinished"></translation>
+        <translation>Obsah súboru je v binárnom formáte</translation>
     </message>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="39"/>
         <source>Unable to read file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodarilo sa prečítať súbor: %1</translation>
     </message>
 </context>
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="137"/>
         <source>Feedback</source>
         <translation>Spätná väzba</translation>
+    </message>
+    <message>
+        <source>Light Theme</source>
+        <translation>Svetlý motív</translation>
+    </message>
+    <message>
+        <source>Dark Theme</source>
+        <translation>Tmavý motív</translation>
+    </message>
+    <message>
+        <source>System Theme</source>
+        <translation>Systémový motív</translation>
+    </message>
+    <message>
+        <source>Theme</source>
+        <translation>Téma</translation>
     </message>
 </context>
 <context>
     <name>TtsCodeTranslation</name>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="10"/>
         <source>appid authorization failed</source>
         <translation>autorizácia appid zlyhala</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="11"/>
         <source>Failed to obtain a certain parameter</source>
-        <translation>Nepodarilo sa získať určitý parameter</translation>
+        <translation>Zlyhalo získanie určitého parametra</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="12"/>
         <source>Parameter value is illegal</source>
         <translation>Hodnota parametra je neplatná</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="13"/>
         <source>Insufficient engine authorization</source>
-        <translation>Nedostatočná autorizácia engine</translation>
+        <translation>Nedostatočná autorizácia enginu</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="14"/>
         <source>Request text length is illegal</source>
-        <translation>Dĺžka požadovaného textu je neplatná</translation>
+        <translation>Dĺžka textu požiadavky je neplatná</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="15"/>
         <source>session timeout</source>
-        <translation>vypršanie časového limitu relácie</translation>
+        <translation>časový limit relácie</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="16"/>
         <source>Engine session ended</source>
-        <translation>Relácia engine bola ukončená</translation>
+        <translation>Relácia enginu ukončená</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="17"/>
         <source>appid cannot be empty</source>
-        <translation>appid nemôže byť prázdny</translation>
+        <translation>appid nemôže byť prázdne</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="18"/>
         <source>Illegal version</source>
         <translation>Neplatná verzia</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="19"/>
         <source>permission denied</source>
-        <translation>prístup zamietnutý</translation>
+        <translation>prístup odmietnutý</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="20"/>
         <source>Daily flow control exceeds limit</source>
-        <translation>Denný limit toku bol prekročený</translation>
+        <translation>Denný limit toku dát bol prekročený</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="21"/>
         <source>The request data format is illegal</source>
-        <translation>Formát požadovaných údajov je neplatný</translation>
+        <translation>Formát dát požiadavky je neplatný</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="22"/>
         <source>base64 decoding failed</source>
-        <translation>Dekódovanie base64 zlyhalo</translation>
+        <translation>dekódovanie base64 zlyhalo</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="23"/>
         <source>Required parameters are missing or the parameters are illegal</source>
-        <translation>Chýbajú povinné parametre alebo parametre sú neplatné</translation>
+        <translation>Chýbajú povinné parametre alebo sú parametre neplatné</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="24"/>
         <source>Reading data timeout</source>
-        <translation>Časový limit na čítanie údajov</translation>
+        <translation>Časový limit pri čítaní dát</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="25"/>
         <source>network anomaly</source>
-        <translation>anomália siete</translation>
+        <translation>porucha siete</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="34"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>Pripojenie zlyhalo, skontrolujte vyplnené údaje.</translation>
-    </message>
-</context>
-<context>
-    <name>TtsCompositeWidget</name>
-    <message>
-        <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation type="vanished">Vami vybraný text prekročil limit 5000 znakov.</translation>
+        <translation>Pripojenie zlyhalo, skontrolujte vyplnené informácie.</translation>
     </message>
 </context>
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1223"/>
         <source>I haven&apos;t implemented this feature yet.</source>
         <translation>Túto funkciu som ešte neimplementoval.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1227"/>
         <source>service is not available!</source>
         <translation>služba nie je k dispozícii!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1232"/>
         <source>Invalid parameter!</source>
         <translation>Neplatný parameter!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1237"/>
         <source>This app cannot be found!</source>
-        <translation>Túto aplikáciu nemožno nájsť!</translation>
+        <translation>Túto aplikáciu sa nepodarilo nájsť!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1242"/>
         <source>Failed to start application!</source>
-        <translation>Spustenie aplikácie zlyhalo!</translation>
-    </message>
-</context>
-<context>
-    <name>UOSAbilityManager</name>
-    <message>
-        <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation type="vanished">Jas je už na maximu a nedá sa ďalej zvýšiť.</translation>
-    </message>
-    <message>
-        <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation type="vanished">Jas je už na minime a nedá sa ďalej znížiť.</translation>
-    </message>
-    <message>
-        <source>Your system memory is %0.</source>
-        <translation type="vanished">Pamäť vášho systému je %0.</translation>
-    </message>
-    <message>
-        <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation type="vanished">Rozhranie jazykových nastavení bolo otvorené. Nastavte ho v tomto rozhraní.</translation>
-    </message>
-    <message>
-        <source>The current mode is already %1 mode.</source>
-        <translation type="vanished">Aktuálny režim je už %1 režim.</translation>
-    </message>
-    <message>
-        <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation type="vanished">Nie je možné zavrieť, pretože aktuálny režim %1 nezodpovedá cieľovému režimu.</translation>
-    </message>
-    <message>
-        <source>Balance mode cannot be turned off.</source>
-        <translation type="vanished">Režim rovnováhy nie je možné vypnúť.</translation>
-    </message>
-    <message>
-        <source>The lock screen has been opened for you</source>
-        <translation type="vanished">Zamknutá obrazovka bola pre vás otvorená</translation>
-    </message>
-    <message>
-        <source>Screen shotting or recording has been completed</source>
-        <translation type="vanished">Snímka obrazovky alebo nahrávanie bolo dokončené</translation>
-    </message>
-    <message>
-        <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation type="vanished">Len jedna obrazovka, nie je možné prepnúť režim obrazovky.</translation>
-    </message>
-    <message>
-        <source>It is the same as the current display mode. Please try again.</source>
-        <translation type="vanished">Je to rovnaké ako aktuálny režim zobrazenia. Skúste to znova.</translation>
-    </message>
-    <message>
-        <source>Only one screen, can&apos;t switch screen.</source>
-        <translation type="vanished">Len jedna obrazovka, nie je možné prepnúť obrazovku.</translation>
-    </message>
-    <message>
-        <source>Your command has been issued.</source>
-        <translation type="vanished">Váš príkaz bol vydaný.</translation>
-    </message>
-</context>
-<context>
-    <name>UserAgreementDialog</name>
-    <message>
-        <source>UOS AI User Agreement</source>
-        <translation type="vanished">Užívateľská zmluva UOS AI</translation>
-    </message>
-    <message>
-        <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="vanished">Potvrdzujem, že mám viac ako 18 rokov. Uznávam a súhlasím, že obsah, ktorý posielam a prijímam prostredníctvom aplikácie, sú priame výmeny údajov s poskytovateľom služieb veľkého modelu a nemajú nič spoločné so spoločnosťou.</translation>
-    </message>
-    <message>
-        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="vanished">Súhlasím s účastou na pláne užívateľskej skúsenosti aplikácie a autorizujem vašu spoločnosť zhromažďovať obsah, ktorý posielam počas používania aplikácie, čas odoslania, typ požadovaného veľkého modelu, konkrétnu aplikáciu a či text úspešne vygeneroval obrázok, aby sa zlepšila kvalita služieb a vylepšila prevádzková skúsenosť. (Ak odmietnete poskytnúť vyššie uvedené informácie, nebude to mať vplyv na vaše bežné používanie aplikácie.)</translation>
-    </message>
-</context>
-<context>
-    <name>WXQFCodeTranslation</name>
-    <message>
-        <source>Server internal error</source>
-        <translation type="vanished">Interná chyba servera</translation>
-    </message>
-    <message>
-        <source>Service is temporarily unavailable</source>
-        <translation type="vanished">Služba je dočasne nedostupná</translation>
-    </message>
-    <message>
-        <source>The API being called does not exist. Please check the request URL and try again. Generally, there are non-English characters in the URL, such as &quot;-&quot;. You can enter it manually and try again.</source>
-        <translation type="vanished">Volané API neexistuje. Skontrolujte URL požiadavky a skúste znova. Vo všeobecnosti sa v URL nachádzajú neanglické znaky, napríklad &quot;-&quot;. Môžete ho zadať manuálne a skúsiť znova.</translation>
-    </message>
-    <message>
-        <source>No interface calling permission, the relevant Qianfan interface is not checked when creating the application</source>
-        <translation type="vanished">Žiadne oprávnenie na volanie rozhrania, relevantné rozhranie Qianfan nebolo pri vytváraní aplikácie zaškrtnuté</translation>
-    </message>
-    <message>
-        <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
-        <translation type="vanished">Chyba vyvolania modelu: Dosiahnutý limit požiadaviek modelu alebo model je offline. Odporúčania: Znova pridať model alebo kontaktovať zákaznícky servis poskytovateľa služieb veľkého modelu na vyriešenie tohto problému.</translation>
-    </message>
-    <message>
-        <source>Failed to obtain token</source>
-        <translation type="vanished">Nepodarilo sa získať token</translation>
-    </message>
-    <message>
-        <source>IAM authentication failed</source>
-        <translation type="vanished">IAM autentifikácia zlyhala</translation>
-    </message>
-    <message>
-        <source>The application does not exist or failed to be created</source>
-        <translation type="vanished">Aplikácia neexistuje alebo sa nepodarilo ju vytvoriť</translation>
-    </message>
-    <message>
-        <source>The number of requests per day exceeds the limit</source>
-        <translation type="vanished">Počet požiadavok za deň prekročil limit</translation>
-    </message>
-    <message>
-        <source>The total number of requests exceeds the limit</source>
-        <translation type="vanished">Celkový počet požiadavok prekročil limit</translation>
-    </message>
-    <message>
-        <source>Invalid access_token parameter</source>
-        <translation type="vanished">Neplatný parameter access_token</translation>
-    </message>
-    <message>
-        <source>access_token is invalid</source>
-        <translation type="vanished">access_token je neplatný</translation>
-    </message>
-    <message>
-        <source>access token expires</source>
-        <translation type="vanished">access token vypršal</translation>
-    </message>
-    <message>
-        <source>Service error, template does not exist</source>
-        <translation type="vanished">Chyba služby, šablóna neexistuje</translation>
-    </message>
-    <message>
-        <source>A system error occurred, please try again later</source>
-        <translation type="vanished">Vyskytla sa systémová chyba, skúste to prosím neskôr</translation>
-    </message>
-    <message>
-        <source>The knowledge base server cannot be accessed</source>
-        <translation type="vanished">Nie je možné pristupovať k serveru vedomostnej bázy</translation>
-    </message>
-    <message>
-        <source>Knowledge base data download exception</source>
-        <translation type="vanished">Výnimka pri sťahovaní údajov vedomostnej bázy</translation>
-    </message>
-    <message>
-        <source>Prompt word is too long</source>
-        <translation type="vanished">Výzva je príliš dlhá</translation>
-    </message>
-    <message>
-        <source>Model does not exist</source>
-        <translation type="vanished">Model neexistuje</translation>
-    </message>
-    <message>
-        <source>Request parameter error</source>
-        <translation type="vanished">Chyba parametra požiadavky</translation>
-    </message>
-    <message>
-        <source>Image processing failed</source>
-        <translation type="vanished">Spracovanie obrázka zlyhalo</translation>
-    </message>
-    <message>
-        <source>Service handling exception error</source>
-        <translation type="vanished">Chyba výnimky pri spracovaní služby</translation>
-    </message>
-    <message>
-        <source>Service internal error</source>
-        <translation type="vanished">Interná chyba služby</translation>
-    </message>
-    <message>
-        <source>The input parameter format is incorrect, such as missing necessary parameters.</source>
-        <translation type="vanished">Formát vstupného parametra je nesprávny, napríklad chýbajú nevyhnutné parametre.</translation>
-    </message>
-    <message>
-        <source>The input parameter body is not in standard JSON format</source>
-        <translation type="vanished">Telo vstupného parametra nie je v štandardnom formáte JSON</translation>
-    </message>
-    <message>
-        <source>Parameter verification is illegal</source>
-        <translation type="vanished">Overenie parametra je neplatné</translation>
-    </message>
-    <message>
-        <source>Permission control error</source>
-        <translation type="vanished">Chyba riadenia oprávnení</translation>
-    </message>
-    <message>
-        <source>Customized model service apiname does not exist</source>
-        <translation type="vanished">Vlastné služby modelu apiname neexistujú</translation>
-    </message>
-    <message>
-        <source>Service internal error, please try again later</source>
-        <translation type="vanished">Interná chyba služby, skúste to prosím neskôr</translation>
-    </message>
-    <message>
-        <source>Illegal HTTP Method, currently only supports POST requests</source>
-        <translation type="vanished">Neplatná metóda HTTP, momentálne podporuje iba POST požiadavky</translation>
-    </message>
-    <message>
-        <source>The requested content exceeds the large model internal limit</source>
-        <translation type="vanished">Požadovaný obsah prekračuje interný limit veľkého modelu</translation>
-    </message>
-    <message>
-        <source>internal error</source>
-        <translation type="vanished">interná chyba</translation>
-    </message>
-    <message>
-        <source>Vincent diagram model service timeout</source>
-        <translation type="vanished">Časový limit služby modelu Vincent diagram</translation>
-    </message>
-    <message>
-        <source>There are security issues with prompt and negative_prompt</source>
-        <translation type="vanished">Existujú bezpečnostné problémy s prompt a negative_prompt</translation>
-    </message>
-    <message>
-        <source>There are security issues with output images</source>
-        <translation type="vanished">Existujú bezpečnostné problémy s výstupnými obrázkami</translation>
-    </message>
-    <message>
-        <source>Parameter error</source>
-        <translation type="vanished">Chyba parametra</translation>
-    </message>
-    <message>
-        <source>No access</source>
-        <translation type="vanished">Žiadny prístup</translation>
-    </message>
-</context>
-<context>
-    <name>WXQFText2Image</name>
-    <message>
-        <source>The image description exceeds the 256 character limit</source>
-        <translation type="vanished">Popis obrázka prekračuje limit 256 znakov</translation>
-    </message>
-</context>
-<context>
-    <name>WelcomeDialog</name>
-    <message>
-        <source>Welcome to UOS AI</source>
-        <translation type="vanished">Vitajte v UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation type="vanished">UOS AI, váš inteligentný asistent, je navrhnutý tak, aby zlepšil vašu produktivitu a umožnil vám užívať si kvalitnú pracovnú skúsenosť.</translation>
-    </message>
-    <message>
-        <source>Get a free trial account</source>
-        <translation type="vanished">Získajte bezplatný skúšobný účet</translation>
-    </message>
-    <message>
-        <source>Add Model</source>
-        <translation type="vanished">Pridať model</translation>
-    </message>
-    <message>
-        <source>Start using</source>
-        <translation type="vanished">Začať používať</translation>
-    </message>
-    <message>
-        <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="vanished">Potvrdzujem, že mám viac ako 18 rokov. Beriem na vedomie a súhlasím s &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI Užívateľskou zmluvou&quot;&lt;/a&gt;, a obsah, ktorý posielam a prijímam prostredníctvom aplikácie, sú priame výmeny údajov s poskytovateľom služby veľkého modelu a nemajú nič spoločné so spoločnosťou.</translation>
-    </message>
-    <message>
-        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="vanished">Prijatie účtu znamená, že rozumiete a súhlasíte s podmienkami udalosti,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Podrobnosti udalosti&gt;&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Skúšobný účet</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Uloženie zlyhalo, skúste to prosím neskôr</translation>
-    </message>
-    <message>
-        <source>Trial account received successfully.</source>
-        <translation type="obsolete">UOS AI试用账号领取成功！</translation>
-    </message>
-    <message>
-        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="vanished">Počet použití a trvanie skúšobného účtu sú obmedzené, včas si prosím nakonfigurujte svoj osobný modelový účet! Podrobnosti nájdete v podrobnostiach udalosti.</translation>
-    </message>
-    <message>
-        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="vanished">Anglická podpora pre skúšobné účty nie je uspokojivá. Počet použití a trvanie skúšobného účtu sú obmedzené. Včas si, prosím, nakonfigurujte svoj osobný účet modelu!</translation>
-    </message>
-    <message>
-        <source>Start trial</source>
-        <comment>button</comment>
-        <translation type="vanished">Začať skúšobné obdobie</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">Aktivita bezplatného účtu končí.</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Nie je možné sa pripojiť k serveru, skontrolujte svoje sieťové pripojenie alebo skúste to neskôr.</translation>
-    </message>
-    <message>
-        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="vanished">Súhlasím s účastou na pláne užívateľskej skúsenosti aplikácie a autorizujem vašu spoločnosť na zbieranie obsahu, ktorý posielam pri používaní aplikácie, času odoslania, typu požadovaného veľkého modelu, konkrétnej aplikácie a toho, či text úspešne vygeneroval obrázok, aby sa zlepšila kvalita služieb a vylepšila prevádzková skúsenosť. (Ak odmietnete poskytnúť vyššie uvedené informácie, nebude to mať vplyv na vaše bežné používanie aplikácie.)</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Potvrdiť</translation>
+        <translation>Zlyhalo spustenie aplikácie!</translation>
     </message>
 </context>
 <context>
     <name>WorkspaceStore</name>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="257"/>
         <source>Note: Part of the document content may be generated by AI</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámka: Časť obsahu dokumentu môže byť vygenerovaná umelou inteligenciou</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="261"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>Odkazy</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="288"/>
         <source>Word files (*.docx)</source>
-        <translation type="unfinished"></translation>
+        <translation>Súbory programu Word (*.docx)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="291"/>
         <source>PDF files (*.pdf)</source>
-        <translation type="unfinished"></translation>
+        <translation>Súbory PDF (*.pdf)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="294"/>
         <source>Markdown files (*.md)</source>
-        <translation type="unfinished"></translation>
+        <translation>Súbory Markdown (*.md)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="301"/>
         <source>Save Article</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>XFCodeTranslation</name>
-    <message>
-        <source>Error while upgrading to WebSocket</source>
-        <translation type="vanished">Chyba pri aktualizácii na WebSocket</translation>
-    </message>
-    <message>
-        <source>Error reading user&apos;s message via WebSocket</source>
-        <translation type="vanished">Chyba pri čítaní používateľovej správy cez WebSocket</translation>
-    </message>
-    <message>
-        <source>Error sending message to user via WebSocket</source>
-        <translation type="vanished">Chyba pri odosielaní správy používateľovi cez WebSocket</translation>
-    </message>
-    <message>
-        <source>The user&apos;s message format is incorrect</source>
-        <translation type="vanished">Formát správy používateľa je nesprávny</translation>
-    </message>
-    <message>
-        <source>Schema error for user data</source>
-        <translation type="vanished">Chyba schémy pre používateľské údaje</translation>
-    </message>
-    <message>
-        <source>User parameter value is wrong</source>
-        <translation type="vanished">Hodnota používateľského parametra je nesprávna</translation>
-    </message>
-    <message>
-        <source>User concurrency error: The current user is already connected, and the same user cannot connect to multiple places at the same time.</source>
-        <translation type="vanished">Chyba súbežnosti používateľa: Aktuálny používateľ je už pripojený a ten istý používateľ sa nemôže pripojiť na viacerých miestach súčasne.</translation>
-    </message>
-    <message>
-        <source>User traffic is limited: The service is processing the user&apos;s current problem and needs to wait for the processing to be completed before sending a new request. (You must wait for a complete reply from the  model before sending the next question)</source>
-        <translation type="vanished">Prevádzka používateľa je obmedzená: Služba spracováva aktuálny problém používateľa a je potrebné počkať na dokončenie spracovania pred odoslaním novej požiadavky. (Pred odoslaním ďalšej otázky musíte počkať na úplnú odpoveď modelu)</translation>
-    </message>
-    <message>
-        <source>Insufficient service capacity, please contact staff</source>
-        <translation type="vanished">Nedostatočná kapacita služby, kontaktujte personál</translation>
-    </message>
-    <message>
-        <source>Failed to establish connection with engine</source>
-        <translation type="vanished">Nepodarilo sa nadviazať spojenie s engine</translation>
-    </message>
-    <message>
-        <source>Error receiving engine data</source>
-        <translation type="vanished">Chyba pri prijímaní údajov z engine</translation>
-    </message>
-    <message>
-        <source>Error sending data to engine</source>
-        <translation type="vanished">Chyba pri odosielaní údajov do engine</translation>
-    </message>
-    <message>
-        <source>Engine internal error</source>
-        <translation type="vanished">Interná chyba engine</translation>
-    </message>
-    <message>
-        <source>The input content does not pass the review and is suspected of violating the rules. Please readjust the input content.</source>
-        <translation type="vanished">Vstupný obsah neprešiel kontrolou a je podozrivý z porušenia pravidiel. Upravte prosím vstupný obsah.</translation>
-    </message>
-    <message>
-        <source>The output content involves sensitive information, the review fails, and subsequent results cannot be displayed to the user.</source>
-        <translation type="vanished">Výstupný obsah zahŕňa citlivé informácie, kontrola zlyhala a následné výsledky nemôžu byť zobrazené používateľovi.</translation>
-    </message>
-    <message>
-        <source>appid is in the blacklist</source>
-        <translation type="vanished">appid je na čiernej listine</translation>
-    </message>
-    <message>
-        <source>Appid authorization class error. For example: this function is not activated, the corresponding version is not activated, the token is insufficient, the concurrency exceeds authorization, etc.</source>
-        <translation type="vanished">Chyba autorizačnej triedy appid. Napríklad: táto funkcia nie je aktivovaná, príslušná verzia nie je aktivovaná, token je nedostatočný, súbežnosť prekračuje autorizáciu atď.</translation>
-    </message>
-    <message>
-        <source>Clear history failed</source>
-        <translation type="vanished">Vymazanie histórie zlyhalo</translation>
-    </message>
-    <message>
-        <source>Indicates that the content of this session has a tendency to involve illegal information; it is recommended that developers give the user a prompt after receiving this error code to enter information that involves illegal information.</source>
-        <translation type="vanished">Indikuje, že obsah tejto relácie má tendenciu zahŕňať nezákonné informácie; odporúča sa, aby vývojári po prijatí tohto chybového kódu vyzvali používateľa na zadanie informácií, ktoré zahŕňajú nezákonné informácie.</translation>
-    </message>
-    <message>
-        <source>Service is busy, please try again later</source>
-        <translation type="vanished">Služba je vyťažená, skúste to neskôr</translation>
-    </message>
-    <message>
-        <source>The parameters of the request engine are abnormal, and the engine schema check fails.</source>
-        <translation type="vanished">Parametre požiadavky engine sú abnormálne a kontrola schémy engine zlyhala.</translation>
-    </message>
-    <message>
-        <source>Engine network abnormality</source>
-        <translation type="vanished">Abnormalita siete engine</translation>
-    </message>
-    <message>
-        <source>The number of tokens exceeds the upper limit. The number of words in the conversation history and question is too large and needs to be simplified.</source>
-        <translation type="vanished">Počet tokenov prekročil horný limit. Počet slov v histórii konverzácie a otázke je príliš veľký a je potrebné ich zjednodušiť.</translation>
-    </message>
-    <message>
-        <source>Authorization error: The appId does not have authorization for related functions or the business volume exceeds the limit</source>
-        <translation type="vanished">Chyba autorizácie: appId nemá autorizáciu pre súvisiace funkcie alebo objem obchodu prekročil limit</translation>
-    </message>
-    <message>
-        <source>Authorization error: Daily flow control limit exceeded. Exceeded the maximum number of visits for the day</source>
-        <translation type="vanished">Chyba autorizácie: Prekročený denný limit riadenia toku. Prekročený maximálny počet návštev za deň</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Momentálne je príliš veľa návštevníkov, skúste to neskôr.</translation>
-    </message>
-    <message>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation type="vanished">Spojenie zlyhalo, skontrolujte vyplnené informácie.</translation>
-    </message>
-</context>
-<context>
-    <name>ZhiPuCodeTranslation</name>
-    <message>
-        <source>Server internal error</source>
-        <translation type="vanished">Interná chyba servera</translation>
-    </message>
-    <message>
-        <source>Authentication failed</source>
-        <translation type="vanished">Autentifikácia zlyhala</translation>
-    </message>
-    <message>
-        <source>The Authentication parameter was not received in the header and authentication could not be performed.</source>
-        <translation type="vanished">Parameter autentifikácie nebol prijatý v hlavičke a autentifikáciu nebolo možné vykonať.</translation>
-    </message>
-    <message>
-        <source>The Authentication Token is illegal. Please confirm that the Authentication Token is delivered correctly.</source>
-        <translation type="vanished">Autentifikačný token je neplatný. Potvrďte, že autentifikačný token je doručený správne.</translation>
-    </message>
-    <message>
-        <source>Authentication Token has expired, please regenerate/obtain it</source>
-        <translation type="vanished">Autentifikačný token vypršal, obnovte/získajte ho</translation>
-    </message>
-    <message>
-        <source>Verification via Authentication Token failed</source>
-        <translation type="vanished">Overenie pomocou autentifikačného tokenu zlyhalo</translation>
-    </message>
-    <message>
-        <source>Account reading and writing</source>
-        <translation type="vanished">Čítanie a zápis účtu</translation>
-    </message>
-    <message>
-        <source>Your account is currently inactive. Please check account information</source>
-        <translation type="vanished">Váš účet je momentálne neaktívny. Skontrolujte informácie o účte</translation>
-    </message>
-    <message>
-        <source>Your account does not exist</source>
-        <translation type="vanished">Váš účet neexistuje</translation>
-    </message>
-    <message>
-        <source>Your account has been locked, please contact customer service to unlock it</source>
-        <translation type="vanished">Váš účet bol uzamknutý, kontaktujte zákaznícky servis pre odomknutie</translation>
-    </message>
-    <message>
-        <source>Your account is in arrears, please recharge and try again</source>
-        <translation type="vanished">Váš účet má nedoplatok, doplňte kredit a skúste znova</translation>
-    </message>
-    <message>
-        <source>Unable to successfully access your account, please try again later</source>
-        <translation type="vanished">Nepodarilo sa úspešne pristúpiť k vášmu účtu, skúste to neskôr</translation>
-    </message>
-    <message>
-        <source>API call error</source>
-        <translation type="vanished">Chyba volania API</translation>
-    </message>
-    <message>
-        <source>API call parameters are incorrect, please check the documentation</source>
-        <translation type="vanished">Parametre volania API sú nesprávne, skontrolujte dokumentáciu</translation>
-    </message>
-    <message>
-        <source>Model does not exist, please check the model code</source>
-        <translation type="vanished">Model neexistuje, skontrolujte kód modelu</translation>
-    </message>
-    <message>
-        <source>The current model does not support the ${method} calling method</source>
-        <translation type="vanished">Aktuálny model nepodporuje metódu volania ${method}</translation>
-    </message>
-    <message>
-        <source>${field} Parameters not received normally</source>
-        <translation type="vanished">Parametre ${field} neboli prijaté normálne</translation>
-    </message>
-    <message>
-        <source>The ${field}  parameter is illegal. Please check the documentation</source>
-        <translation type="vanished">Parameter ${field} je neplatný. Skontrolujte dokumentáciu</translation>
-    </message>
-    <message>
-        <source>${field1} and ${field2} cannot be set at the same time, please check the documentation</source>
-        <translation type="vanished">${field1} a ${field2} nemôžu byť nastavené súčasne, skontrolujte dokumentáciu</translation>
-    </message>
-    <message>
-        <source>You do not have access to  ${API_name}</source>
-        <translation type="vanished">Nemáte prístup k ${API_name}</translation>
-    </message>
-    <message>
-        <source>API ${API_name} is offline</source>
-        <translation type="vanished">API ${API_name} je offline</translation>
-    </message>
-    <message>
-        <source>API ${API_name}  does not exist</source>
-        <translation type="vanished">API ${API_name} neexistuje</translation>
-    </message>
-    <message>
-        <source>API call process error</source>
-        <translation type="vanished">Chyba procesu volania API</translation>
-    </message>
-    <message>
-        <source>You have requested: ${request_id}</source>
-        <translation type="vanished">Požiadali ste o: ${request_id}</translation>
-    </message>
-    <message>
-        <source>When getting asynchronous request results, please use task_id</source>
-        <translation type="vanished">Pri získavaní výsledkov asynchrónnej požiadavky použite task_id</translation>
-    </message>
-    <message>
-        <source>Task: ${task_id} does not exist</source>
-        <translation type="vanished">Úloha: ${task_id} neexistuje</translation>
-    </message>
-    <message>
-        <source>Network error, error id: ${error_id}, please contact customer service</source>
-        <translation type="vanished">Chyba siete, ID chyby: ${error_id}, kontaktujte zákaznícky servis</translation>
-    </message>
-    <message>
-        <source>API run error</source>
-        <translation type="vanished">Chyba behu API</translation>
-    </message>
-    <message>
-        <source>Prompt super long</source>
-        <translation type="vanished">Výzva príliš dlhá</translation>
-    </message>
-    <message>
-        <source>API call blocked by policy</source>
-        <translation type="vanished">Volanie API zablokované politikou</translation>
-    </message>
-    <message>
-        <source>The system has detected that the input or generated content may contain unsafe or sensitive content. Please avoid entering prompts that may easily generate sensitive content. Thank you for your cooperation.</source>
-        <translation type="vanished">Systém zistil, že vstup alebo vygenerovaný obsah môže obsahovať nebezpečný alebo citlivý obsah. Vyhnite sa zadávaniu výziev, ktoré môžu ľahko generovať citlivý obsah. Ďakujeme za spoluprácu.</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Momentálne je príliš veľa návštevníkov, skúste to neskôr.</translation>
-    </message>
-    <message>
-        <source>This API has reached the limit of calls for today. If you need more, please contact customer service to purchase.</source>
-        <translation type="vanished">Toto API dosiahlo dnešný limit volaní. Ak potrebujete viac, kontaktujte zákaznícky servis pre nákup.</translation>
+        <translation>Uložiť článok</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AITranslation</name>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="27"/>
         <source>Translate the following text into English for me.</source>
-        <translation type="unfinished">Preložte nasledujúci text do angličtiny.</translation>
+        <translation>Preložte pre mňa nasledujúci text do angličtiny.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="28"/>
         <source>Translate the following document into Chinese.</source>
-        <translation type="unfinished">Preložte nasledujúci dokument do čínštiny.</translation>
+        <translation>Preložte nasledujúci dokument do čínštiny.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="29"/>
         <source>What does the word Ǌgent” mean in the AI industry?</source>
-        <translation type="unfinished"></translation>
+        <translation>Čo znamená slovo „agent” v priemysle umelej inteligencie?</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="30"/>
         <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation type="unfinished">Preložte nasledujúci obsah do čínštiny. Požiadavky: Presný význam, formálny a profesionálny jazyk.</translation>
+        <translation>Prosím, preložte nasledujúci obsah do čínštiny. Požiadavky: Presný význam, formálny a profesionálny jazyk.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="31"/>
         <source>What are some colloquial ways to address a friend in English?</source>
-        <translation type="unfinished">Aké sú niektoré hovorové spôsoby oslovovania priateľa v angličtine?</translation>
+        <translation>Aké sú niektoré hovorové spôsoby, ako osloviť priateľa v angličtine?</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="32"/>
         <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation type="unfinished">Preložte nasledujúci klasický čínsky text do moderného čínskeho jazyka.</translation>
+        <translation>Preložte nasledujúci text klasickej čínštiny do modernej čínštiny.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AIWriter</name>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="66"/>
         <source>Today </source>
-        <translation type="unfinished"></translation>
+        <translation>Dnes </translation>
     </message>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="68"/>
         <source>Yesterday </source>
-        <translation type="unfinished"></translation>
+        <translation>Včera </translation>
     </message>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="70"/>
         <source>MMM d HH:mm</source>
-        <translation type="unfinished"></translation>
+        <translation>MMM d HH:mm</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AboutWindow</name>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="24"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI je inteligentný asistent na ploche, váš osobný asistent! Môžete s ním komunikovať pomocou textu alebo hlasu a môže pomôcť odpovedať na otázky, poskytovať informácie a generovať obrázky na základe vašich popisov.</translation>
     </message>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="59"/>
         <source>Filing Information</source>
-        <translation type="unfinished">Informácie o archivácii</translation>
+        <translation>Informácie o spisoch</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::AddPrivateModelDialog</name>
+    <name>uos_ai::AbstractAssistant</name>
     <message>
-        <source>Add model</source>
-        <translation type="vanished">Pridať model</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">API kľúč</translation>
-    </message>
-    <message>
-        <source>Required, please input</source>
-        <translation type="vanished">Povinné, zadajte</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Účet</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Povinné na rozlíšenie viacerých modelov</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Názov modelu</translation>
-    </message>
-    <message>
-        <source>Optional</source>
-        <translation type="vanished">Voliteľné</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Doména</translation>
-    </message>
-    <message>
-        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="vanished">Na testovanie dostupnosti modelu systém odošle testovacie informácie do veľkého modelu, čo spotrebuje malé množstvo tokenov.</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Zrušiť</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Potvrdiť</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">Najviac 20 znakov</translation>
-    </message>
-    <message>
-        <source>This LLM already exists, please do not add it again.</source>
-        <translation type="vanished">Tento LLM už existuje, prosím, nepridávajte ho znova.</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Uloženie zlyhalo, skúste to neskôr</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">Názov účtu už existuje, prosím, zmeňte ho</translation>
-    </message>
-    <message>
-        <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="vanished">Pre nastavenia proxy prejdite do systémových nastavení proxy</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Prejsť do nastavení</translation>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation>UOS AI vyžaduje pred použitím konfiguráciu účtu modelu AI. Najprv prosím nakonfigurujte účet modelu.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddSkillDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="62"/>
         <source>Add Skill</source>
         <translation>Pridať zručnosť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
         <source>Skill Name</source>
         <translation>Názov zručnosti</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="69"/>
         <source>Enter skill name</source>
         <translation>Zadajte názov zručnosti</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="83"/>
         <source>Skill Command</source>
         <translation>Príkaz zručnosti</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="91"/>
         <source> {selection} </source>
-        <translation> {selection} </translation>
+        <translation> {výber} </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="95"/>
         <source>represents the text selected by word selection.</source>
         <translation>predstavuje text vybraný výberom slov.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="100"/>
         <source>Instructions</source>
         <translation>Inštrukcie</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="126"/>
         <source>Cancel</source>
         <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
         <source>Save</source>
         <translation>Uložiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="246"/>
         <source>Skill name cannot be empty</source>
         <translation>Názov zručnosti nemôže byť prázdny</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="291"/>
         <source>Exceeded character limit</source>
         <translation>Prekročený limit znakov</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="403"/>
         <source>The skill name already exists.</source>
         <translation>Názov zručnosti už existuje.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="438"/>
         <source>Command Instructions</source>
-        <translation>Inštrukcie k príkazu</translation>
+        <translation>Inštrukcie príkazu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="476"/>
         <source>If you want to translate the selected text &quot;Hello&quot;, as shown above, you can enter the command: Translate {selection} into English.</source>
-        <translation>Ak chcete preložiť vybraný text &quot;Hello&quot;, ako je uvedené vyššie, môžete zadať príkaz: Preložiť {selection} do angličtiny.</translation>
+        <translation>Ak chcete preložiť vybraný text „Hello“, ako je uvedené vyššie, môžete zadať príkaz: Prelož {výber} do angličtiny.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="483"/>
         <source>Advanced Tips</source>
         <translation>Pokročilé tipy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="489"/>
         <source>The more specific the command, the more accurate the generated content. For example:
 • Generate a PPT outline for {selection} with 3 chapters and 10 key points.
 • Polish {selection} into a recruitment copy within 100 words, highlighting teamwork.</source>
-        <translation>Čím konkrétnejší príkaz, tým presnejší vygenerovaný obsah. Napríklad:
-
-• Vytvoriť osnovu PPT pre {selection} s 3 kapitolami a 10 kľúčovými bodmi.
-
-• Upraviť {selection} do náborového textu do 100 slov, zdôrazňujúc tímovú prácu.</translation>
+        <translation>Čím konkrétnejší je príkaz, tým presnejší je generovaný obsah. Napríklad:
+• Generujte osnovu PPT pre {výber} s 3 kapitolami a 10 kľúčovými bodmi.
+• Upravte {výber} do náborového textu do 100 slov s dôrazom na tímovú prácu.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="561"/>
         <source>Clicking the label can still insert it into the input field.</source>
-        <translation>Kliknutím na štítok ho stále môžete vložiť do vstupného poľa.</translation>
+        <translation>Kliknutím na štítok ho môžete stále vložiť do vstupného poľa.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
@@ -4335,529 +712,408 @@ Príklad výzvy: Pomenujte všetky súbory v novo vytvorenom priečinku na praco
 <context>
     <name>uos_ai::AiBarWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="32"/>
         <source>DDE Shell AI Bar</source>
-        <translation>DDE Shell AI Panel</translation>
+        <translation>Panel AI DDE Shell</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="52"/>
         <source>Drag files quickly</source>
-        <translation>Rýchlo presúvajte súbory</translation>
+        <translation>Rýchlo presuňte súbory</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="52"/>
         <source>Drag files to the AI ribbon for intelligent processing</source>
-        <translation>Presuňte súbory na panel AI na inteligentné spracovanie</translation>
+        <translation>Presuňte súbory na pásku AI pre inteligentné spracovanie</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AiQuickDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="124"/>
         <source>simplified Chinese</source>
-        <translation type="unfinished">zjednodušená čínština</translation>
+        <translation>zjednodušená čínština</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="125"/>
         <source>traditional Chinese</source>
-        <translation type="unfinished">tradičná čínština</translation>
+        <translation>tradičná čínština</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="126"/>
         <source>Tibetan</source>
-        <translation type="unfinished">tibetčina</translation>
+        <translation>tibetčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="127"/>
         <source>English</source>
-        <translation type="unfinished">angličtina</translation>
+        <translation>angličtina</translation>
     </message>
     <message>
-        <source>Japanese </source>
-        <translation type="obsolete">japončina</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="128"/>
         <source>Japanese</source>
-        <translation type="unfinished">Japončina</translation>
+        <translation>japončina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="129"/>
         <source>German</source>
-        <translation type="unfinished">nemčina</translation>
+        <translation>nemčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="130"/>
         <source>Spanish</source>
-        <translation type="unfinished">španielčina</translation>
+        <translation>španielčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="131"/>
         <source>French</source>
-        <translation type="unfinished">francúzština</translation>
+        <translation>francúzština</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="132"/>
         <source>Italian</source>
-        <translation type="unfinished">taliančina</translation>
+        <translation>taliančina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="133"/>
         <source>Korean</source>
-        <translation type="unfinished">kórejčina</translation>
+        <translation>kórejčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="134"/>
         <source>Malay</source>
-        <translation type="unfinished">malajčina</translation>
+        <translation>malajčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="135"/>
         <source>Portuguese</source>
-        <translation type="unfinished">portugalčina</translation>
+        <translation>portugalčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="136"/>
         <source>Russian</source>
-        <translation type="unfinished">ruština</translation>
+        <translation>ruština</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="137"/>
         <source>Thai</source>
-        <translation type="unfinished">thajčina</translation>
+        <translation>thajčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="138"/>
         <source>Vietnamese</source>
-        <translation type="unfinished">vietnamčina</translation>
+        <translation>vietnamčina</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="203"/>
         <source>type</source>
-        <translation type="unfinished">typ</translation>
+        <translation>typ</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="302"/>
-        <source>Cancel</source>
-        <translation type="unfinished">Zrušiť</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="327"/>
-        <source>Read Aloud</source>
-        <translation type="unfinished">Čítať nahlas</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="334"/>
-        <source>Paste to Text</source>
-        <translation type="unfinished">Vložiť do textu</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="348"/>
-        <source>Regenerate</source>
-        <translation type="unfinished">Obnoviť</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="355"/>
-        <source>Copy</source>
-        <translation type="unfinished">Kopírovať</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="373"/>
-        <source>Continue Dialog</source>
-        <translation type="unfinished">Pokračovať v dialógu</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="386"/>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="unfinished">Obsah generovaný AI je len na referenčné účely, venujte pozornosť presnosti informácií.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="422"/>
-        <source>Automatic Detection</source>
-        <translation type="unfinished">Automatická detekcia</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="498"/>
-        <source>Search</source>
-        <translation type="unfinished">Hľadať</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="499"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1315"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
-        <source>Explain</source>
-        <translation type="unfinished">Vysvetliť</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="500"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1320"/>
-        <source>Summary</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="501"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1325"/>
-        <source>Translate</source>
-        <translation type="unfinished">Preložiť</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="502"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1344"/>
-        <source>Continue writing</source>
-        <translation type="unfinished">Pokračovať v písaní</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="503"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1349"/>
-        <source>Expand</source>
-        <translation type="unfinished">Rozšíriť</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="504"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1354"/>
-        <source>Correct</source>
-        <translation type="unfinished">Opraviť</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="505"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
-        <source>Polish</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="525"/>
-        <source>Add to the AI knowledge base</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="632"/>
-        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation type="unfinished">Výsledok prekladu je obmedzený schopnosťami modelu. Ak ste s prekladom nespokojní, prejdite na iné modely na domovskej stránke UOS AI.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="633"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="954"/>
-        <source>Ok</source>
-        <translation type="unfinished">OK</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="639"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1341"/>
-        <source>Translate this passage into %1 and give me a clear result directly.
-text：</source>
-        <translation type="unfinished">Preložte tento text do %1 a poskytnite mi priamy a jasný výsledok. text：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="826"/>
-        <source>Not clickable</source>
-        <translation type="unfinished">Neklikateľné</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="909"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
-        <source>The audio device is not detected, please check and try again.</source>
-        <translation type="unfinished">Zvukové zariadenie nebolo detekované, skontrolujte a skúste znova.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="915"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="941"/>
-        <source>Ok</source>
-        <comment>button</comment>
-        <translation type="unfinished">OK</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="934"/>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="952"/>
-        <source>Fill failed</source>
-        <translation type="unfinished">Vyplnenie zlyhalo</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="953"/>
-        <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="unfinished">Nie je vybrané žiadne vstupné pole, vyberte vstupné pole a znova ho vyplňte.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1018"/>
-        <source>Added</source>
-        <translation type="unfinished">Pridané</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1292"/>
-        <source>Copied</source>
-        <translation type="unfinished">Skopírované</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1317"/>
-        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
-text：</source>
-        <translation type="unfinished">Vysvetlite tento text jednoduchým jazykom. Poskytnite mi jasný výsledok bez zbytočného obsahu. text：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1322"/>
-        <source>Summarize this passage and give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="unfinished">Zhrňte tento text a poskytnite mi priamy a jasný výsledok bez akéhokoľvek zbytočného obsahu. text：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1346"/>
-        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="unfinished">Vhodne pokračujte v tomto texte. Netreba veľa slov. Poskytnite mi jasný výsledok bez zbytočného obsahu. text：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1351"/>
-        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="unfinished">Vhodne rozšírte tento text. Netreba veľmi dlhý text. Poskytnite mi jasný výsledok bez zbytočného obsahu. text：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1356"/>
-        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="unfinished">Skontrolujte, či sú v tomto texte nejaké preklepy. Ak áno, označte miesto chýb. Poskytnite mi priamy a jasný výsledok bez zbytočného obsahu. text：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1361"/>
-        <source>Polish this passage for me and just give me the result without any extra content.
-text：</source>
-        <translation type="unfinished">Vylepšite tento text pre mňa a uveďte len výsledok bez akýchkoľvek ďalších informácií.
-
-text:</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1402"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1404"/>
-        <source> &quot;%1&quot; </source>
-        <translation type="unfinished">&quot;%1&quot;</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1779"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1795"/>
-        <source>Current model: </source>
-        <translation type="unfinished">Aktuálny model: </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1800"/>
-        <source>Currently no model</source>
-        <translation type="unfinished">Momentálne žiadny model</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1819"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1829"/>
-        <source>Go to configure  </source>
-        <translation type="unfinished">Prejsť na konfiguráciu</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1823"/>
-        <source>Claim Free Credits  </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2014"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2049"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2095"/>
-        <source>No text recognized.</source>
-        <translation type="unfinished">Nebol rozpoznaný žiadny text.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2114"/>
-        <source>The added content must be more than 10 words</source>
-        <translation type="unfinished">Pridaný obsah musí mať viac ako 10 slov</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::AiWriterDialog</name>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="111"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="429"/>
-        <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
-        <translation>Zadajte, čo chcete vytvoriť (stlačte Enter pre generovanie/Esc pre ukončenie)</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
-        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation>Pomôžte mi napísať esej na tému [%1] s [jasnou štruktúrou a bohatým obsahom].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
-        <source>Artificial Intelligence</source>
-        <translation>Umelá inteligencia</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
-        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation>Pomôžte mi napísať osnovu na tému [%1], ktorá sa použije na [výrobu PPT].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
-        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation>Pomôžte mi napísať oznámenie o [%1], príjemcom sú [Všetci zamestnanci] a odosielateľ je [Administratívne oddelenie].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
-        <source>National Day Holiday</source>
-        <translation>Sviatok národného dňa</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
-        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation>Pomôžte mi napísať výskumnú správu o [%1], ktorá musí obsahovať aspoň [popis stavu, analýzu problému, protiopatrenia a návrhy, závery výskumu].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
-        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation>Pomôžte mi napísať prejav na tému [%1] pre [Vedenie spoločnosti], ktorý vyžaduje [jasnú štruktúru a živý jazyk].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
-        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation>Pomôžte mi napísať zhrnutie mojej nedávnej práce, vrátane [%1] a [výsledkov], ktoré vyžaduje [formálny] tón.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
-        <source>work content</source>
-        <translation>obsah práce</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
-        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation>Pomôžte mi napísať verejný tweet na tému [%1], ktorý vyžaduje [jasnú štruktúru] a [uvoľnený] tón.</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Konfigurácia modelu</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1100"/>
-        <source>Go to configure  </source>
-        <translation>Prejsť na konfiguráciu</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="282"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1393"/>
         <source>Cancel</source>
         <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="100"/>
-        <source>AI Writer</source>
-        <translation>AI pisateľ</translation>
+        <source>Read Aloud</source>
+        <translation>Prečítať</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="204"/>
-        <source>Article</source>
-        <translation>Článok</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="208"/>
-        <source>Outline</source>
-        <translation>Osnova</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="212"/>
-        <source>Notification</source>
-        <translation>Oznámenie</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="216"/>
-        <source>Research Report</source>
-        <translation>Výskumná správa</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="220"/>
-        <source>Speeches</source>
-        <translation>Prejavy</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="224"/>
-        <source>Work Summary</source>
-        <translation>Zhrnutie práce</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="228"/>
-        <source>Tweets</source>
-        <translation>Tweety</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="320"/>
         <source>Paste to Text</source>
-        <translation>Vložiť do textu</translation>
+        <translation>Prilepiť do textu</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="338"/>
         <source>Regenerate</source>
-        <translation>Obnoviť</translation>
+        <translation>Regenerovať</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="346"/>
         <source>Copy</source>
         <translation>Kopírovať</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="364"/>
+        <source>Continue Dialog</source>
+        <translation>Pokračovať v dialógu</translation>
+    </message>
+    <message>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>Obsah generovaný AI je len na referenčné účely, venujte pozornosť presnosti informácií.</translation>
+        <translation>Obsah generovaný umelou inteligenciou slúži len na referenčné účely. Prosím, venujte pozornosť presnosti informácií.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="857"/>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation>Funkciu je možné použiť až po reštarte vstupnej metódy. Návod je nasledovný:
-
-1. Kliknite pravým tlačidlom na ikonu vstupnej metódy na paneli úloh.
-
-2. Kliknite na &quot;Reštartovať&quot;.</translation>
+        <source>Automatic Detection</source>
+        <translation>Automatická detekcia</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="861"/>
+        <source>Search</source>
+        <translation>Hľadať</translation>
+    </message>
+    <message>
+        <source>Explain</source>
+        <translation>Vysvetliť</translation>
+    </message>
+    <message>
+        <source>Summary</source>
+        <translation>Zhrnutie</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Preložiť</translation>
+    </message>
+    <message>
+        <source>Continue writing</source>
+        <translation>Pokračovať v písaní</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>Rozšíriť</translation>
+    </message>
+    <message>
+        <source>Correct</source>
+        <translation>Opraviť</translation>
+    </message>
+    <message>
+        <source>Polish</source>
+        <translation>Upraviť</translation>
+    </message>
+    <message>
+        <source>Add to the AI knowledge base</source>
+        <translation>Pridať do znalostnej bázy AI</translation>
+    </message>
+    <message>
+        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
+        <translation>Výsledok prekladu je obmedzený schopnosťami modelu. Ak nie ste s prekladom spokojní, prosím, prepnite na iné modely na domovskej stránke UOS AI.</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Translate this passage into %1 and give me a clear result directly.
+text：</source>
+        <translation>Prelož tento úsek do %1 a poskytni mi priamo jasný výsledok.
+text：</translation>
+    </message>
+    <message>
+        <source>Not clickable</source>
+        <translation>Neklikateľné</translation>
+    </message>
+    <message>
+        <source>The audio device is not detected, please check and try again.</source>
+        <translation>Audio zariadenie nebolo detekované. Prosím, skontrolujte ho a skúste to znova.</translation>
+    </message>
+    <message>
         <source>Ok</source>
         <comment>button</comment>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1040"/>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation>Túto funkciu je možné použiť až po reštarte metódy vstupu. Návod je nasledujúci:
+1. Kliknite pravým tlačidlom myši na ikonu metódy vstupu na paneli úloh.
+2. Kliknite na „Reštart“.</translation>
+    </message>
+    <message>
+        <source>Fill failed</source>
+        <translation>Zlyhalo vyplnenie</translation>
+    </message>
+    <message>
+        <source>No input box selected, please select the input box and re-fill it.</source>
+        <translation>Nebol vybraný žiadny vstupný rámček. Prosím, vyberte vstupný rámček a vyplňte ho znova.</translation>
+    </message>
+    <message>
+        <source>Added</source>
+        <translation>Pridané</translation>
+    </message>
+    <message>
         <source>Copied</source>
         <translation>Skopírované</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1063"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1077"/>
+        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
+text：</source>
+        <translation>Vysvetli tento úsek bežným jazykom. Daj mi len jasný výsledok bez zbytočného obsahu.
+text：</translation>
+    </message>
+    <message>
+        <source>Summarize this passage and give me a clear result directly without any other redundant content.
+text：</source>
+        <translation>Sumarizuj tento úsek a daj mi priamo jasný výsledok bez akéhokoľvek iného zbytočného obsahu.
+text：</translation>
+    </message>
+    <message>
+        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation>Pokračuj v tomto úseku primerane. Netreba veľa slov. Daj mi len jasný výsledok bez akéhokoľvek iného zbytočného obsahu.
+text：</translation>
+    </message>
+    <message>
+        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation>Rozšír tento úsek primerane. Netreba mimoriadne dlhý text. Daj mi len jasný výsledok bez akéhokoľvek iného zbytočného obsahu.
+text：</translation>
+    </message>
+    <message>
+        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
+text：</source>
+        <translation>Skontroluj, či v tomto úseku nie sú preklepy. Ak áno, uveďte umiestnenie chýb. Daj mi priamo jasný výsledok bez akéhokoľvek iného zbytočného obsahu.
+text：</translation>
+    </message>
+    <message>
+        <source>Polish this passage for me and just give me the result without any extra content.
+text：</source>
+        <translation>Uprav pre mňa tento úsek a daj mi len výsledok bez žiadneho ďalšieho obsahu.
+text：</translation>
+    </message>
+    <message>
+        <source> &quot;%1&quot; </source>
+        <translation> &quot;%1&quot; </translation>
+    </message>
+    <message>
         <source>Current model: </source>
         <translation>Aktuálny model: </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1081"/>
         <source>Currently no model</source>
         <translation>Momentálne žiadny model</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1114"/>
+        <source>Go to configure  </source>
+        <translation>Prejsť na konfiguráciu  </translation>
+    </message>
+    <message>
+        <source>Claim Free Credits  </source>
+        <translation>Získať bezplatné kredity  </translation>
+    </message>
+    <message>
+        <source>No text recognized.</source>
+        <translation>Nebol rozpoznaný žiadny text.</translation>
+    </message>
+    <message>
+        <source>The added content must be more than 10 words</source>
+        <translation>Pridaný obsah musí mať viac ako 10 slov</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AiWriterDialog</name>
+    <message>
+        <source>AI Writer</source>
+        <translation>AI Writer</translation>
+    </message>
+    <message>
+        <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
+        <translation>Zadajte, čo chcete vytvoriť (stlačte Enter na generovanie/Esc na ukončenie)</translation>
+    </message>
+    <message>
+        <source>Article</source>
+        <translation>Článok</translation>
+    </message>
+    <message>
+        <source>Outline</source>
+        <translation>Osnova</translation>
+    </message>
+    <message>
+        <source>Notification</source>
+        <translation>Oznámenie</translation>
+    </message>
+    <message>
+        <source>Research Report</source>
+        <translation>Výskumná správa</translation>
+    </message>
+    <message>
+        <source>Speeches</source>
+        <translation>Prejavy</translation>
+    </message>
+    <message>
+        <source>Work Summary</source>
+        <translation>Súhrn práce</translation>
+    </message>
+    <message>
+        <source>Tweets</source>
+        <translation>Tweety</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Zrušiť</translation>
+    </message>
+    <message>
+        <source>Paste to Text</source>
+        <translation>Prilepiť do textu</translation>
+    </message>
+    <message>
+        <source>Regenerate</source>
+        <translation>Regenerovať</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopírovať</translation>
+    </message>
+    <message>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation>Obsah generovaný umelou inteligenciou slúži len na referenčné účely, prosím, venujte pozornosť presnosti informácií.</translation>
+    </message>
+    <message>
+        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
+        <translation>Pomôž mi napísať esej na tému [%1] s [jasnou štruktúrou a bohatým obsahom].</translation>
+    </message>
+    <message>
+        <source>Artificial Intelligence</source>
+        <translation>Umelá inteligencia</translation>
+    </message>
+    <message>
+        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
+        <translation>Pomôž mi napísať osnovu na tému [%1], ktorá sa použije na [výrobu PPT].</translation>
+    </message>
+    <message>
+        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
+        <translation>Pomôž mi napísať oznámenie o [%1], príjemcom sú [Všetci zamestnanci] a odosielateľom [Administratívne oddelenie].</translation>
+    </message>
+    <message>
+        <source>National Day Holiday</source>
+        <translation>Sviatok národného dňa</translation>
+    </message>
+    <message>
+        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
+        <translation>Pomôž mi napísať výskumnú správu o [%1], minimálne musí obsahovať [popis stavu, analýzu problémov, protiopatrenia a návrhy, závery výskumu].</translation>
+    </message>
+    <message>
+        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
+        <translation>Pomôž mi napísať prejav na tému [%1] pre [vedúcich pracovníkov spoločnosti], vyžadujúce [jasnú štruktúru a živý jazyk].</translation>
+    </message>
+    <message>
+        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
+        <translation>Pomôžte mi napísať súhrn mojej nedávnej práce, vrátane [%1] a [výsledkov], s požadovaným [formálnym] tónom.</translation>
+    </message>
+    <message>
+        <source>work content</source>
+        <translation>obsah práce</translation>
+    </message>
+    <message>
+        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
+        <translation>Pomôžte mi napísať verejný tweet na tému [%1], s požadovanou [jasnou štruktúrou] a [uvoľneným] tónom.</translation>
+    </message>
+    <message>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation>Túto funkciu je možné použiť až po reštarte metódy vstupu. Návod je nasledujúci:
+1. Kliknite pravým tlačidlom na ikonu metódy vstupu na paneli úloh.
+2. Kliknite na „Reštart“.</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <comment>button</comment>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Copied</source>
+        <translation>Skopírované</translation>
+    </message>
+    <message>
+        <source>Current model: </source>
+        <translation>Aktuálny model: </translation>
+    </message>
+    <message>
+        <source>Currently no model</source>
+        <translation>Momentálne nie je žiadny model</translation>
+    </message>
+    <message>
+        <source>Go to configure  </source>
+        <translation>Prejsť na konfiguráciu  </translation>
+    </message>
+    <message>
         <source>Modify the content, change the tone…</source>
         <translation>Upraviť obsah, zmeniť tón…</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1391"/>
         <source>Fill failed</source>
         <translation>Vyplnenie zlyhalo</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1392"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation>Nie je vybrané žiadne vstupné pole, vyberte vstupné pole a znova ho vyplňte.</translation>
+        <translation>Nie je vybrané žiadne vstupné pole, vyberte prosím vstupné pole a vyplňte ho znova.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1394"/>
         <source>Ok</source>
         <translation>OK</translation>
     </message>
@@ -4865,162 +1121,130 @@ text:</translation>
 <context>
     <name>uos_ai::AppUtils</name>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="43"/>
         <source>File Manager</source>
         <translation>Správca súborov</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="44"/>
         <source>UOS AI</source>
         <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="45"/>
         <source>Mail</source>
         <translation>Pošta</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="46"/>
         <source>Calendar</source>
         <translation>Kalendár</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="47"/>
         <source>Web Browser</source>
         <translation>Webový prehliadač</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="48"/>
         <source>Text Editor</source>
         <translation>Textový editor</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="49"/>
         <source>Screenshot</source>
         <translation>Snímka obrazovky</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="50"/>
         <source>Voice Notes</source>
         <translation>Hlasové poznámky</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="51"/>
         <source>Document Viewer</source>
         <translation>Prehliadač dokumentov</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="52"/>
         <source>App Store</source>
         <translation>Obchod s aplikáciami</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="53"/>
         <source>Manual</source>
         <translation>Príručka</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="54"/>
         <source>WPS Writer</source>
         <translation>WPS Writer</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="55"/>
         <source>WPS Spreadsheets</source>
-        <translation>WPS Tabuľky</translation>
+        <translation>WPS Spreadsheets</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="56"/>
         <source>WPS Presentation</source>
-        <translation>WPS Prezentácia</translation>
+        <translation>WPS Presentation</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="57"/>
         <source>QQ</source>
         <translation>QQ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="58"/>
         <source>SuwellReader</source>
         <translation>SuwellReader</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="59"/>
         <source>DingTalk</source>
         <translation>DingTalk</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="60"/>
         <source>FoxitOfficeSuite</source>
         <translation>FoxitOfficeSuite</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="61"/>
         <source>Foxit PDF Editor</source>
         <translation>Foxit PDF Editor</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="62"/>
         <source>Yozo Document 2024</source>
         <translation>Yozo Document 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="63"/>
         <source>Yozo Office 2024</source>
         <translation>Yozo Office 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="64"/>
         <source>Yozo Presentation 2024</source>
         <translation>Yozo Presentation 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="65"/>
         <source>Yozo Sheet 2024</source>
         <translation>Yozo Sheet 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="66"/>
         <source>Yozo-xReader</source>
         <translation>Yozo-xReader</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="67"/>
         <source>wpspdf</source>
         <translation>wpspdf</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="68"/>
         <source>doubao</source>
         <translation>doubao</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="69"/>
         <source>Foxmail</source>
         <translation>Foxmail</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="70"/>
         <source>zjd</source>
         <translation>zjd</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="71"/>
         <source>Wechat</source>
         <translation>Wechat</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="72"/>
         <source>WXWork</source>
         <translation>WXWork</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="73"/>
         <source>Feishu</source>
         <translation>Feishu</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="74"/>
         <source>Chrome</source>
         <translation>Chrome</translation>
     </message>
@@ -5028,1082 +1252,862 @@ text:</translation>
 <context>
     <name>uos_ai::Application</name>
     <message>
-        <location filename="../src/app/application.cpp" line="66"/>
-        <location filename="../src/app/application.cpp" line="68"/>
-        <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
-    </message>
-    <message>
-        <location filename="../src/app/application.cpp" line="70"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI je inteligentný asistent na ploche, váš osobný asistent! Môžete s ním komunikovať pomocou textu alebo hlasu a môže vám pomôcť odpovedať na otázky, poskytovať informácie a generovať obrázky na základe vašich popisov.</translation>
     </message>
     <message>
-        <location filename="../src/app/application.cpp" line="112"/>
         <source>UOS AI FollowAlong/Write</source>
-        <translation type="unfinished">UOS AI Sledovanie/Písanie</translation>
+        <translation>UOS AI Sledovanie/Písanie</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ArticleAdjustAgent</name>
     <message>
-        <location filename="../src/agent/research/articleadjustagent.cpp" line="179"/>
         <source>Untitled</source>
-        <translation type="unfinished"></translation>
+        <translation>Bez názvu</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AssistantManager</name>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="42"/>
         <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="43"/>
         <source>Hello, I&apos;m UOS AI.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ahoj, som UOS AI.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="55"/>
         <source>AI Writing</source>
-        <translation type="unfinished">AI písanie</translation>
+        <translation>Písanie pomocou AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="56"/>
         <source>Infinite inspiration, worry-free writing</source>
-        <translation type="unfinished"></translation>
+        <translation>Nekonečná inšpirácia, bezstarostné písanie</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="63"/>
         <source>Please enter the topic and requirements of the document, and UOS AI will help you complete the creation.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prosím, zadajte tému a požiadavky na dokument a UOS AI vám pomôže s jeho vytvorením.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="70"/>
         <source>AI Translation</source>
-        <translation type="unfinished">AI preklad</translation>
+        <translation>Preklad pomocou AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="71"/>
         <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation type="unfinished">Váš prekladateľský asistent, ovládajúci viaceré jazyky.</translation>
+        <translation>Váš prekladový asistent, ovládajúci viacero jazykov.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="78"/>
         <source>Please enter the content to be translated and specify the target language; the default target language is Chinese.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prosím, zadajte obsah, ktorý má byť preložený, a určte cieľový jazyk; predvoleným cieľovým jazykom je čínština.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="87"/>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="unfinished">Osobný asistent pre vedomosti</translation>
+        <source>AI Knowledge Base</source>
+        <translation>Znalostná báza AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="88"/>
         <source>Answers questions based on your personal knowledge base.</source>
-        <translation type="unfinished">Odpovedá na otázky na základe vašej osobnej vedomostnej databázy.</translation>
+        <translation>Odpovedá na otázky na základe vašej osobnej znalostnej bázy.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="95"/>
         <source>Ask questions based on the knowledge base.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kladanie otázok na základe znalostnej bázy.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="104"/>
-        <source>MCP Server</source>
-        <translation type="unfinished"></translation>
+        <source>MCP&amp;Skills</source>
+        <translation>MCP&amp;Dovednosti</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="105"/>
-        <source>Built-in efficient MCP tools for office work, support for importing custom MCP services, and the flexibility to choose MCP services for conversations.</source>
-        <translation type="unfinished"></translation>
+        <source>Built-in common MCP &amp; Skills, supports custom tool import, freely choose tools for conversation.</source>
+        <translation>Vstavané bežné MCP &amp; zručnosti, podporuje import vlastných nástrojov, voľný výber nástrojov pre konverzáciu.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="112"/>
-        <source>Please enter MCP Server commands.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::AudioChannel</name>
-    <message>
-        <location filename="../src/gui/web/audiochannel.cpp" line="102"/>
-        <source>Failed to start recorder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/audiochannel.cpp" line="149"/>
-        <source>Failed to play text audio</source>
-        <translation type="unfinished"></translation>
+        <source>Please enter MCP&amp;Skills commands.</source>
+        <translation>Prosím, zadajte príkazy MCP &amp; Skills.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="84"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="183"/>
-        <source>invalid input device</source>
-        <translation type="unfinished"></translation>
+        <source>No microphone detected</source>
+        <translation>Nebol nájdený žiadny mikrofón</translation>
     </message>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="94"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="230"/>
-        <source>invalid output device</source>
-        <translation type="unfinished"></translation>
+        <source>No speaker detected</source>
+        <translation>Nebol nájdený žiadny reproduktor</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::BuiltinModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="1024"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Test</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::BuiltinProvider</name>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="54"/>
         <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="59"/>
         <source>Intelligent Routing</source>
-        <translation type="unfinished"></translation>
+        <translation>Inteligentné smerovanie</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="71"/>
         <source>Online Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Online vyhľadávanie</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="83"/>
         <source>DeepSeek-V3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>DeepSeek-V3.2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="96"/>
-        <location filename="../src/model/builtinprovider.cpp" line="334"/>
         <source>GLM-4.7</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM-4.7</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="110"/>
         <source>Doubao-Seed-1.8</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed-1.8</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="127"/>
         <source>Custom</source>
-        <translation type="unfinished">Vlastné</translation>
+        <translation>Vlastné</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="135"/>
         <source>Private deployment</source>
-        <translation type="unfinished"></translation>
+        <translation>Súkromné nasadenie</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="144"/>
         <source>OpenAI</source>
-        <translation type="unfinished"></translation>
+        <translation>OpenAI</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="149"/>
         <source>GPT-3.5 Turbo</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-3.5 Turbo</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="162"/>
         <source>GPT-4</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-4</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="175"/>
         <source>GPT-4.1</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-4.1</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="188"/>
         <source>o1</source>
-        <translation type="unfinished"></translation>
+        <translation>o1</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="201"/>
         <source>GPT-5.3 Chat</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-5.3 Chat</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="217"/>
         <source>doubao/seed</source>
-        <translation type="unfinished"></translation>
+        <translation>doubao/seed</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="223"/>
         <source>Doubao-Seed 2.0</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed 2.0</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="236"/>
         <source>Doubao-Seed 2.0-Code</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed 2.0-Code</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="252"/>
         <source>DeepSeek</source>
-        <translation type="unfinished">DeepSeek</translation>
+        <translation>DeepSeek</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="257"/>
         <source>DeepSeek V3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>DeepSeek V3.2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="273"/>
+        <source>DeepSeek V4 Flash</source>
+        <translation>DeepSeek V4 Flash</translation>
+    </message>
+    <message>
+        <source>DeepSeek V4 Pro</source>
+        <translation>DeepSeek V4 Pro</translation>
+    </message>
+    <message>
         <source>MiniMax</source>
-        <translation type="unfinished"></translation>
+        <translation>MiniMax</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="279"/>
         <source>MiniMax-M2.5</source>
-        <translation type="unfinished"></translation>
+        <translation>MiniMax-M2.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="295"/>
         <source>Moonshot (KIMI)</source>
-        <translation type="unfinished"></translation>
+        <translation>Moonshot (KIMI)</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="300"/>
         <source>Kimi K2</source>
-        <translation type="unfinished"></translation>
+        <translation>Kimi K2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="313"/>
         <source>Kimi K2.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Kimi K2.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="329"/>
         <source>GLM</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="347"/>
         <source>GLM-5</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM-5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="363"/>
         <source>Qwen</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="369"/>
         <source>Qwen3</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen3</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="382"/>
         <source>Qwen3.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen3.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="399"/>
         <source>Anthropic</source>
-        <translation type="unfinished"></translation>
+        <translation>Anthropic</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="406"/>
         <source>Gemini</source>
-        <translation type="unfinished"></translation>
+        <translation>Gemini</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ChatBotPlatformDialog</name>
+    <message>
+        <source>Lark Integration Settings</source>
+        <translation>Nastavenia integrácie Lark</translation>
+    </message>
+    <message>
+        <source>DingTalk Integration Settings</source>
+        <translation>Nastavenia integrácie DingTalk</translation>
+    </message>
+    <message>
+        <source>Telegram Integration Settings</source>
+        <translation>Nastavenia integrácie Telegramu</translation>
+    </message>
+    <message>
+        <source>Discord Integration Settings</source>
+        <translation>Nastavenia integráne Discordu</translation>
+    </message>
+    <message>
+        <source>QQ Integration Settings</source>
+        <translation>Nastavenia integrácie QQ</translation>
+    </message>
+    <message>
+        <source>Required</source>
+        <translation>Povinné</translation>
+    </message>
+    <message>
+        <source>Optional</source>
+        <translation>Voliteľné</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Zrušiť</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation>Potvrdiť</translation>
+    </message>
+    <message>
+        <source>Configuration Guide &gt;</source>
+        <translation>Návod na konfiguráciu &gt;</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ChatBotWidget</name>
+    <message>
+        <source>IM Integration</source>
+        <translation>Integrácia IM</translation>
+    </message>
+    <message>
+        <source>Third-party IM Integration</source>
+        <translation>Integrácia IM tretích strán</translation>
+    </message>
+    <message>
+        <source>Enable Message Forwarding Service</source>
+        <translation>Povoliť službu presmerovania správ</translation>
+    </message>
+    <message>
+        <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, QQ, Telegram, and Discord bots. You can then directly interact with UOS AI in your IM client.</source>
+        <translation>Po povolení bude UOS AI prijímať správy od nakonfigurovaných botov Lark, DingTalk, QQ, Telegram a Discord. Následne môžete komunikovať s UOS AI priamo v klientovi IM.</translation>
+    </message>
+    <message>
+        <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, and QQ bots. You can then directly interact with UOS AI in your IM client.</source>
+        <translation>Po povolení bude UOS AI prijímať správy od nakonfigurovaných botov Lark, DingTalk a QQ. Následne môžte komunikovať s UOS AI priamo v klientovi IM.</translation>
+    </message>
+    <message>
+        <source>Lark</source>
+        <translation>Lark</translation>
+    </message>
+    <message>
+        <source>DingTalk</source>
+        <translation>DingTalk</translation>
+    </message>
+    <message>
+        <source>QQ</source>
+        <translation>QQ</translation>
+    </message>
+    <message>
+        <source>Telegram</source>
+        <translation>Telegram</translation>
+    </message>
+    <message>
+        <source>Discord</source>
+        <translation>Discord</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ClickableLabel</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="695"/>
         <source>Insert it into the input field</source>
-        <translation>Vložte ho do vstupného poľa</translation>
+        <translation>Vložiť do vstupného poľa</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CommonFailDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="31"/>
         <source>Error</source>
-        <translation type="unfinished">Chyba</translation>
+        <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="53"/>
         <source>OK</source>
         <comment>button</comment>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ConversationRecord</name>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="13"/>
-        <location filename="../src/conversation/conversationrecord.cpp" line="23"/>
         <source>New Conversation</source>
-        <translation type="unfinished">Nová konverzácia</translation>
+        <translation>Nová konverzácia</translation>
     </message>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="305"/>
         <source>Null</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::CreateScheduleInst</name>
-    <message>
-        <source>Create Schedule</source>
-        <translation type="vanished">Vytvoriť plán</translation>
-    </message>
-    <message>
-        <source>Schedule a meeting with the Marketing Department from 2 PM to 5 PM.</source>
-        <translation type="vanished">Naplánujte si stretnutie s marketingovým oddelením od 14:00 do 17:00.</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Ľutujeme, nenašli sa žiadne zodpovedajúce operácie.</translation>
-    </message>
-    <message>
-        <source>Please parse the corresponding parameters from the input content to match the schedule template in the following JSON format,and output only the JSON content, excluding any irrelevant information.
-
-Schedule template format:
-json
-{&quot;subject&quot;: &quot;Subject&quot;, &quot;startTime&quot;: &quot;Schedule Start Time, format: yyyy-MM-ddThh:mm:ss&quot;, &quot;endTime&quot;: &quot;Schedule End Time, format: yyyy-MM-ddThh:mm:ss&quot;}
-
-Input: %1
-Current time: %2</source>
-        <translation type="vanished">Prosím, analyzujte príslušné parametre z vstupného obsahu tak, aby zodpovedali šablóne plánovača v nasledujúcom formáte JSON, a vypíšte len obsah JSON bez akejkoľvek irelevantnej informácie.
-
-Formát šablóny plánovača:
-json
-{&quot;subject&quot;: &quot;Predmet&quot;, &quot;startTime&quot;: &quot;Začiatok plánovača, formát: yyyy-MM-ddThh:mm:ss&quot;, &quot;endTime&quot;: &quot;Koniec plánovača, formát: yyyy-MM-ddThh:mm:ss&quot;}
-
-Vstup: %1
-Aktuálny čas: %2</translation>
+        <translation>Null</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="40"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="86"/>
         <source>Add MCP Server</source>
         <translation>Pridať MCP server</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="49"/>
         <source>Edit MCP Server</source>
         <translation>Upraviť MCP server</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="96"/>
         <source>JSON configuration:</source>
         <translation>Konfigurácia JSON:</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="100"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="106"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
         <translation>Prosím, vložte kód konfigurácie MCP JSON do vstupného poľa.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="120"/>
         <source>Describe</source>
-        <translation>Popíšte</translation>
+        <translation>Popis</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="126"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
-        <translation>Popíšte funkcie MCP servera na uľahčenie rýchlych vyhľadávacích nástrojov</translation>
+        <translation>Popísať funkcie MCP servera na uľahčenie rýchleho vyhľadávania nástrojov</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="155"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušiť</translation>
+        <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="167"/>
         <source>Confirm</source>
-        <translation type="unfinished">Potvrdiť</translation>
+        <translation>Potvrdiť</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CustomModelGroup</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="963"/>
         <source>Please enter the model ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Prosím, zadajte ID modelu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="967"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Test</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="988"/>
         <source>Please enter the model name</source>
-        <translation type="unfinished"></translation>
+        <translation>Prosím, zadajte názov modelu</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DConfigManager</name>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="234"/>
         <source>The device needs to be restarted before this function can be fully used.</source>
-        <translation>Zariadenie je potrebné reštartovať, aby bola táto funkcia plne použiteľná.</translation>
+        <translation>Pred plným použitím tejto funkcie je potrebné zariadenie reštartovať.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DeepResearchAgent</name>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="107"/>
         <source>Collecting and analyzing data</source>
-        <translation type="unfinished"></translation>
+        <translation>Zber a analýza údajov</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="148"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="163"/>
         <source>Data collection and analysis completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Zber a analýza údajov dokončené</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="149"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="166"/>
         <source>Research completed. %1 references collected:
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Výskum dokončený. Zhromaždených %1 odkazov:
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="224"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="282"/>
-        <source>搜索成功</source>
-        <translation type="unfinished"></translation>
+        <source>Search succeeded</source>
+        <translation>Vyhľadávanie úspešné</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="227"/>
-        <source>ERROR: 未搜索到信息！</source>
-        <translation type="unfinished"></translation>
+        <source>ERROR: No information found!</source>
+        <translation>CHYBA: Nenašli sa žiadne informácie!</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="285"/>
-        <source>未找到相关文档</source>
-        <translation type="unfinished"></translation>
+        <source>No relevant documents found</source>
+        <translation>Nenašli sa žiadne relevantné dokumenty</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="327"/>
         <source>Local Knowledge Base</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::DeepSeekInfo</name>
-    <message>
-        <source>After receiving the gift, the original Baidu model and iFlytek model will be replaced with DeepSeek</source>
-        <translation type="vanished">Po prijatí daru budú pôvodné modely Baidu a iFlytek nahradené modelom DeepSeek</translation>
-    </message>
-    <message>
-        <source>Manually collect later</source>
-        <translation type="vanished">Získať manuálne neskôr</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Skúšobný účet</translation>
-    </message>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">Získať bezplatný účet</translation>
-    </message>
-    <message>
-        <source>Try again</source>
-        <translation type="vanished">Skúsiť znova</translation>
-    </message>
-    <message>
-        <source>Enter UOS AI</source>
-        <translation type="vanished">Vstúpiť do UOS AI</translation>
-    </message>
-    <message>
-        <source>Receiving...</source>
-        <translation type="vanished">Prijímanie...</translation>
-    </message>
-    <message>
-        <source>Use it immediately</source>
-        <translation type="vanished">Použiť okamžite</translation>
-    </message>
-    <message>
-        <source>Checking account status...</source>
-        <translation type="vanished">Kontrola stavu účtu...</translation>
-    </message>
-    <message>
-        <source>DeepSeek account claim failed!</source>
-        <translation type="vanished">Nepodarilo sa nárokovať účet DeepSeek!</translation>
-    </message>
-    <message>
-        <source>Please check the network and try again later！</source>
-        <translation type="vanished">Skontrolujte sieť a skúste to znova neskôr!</translation>
-    </message>
-    <message>
-        <source>DeepSeek account successfully claimed!</source>
-        <translation type="vanished">Účet DeepSeek bol úspešne nárokovaný!</translation>
-    </message>
-    <message>
-        <source>Please check the network and try again or manually claim in UOS AI settings later</source>
-        <translation type="vanished">Skontrolujte sieť a skúste to znova alebo neskôr manuálne nárokujte v nastaveniach UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS AI has been fully integrated into DeepSeek</source>
-        <translation type="vanished">UOS AI bola plne integrovaná do DeepSeek</translation>
-    </message>
-    <message>
-        <source>The free account activity has ended.</source>
-        <translation type="vanished">Akcia s bezplatným účtom sa skončila.</translation>
-    </message>
-    <message>
-        <source>Come and experience it!</source>
-        <translation type="vanished">Príďte a vyskúšajte to!</translation>
-    </message>
-    <message>
-        <source>Come and claim your account!</source>
-        <translation type="vanished">Príďte si vytvoriť svoj účet!</translation>
+        <translation>Lokálna znalostná databáza</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DeepSeekModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="48"/>
         <source>Precautions</source>
         <translation>Upozornenia</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="49"/>
         <source>The DeepSeek local model has certain requirements for computer configuration. If the configuration is lower than the recommended one, the experience will be affected.</source>
-        <translation>Lokálny model DeepSeek má určité požiadavky na konfiguráciu počítača. Ak je konfigurácia nižšia ako odporúčaná, zážitok bude ovplyvnený.</translation>
+        <translation>Lokálny model DeepSeek má určité požiadavky na konfiguráciu počítača. Ak je konfigurácia nižšia než odporúčaná, bude ovplyvnený používateľský zážitok.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="54"/>
         <source>Recommended configuration</source>
         <translation>Odporúčaná konfigurácia</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="55"/>
         <source>&lt;b&gt;Recommended Configuration&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;High-performance multi-core CPU (such as Intel i5/i7 or AMD Ryzen 5/7 series), with a clock speed of above 3.0 GHz.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;With a video memory of above 4GB.&lt;br&gt;&lt;b&gt;Memory: &lt;/b&gt;8GB and above.&lt;br&gt;&lt;b&gt;Hard Drive: &lt;/b&gt;Solid State Drive (SSD) with at least 5GB of free space reserved.</source>
-        <translation type="unfinished">&lt;b&gt;推荐配置&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU：&lt;/b&gt;高性能多核CPU（如Intel i5/i7或AMD Ryzen 5/7系列），主频3.0 GHz以上&lt;br&gt;&lt;b&gt;GPU：&lt;/b&gt;显存4GB以上&lt;br&gt;&lt;b&gt;内存：&lt;/b&gt;8GB及以上&lt;br&gt;&lt;b&gt;硬盘：&lt;/b&gt;固态硬盘（SSD）并预留5GB以上空间</translation>
+        <translation>&lt;b&gt;Odporúčaná konfigurácia&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;Výkonný viacjadrový procesor (napríklad Intel i5/i7 alebo AMD Ryzen 5/7), s frekvenciou nad 3,0 GHz.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;S videopamäťou nad 4 GB.&lt;br&gt;&lt;b&gt;Pamäť: &lt;/b&gt;8 GB a viac.&lt;br&gt;&lt;b&gt;Pevný disk: &lt;/b&gt;SSD s vyhradenými aspoň 5 GB voľného miesta.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="64"/>
         <source>Install later</source>
         <translation>Nainštalovať neskôr</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="65"/>
         <source>Confirm installation</source>
         <translation>Potvrdiť inštaláciu</translation>
     </message>
 </context>
 <context>
+    <name>uos_ai::DefaultAgent</name>
+    <message>
+        <source>yyyy-MM-dd hh:mm ddd (year-month-day hour:minute week)</source>
+        <translation>yyyy-MM-dd hh:mm ddd (rok-mesiac-deň hodina:minúta deň)</translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::DisableAppWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/disableappwidget.cpp" line="47"/>
         <source>Hide FollowAlong in the following applications</source>
-        <translation>Skryť FollowAlong v nasledujúcich aplikáciách</translation>
+        <translation>Skryť Sledovanie v nasledujúcich aplikáciách</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ECheckAgreementDialog</name>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="62"/>
         <source>Enabling MCP Server Features</source>
-        <translation>Povoľovanie funkcií MCP servera</translation>
+        <translation>Povolenie funkcií servera MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="81"/>
         <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
-        <translation>Niektoré funkcie MCP serverov tretích strán nesú určité riziká. Používajte ich preto opatrne. Ak túto službu povolíte, vstavaný nástroj zistí a automaticky stiahne potrebné závislosti. Tento proces sťahovania bude spoplatnený podľa prenesených dát. Uvedomte si tieto riziká a postupujte opatrne.</translation>
+        <translation>Niektoré funkcie serverov MCP tretích strán nesú isté riziká. Používajte ich opatrne. Ak túto službu povolíte, vstavaný nástroj zistí a automaticky stiahne potrebné závislosti. Tento proces sťahania bude spôsobovať poplatky za dáta. Prosím, berte na vedomie tieto riziká a postupujte opatrne.</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="97"/>
         <source>I have understood and agree to use this service</source>
         <translation>Rozumiem a súhlasím s používaním tejto služby</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="110"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušiť</translation>
+        <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="112"/>
         <source>Confirm</source>
-        <translation type="unfinished">Potvrdiť</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::EParserDocument</name>
-    <message>
-        <source>Supported files</source>
-        <translation type="obsolete">Podporované súbory</translation>
+        <translation>Potvrdiť</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::FileChannel</name>
     <message>
-        <location filename="../src/gui/web/filechannel.cpp" line="96"/>
         <source>Supported files</source>
-        <translation type="unfinished">Podporované súbory</translation>
+        <translation>Podporované súbory</translation>
+    </message>
+    <message>
+        <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
+        <translation>Aktualizujte UOS nahrávač obrazovky na verziu 6.6 alebo novšiu a reštartujte počítač, aby ste povolili Q&amp;A na základe snímky obrazovky.</translation>
+    </message>
+    <message>
+        <source>The file format is not supported.</source>
+        <translation>Formát súboru nie je podporovaný.</translation>
+    </message>
+    <message>
+        <source>The image exceeds the 15 MB size limit.</source>
+        <translation>Obrázok presahuje limit veľkosti 15 MB.</translation>
+    </message>
+    <message>
+        <source>The file exceeds the 100 MB size limit.</source>
+        <translation>Súbor presahuje limit veľkosti 100 MB.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::FreeAccountService</name>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="68"/>
         <source>Network error</source>
-        <translation type="unfinished"></translation>
+        <translation>Chyba siete</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="76"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Platnosť vášho bezplatného účtu vypršala. Ak chcete naďalej používať službu, nastavte si účet modelu.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="81"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kvóta vášho bezplatného účtu bola vyčerpaná. Ak chcete naďalej používať službu, nastavte si účet modelu.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="86"/>
         <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation type="unfinished">Vyčerpali ste kvótu bezplatného účtu pre chat, nakonfigurujte si účet modelu pre pokračovanie v používaní.</translation>
+        <translation>Kvóta vášho bezplatného účtu pre chat bola vyčerpaná. Ak chcete naďalej používať službu, nastavte si účet modelu.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="110"/>
         <source>Not Now</source>
-        <translation type="unfinished">Teraz nie</translation>
+        <translation>Teraz nie</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="111"/>
         <source>Claim Credits</source>
-        <translation type="unfinished">Nárokovať kredity</translation>
+        <translation>Získať kredity</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="113"/>
         <source>Free Credits Delivered</source>
-        <translation type="unfinished">Doručené bezplatné kredity</translation>
+        <translation>Bezplatné kredity doručené</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="114"/>
-        <source>You&apos;ve used up of free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation type="unfinished"></translation>
+        <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation>Vyčerpali ste bezplatné kredity na generovanie pre váš skúšobný účet. Poskytli sme vám ďalších 200 bezplatných kreditov platných tento mesiac. Preskúmajte ďalšie funkcie a odomknite neobmedzené možnosti UOS AI!</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="143"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="152"/>
         <source>Successfully Claimed</source>
-        <translation type="unfinished">Úspešne nárokované</translation>
+        <translation>Úspešne získané</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="146"/>
         <source>Account not found</source>
-        <translation type="unfinished">Účet nebol nájdený</translation>
+        <translation>Účet nenájdený</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="149"/>
         <source>Only support trial account</source>
-        <translation type="unfinished"></translation>
+        <translation>Podporované sú iba skúšobné účty</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="156"/>
         <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation type="unfinished">Už ste sa zúčastnili akcie a nemôžete si znova nárokovať odmenu.</translation>
+        <translation>Už ste sa zúčastnili podujatia a nemôžete si odmenu vyzdvihnúť znova.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="159"/>
         <source>Server system error</source>
-        <translation type="unfinished">Chyba serverového systému</translation>
+        <translation>Chyba systému servera</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="162"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="174"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">Nepodarilo sa nárokovať. Skúste to znova.</translation>
+        <translation>Nepodarilo sa získať. Skúste to prosím znova.</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::GenerateImageInst</name>
+    <name>uos_ai::GenericAgent</name>
     <message>
-        <source>Generate Image</source>
-        <translation type="vanished">Generovať obrázok</translation>
-    </message>
-    <message>
-        <source>Describe Image Content</source>
-        <translation type="vanished">Popísať obsah obrázka</translation>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>rrrr-MM-dd ddd (rok-mesiac-deň týždeň)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::GetFreeAccountDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="46"/>
         <source>Get a free trial account</source>
-        <translation type="unfinished">Získajte bezplatný skúšobný účet</translation>
+        <translation>Získať bezplatný skúšobný účet</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="63"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished">Zrušiť</translation>
+        <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="64"/>
         <source>Get account</source>
         <comment>button</comment>
-        <translation type="unfinished">Získať účet</translation>
+        <translation>Získať účet</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="91"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Prijímanie účtu znamená, že rozumiete a súhlasíte s podmienkami podujatia,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Podrobnosti podujatia&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="120"/>
         <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Skúšobný účet UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="128"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Uloženie zlyhalo, skúste to prosím neskôr</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="129"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="143"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="168"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="177"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Potvrdiť</translation>
+        <translation>Potvrdiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="157"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished"></translation>
+        <translation>Skúšobný účet bol úspešne prijatý.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="159"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>Počet použití a trvanie skúšobného účtu sú obmedzené, včas si prosím nastavte svoj osobný účet modelu! Podrobnosti nájdete v detailoch udalosti.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="unfinished">Anglická podpora pre skúšobné účty nie je uspokojivá. Počet použití a trvanie skúšobného účtu sú obmedzené. Včas si, prosím, nakonfigurujte svoj osobný účet modelu!</translation>
+        <translation>Podpora angličtiny u skúšobných účtov nie je uspokojivá. Počet použití a trvanie skúšobného účtu sú obmedzené. Včas si prosím nastavte svoj osobný účet modelu!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Spustiť skúšobnú verziu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="167"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished">Aktivita bezplatného účtu končí.</translation>
+        <translation>Akcia bezplatného účtu sa skončila.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="176"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodarilo sa pripojiť k serveru, skontrolujte prosím svoju sieť alebo to skúste neskôr.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::HttpCodeTranslation</name>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="19"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodarilo sa pripojiť k serveru, skontrolujte prosím svoju sieť alebo to skúste neskôr.</translation>
     </message>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="22"/>
+        <source>Request timeout due to server load or network issues. Please try again later.</source>
+        <translation>Časový limit požiadavky kvôli vyťaženosti servera alebo problémom so sieťou. Skúste to prosím neskôr.</translation>
+    </message>
+    <message>
         <source>Connection failed, please check the fill in information.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pripojenie zlyhalo, skontrolujte prosím vyplnené informácie.</translation>
     </message>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="25"/>
         <source>Operation canceled.</source>
-        <translation type="unfinished">Operácia zrušená.</translation>
+        <translation>Operácia bola zrušená.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::IatWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="152"/>
         <source>Speak now</source>
         <translation>Hovorte teraz</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="160"/>
         <source>Low input volume</source>
-        <translation>Nízka hlasitosť vstupu</translation>
+        <translation>Nízka hlasnosť vstupu</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="163"/>
         <source>Settings</source>
         <translation>Nastavenia</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="244"/>
         <source>Network unavailable</source>
-        <translation>Sieť nedostupná</translation>
+        <translation>Sieť nie je k dispozícii</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::IconButtonEx</name>
     <message>
-        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="202"/>
         <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation type="unfinished">Novo pridané súbory vyžadujú predspracovanie pred použitím a počas spracovania údajov môže spotrebovať značné množstvo výpočtových a úložných zdrojov. Spracovanie údajov sa zastaví po odstránení údajov.</translation>
+        <translation>Novo pridané súbory vyžadujú pred použitím predspracovanie a počas spracovania dát môže byť výrazne spotrebovaný výpočtový výkon a úložný priestor. Spracovanie dát sa po odstránení dát zastaví.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::InputPlaceholderWidget</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="38"/>
-        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="72"/>
         <source>Ask AI</source>
-        <translation>Spýtať sa AI</translation>
+        <translation>Spýtať AI</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::InputWindow</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="82"/>
         <source>What to ask about this?</source>
-        <translation>Čo sa na to opýtať?</translation>
+        <translation>O čo sa opýtať?</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="114"/>
         <source>Hide until restarting this app</source>
-        <translation>Skryť až do reštartu aplikácie</translation>
+        <translation>Skryť do reštartu tejto aplikácie</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="115"/>
         <source>Disable in This Application</source>
-        <translation type="unfinished">Zakázať v tejto aplikácii</translation>
+        <translation>Zakázať v tejto aplikácii</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="116"/>
         <source>Disable Globally</source>
-        <translation type="unfinished">Zakázať globálne</translation>
+        <translation>Zakázať globálne</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="134"/>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="456"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
-        <translation>Pre opätovné povolenie prejdite do &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Nastavení&lt;/a&gt;.</translation>
+        <translation>Prejdite na &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Nastavenia&lt;/a&gt;, aby ste ho znova povolili.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseAgent</name>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="160"/>
         <source>Searching knowledge base</source>
-        <translation type="unfinished"></translation>
+        <translation>Prehľadávanie znalostnej databázy</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="196"/>
         <source>Search complete · %1s</source>
-        <translation type="unfinished"></translation>
+        <translation>Prehľadávanie dokončené · %1 s</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="200"/>
         <source>Search complete · %1m%2s</source>
-        <translation type="unfinished"></translation>
+        <translation>Prehľadávanie dokončené · %1 m %2 s</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="211"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>Odkazy</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
         <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation type="unfinished">Naozaj chcete odstrániť tento súbor znalostnej bázy?</translation>
+        <translation>Naozaj chcete odstrániť tento súbor znalostnej databázy?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished">Zrušiť</translation>
+        <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Potvrdiť</translation>
+        <translation>Potvrdiť</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="65"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="383"/>
         <source>Delete</source>
-        <translation type="unfinished">Odstrániť</translation>
+        <translation>Odstrániť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="69"/>
         <source>Add</source>
-        <translation type="unfinished">Pridať</translation>
+        <translation>Pridať</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="75"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="314"/>
         <source>Please install the embedding model plugins first</source>
-        <translation type="unfinished">Najprv nainštalujte doplnky vkladacieho modelu</translation>
+        <translation>Najprv nainštalujte zásuvné moduly modelov vkladania</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="81"/>
         <source>Knowledge Base Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Správa znalostnej databázy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="95"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="566"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation type="unfinished">Táto funkcia vyžaduje vysoké hardvérové zdroje a referenčná konfigurácia je: CPU Intel 11. generácia i7 alebo vyššie; Pamäť 16GB alebo viac; Najlepšou voľbou je mať grafickú kartu NVIDIA série 10 alebo vyššie. Ak je konfigurácia príliš nízka, môžu sa vyskytnúť problémy ako oneskorenie a nepresné odpovede.</translation>
+        <translation>Táto funkcia vyžaduje vysoký hardvérový výkon a odporúčaná konfigurácia je: CPU Intel 11. generácia i7 alebo vyššie; pamäť 16 GB alebo viac; prítomnosť grafickej karty NVIDIA so sériou 10 alebo vyššou je najlepšou voľbou. Ak je konfigurácia príliš nízka, môžu nastať problémy, ako sú oneskorenia a nepresné odpovede.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="108"/>
         <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation type="unfinished">Tu je možné definovať vedomostnú bázu Osobného vedomostného asistenta, ktorý bude odpovedať na otázky na základe nižšie pridaných súborov.</translation>
+        <translation>Tu je možné definovať znalostnú databázu Osobného asistenta znalostí, ktorý bude odpovedať na otázky na základe nižšie pridaných súborov.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
         <source>Done</source>
-        <translation type="unfinished">Hotovo</translation>
+        <translation>Hotovo</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="171"/>
         <source>None</source>
-        <translation type="unfinished">Žiadne</translation>
+        <translation>Žiadne</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="217"/>
         <source>File already exist</source>
-        <translation type="unfinished">Súbor už existuje</translation>
+        <translation>Súbor už existuje</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="218"/>
         <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation type="unfinished">Súbor %1 už existuje a nemôže byť pridaný znova. Pred opätovným pridaním upravte názov súboru alebo odstráňte existujúci súbor.</translation>
+        <translation>Súbor %1 už existuje a nemožno ho pridať znova. Pred opätovným pridaním prosím upravte názov súboru alebo odstráňte existujúci súbor</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="243"/>
         <source>All files</source>
-        <translation type="unfinished">Všetky súbory</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::LaunchAppInst</name>
-    <message>
-        <source>Launch or Close App</source>
-        <translation type="vanished">Spustiť alebo zavrieť aplikáciu</translation>
-    </message>
-    <message>
-        <source>WPS, Music, Album, Control Center, Log Viewer ...</source>
-        <translation type="vanished">WPS, Hudba, Album, Ovládací panel, Prehliadač logov ...</translation>
+        <translation>Všetky súbory</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::LocalModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
         <source>Install</source>
-        <translation type="unfinished">Inštalovať</translation>
+        <translation>Inštalovať</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
         <source>Uninstall</source>
-        <translation type="unfinished">Odinštalovať</translation>
+        <translation>Odinštalovať</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
         <source>Update</source>
-        <translation type="unfinished">Aktualizovať</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::LocalModelListItem</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="34"/>
-        <source>uninstall</source>
-        <translation type="unfinished">odinštalovať</translation>
+        <translation>Aktualizovať</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::LocalModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
         <source>Local model</source>
-        <translation type="unfinished">Lokálny model</translation>
+        <translation>Lokálny model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
         <source>ULLM-1.5B</source>
-        <translation type="unfinished">ULLM-1.5B</translation>
+        <translation>ULLM-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation type="unfinished">Po inštalácii nepotrebujete internetové pripojenie na používanie UOS AI.</translation>
+        <translation>Po inštalácii už na používanie UOS AI nepotrebujete pripojenie k internetu.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
         <source>ULLM-7B</source>
-        <translation type="unfinished">ULLM-7B</translation>
+        <translation>ULLM-7B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
         <source>DeepSeek-R1-1.5B</source>
-        <translation type="unfinished">DeepSeek-R1-1.5B</translation>
+        <translation>DeepSeek-R1-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
         <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation type="unfinished">Stiahnite si z open-source komunity na vlastné riziko. Po inštalácii ho používajte v asistentovi UOS AI.</translation>
+        <translation>Stiahnuť z komunity open-source na vlastné riziko. Použite v UOS AI Assistant po inštalácii.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
-        <source>UOS AI large model</source>
-        <translation type="unfinished">Veľký model UOS AI</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
         <source>Embedding Plugins</source>
-        <translation type="unfinished">Vkladacie pluginy</translation>
+        <translation>Pluginy na vkladanie</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
         <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation type="unfinished">Po inštalácii modelu môžu byť spustený Systémový asistent a Asistent osobných znalostí.</translation>
+        <translation>Po nainštalovaní modelu je možné spustiť Systémového asistenta a Osobného asistenta pre vedomosti.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MCPAgent</name>
     <message>
-        <location filename="../src/agent/mcpagent.cpp" line="118"/>
         <source>MCP server is not available</source>
         <translation>MCP server nie je k dispozícii</translation>
     </message>
@@ -6111,70 +2115,54 @@ Aktuálny čas: %2</translation>
 <context>
     <name>uos_ai::MCPServer</name>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="67"/>
-        <location filename="../src/agent/mcpserver.cpp" line="139"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
         <translation>Chýba pole &apos;mcpServers&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="76"/>
         <source>Remove old custom server config failed, server name: %0</source>
-        <translation>Nepodarilo sa odstrániť starú konfiguráciu vlastného servera, názov servera: %0</translation>
+        <translation>Zlyhalo odstránenie starej konfigurácie vlastného servera, názov servera: %0</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="89"/>
-        <location filename="../src/agent/mcpserver.cpp" line="163"/>
         <source>no valid mcp server.</source>
-        <translation>žiadny platný MCP server.</translation>
+        <translation>žiadny platný mcp server.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="147"/>
         <source>Duplicate MCP server name: %0.</source>
         <translation>Duplicitný názov MCP servera: %0.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="150"/>
         <source>MCP server name &apos;%1&apos; already exists</source>
         <translation>Názov MCP servera &apos;%1&apos; už existuje</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="176"/>
         <source>Server name &apos;%1&apos; already exists</source>
         <translation>Názov servera &apos;%1&apos; už existuje</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="223"/>
-        <location filename="../src/agent/mcpserver.cpp" line="268"/>
         <source>Failed to open custom config file for writing</source>
-        <translation>Nepodarilo sa otvoriť vlastný konfiguračný súbor na zápis</translation>
+        <translation>Zlyhalo otvorenie súboru vlastnej konfigurácie na zápis</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="231"/>
         <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
-        <translation>Server &apos;%1&apos; nie je vlastný server alebo neexistuje</translation>
+        <translation>Server &apos;%1&apos; nie je vlastným serverom alebo neexistuje</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="246"/>
         <source>No custom server found.</source>
-        <translation>Nebol nájdený žiadny vlastný server.</translation>
+        <translation>Nenašiel sa žiadny vlastný server.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="252"/>
         <source>Server &apos;%1&apos; not found.</source>
         <translation>Server &apos;%1&apos; nebol nájdený.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="326"/>
         <source>url field cannot be empty.</source>
         <translation>pole url nemôže byť prázdne.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="333"/>
         <source>command field cannot be empty.</source>
-        <translation>pole command nemôže byť prázdne.</translation>
+        <translation>pole príkazu nem môže byť prázdne.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="337"/>
         <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
         <translation>Chýba pole &apos;command&apos; alebo &apos;url&apos;</translation>
     </message>
@@ -6182,25 +2170,21 @@ Aktuálny čas: %2</translation>
 <context>
     <name>uos_ai::McpServerItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="51"/>
         <source>Install</source>
-        <translation type="unfinished">Inštalovať</translation>
+        <translation>Inštalovať</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="56"/>
         <source>Uninstall</source>
-        <translation type="unfinished">Odinštalovať</translation>
+        <translation>Odinštalovať</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="63"/>
         <source>Update</source>
-        <translation type="unfinished">Aktualizovať</translation>
+        <translation>Aktualizovať</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="63"/>
         <source>built-in</source>
         <translation>vstavaný</translation>
     </message>
@@ -6208,600 +2192,496 @@ Aktuálny čas: %2</translation>
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
         <source>MCP Server</source>
         <translation>MCP Server</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>All</source>
-        <translation>Všetky</translation>
+        <translation>Všetko</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Built-in</source>
-        <translation>Vstavané</translation>
+        <translation>Vstavaný</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
         <source>Custom</source>
-        <translation type="unfinished">Vlastné</translation>
+        <translation>Vlastný</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="145"/>
         <source>Add MCP Server</source>
         <translation>Pridať MCP Server</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>Confirm deletion %1?</source>
         <translation>Potvrdiť odstránenie %1?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation>Po odstránení nebude tento server dostupný. Postupujte opatrne.</translation>
+        <translation>Po odstránení bude tento server nedostupný. Postupujte opatrne.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušiť</translation>
+        <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="330"/>
         <source>Delete</source>
-        <translation type="unfinished">Odstrániť</translation>
+        <translation>Odstrániť</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="60"/>
         <source>Mcp Enviorment</source>
-        <translation>Prostredie MCP</translation>
+        <translation>MCP Prostredie</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="92"/>
         <source>MCP Server</source>
-        <translation>Server MCP</translation>
+        <translation>MCP Server</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="167"/>
         <source>Install UOS AI Agent</source>
-        <translation>Nainštalovať agenta UOS AI</translation>
+        <translation>Inštalovať UOS AI Agent</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="168"/>
         <source>After installation, MCP Server will be available.</source>
-        <translation>Po inštalácii bude server MCP k dispozícii.</translation>
+        <translation>Po inštalácii bude MCP Server k dispozícii.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="112"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="451"/>
         <source>Model Configuration</source>
-        <translation type="unfinished">Konfigurácia modelu</translation>
+        <translation>Konfigurácia modelu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="115"/>
         <source>Knowledge Base Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Správa bázy znalostí</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="118"/>
         <source>UOS AI FollowAlong</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI FollowAlong</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="336"/>
         <source>User Agreement</source>
-        <translation type="unfinished">Používateľská zmluva</translation>
+        <translation>Používateľská zmluva</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="347"/>
         <source>UOS AI User Agreement</source>
-        <translation type="unfinished"></translation>
+        <translation>Používateľská zmluva UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="348"/>
         <source>Read and agreed</source>
-        <translation type="unfinished">Prečítané a súhlasím</translation>
+        <translation>Prečítané a súhlasím</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="374"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="385"/>
         <source>Proxy Settings</source>
-        <translation type="unfinished">Nastavenia proxy</translation>
+        <translation>Nastavenia proxy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="386"/>
         <source>Go to settings</source>
-        <translation type="unfinished">Prejsť do nastavení</translation>
+        <translation>Prejsť do nastavení</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="523"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished">Aktivita bezplatného účtu končí.</translation>
+        <translation>Aktivita bezplatného účtu sa končí.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="524"/>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="unfinished">Potvrdiť</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="630"/>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="unfinished">Pridanie do vedomostnej databázy vyžaduje inštaláciu pluginu vektorizačného modelu. Prejdite do obchodu s aplikáciami a nainštalujte ho.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="638"/>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="unfinished">Neinštalovať</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="639"/>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="unfinished">Okamžite nainštalovať</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelHubLLM</name>
-    <message>
-        <source>YouRong 1.5B</source>
-        <translation type="vanished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <source>YouRong 7B</source>
-        <translation type="vanished">YouRong 7B</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelHubProvider</name>
-    <message>
-        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="54"/>
-        <source>YouRong 1.5B</source>
-        <translation type="unfinished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="57"/>
-        <source>YouRong 7B</source>
-        <translation type="unfinished">YouRong 7B</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelListWidget</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
-        <source>Get a free account</source>
-        <translation type="unfinished">Získať bezplatný účet</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="43"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
-        <source>Delete</source>
-        <translation type="unfinished">Odstrániť</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="47"/>
-        <source>Add</source>
-        <translation type="unfinished">Pridať</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="54"/>
-        <source>Online model</source>
-        <translation type="unfinished">Online model</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
-        <source>Done</source>
-        <translation type="unfinished">Hotovo</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="131"/>
-        <source>None</source>
-        <translation type="unfinished">Žiadne</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelScopeItem</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="97"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="304"/>
-        <source>Install</source>
-        <translation>Inštalovať</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="107"/>
-        <source>Update</source>
-        <translation>Aktualizovať</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="101"/>
-        <source>Uninstall</source>
-        <translation>Odinštalovať</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="112"/>
-        <source>Cancel</source>
-        <translation>Zrušiť</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="150"/>
-        <source>About %1GB</source>
-        <translation>Približne %1GB</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="193"/>
-        <source>Installing</source>
-        <translation>Inštaluje sa</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="220"/>
-        <source>Are you sure you want to delete this model?</source>
-        <translation>Ste si istí, že chcete odstrániť tento model?</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation>Zrušiť</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>Potvrdiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="244"/>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation>Pridanie do bázy znalostí vyžaduje inštaláciu doplnku modelu vektorizácie. Prejdite, prosím, do obchodu s aplikáciami na stiahnutie a inštaláciu.</translation>
+    </message>
+    <message>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation>Neinštalovať</translation>
+    </message>
+    <message>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation>Inštalovať ihneď</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelHubProvider</name>
+    <message>
+        <source>YouRong 1.5B</source>
+        <translation>YouRong 1.5B</translation>
+    </message>
+    <message>
+        <source>YouRong 7B</source>
+        <translation>YouRong 7B</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelListWidget</name>
+    <message>
+        <source>Get a free account</source>
+        <translation>Získať bezplatný účet</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Odstrániť</translation>
+    </message>
+    <message>
+        <source>Add</source>
+        <translation>Pridať</translation>
+    </message>
+    <message>
+        <source>Online model</source>
+        <translation>Online model</translation>
+    </message>
+    <message>
+        <source>Done</source>
+        <translation>Hotovo</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>Žiadne</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelScopeItem</name>
+    <message>
+        <source>Install</source>
+        <translation>Nainštalovať</translation>
+    </message>
+    <message>
+        <source>Uninstall</source>
+        <translation>Odinštalovať</translation>
+    </message>
+    <message>
+        <source>Update</source>
+        <translation>Aktualizovať</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Zrušiť</translation>
+    </message>
+    <message>
+        <source>About %1GB</source>
+        <translation>Približne %1 GB</translation>
+    </message>
+    <message>
+        <source>Installing</source>
+        <translation>Inštaluje sa</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to delete this model?</source>
+        <translation>Naozaj chcete odstrániť tento model?</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation>Zrušiť</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation>Potvrdiť</translation>
+    </message>
+    <message>
         <source>Checking</source>
         <translation>Kontroluje sa</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="264"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="491"/>
         <source>Ok</source>
         <comment>button</comment>
-        <translation>OK</translation>
+        <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
         <source>%0 download failed, please try again!</source>
-        <translation>&apos;%0 sa nepodarilo stiahnuť, skúste to znova!&apos;</translation>
+        <translation>%0 stiahnutie zlyhalo, skúste to znova!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="312"/>
         <source>Please install the &quot;Embedding Plugins&quot; first before installing this model.</source>
-        <translation>Pred inštaláciou tohto modelu nainštalujte prosím &quot;Embedding Plugins&quot;.</translation>
+        <translation>Pred inštaláciou tohto modelu najprv nainštalujte &quot;Zásuvné moduly pre vkladanie&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>target folder trash failed, please try again!</source>
-        <translation>presun cieľového priečinka do koša zlyhal, skúste to znova!</translation>
+        <translation>Presun do koša cieľového priečinka zlyhal, skúste to znova!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="528"/>
         <source>%1 seconds</source>
-        <translation>&apos;%1 sekúnd&apos;</translation>
+        <translation>%1 sekúnd</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="530"/>
         <source>%1 minutes</source>
-        <translation>&apos;%1 minút&apos;</translation>
+        <translation>%1 minút</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="535"/>
         <source>%1MB/%2GB downloaded, %3 left.</source>
-        <translation>&apos;Stiahnuté %1MB/%2GB, zostáva %3.&apos;</translation>
+        <translation>Stiahnuté %1MB/%2GB, zostáva %3.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelSubItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="38"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation type="unfinished"></translation>
+        <translation>Naozaj chcete odstrániť tento model?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="39"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished">Zrušiť</translation>
+        <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="40"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Potvrdiť</translation>
+        <translation>Potvrdiť</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelValidator</name>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="37"/>
         <source>Invalid model account</source>
-        <translation type="unfinished"></translation>
+        <translation>Neplatný účet modelu</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="54"/>
         <source>Unsupported model type</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodporovaný typ modelu</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="62"/>
         <source>Model does not support chat completion</source>
-        <translation type="unfinished"></translation>
+        <translation>Model nepodporuje dopĺňanie konverzácie</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="89"/>
         <source>Model is available</source>
-        <translation type="unfinished"></translation>
+        <translation>Model je k dispozícii</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="98"/>
         <source>HTTP error: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Chyba HTTP: %1</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="108"/>
         <source>Unknown error</source>
-        <translation type="unfinished"></translation>
+        <translation>Neznáma chyba</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModifyProviderDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="91"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="unfinished">Pre nastavenia proxy prejdite do systémových nastavení proxy</translation>
+        <translation>Pre nastavenia proxy prejdite, prosím, do systémových nastavení proxy</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="94"/>
         <source>Go to settings</source>
-        <translation type="unfinished">Prejsť do nastavení</translation>
+        <translation>Prejsť do nastavení</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="104"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="264"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
         <source>Delete</source>
-        <translation type="unfinished">Odstrániť</translation>
+        <translation>Odstrániť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
         <source>Edit Model</source>
-        <translation type="unfinished"></translation>
+        <translation>Upraviť model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
         <source>Add Model</source>
-        <translation type="unfinished">Pridať model</translation>
+        <translation>Pridať model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="153"/>
         <source>Account</source>
-        <translation type="unfinished">Účet</translation>
+        <translation>Účet</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="161"/>
         <source>Required, to distinguish multiple models</source>
-        <translation type="unfinished">Povinné na rozlíšenie viacerých modelov</translation>
+        <translation>Povinné, na rozlíšenie viacerých modelov</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="168"/>
         <source>Provider</source>
-        <translation type="unfinished"></translation>
+        <translation>Poskytovateľ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="186"/>
         <source>APIKey</source>
-        <translation type="unfinished">API kľúč</translation>
+        <translation>APIKey</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="194"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="206"/>
         <source>Required, please input</source>
-        <translation type="unfinished"></translation>
+        <translation>Povinné, zadajte, prosím</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="198"/>
         <source>Domain</source>
-        <translation type="unfinished">Doména</translation>
+        <translation>Doména</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="212"/>
         <source>Enable</source>
-        <translation type="unfinished">Povoliť</translation>
+        <translation>Povoliť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="249"/>
         <source>Custom</source>
-        <translation type="unfinished">Vlastné</translation>
+        <translation>Vlastné</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="269"/>
         <source>Add</source>
-        <translation type="unfinished">Pridať</translation>
+        <translation>Pridať</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="296"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="unfinished">Na testovanie dostupnosti modelu systém odošle testovacie informácie do veľkého modelu, čo spotrebuje malé množstvo tokenov.</translation>
+        <translation>Na otestovanie dostupnosti modelu systém odošle testovacie informácie na veľký model, čím spotrebuje malé množstvo tokenov.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="346"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušiť</translation>
+        <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="348"/>
         <source>Confirm</source>
-        <translation type="unfinished">Potvrdiť</translation>
+        <translation>Potvrdiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="523"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="612"/>
         <source>Name and Model ID must be filled in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Názov a ID modelu musia byť vyplnené.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="674"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="684"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Uloženie zlyhalo, skúste to neskôr</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
         <source>Done</source>
-        <translation type="unfinished">Hotovo</translation>
+        <translation>Hotovo</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="787"/>
         <source>Test passed</source>
-        <translation type="unfinished"></translation>
+        <translation>Test prebehol v poriadku</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="788"/>
         <source>The model service is available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Služba modelu je k dispozícii.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="789"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Potvrdiť</translation>
+        <translation>Potvrdiť</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::MultimediaControlInst</name>
+    <name>uos_ai::OnlineSearchAgent</name>
     <message>
-        <source>Multimedia Control</source>
-        <translation type="vanished">Ovládanie multimédií</translation>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>yyyy-MM-dd ddd (rok-mesiac-deň týždeň)</translation>
     </message>
     <message>
-        <source>Play music, state control, seek...</source>
-        <translation type="vanished">Prehrávanie hudby, ovládanie stavu, vyhľadávanie...</translation>
+        <source>Searching for relevant information</source>
+        <translation>Vyhľadávajú sa relevantné informácie</translation>
+    </message>
+    <message>
+        <source>References %0 sources</source>
+        <translation>Odkazuje na %0 zdrojov</translation>
+    </message>
+    <message>
+        <source>%0 pages found</source>
+        <translation>Nájdených %0 stránok</translation>
+    </message>
+    <message>
+        <source>Browsing %0</source>
+        <translation>Prehliada sa %0</translation>
+    </message>
+    <message>
+        <source>page %0</source>
+        <translation>stránka %0</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::OperatingLineWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="194"/>
         <source>In data processing</source>
-        <translation type="unfinished">Prebieha spracovanie údajov</translation>
+        <translation>Spracúvajú sa dáta</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="206"/>
         <source>Data processing error</source>
-        <translation type="unfinished">Chyba pri spracovaní údajov</translation>
+        <translation>Chyba spracovania údajov</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="218"/>
         <source>File error, unable to process, please delete.</source>
-        <translation type="unfinished">Chyba súboru, nie je možné spracovať, prosím, vymažte ho.</translation>
+        <translation>Chyba súboru, nie je možné spracovať, prosím, odstráňte ho.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::OutlineAgent</name>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="114"/>
         <source>Generating outline</source>
-        <translation type="unfinished"></translation>
+        <translation>Generovanie osnovy</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="117"/>
         <source>Generating outline content for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Generujem pre vás obsah osnovy.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="143"/>
-        <source>Outline generated, please confirm</source>
-        <translation type="unfinished"></translation>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation>Bola vygenerovaná upraviteľná osnova. Po potvrdení kliknite na modré tlačidlo nižie a prejdite na generovanie dokumentu.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="145"/>
         <source>Detected that you have uploaded a local outline,  Currently parsing the outline content for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Zistené, že ste nahrali miestnu osnovu, momentálne pre vás prebieha analýza obsahu osnovy.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="148"/>
         <source>Detected uploaded local outline, please confirm.</source>
-        <translation type="unfinished"></translation>
+        <translation>Zistená nahraná miestna osnova, prosím, potvrďte.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="150"/>
         <source>Failed to parse the uploaded outline file, please re-upload</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodarilo sa analyzovať nahraný súbor osnovy, prosím, nahrajte ho znova</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="163"/>
         <source>Generating outline content failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Zlyhalo generovanie obsahu osnovy</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="193"/>
         <source>Based on your writing task, I have generated the following outline for **%1**:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Na základe vašej písomnej úlohy som pre vás vygeneroval nasledujúcu osnovu pre **%1**:
+
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="195"/>
         <source>I have parsed your uploaded outline and structured it as **%1**:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Analyzoval som vašu nahranú osnovu a štruktúroval ju ako **%1**:
+
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="208"/>
         <source>
 The outline contains %1 sections in total. Please confirm to proceed with research and writing.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+Osnova obsahuje celkovo %1 sekcií. Potvrďte pre pokračovanie v skúmaní a písaní.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PersonalKnowledgeAssistant</name>
     <message>
-        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="43"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation type="unfinished">Asistent pre osobnú vedomostnú bázu je možné používať až po nakonfigurovaní modelového pluginu.</translation>
+        <translation>Osobný znalostný asistent možno použiť až po nakonfigurovaní modelu.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="49"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation type="unfinished">Asistent pre osobnú vedomostnú bázu je možné používať až po nakonfigurovaní vedomostnej bázy.</translation>
+        <translation>Osobný znalostný asistent možno použiť až po nakonfigurovaní znalostnej základne.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="35"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Delete</source>
         <translation>Odstrániť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="39"/>
         <source>Add</source>
         <translation>Pridať</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="46"/>
         <source>Private deployment model</source>
         <translation>Model súkromného nasadenia</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Done</source>
         <translation>Hotovo</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="127"/>
         <source>None</source>
         <translation>Žiadne</translation>
     </message>
@@ -6809,37 +2689,31 @@ The outline contains %1 sections in total. Please confirm to proceed with resear
 <context>
     <name>uos_ai::ProviderListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="127"/>
         <source>Are you sure you want to delete this provider?</source>
-        <translation type="unfinished"></translation>
+        <translation>Naozaj chcete odstrániť tohto poskytovateľa?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="128"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished">Zrušiť</translation>
+        <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="129"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Potvrdiť</translation>
+        <translation>Potvrdiť</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ReferenceDialog</name>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="55"/>
         <source>Reference</source>
-        <translation>Referencia</translation>
+        <translation>Odkaz</translation>
     </message>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="115"/>
         <source>Open</source>
         <translation>Otvoriť</translation>
     </message>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="150"/>
         <source>Documents don&apos;t exits!</source>
         <translation>Dokumenty neexistujú!</translation>
     </message>
@@ -6847,163 +2721,79 @@ The outline contains %1 sections in total. Please confirm to proceed with resear
 <context>
     <name>uos_ai::ReportWriterAgent</name>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="177"/>
         <source>Document Generating</source>
-        <translation type="unfinished"></translation>
+        <translation>Generovanie dokumentu</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="216"/>
         <source>failed</source>
-        <translation type="unfinished"></translation>
+        <translation>zlyhalo</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="443"/>
         <source>Document Generated</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokument bol vygenerovaný</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="444"/>
         <source>The document has been generated based on the outline. You can click the card below to edit the content, or click the &quot;Save As&quot; button to save it locally for further editing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokument bol vygenerovaný na základe osnovy. Môžete kliknúť na kartu nižsie a upraviť obsah aleba kliknúť na tlačidlo „Uložiť ako“ a uložiť ho lokálne na ďalšie úpravy.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="455"/>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="603"/>
         <source>You can ask follow-up questions or request adjust the article.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SearchOnlineInst</name>
-    <message>
-        <source>Search Online</source>
-        <translation type="vanished">Vyhľadať online</translation>
-    </message>
-    <message>
-        <source>Enter Search Content</source>
-        <translation type="vanished">Zadajte hľadaný obsah</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SendMailInst</name>
-    <message>
-        <source>Send Mail</source>
-        <translation type="vanished">Odoslať mail</translation>
-    </message>
-    <message>
-        <source>Help me send an email to [Recipient&apos;s Name], with the content: [Email Content].</source>
-        <translation type="vanished">Pomôžte mi odoslať email na [Meno príjemcu], s obsahom: [Obsah emailu].</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Prepáčte, nenašli sa žiadne zodpovedajúce operácie.</translation>
-    </message>
-    <message>
-        <source>Please extract the relevant parameters from the provided input to match the following JSON email template format,and output only the JSON content. Do not include any extraneous information.
-
-Email template format:
-json
-{&quot;subject&quot;: &quot;Email Subject&quot;, &quot;content&quot;: &quot;Email Body&quot;, &quot;to&quot;: &quot;Recipient&quot;, &quot;cc&quot;: &quot;CC Recipient&quot;, &quot;bcc&quot;: &quot;BCC Recipient&quot;}
-
-Input: %1</source>
-        <translation type="vanished">Prosím, extrahujte relevantné parametre z poskytnutého vstupu tak, aby zodpovedali nasledujúcemu formátu šablóny e-mailu v JSON, a vypíšte iba obsah JSON. Nezahŕňajte žiadne nadbytočné informácie.
-
-Formát šablóny e-mailu:
-
-json
-{&quot;subject&quot;: &quot;Predmet e-mailu&quot;, &quot;content&quot;: &quot;Telo e-mailu&quot;, &quot;to&quot;: &quot;Príjemca&quot;, &quot;cc&quot;: &quot;Kópia&quot;, &quot;bcc&quot;: &quot;Skrytá kópia&quot;}
-
-Vstup: %1</translation>
+        <translation>Môžete klásť doplňujúce otázky alebo požiadať o úpravu článku.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ServiceConfigChannel</name>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="271"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="282"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="328"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="346"/>
         <source>Failed to get MCP server instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodarilo sa získať inštanciu servera MCP.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="304"/>
         <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
-        <translation type="unfinished">Server &apos;%1&apos; nie je vlastný server alebo neexistuje</translation>
+        <translation>Server „%1“ nie je vlastný server alebo neexistuje</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="307"/>
         <source>MCP server name &apos;%1&apos; already exists</source>
-        <translation type="unfinished">Názov MCP servera &apos;%1&apos; už existuje</translation>
+        <translation>Názov servera MCP „%1“ už existuje</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="350"/>
         <source>Server &apos;%1&apos; does not exist</source>
-        <translation type="unfinished"></translation>
+        <translation>Server „%1“ neexistuje</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SessionManager</name>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="52"/>
         <source>Session with ID %1 already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Relácia s ID %1 už existuje</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="63"/>
         <source>Session %1 create assistant %2 failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Relácia %1: vytvorenie asistenta %2 zlyhalo</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="74"/>
         <source>Session %1 create success</source>
-        <translation type="unfinished"></translation>
+        <translation>Relácia %1 bola úspešne vytvorená</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="120"/>
         <source>Session %1 not found</source>
-        <translation type="unfinished"></translation>
+        <translation>Relácia %1 nenájdená</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="128"/>
         <source>Session %1 is not idle</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ShortcutUpdateDialog</name>
-    <message>
-        <source>Shortcut: [Super + Space]. Quickly invoke UOS AI to access all AI features in one place.</source>
-        <translation type="vanished">Skratka: [Super + Medzerník]. Rýchle vyvolanie UOS AI pre prístup ku všetkým funkciám AI na jednom mieste.</translation>
-    </message>
-    <message>
-        <source>Got it</source>
-        <translation type="vanished">Rozumiem</translation>
-    </message>
-    <message>
-        <source>This prompt will appear %1 more times, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Do not show again&lt;/a&gt;</source>
-        <translation type="vanished">Tento výzva sa zobrazí ešte %1 krát, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Nezobrazovať znova&lt;/a&gt;</translation>
+        <translation>Relácia %1 nie je nečinná</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillCommandTextEdit</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="55"/>
         <source>Take </source>
-        <translation>&apos;Vezmi &apos;</translation>
+        <translation>Vziať </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="56"/>
         <source> translate into English</source>
-        <translation>&apos; preložiť do angličtiny&apos;</translation>
+        <translation> preložiť do angličtiny</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="185"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="218"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="459"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="604"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="792"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="796"/>
         <source>Exceeded character limit</source>
         <translation>Prekročený limit znakov</translation>
     </message>
@@ -7011,1899 +2801,1972 @@ Vstup: %1</translation>
 <context>
     <name>uos_ai::SkillListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
-        <source>Enable</source>
-        <translation>Povoliť</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
         <source>Disabled</source>
         <translation>Zakázané</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Povoliť</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="64"/>
         <source>Skill Management</source>
         <translation>Správa zručností</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="68"/>
         <source>Add Skill</source>
         <translation>Pridať zručnosť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="75"/>
         <source>The first 4 skills will be displayed on the toolbar, and others will be hidden in the More menu.</source>
-        <translation>Prvé 4 zručnosti sa zobrazia na paneli nástrojov, ostatné budú skryté v ponuke Viac.</translation>
+        <translation>Prvých 4 zručností sa zobrazí na paneli nástrojov, ostatné budú skryté v ponuke Viac.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="215"/>
         <source>Saved</source>
         <translation>Uložené</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="239"/>
         <source>Are you sure you want to delete the skill &quot;%1&quot;?</source>
-        <translation>Ste si istý, že chcete odstrániť zručnosť &quot;%1&quot;?</translation>
+        <translation>Naozaj chcete odstrániť zručnosť „%1“?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="240"/>
         <source>Cancel</source>
         <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="241"/>
         <source>Delete</source>
         <translation>Odstrániť</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SystemChannel</name>
+    <name>uos_ai::SkillsManager</name>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="145"/>
-        <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <source>The archive file does not exist.</source>
+        <translation>Súbor archívu neexistuje.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="146"/>
-        <source>Ask UOS AI, kiss your worries goodbye.</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to create temporary directory for extraction.</source>
+        <translation>Nepodarilo sa vytvoriť dočasný adresár pre extrakciu.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="147"/>
-        <source>Update History</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to extract the archive. The file may be corrupted or the format is not supported.</source>
+        <translation>Nepodarilo sa extrahovať archív. Súbor môže byť poškodený alebo formát nie je podporovaný.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="148"/>
-        <source>Settings</source>
-        <translation type="unfinished">Nastavenia</translation>
+        <source>No SKILL.md file found in the archive.</source>
+        <translation>V archíve nebol nájdený žiadny súbor SKILL.md.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="149"/>
-        <source>Help</source>
-        <translation type="unfinished"></translation>
+        <source>The specified path is invalid.</source>
+        <translation>Zadaná cesta je neplatná.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="150"/>
-        <source>About</source>
-        <translation type="unfinished">O aplikácii</translation>
+        <source>Failed to read SKILL.md.</source>
+        <translation>Nepodarilo sa prečítať SKILL.md.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="151"/>
-        <source>New Chat</source>
-        <translation type="unfinished"></translation>
+        <source>SKILL.md is missing the required &apos;name&apos; field.</source>
+        <translation>V súbore SKILL.md chýba požadované pole „name“.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="152"/>
-        <source>Temporary Chat</source>
-        <translation type="unfinished"></translation>
+        <source>The skill directory does not exist.</source>
+        <translation>Adresár zručností neexistuje.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="153"/>
-        <source>AI Writing</source>
-        <translation type="unfinished">AI písanie</translation>
+        <source>The skill cannot be imported from this path.</source>
+        <translation>Zručnosť nie je možné importovať z tejto cesty.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="154"/>
-        <source>AI Translation</source>
-        <translation type="unfinished">AI preklad</translation>
+        <source>No SKILL.md file found in the skill directory.</source>
+        <translation>V adresári zručností sa nenašiel súbor SKILL.md.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="155"/>
-        <source>AI Knowledge Base</source>
-        <translation type="unfinished"></translation>
+        <source>The skill contains too many files (maximum %1 allowed).</source>
+        <translation>Zručnosť obsahuje príliš veľa súborov (maximálne povolených: %1).</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="156"/>
-        <source>MCP Server</source>
-        <translation type="unfinished"></translation>
+        <source>The skill size exceeds the limit (maximum 10 MB allowed).</source>
+        <translation>Veľkosť zručnosti presahuje limit (maximálne povolených: 10 MB).</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="157"/>
-        <source>Commands</source>
-        <translation type="unfinished"></translation>
+        <source>The skill folder name is invalid.</source>
+        <translation>Názov priečinka zručnosti je neplatný.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="158"/>
-        <source>Agent Store</source>
-        <translation type="unfinished">Obchod s agentmi</translation>
+        <source>Failed to overwrite the existing skill.</source>
+        <translation>Nepodarilo sa prepísať existujúcu zručnosť.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="159"/>
-        <source>More</source>
-        <translation type="unfinished">Viac</translation>
+        <source>Failed to create the skills directory.</source>
+        <translation>Nepodarilo sa vytvoriť adresár zručností.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="160"/>
-        <source>Chat History</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to copy the skill files.</source>
+        <translation>Nepodarilo sa skopírovať súbory zručností.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="161"/>
-        <source>Today</source>
-        <translation type="unfinished">Dnes</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="162"/>
-        <source>Yesterday</source>
-        <translation type="unfinished">Včera</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="163"/>
-        <source>Last 7 Days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="164"/>
-        <source>Last 30 Days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="165"/>
-        <source>January</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="166"/>
-        <source>February</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="167"/>
-        <source>March</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="168"/>
-        <source>April</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="169"/>
-        <source>May</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="170"/>
-        <source>June</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="171"/>
-        <source>July</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="172"/>
-        <source>August</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="173"/>
-        <source>September</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="174"/>
-        <source>October</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="175"/>
-        <source>November</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="176"/>
-        <source>year</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="177"/>
-        <source>Earlier</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="178"/>
-        <source>Delete</source>
-        <translation type="unfinished">Odstrániť</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="179"/>
-        <source>Confirm Deletion</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="180"/>
-        <source>This action will delete all content related to this chat from UOS AI.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="181"/>
-        <source>Confirm Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="182"/>
-        <source>Cancel</source>
-        <translation type="unfinished">Zrušiť</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="183"/>
-        <source>Batch Manage</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="184"/>
-        <source>All</source>
-        <translation type="unfinished">Všetky</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="185"/>
-        <source>Select All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="186"/>
-        <source>%1 conversations selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="187"/>
-        <source>No chat history yet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="188"/>
-        <source>Chat content not found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="189"/>
-        <source>DeepThink</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="190"/>
-        <source>Search</source>
-        <translation type="unfinished">Hľadať</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="191"/>
-        <source>Attachments</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="192"/>
-        <source>Upload Files</source>
-        <translation type="unfinished">Nahrať súbory</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="193"/>
-        <source>Screenshot Q&amp;A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="194"/>
-        <source>Voice Input</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="195"/>
-        <source>Send</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="196"/>
-        <source>Ask a question...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="197"/>
-        <source>Voice Read</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="198"/>
-        <source>Stop Reading</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="199"/>
-        <source>Copy</source>
-        <translation type="unfinished">Kopírovať</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="200"/>
-        <source>Regenerate</source>
-        <translation type="unfinished">Obnoviť</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="201"/>
-        <source>Re-edit</source>
-        <translation type="unfinished">Upraviť znova</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="202"/>
-        <source>Stop Generating</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="203"/>
-        <source>Generation stopped</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="204"/>
-        <source>You stopped this answer, please re-edit your question</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="205"/>
-        <source>Back to Bottom</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="206"/>
-        <source>Thinking...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="207"/>
-        <source>Deep think completed (took %1s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="208"/>
-        <source>Parsing...</source>
-        <translation type="unfinished">Spracovávanie...</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="209"/>
-        <source>Parsing failed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="210"/>
-        <source>You can add up to 50 files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="211"/>
-        <source>Summarize the core content of the file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="212"/>
-        <source>Model List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="213"/>
-        <source>Smart Recommendation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="214"/>
-        <source>Smart switch for best match</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="215"/>
-        <source>Local Model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="216"/>
-        <source>Online Model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="217"/>
-        <source>Add Model</source>
-        <translation type="unfinished">Pridať model</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="218"/>
-        <source>Official</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="219"/>
-        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="220"/>
-        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="221"/>
-        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="222"/>
-        <source>You have X newly answered chats</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="223"/>
-        <source>View Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="224"/>
-        <source>Remind Me Later</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="225"/>
-        <source>Infinite inspiration, worry-free writing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="226"/>
-        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="227"/>
-        <source>Upload files/images as references</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="228"/>
-        <source>Reference Outline / Local File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="229"/>
-        <source>As reference material / As outline file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="230"/>
-        <source>File Upload</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="231"/>
-        <source>As Material</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="232"/>
-        <source>As Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="233"/>
-        <source>Only 1 file is supported for outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="234"/>
-        <source>Local Materials</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="235"/>
-        <source>File Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="236"/>
-        <source>Outline</source>
-        <translation type="unfinished">Osnova</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="237"/>
-        <source>View All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="238"/>
-        <source>Collapse</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="239"/>
-        <source>Recent Creations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="240"/>
-        <source>Upload File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="241"/>
-        <source>Reference Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="242"/>
-        <source>Local File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="243"/>
-        <source>Heading</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="244"/>
-        <source>Export Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="245"/>
-        <source>Exit Full Screen</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="246"/>
-        <source>Untitled Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="247"/>
-        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="248"/>
-        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="249"/>
-        <source>2. Turn off &quot;Web Search&quot;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="250"/>
-        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="251"/>
-        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="252"/>
-        <source>Enable Privacy Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="253"/>
-        <source>Continue Generating</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="254"/>
-        <source>You can enter more requirements to optimize or adjust the generated content.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="255"/>
-        <source>Detected local outline uploaded. Analyzing outline content...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="256"/>
-        <source>Generating outline content...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="257"/>
-        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="258"/>
-        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="259"/>
-        <source>Re-upload Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="260"/>
-        <source>Directly generate outline using AI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="261"/>
-        <source>Add sub-chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="262"/>
-        <source>Delete chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="263"/>
-        <source>Add chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="264"/>
-        <source>Enter chapter title</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="265"/>
-        <source>Delete this heading?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="266"/>
-        <source>Generate document from outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="267"/>
-        <source>Save as Word</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="268"/>
-        <source>Save as PDF</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="269"/>
-        <source>Save as Markdown</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="270"/>
-        <source>Saving...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="271"/>
-        <source>Saved successfully!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="272"/>
-        <source>Failed to save, please try again.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="273"/>
-        <source>Undo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="274"/>
-        <source>Redo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="275"/>
-        <source>Body Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="276"/>
-        <source>Heading %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="277"/>
-        <source>Bold</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="278"/>
-        <source>Italic</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="279"/>
-        <source>Strikethrough</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="280"/>
-        <source>Link Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="281"/>
-        <source>Bulleted List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="282"/>
-        <source>Numbered List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="283"/>
-        <source>Decrease Indent</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="284"/>
-        <source>Increase Indent</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="285"/>
-        <source>Blockquote</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="286"/>
-        <source>Divider</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="287"/>
-        <source>Copy Full Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="288"/>
-        <source>Print Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="289"/>
-        <source>Share Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="290"/>
-        <source>Zoom Out</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="291"/>
-        <source>Full Screen</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="292"/>
-        <source>Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="293"/>
-        <source>Please enter the text to be translated first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="294"/>
-        <source>Identifying source language...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="295"/>
-        <source>My MCP Server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="296"/>
-        <source>Add MCP Server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="297"/>
-        <source>Delete MCP Server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="298"/>
-        <source>Built-in Only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="299"/>
-        <source>Custom Added Only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="300"/>
-        <source>To use MCP services, please install the MCP environment (UOS AI Agent) from the App Store first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="301"/>
-        <source>Install Now</source>
-        <translation type="unfinished">Nainštalovať teraz</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="302"/>
-        <source>System Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="303"/>
-        <source>Bluetooth</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="304"/>
-        <source>Wireless Network</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="305"/>
-        <source>DND Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="306"/>
-        <source>Eye Comfort</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="307"/>
-        <source>Brightness</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="308"/>
-        <source>Volume</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="309"/>
-        <source>Font Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="310"/>
-        <source>App Store</source>
-        <translation type="unfinished">Obchod s aplikáciami</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="311"/>
-        <source>Schedule Management</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="312"/>
-        <source>Click to download</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="313"/>
-        <source>downloads</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="316"/>
-        <source>Go to configuration</source>
-        <translation type="unfinished">Prejsť na konfiguráciu</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="317"/>
-        <source>No account</source>
-        <translation type="unfinished">Žiadny účet</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="318"/>
-        <source>Input question</source>
-        <translation type="unfinished">Vstupná otázka</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="319"/>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="unfinished">Obsah generovaný AI je len na referenčné účely, venujte pozornosť presnosti informácií.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="320"/>
-        <source>Welcome to UOS AI</source>
-        <translation type="unfinished">Vitajte v UOS AI</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="321"/>
-        <source>Here are some of the things UOS AI can help you do</source>
-        <translation type="unfinished">Tu je niekoľko vecí, s ktorými vám UOS AI môže pomôcť</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="322"/>
-        <source>Stop</source>
-        <translation type="unfinished">Zastaviť</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="323"/>
-        <source>Play</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="324"/>
-        <source>Retry</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="325"/>
-        <source>Clear conversation history</source>
-        <translation type="unfinished">Vymazať históriu konverzácie</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="326"/>
-        <source>Please connect the microphone and try again</source>
-        <translation type="unfinished">Pripojte mikrofón a skúste to znova</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="327"/>
-        <source>Chat history cleared</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="328"/>
-        <source>Click to start/stop recording</source>
-        <translation type="unfinished">Kliknutím začnete/ukončíte nahrávanie</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="329"/>
-        <source>Listening</source>
-        <translation type="unfinished">Počúvanie</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="330"/>
-        <source>Sleeping</source>
-        <translation type="unfinished">Spánok</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="331"/>
-        <source>Microphone not detected</source>
-        <translation type="unfinished">Mikrofón nebol detekovaný</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="332"/>
-        <source>Connection failed, click to try again</source>
-        <translation type="unfinished">Pripojenie zlyhalo, kliknutím skúste znova</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="333"/>
-        <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation type="unfinished">Kliknite na animáciu alebo stlačte Ctrl+Super+Medzerník na aktiváciu</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="334"/>
-        <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation type="unfinished">Hlasový vstup je dočasne nedostupný, skontrolujte sieť!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="335"/>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="336"/>
-        <source>Voice conversation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="337"/>
-        <source>Click the animation or press Enter to send</source>
-        <translation type="unfinished">Kliknite na animáciu alebo stlačte Enter na odoslanie</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="338"/>
-        <source>Stop recording after %1 seconds</source>
-        <translation type="unfinished">Zastaviť nahrávanie po %1 sekundách</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="339"/>
-        <source>Thinking</source>
-        <translation type="unfinished">Premýšľanie</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="340"/>
-        <source>Click animation to interrupt</source>
-        <translation type="unfinished">Kliknite na animáciu na prerušenie</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="341"/>
-        <source>Answering</source>
-        <translation type="unfinished">Odpovedanie</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="342"/>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="343"/>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="344"/>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="345"/>
-        <source>Activate</source>
-        <translation type="unfinished">Aktivovať</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="346"/>
-        <source>Voice input</source>
-        <translation type="unfinished">Hlasový vstup</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="347"/>
-        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation type="unfinished">Hlasové vysielanie je dočasne nedostupné, skontrolujte sieť!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="348"/>
-        <source>Turn off voice conversation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="349"/>
-        <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation type="unfinished">Obrázok bol vygenerovaný, pre zobrazenie prepnite na rozhranie chatu.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="350"/>
-        <source>No account, please configure an account</source>
-        <translation type="unfinished">Žiadny účet, prosím nakonfigurujte účet</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="351"/>
-        <source>Answer each question up to 5 times</source>
-        <translation type="unfinished">Odpovedať na každú otázku maximálne 5-krát</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="352"/>
-        <source>Copied successfully</source>
-        <translation type="unfinished">Úspešne skopírované</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="353"/>
-        <source>Sound output device not detected</source>
-        <translation type="unfinished">Výstupné zvukové zariadenie nebolo detekované</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="354"/>
-        <source>The sound output device is not detected, please check and try again!</source>
-        <translation type="unfinished">Výstupné zvukové zariadenie nebolo detekované, skontrolujte a skúste znova!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="355"/>
-        <source>Mode</source>
-        <translation type="unfinished">Režim</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="356"/>
-        <source>Window Mode</source>
-        <translation type="unfinished">Režim okna</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="357"/>
-        <source>Sidebar Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="358"/>
-        <source>Assistant List</source>
-        <translation type="unfinished">Zoznam asistentov</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="359"/>
-        <source>Agent List</source>
-        <translation type="unfinished">Zoznam agentov</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="360"/>
-        <source>UOS System Assistant</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="361"/>
-        <source>Deepin System Assistant</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="362"/>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="unfinished">Osobný asistent pre vedomosti</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="363"/>
-        <source>Please configure the knowledge base</source>
-        <translation type="unfinished">Prosím nakonfigurujte vedomostnú bázu</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="364"/>
-        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation type="unfinished">Pred použitím [Osobného asistenta pre vedomosti] je potrebné nakonfigurovať vedomostnú bázu. Po konfigurácii vedomostnej bázy bude AI odpovedať na otázky alebo generovať obsah na základe obsahu, ktorý ste nakonfigurovali v vedomostnej báze.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="365"/>
-        <source>Please configure the large model</source>
-        <translation type="unfinished">Prosím nakonfigurujte veľký model</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="366"/>
-        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation type="unfinished">Osobný asistent pre vedomosti je možné použiť až po nakonfigurovaní veľkého modelu.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="367"/>
-        <source>To configure</source>
-        <translation type="unfinished">Konfigurovať</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="368"/>
-        <source>To install</source>
-        <translation type="unfinished">Inštalovať</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="369"/>
-        <source>Please install [EmbeddingPlugins]</source>
-        <translation type="unfinished">Prosím nainštalujte [EmbeddingPlugins]</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="370"/>
-        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation type="unfinished">Tento asistent vyžaduje inštaláciu EmbeddingPlugins na fungovanie</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="373"/>
-        <source>Drag files here to add them.</source>
-        <translation type="unfinished">Presuňte súbory sem, aby ste ich pridali.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="374"/>
-        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation type="unfinished">Môžete pridať maximálne 3 súbory, podporované typy súborov zahŕňajú: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, súbory kódu atď.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="375"/>
-        <source>You can only add a maximum of one file.</source>
-        <translation type="unfinished">Môžete pridať maximálne jeden súbor.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="376"/>
-        <source>The file format is not supported.</source>
-        <translation type="unfinished">Formát súboru nie je podporovaný.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="377"/>
-        <source>Summarize the key content of the file.</source>
-        <translation type="unfinished">Zhrňte kľúčový obsah súboru.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="378"/>
-        <source>File Error</source>
-        <translation type="unfinished">Chyba súboru</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="379"/>
-        <source>File has been deleted.</source>
-        <translation type="unfinished">Súbor bol odstránený.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="380"/>
-        <source>The file size exceeds the 100MB limit.</source>
-        <translation type="unfinished">Veľkosť súboru prekračuje limit 100MB.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="381"/>
-        <source>Upload a document</source>
-        <translation type="unfinished">Nahrať dokument</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="382"/>
-        <source>File deleted</source>
-        <translation type="unfinished">Súbor odstránený</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="383"/>
-        <source>No text was parsed</source>
-        <translation type="unfinished">Nebol spracovaný žiadny text</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="384"/>
-        <source>Reference</source>
-        <translation type="unfinished">Referencia</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="387"/>
-        <source>Instruction</source>
-        <translation type="unfinished">Inštrukcia</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="388"/>
-        <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation type="unfinished">Zadajte &quot;/&quot; do vstupného poľa na aktiváciu.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="389"/>
-        <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation type="unfinished">Zadajte; “Ctrl+Enter” na zmenu riadku.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="390"/>
-        <source>Enter your question, or enter &quot;/&quot; to select a command
-&quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation type="unfinished">Zadajte svoju otázku alebo zadajte &quot;/&quot; na výber príkazu
-&quot;Ctrl+Enter&quot; na začatie nového riadku</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="393"/>
-        <source>Search complete.</source>
-        <translation type="unfinished">Vyhľadávanie dokončené.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="394"/>
-        <source>Click to view results</source>
-        <translation type="unfinished">Kliknutím zobrazíte výsledky</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="397"/>
-        <source>edit</source>
-        <translation type="unfinished">upraviť</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="398"/>
-        <source>save</source>
-        <translation type="unfinished">uložiť</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="399"/>
-        <source>copy</source>
-        <translation type="unfinished">kopírovať</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="402"/>
-        <source>Thinking has stopped</source>
-        <translation type="unfinished">Myslenie bolo zastavené</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="403"/>
-        <source>Back to bottom</source>
-        <translation type="unfinished">Späť na spodok</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="404"/>
-        <source>Deeply thought (%1 seconds)</source>
-        <translation type="unfinished">Hlboko premýšľané (%1 sekúnd)</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="407"/>
-        <source>New Conversation</source>
-        <translation type="unfinished">Nová konverzácia</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="408"/>
-        <source>History</source>
-        <translation type="unfinished">História</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="409"/>
-        <source>No History Records</source>
-        <translation type="unfinished">Žiadne záznamy histórie</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="410"/>
-        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation type="unfinished">Naozaj chcete konverzáciu vymazať? Po vymazaní ju nebude možné obnoviť.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="411"/>
-        <source>The %1 agent used in this conversation has been deleted</source>
-        <translation type="unfinished">Agent %1 použitý v tejto konverzácii bol vymazaný</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="412"/>
-        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation type="unfinished">Túto konverzáciu nie je možné zobraziť. Ak ju chcete vidieť, nainštalujte si agenta %1 a skúste to znova.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="413"/>
-        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation type="unfinished">Pôvodný model konverzácie bol vymazaný. Pre pokračovanie v konverzácii sme pre vás prepnuli na nový model.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="416"/>
-        <source>Recommendations</source>
-        <translation type="unfinished">Odporúčania</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="417"/>
-        <source>No Model</source>
-        <translation type="unfinished">Žiadny model</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="418"/>
-        <source>No model available. Please install or configure a model in the settings.</source>
-        <translation type="unfinished">Nie je k dispozícii žiadny model. Nainštalujte alebo nakonfigurujte model v nastaveniach.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="419"/>
-        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation type="unfinished">Opíšte tému obsahu a požiadavky na vaše dielo.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="420"/>
-        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation type="unfinished">Zadajte obsah, ktorý chcete preložiť, a určte cieľový jazyk. Predvolený preklad je do čínštiny.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="421"/>
-        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation type="unfinished">Zadajte text, ktorý potrebujete spracovať, a určte svoje požiadavky.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="422"/>
-        <source>New Agent Added</source>
-        <translation type="unfinished">Pridaný nový agent</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="423"/>
-        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation type="unfinished">Boli pridaní noví agenti na písanie, spracovanie textu a preklad. Pozrite si ich teraz.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="424"/>
-        <source>Try it</source>
-        <translation type="unfinished">Vyskúšajte</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="425"/>
-        <source>Write an article based on the following document:</source>
-        <translation type="unfinished">Napíšte článok na základe nasledujúceho dokumentu:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="426"/>
-        <source>Translate the following document into English:</source>
-        <translation type="unfinished">Preložte nasledujúci dokument do angličtiny:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="429"/>
-        <source>Add Mcp Server</source>
-        <translation type="unfinished">Pridať Mcp Server</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="430"/>
-        <source>Add Server</source>
-        <translation type="unfinished">Pridať server</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="431"/>
-        <source>Add failed! Error reason:</source>
-        <translation type="unfinished">Pridanie zlyhalo! Dôvod chyby:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="432"/>
-        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation type="unfinished">Chýba prostredie MCP. Nainštalujte prosím 【UOS AI Agent】</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="433"/>
-        <source>Calling</source>
-        <translation type="unfinished">Volanie</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="434"/>
-        <source>Completed</source>
-        <translation type="unfinished">Dokončené</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="435"/>
-        <source>Call Failed</source>
-        <translation type="unfinished">Volanie zlyhalo</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="436"/>
-        <source>Cancelled</source>
-        <translation type="unfinished">Zrušené</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="437"/>
-        <source>params</source>
-        <translation type="unfinished">parametre</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="438"/>
-        <source>result</source>
-        <translation type="unfinished">výsledok</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="439"/>
-        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="unfinished">Pre MCP Server prepnite na oficiálne vydaný model „DeepSeek-Trial Account“</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="440"/>
-        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation type="unfinished">Zadajte príkaz pre MCP Server, napr. „Zmeň systém na tmavý režim“</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="441"/>
-        <source>Agent server is not available</source>
-        <translation type="unfinished">Agent server nie je dostupný</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="442"/>
-        <source>Agent server exception</source>
-        <translation type="unfinished">Výnimka agent servera</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="443"/>
-        <source>MCP server is not available</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="444"/>
-        <source>Confirm</source>
-        <translation type="unfinished">Potvrdiť</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="445"/>
-        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation type="unfinished">Automatizujte úlohy s viacerými súbormi a aplikáciami jedným príkazom pomocou služby MCP. Vyskúšajte teraz!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="446"/>
-        <source>Use later</source>
-        <translation type="unfinished">Použiť neskôr</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="447"/>
-        <source>Enable MCP Server</source>
-        <translation type="unfinished">Povoliť MCP Server</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="448"/>
-        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation type="unfinished">Po nainštalovaní prostredia MCP „UOS AI Agent“ kliknite na </translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="449"/>
-        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation type="unfinished"> a vyberte „uos-mcp“ v zozname MCP serverov.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="450"/>
-        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation type="unfinished">Skúste povedať: „Zmeň systém na tmavý režim“.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="451"/>
-        <source>Try it now</source>
-        <translation type="unfinished">Vyskúšajte teraz</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="452"/>
-        <source>Add Mcp Server[GuidePage]</source>
-        <translation type="unfinished">Pridať MCP Server [Sprievodca]</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="453"/>
-        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation type="unfinished">Pre nových používateľov: Nainštalujte prostredie MCP „UOS AI Agent“ cez Obchod s aplikáciami.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="454"/>
-        <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation type="unfinished">Formát súboru JSON je nesprávny, skontrolujte ho a odošlite znova</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="455"/>
-        <source>Install Now &gt;</source>
-        <translation type="unfinished">Nainštalovať teraz &gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="458"/>
-        <source>General Chat</source>
-        <translation type="unfinished">Všeobecný chat</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="459"/>
-        <source>Now in Private Chat</source>
-        <translation type="unfinished">Teraz v súkromnom chate</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="460"/>
-        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation type="unfinished">Správy v súkromnom chate sa neukladajú do histórie a pri opustení chatu budú natrvalo odstránené.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="461"/>
-        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation type="unfinished">Snímka obrazovky Q&amp;A Skratka (Ctrl+Alt+Q), podporuje až 3 obrázky.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="462"/>
-        <source>Cannot be used during screen recording</source>
-        <translation type="unfinished">Nedá sa použiť počas nahrávania obrazovky</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="463"/>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="unfinished">Môžete nahrať maximálne 3 súbory alebo obrázky</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="464"/>
-        <source>Please delete the abnormal file and send it again</source>
-        <translation type="unfinished">Prosím, odstráňte chybný súbor a pošlite ho znova</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="465"/>
-        <source>Add Private Chat</source>
-        <translation type="unfinished">Pridať súkromný chat</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="466"/>
-        <source>Add [Screenshot Q&amp;A]</source>
-        <translation type="unfinished">Pridať [Snímka obrazovky Q&amp;A]</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="467"/>
-        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation type="unfinished">Urobte snímku obrazovky a odošlite obsah do UOS AI. Môžete tiež priamo nahrať obrázok.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="468"/>
-        <source>OK</source>
-        <translation type="unfinished">OK</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="469"/>
-        <source>Next</source>
-        <translation type="unfinished">Ďalej</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="470"/>
-        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation type="unfinished">Pridať [Režim súkromného chatu] – chaty sa neuložia.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="471"/>
-        <source>No text extracted</source>
-        <translation type="unfinished">Nebol extrahovaný žiadny text</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="472"/>
-        <source>Image size exceeds 15 MB</source>
-        <translation type="unfinished">Veľkosť obrázka presahuje 15 MB</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="475"/>
-        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation type="unfinished">Po otvorení znalostnej databázy budú odpovede vychádzať z jej obsahu. Rýchlosť odozvy závisí od výkonu počítača a veľkosti databázy.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="476"/>
-        <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation type="unfinished">Znalostná databáza nie je dostupná, ak je vybraný akýkoľvek príkaz alebo MCP.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="477"/>
-        <source>MCP is disabled while the knowledge base is active.</source>
-        <translation type="unfinished">MCP je vypnuté, keď je znalostná databáza aktívna.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="478"/>
-        <source>Commands disabled while knowledge base is active.</source>
-        <translation type="unfinished">Príkazy sú vypnuté, keď je znalostná databáza aktívna.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="479"/>
-        <source>Copy succeeded.</source>
-        <translation type="unfinished">Kopírovanie bolo úspešné.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="480"/>
-        <source>Copy failed. Please try again.</source>
-        <translation type="unfinished">Kopírovanie zlyhalo. Skúste to znova.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="481"/>
-        <source>Searching</source>
-        <translation type="unfinished">Vyhľadávanie</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="482"/>
-        <source>%1 reference documents have been obtained (%2s)</source>
-        <translation type="unfinished">Získaných %1 referenčných dokumentov (%2 s)</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="483"/>
-        <source>Clear History</source>
-        <translation type="unfinished">Vymazať históriu</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="484"/>
-        <source>Delete all records?</source>
-        <translation type="unfinished">Odstrániť všetky záznamy?</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="485"/>
-        <source>Once deleted, the content cannot be recovered!</source>
-        <translation type="unfinished">Po odstránení sa obsah nedá obnoviť!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="486"/>
-        <source>Recommend official models</source>
-        <translation type="unfinished">Odporúčať oficiálne modely</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="487"/>
-        <source>Disable MCP</source>
-        <translation type="unfinished">Vypnúť MCP</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="490"/>
-        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="unfinished">Odporúča sa použiť oficiálny model „DeepSeek-Trial Account“</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="491"/>
-        <source>Quick Open</source>
-        <translation type="unfinished">Rýchle otvorenie</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="492"/>
-        <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation type="unfinished">MCP Server – aktualizácia na automatický režim</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="493"/>
-        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation type="unfinished">MCP Server boli aktualizované na automatický režim, ktorý umožňuje pristupovať ku všetkým MCP Serverom jediným kliknutím</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="494"/>
-        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation type="unfinished">. To vám umožní automatizovať úlohy ako konfiguráciu systému a spracovanie súborov jediným kliknutím.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="495"/>
-        <source>Adding MCP Server has been moved to Settings.</source>
-        <translation type="unfinished">Pridanie MCP servera bolo presunuté do Nastavení.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="496"/>
-        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation type="unfinished">Ak chcete pridať ďalší MCP server, prejdite do Nastavenia &gt; MCP Server.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="497"/>
-        <source>Got it</source>
-        <translation type="unfinished">Rozumiem</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="498"/>
-        <source>Complimentary Model Credits</source>
-        <translation type="unfinished">Bezplatné kredity modelu</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="499"/>
-        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation type="unfinished">Aktuálny systém ponúka skúšobný účetový model DeepSeek, ktorý automaticky obnoví bezplatnú kvótu na začiatku každého mesiaca, čo vám umožní používať ho bez obáv.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="500"/>
-        <source>Claim Credits</source>
-        <translation type="unfinished">Nárokovať kredity</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="501"/>
-        <source>Get a free account</source>
-        <translation type="unfinished">Získať bezplatný účet</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="502"/>
-        <source>Claim Free Credits</source>
-        <translation type="unfinished">Nárokovať bezplatné kredity</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="503"/>
-        <source>Successfully Claimed</source>
-        <translation type="unfinished">Úspešne nárokované</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="504"/>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">Nepodarilo sa nárokovať. Skúste to znova.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="505"/>
-        <source>Enable MCP Server&amp;</source>
-        <translation type="unfinished">Povoliť MCP Server&amp;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="506"/>
-        <source>Disable MCP Server</source>
-        <translation type="unfinished">Zakázať MCP Server</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="507"/>
-        <source>Configure MCP Server</source>
-        <translation type="unfinished">Konfigurovať MCP Server</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="957"/>
-        <source>UOS AI FollowAlong/Write</source>
-        <translation type="unfinished">UOS AI Sledovanie/Písanie</translation>
+        <source>Supported files</source>
+        <translation>Podporované súbory</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SystemControlInst</name>
+    <name>uos_ai::SystemChannel</name>
     <message>
-        <source>System Control</source>
-        <translation type="vanished">Ovládanie systému</translation>
+        <source>UOS AI</source>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <source>Switch to a new wallpaper. set the screen brightness to 30%...</source>
-        <translation type="vanished">Prepnúť na novú tapetu. Nastaviť jas obrazovky na 30%...</translation>
+        <source>Ask UOS AI, kiss your worries goodbye.</source>
+        <translation>Spýtajte sa UOS AI a rozlúčte sa so starosťami.</translation>
+    </message>
+    <message>
+        <source>Changelog</source>
+        <translation>Zoznam zmien</translation>
+    </message>
+    <message>
+        <source>Start Chatting</source>
+        <translation>Začať chatovať</translation>
+    </message>
+    <message>
+        <source>Choose an assistant on the left, then enter a question or instruction to start a new chat.</source>
+        <translation>Vyberte asistenta na ľavej strane a potom zadajte otázku alebo inštrukciu na začatie nového chatu.</translation>
+    </message>
+    <message>
+        <source>Voice Interaction</source>
+        <translation>Hlasová interakcia</translation>
+    </message>
+    <message>
+        <source>If you prefer voice control, switch quickly from the related entry to reduce repeated operations.</source>
+        <translation>Ak dávate prednosť hlasovému ovládaniu, prepnite sa rýchlo z príslušnej položky, aby ste znížili opakované operácie.</translation>
+    </message>
+    <message>
+        <source>Keep Exploring</source>
+        <translation>Pokračujte v objavovaní</translation>
+    </message>
+    <message>
+        <source>Use history and settings to continue your tasks and adjust models, tools, and appearance.</source>
+        <translation>Použite históriu a nastavenia na pokračovanie vo vašich úlohách a úpravu modelov, nástrojov a vzhľadu.</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>Nastavenia</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>Pomocník</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation>O aplikácii</translation>
+    </message>
+    <message>
+        <source>New Chat</source>
+        <translation>Nový chat</translation>
+    </message>
+    <message>
+        <source>Temporary Chat</source>
+        <translation>Dočasný chat</translation>
+    </message>
+    <message>
+        <source>AI Writing</source>
+        <translation>Písanie pomocou AI</translation>
+    </message>
+    <message>
+        <source>AI Translation</source>
+        <translation>Preklad pomocou AI</translation>
+    </message>
+    <message>
+        <source>AI Knowledge Base</source>
+        <translation>Báza znalostí AI</translation>
+    </message>
+    <message>
+        <source>MCP Server</source>
+        <translation>MCP Server</translation>
+    </message>
+    <message>
+        <source>Commands</source>
+        <translation>Príkazy</translation>
+    </message>
+    <message>
+        <source>Agent Store</source>
+        <translation>Knižnica agentov</translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation>Viac</translation>
+    </message>
+    <message>
+        <source>Chat History</source>
+        <translation>História chatu</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Dnes</translation>
+    </message>
+    <message>
+        <source>Yesterday</source>
+        <translation>Včera</translation>
+    </message>
+    <message>
+        <source>Last 7 Days</source>
+        <translation>Posledných 7 dní</translation>
+    </message>
+    <message>
+        <source>Last 30 Days</source>
+        <translation>Posledných 30 dní</translation>
+    </message>
+    <message>
+        <source>January</source>
+        <translation>Január</translation>
+    </message>
+    <message>
+        <source>February</source>
+        <translation>Február</translation>
+    </message>
+    <message>
+        <source>March</source>
+        <translation>Marec</translation>
+    </message>
+    <message>
+        <source>April</source>
+        <translation>Apríl</translation>
+    </message>
+    <message>
+        <source>May</source>
+        <translation>Máj</translation>
+    </message>
+    <message>
+        <source>June</source>
+        <translation>Jún</translation>
+    </message>
+    <message>
+        <source>July</source>
+        <translation>Júl</translation>
+    </message>
+    <message>
+        <source>August</source>
+        <translation>August</translation>
+    </message>
+    <message>
+        <source>September</source>
+        <translation>September</translation>
+    </message>
+    <message>
+        <source>October</source>
+        <translation>Október</translation>
+    </message>
+    <message>
+        <source>November</source>
+        <translation>November</translation>
+    </message>
+    <message>
+        <source>year</source>
+        <translation>rok</translation>
+    </message>
+    <message>
+        <source>Earlier</source>
+        <translation>Staršie</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Odstrániť</translation>
+    </message>
+    <message>
+        <source>Confirm Deletion</source>
+        <translation>Potvrdiť odstránenie</translation>
+    </message>
+    <message>
+        <source>Confirm deletion</source>
+        <translation>Potvrdiť odstránenie</translation>
+    </message>
+    <message>
+        <source>After deletion, this server will be unavailable. Proceed with caution.</source>
+        <translation>Po odstránení bude tento server nedostupný. Postupujte opatrne.</translation>
+    </message>
+    <message>
+        <source>This action will delete all content related to this chat from UOS AI.</source>
+        <translation>Táto akcia odstráni všetok obsah súvisiaci s touto konverzáciou z UOS AI.</translation>
+    </message>
+    <message>
+        <source>Confirm Delete</source>
+        <translation>Potvrdiť odstránenie</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Zrušiť</translation>
+    </message>
+    <message>
+        <source>Batch Manage</source>
+        <translation>Hromadná správa</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Všetko</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Vybrať všetko</translation>
+    </message>
+    <message>
+        <source>%1 conversations selected</source>
+        <translation>Vybrané %1 konverzácie</translation>
+    </message>
+    <message>
+        <source>No chat history yet</source>
+        <translation>Zatiaľ žiadna história chatu</translation>
+    </message>
+    <message>
+        <source>Chat content not found</source>
+        <translation>Obsah chatu nenájdený</translation>
+    </message>
+    <message>
+        <source>DeepThink</source>
+        <translation>Hlboké premýšľanie</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Hľadať</translation>
+    </message>
+    <message>
+        <source>Attachments</source>
+        <translation>Prílohy</translation>
+    </message>
+    <message>
+        <source>Upload Files</source>
+        <translation>Nahrať súbory</translation>
+    </message>
+    <message>
+        <source>Screenshot Q&amp;A</source>
+        <translation>Snímka obrazovky Q&amp;A</translation>
+    </message>
+    <message>
+        <source>Voice Input</source>
+        <translation>Hlasový vstup</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Odoslať</translation>
+    </message>
+    <message>
+        <source>Ask a question...</source>
+        <translation>Položte otázku...</translation>
+    </message>
+    <message>
+        <source>Voice Read</source>
+        <translation>Hlasové čítanie</translation>
+    </message>
+    <message>
+        <source>Stop Reading</source>
+        <translation>Zastaviť čítanie</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopírovať</translation>
+    </message>
+    <message>
+        <source>Regenerate</source>
+        <translation>Regenerovať</translation>
+    </message>
+    <message>
+        <source>Re-edit</source>
+        <translation>Znova upraviť</translation>
+    </message>
+    <message>
+        <source>Stop Generating</source>
+        <translation>Zastaviť generovanie</translation>
+    </message>
+    <message>
+        <source>Generation stopped</source>
+        <translation>Generovanie zastavené</translation>
+    </message>
+    <message>
+        <source>You stopped this answer, </source>
+        <translation>Túto odpoveď ste zastavili, </translation>
+    </message>
+    <message>
+        <source>please re-edit your question</source>
+        <translation>prosím, znova upravte svoju otázku</translation>
+    </message>
+    <message>
+        <source>Back to Bottom</source>
+        <translation>Späť dolu</translation>
+    </message>
+    <message>
+        <source>Thinking...</source>
+        <translation>Premýšľam...</translation>
+    </message>
+    <message>
+        <source>Deep think completed (took %1s)</source>
+        <translation>Hlboké premýšľanie dokončené (trvalo %1s)</translation>
+    </message>
+    <message>
+        <source>Parsing...</source>
+        <translation>Spracováva sa...</translation>
+    </message>
+    <message>
+        <source>Parsing failed</source>
+        <translation>Spracovanie zlyhalo</translation>
+    </message>
+    <message>
+        <source>You can add up to 50 files</source>
+        <translation>Môžete pridať až 50 súborov</translation>
+    </message>
+    <message>
+        <source>Summarize the core content of the file</source>
+        <translation>Zhrnúť hlavný obsah súboru</translation>
+    </message>
+    <message>
+        <source>Model List</source>
+        <translation>Zoznam modelov</translation>
+    </message>
+    <message>
+        <source>Smart Recommendation</source>
+        <translation>Inteligentné odporúčanie</translation>
+    </message>
+    <message>
+        <source>Smart switch for best match</source>
+        <translation>Inteligentné prepínanie pre najlepšiu zhodu</translation>
+    </message>
+    <message>
+        <source>Local Model</source>
+        <translation>Lokálny model</translation>
+    </message>
+    <message>
+        <source>Online Model</source>
+        <translation>Online model</translation>
+    </message>
+    <message>
+        <source>Add Model</source>
+        <translation>Pridať model</translation>
+    </message>
+    <message>
+        <source>Private Model</source>
+        <translation>Súkromný model</translation>
+    </message>
+    <message>
+        <source>Official</source>
+        <translation>Oficiálny</translation>
+    </message>
+    <message>
+        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
+        <translation>Obsah generovaný umelou inteligenciou slúži len na referenčné účely. Prosím, overte jeho presnosť.</translation>
+    </message>
+    <message>
+        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
+        <translation>Dočasné rozhovory sa neukladajú do histórie. Obsah bude po odchode úplne odstránený.</translation>
+    </message>
+    <message>
+        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
+        <translation>Bolo dosiahnutých maximum 10 súčasných rozhovorov. Skúste to prosím neskôr.</translation>
+    </message>
+    <message>
+        <source>View Now</source>
+        <translation>Zobraziť teraz</translation>
+    </message>
+    <message>
+        <source>Remind Me Later</source>
+        <translation>Pripomenúť neskôr</translation>
+    </message>
+    <message>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation>Nekonečná inšpirácia, písanie bez starostí</translation>
+    </message>
+    <message>
+        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
+        <translation>Povolením vyhľadáte na webe aktuálnejšie, komplexnejšie a presnejšie referencie.</translation>
+    </message>
+    <message>
+        <source>Upload files/images as references</source>
+        <translation>Nahrať súbory/obrázky ako referencie</translation>
+    </message>
+    <message>
+        <source>Reference Outline / Local File</source>
+        <translation>Osnova referencie / Miestny súbor</translation>
+    </message>
+    <message>
+        <source>As reference material / As outline file</source>
+        <translation>Ako referenčný materiál / Ako súbor osnovy</translation>
+    </message>
+    <message>
+        <source>File Upload</source>
+        <translation>Nahranie súboru</translation>
+    </message>
+    <message>
+        <source>As Material</source>
+        <translation>Ako materiál</translation>
+    </message>
+    <message>
+        <source>As Outline</source>
+        <translation>Ako osnovu</translation>
+    </message>
+    <message>
+        <source>Only supports uploading 1 outline file</source>
+        <translation>Podporuje sa nahranie iba 1 súboru osnovy</translation>
+    </message>
+    <message>
+        <source>Local Materials</source>
+        <translation>Miestne materiály</translation>
+    </message>
+    <message>
+        <source>File Outline</source>
+        <translation>Osnova súboru</translation>
+    </message>
+    <message>
+        <source>Outline</source>
+        <translation>Osnova</translation>
+    </message>
+    <message>
+        <source>View All</source>
+        <translation>Zobraziť všetko</translation>
+    </message>
+    <message>
+        <source>Recent Creations</source>
+        <translation>Nedávne vytvorené</translation>
+    </message>
+    <message>
+        <source>Upload File</source>
+        <translation>Nahrať súbor</translation>
+    </message>
+    <message>
+        <source>Reference Outline</source>
+        <translation>Osnova referencie</translation>
+    </message>
+    <message>
+        <source>Local File</source>
+        <translation>Miestny súbor</translation>
+    </message>
+    <message>
+        <source>Heading</source>
+        <translation>Nadpis</translation>
+    </message>
+    <message>
+        <source>Export Document</source>
+        <translation>Exportovať dokument</translation>
+    </message>
+    <message>
+        <source>Exit Full Screen</source>
+        <translation>Ukončiť celoobrazovkový režim</translation>
+    </message>
+    <message>
+        <source>Untitled Document</source>
+        <translation>Dokument bez názvu</translation>
+    </message>
+    <message>
+        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
+        <translation>Ak nechcete, aby boli miestne materiály nahrané, môžete pred generovaním obsahu urobiť nasledovné:</translation>
+    </message>
+    <message>
+        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
+        <translation>1. Prepnúť na miestny model (napr. DeepSeek-R1-1.5B) alebo na súkromne nasadený model</translation>
+    </message>
+    <message>
+        <source>2. Turn off &quot;Web Search&quot;</source>
+        <translation>2. Vypnite &quot;Vyhľadávanie na webe&quot;</translation>
+    </message>
+    <message>
+        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
+        <translation>Materiály budú nahrané do online modelu na analýzu. Pokračovať v generovaní?</translation>
+    </message>
+    <message>
+        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
+        <translation>Materiály budú nahrané do online modelu (%1) na analýzu. Pokračovať v generovaní?</translation>
+    </message>
+    <message>
+        <source>Enable Privacy Mode</source>
+        <translation>Povoliť súkromný režim</translation>
+    </message>
+    <message>
+        <source>Continue Generating</source>
+        <translation>Pokračovať v generovaní</translation>
+    </message>
+    <message>
+        <source>You can enter more requirements to optimize or adjust the generated content.</source>
+        <translation>Môžete zadať ďalšie požiadavky na optimalizáciu alebo úpravu generovaného obsahu.</translation>
+    </message>
+    <message>
+        <source>Detected local outline uploaded. Analyzing outline content...</source>
+        <translation>Bola zistená nahraná miestna osnova. Analyzuje sa obsah osnovy...</translation>
+    </message>
+    <message>
+        <source>Generating outline content...</source>
+        <translation>Generuje sa obsah osnovy...</translation>
+    </message>
+    <message>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation>Bola vygenerovaná upraviteľná osnova. Po potvrdení kliknite na modré tlačidlo nižšie a prejdite na generovanie dokumentu.</translation>
+    </message>
+    <message>
+        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
+        <translation>Nepodarilo sa spracovať nahraný súbor osnovy. Nahrajte ho znova.</translation>
+    </message>
+    <message>
+        <source>Re-upload Outline</source>
+        <translation>Zahrať osnovu</translation>
+    </message>
+    <message>
+        <source>Directly generate outline using AI</source>
+        <translation>Priamo vygenerovať osnovu pomocou AI</translation>
+    </message>
+    <message>
+        <source>Add sub-chapter</source>
+        <translation>Pridať podkapitolu</translation>
+    </message>
+    <message>
+        <source>Delete sub-chapter</source>
+        <translation>Odstrániť podkapitolu</translation>
+    </message>
+    <message>
+        <source>Delete chapter</source>
+        <translation>Odstrániť kapitolu</translation>
+    </message>
+    <message>
+        <source>Add chapter</source>
+        <translation>Pridať kapitolu</translation>
+    </message>
+    <message>
+        <source>Enter chapter title</source>
+        <translation>Zadať názov kapitoly</translation>
+    </message>
+    <message>
+        <source>Delete this heading?</source>
+        <translation>Odstrániť tento nadpis?</translation>
+    </message>
+    <message>
+        <source>Generate document from outline</source>
+        <translation>Generovať dokument z osnovy</translation>
+    </message>
+    <message>
+        <source>Save as Word</source>
+        <translation>Uložiť ako Word</translation>
+    </message>
+    <message>
+        <source>Save as PDF</source>
+        <translation>Uložiť ako PDF</translation>
+    </message>
+    <message>
+        <source>Save as Markdown</source>
+        <translation>Uložiť ako Markdown</translation>
+    </message>
+    <message>
+        <source>Saving...</source>
+        <translation>Ukladá sa...</translation>
+    </message>
+    <message>
+        <source>Saved successfully!</source>
+        <translation>Úspešne uložené!</translation>
+    </message>
+    <message>
+        <source>Failed to save, please try again.</source>
+        <translation>Uloženie zlyhalo, skúste to znova.</translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation>Späť</translation>
+    </message>
+    <message>
+        <source>Redo</source>
+        <translation>Znova</translation>
+    </message>
+    <message>
+        <source>Body Text</source>
+        <translation>Text tela</translation>
+    </message>
+    <message>
+        <source>Heading %1</source>
+        <translation>Nadpis %1</translation>
+    </message>
+    <message>
+        <source>Bold</source>
+        <translation>Tučné</translation>
+    </message>
+    <message>
+        <source>Italic</source>
+        <translation>Kurzíva</translation>
+    </message>
+    <message>
+        <source>Strikethrough</source>
+        <translation>Prečiarknuté</translation>
+    </message>
+    <message>
+        <source>Link Text</source>
+        <translation>Text odkazu</translation>
+    </message>
+    <message>
+        <source>Bulleted List</source>
+        <translation>Odrážkový zoznam</translation>
+    </message>
+    <message>
+        <source>Numbered List</source>
+        <translation>Číslovaný zoznam</translation>
+    </message>
+    <message>
+        <source>Decrease Indent</source>
+        <translation>Zmenšiť odsadenie</translation>
+    </message>
+    <message>
+        <source>Increase Indent</source>
+        <translation>Zväčšiť odsadenie</translation>
+    </message>
+    <message>
+        <source>Blockquote</source>
+        <translation>Citácia</translation>
+    </message>
+    <message>
+        <source>Divider</source>
+        <translation>Oddeľovač</translation>
+    </message>
+    <message>
+        <source>Copy Full Text</source>
+        <translation>Kopírovať celý text</translation>
+    </message>
+    <message>
+        <source>Print Document</source>
+        <translation>Tlačiť dokument</translation>
+    </message>
+    <message>
+        <source>Share Document</source>
+        <translation>Zdieľať dokument</translation>
+    </message>
+    <message>
+        <source>Zoom Out</source>
+        <translation>Oddialiť</translation>
+    </message>
+    <message>
+        <source>Full Screen</source>
+        <translation>Celá obrazovka</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Zavrieť</translation>
+    </message>
+    <message>
+        <source>Insert Link</source>
+        <translation>Vložiť odkaz</translation>
+    </message>
+    <message>
+        <source>Text:</source>
+        <translation>Text:</translation>
+    </message>
+    <message>
+        <source>Link:</source>
+        <translation>Odkaz:</translation>
+    </message>
+    <message>
+        <source>Please enter a valid link</source>
+        <translation>Prosím, zadajte platný odkaz</translation>
+    </message>
+    <message>
+        <source>Link text</source>
+        <translation>Text odkazu</translation>
+    </message>
+    <message>
+        <source>Please enter the text to be translated first.</source>
+        <translation>Najprv zadajte text, ktorý sa má preložiť.</translation>
+    </message>
+    <message>
+        <source>Identifying source language...</source>
+        <translation>Identifikuje sa zdrojový jazyk...</translation>
+    </message>
+    <message>
+        <source>My MCP Server</source>
+        <translation>Môj MCP Server</translation>
+    </message>
+    <message>
+        <source>Add MCP Server</source>
+        <translation>Pridať MCP Server</translation>
+    </message>
+    <message>
+        <source>Delete MCP Server</source>
+        <translation>Odstrániť MCP Server</translation>
+    </message>
+    <message>
+        <source>Edit MCP Server</source>
+        <translation>Upraviť MCP Server</translation>
+    </message>
+    <message>
+        <source>Built-in Only</source>
+        <translation>Iba vstavané</translation>
+    </message>
+    <message>
+        <source>Custom Added Only</source>
+        <translation>Iba vlastné</translation>
+    </message>
+    <message>
+        <source>To use MCP&amp;Skills, install UOS AI Agent from the App Store first.</source>
+        <translation>Na použitie MCP&amp;Skills najprv nainštalujte UOS AI Agent z Obchodu s aplikáciami.</translation>
+    </message>
+    <message>
+        <source>To use AI Knowledge Base, install Embedding Plugins from App Store first.</source>
+        <translation>Na použitie AI Knowledge Base najprv nainštalujte zásuvné moduly pre vkladanie z Obchodu s aplikáciami.</translation>
+    </message>
+    <message>
+        <source>Install Now</source>
+        <translation>Inštalovať teraz</translation>
+    </message>
+    <message>
+        <source>System Settings</source>
+        <translation>Nastavenia systému</translation>
+    </message>
+    <message>
+        <source>Bluetooth</source>
+        <translation>Bluetooth</translation>
+    </message>
+    <message>
+        <source>Wireless Network</source>
+        <translation>Bezdrôtová sieť</translation>
+    </message>
+    <message>
+        <source>DND Mode</source>
+        <translation>Režim Nerušiť</translation>
+    </message>
+    <message>
+        <source>Eye Comfort</source>
+        <translation>Ochrana očí</translation>
+    </message>
+    <message>
+        <source>Brightness</source>
+        <translation>Jas</translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation>Hlasitosť</translation>
+    </message>
+    <message>
+        <source>Font Size</source>
+        <translation>Veľkosť písma</translation>
+    </message>
+    <message>
+        <source>App Store</source>
+        <translation>Obchod s aplikáciami</translation>
+    </message>
+    <message>
+        <source>Schedule Management</source>
+        <translation>Správa plánu</translation>
+    </message>
+    <message>
+        <source>Click to download</source>
+        <translation>Kliknite na stiahnutie</translation>
+    </message>
+    <message>
+        <source>&lt;10k downloads</source>
+        <translation>&lt;10 tis. stiahnutí</translation>
+    </message>
+    <message>
+        <source>&lt;100k downloads</source>
+        <translation>&lt;100 tis. stiahnutí</translation>
+    </message>
+    <message>
+        <source>100k+ downloads</source>
+        <translation>100 tis.+ stiahnutí</translation>
+    </message>
+    <message>
+        <source>%1 stars</source>
+        <translation>%1 hviezdičiek</translation>
+    </message>
+    <message>
+        <source>Click to go to app</source>
+        <translation>Kliknite pre otvorenie aplikácie</translation>
+    </message>
+    <message>
+        <source>Sunday</source>
+        <translation>Nedeľa</translation>
+    </message>
+    <message>
+        <source>Monday</source>
+        <translation>Pondelok</translation>
+    </message>
+    <message>
+        <source>Tuesday</source>
+        <translation>Utorok</translation>
+    </message>
+    <message>
+        <source>Wednesday</source>
+        <translation>Streda</translation>
+    </message>
+    <message>
+        <source>Thursday</source>
+        <translation>Štvrtok</translation>
+    </message>
+    <message>
+        <source>Friday</source>
+        <translation>Piatok</translation>
+    </message>
+    <message>
+        <source>Saturday</source>
+        <translation>Sobota</translation>
+    </message>
+    <message>
+        <source>MCP Servers</source>
+        <translation>Servery MCP</translation>
+    </message>
+    <message>
+        <source>Select All MCP Servers</source>
+        <translation>Vybrať všetky servery MCP</translation>
+    </message>
+    <message>
+        <source>You can add and manage MCP servers</source>
+        <translation>Môžete pridávať a spravovať servery MCP</translation>
+    </message>
+    <message>
+        <source>Describe</source>
+        <translation>Popísať</translation>
+    </message>
+    <message>
+        <source>JSON configuration</source>
+        <translation>Konfigurácia JSON</translation>
+    </message>
+    <message>
+        <source>Please paste the MCP JSON configuration code into the input box.</source>
+        <translation>Prosím, vložte kód konfigurácie MCP JSON do vstupného poľa.</translation>
+    </message>
+    <message>
+        <source>Describe MCP server functions to facilitate quick search tools</source>
+        <translation>Popísať funkcie servera MCP na uľahčenie rýchleho vyhľadávania nástrojov</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Späť</translation>
+    </message>
+    <message>
+        <source>Free Credits Delivered</source>
+        <translation>Doručené bezplatné kredity</translation>
+    </message>
+    <message>
+        <source>You&apos;ve&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation>Vyčerpali ste bezplatné kredity generovania pre skúšobný účet. Dali sme vám ďalších 200 bezplatných kreditov platných tento mesiac. Preskúmajte viac funkcií a odomknite neobmedzené možnosti UOS AI!</translation>
+    </message>
+    <message>
+        <source>Not Now</source>
+        <translation>Teraz nie</translation>
+    </message>
+    <message>
+        <source>I am {{enter identity/position}}. Help me write a {{report/article/outline/WeChat public account post/notice/research report/work summary/speech}} about {{enter topic}}, around {{1000}} words in length. The content requirements are {{enter requirements/content focus/writing style, etc..}}</source>
+        <translation>Som {{zadajte identitu/pozíciu}}. Pomôžte mi napísať {{správu/článok/osnovu/príspevok na verejný účet WeChat/oznam/výskumnú správu/zhrnutie práce/prejav}} o {{zadajte tému}}, s dĺžkou asi {{1000}} slov. Požiadavky na obsah sú {{zadajte požiadavky/zameranie obsahu/štýl písania atď.}}</translation>
+    </message>
+    <message>
+        <source>Manage Chat History</source>
+        <translation>Spravovať históriu chatu</translation>
+    </message>
+    <message>
+        <source>Voice Chat</source>
+        <translation>Hlasový chat</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>Rozbaliť</translation>
+    </message>
+    <message>
+        <source>Collapse</source>
+        <translation>Zbaliť</translation>
+    </message>
+    <message>
+        <source>Edited on</source>
+        <translation>Upravené dňa</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Vytvorené</translation>
+    </message>
+    <message>
+        <source>You have %1 newly answered chats</source>
+        <translation>Máte %1 nových odpovedaných chatov</translation>
+    </message>
+    <message>
+        <source>Search History</source>
+        <translation>História vyhľadávania</translation>
+    </message>
+    <message>
+        <source>Confirm delete this conversation</source>
+        <translation>Potvrdiť odstránenie tejto konverzácie</translation>
+    </message>
+    <message>
+        <source>This will remove all related content from UOS AI</source>
+        <translation>Týmto sa odstránia všetky súvisiace obsahy z UOS AI</translation>
+    </message>
+    <message>
+        <source>Use it now</source>
+        <translation>Použiť teraz</translation>
+    </message>
+    <message>
+        <source>My Skills</source>
+        <translation>Moje zručnosti</translation>
+    </message>
+    <message>
+        <source>Open installation directory</source>
+        <translation>Otvoriť inštalačný adresár</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>Obnoviť</translation>
+    </message>
+    <message>
+        <source>Import Skill</source>
+        <translation>Importovať zručnosť</translation>
+    </message>
+    <message>
+        <source>You can add and manage Skills</source>
+        <translation>Môžete pridávať a spravovať zručnosti</translation>
+    </message>
+    <message>
+        <source>Exit Voice Chat</source>
+        <translation>Ukončiť hlasový chat</translation>
+    </message>
+    <message>
+        <source>The following %1 files are invalid and unavailable. Continue?</source>
+        <translation>Nasledujúcich %1 súborov je neplatných a nedostupných. Pokračovať?</translation>
+    </message>
+    <message>
+        <source>The following file is invalid and unavailable. Continue?</source>
+        <translation>Nasledujúci súbor je neplatný a nedostupný. Pokračovať?</translation>
+    </message>
+    <message>
+        <source>Previous</source>
+        <translation>Predchádzajúce</translation>
+    </message>
+    <message>
+        <source>UOS AI 3.0: All-New UI Upgrade</source>
+        <translation>UOS AI 3.0: Úplne nová aktualizácia rozhrania</translation>
+    </message>
+    <message>
+        <source>New Windowed Mode for a fresh interaction experience</source>
+        <translation>Nový režim okna pre čerstvý zážitok z interakcie</translation>
+    </message>
+    <message>
+        <source>Clear sidebar navigation for organized access and ease of use</source>
+        <translation>Jasná navigácia v bočnom paneli pre organizovaný prístup a jednoduché používanie</translation>
+    </message>
+    <message>
+        <source>A wider, focused workspace with richer content</source>
+        <translation>Širší, zameraný pracovný priestor s bohatším obsahom</translation>
+    </message>
+    <message>
+        <source>Clearer hierarchy to keep core tasks focused and immersive</source>
+        <translation>Jasná hierarchia pre zachovanie zamerania na hlavné úlohy</translation>
+    </message>
+    <message>
+        <source>Multi-tasking to save your valuable time</source>
+        <translation>Multitasking ušetrí váš drahocenný čas</translation>
+    </message>
+    <message>
+        <source>Silent background multi-tasking: No more waiting</source>
+        <translation>Tichý multitasking na pozadí: už žiadne čakanie</translation>
+    </message>
+    <message>
+        <source>Assign tasks anytime without breaking your flow</source>
+        <translation>Priraďujte úlohy kedykoľvek bez prerušovania toku práce</translation>
+    </message>
+    <message>
+        <source>Get instant progress updates without constant monitoring</source>
+        <translation>Získajte okamžité aktualizácie priebehu bez neustáleho monitorovania</translation>
+    </message>
+    <message>
+        <source>Immersive split-screen writing: Accurate, secure, and traceable</source>
+        <translation>Imerzívne písanie na rozdelenej obrazovke: presné, bezpečné a sledovateľné</translation>
+    </message>
+    <message>
+        <source>Split-screen chat &amp; edit: No more window switching</source>
+        <translation>Chat a úpravy na rozdelenej obrazovke: už žiadne prepínanie okien</translation>
+    </message>
+    <message>
+        <source>Deep data &quot;feeding&quot; for well-grounded content creation</source>
+        <translation>Hlboké „kŕmenie“ dátami pre vytváranie dobre podloženého obsahu</translation>
+    </message>
+    <message>
+        <source>Outline first with manual correction and one-click export</source>
+        <translation>Najprv osnova s ručnou opravou a exportom jedným kliknutím</translation>
+    </message>
+    <message>
+        <source>On-device/Private models ensure data privacy and security</source>
+        <translation>Miestne/súkromné modely zabezpečujú súkromie a bezpečnosť dát</translation>
+    </message>
+    <message>
+        <source>System control &amp; vast Skills: All within a single command</source>
+        <translation>Ovládanie systému a rozsiahle zručnosti: všetko v jednom príkaze</translation>
+    </message>
+    <message>
+        <source>Visual system control: Adjust fonts, toggle Wi-Fi, and more</source>
+        <translation>Vizuálne ovládanie systému: úprava písiem, prepínanie Wi-Fi a ďalšie</translation>
+    </message>
+    <message>
+        <source>High-frequency office skills: Writing, translation, and merging</source>
+        <translation>Zručnosti pre častú kancelársku prácu: písanie, preklad a spájanie</translation>
+    </message>
+    <message>
+        <source>One-click Skill import to unlock endless capabilities</source>
+        <translation>Import zručností jedným kliknutím pre odomknutie nekončných možností</translation>
+    </message>
+    <message>
+        <source>Batch management and precise search for history</source>
+        <translation>Hromadná správa a presné vyhľadávanie v histórii</translation>
+    </message>
+    <message>
+        <source>Global quick search: Access history in seconds</source>
+        <translation>Globálne rýchle vyhľadávanie: prístup k histórii v priebehu sekúnd</translation>
+    </message>
+    <message>
+        <source>Agent-based filtering for precise chat history search</source>
+        <translation>Filtrovanie na základe agentov pre presné vyhľadávanie v histórii chatu</translation>
+    </message>
+    <message>
+        <source>Efficient batch management for a clean and organized workspace</source>
+        <translation>Efektívna hromadná správa pre čisté a organizované pracovné prostredie</translation>
+    </message>
+    <message>
+        <source>Go to configuration</source>
+        <translation>Prejsť na konfiguráciu</translation>
+    </message>
+    <message>
+        <source>No account</source>
+        <translation>Žiadny účet</translation>
+    </message>
+    <message>
+        <source>Input question</source>
+        <translation>Vstupná otázka</translation>
+    </message>
+    <message>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation>Obsah generovaný umelou inteligenciou slúži len na referenčné účely. Venujte pozornosť presnosti informácií.</translation>
+    </message>
+    <message>
+        <source>Welcome to UOS AI</source>
+        <translation>Vitajte v UOS AI</translation>
+    </message>
+    <message>
+        <source>Here are some of the things UOS AI can help you do</source>
+        <translation>Tu je niekoľko vecí, ktoré vám môže UOS AI pomôcť spraviť</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>Zastaviť</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation>Prehrať</translation>
+    </message>
+    <message>
+        <source>Retry</source>
+        <translation>Skúsiť znova</translation>
+    </message>
+    <message>
+        <source>Clear conversation history</source>
+        <translation>Vymazať históriu konverzácie</translation>
+    </message>
+    <message>
+        <source>Please connect the microphone and try again</source>
+        <translation>Pripojte mikrofón a skúste to znova</translation>
+    </message>
+    <message>
+        <source>Chat history cleared</source>
+        <translation>História konverzácie bola vymazaná</translation>
+    </message>
+    <message>
+        <source>Click to start/stop recording</source>
+        <translation>Kliknite na spustenie/zastavenie nahrávania</translation>
+    </message>
+    <message>
+        <source>Listening</source>
+        <translation>Počúvanie</translation>
+    </message>
+    <message>
+        <source>Sleeping</source>
+        <translation>Spán</translation>
+    </message>
+    <message>
+        <source>No microphone detected</source>
+        <translation>Nebol zistený žiadny mikrofón</translation>
+    </message>
+    <message>
+        <source>Connection failed, click to try again</source>
+        <translation>Pripojenie zlyhalo, kliknite na opätovný pokus</translation>
+    </message>
+    <message>
+        <source>Click on the animation%1 to activate</source>
+        <translation>Kliknite na animáciu%1 na aktiváciu</translation>
+    </message>
+    <message>
+        <source>Voice input is temporarily unavailable, please check the network!</source>
+        <translation>Hlasový vstup je dočasne nedostupný, skontrolujte sieť!</translation>
+    </message>
+    <message>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation>Nedá sa pripojiť k serveru, skontrolujte svoju sieť alebo skúste to znova neskôr.</translation>
+    </message>
+    <message>
+        <source>Voice conversation</source>
+        <translation>Hlasová konverzácia</translation>
+    </message>
+    <message>
+        <source>Click the animation or press Enter to send</source>
+        <translation>Odoslať kliknutím na animáciu alebo stlačením klávesu Enter</translation>
+    </message>
+    <message>
+        <source>Stop recording after %1 seconds</source>
+        <translation>Zastaviť nahrávanie po %1 sekundách</translation>
+    </message>
+    <message>
+        <source>Thinking</source>
+        <translation>Premýšľam</translation>
+    </message>
+    <message>
+        <source>Click animation to interrupt</source>
+        <translation>Kliknutím na animáciu prerušíte</translation>
+    </message>
+    <message>
+        <source>Answering</source>
+        <translation>Odpovedám</translation>
+    </message>
+    <message>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation>Vaša kvóta bezplatného účtu bola vyčerpaná. Ak chcete pokračovať v používaní, nakonfigurujte si účet modelu.</translation>
+    </message>
+    <message>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation>Platnosť vášho bezplatného účtu vypršala. Ak chcete pokračovať v používaní, nakonfigurujte si účet modelu.</translation>
+    </message>
+    <message>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation>UOS AI vyžaduje pred použitím konfiguráciu účtu modelu AI. Najprv prosím nakonfigurujte účet modelu.</translation>
+    </message>
+    <message>
+        <source>Activate</source>
+        <translation>Aktivovať</translation>
+    </message>
+    <message>
+        <source>Voice input</source>
+        <translation>Hlasový vstup</translation>
+    </message>
+    <message>
+        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
+        <translation>Hlasové vysielanie je dočasne nedostupné, skontrolujte prosím sieť!</translation>
+    </message>
+    <message>
+        <source>Turn off voice conversation</source>
+        <translation>Vypnúť hlasový rozhovor</translation>
+    </message>
+    <message>
+        <source>The picture has been generated, please switch to the chat interface to view it.</source>
+        <translation>Obrázok bol vygenerovaný, pre jeho zobrazenie prepnite na rozhranie chatu.</translation>
+    </message>
+    <message>
+        <source>No account, please configure an account</source>
+        <translation>Žiadny účet, prosím nakonfigurujte účet</translation>
+    </message>
+    <message>
+        <source>Answer each question up to 5 times</source>
+        <translation>Každú otázku odpovedať najviac 5-krát</translation>
+    </message>
+    <message>
+        <source>Copied successfully</source>
+        <translation>Úspešne skopírované</translation>
+    </message>
+    <message>
+        <source>Sound output device not detected</source>
+        <translation>Nebola zistená zvuková výstupná zariadenie</translation>
+    </message>
+    <message>
+        <source>The sound output device is not detected, please check and try again!</source>
+        <translation>Nebolo zistené zvukové výstupné zariadenie, skontrolujte ho a skúste to znova!</translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation>Režim</translation>
+    </message>
+    <message>
+        <source>Window Mode</source>
+        <translation>Režim okna</translation>
+    </message>
+    <message>
+        <source>Sidebar Mode</source>
+        <translation>Režim bočného panela</translation>
+    </message>
+    <message>
+        <source>Assistant List</source>
+        <translation>Zoznam asistentov</translation>
+    </message>
+    <message>
+        <source>Agent List</source>
+        <translation>Zoznam agentov</translation>
+    </message>
+    <message>
+        <source>UOS System Assistant</source>
+        <translation>Systémový asistent UOS</translation>
+    </message>
+    <message>
+        <source>Deepin System Assistant</source>
+        <translation>Systémový asistent Deepin</translation>
+    </message>
+    <message>
+        <source>Personal Knowledge Assistant</source>
+        <translation>Osobný asistent znalostí</translation>
+    </message>
+    <message>
+        <source>Please configure the knowledge base</source>
+        <translation>Nakonfigurujte znalostnú databázu</translation>
+    </message>
+    <message>
+        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
+        <translation>Pred použitím [Osobného asistenta znalostí] je potrebné nakonfigurovať znalostnú databázu. Po nakonfigurovaní znalostnej databázy bude AI odpovedať na otázky alebo generovať obsah na základe obsahu, ktorý ste v znalostnej databáze nakonfigurovali.</translation>
+    </message>
+    <message>
+        <source>Please configure the large model</source>
+        <translation>Nakonfigurujte veľký model</translation>
+    </message>
+    <message>
+        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
+        <translation>Osobný asistent znalostí) možno použiť až po nakonfigurovaní veľkého modelu.</translation>
+    </message>
+    <message>
+        <source>To configure</source>
+        <translation>Nakonfigurovať</translation>
+    </message>
+    <message>
+        <source>To install</source>
+        <translation>Nainštalovať</translation>
+    </message>
+    <message>
+        <source>Please install [EmbeddingPlugins]</source>
+        <translation>Nainštalujte [EmbeddingPlugins]</translation>
+    </message>
+    <message>
+        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
+        <translation>Tento asistent na svoje spustenie vyžaduje inštaláciu zásuvných modulov EmbeddingPlugins</translation>
+    </message>
+    <message>
+        <source>Drag files here to add them.</source>
+        <translation>Pretiahnite sem súbory, aby ste ich pridali.</translation>
+    </message>
+    <message>
+        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
+        <translation>Môžete pridať najviac 3 súbory. Podporované typy súborov zahŕňajú: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, súbory kódu atď.</translation>
+    </message>
+    <message>
+        <source>You can only add a maximum of one file.</source>
+        <translation>Môžete pridať najviac jeden súbor.</translation>
+    </message>
+    <message>
+        <source>The file format is not supported.</source>
+        <translation>Formát súboru nie je podporovaný.</translation>
+    </message>
+    <message>
+        <source>Summarize the key content of the file.</source>
+        <translation>Zhrnúť kľúčový obsah súboru.</translation>
+    </message>
+    <message>
+        <source>File Error</source>
+        <translation>Chyba súboru</translation>
+    </message>
+    <message>
+        <source>File has been deleted.</source>
+        <translation>Súbor bol odstránený.</translation>
+    </message>
+    <message>
+        <source>The file size exceeds the 100MB limit.</source>
+        <translation>Veľkosť súboru presahuje limit 100 MB.</translation>
+    </message>
+    <message>
+        <source>Upload a document</source>
+        <translation>Nahrať dokument</translation>
+    </message>
+    <message>
+        <source>File deleted</source>
+        <translation>Súbor odstránený</translation>
+    </message>
+    <message>
+        <source>No text was parsed</source>
+        <translation>Nebol nájdený žiadny text</translation>
+    </message>
+    <message>
+        <source>Reference</source>
+        <translation>Odkaz</translation>
+    </message>
+    <message>
+        <source>Instruction</source>
+        <translation>Inštrukcia</translation>
+    </message>
+    <message>
+        <source>Type &quot;/&quot; in the input box to activate.</source>
+        <translation>Aktivujete zadaním znaku „/“ do vstupného poľa.</translation>
+    </message>
+    <message>
+        <source>Please enter; “Ctrl+Enter” to change the line.</source>
+        <translation>Prosím, zadajte; „Ctrl+Enter“ zmení riadok.</translation>
+    </message>
+    <message>
+        <source>Enter your question, or enter &quot;/&quot; to select a command
+&quot;Ctrl+Enter&quot;  to start a new line</source>
+        <translation>Zadajte svoju otázku alebo zadajte „/“ na výber príkazu
+„Ctrl+Enter“  pre nový riadok</translation>
+    </message>
+    <message>
+        <source>Search complete.</source>
+        <translation>Vyhľadávanie dokončené.</translation>
+    </message>
+    <message>
+        <source>Click to view results</source>
+        <translation>Kliknite na zobrazenie výsledkov</translation>
+    </message>
+    <message>
+        <source>edit</source>
+        <translation>upraviť</translation>
+    </message>
+    <message>
+        <source>save</source>
+        <translation>uložiť</translation>
+    </message>
+    <message>
+        <source>copy</source>
+        <translation>kopírovať</translation>
+    </message>
+    <message>
+        <source>lines of code collapsed</source>
+        <translation>riadky kódu zbalené</translation>
+    </message>
+    <message>
+        <source>Save As</source>
+        <translation>Uložiť ako</translation>
+    </message>
+    <message>
+        <source>Thinking has stopped</source>
+        <translation>Premýšľanie bolo zastavené</translation>
+    </message>
+    <message>
+        <source>Deeply thought (%1 seconds)</source>
+        <translation>Hlboké premýšľanie (%1 sekúnd)</translation>
+    </message>
+    <message>
+        <source>New Conversation</source>
+        <translation>Nová konverzácia</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>História</translation>
+    </message>
+    <message>
+        <source>No History Records</source>
+        <translation>Žiadne záznamy histórie</translation>
+    </message>
+    <message>
+        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
+        <translation>Naozaj chcete odstrániť tento rozhovor? Po odstránení ho už nebude možné obnoviť.</translation>
+    </message>
+    <message>
+        <source>The %1 agent used in this conversation has been deleted</source>
+        <translation>Agent %1 použitý v tomto rozhovore bol odstránený</translation>
+    </message>
+    <message>
+        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
+        <translation>Tento rozhovor nie je možné zobraziť. Ak ho chcete zobraziť, nainštalujte agenta %1 a skúste to znova.</translation>
+    </message>
+    <message>
+        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
+        <translation>Pôvodný model rozhovoru bol odstránený. Pre pokračovanie v rozhovore sme pre vás prepli na nový model.</translation>
+    </message>
+    <message>
+        <source>Recommendations</source>
+        <translation>Odporúčania</translation>
+    </message>
+    <message>
+        <source>No Model</source>
+        <translation>Žiadny model</translation>
+    </message>
+    <message>
+        <source>No model available. Please install or configure a model in the settings.</source>
+        <translation>Nie je k dispozícii žiadny model. Nainštalujte alebo nakonfigurujte model v nastaveniach.</translation>
+    </message>
+    <message>
+        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
+        <translation>Pros popíšte tému obsahu a požiadavky pre vašu tvorbu.</translation>
+    </message>
+    <message>
+        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
+        <translation>Pros zadajte obsah, ktorý chcete preložiť, a uveďte cieľový jazyk. Predvolený preklad je do čínštiny.</translation>
+    </message>
+    <message>
+        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
+        <translation>Pros zadajte text, ktorý potrebujete spracovať, a uveďte svoje požiadavky.</translation>
+    </message>
+    <message>
+        <source>New Agent Added</source>
+        <translation>Pridaný nový agent</translation>
+    </message>
+    <message>
+        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
+        <translation>Boli pridaní noví agenti pre písanie, spracovanie textu a preklad. Skontrolujte ich teraz.</translation>
+    </message>
+    <message>
+        <source>Try it</source>
+        <translation>Vyskúšať</translation>
+    </message>
+    <message>
+        <source>Write an article based on the following document:</source>
+        <translation>Napísať článok na základe nasledujúceho dokumentu:</translation>
+    </message>
+    <message>
+        <source>Translate the following document into English:</source>
+        <translation>Preložiť nasledujúci dokument do angličtiny:</translation>
+    </message>
+    <message>
+        <source>Add Mcp Server</source>
+        <translation>Pridať MCP server</translation>
+    </message>
+    <message>
+        <source>Add Server</source>
+        <translation>Pridať server</translation>
+    </message>
+    <message>
+        <source>Add failed! Error reason:</source>
+        <translation>Pridanie zlyhalo! Dôvod chyby:</translation>
+    </message>
+    <message>
+        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
+        <translation>Chýba prostredie MCP. Pros nainštalujte 【UOS AI Agent】</translation>
+    </message>
+    <message>
+        <source>Calling</source>
+        <translation>Volanie</translation>
+    </message>
+    <message>
+        <source>Completed</source>
+        <translation>Dokončené</translation>
+    </message>
+    <message>
+        <source>Call Failed</source>
+        <translation>Volanie zlyhalo</translation>
+    </message>
+    <message>
+        <source>Cancelled</source>
+        <translation>Zrušené</translation>
+    </message>
+    <message>
+        <source>params</source>
+        <translation>parametre</translation>
+    </message>
+    <message>
+        <source>result</source>
+        <translation>výsledok</translation>
+    </message>
+    <message>
+        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation>Pre MCP Server prepnite na oficiálne vydaný model „DeepSeek-Trial Account“</translation>
+    </message>
+    <message>
+        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
+        <translation>Zadajte príkaz MCP Servera, napr. „Prepnite systém do tmavého režimu“</translation>
+    </message>
+    <message>
+        <source>Agent server is not available</source>
+        <translation>Agent server nie je k dispozícii</translation>
+    </message>
+    <message>
+        <source>Agent server exception</source>
+        <translation>Výnimka agent servera</translation>
+    </message>
+    <message>
+        <source>MCP server is not available</source>
+        <translation>MCP server nie je k dispozícii</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation>Potvrdiť</translation>
+    </message>
+    <message>
+        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
+        <translation>Automatizujte úlohy vo viacerých súboroch a aplikáciách jedným príkazom pomocou služby MCP. Skúste to teraz!</translation>
+    </message>
+    <message>
+        <source>Use later</source>
+        <translation>Použiť neskôr</translation>
+    </message>
+    <message>
+        <source>Enable MCP Server</source>
+        <translation>Povoliť MCP Server</translation>
+    </message>
+    <message>
+        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
+        <translation>Po nainštalovaní MCP prostredia „UOS AI Agent“ kliknite na </translation>
+    </message>
+    <message>
+        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
+        <translation> a v zozname MCP serverov vyberte „uos-mcp“.</translation>
+    </message>
+    <message>
+        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
+        <translation>Skúste povedať: „Prepnite systém do tmavého režimu“.</translation>
+    </message>
+    <message>
+        <source>Try it now</source>
+        <translation>Skúste to teraz</translation>
+    </message>
+    <message>
+        <source>Add Mcp Server[GuidePage]</source>
+        <translation>Pridať MCP Server[GuidePage]</translation>
+    </message>
+    <message>
+        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
+        <translation>Prví používatelia: Nainštalujte prostredie MCP „UOS AI Agent“ prostredníctvom App Store.</translation>
+    </message>
+    <message>
+        <source>The JSON file format is incorrect, please check and submit again</source>
+        <translation>Formát súboru JSON je nesprávny, skontrolujte ho a odošlite znova</translation>
+    </message>
+    <message>
+        <source>Install Now &gt;</source>
+        <translation>Nainštalovať teraz &gt;</translation>
+    </message>
+    <message>
+        <source>General Chat</source>
+        <translation>Všeobecný chat</translation>
+    </message>
+    <message>
+        <source>Now in Private Chat</source>
+        <translation>Teraz v súkromnom chate</translation>
+    </message>
+    <message>
+        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
+        <translation>Správy v súkromnom chate sa neukladajú do histórie a po opustení chatu budú natrvalo odstránené.</translation>
+    </message>
+    <message>
+        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
+        <translation>Q&amp;A snímky obrazovky    Skratka (Ctrl+Alt+Q), podporované sú až 3 obrázky.</translation>
+    </message>
+    <message>
+        <source>Cannot be used during screen recording</source>
+        <translation>Nemožno použiť počas nahrávania obrazovky</translation>
+    </message>
+    <message>
+        <source>You can upload up to 3 files or image</source>
+        <translation>Môžete nahrať až 3 súbory alebo obrázky</translation>
+    </message>
+    <message>
+        <source>Please delete the abnormal file and send it again</source>
+        <translation>Odstráňte chybný súbor a odošlite ho znova</translation>
+    </message>
+    <message>
+        <source>Add Private Chat</source>
+        <translation>Pridať súkromný chat</translation>
+    </message>
+    <message>
+        <source>Add [Screenshot Q&amp;A]</source>
+        <translation>Pridať [Q&amp;A snímky obrazovky]</translation>
+    </message>
+    <message>
+        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
+        <translation>Vytvorte snímku obrazovky a odošlite obsah do UOS AI. Môžete tiež priamo nahrať obrázok.</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation>Ďalej</translation>
+    </message>
+    <message>
+        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
+        <translation>Pridať [Súkromný režim chatu]] - Chaty nebudú uložené.</translation>
+    </message>
+    <message>
+        <source>No text extracted</source>
+        <translation>Nebol extrahovaný žiadny text</translation>
+    </message>
+    <message>
+        <source>Image size exceeds 15 MB</source>
+        <translation>Veľkosť obrázka presahuje 15 MB</translation>
+    </message>
+    <message>
+        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
+        <translation>Po otvorení znalostnej báze budú odpovede založené na jej obsahu. Rýchlosť odpovede závisí od výkonu počítača a veľkosti znalostnej bázy.</translation>
+    </message>
+    <message>
+        <source>Knowledge base unavailable when any command or MCP is selected.</source>
+        <translation>Znalostná báza nie je k dispozícii, ak je vybraný akýkoľvek príkaz alebo MCP.</translation>
+    </message>
+    <message>
+        <source>MCP is disabled while the knowledge base is active.</source>
+        <translation>MCP je zakázané, kým je aktívna znalostná databáza.</translation>
+    </message>
+    <message>
+        <source>Commands disabled while knowledge base is active.</source>
+        <translation>Príkazy sú zakázané, kým je aktívna znalostná databáza.</translation>
+    </message>
+    <message>
+        <source>Copy succeeded.</source>
+        <translation>Kopírovanie úspešné.</translation>
+    </message>
+    <message>
+        <source>Copy failed. Please try again.</source>
+        <translation>Kopírovanie zlyhalo. Skúste to prosím znova.</translation>
+    </message>
+    <message>
+        <source>Searching</source>
+        <translation>Vyhľadávanie</translation>
+    </message>
+    <message>
+        <source>%1 reference documents have been obtained (%2s)</source>
+        <translation>Bolo získaných %1 referenčných dokumentov (%2s)</translation>
+    </message>
+    <message>
+        <source>Clear History</source>
+        <translation>Vymazať históriu</translation>
+    </message>
+    <message>
+        <source>Delete all records?</source>
+        <translation>Odstrániť všetky záznamy?</translation>
+    </message>
+    <message>
+        <source>Once deleted, the content cannot be recovered!</source>
+        <translation>Po odstránení už nebude možné obsah obnoviť!</translation>
+    </message>
+    <message>
+        <source>Recommend official models</source>
+        <translation>Odporúčať oficiálne modely</translation>
+    </message>
+    <message>
+        <source>Disable MCP</source>
+        <translation>Zakázať MCP</translation>
+    </message>
+    <message>
+        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation>Odporúča sa použiť oficiálny model „DeepSeek-Trial Account“</translation>
+    </message>
+    <message>
+        <source>Quick Open</source>
+        <translation>Rýchle otvorenie</translation>
+    </message>
+    <message>
+        <source>MCP Server Upgrade to Automatic Mode</source>
+        <translation>MCP Server aktualizovaný na automatický režim</translation>
+    </message>
+    <message>
+        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
+        <translation>MCP Server bol aktualizovaný na automatický režim, ktorý vám umožňuje prístup ku všetkým MCP Server jediným kliknutím </translation>
+    </message>
+    <message>
+        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
+        <translation>. To vám umožňuje automatizovať úlohy, ako je nastavenie systému a spracovanie súborov, jedným kliknutím.</translation>
+    </message>
+    <message>
+        <source>Adding MCP Server has been moved to Settings.</source>
+        <translation>Pridávanie MCP Server bolo presunuté do nastavení.</translation>
+    </message>
+    <message>
+        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
+        <translation>Ak chcete pridať ďalšie MCP Server, prejdite na Nastavenia &gt; MCP Server.</translation>
+    </message>
+    <message>
+        <source>Got it</source>
+        <translation>Rozumiem</translation>
+    </message>
+    <message>
+        <source>Complimentary Model Credits</source>
+        <translation>Bezplatné kredity na modely</translation>
+    </message>
+    <message>
+        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
+        <translation>Aktuálny systém ponúka model skúšobného účtu DeepSeek, ktorý automaticky obnovuje bezplatný kvót na začiatku každého mesiaca, čo vám umožňuje používať ho bez starostí.</translation>
+    </message>
+    <message>
+        <source>Claim Credits</source>
+        <translation>Získať kredity</translation>
+    </message>
+    <message>
+        <source>Get a free account</source>
+        <translation>Získať bezplatný účet</translation>
+    </message>
+    <message>
+        <source>Claim Free Credits</source>
+        <translation>Získať bezplatné kredity</translation>
+    </message>
+    <message>
+        <source>Successfully Claimed</source>
+        <translation>Úspešne získané</translation>
+    </message>
+    <message>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation>Získanie zlyhalo. Skúste to prosím znova.</translation>
+    </message>
+    <message>
+        <source>Enable MCP Server&amp;</source>
+        <translation>Povoliť server MCP&amp;</translation>
+    </message>
+    <message>
+        <source>Disable MCP Server</source>
+        <translation>Zakázať server MCP</translation>
+    </message>
+    <message>
+        <source>Configure MCP Server</source>
+        <translation>Konfigurovať server MCP</translation>
+    </message>
+    <message>
+        <source>Enabling MCP Server Features</source>
+        <translation>Povolenie funkcií servera MCP</translation>
+    </message>
+    <message>
+        <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
+        <translation>Niektoré funkcie serverov MCP tretích strán nesú isté riziká. Používajte ich opatrne. Ak túto službu povolíte, vstavaný nástroj zistí a automaticky stiahne potrebné závislosti. Tento proces sťahovania si vyžiada dáta. Uvedomte si tieto riziká a postupujte opatrne.</translation>
+    </message>
+    <message>
+        <source>I have understood and agree to use this service</source>
+        <translation>Rozumiem a súhlasím s používaním tejto služby</translation>
+    </message>
+    <message>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation>UOS AI Sledovanie/Písanie</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::TtsCompositeWidget</name>
     <message>
-        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="72"/>
         <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation type="unfinished">Vami vybraný text prekročil limit 5000 znakov.</translation>
+        <translation>Vybraný text prekročil limit 5 000 znakov.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::TtsWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/ttswidget.cpp" line="86"/>
         <source>The text you have selected has exceeded the 2000 character limit.</source>
-        <translation>Vybraný text prekročil limit 2000 znakov.</translation>
+        <translation>Vybraný text prekročil limit 2 000 znakov.</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/ttswidget.cpp" line="141"/>
         <source>Network is offline , stop text to speech</source>
-        <translation>Sieť je offline, zastaviť premenu textu na reč</translation>
+        <translation>Sieť je offline, zastavuje sa prevod textu na reč</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="571"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation type="unfinished">Jas je už na maximu a nedá sa ďalej zvýšiť.</translation>
+        <translation>Jas je už na maximum a nedá sa ďalej zvýšiť.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="581"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation type="unfinished">Jas je už na minime a nedá sa ďalej znížiť.</translation>
+        <translation>Jas je už na minimum a nedá sa ďalej znížiť.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="715"/>
         <source>AI Meeting Schedule</source>
-        <translation type="unfinished"></translation>
+        <translation>AI plánovanie stretnutia</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="854"/>
         <source>Your system memory is %0.</source>
-        <translation type="unfinished">Pamäť vášho systému je %0.</translation>
+        <translation>Pamäť vášho systému je %0.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="874"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation type="unfinished">Rozhranie jazykových nastavení bolo otvorené. Nastavte ho v tomto rozhraní.</translation>
+        <translation>Rozhranie nastavenia jazyka bolo otvorené. Nastavte ho v tomto rozhraní.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="918"/>
         <source>The current mode is already %1 mode.</source>
-        <translation type="unfinished">Aktuálny režim je už %1 režim.</translation>
+        <translation>Aktuálny režim je už režim %1.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation type="unfinished">Nie je možné zavrieť, pretože aktuálny režim %1 nezodpovedá cieľovému režimu.</translation>
+        <translation>Nie je možné zavrieť, pretože aktuálny režim %1 nezodpovedá cieľovému režimu.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="945"/>
         <source>Balance mode cannot be turned off.</source>
-        <translation type="unfinished">Režim rovnováhy nie je možné vypnúť.</translation>
+        <translation>Režim vyváženia nemožno vypnúť.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="963"/>
         <source>The lock screen has been opened for you</source>
-        <translation type="unfinished">Zamknutá obrazovka bola pre vás otvorená</translation>
+        <translation>Uzamknutá obrazovka bola pre vás otvorená</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="977"/>
         <source>Screen shotting or recording has been completed</source>
-        <translation type="unfinished">Snímka obrazovky alebo nahrávanie bolo dokončené</translation>
+        <translation>Snímanie obrazovky alebo nahrávanie bolo dokončené</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="994"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation type="unfinished">Len jedna obrazovka, nie je možné prepnúť režim obrazovky.</translation>
+        <translation>Iba jedna obrazovka, nemožno prepnúť režim obrazovky.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1006"/>
         <source>It is the same as the current display mode. Please try again.</source>
-        <translation type="unfinished">Je to rovnaké ako aktuálny režim zobrazenia. Skúste to znova.</translation>
+        <translation>Je to rovnaké ako aktuálny režim zobrazenia. Skúste to znova.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1079"/>
         <source>Only one screen, can&apos;t switch screen.</source>
-        <translation type="unfinished">Len jedna obrazovka, nie je možné prepnúť obrazovku.</translation>
+        <translation>Iba jedna obrazovka, nemožno prepnúť obrazovku.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1184"/>
         <source>Your command has been issued.</source>
-        <translation type="unfinished">Váš príkaz bol vydaný.</translation>
+        <translation>Váš príkaz bol vydaný.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1689"/>
         <source>Failed to rename file %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodarilo sa premenovať súbor %1</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1695"/>
         <source>Batch rename completed, successfully renamed %1 files, failed %2 files.
 Error details:
 %3</source>
-        <translation type="unfinished"></translation>
+        <translation>Hromadné premenovanie dokončené, úspešne premenovaných %1 súborov, zlyhalo %2 súborov.
+Podrobnosti o chybe:
+%3</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1824"/>
         <source>Email client has been opened, please confirm to send</source>
-        <translation type="unfinished"></translation>
+        <translation>E-mailový klient bol otvorený, potvrďte odoslanie</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1956"/>
         <source>App store has been opened, preparing to install application: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Obchod s aplikáciami bol otvorený, pripravuje sa inštalácia aplikácie: %1</translation>
+    </message>
+    <message>
+        <source>App store target is empty</source>
+        <translation>Cieľ obchodu s aplikáciami je prázdny</translation>
+    </message>
+    <message>
+        <source>Failed to open App Store target: %1</source>
+        <translation>Nepodarilo sa otvoriť cieľ obchodu s aplikáciami: %1</translation>
+    </message>
+    <message>
+        <source>App store has been opened for: %1</source>
+        <translation>Obchod s aplikáciami bol otvorený pre: %1</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::UOSClaw</name>
+    <message>
+        <source>Get system memory usage</source>
+        <translation>Získať využitie systémovej pamäte</translation>
+    </message>
+    <message>
+        <source>Get system CPU usage</source>
+        <translation>Získať využitie procesora systému</translation>
+    </message>
+    <message>
+        <source>Get system disk information</source>
+        <translation>Získať informácie o systémovom disku</translation>
+    </message>
+    <message>
+        <source>Switch to dark theme</source>
+        <translation>Prepnúť na tmavý motív</translation>
+    </message>
+    <message>
+        <source>Switch to light theme</source>
+        <translation>Prepnúť na svetlý motív</translation>
+    </message>
+    <message>
+        <source>Change desktop background</source>
+        <translation>Zmeniť pozadie plochy</translation>
+    </message>
+    <message>
+        <source>Switch dock mode</source>
+        <translation>Prepnúť režim doku</translation>
+    </message>
+    <message>
+        <source>Enable eye protection mode</source>
+        <translation>Povoliť režim ochrany očí</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UpdateButton</name>
     <message>
-        <location filename="../src/gui/mgmt/private/updatebutton.cpp" line="81"/>
         <source>Update</source>
         <translation>Aktualizovať</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/updatebutton.cpp" line="81"/>
         <source>Cancel Update</source>
         <translation>Zrušiť aktualizáciu</translation>
     </message>
@@ -8911,211 +4774,164 @@ Error details:
 <context>
     <name>uos_ai::UpdateLogDialog</name>
     <message>
-        <location filename="../src/gui/upgrade/updatelogdialog.cpp" line="40"/>
         <source>UOS AI Assistant Update Log</source>
-        <translation>Záznam aktualizácií asistenta UOS AI</translation>
+        <translation>Záznam aktualizácií UOS AI Assistant</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UserAgreementDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="46"/>
         <source>UOS AI User Agreement</source>
-        <translation type="unfinished"></translation>
+        <translation>Používateľská zmluva UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="79"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="unfinished">Potvrdzujem, že mám viac ako 18 rokov. Uznávam a súhlasím, že obsah, ktorý posielam a prijímam prostredníctvom aplikácie, sú priame výmeny údajov s poskytovateľom služieb veľkého modelu a nemajú nič spoločné so spoločnosťou.</translation>
+        <translation>Potvrdzujem, že mám viac ako 18 rokov. Uznávam a súhlasím, že obsah, ktorý posielam a prijímam prostredníctvom aplikácie, priamo vymieňam údaje s poskytovateľom služby veľkého jazykového modelu a nemá to nič spoločné so spoločnosťou.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="123"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="unfinished"></translation>
+        <translation>Súhlasím s účasťou v pláne používateľskej skúsenosti aplikácie a autorizujem vašu spoločnosť na zhromažďovanie obsahu, ktorý pošlem počas používania aplikácie, času odoslania, typu požadovaného veľkého modelu, konkrétnej aplikácie a toho, či bolo úspešne vygenerovaný obrázok z textu, s cieľom zlepšiť kvalitu služby a zvýšiť prevádzkovú skúsenosť. (Ak odmietnete poskytnúť vyššie uvedené informácie, nebude to mať vplyv na vaše normálne používanie aplikácie.)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WelcomeDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="74"/>
         <source>Welcome to UOS AI</source>
-        <translation type="unfinished">Vitajte v UOS AI</translation>
+        <translation>Vitajte v UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="80"/>
         <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation type="unfinished">UOS AI, váš inteligentný asistent, je navrhnutý tak, aby zlepšil vašu produktivitu a umožnil vám užívať si kvalitnú pracovnú skúsenosť.</translation>
+        <translation>UOS AI, váš inteligentný asistent, je navrhnutý tak, aby zvýšil vašu produktivitu a umožnil vám vysokokvalitný pracovný zážitok.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="105"/>
         <source>Get a free account</source>
-        <translation type="unfinished">Získať bezplatný účet</translation>
+        <translation>Získať bezplatný účet</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
         <source>Add Model</source>
-        <translation type="unfinished">Pridať model</translation>
+        <translation>Pridať model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="132"/>
         <source>Start using</source>
-        <translation type="unfinished">Začať používať</translation>
+        <translation>Začať používať</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="276"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="278"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="unfinished">Potvrdzujem, že mám viac ako 18 rokov. Beriem na vedomie a súhlasím s &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI Užívateľskou zmluvou&quot;&lt;/a&gt;, a obsah, ktorý posielam a prijímam prostredníctvom aplikácie, sú priame výmeny údajov s poskytovateľom služby veľkého modelu a nemajú nič spoločné so spoločnosťou.</translation>
+        <translation>Potvrdzujem, že mám viac ako 18 rokov. Uznávam a súhlasím s &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;„Používateľskou zmluvou UOS AI“&lt;/a&gt; a obsah, ktorý posielam a prijímam prostredníctvom aplikácie, priamo vymieňam údaje s poskytovateľom služby veľkého jazykového modelu a nemá to nič spoločné so spoločnosťou.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Prijetie účtu znamená, že rozumiete a súhlasíte s podmienkami udalosti, &lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Podrobnosti udalosti&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="339"/>
         <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Skúšobný účet UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="347"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="361"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Uloženie zlyhalo, skúste to prosím neskôr</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="348"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="362"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="389"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="398"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Potvrdiť</translation>
+        <translation>Potvrdiť</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="375"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished"></translation>
+        <translation>Skúšobný účet bol úspeňne prijatý.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="378"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>Počet použití a trvanie skúšobného účtu sú obmedzené, včas si prosím nastavte svoj osobný účet modelu! Podrobnosti nájdete v detailoch udalosti.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="380"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="unfinished">Anglická podpora pre skúšobné účty nie je uspokojivá. Počet použití a trvanie skúšobného účtu sú obmedzené. Včas si, prosím, nakonfigurujte svoj osobný účet modelu!</translation>
+        <translation>Anglická podpora pre skúšobné účty nie je uspokojivá. Počet použití a trvanie skúšobného účtu sú obmedzené. Včas si prosím nastavte svoj osobný účet modelu!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="381"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Spustiť skúšobnú verziu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="388"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished">Aktivita bezplatného účtu končí.</translation>
+        <translation>Aktivita bezplatného účtu končí.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="397"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodarilo sa pripojiť k serveru, skontrolujte prosím svoju sieť alebo skúste to neskôr.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="418"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="unfinished"></translation>
+        <translation>Súhlasím s účasťou v pláne používateľskej skúsenosti aplikácie a autorizujem vašu spoločnosť na zber obsahu, ktorý pošlem počas používania aplikácie, čas odoslania, typ požadovaného veľkého modelu, konkrétnu aplikáciu a či bolo úspešne vygenerovaný obrázok z textu, s cieľom zlepšiť kvalitu služieb a zvýšiť prevádzkovú skúsenosť. (Ak odmietnete poskytnúť vyššie uvedené informácie, nebude to mať vplyv na vaše normálne používanie aplikácie.)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WizardWrapper</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="106"/>
         <source>Hide until restarting this app</source>
-        <translation>Skryť až do reštartu tejto aplikácie</translation>
+        <translation>Skryť do reštartu tejto aplikácie</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="127"/>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
-        <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
-        <translation>Pre opätovné povolenie prejdite do &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Nastavení&lt;/a&gt;.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="799"/>
-        <source>The added content must be more than 10 words</source>
-        <translation>Pridaný obsah musí mať viac ako 10 slov</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="848"/>
-        <source>Search</source>
-        <translation>Hľadať</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="852"/>
-        <source>Explain</source>
-        <translation>Vysvetliť</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="856"/>
-        <source>Summary</source>
-        <translation>Zhrnutie</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="860"/>
-        <source>Translate</source>
-        <translation>Preložiť</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="864"/>
-        <source>Continue Writing</source>
-        <translation>Pokračovať v písaní</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="868"/>
-        <source>Expand</source>
-        <translation>Rozšíriť</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="872"/>
-        <source>Correct</source>
-        <translation>Opraviť</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="880"/>
-        <source>Add to the AI knowledge base</source>
-        <translation>Pridať do znalostnej bázy AI</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="107"/>
         <source>Disable in This Application</source>
         <translation>Zakázať v tejto aplikácii</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="108"/>
         <source>Disable Globally</source>
         <translation>Zakázať globálne</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="118"/>
         <source>Custom Settings</source>
         <translation>Vlastné nastavenia</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="876"/>
+        <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
+        <translation>Prejdite na &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Nastavenia&lt;/a&gt;, aby ste ho znovu povolili.</translation>
+    </message>
+    <message>
+        <source>The added content must be more than 10 words</source>
+        <translation>Pridaný obsah musí obsahovať viac ako 10 slov</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Hľadať</translation>
+    </message>
+    <message>
+        <source>Explain</source>
+        <translation>Vysvetliť</translation>
+    </message>
+    <message>
+        <source>Summary</source>
+        <translation>Zhrnutie</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Preložiť</translation>
+    </message>
+    <message>
+        <source>Continue Writing</source>
+        <translation>Pokračovať v písaní</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>Rozšíriť</translation>
+    </message>
+    <message>
+        <source>Correct</source>
+        <translation>Opraviť</translation>
+    </message>
+    <message>
         <source>Polish</source>
-        <translation>Upraviť</translation>
+        <translation>Vylepšiť</translation>
+    </message>
+    <message>
+        <source>Add to the AI knowledge base</source>
+        <translation>Pridať do znalostnej bázy AI</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <source>UOS AI FollowAlong</source>
-        <translation type="vanished">UOS AI FollowAlong</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="656"/>
         <source>Added</source>
         <translation>Pridané</translation>
     </message>
@@ -9123,19 +4939,91 @@ Error details:
 <context>
     <name>uos_ai::WordWizardWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="37"/>
         <source>UOS AI FollowAlong</source>
-        <translation>UOS AI Sledovanie</translation>
+        <translation>UOS AI FollowAlong</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>
         <source>Automatically display the UOS AI FollowAlong toolbar when text is selected.</source>
-        <translation>Automaticky zobraziť panel nástrojov UOS AI Sledovanie pri výbere textu.</translation>
+        <translation>Automaticky zobraziť panel nástrojov UOS AI FollowAlong po označení textu.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>
         <source>After closing, the selected text can still be woken up by the shortcut Super+R bar.</source>
-        <translation>Po zatvorení sa vybraný text dá stále vyvolať pomocou skratky panela Super+R.</translation>
+        <translation>Po zatvorení možno označený text stále aktivovať klávesovou skratkou Super+R.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::ChatBotCommandHandler</name>
+    <message>
+        <source>Unknown command: %1
+Send /help to see available commands.</source>
+        <translation>Neznámy príkaz: %1
+Odošlite /help na zobrazenie dostupných príkazov.</translation>
+    </message>
+    <message>
+        <source>New conversation started.</source>
+        <translation>Bola zahájená nová konverzácia.</translation>
+    </message>
+    <message>
+        <source>Conversation history has been cleared.</source>
+        <translation>História konverzácie bola vymazaná.</translation>
+    </message>
+    <message>
+        <source>Available commands:
+  /help   — Show this help message
+  /new    — Start a new conversation (clears current context)
+  /stop   — Cancel the current in-progress request
+  /clear  — Clear all conversation history</source>
+        <translation>Dostupné príkazy:
+  /help   — Zobraziť túto pomoc
+  /new    — Zahájiť novú konverzáciu (vymaže aktuálny kontext)
+  /stop   — Zrušiť aktuálnu prebiehajúcu požiadavku
+  /clear  — Vymazať celú históriu konverzácie</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::ChatBotRequestProcessor</name>
+    <message>
+        <source>No model found. Please configure a model first.</source>
+        <translation>Nenašiel sa žiadny model. Najprv prosím nakonfigurujte model.</translation>
+    </message>
+    <message>
+        <source>AI request failed</source>
+        <translation>Požiadavka AI zlyhala</translation>
+    </message>
+    <message>
+        <source>Request timed out, please try again</source>
+        <translation>Vypršal časový limit požiadavky, skúste to znova</translation>
+    </message>
+    <message>
+        <source>No active request to stop.</source>
+        <translation>NieŽiadna aktívna požiadavka na zastavenie.</translation>
+    </message>
+    <message>
+        <source>Request cancelled.</source>
+        <translation>Požiadavka zrušená.</translation>
+    </message>
+    <message>
+        <source>Calling tool: %1</source>
+        <translation>Volanie nástroja: %1</translation>
+    </message>
+    <message>
+        <source>Tool call failed: %1</source>
+        <translation>Volanie nástroja zlyhalo: %1</translation>
+    </message>
+    <message>
+        <source>AI error (code: %1)</source>
+        <translation>Chyba AI (kód: %1)</translation>
+    </message>
+    <message>
+        <source>Platform error, request cancelled: %1</source>
+        <translation>Chyba platformy, požiadavka zrušená: %1</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::FeishuChannel</name>
+    <message>
+        <source>Thinking...</source>
+        <translation>Premýšľam...</translation>
     </message>
 </context>
 </TS>

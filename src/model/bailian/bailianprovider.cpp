@@ -25,11 +25,15 @@ AbstractModel* BailianProvider::createModel(const ModelAccountPtr &acc)
         return nullptr;
     }
 
+    QVariantHash parameters;
+    parameters.insert(STR_KEY_ATTACH_REASONING, true);
+
     switch (acc->model.arch) {
     case ModelArch::MaLanguage: {
         auto *model = new BailianChatModel();
         model->setAccount(acc);
         model->setApiHost(host());
+        model->setParameters(parameters);
         return model;
     }
     default:

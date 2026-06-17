@@ -664,7 +664,7 @@ export const useDigitalHumanStore = defineStore("digitalHuman", {
                 if (!isAudioInputDeviceExists) {
                     this.errorMessage = {
                         error: ErrorType.AudioInputDeviceInvalid,
-                        error_message: useBackendStore().translate("Microphone not detected"),
+                        error_message: useBackendStore().translate("No microphone detected"),
                     };
                 }
             } catch (error) {

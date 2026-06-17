@@ -131,8 +131,8 @@ export default defineComponent({
     render() {
         // 根据方向构造定位样式；动画状态由 class 控制，不再用 inline visibility
         const childrenStyle: CSSProperties = this.openLeft
-            ? { position: "absolute", right: "100%", top: "0" }
-            : { position: "absolute", left: "100%", top: "0" };
+            ? { position: "absolute", right: "calc(100% + 7px)", top: "0" }
+            : { position: "absolute", left: "calc(100% + 7px)", top: "0" };
 
         return (
             <div
@@ -161,8 +161,14 @@ export default defineComponent({
                 {/* 内联渲染子菜单，避免 position:fixed 冲突；方向自适应视口 */}
                 {this.isSubMenuOpen && this.$props.item.children && (
                     <div
-                        ref={(el) => { this.childrenRef = el as HTMLElement | null; }}
-                        class={["submenu__children", this.openLeft && "submenu__children--open-left", this.childrenVisible && "submenu__children--visible"]}
+                        ref={(el) => {
+                            this.childrenRef = el as HTMLElement | null;
+                        }}
+                        class={[
+                            "submenu__children",
+                            this.openLeft && "submenu__children--open-left",
+                            this.childrenVisible && "submenu__children--visible",
+                        ]}
                         style={childrenStyle}
                         onMouseenter={this.handleChildrenMouseEnter}
                         onMouseleave={this.handleChildrenMouseLeave}
@@ -170,14 +176,16 @@ export default defineComponent({
                         <div class="menu" role="menu">
                             <div class="menu__content">
                                 {this.$props.item.children.map((child, index) =>
-                                    child.type === "separator"
-                                        ? <MenuSeparatorComp key={`sep-${index}`} />
-                                        : <MenuItemComp
+                                    child.type === "separator" ? (
+                                        <MenuSeparatorComp key={`sep-${index}`} />
+                                    ) : (
+                                        <MenuItemComp
                                             key={child.id || `item-${index}`}
                                             item={child}
                                             onClick={this.handleSelectItem}
                                             checkable={this.$props.checkable}
-                                          />
+                                        />
+                                    ),
                                 )}
                             </div>
                         </div>

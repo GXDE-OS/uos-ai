@@ -110,7 +110,11 @@ export default defineComponent({
 
                 {/* 操作按钮列表 */}
                 {options.actions?.map((action) => (
-                    <div key={action.key} class="toast-item__action" onClick={() => this.handleAction(action.key)}>
+                    <div
+                        key={action.key}
+                        class={["toast-item__action", `toast-item__action--${action.type ?? "default"}`]}
+                        onClick={() => this.handleAction(action.key)}
+                    >
                         {action.text}
                     </div>
                 ))}

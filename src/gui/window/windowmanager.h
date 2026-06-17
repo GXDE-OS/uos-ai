@@ -13,6 +13,7 @@ namespace uos_ai {
 class AppWindow;
 class WebContext;
 class AboutWindow;
+class UpdateLogDialog;
 
 class WindowManager : public QObject
 {
@@ -28,6 +29,7 @@ public:
     bool isWindowHidden();
     bool isActiveWindow();
     void showAboutWindow();
+    void showUpdateLogWindow();
     WebContext* context() const;
 private slots:
     void handleScreenshotRequested();
@@ -41,6 +43,7 @@ private:
 private:
     AppWindow *curWindow = nullptr;
     AboutWindow *aboutWindow = nullptr;
+    UpdateLogDialog *updateLogWindow = nullptr;
     WebContext *ctx = nullptr;
     bool m_wasMaximized = false;
 };

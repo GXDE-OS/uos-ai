@@ -13,8 +13,15 @@ export const chatWorkspacePageDefinition: MainWindowWorkspacePageDefinition = {
         const sceneConfig = getInputAreaSceneConfig(currentAssistantId);
         return (await sceneConfig.resolveFileDrop?.(paths)) ?? { type: "upload" };
     },
-    enter: async () => {},
+    enter: () => {
+        void useAssistantInfosStore()
+            .checkEnvironment()
+            .catch((error) => {
+                console.error("Failed to check assistant environment:", error);
+            });
+    },
     leave: async () => {
+        useAssistantInfosStore().invalidateEnvironmentCheck();
         useExtensionPanelStore().closeExtensionPanel();
     },
 };

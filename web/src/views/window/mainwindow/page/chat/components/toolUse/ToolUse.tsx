@@ -107,7 +107,7 @@ const getStatusText = (status: ToolUseStatus): string => {
         case ToolUseStatus.Completed:
             return useBackendStore().translate("Completed");
         case ToolUseStatus.Failed:
-            return useBackendStore().translate("Failed");
+            return useBackendStore().translate("Call Failed");
         case ToolUseStatus.Canceled:
             return useBackendStore().translate("Canceled");
         case ToolUseStatus.Calling:
@@ -200,12 +200,15 @@ export default defineComponent({
         });
         const canCopy = computed(() => normalizedData.value.status !== ToolUseStatus.Calling);
 
-        watch(() => props.forceCollapsed, (val) => {
-            if (val && isExpanded.value) {
-                isExpanded.value = false;
-                emit("expandChange", false);
-            }
-        });
+        watch(
+            () => props.forceCollapsed,
+            (val) => {
+                if (val && isExpanded.value) {
+                    isExpanded.value = false;
+                    emit("expandChange", false);
+                }
+            },
+        );
 
         const toggleExpand = (event?: Event) => {
             event?.stopPropagation();

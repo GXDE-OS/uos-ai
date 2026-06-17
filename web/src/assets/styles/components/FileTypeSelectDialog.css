@@ -96,8 +96,8 @@ html.dark {
 
 .file-type-select-dialog__badge {
     position: absolute;
-    right: 18px;
-    bottom: 12px;
+    left: 69px;
+    top: 61px;
     min-width: 24px;
     height: 24px;
     padding: 0 6px;

@@ -17,6 +17,28 @@ html.dark {
     flex-direction: column;
 }
 
+.message__content {
+    display: flex;
+}
+
+.message__content--user {
+    flex-direction: column;
+}
+
+.message__avatar {
+    display: flex;
+}
+
+.message__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.message__content-wrapper--ai {
+    width: calc(100% - 36px);
+}
+
 .message__file-group {
     margin-bottom: 10px;
 }
@@ -34,7 +56,7 @@ html.dark {
     flex-direction: column;
     align-items: flex-start;
     max-width: 80%;
-    cursor: pointer;
+
     transition: transform 0.2s ease;
 }
 

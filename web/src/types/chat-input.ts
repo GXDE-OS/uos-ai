@@ -80,6 +80,14 @@ export interface ChatInputActionContext extends ChatInputContext {
 }
 
 /**
+ * 输入区动作菜单组装上下文
+ */
+export interface ChatInputActionMenuContext {
+    isInputDisabled?: boolean;
+    isScreenshotVisible?: boolean;
+}
+
+/**
  * 输入区动作定义
  */
 export interface ChatInputAction {
@@ -88,6 +96,7 @@ export interface ChatInputAction {
         type: "item";
         id: ChatInputActionId;
     };
+    isVisible?: (context: ChatInputActionMenuContext) => boolean;
     run?: (context: ChatInputActionContext) => void | Promise<void>;
 }
 

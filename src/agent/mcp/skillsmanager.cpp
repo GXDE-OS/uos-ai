@@ -4,17 +4,25 @@
 
 #include <QDebug>
 #include <QDir>
+#include <QEventLoop>
 #include <QFile>
 #include <QFileInfo>
+#include <QJsonArray>
 #include <QJsonObject>
 #include <QLoggingCategory>
 #include <QMimeDatabase>
 #include <QMimeType>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QNetworkRequest>
 #include <QProcess>
+#include <QRegularExpression>
 #include <QSettings>
 #include <QStandardPaths>
 #include <QTemporaryDir>
 #include <QTextStream>
+#include <QTimer>
+#include <QUrl>
 
 #ifdef signals
 #    undef signals
@@ -40,7 +48,7 @@ namespace {
 /* 技能状态配置文件路径 */
 static const QString &skillsConfigPath()
 {
-    static const QString path = QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + "/deepin/uos-ai-assistant/skills.conf";
+    static const QString path = SkillsManager::skillsConfigFilePath();
     return path;
 }
 
@@ -49,6 +57,10 @@ static const int MAX_SKILL_ENTRIES = 200;
 
 /* 文件夹总大小阈值：10MB */
 static const qint64 MAX_SKILL_DIR_SIZE = 10 * 1024 * 1024;
+
+/* URL 下载超时与重定向限制 */
+static const int SKILL_DOWNLOAD_TIMEOUT_MS = 30000;
+static const int MAX_SKILL_URL_REDIRECTS = 3;
 
 /* 初始化默认技能路径配置 */
 static void initializeDefaultPaths()
@@ -162,6 +174,425 @@ static bool isArchiveFile(const QString &path)
     return mime.inherits("application/zip") || mime.inherits("application/x-tar");
 }
 
+static bool validateSkillUrl(const QUrl &url, QString *errorMsg)
+{
+    auto setError = [&](const QString &msg) {
+        if (errorMsg)
+            *errorMsg = msg;
+    };
+
+    if (!url.isValid() || url.host().isEmpty()) {
+        setError(SkillsManager::tr("The skill URL is invalid."));
+        return false;
+    }
+
+    const QString scheme = url.scheme().toLower();
+    if (scheme != QLatin1String("http") && scheme != QLatin1String("https")) {
+        setError(SkillsManager::tr("Only http and https skill URLs are supported."));
+        return false;
+    }
+
+    if (!url.userInfo().isEmpty()) {
+        setError(SkillsManager::tr("Skill URLs must not contain credentials."));
+        return false;
+    }
+
+    return true;
+}
+
+static QString sanitizedSkillName(const QString &name)
+{
+    QString sanitized = name.trimmed();
+    sanitized.replace(QRegularExpression(QStringLiteral("[^\\p{L}\\p{N}._-]+")), QStringLiteral("-"));
+    sanitized = sanitized.trimmed();
+    while (sanitized.startsWith(QLatin1Char('.')) || sanitized.startsWith(QLatin1Char('-')))
+        sanitized.remove(0, 1);
+    while (sanitized.endsWith(QLatin1Char('.')) || sanitized.endsWith(QLatin1Char('-')))
+        sanitized.chop(1);
+    return sanitized;
+}
+
+static QString parseSkillNameFromContent(const QString &content)
+{
+    if (!content.startsWith("---"))
+        return QString();
+
+    const int endPos = content.indexOf("---", 3);
+    if (endPos <= 0)
+        return QString();
+
+    try {
+        const YAML::Node node = YAML::Load(content.mid(3, endPos - 3).trimmed().toStdString());
+        if (node["name"])
+            return QString::fromStdString(node["name"].as<std::string>()).trimmed();
+    } catch (const YAML::Exception &e) {
+        qCWarning(skillsManager) << "YAML parse error:" << e.what();
+    }
+    return QString();
+}
+
+static bool hasUnsafeArchiveEntryName(const QString &entryName)
+{
+    QString portable = entryName.trimmed();
+    portable.replace(QLatin1Char('\\'), QLatin1Char('/'));
+    if (portable.isEmpty() || portable.startsWith(QLatin1Char('/')))
+        return true;
+    if (portable == QLatin1String("..") || portable.startsWith(QLatin1String("../"))
+        || portable.contains(QLatin1String("/../")) || portable.endsWith(QLatin1String("/..")))
+        return true;
+    if (portable.contains(QRegularExpression(QStringLiteral("^[A-Za-z]:/"))))
+        return true;
+
+    const QString normalized = QDir::cleanPath(portable);
+    return normalized.isEmpty() || normalized == QLatin1String(".") || normalized == QLatin1String("..");
+}
+
+static bool runArchiveListCommand(const QString &program, const QStringList &arguments, QString *output)
+{
+    QProcess process;
+    process.start(program, arguments);
+    if (!process.waitForFinished(30000)) {
+        process.kill();
+        return false;
+    }
+    if (process.exitCode() != 0)
+        return false;
+    if (output)
+        *output = QString::fromUtf8(process.readAllStandardOutput());
+    return true;
+}
+
+static bool validateZipEntries(const QString &archivePath, QString *errorMsg)
+{
+    auto setError = [&](const QString &msg) {
+        if (errorMsg)
+            *errorMsg = msg;
+    };
+
+    QString namesOutput;
+    if (!runArchiveListCommand(QStringLiteral("unzip"), QStringList { QStringLiteral("-Z1"), archivePath }, &namesOutput)) {
+        setError(SkillsManager::tr("Failed to inspect the skill archive."));
+        return false;
+    }
+
+    const QStringList entries = namesOutput.split(QLatin1Char('\n'), SKIP_EMPTY_PARTS);
+    if (entries.isEmpty()) {
+        setError(SkillsManager::tr("The skill archive is empty."));
+        return false;
+    }
+    if (entries.size() > MAX_SKILL_ENTRIES) {
+        setError(SkillsManager::tr("The skill contains too many files (maximum %1 allowed).").arg(MAX_SKILL_ENTRIES));
+        return false;
+    }
+    for (const QString &entry : entries) {
+        if (hasUnsafeArchiveEntryName(entry)) {
+            setError(SkillsManager::tr("The skill archive contains an unsafe path."));
+            return false;
+        }
+    }
+
+    QString detailsOutput;
+    if (!runArchiveListCommand(QStringLiteral("unzip"), QStringList { QStringLiteral("-Z"), QStringLiteral("-l"), archivePath }, &detailsOutput)) {
+        setError(SkillsManager::tr("Failed to inspect the skill archive."));
+        return false;
+    }
+    for (const QString &line : detailsOutput.split(QLatin1Char('\n'), SKIP_EMPTY_PARTS)) {
+        const QString trimmed = line.trimmed();
+        if (trimmed.isEmpty() || trimmed.startsWith(QLatin1String("Archive:"))
+            || trimmed.startsWith(QLatin1String("Length")) || trimmed.startsWith(QLatin1String("----")))
+            continue;
+        const QChar typeChar = trimmed.at(0);
+        if (typeChar == QLatin1Char('l') || typeChar == QLatin1Char('h') || typeChar == QLatin1Char('c')
+            || typeChar == QLatin1Char('b') || typeChar == QLatin1Char('p') || typeChar == QLatin1Char('s')) {
+            setError(SkillsManager::tr("The skill archive contains unsupported file types."));
+            return false;
+        }
+    }
+    return true;
+}
+
+static bool validateTarEntries(const QString &archivePath, QString *errorMsg)
+{
+    auto setError = [&](const QString &msg) {
+        if (errorMsg)
+            *errorMsg = msg;
+    };
+
+    QString output;
+    if (!runArchiveListCommand(QStringLiteral("tar"), QStringList { QStringLiteral("-tvf"), archivePath }, &output)) {
+        setError(SkillsManager::tr("Failed to inspect the skill archive."));
+        return false;
+    }
+
+    const QStringList lines = output.split(QLatin1Char('\n'), SKIP_EMPTY_PARTS);
+    if (lines.isEmpty()) {
+        setError(SkillsManager::tr("The skill archive is empty."));
+        return false;
+    }
+    if (lines.size() > MAX_SKILL_ENTRIES) {
+        setError(SkillsManager::tr("The skill contains too many files (maximum %1 allowed).").arg(MAX_SKILL_ENTRIES));
+        return false;
+    }
+
+    for (const QString &line : lines) {
+        const QString trimmed = line.trimmed();
+        if (trimmed.isEmpty())
+            continue;
+        const QChar typeChar = trimmed.at(0);
+        if (typeChar == QLatin1Char('l') || typeChar == QLatin1Char('h') || typeChar == QLatin1Char('c')
+            || typeChar == QLatin1Char('b') || typeChar == QLatin1Char('p') || typeChar == QLatin1Char('s')) {
+            setError(SkillsManager::tr("The skill archive contains unsupported file types."));
+            return false;
+        }
+
+        const QStringList parts = trimmed.split(QRegularExpression(QStringLiteral("\\s+")), SKIP_EMPTY_PARTS);
+        QString entryName = parts.size() > 5 ? parts.mid(5).join(QLatin1Char(' ')) : QString();
+        const int linkMarker = entryName.indexOf(QStringLiteral(" -> "));
+        if (linkMarker >= 0)
+            entryName = entryName.left(linkMarker);
+        if (hasUnsafeArchiveEntryName(entryName)) {
+            setError(SkillsManager::tr("The skill archive contains an unsafe path."));
+            return false;
+        }
+    }
+    return true;
+}
+
+static bool validateArchiveEntries(const QString &archivePath, QString *errorMsg)
+{
+    QMimeDatabase db;
+    QMimeType mime = db.mimeTypeForFile(archivePath, QMimeDatabase::MatchContent);
+    if (mime.inherits("application/zip"))
+        return validateZipEntries(archivePath, errorMsg);
+    return validateTarEntries(archivePath, errorMsg);
+}
+
+static bool downloadUrlToFile(const QUrl &initialUrl, const QString &targetPath, QString *errorMsg)
+{
+    auto setError = [&](const QString &msg) {
+        if (errorMsg)
+            *errorMsg = msg;
+    };
+
+    QUrl currentUrl = initialUrl;
+    const bool originalHttps = currentUrl.scheme().toLower() == QLatin1String("https");
+    for (int redirect = 0; redirect <= MAX_SKILL_URL_REDIRECTS; ++redirect) {
+        if (!validateSkillUrl(currentUrl, errorMsg))
+            return false;
+
+        QFile targetFile(targetPath);
+        if (!targetFile.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
+            setError(SkillsManager::tr("Failed to create a temporary file for the skill download."));
+            return false;
+        }
+
+        QNetworkAccessManager manager;
+        QNetworkRequest request(currentUrl);
+        request.setAttribute(QNetworkRequest::RedirectPolicyAttribute, QNetworkRequest::ManualRedirectPolicy);
+        request.setRawHeader("User-Agent", "uos-ai-skill-installer/1.0");
+
+        QNetworkReply *reply = manager.get(request);
+        QEventLoop loop;
+        QTimer timer;
+        timer.setSingleShot(true);
+        qint64 totalBytes = 0;
+        bool writeFailed = false;
+        bool sizeExceeded = false;
+
+        QObject::connect(reply, &QNetworkReply::readyRead, [&]() {
+            while (!reply->atEnd()) {
+                const QByteArray chunk = reply->read(64 * 1024);
+                if (chunk.isEmpty())
+                    break;
+                totalBytes += chunk.size();
+                if (totalBytes > MAX_SKILL_DIR_SIZE) {
+                    sizeExceeded = true;
+                    reply->abort();
+                    loop.quit();
+                    return;
+                }
+                if (targetFile.write(chunk) != chunk.size()) {
+                    writeFailed = true;
+                    reply->abort();
+                    loop.quit();
+                    return;
+                }
+            }
+        });
+        QObject::connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+        QObject::connect(&timer, &QTimer::timeout, &loop, &QEventLoop::quit);
+        timer.start(SKILL_DOWNLOAD_TIMEOUT_MS);
+        loop.exec();
+
+        targetFile.close();
+        if (!timer.isActive()) {
+            reply->abort();
+            reply->deleteLater();
+            QFile::remove(targetPath);
+            setError(SkillsManager::tr("The skill URL download timed out."));
+            return false;
+        }
+        timer.stop();
+
+        if (sizeExceeded) {
+            reply->deleteLater();
+            QFile::remove(targetPath);
+            setError(SkillsManager::tr("The skill download exceeds the limit (maximum 10 MB allowed)."));
+            return false;
+        }
+        if (writeFailed) {
+            reply->deleteLater();
+            QFile::remove(targetPath);
+            setError(SkillsManager::tr("Failed to write the downloaded skill file."));
+            return false;
+        }
+
+        const QVariant redirectTarget = reply->attribute(QNetworkRequest::RedirectionTargetAttribute);
+        if (redirectTarget.isValid()) {
+            QUrl redirectedUrl = currentUrl.resolved(redirectTarget.toUrl());
+            reply->deleteLater();
+            QFile::remove(targetPath);
+            if (redirect >= MAX_SKILL_URL_REDIRECTS) {
+                setError(SkillsManager::tr("The skill URL redirected too many times."));
+                return false;
+            }
+            if (originalHttps && redirectedUrl.scheme().toLower() == QLatin1String("http")) {
+                setError(SkillsManager::tr("The skill URL must not redirect from https to http."));
+                return false;
+            }
+            currentUrl = redirectedUrl;
+            continue;
+        }
+
+        const int statusCode = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
+        if (statusCode > 0 && (statusCode < 200 || statusCode >= 300)) {
+            reply->deleteLater();
+            QFile::remove(targetPath);
+            setError(SkillsManager::tr("The skill URL returned HTTP status %1.").arg(statusCode));
+            return false;
+        }
+
+        if (reply->error() != QNetworkReply::NoError) {
+            const QString errorString = reply->errorString();
+            reply->deleteLater();
+            QFile::remove(targetPath);
+            setError(SkillsManager::tr("Failed to download the skill URL: %1").arg(errorString));
+            return false;
+        }
+
+        reply->deleteLater();
+        if (totalBytes <= 0) {
+            QFile::remove(targetPath);
+            setError(SkillsManager::tr("The skill URL downloaded an empty file."));
+            return false;
+        }
+        return true;
+    }
+
+    setError(SkillsManager::tr("The skill URL redirected too many times."));
+    return false;
+}
+
+static bool prepareSkillMdDirectory(const QString &skillMdPath, const QString &targetRoot, QString *preparedPath, QString *errorMsg)
+{
+    auto setError = [&](const QString &msg) {
+        if (errorMsg)
+            *errorMsg = msg;
+    };
+
+    QFile skillFile(skillMdPath);
+    if (!skillFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        setError(SkillsManager::tr("Failed to read SKILL.md."));
+        return false;
+    }
+
+    const QString content = QTextStream(&skillFile).readAll();
+    skillFile.close();
+    const QString skillName = sanitizedSkillName(parseSkillNameFromContent(content));
+    if (skillName.isEmpty()) {
+        setError(SkillsManager::tr("SKILL.md is missing the required 'name' field."));
+        return false;
+    }
+
+    QDir rootDir(targetRoot);
+    const QString skillDirPath = rootDir.filePath(skillName);
+    if (!rootDir.mkpath(skillName)) {
+        setError(SkillsManager::tr("Failed to prepare a temporary skill directory."));
+        return false;
+    }
+
+    if (!QFile::copy(skillMdPath, QDir(skillDirPath).filePath(QStringLiteral("SKILL.md")))) {
+        setError(SkillsManager::tr("Failed to prepare SKILL.md for installation."));
+        return false;
+    }
+
+    if (preparedPath)
+        *preparedPath = skillDirPath;
+    return true;
+}
+
+static bool validateSkillTree(const QString &rootPath, QString *errorMsg)
+{
+    auto setError = [&](const QString &msg) {
+        if (errorMsg)
+            *errorMsg = msg;
+    };
+
+    const QFileInfo rootInfo(rootPath);
+    if (rootInfo.isSymLink() || !rootInfo.isDir()) {
+        setError(SkillsManager::tr("The skill source contains unsupported file types."));
+        return false;
+    }
+
+    const QString rootCanonical = rootInfo.canonicalFilePath();
+    if (rootCanonical.isEmpty()) {
+        setError(SkillsManager::tr("Failed to inspect the skill files."));
+        return false;
+    }
+
+    QStringList dirsToCheck { rootPath };
+    int entryCount = 0;
+    qint64 totalSize = 0;
+    while (!dirsToCheck.isEmpty()) {
+        QDir currentDir(dirsToCheck.takeLast());
+        const QFileInfoList entries = currentDir.entryInfoList(QDir::NoDotAndDotDot | QDir::AllEntries | QDir::System | QDir::Hidden);
+        for (const QFileInfo &entry : entries) {
+            ++entryCount;
+            if (entryCount > MAX_SKILL_ENTRIES) {
+                setError(SkillsManager::tr("The skill contains too many files (maximum %1 allowed).").arg(MAX_SKILL_ENTRIES));
+                return false;
+            }
+
+            if (hasUnsafeArchiveEntryName(QDir(rootPath).relativeFilePath(entry.absoluteFilePath()))) {
+                setError(SkillsManager::tr("The skill archive contains an unsafe path."));
+                return false;
+            }
+
+            if (entry.isSymLink() || (!entry.isFile() && !entry.isDir())) {
+                setError(SkillsManager::tr("The skill archive contains unsupported file types."));
+                return false;
+            }
+
+            const QString canonical = entry.canonicalFilePath();
+            if (canonical.isEmpty() || !(canonical == rootCanonical || canonical.startsWith(rootCanonical + QLatin1Char('/')))) {
+                setError(SkillsManager::tr("The skill archive contains files outside the extraction directory."));
+                return false;
+            }
+
+            if (entry.isFile()) {
+                totalSize += entry.size();
+                if (totalSize > MAX_SKILL_DIR_SIZE) {
+                    setError(SkillsManager::tr("The skill size exceeds the limit (maximum 10 MB allowed)."));
+                    return false;
+                }
+            } else if (entry.isDir()) {
+                dirsToCheck << entry.absoluteFilePath();
+            }
+        }
+    }
+    return true;
+}
+
 /**
  * @brief 调用系统命令解压压缩包到指定目录
  * @return true 解压成功，false 超时或命令失败
@@ -266,11 +697,17 @@ static SkillSource resolveFromArchive(const QString &path, QString *errorMsg)
 
     const QString tempPath = src.tempDirHandle->path();
 
+    if (!validateArchiveEntries(path, errorMsg))
+        return src;
+
     if (!extractArchive(path, tempPath)) {
         qCWarning(skillsManager) << "Failed to extract archive:" << path;
         setError(SkillsManager::tr("Failed to extract the archive. The file may be corrupted or the format is not supported."));
         return src;
     }
+
+    if (!validateSkillTree(tempPath, errorMsg))
+        return src;
 
     QString foundDir = findSkillDirInExtracted(tempPath);
     if (foundDir.isEmpty()) {
@@ -505,6 +942,42 @@ QList<SkillInfo> SkillsManager::skills() const
     return sortSkills(m_skills.values());
 }
 
+QString SkillsManager::userSkillInstallPath()
+{
+    return QDir::cleanPath(QStandardPaths::writableLocation(QStandardPaths::HomeLocation) + QStringLiteral("/.uos-ai/skills"));
+}
+
+QString SkillsManager::skillsConfigFilePath()
+{
+    return QDir::cleanPath(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QStringLiteral("/deepin/uos-ai-assistant/skills.conf"));
+}
+
+QStringList SkillsManager::allSkillSearchPaths()
+{
+    return skillPaths();
+}
+
+QString SkillsManager::builtinSkillPath()
+{
+    return QDir::cleanPath(defaultSkillsPath());
+}
+
+QJsonObject SkillsManager::skillPathsData() const
+{
+    QJsonObject result;
+    result[QStringLiteral("install_path")] = userSkillInstallPath();
+    result[QStringLiteral("config_path")] = skillsConfigFilePath();
+    result[QStringLiteral("builtin_path")] = builtinSkillPath();
+
+    QJsonArray searchPaths;
+    const QStringList paths = allSkillSearchPaths();
+    for (const QString &path : paths)
+        searchPaths.append(path);
+    result[QStringLiteral("search_paths")] = searchPaths;
+
+    return result;
+}
+
 QJsonArray SkillsManager::skillsData() const
 {
     QJsonArray result;
@@ -610,8 +1083,7 @@ QStringList SkillsManager::skillPaths()
     QSet<QString> seen;
 
     /* 优先级1：用户自定义路径（优先级最高，可覆盖其他来源） */
-    QString userPath = QStandardPaths::writableLocation(QStandardPaths::HomeLocation) + "/.uos-ai/skills";
-    QString cleanUserPath = QDir::cleanPath(userPath);
+    QString cleanUserPath = userSkillInstallPath();
     if (!seen.contains(cleanUserPath)) {
         seen.insert(cleanUserPath);
         result.append(cleanUserPath);
@@ -643,7 +1115,7 @@ void SkillsManager::loadSkillsFromDirectory(const QString &directory)
     QDir baseDir(directory);
     if (!baseDir.exists()) {
         /* Only uos-ai skills directory should be auto-created */
-        if (directory.endsWith("/.uos-ai/skills")) {
+        if (QDir::cleanPath(directory) == userSkillInstallPath()) {
             baseDir.mkpath(".");
             qCWarning(skillsManager) << "Skills directory does not exist, created:" << directory;
         } else {
@@ -674,7 +1146,7 @@ void SkillsManager::loadSkillsFromDirectory(const QString &directory)
         }
 
         /* 防撞：防止用户自定义路径被误识别为 builtin 或 uos-ai */
-        QString uosAiSkillsPath = QDir::cleanPath(QStandardPaths::writableLocation(QStandardPaths::HomeLocation) + "/.uos-ai/skills");
+        QString uosAiSkillsPath = userSkillInstallPath();
         if ((source == "builtin" && cleanDir != QDir::cleanPath(defaultSkillsPath())) || (source == "uos-ai" && cleanDir != uosAiSkillsPath)) {
             /* 不是真正的系统路径，重命名为 xxx-custom */
             source = source + "-custom";
@@ -917,6 +1389,77 @@ bool SkillsManager::validateSkillMd(const QString &actualPath, QString *errorMsg
     return true;
 }
 
+bool SkillsManager::addSkillFromUrl(const QString &url, QString *errorMsg, QString *outSkillName)
+{
+    auto setError = [&](const QString &msg) {
+        if (errorMsg)
+            *errorMsg = msg;
+    };
+
+    const QUrl parsedUrl(url.trimmed());
+    if (!validateSkillUrl(parsedUrl, errorMsg))
+        return false;
+
+    QTemporaryDir tempDir;
+    if (!tempDir.isValid()) {
+        setError(tr("Failed to create temporary directory for the skill download."));
+        return false;
+    }
+
+    const QString urlFileName = QFileInfo(parsedUrl.path()).fileName();
+    const QString downloadName = urlFileName.isEmpty() ? QStringLiteral("downloaded-skill") : urlFileName;
+    const QString downloadedPath = QDir(tempDir.path()).filePath(downloadName);
+    if (!downloadUrlToFile(parsedUrl, downloadedPath, errorMsg))
+        return false;
+
+    if (isArchiveFile(downloadedPath))
+        return addSkill(downloadedPath, errorMsg, outSkillName);
+
+    QFile skillFile(downloadedPath);
+    if (skillFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        const QString prefix = QString::fromUtf8(skillFile.read(16));
+        skillFile.close();
+        if (prefix.trimmed().startsWith(QStringLiteral("---"))) {
+            QString preparedPath;
+            if (!prepareSkillMdDirectory(downloadedPath, tempDir.path(), &preparedPath, errorMsg))
+                return false;
+            return addSkill(preparedPath, errorMsg, outSkillName);
+        }
+    }
+
+    setError(tr("The URL does not point to a supported SKILL.md file or skill archive."));
+    return false;
+}
+
+bool SkillsManager::addSkillSource(const QString &source, QString *errorMsg, QString *outSkillName)
+{
+    auto setError = [&](const QString &msg) {
+        if (errorMsg)
+            *errorMsg = msg;
+    };
+
+    const QString trimmedSource = source.trimmed();
+    if (trimmedSource.isEmpty()) {
+        setError(tr("Skill source cannot be empty."));
+        return false;
+    }
+
+    const QUrl sourceUrl(trimmedSource);
+    const QString scheme = sourceUrl.scheme().toLower();
+    if (scheme == QLatin1String("http") || scheme == QLatin1String("https"))
+        return addSkillFromUrl(trimmedSource, errorMsg, outSkillName);
+
+    if (sourceUrl.isValid() && !scheme.isEmpty()) {
+        if (scheme == QLatin1String("file"))
+            setError(tr("Use a local file path instead of a file URL."));
+        else
+            setError(tr("Only http and https skill URLs are supported."));
+        return false;
+    }
+
+    return addSkill(trimmedSource, errorMsg, outSkillName);
+}
+
 bool SkillsManager::addSkill(const QString &path, QString *errorMsg, QString *outSkillName)
 {
     auto setError = [&](const QString &msg) {
@@ -957,6 +1500,9 @@ bool SkillsManager::addSkill(const QString &path, QString *errorMsg, QString *ou
     if (!validateSkillMd(src.actualPath, errorMsg, outSkillName))
         return false;
 
+    if (!validateSkillTree(src.actualPath, errorMsg))
+        return false;
+
     /* 安全检查 2：目录内容预检（防止拷贝超大目录） */
     int entryCount = countDirectoryEntries(src.actualPath);
     if (entryCount > MAX_SKILL_ENTRIES) {
@@ -980,7 +1526,7 @@ bool SkillsManager::addSkill(const QString &path, QString *errorMsg, QString *ou
     }
 
     /* 获取目标路径: ~/.uos-ai/skills/<skillName>/ */
-    QString targetDirPath = homePath + "/.uos-ai/skills/" + src.skillName;
+    QString targetDirPath = QDir(userSkillInstallPath()).filePath(src.skillName);
     QDir targetDir(targetDirPath);
 
     /* 如果目标文件夹已存在，移动到回收站以便覆盖 */
@@ -1012,6 +1558,19 @@ bool SkillsManager::addSkill(const QString &path, QString *errorMsg, QString *ou
 
     qCDebug(skillsManager) << "Skill added successfully:" << src.skillName;
     return true;
+}
+
+QJsonObject SkillsManager::addSkillFromUrlForWeb(const QString &url)
+{
+    QString errorMsg;
+    QString skillName;
+    const bool success = addSkillFromUrl(url, &errorMsg, &skillName);
+
+    QJsonObject result;
+    result["success"] = success;
+    result["error"] = errorMsg;
+    result["skillName"] = skillName;
+    return result;
 }
 
 QJsonObject SkillsManager::addSkillForWeb()
@@ -1075,7 +1634,7 @@ bool SkillsManager::removeSkill(const QString &skillName)
     const SkillInfo &skill = m_skills[skillName];
 
     /* 仅允许删除来自 uos-ai 路径的技能 */
-    QString uosAiSkillsPath = QStandardPaths::writableLocation(QStandardPaths::HomeLocation) + "/.uos-ai/skills";
+    QString uosAiSkillsPath = userSkillInstallPath();
     if (!skill.path.startsWith(uosAiSkillsPath)) {
         qCWarning(skillsManager) << "Cannot remove skill from non-uos-ai path:" << skill.path;
         return false;
@@ -1106,6 +1665,10 @@ bool SkillsManager::copyDirectory(const QString &sourcePath, const QString &targ
     for (const QFileInfo &entry : entries) {
         QString srcPath = entry.absoluteFilePath();
         QString dstPath = targetPath + "/" + entry.fileName();
+
+        if (entry.isSymLink() || (!entry.isFile() && !entry.isDir())) {
+            return false;
+        }
 
         if (entry.isDir()) {
             /* 递归拷贝子目录 */

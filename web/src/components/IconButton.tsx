@@ -48,6 +48,10 @@ export default defineComponent({
             type: Boolean,
             default: false,
         },
+        colorOnly: {
+            type: Boolean,
+            default: false,
+        },
     },
 
     setup(props) {
@@ -66,6 +70,10 @@ export default defineComponent({
 
         const borderClass = computed(() => {
             return props.border ? "icon-button--bordered" : "";
+        });
+
+        const colorOnlyClass = computed(() => {
+            return props.colorOnly ? "icon-button--color-only" : "";
         });
 
         const isDisabled = computed(() => props.disabled);
@@ -100,6 +108,7 @@ export default defineComponent({
             shapeClass,
             variantClass,
             borderClass,
+            colorOnlyClass,
             isDisabled,
             buttonStyle,
             handleKeyDown,
@@ -117,6 +126,7 @@ export default defineComponent({
                         this.shapeClass,
                         this.variantClass,
                         this.borderClass,
+                        this.colorOnlyClass,
                         isAdvanced && this.variantClass && "icon-button--advanced",
                         this.isDisabled && "icon-button-disabled",
                     ]}

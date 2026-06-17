@@ -15,6 +15,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS
     WebSockets
     Svg
     Multimedia
+    Network
 )
 
 # Find the library
@@ -213,6 +214,7 @@ target_link_libraries(${PROJECT_NAME}
     Qt${QT_VERSION_MAJOR}::WebSockets
     Qt${QT_VERSION_MAJOR}::Svg
     Qt${QT_VERSION_MAJOR}::Multimedia
+    Qt${QT_VERSION_MAJOR}::Network
 
     Dtk${DTK_VERSION_MAJOR}::Core
     Dtk${DTK_VERSION_MAJOR}::Widget
@@ -272,11 +274,7 @@ install(FILES ${AUDIO_FILES} DESTINATION ${AUDIO_DESTINATION})
 
 # install desktop
 # Configure desktop file based on OS version (different icons for v20 and v25)
-if (COMPILE_ON_V25)
-    set(DESKTOP_ICON "UosAiAssistant")
-else()
-    set(DESKTOP_ICON "UosAiAssistantLogo")
-endif()
+set(DESKTOP_ICON "UosAiAssistant")
 
 configure_file(
     ${CMAKE_SOURCE_DIR}/assets/app/uos-ai-assistant.desktop.in

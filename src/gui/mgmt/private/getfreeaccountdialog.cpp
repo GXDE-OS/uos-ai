@@ -101,7 +101,7 @@ void GetFreeAccountDialog::onGetFreeAccount()
 
     UosFreeAccount freeAccount;
     int status;
-    QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(1, 82, freeAccount, status);
+    QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(1, 83, freeAccount, status);
 
     if (QNetworkReply::NoError == error) {
         qCInfo(logAIGUI) << "Free account received successfully. AppKey:" << freeAccount.appkey;

@@ -10,6 +10,7 @@
 #include <QElapsedTimer>
 #include <QFileInfo>
 #include <QLoggingCategory>
+#include <QUrl>
 
 Q_DECLARE_LOGGING_CATEGORY(logAssistant)
 
@@ -185,7 +186,8 @@ QVariantHash KnowledgeBaseAgent::processRequest(const ModelMessage &question, co
         // 每个文档只在引用列表中出现一次
         if (!seenDocPaths.contains(docPath)) {
             seenDocPaths.insert(docPath);
-            refLines.append(QString("%1. [%2](file://%3)").arg(sourceIndex++).arg(docName, docPath));
+            QUrl fileUrl = QUrl::fromLocalFile(docPath);
+            refLines.append(QString("%1. [%2](%3)").arg(sourceIndex++).arg(docName, fileUrl.toString(QUrl::EncodeSpaces)));
         }
     }
 

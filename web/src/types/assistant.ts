@@ -3,6 +3,7 @@ export interface Assistant {
     name: string;
     description?: string;
     icon?: Record<string, string>; // icon type as key (e.g., "line", "color"), icon name as value
+    gradient_colors?: string[]; // 流光动效渐变颜色数组，默认为空
     path?: string;
     place_holder?: string;
     envExists?: boolean; // 环境是否存在，默认为 true

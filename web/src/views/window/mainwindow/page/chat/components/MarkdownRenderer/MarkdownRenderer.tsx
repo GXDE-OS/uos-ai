@@ -12,6 +12,219 @@ interface Props {
     showLoading?: boolean;
 }
 
+// Module-level loading states, shared across all component instances
+let mathJaxPromise: Promise<void> | null = null;
+let mermaidPromise: Promise<any> | null = null;
+
+const isDarkMode = (): boolean => {
+    return document.documentElement.classList.contains("dark") || window.matchMedia("(prefers-color-scheme: dark)").matches;
+};
+
+const loadMermaid = async (): Promise<any> => {
+    if ((window as any).mermaid) {
+        return (window as any).mermaid;
+    }
+
+    if (mermaidPromise) {
+        return mermaidPromise;
+    }
+
+    const existingScript = document.querySelector('script[src*="mermaid"]');
+    if (existingScript) {
+        mermaidPromise = new Promise<any>((resolve, reject) => {
+            existingScript.addEventListener("load", () => {
+                const m = (window as any).mermaid;
+                if (m) {
+                    m.initialize({ startOnLoad: false, theme: isDarkMode() ? "dark" : "default" });
+                }
+                resolve(m);
+            });
+            existingScript.addEventListener("error", reject);
+        });
+        return mermaidPromise;
+    }
+
+    mermaidPromise = new Promise<any>((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = "https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js";
+        script.async = true;
+        script.onload = () => {
+            const m = (window as any).mermaid;
+            if (m) {
+                m.initialize({ startOnLoad: false, theme: isDarkMode() ? "dark" : "default" });
+            }
+            resolve(m);
+        };
+        script.onerror = reject;
+        document.head.appendChild(script);
+    });
+
+    return mermaidPromise;
+};
+
+let mermaidRenderQueue: Array<{ code: string; container: HTMLElement }> = [];
+let mermaidProcessing = false;
+
+const processMermaidQueue = async () => {
+    if (mermaidProcessing) return;
+    mermaidProcessing = true;
+
+    while (mermaidRenderQueue.length > 0) {
+        const item = mermaidRenderQueue.shift()!;
+        try {
+            const mermaid = await loadMermaid();
+            if (!mermaid) continue;
+
+            const mermaidEl = document.createElement("div");
+            mermaidEl.className = "mermaid";
+            mermaidEl.textContent = item.code;
+            item.container.innerHTML = "";
+            item.container.appendChild(mermaidEl);
+
+            await mermaid.init(undefined, mermaidEl);
+        } catch (error) {
+            console.error("[MarkdownRenderer] Mermaid render error:", error);
+            item.container.innerHTML = `<pre class="mermaid-error"><code>${item.code}</code></pre>`;
+        }
+    }
+
+    mermaidProcessing = false;
+};
+
+const queueMermaidRender = (code: string, container: HTMLElement) => {
+    mermaidRenderQueue.push({ code, container });
+    processMermaidQueue();
+};
+
+const PLANTUML_SERVER = "https://www.plantuml.com/plantuml/svg";
+
+const plantUmlEncode = (text: string): string => {
+    const bytes: number[] = [];
+    for (let i = 0; i < text.length; i++) {
+        const code = text.charCodeAt(i);
+        if (code < 0x80) {
+            bytes.push(code);
+        } else if (code < 0x800) {
+            bytes.push(0xc0 | (code >> 6), 0x80 | (code & 0x3f));
+        } else {
+            bytes.push(0xe0 | (code >> 12), 0x80 | ((code >> 6) & 0x3f), 0x80 | (code & 0x3f));
+        }
+    }
+    let hex = "";
+    for (const b of bytes) {
+        hex += b.toString(16).padStart(2, "0");
+    }
+    return "~h" + hex;
+};
+
+const getPlantUmlUrl = (code: string): string => {
+    return `${PLANTUML_SERVER}/${plantUmlEncode(code)}`;
+};
+
+const loadMathJax = (): Promise<void> => {
+    if ((window as any).MathJax && (window as any).MathJax.tex2svg) {
+        return Promise.resolve();
+    }
+
+    if (mathJaxPromise) {
+        return mathJaxPromise;
+    }
+
+    const existingScript = document.querySelector('script[src*="tex-svg.js"]');
+    if (existingScript) {
+        mathJaxPromise = new Promise<void>((resolve, reject) => {
+            existingScript.addEventListener("load", () => setTimeout(resolve, 100));
+            existingScript.addEventListener("error", reject);
+        });
+        return mathJaxPromise;
+    }
+
+    mathJaxPromise = new Promise<void>((resolve, reject) => {
+        (window as any).MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                displayMath: [['$$', '$$']],
+                processEscapes: true,
+            },
+            svg: {
+                fontCache: 'global',
+            },
+            startup: {
+                ready: () => {
+                    (window as any).MathJax.startup.defaultReady();
+                    resolve();
+                }
+            }
+        };
+
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+        script.async = true;
+        script.onerror = reject;
+        document.head.appendChild(script);
+    });
+
+    return mathJaxPromise;
+};
+
+const renderMath = (text: string, display: boolean): string => {
+    const MathJax = (window as any).MathJax;
+    if (!MathJax || !MathJax.tex2svg) {
+        return text;
+    }
+
+    try {
+        const svgElement = MathJax.tex2svg(text, { display });
+        return MathJax.startup.adaptor.outerHTML(svgElement);
+    } catch (error) {
+        console.error('[MarkdownRenderer] MathJax render error:', error);
+        return text;
+    }
+};
+
+const mathExtension = {
+    name: "math",
+    level: "inline",
+    start(src: string) {
+        return src.indexOf("$");
+    },
+    tokenizer(src: string) {
+        const inlineMatch = src.match(/^\$([^$\n]+?)\$/);
+        if (inlineMatch) {
+            return { type: "math", raw: inlineMatch[0], text: inlineMatch[1], displayMode: false };
+        }
+
+        const blockMatch = src.match(/^\$\$([\s\S]+?)\$\$/);
+        if (blockMatch && blockMatch[1]) {
+            return { type: "math", raw: blockMatch[0], text: blockMatch[1]!.trim(), displayMode: true };
+        }
+
+        return undefined;
+    },
+    renderer(token: any) {
+        try {
+            const renderedMath = renderMath(token.text, token.displayMode);
+            if (token.displayMode) {
+                return `<div class="mathjax-math-container">${renderedMath}</div>`;
+            } else {
+                return `<span class="mathjax-math-inline">${renderedMath}</span>`;
+            }
+        } catch (error) {
+            console.error("[MarkdownRenderer] MathJax render error:", error);
+            return token.raw;
+        }
+    },
+};
+
+marked.use({
+    extensions: [mathExtension],
+});
+
+marked.setOptions({
+    breaks: true,
+    gfm: true,
+});
+
 export default defineComponent({
     name: "MarkdownRenderer",
     props: {
@@ -35,133 +248,9 @@ export default defineComponent({
     setup(props) {
         const renderedContent = ref("");
         const isDark = ref(false);
+        const markdownRef = ref<HTMLElement | null>(null);
         const backendStore = useBackendStore();
 
-        // MathJax promise to ensure it's loaded
-        let mathJaxPromise: Promise<void> | null = null;
-
-        // Load MathJax from CDN
-        const loadMathJax = (): Promise<void> => {
-            if ((window as any).MathJax && (window as any).MathJax.tex2svg) {
-                return Promise.resolve();
-            }
-
-            if (mathJaxPromise) {
-                return mathJaxPromise;
-            }
-
-            mathJaxPromise = new Promise<void>((resolve, reject) => {
-                // Configure MathJax before loading
-                (window as any).MathJax = {
-                    tex: {
-                        inlineMath: [['$', '$']],
-                        displayMath: [['$$', '$$']],
-                        processEscapes: true,
-                    },
-                    svg: {
-                        fontCache: 'global',
-                    },
-                    startup: {
-                        ready: () => {
-                            (window as any).MathJax.startup.defaultReady();
-                            resolve();
-                        }
-                    }
-                };
-
-                // Load MathJax script
-                const script = document.createElement('script');
-                script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
-                script.async = true;
-                script.onload = () => {
-                    // Give MathJax time to initialize
-                    setTimeout(resolve, 100);
-                };
-                script.onerror = reject;
-                document.head.appendChild(script);
-            });
-
-            return mathJaxPromise;
-        };
-
-        // Render math with MathJax
-        const renderMath = (text: string, display: boolean): string => {
-            const MathJax = (window as any).MathJax;
-            if (!MathJax || !MathJax.tex2svg) {
-                return text;
-            }
-
-            try {
-                const svgElement = MathJax.tex2svg(text, { display });
-                return MathJax.startup.adaptor.outerHTML(svgElement);
-            } catch (error) {
-                console.error('[MarkdownRenderer] MathJax render error:', error);
-                return text;
-            }
-        };
-
-        // Create a marked extension for MathJax rendering
-        const mathExtension = {
-            name: "math",
-            level: "inline",
-            start(src: string) {
-                return src.indexOf("$");
-            },
-            tokenizer(src: string) {
-                // Match inline math: $...$
-                const inlineMatch = src.match(/^\$([^$\n]+?)\$/);
-                if (inlineMatch) {
-                    return {
-                        type: "math",
-                        raw: inlineMatch[0],
-                        text: inlineMatch[1],
-                        displayMode: false,
-                    };
-                }
-
-                // Match block math: $$...$$
-                const blockMatch = src.match(/^\$\$([\s\S]+?)\$\$/);
-                if (blockMatch && blockMatch[1]) {
-                    return {
-                        type: "math",
-                        raw: blockMatch[0],
-                        text: blockMatch[1]!.trim(),
-                        displayMode: true,
-                    };
-                }
-
-                return undefined;
-            },
-            renderer(token: any) {
-                try {
-                    const renderedMath = renderMath(token.text, token.displayMode);
-
-                    // Wrap with CSS classes (styles are defined in CSS file)
-                    if (token.displayMode) {
-                        // Block math - left aligned to prevent jitter during streaming
-                        return `<div class="mathjax-math-container">${renderedMath}</div>`;
-                    } else {
-                        // Inline math
-                        return `<span class="mathjax-math-inline">${renderedMath}</span>`;
-                    }
-                } catch (error) {
-                    console.error("[MarkdownRenderer] MathJax render error:", error);
-                    return token.raw;
-                }
-            },
-        };
-
-        // Configure marked with math extension
-        marked.use({
-            extensions: [mathExtension],
-        });
-
-        marked.setOptions({
-            breaks: true, // Enable GitHub-flavored line breaks
-            gfm: true, // Enable GitHub Flavored Markdown
-        });
-
-        // Check if dark mode is active
         const checkDarkMode = () => {
             const html = document.documentElement;
             isDark.value = html.classList.contains("dark") || window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -188,6 +277,73 @@ export default defineComponent({
 
                     // Skip highlighting for math language (handled by KaTeX)
                     if (lang === "math") {
+                        return;
+                    }
+
+                    // Render mermaid diagrams instead of code highlighting
+                    if (lang === "mermaid") {
+                        const mermaidId = `mermaid-${Date.now()}-${index}`;
+                        const mermaidHtml = `
+                            <div class="mermaid-container" data-mermaid-code="${encodeURIComponent(code)}">
+                                <div class="mermaid-header">
+                                    <button class="diagram-view-toggle" onclick="window.toggleMermaidView('${mermaidId}', this)">${backendStore.translate("Source")}</button>
+                                    <span></span>
+                                    <button class="copy-button" onclick="window.copyMermaid('${mermaidId}', this)" data-tooltip="${backendStore.translate("Copy")}">
+                                        <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                            <path fill-opacity="1" fill="currentColor"  transform="translate(1 1)" d="M12 5C13.104569 5 14 5.8954306 14 7L14 12C14 13.104569 13.104569 14 12 14L7 14C5.8954306 14 5 13.104569 5 12L5 7C5 5.8954306 5.8954306 5 7 5L12 5ZM7 0C8.1045694 0 9 0.89543051 9 2L9 4L8 4L8 2C8 1.4871641 7.6139598 1.0644928 7.116621 1.0067277L7 1L2 1C1.4871641 1 1.0644928 1.3860402 1.0067277 1.8833789L1 2L1 7C1 7.512836 1.3860402 7.9355073 1.8863789 7.9932723L2 8L4 8L4 9L2 9C0.89543051 9 0 8.1045694 0 7L0 2C0 0.89543051 0.89543051 0 2 0L7 0Z"/>
+                                        </svg>
+                                        <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="display: none;">
+                                            <path fill-opacity="1" fill="currentColor" transform="translate(1.875 2.74996)" d="M10.426653 0.33541855C10.724676 -0.044991303 11.274655 -0.11177851 11.655066 0.18624516C12.006213 0.46134391 12.090132 0.95112652 11.866561 1.3240526L11.804238 1.4146577L4.9492455 10.164658C4.6411924 10.557869 4.0739732 10.609278 3.7009974 10.297988L3.6242123 10.225724L0.23876213 6.6398907C-0.092987508 6.2885051 -0.077069312 5.7347145 0.2743164 5.4029651C0.59867245 5.0967345 1.0954919 5.0867419 1.4309365 5.3633909L1.5112424 5.438519L4.1982522 8.2845383L10.426653 0.33541855Z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="mermaid-body">
+                                    <div class="mermaid-scroll-wrapper" data-mermaid-id="${mermaidId}" data-mermaid-scroll-init="false">
+                                        <div class="mermaid-placeholder"></div>
+                                    </div>
+                                    <div class="mermaid-scrollbar"><div class="mermaid-scrollbar-thumb"></div></div>
+                                    <div class="mermaid-scrollbar-v"><div class="mermaid-scrollbar-v-thumb"></div></div>
+                                </div>
+                            </div>
+                        `;
+                        const preElement = block.parentElement;
+                        if (preElement) {
+                            preElement.outerHTML = mermaidHtml;
+                        }
+                        return;
+                    }
+
+                    // Render PlantUML diagrams as images via server
+                    if (lang === "plantuml" || lang === "puml") {
+                        const plantumlId = `plantuml-${Date.now()}-${index}`;
+                        const svgUrl = getPlantUmlUrl(code);
+                        const plantumlHtml = `
+                            <div class="plantuml-container" data-plantuml-code="${encodeURIComponent(code)}">
+                                <div class="plantuml-header">
+                                    <button class="diagram-view-toggle" onclick="window.togglePlantUmlView('${plantumlId}', this)">${backendStore.translate("Source")}</button>
+                                    <span></span>
+                                    <button class="copy-button" onclick="window.copyPlantUml('${plantumlId}', this)" data-tooltip="${backendStore.translate("Copy")}">
+                                        <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                            <path fill-opacity="1" fill="currentColor"  transform="translate(1 1)" d="M12 5C13.104569 5 14 5.8954306 14 7L14 12C14 13.104569 13.104569 14 12 14L7 14C5.8954306 14 5 13.104569 5 12L5 7C5 5.8954306 5.8954306 5 7 5L12 5ZM7 0C8.1045694 0 9 0.89543051 9 2L9 4L8 4L8 2C8 1.4871641 7.6139598 1.0644928 7.116621 1.0067277L7 1L2 1C1.4871641 1 1.0644928 1.3860402 1.0067277 1.8833789L1 2L1 7C1 7.512836 1.3860402 7.9355073 1.8833789 7.9932723L2 8L4 8L4 9L2 9C0.89543051 9 0 8.1045694 0 7L0 2C0 0.89543051 0.89543051 0 2 0L7 0Z"/>
+                                        </svg>
+                                        <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="display: none;">
+                                            <path fill-opacity="1" fill="currentColor" transform="translate(1.875 2.74996)" d="M10.426653 0.33541855C10.724676 -0.044991303 11.274655 -0.11177851 11.655066 0.18624516C12.006213 0.46134391 12.090132 0.95112652 11.866561 1.3240526L11.804238 1.4146577L4.9492455 10.164658C4.6411924 10.557869 4.0739732 10.609278 3.7009974 10.297988L3.6242123 10.225724L0.23876213 6.6398907C-0.092987508 6.2885051 -0.077069312 5.7347145 0.2743164 5.4029651C0.59867245 5.0967345 1.0954919 5.0867419 1.4309365 5.3633909L1.5112424 5.438519L4.1982522 8.2845383L10.426653 0.33541855Z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="plantuml-body">
+                                    <div class="plantuml-scroll-wrapper" data-plantuml-id="${plantumlId}" data-plantuml-scroll-init="false">
+                                        <img class="plantuml-img" src="${svgUrl}" alt="PlantUML diagram" />
+                                    </div>
+                                    <div class="plantuml-scrollbar"><div class="plantuml-scrollbar-thumb"></div></div>
+                                    <div class="plantuml-scrollbar-v"><div class="plantuml-scrollbar-v-thumb"></div></div>
+                                </div>
+                            </div>
+                        `;
+                        const preElement = block.parentElement;
+                        if (preElement) {
+                            preElement.outerHTML = plantumlHtml;
+                        }
                         return;
                     }
 
@@ -251,17 +407,6 @@ export default defineComponent({
                 });
 
                 let finalHtml = tempDiv.innerHTML;
-
-                // Process images to add context menu for copy
-                const images = tempDiv.querySelectorAll("img");
-                images.forEach((img, index) => {
-                    const imageId = `image-${Date.now()}-${index}`;
-                    img.setAttribute("data-image-id", imageId);
-                    img.style.cursor = "pointer";
-                    img.setAttribute("title", "Right-click to copy image");
-                });
-
-                finalHtml = tempDiv.innerHTML;
 
                 // Remove # symbols from heading text while keeping the heading tags
                 finalHtml = finalHtml.replace(/<h(\d+)>(.*?)<\/h\1>/g, (match, level, content) => {
@@ -591,261 +736,6 @@ export default defineComponent({
                 });
         };
 
-        // Image copy function
-        const copyImage = async (imageId: string) => {
-            const img = document.querySelector(`[data-image-id="${imageId}"]`) as HTMLImageElement;
-            if (!img) return;
-
-            // Method 1: Try to copy using canvas
-            try {
-                const canvas = document.createElement("canvas");
-                canvas.width = img.naturalWidth || img.width;
-                canvas.height = img.naturalHeight || img.height;
-                const ctx = canvas.getContext("2d");
-
-                if (ctx) {
-                    ctx.drawImage(img, 0, 0);
-
-                    // Convert to blob
-                    canvas.toBlob(async (blob) => {
-                        if (blob) {
-                            try {
-                                await navigator.clipboard.write([
-                                    new ClipboardItem({
-                                        [blob.type]: blob,
-                                    }),
-                                ]);
-                                console.log("Image copied to clipboard (Canvas method)");
-                            } catch (error) {
-                                console.error("Canvas copy failed:", error);
-                                tryImageURLFallback(img);
-                            }
-                        } else {
-                            console.error("Canvas blob generation failed");
-                            tryImageURLFallback(img);
-                        }
-                    }, "image/png");
-                    return;
-                }
-            } catch (error) {
-                console.error("Canvas execution failed:", error);
-            }
-
-            // Method 2: Try fetch
-            tryFetchImage(img);
-        };
-
-        // Try fetch image blob
-        const tryFetchImage = async (img: HTMLImageElement) => {
-            try {
-                // Check if src is data URL
-                if (img.src.startsWith("data:")) {
-                    tryDataURLCopy(img.src);
-                    return;
-                }
-
-                const response = await fetch(img.src);
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const blob = await response.blob();
-
-                // Copy to clipboard
-                await navigator.clipboard.write([
-                    new ClipboardItem({
-                        [blob.type]: blob,
-                    }),
-                ]);
-
-                console.log("Image copied to clipboard (Fetch method)");
-            } catch (error) {
-                console.error("Fetch copy failed:", error);
-                tryImageURLFallback(img);
-            }
-        };
-
-        // Try copy data URL directly
-        const tryDataURLCopy = async (dataURL: string) => {
-            try {
-                // Extract the base64 part
-                const base64Data = dataURL.split(",")[1];
-                if (!base64Data) {
-                    throw new Error("Invalid data URL");
-                }
-
-                // Convert to blob
-                const byteCharacters = atob(base64Data);
-                const byteNumbers = new Array(byteCharacters.length);
-                for (let i = 0; i < byteCharacters.length; i++) {
-                    byteNumbers[i] = byteCharacters.charCodeAt(i);
-                }
-                const byteArray = new Uint8Array(byteNumbers);
-                const blob = new Blob([byteArray], { type: "image/png" });
-
-                await navigator.clipboard.write([
-                    new ClipboardItem({
-                        "image/png": blob,
-                    }),
-                ]);
-
-                console.log("Image copied to clipboard (DataURL method)");
-            } catch (error) {
-                console.error("DataURL copy failed:", error);
-                tryTextFallback(dataURL);
-            }
-        };
-
-        // Fallback: copy image URL
-        const tryImageURLFallback = (img: HTMLImageElement) => {
-            try {
-                navigator.clipboard
-                    .writeText(img.src)
-                    .then(() => {
-                        console.log("Image URL copied to clipboard");
-                    })
-                    .catch((error) => {
-                        console.error("Copy image URL failed:", error);
-                        console.log("Image URL:", img.src);
-                        // Try using execCommand as last resort
-                        tryExecCommandCopy(img.src);
-                    });
-            } catch (error) {
-                console.error("clipboard.writeText failed:", error);
-                tryExecCommandCopy(img.src);
-            }
-        };
-
-        // Try copy text as last resort
-        const tryTextFallback = (text: string) => {
-            try {
-                navigator.clipboard
-                    .writeText(text)
-                    .then(() => {
-                        console.log("Text copied to clipboard");
-                    })
-                    .catch((error) => {
-                        console.error("Copy text failed:", error);
-                    });
-            } catch (error) {
-                console.error("tryTextFallback failed:", error);
-            }
-        };
-
-        // Last resort: execCommand
-        const tryExecCommandCopy = (text: string) => {
-            const textarea = document.createElement("textarea");
-            textarea.value = text;
-            textarea.style.position = "fixed";
-            textarea.style.opacity = "0";
-            document.body.appendChild(textarea);
-            textarea.select();
-
-            try {
-                const successful = document.execCommand("copy");
-                document.body.removeChild(textarea);
-                if (successful) {
-                    console.log("Successfully copied using execCommand");
-                } else {
-                    console.log("execCommand copy failed");
-                    console.log("Please copy manually:", text);
-                }
-            } catch (err) {
-                console.error("execCommand execution failed:", err);
-                document.body.removeChild(textarea);
-                console.log("Please copy manually:", text);
-            }
-        };
-
-        // Handle context menu on images
-        const handleImageContextMenu = (event: MouseEvent) => {
-            const target = event.target as HTMLElement;
-            if (target.tagName === "IMG") {
-                const img = target as HTMLImageElement;
-                const imageId = img.getAttribute("data-image-id");
-
-                if (imageId) {
-                    // Prevent default context menu
-                    event.preventDefault();
-
-                    // Create custom context menu
-                    const menu = document.createElement("div");
-                    menu.className = "markdown-image-context-menu";
-                    menu.innerHTML = `
-                        <div class="menu-item" data-action="copy" data-image-id="${imageId}">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-                                <path fill-opacity="1" fill="currentColor"  transform="translate(1 1)" d="M12 5C13.104569 5 14 5.8954306 14 7L14 12C14 13.104569 13.104569 14 12 14L7 14C5.8954306 14 5 13.104569 5 12L5 7C5 5.8954306 5.8954306 5 7 5L12 5ZM7 0C8.1045694 0 9 0.89543051 9 2L9 4L8 4L8 2C8 1.4871641 7.6139598 1.0644928 7.116621 1.0067277L7 1L2 1C1.4871641 1 1.0644928 1.3860402 1.0067277 1.8833789L1 2L1 7C1 7.512836 1.3860402 7.9355073 1.8833789 7.9932723L2 8L4 8L4 9L2 9C0.89543051 9 0 8.1045694 0 7L0 2C0 0.89543051 0.89543051 0 2 0L7 0Z"/>
-                            </svg>
-                            <span>Copy Image</span>
-                        </div>
-                    `;
-
-                    // Position menu
-                    menu.style.position = "fixed";
-                    menu.style.left = `${event.clientX}px`;
-                    menu.style.top = `${event.clientY}px`;
-                    menu.style.zIndex = "10000";
-                    menu.style.backgroundColor = "white";
-                    menu.style.border = "1px solid #ddd";
-                    menu.style.borderRadius = "8px";
-                    menu.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
-                    menu.style.minWidth = "150px";
-                    menu.style.padding = "4px 0";
-
-                    // Add styles to menu items
-                    const style = document.createElement("style");
-                    style.textContent = `
-                        .markdown-image-context-menu .menu-item {
-                            display: flex;
-                            align-items: center;
-                            gap: 8px;
-                            padding: 8px 16px;
-                            cursor: pointer;
-                            font-size: 14px;
-                            color: #333;
-                        }
-                        .markdown-image-context-menu .menu-item:hover {
-                            background-color: #f5f5f5;
-                        }
-                        .markdown-image-context-menu .menu-item svg {
-                            width: 16px;
-                            height: 16px;
-                        }
-                    `;
-                    document.head.appendChild(style);
-
-                    // Add click handler
-                    menu.addEventListener("click", (e) => {
-                        const target = e.target as HTMLElement;
-                        const menuItem = target.closest(".menu-item") as HTMLElement;
-                        if (menuItem) {
-                            const action = menuItem.getAttribute("data-action");
-                            const id = menuItem.getAttribute("data-image-id");
-
-                            if (action === "copy" && id) {
-                                copyImage(id);
-                            }
-                        }
-
-                        // Remove menu
-                        document.body.removeChild(menu);
-                    });
-
-                    // Remove menu on click outside
-                    const removeMenu = () => {
-                        if (document.body.contains(menu)) {
-                            document.body.removeChild(menu);
-                        }
-                        document.removeEventListener("click", removeMenu);
-                    };
-
-                    setTimeout(() => {
-                        document.addEventListener("click", removeMenu);
-                    }, 0);
-
-                    document.body.appendChild(menu);
-                }
-            }
-        };
 
         // Calculate dynamic unit U based on base font size
         const calculateUnitU = () => {
@@ -859,12 +749,524 @@ export default defineComponent({
         watch(() => props.content, () => {
             nextTick(() => {
                 setTimeout(() => {
+                    initMermaidDiagrams();
+                    initMermaidScroll();
+                    initPlantUmlScroll();
                     initCodeBlockStickyObserver();
                     initTableScroll();
                     initTooltips();
                 }, 50);
             });
         });
+
+        // Initialize mermaid diagrams
+        const initMermaidDiagrams = () => {
+            const root = markdownRef.value;
+            if (!root) return;
+
+            const containers = root.querySelectorAll(".mermaid-container");
+            if (containers.length === 0) return;
+
+            containers.forEach((container) => {
+                const element = container as HTMLElement;
+                if (element.dataset.mermaidRendered === "true") return;
+
+                const placeholder = element.querySelector(".mermaid-placeholder");
+                if (!placeholder) return;
+
+                const code = decodeURIComponent(element.dataset.mermaidCode || "");
+                element.dataset.mermaidRendered = "true";
+                queueMermaidRender(code, placeholder.parentElement as HTMLElement);
+
+                // Watch for SVG insertion to init scrollbars
+                const scrollWrapper = element.querySelector('.mermaid-scroll-wrapper') as HTMLElement;
+                if (scrollWrapper) {
+                    const mo = new MutationObserver(() => {
+                        if (scrollWrapper.querySelector('svg')) {
+                            mo.disconnect();
+                            setTimeout(() => initMermaidScroll(), 50);
+                        }
+                    });
+                    mo.observe(scrollWrapper, { childList: true, subtree: true });
+                }
+            });
+        };
+
+        // Initialize mermaid scrollbars (horizontal + vertical)
+        const initMermaidScroll = () => {
+            const scrollWrappers = document.querySelectorAll('.markdown-content .mermaid-scroll-wrapper');
+
+            scrollWrappers.forEach((wrapper) => {
+                const element = wrapper as HTMLElement;
+                if (element.dataset.mermaidScrollInit === "true") return;
+
+                const hasContent = element.querySelector('svg') || element.querySelector('.mermaid-error');
+                if (!hasContent) return;
+
+                element.dataset.mermaidScrollInit = "true";
+
+                const body = element.closest('.mermaid-body') as HTMLElement;
+                const hScrollbar = body?.querySelector('.mermaid-scrollbar') as HTMLElement;
+                const hThumb = hScrollbar?.querySelector('.mermaid-scrollbar-thumb') as HTMLElement;
+                const vScrollbar = body?.querySelector('.mermaid-scrollbar-v') as HTMLElement;
+                const vThumb = vScrollbar?.querySelector('.mermaid-scrollbar-v-thumb') as HTMLElement;
+
+                // Horizontal scrollbar
+                if (hScrollbar && hThumb) {
+                    const checkHScroll = () => {
+                        if (element.scrollWidth > element.clientWidth) {
+                            hScrollbar.classList.add('visible');
+                            updateMermaidHScrollbar(element, hThumb);
+                        } else {
+                            hScrollbar.classList.remove('visible');
+                        }
+                    };
+
+                    const resizeObserver = new ResizeObserver(() => checkHScroll());
+                    resizeObserver.observe(element);
+
+                    let scrollTimeout: number | null = null;
+                    element.addEventListener('scroll', () => {
+                        element.classList.add('scrolling');
+                        updateMermaidHScrollbar(element, hThumb);
+                        updateMermaidVScrollbar(element, vThumb);
+                        if (scrollTimeout) clearTimeout(scrollTimeout);
+                        scrollTimeout = window.setTimeout(() => element.classList.remove('scrolling'), 1000);
+                    });
+
+                    // H thumb drag
+                    let hDragging = false;
+                    let hDragStartX = 0;
+                    let hDragStartScrollLeft = 0;
+
+                    const onHThumbMouseDown = (e: MouseEvent) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        hDragging = true;
+                        hDragStartX = e.clientX;
+                        hDragStartScrollLeft = element.scrollLeft;
+                        hThumb.classList.add('dragging');
+                        element.style.scrollBehavior = 'auto';
+                        document.addEventListener('mousemove', onHThumbMouseMove);
+                        document.addEventListener('mouseup', onHThumbMouseUp);
+                    };
+
+                    const onHThumbMouseMove = (e: MouseEvent) => {
+                        if (!hDragging) return;
+                        const maxScroll = element.scrollWidth - element.clientWidth;
+                        const trackWidth = element.clientWidth - 32;
+                        const thumbWidth = Math.max(20, (element.clientWidth / element.scrollWidth) * trackWidth);
+                        const trackTravel = trackWidth - thumbWidth;
+                        const currentPos = ((hDragStartScrollLeft / maxScroll) * trackTravel) + (e.clientX - hDragStartX);
+                        const clamped = Math.max(0, Math.min(trackTravel, currentPos));
+                        element.scrollLeft = trackTravel > 0 ? (clamped / trackTravel) * maxScroll : 0;
+                    };
+
+                    const onHThumbMouseUp = () => {
+                        hDragging = false;
+                        hThumb.classList.remove('dragging');
+                        element.style.scrollBehavior = '';
+                        document.removeEventListener('mousemove', onHThumbMouseMove);
+                        document.removeEventListener('mouseup', onHThumbMouseUp);
+                    };
+
+                    hThumb.addEventListener('mousedown', onHThumbMouseDown);
+
+                    hScrollbar.addEventListener('click', (e: MouseEvent) => {
+                        if (e.target === hThumb) return;
+                        const rect = hScrollbar.getBoundingClientRect();
+                        const clickX = e.clientX - rect.left;
+                        const maxScroll = element.scrollWidth - element.clientWidth;
+                        const trackWidth = element.clientWidth - 32;
+                        const thumbWidth = Math.max(20, (element.clientWidth / element.scrollWidth) * trackWidth);
+                        const trackTravel = trackWidth - thumbWidth;
+                        element.scrollLeft = trackTravel > 0 ? (clickX / trackWidth) * maxScroll : 0;
+                    });
+
+                    checkHScroll();
+                }
+
+                // Vertical scrollbar
+                if (vScrollbar && vThumb) {
+                    const checkVScroll = () => {
+                        if (element.scrollHeight > element.clientHeight) {
+                            vScrollbar.classList.add('visible');
+                            updateMermaidVScrollbar(element, vThumb);
+                        } else {
+                            vScrollbar.classList.remove('visible');
+                        }
+                    };
+
+                    const resizeObserver2 = new ResizeObserver(() => checkVScroll());
+                    resizeObserver2.observe(element);
+
+                    // V thumb drag
+                    let vDragging = false;
+                    let vDragStartY = 0;
+                    let vDragStartScrollTop = 0;
+
+                    const onVThumbMouseDown = (e: MouseEvent) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        vDragging = true;
+                        vDragStartY = e.clientY;
+                        vDragStartScrollTop = element.scrollTop;
+                        vThumb.classList.add('dragging');
+                        element.style.scrollBehavior = 'auto';
+                        document.addEventListener('mousemove', onVThumbMouseMove);
+                        document.addEventListener('mouseup', onVThumbMouseUp);
+                    };
+
+                    const onVThumbMouseMove = (e: MouseEvent) => {
+                        if (!vDragging) return;
+                        const maxScroll = element.scrollHeight - element.clientHeight;
+                        const trackHeight = vScrollbar.clientHeight;
+                        const thumbHeight = Math.max(20, (element.clientHeight / element.scrollHeight) * trackHeight);
+                        const trackTravel = trackHeight - thumbHeight;
+                        const currentPos = ((vDragStartScrollTop / maxScroll) * trackTravel) + (e.clientY - vDragStartY);
+                        const clamped = Math.max(0, Math.min(trackTravel, currentPos));
+                        element.scrollTop = trackTravel > 0 ? (clamped / trackTravel) * maxScroll : 0;
+                    };
+
+                    const onVThumbMouseUp = () => {
+                        vDragging = false;
+                        vThumb.classList.remove('dragging');
+                        element.style.scrollBehavior = '';
+                        document.removeEventListener('mousemove', onVThumbMouseMove);
+                        document.removeEventListener('mouseup', onVThumbMouseUp);
+                    };
+
+                    vThumb.addEventListener('mousedown', onVThumbMouseDown);
+
+                    vScrollbar.addEventListener('click', (e: MouseEvent) => {
+                        if (e.target === vThumb) return;
+                        const rect = vScrollbar.getBoundingClientRect();
+                        const clickY = e.clientY - rect.top;
+                        const maxScroll = element.scrollHeight - element.clientHeight;
+                        const trackHeight = vScrollbar.clientHeight;
+                        const thumbHeight = Math.max(20, (element.clientHeight / element.scrollHeight) * trackHeight);
+                        const trackTravel = trackHeight - thumbHeight;
+                        element.scrollTop = trackTravel > 0 ? (clickY / trackHeight) * maxScroll : 0;
+                    });
+
+                    checkVScroll();
+                }
+            });
+        };
+
+        const updateMermaidHScrollbar = (body: HTMLElement, thumb: HTMLElement) => {
+            if (!thumb) return;
+            const maxScroll = body.scrollWidth - body.clientWidth;
+            if (maxScroll <= 0) return;
+            const trackWidth = body.clientWidth - 32;
+            const thumbWidth = Math.max(20, (body.clientWidth / body.scrollWidth) * trackWidth);
+            const thumbPosition = (body.scrollLeft / maxScroll) * (trackWidth - thumbWidth);
+            thumb.style.width = `${thumbWidth}px`;
+            thumb.style.left = `${thumbPosition}px`;
+        };
+
+        const updateMermaidVScrollbar = (body: HTMLElement, thumb: HTMLElement) => {
+            if (!thumb) return;
+            const scrollbar = thumb.parentElement as HTMLElement;
+            if (!scrollbar) return;
+            const maxScroll = body.scrollHeight - body.clientHeight;
+            if (maxScroll <= 0) return;
+            const trackHeight = scrollbar.clientHeight;
+            const thumbHeight = Math.max(20, (body.clientHeight / body.scrollHeight) * trackHeight);
+            const thumbPosition = (body.scrollTop / maxScroll) * (trackHeight - thumbHeight);
+            thumb.style.height = `${thumbHeight}px`;
+            thumb.style.top = `${thumbPosition}px`;
+        };
+
+        const initPlantUmlScroll = () => {
+            const scrollWrappers = document.querySelectorAll('.markdown-content .plantuml-scroll-wrapper');
+
+            scrollWrappers.forEach((wrapper) => {
+                const element = wrapper as HTMLElement;
+                if (element.dataset.plantumlScrollInit === "true") return;
+                element.dataset.plantumlScrollInit = "true";
+
+                const img = element.querySelector('.plantuml-img') as HTMLImageElement;
+                const initScroll = () => {
+                    const body = element.closest('.plantuml-body') as HTMLElement;
+                    const hScrollbar = body?.querySelector('.plantuml-scrollbar') as HTMLElement;
+                    const hThumb = hScrollbar?.querySelector('.plantuml-scrollbar-thumb') as HTMLElement;
+                    const vScrollbar = body?.querySelector('.plantuml-scrollbar-v') as HTMLElement;
+                    const vThumb = vScrollbar?.querySelector('.plantuml-scrollbar-v-thumb') as HTMLElement;
+
+                    if (hScrollbar && hThumb) {
+                        const checkHScroll = () => {
+                            if (element.scrollWidth > element.clientWidth) {
+                                hScrollbar.classList.add('visible');
+                                updateMermaidHScrollbar(element, hThumb);
+                            } else {
+                                hScrollbar.classList.remove('visible');
+                            }
+                        };
+
+                        new ResizeObserver(() => checkHScroll()).observe(element);
+
+                        element.addEventListener('scroll', () => {
+                            updateMermaidHScrollbar(element, hThumb);
+                            updateMermaidVScrollbar(element, vThumb);
+                        });
+
+                        let hDragging = false, hDragStartX = 0, hDragStartScrollLeft = 0;
+                        hThumb.addEventListener('mousedown', (e) => {
+                            e.preventDefault(); e.stopPropagation();
+                            hDragging = true; hDragStartX = e.clientX; hDragStartScrollLeft = element.scrollLeft;
+                            hThumb.classList.add('dragging');
+                            element.style.scrollBehavior = 'auto';
+                            const onMove = (e: MouseEvent) => {
+                                if (!hDragging) return;
+                                const maxScroll = element.scrollWidth - element.clientWidth;
+                                const trackWidth = element.clientWidth - 32;
+                                const thumbWidth = Math.max(20, (element.clientWidth / element.scrollWidth) * trackWidth);
+                                const trackTravel = trackWidth - thumbWidth;
+                                const clamped = Math.max(0, Math.min(trackTravel, ((hDragStartScrollLeft / maxScroll) * trackTravel) + (e.clientX - hDragStartX)));
+                                element.scrollLeft = trackTravel > 0 ? (clamped / trackTravel) * maxScroll : 0;
+                            };
+                            const onUp = () => {
+                                hDragging = false; hThumb.classList.remove('dragging');
+                                element.style.scrollBehavior = '';
+                                document.removeEventListener('mousemove', onMove);
+                                document.removeEventListener('mouseup', onUp);
+                            };
+                            document.addEventListener('mousemove', onMove);
+                            document.addEventListener('mouseup', onUp);
+                        });
+
+                        hScrollbar.addEventListener('click', (e: MouseEvent) => {
+                            if (e.target === hThumb) return;
+                            const clickX = e.clientX - hScrollbar.getBoundingClientRect().left;
+                            const maxScroll = element.scrollWidth - element.clientWidth;
+                            const trackWidth = element.clientWidth - 32;
+                            const thumbWidth = Math.max(20, (element.clientWidth / element.scrollWidth) * trackWidth);
+                            const trackTravel = trackWidth - thumbWidth;
+                            element.scrollLeft = trackTravel > 0 ? (clickX / trackWidth) * maxScroll : 0;
+                        });
+
+                        checkHScroll();
+                    }
+
+                    if (vScrollbar && vThumb) {
+                        const checkVScroll = () => {
+                            if (element.scrollHeight > element.clientHeight) {
+                                vScrollbar.classList.add('visible');
+                                updateMermaidVScrollbar(element, vThumb);
+                            } else {
+                                vScrollbar.classList.remove('visible');
+                            }
+                        };
+
+                        new ResizeObserver(() => checkVScroll()).observe(element);
+
+                        element.addEventListener('scroll', () => {
+                            updateMermaidVScrollbar(element, vThumb);
+                        });
+
+                        let vDragging = false, vDragStartY = 0, vDragStartScrollTop = 0;
+                        vThumb.addEventListener('mousedown', (e) => {
+                            e.preventDefault(); e.stopPropagation();
+                            vDragging = true; vDragStartY = e.clientY; vDragStartScrollTop = element.scrollTop;
+                            vThumb.classList.add('dragging');
+                            element.style.scrollBehavior = 'auto';
+                            const onMove = (e: MouseEvent) => {
+                                if (!vDragging) return;
+                                const maxScroll = element.scrollHeight - element.clientHeight;
+                                const trackHeight = vScrollbar.clientHeight;
+                                const thumbHeight = Math.max(20, (element.clientHeight / element.scrollHeight) * trackHeight);
+                                const trackTravel = trackHeight - thumbHeight;
+                                const clamped = Math.max(0, Math.min(trackTravel, ((vDragStartScrollTop / maxScroll) * trackTravel) + (e.clientY - vDragStartY)));
+                                element.scrollTop = trackTravel > 0 ? (clamped / trackTravel) * maxScroll : 0;
+                            };
+                            const onUp = () => {
+                                vDragging = false; vThumb.classList.remove('dragging');
+                                element.style.scrollBehavior = '';
+                                document.removeEventListener('mousemove', onMove);
+                                document.removeEventListener('mouseup', onUp);
+                            };
+                            document.addEventListener('mousemove', onMove);
+                            document.addEventListener('mouseup', onUp);
+                        });
+
+                        vScrollbar.addEventListener('click', (e: MouseEvent) => {
+                            if (e.target === vThumb) return;
+                            const clickY = e.clientY - vScrollbar.getBoundingClientRect().top;
+                            const maxScroll = element.scrollHeight - element.clientHeight;
+                            const trackHeight = vScrollbar.clientHeight;
+                            const thumbHeight = Math.max(20, (element.clientHeight / element.scrollHeight) * trackHeight);
+                            const trackTravel = trackHeight - thumbHeight;
+                            element.scrollTop = trackTravel > 0 ? (clickY / trackHeight) * maxScroll : 0;
+                        });
+
+                        checkVScroll();
+                    }
+                };
+
+                if (img && img.complete) {
+                    initScroll();
+                } else if (img) {
+                    img.addEventListener('load', initScroll);
+                }
+            });
+        };
+
+        // Toggle mermaid view: preview <-> source code
+        const toggleMermaidView = (mermaidId: string, button: HTMLButtonElement) => {
+            const container = document.querySelector(`[data-mermaid-id="${mermaidId}"]`)?.closest('.mermaid-container') as HTMLElement;
+            if (!container) return;
+            const wrapper = container.querySelector('.mermaid-scroll-wrapper') as HTMLElement;
+            if (!wrapper) return;
+
+            const isSourceMode = container.classList.toggle('source-mode');
+            const code = decodeURIComponent(container.dataset.mermaidCode || "");
+
+            if (isSourceMode) {
+                wrapper.innerHTML = `<pre class="diagram-source-code"><code>${code.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code></pre>`;
+                button.textContent = backendStore.translate("Preview");
+            } else {
+                wrapper.innerHTML = '<div class="mermaid-placeholder"></div>';
+                container.dataset.mermaidRendered = "false";
+                container.dataset.mermaidScrollInit = "false";
+                const scrollWrapper = container.querySelector('.mermaid-scroll-wrapper') as HTMLElement;
+                if (scrollWrapper) {
+                    const mo = new MutationObserver(() => {
+                        if (scrollWrapper.querySelector('svg')) {
+                            mo.disconnect();
+                            setTimeout(() => initMermaidScroll(), 50);
+                        }
+                    });
+                    mo.observe(scrollWrapper, { childList: true, subtree: true });
+                }
+                initMermaidDiagrams();
+                button.textContent = backendStore.translate("Source");
+            }
+        };
+
+        // Toggle plantuml view: preview <-> source code
+        const togglePlantUmlView = (plantumlId: string, button: HTMLButtonElement) => {
+            const container = document.querySelector(`[data-plantuml-id="${plantumlId}"]`)?.closest('.plantuml-container') as HTMLElement;
+            if (!container) return;
+            const wrapper = container.querySelector('.plantuml-scroll-wrapper') as HTMLElement;
+            if (!wrapper) return;
+
+            const isSourceMode = container.classList.toggle('source-mode');
+            const code = decodeURIComponent(container.dataset.plantumlCode || "");
+            const svgUrl = getPlantUmlUrl(code);
+
+            if (isSourceMode) {
+                wrapper.innerHTML = `<pre class="diagram-source-code"><code>${code.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code></pre>`;
+                button.textContent = backendStore.translate("Preview");
+            } else {
+                wrapper.innerHTML = `<img class="plantuml-img" src="${svgUrl}" alt="PlantUML diagram" />`;
+                container.dataset.plantumlScrollInit = "false";
+                initPlantUmlScroll();
+                button.textContent = backendStore.translate("Source");
+            }
+        };
+
+        // Copy mermaid source code function exposed to window
+        const copyMermaid = (mermaidId: string, button: HTMLButtonElement) => {
+            const body = document.querySelector(`[data-mermaid-id="${mermaidId}"]`) as HTMLElement;
+            if (!body) return;
+
+            const container = body.closest(".mermaid-container") as HTMLElement;
+            if (!container) return;
+
+            const code = decodeURIComponent(container.dataset.mermaidCode || "");
+
+            const doCopy = () => {
+                const copyIcon = button.querySelector(".copy-icon") as HTMLElement;
+                const checkIcon = button.querySelector(".check-icon") as HTMLElement;
+
+                if (copyIcon) copyIcon.style.display = "none";
+                if (checkIcon) checkIcon.style.display = "inline-block";
+                button.setAttribute("data-tooltip", backendStore.translate("Copied"));
+                updateTooltipContent(button, backendStore.translate("Copied"));
+
+                setTimeout(() => {
+                    if (copyIcon) copyIcon.style.display = "inline-block";
+                    if (checkIcon) checkIcon.style.display = "none";
+                    button.setAttribute("data-tooltip", backendStore.translate("Copy"));
+                    updateTooltipContent(button, backendStore.translate("Copy"));
+                }, 2000);
+            };
+
+            if (!navigator.clipboard) {
+                const textarea = document.createElement("textarea");
+                textarea.value = code;
+                textarea.style.position = "fixed";
+                textarea.style.opacity = "0";
+                document.body.appendChild(textarea);
+                textarea.select();
+                try {
+                    if (document.execCommand("copy")) {
+                        document.body.removeChild(textarea);
+                        doCopy();
+                    }
+                } catch (err) {
+                    console.error("[MarkdownRenderer] Copy mermaid failed:", err);
+                    document.body.removeChild(textarea);
+                }
+                return;
+            }
+
+            navigator.clipboard.writeText(code).then(doCopy).catch((error) => {
+                console.error("[MarkdownRenderer] Copy mermaid failed:", error);
+            });
+        };
+
+        // Copy plantuml source code function exposed to window
+        const copyPlantUml = (plantumlId: string, button: HTMLButtonElement) => {
+            const body = document.querySelector(`[data-plantuml-id="${plantumlId}"]`) as HTMLElement;
+            if (!body) return;
+
+            const container = body.closest(".plantuml-container") as HTMLElement;
+            if (!container) return;
+
+            const code = decodeURIComponent(container.dataset.plantumlCode || "");
+
+            const doCopy = () => {
+                const copyIcon = button.querySelector(".copy-icon") as HTMLElement;
+                const checkIcon = button.querySelector(".check-icon") as HTMLElement;
+
+                if (copyIcon) copyIcon.style.display = "none";
+                if (checkIcon) checkIcon.style.display = "inline-block";
+                button.setAttribute("data-tooltip", backendStore.translate("Copied"));
+                updateTooltipContent(button, backendStore.translate("Copied"));
+
+                setTimeout(() => {
+                    if (copyIcon) copyIcon.style.display = "inline-block";
+                    if (checkIcon) checkIcon.style.display = "none";
+                    button.setAttribute("data-tooltip", backendStore.translate("Copy"));
+                    updateTooltipContent(button, backendStore.translate("Copy"));
+                }, 2000);
+            };
+
+            if (!navigator.clipboard) {
+                const textarea = document.createElement("textarea");
+                textarea.value = code;
+                textarea.style.position = "fixed";
+                textarea.style.opacity = "0";
+                document.body.appendChild(textarea);
+                textarea.select();
+                try {
+                    if (document.execCommand("copy")) {
+                        document.body.removeChild(textarea);
+                        doCopy();
+                    }
+                } catch (err) {
+                    console.error("[MarkdownRenderer] Copy plantuml failed:", err);
+                    document.body.removeChild(textarea);
+                }
+                return;
+            }
+
+            navigator.clipboard.writeText(code).then(doCopy).catch((error) => {
+                console.error("[MarkdownRenderer] Copy plantuml failed:", error);
+            });
+        };
 
         // Initialize sticky observer for code blocks
         const initCodeBlockStickyObserver = () => {
@@ -1095,7 +1497,10 @@ export default defineComponent({
             (window as any).copyCode = copyCode;
             (window as any).toggleCodeBlock = toggleCodeBlock;
             (window as any).copyTable = copyTable;
-            (window as any).copyImage = copyImage;
+            (window as any).copyMermaid = copyMermaid;
+            (window as any).copyPlantUml = copyPlantUml;
+            (window as any).toggleMermaidView = toggleMermaidView;
+            (window as any).togglePlantUmlView = togglePlantUmlView;
 
             checkDarkMode();
             calculateUnitU();
@@ -1105,6 +1510,9 @@ export default defineComponent({
 
             // Initialize code block sticky observer, table scroll and tooltips after a short delay to ensure DOM is ready
             setTimeout(() => {
+                initMermaidDiagrams();
+                initMermaidScroll();
+                initPlantUmlScroll();
                 initCodeBlockStickyObserver();
                 initTableScroll();
                 initTooltips();
@@ -1123,14 +1531,12 @@ export default defineComponent({
             // Listen for system theme changes
             window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", checkDarkMode);
 
-            // Add context menu listener for images
-            document.addEventListener("contextmenu", handleImageContextMenu);
-
             // Observe DOM changes to initialize table scroll and code block sticky observer for new elements
             const contentObserver = new MutationObserver((mutations) => {
                 let shouldInitTable = false;
                 let shouldInitCodeBlock = false;
                 let shouldInitTooltips = false;
+                let shouldInitMermaid = false;
                 mutations.forEach((mutation) => {
                     if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
                         mutation.addedNodes.forEach((node) => {
@@ -1150,10 +1556,19 @@ export default defineComponent({
                                     node.querySelector?.('.copy-button')) {
                                     shouldInitTooltips = true;
                                 }
+                                // Check if the added node or its children contain mermaid containers
+                                if (node.classList?.contains('mermaid-container') ||
+                                    node.querySelector?.('.mermaid-container')) {
+                                    shouldInitMermaid = true;
+                                }
                             }
                         });
                     }
                 });
+                if (shouldInitMermaid) {
+                    initMermaidDiagrams();
+                    initMermaidScroll();
+                }
                 if (shouldInitTable) {
                     initTableScroll();
                 }
@@ -1176,9 +1591,10 @@ export default defineComponent({
             renderedContent,
             renderMarkdown,
             isDark,
+            markdownRef,
         };
     },
     render() {
-        return <span class="markdown-content" innerHTML={this.renderMarkdown} v-html={this.renderMarkdown} />;
+        return <span class="markdown-content" ref="markdownRef" innerHTML={this.renderMarkdown} v-html={this.renderMarkdown} />;
     },
 });

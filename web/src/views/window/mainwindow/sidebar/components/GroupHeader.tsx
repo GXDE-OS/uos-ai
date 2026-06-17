@@ -1,6 +1,7 @@
-import { defineComponent } from "vue";
+import { computed, defineComponent } from "vue";
 import "@/assets/styles/window/mainwindow/sidebar/components/GroupHeader.css";
 import IconButton from "@/components/IconButton";
+import Tooltip from "@/components/Tooltip";
 import { ButtonShape } from "@/types/button";
 
 export default defineComponent({
@@ -23,6 +24,20 @@ export default defineComponent({
             required: false,
             default: false,
         },
+        tooltip: {
+            type: String,
+            required: false,
+        },
+        collapsible: {
+            type: Boolean,
+            required: false,
+            default: false,
+        },
+        collapsed: {
+            type: Boolean,
+            required: false,
+            default: false,
+        },
         rightButtonIcon: {
             type: String,
             required: false,
@@ -32,56 +47,65 @@ export default defineComponent({
             required: false,
         },
     },
-    emits: ["rightButtonIconClick"],
+    emits: ["rightButtonIconClick", "collapse", "click"],
     setup(props, { emit }) {
         const handleClick = () => {
-            const element = document.getElementById(`group-${props.groupId}`);
-            const scrollContainer = element?.closest<HTMLElement>(".scroll-bar-content");
-            if (!element || !scrollContainer) {
-                element?.scrollIntoView({ behavior: "smooth", block: "start" });
-                return;
-            }
-
-            const style = window.getComputedStyle(element);
-            const scrollMarginTop = Number.parseFloat(style.scrollMarginTop || "0") || 0;
-            const nextScrollTop = Math.max(0, element.offsetTop - scrollMarginTop);
-
-            scrollContainer.scrollTo({
-                top: nextScrollTop,
-                behavior: "smooth",
-            });
+            emit("click", { groupId: props.groupId });
         };
 
         const handleButtonIconClick = (event: MouseEvent) => {
             // 防止事件冒泡
             event.stopPropagation();
-            emit("rightButtonIconClick", { groupId: props.groupId });
+            if (props.collapsible) {
+                emit("collapse");
+            } else {
+                emit("rightButtonIconClick", { groupId: props.groupId });
+            }
         };
+
+        const collapseBtnClass = computed(() =>
+            props.collapsible
+                ? ["group-header__collapse-btn", props.collapsed && "group-header__collapse-btn--collapsed"]
+                : undefined,
+        );
 
         return {
             handleClick,
             handleButtonIconClick,
+            collapseBtnClass,
         };
     },
     render() {
+        const buttonIcon = this.collapsible ? "icon_arrow" : this.rightButtonIcon;
+        const tooltipContent = this.tooltip || "";
+
         return (
-            <div
-                id={this.headerDomId || `group-header-${this.groupId}`}
-                class={["group-header", this.hidden && "group-header--hidden"]}
-                onClick={this.handleClick}
+            <Tooltip
+                content={tooltipContent}
+                disabled={!this.tooltip || this.hidden}
+                showAfter={1000}
+                placement="top-start"
+                offset={4}
             >
-                <span class="group-header__name">{this.groupName}</span>
-                {this.rightButtonIcon && (
-                    <IconButton
-                        icon={this.rightButtonIcon}
-                        tooltip={this.rightButtonTooltip}
-                        iconSize={[16, 16]}
-                        size={[24, 24]}
-                        shape={ButtonShape.Rounded}
-                        onClick={this.handleButtonIconClick}
-                    />
-                )}
-            </div>
+                <div
+                    id={this.headerDomId || `group-header-${this.groupId}`}
+                    class={["group-header", this.hidden && "group-header--hidden"]}
+                    onClick={this.handleClick}
+                >
+                    <span class="group-header__name">{this.groupName}</span>
+                    {buttonIcon && (
+                        <IconButton
+                            icon={buttonIcon}
+                            tooltip={this.collapsible ? undefined : this.rightButtonTooltip}
+                            iconSize={[12, 12]}
+                            size={[16, 16]}
+                            shape={ButtonShape.Circle}
+                            onClick={this.handleButtonIconClick}
+                            class={this.collapseBtnClass}
+                        />
+                    )}
+                </div>
+            </Tooltip>
         );
     },
 });

@@ -1,5 +1,6 @@
 #include "conversationchannel.h"
 #include "conversation/conversationmanager.h"
+#include "conversation/conversationsearch.h"
 #include "conversation/messagenode.h"
 #include "agent/research/workspacestore.h"
 #include "agent/research/article.h"
@@ -35,6 +36,7 @@ ConversationChannel::ConversationChannel(QObject *parent)
     connect(ConvMgr(), &ConversationManager::indexChanged, this, &ConversationChannel::indexChanged);
     // 连接 ConversationManager 的 changeToConversation 信号
     connect(ConvMgr(), &ConversationManager::changeToConversation, this, &ConversationChannel::changeToConversation);
+    connect(ConvMgr(), &ConversationManager::indexSearchChanged, this, &ConversationChannel::indexSearchChanged);
 }
 
 ConversationChannel::~ConversationChannel()
@@ -66,17 +68,27 @@ void ConversationChannel::clearAllConversations()
     ConvMgr()->clearAllConversations();
 }
 
-void ConversationChannel::setConversationRender(const QString &conversationId, const QString &msgId, const QString &renderMsgJson)
+void ConversationChannel::searchConversations(const QString &keyword)
+{
+    ConvSearch()->searchByKeyword(keyword);
+}
+
+void ConversationChannel::setConversationRender(const QString &conversationId, const QString &msgId, const QString &renderMsgJson, const QString &extensionJson)
 {
     ConversationRecordPtr record = ConvMgr()->getConversation(conversationId);
     if (record) {
+        // 解析 extension 并写入 record
+        QJsonParseError err;
+        QJsonDocument extDoc = QJsonDocument::fromJson(extensionJson.toUtf8(), &err);
+        if (err.error == QJsonParseError::NoError && extDoc.isObject()) {
+            record->setExtension(extDoc.object().toVariantHash());
+        }
         MessageNodePtr msgNode = record->messageAt(msgId);
         if (!msgNode) {
             qWarning(logAIGUI) << "message not found:" << msgId;
             return;
         }
 
-        QJsonParseError err;
         QJsonDocument doc = QJsonDocument::fromJson(renderMsgJson.toUtf8(), &err);
         if (err.error != QJsonParseError::NoError) {
             qWarning(logAIGUI) << "setConversationRender error: " << err.errorString();
@@ -99,7 +111,15 @@ void ConversationChannel::setConversationRender(const QString &conversationId, c
 
             // For structured render items, save the entire data object
             // For simple types, save only the content string
-            if (type == CntReasoning || type == CntAgentStep || type == CntTool || type == CntOutline || type == CntDocCard || type == CntCommandCard || type == CntError) {
+            if (type == CntReasoning
+                    || type == CntWebSearch
+                    || type == CntAgentStep
+                    || type == CntTool
+                    || type == CntOutline
+                    || type == CntDocCard
+                    || type == CntCommandCard
+                    || type == CntError
+                    || type == CntIComps) {
                 QVariantHash data = dataObj.toVariantHash();
 
                 // Resolve version=-1 to the actual committed version at storage time,
@@ -297,6 +317,26 @@ QString ConversationChannel::getConversationIndexes()
     }
 
     return QString::fromUtf8(QJsonDocument(root).toJson(QJsonDocument::Compact));
+}
+
+QString ConversationChannel::getHistoryConversationIndexes()
+{
+    auto vector = ConvMgr()->historyConversationIndexes();
+
+    QJsonArray root;
+    for (const ConversationIndexItem &indexItem : vector) {
+        root.append(indexItem.toJson());
+    }
+
+    return QString::fromUtf8(QJsonDocument(root).toJson(QJsonDocument::Compact));
+}
+
+// 获取指定会话的搜索索引内容，返回JSON数组格式的切片文本列表
+QString ConversationChannel::getConversationSearchIndexes(const QString &id)
+{
+    QStringList contents = ConvSearch()->getSearchIndex(id);
+    QJsonArray arr = QJsonArray::fromStringList(contents);
+    return QString::fromUtf8(QJsonDocument(arr).toJson(QJsonDocument::Compact));
 }
 
 bool ConversationChannel::switchMessageNext(const QString &conversationId, const QString &target, const QString &next)

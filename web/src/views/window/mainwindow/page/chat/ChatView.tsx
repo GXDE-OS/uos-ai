@@ -9,6 +9,7 @@ import {
     useConversationManagerStore,
     useWindowChannelStore,
     useReportChannelStore,
+    useNotifyStore,
 } from "@/stores";
 import FilePrivacyDialog from "@/components/FilePrivacyDialog";
 import ScrollBar from "@/components/ScrollBar";
@@ -75,12 +76,16 @@ export default defineComponent({
         const conversationManagerStore = useConversationManagerStore();
         const windowChannelStore = useWindowChannelStore();
         const reportChannelStore = useReportChannelStore();
+        const notifyStore = useNotifyStore();
+        const uploadFileParseErrorSendMessage = backend.translate("Please delete the abnormal file and send it again");
 
         // ScrollBar 组件引用
         const scrollBarRef = ref<InstanceType<typeof ScrollBar> | null>(null);
         // 消息区域容器引用
         const messagesContainerRef = ref<HTMLElement | null>(null);
-        // ResizeObserver 实例
+        // MessageNavigator 组件引用
+        const messageNavigatorRef = ref<InstanceType<typeof MessageNavigator> | null>(null);
+        // ResizeObserver 实例（消息容器）
         let resizeObserver: ResizeObserver | null = null;
         // 自动滚动定时器
         let autoScrollTimer: number | null = null;
@@ -191,20 +196,23 @@ export default defineComponent({
 
         // 与 inputAreaAction 保持一致：只有助手配置允许时才启用联网搜索
         const canUseWebSearch = computed(() => {
-            const configEnabled = assistantViewConfig.value.input?.showSearch ?? 0;
-            if (configEnabled < 1) return false;
-            if (configEnabled === 1) return true;
-            return currentModel.value?.provider === "uos_ai";
+            const configEnabled = assistantViewConfig.value.input?.showSearch ?? false;
+            return configEnabled;
         });
 
         const inputAreaActionMenuItems = computed(() => {
-            const menuItems = getInputAreaActionMenuItems(inputAreaSceneConfig.value.actions);
-            return menuItems.map((item) =>
-                item.type === "item" ? { ...item, disabled: shouldDisableInput.value } : item,
-            );
+            return getInputAreaActionMenuItems(inputAreaSceneConfig.value.actions, {
+                isInputDisabled: shouldDisableInput.value,
+                isScreenshotVisible: uploadFilesStore.getIsScreenshotVisible,
+            });
         });
 
         const hasUploadedFiles = computed(() => uploadFilesStore.getFileCount > 0);
+        const hasUploadFileParseError = computed(() => uploadFilesStore.hasUploadFileParseError);
+        const hasUploadFileParsing = computed(() => uploadFilesStore.hasUploadFileParsing);
+        const sendBlockedReason = computed(() =>
+            hasUploadFileParseError.value ? uploadFileParseErrorSendMessage : "",
+        );
 
         const inputPlaceholder = computed(() => {
             if (hasUploadedFiles.value && !inputValue.value.trim()) {
@@ -222,8 +230,23 @@ export default defineComponent({
         });
 
         const canSendMessage = computed(() => {
+            if (hasUploadFileParsing.value) {
+                return false;
+            }
+
+            if (hasUploadFileParseError.value) {
+                return false;
+            }
+
             return !!inputValue.value.trim() || hasUploadedFiles.value;
         });
+
+        const showUploadFileParseErrorToast = () => {
+            notifyStore.showToast({
+                type: "warning",
+                message: uploadFileParseErrorSendMessage,
+            });
+        };
 
         const buildSceneParams = () => {
             return (
@@ -383,6 +406,11 @@ export default defineComponent({
 
         // 处理发送消息
         const handleSendMessage = async (bypassPrivacyCheck = false) => {
+            if (hasUploadFileParseError.value) {
+                showUploadFileParseErrorToast();
+                return;
+            }
+
             // 判断是否应该禁用发送（与发送按钮的 disabled 条件同步）
             if (shouldDisableInput.value || !canSendMessage.value) {
                 return;
@@ -426,6 +454,9 @@ export default defineComponent({
             currentMessageId.value = createId(); // 生成一个当前唯一的消息ID
             if (1) {
                 const sessionId = createId();
+                // 获取当前会话ID
+                const currentConversationId = conversationManagerStore.getCurrentConversationId;
+                const currentConversationRecord = conversationManagerStore.getCurrentConversationRecord;
 
                 // 从 toggleStateStore 获取深度思考和联网搜索状态
                 let params = {} as Params;
@@ -438,10 +469,13 @@ export default defineComponent({
                 Object.assign(params, buildSceneParams());
                 Object.assign(params, buildUploadParams(uploadedFiles));
 
+                // 从 currentConversationRecord 获取 alwaysApprove
+                const alwaysApprove = currentConversationRecord?.getAlwaysApprove() || false;
+                alwaysApprove && (params.always_approve = alwaysApprove);
+
+                // 构建 messageExtension
                 const messageExtension = buildMessageExtension(uploadedFiles);
 
-                // 获取当前会话ID
-                const currentConversationId = conversationManagerStore.getCurrentConversationId;
                 // 创建 ChatMessage 发送给后端（保持不变）
                 let message: ChatMessage = {
                     session_id: sessionId,
@@ -557,7 +591,7 @@ export default defineComponent({
         // 标题栏滚动状态
         const { titleBarScrolled } = useTitleBarState();
 
-        // 处理消息區域滚动
+        // 处理消息区域滚动
         const handleMessagesScroll = (scrollTop: number) => {
             if (!scrollBarRef.value) return;
             const isAtBottom = scrollBarRef.value.isAtBottom();
@@ -567,17 +601,28 @@ export default defineComponent({
             wasAtBottomBeforeResize = isAtBottom;
             wasScrollableBeforeResize = canScroll;
 
-            // 更新回到底部按钮状态：只有内容可滚动且当前没有滚动到底部时才显示
-            showScrollToBottomButton.value = canScroll && !isAtBottom;
-            // 更新底部渐隐效果：内容可滚动且未到底部时显示
-            showBottomFade.value = canScroll && !isAtBottom;
+            // 流式输出期间（autoScrollTimer 运行中），不更新按钮状态。
+            // 原因：DOM 内容增长（如出现 reasoning 气泡）会触发浏览器 scroll 事件，
+            // 但 pendingProgrammaticScroll 已重置，导致 isProgrammatic = false，
+            // 使得按钮在 autoScrollTimer 下一次触发前短暂闪现。
+            // 只有用户手动滚动（autoScrollTimer 已停止）时才更新按钮状态。
+            if (autoScrollTimer === null) {
+                // 更新回到底部按钮状态：只有内容可滚动且当前没有滚动到底部时才显示
+                showScrollToBottomButton.value = canScroll && !isAtBottom;
+                // 更新底部渐隐效果：内容可滚动且未到底部时显示
+                showBottomFade.value = canScroll && !isAtBottom;
+            }
 
             // 更新标题栏下边线状态
             titleBarScrolled.value = scrollTop > 0;
 
             if (autoScrollTimer !== null) {
+                const isProgrammatic = scrollBarRef.value.isProgrammaticScroll();
                 // 正在自动滚动时，检测用户是否手动向上滚动
-                if (!isAtBottom) {
+                // 使用 isProgrammaticScroll 区分程序滚动和用户手动滚动：
+                // 程序滚动（scrollToBottom 等）也会导致 isAtBottom 暂时为 false，
+                // 此时不应取消定时器，否则内容增长时定时器会被误杀。
+                if (!isAtBottom && !isProgrammatic) {
                     // 用户手动向上滚动，停止自动滚动
                     window.clearInterval(autoScrollTimer);
                     autoScrollTimer = null;
@@ -632,6 +677,12 @@ export default defineComponent({
             if (canUseWebSearch.value) {
                 params.online = toggleStateStore.webSearchEnabled; // 联网搜索
             }
+            // 从 currentConversationRecord 获取 alwaysApprove
+            const currentConversationRecord = conversationManagerStore.getCurrentConversationRecord;
+            const alwaysApprove = currentConversationRecord?.getAlwaysApprove() || false;
+            alwaysApprove && (params.always_approve = alwaysApprove);
+
+            // 构建 messageExtension
             Object.assign(params, buildSceneParams());
 
             // 找到重试的问题
@@ -780,6 +831,7 @@ export default defineComponent({
                 if (!newAssistant) {
                     // 切换回来的会话助手不存在，设置输入框禁用
                     shouldDisableInputByAssistant.value = true;
+                    currentAssistant.value = null;
                     return;
                 }
                 // 检查环境是否存在
@@ -826,6 +878,8 @@ export default defineComponent({
             (isRunning) => {
                 if (isRunning) {
                     // 开始自动滚动到底部
+                    showScrollToBottomButton.value = false;
+                    showBottomFade.value = false;
                     const scrollToBottom = () => {
                         scrollBarRef.value?.scrollToBottom();
                     };
@@ -848,7 +902,36 @@ export default defineComponent({
             { immediate: true },
         );
 
-        // 切换会话时，监听 conversation 变化，滚动到底部
+        // 监听会话 ID 变化，处理输入框初始化和焦点
+        watch(
+            () => conversation.value?.root?.id,
+            (newConversationId, oldConversationId) => {
+                if (newConversationId === oldConversationId) {
+                    return;
+                }
+
+                if (!newConversationId) {
+                    return;
+                }
+
+                // conversation 变化且为新会话时，填充默认提示词或清空输入框
+                // 从会话记录本身获取助手 ID，而非依赖 currentAssistant（由 watcher
+                // 异步更新），避免切换助手时 setCurrentAssistant 晚于 createConversation
+                // 导致使用了旧助手的 defaultPrompt 配置。
+                const conv = conversation.value;
+                const defaultPrompt = getAssistantViewConfig(conv?.root?.assistant).defaultPrompt;
+                const isNewConversation = Object.keys(conv?.messages || {}).length === 0;
+                if (defaultPrompt && isNewConversation) {
+                    fillInput(defaultPrompt, "replace");
+                } else {
+                    clearInput();
+                }
+                focusInput();
+            },
+            { immediate: true },
+        );
+
+        // 监听 conversation 变化，处理滚动和状态重置
         watch(
             conversation,
             (newConversation) => {
@@ -867,16 +950,6 @@ export default defineComponent({
                     lastConversationId.value = newConversation?.root?.id || "";
                     isOperationCanceled.value = false; // 切换会话时，重置操作取消状态
                 }
-
-                // conversation 变化且为新会话时，填充默认提示词或清空输入框
-                const defaultPrompt = assistantViewConfig.value.defaultPrompt;
-                const isNewConversation = Object.keys(newConversation?.messages || {}).length === 0;
-                if (defaultPrompt && isNewConversation) {
-                    fillInput(defaultPrompt, "replace");
-                } else {
-                    clearInput();
-                }
-                focusInput();
             },
             { immediate: true, deep: true },
         );
@@ -954,7 +1027,7 @@ export default defineComponent({
             }
             // 卸载时重置标题栏滚动状态
             titleBarScrolled.value = false;
-            // 清理 ResizeObserver
+            // 清理 ResizeObserver（消息容器）
             if (resizeObserver) {
                 resizeObserver.disconnect();
                 resizeObserver = null;
@@ -973,6 +1046,7 @@ export default defineComponent({
             inputAreaActionMenuItems,
             inputPlaceholder,
             canSendMessage,
+            sendBlockedReason,
             handleInputUpdate,
             handleSendMessage,
             handleStopMessage,
@@ -1004,6 +1078,8 @@ export default defineComponent({
             scrollBarRef,
             // 消息区域容器引用
             messagesContainerRef,
+            // MessageNavigator 引用
+            messageNavigatorRef,
             // 回到底部按钮状态
             showScrollToBottomButton,
             // 底部渐隐效果状态
@@ -1024,6 +1100,7 @@ export default defineComponent({
                     >
                         <ScrollBar ref="scrollBarRef" edgeBounce momentum onScroll={this.handleMessagesScroll}>
                             <MessageNavigator
+                                ref="messageNavigatorRef"
                                 conversation={this.conversation}
                                 isStreamingLastMessage={this.isStreamingLastMessage || false}
                                 isSessionRunning={this.isSessionRunning}
@@ -1031,6 +1108,8 @@ export default defineComponent({
                                 isFromHistory={this.isFromHistory}
                                 onMessageClick={this.handleMessageClick}
                                 onRetryMessage={this.handleRetryMessage}
+                                currentAssistant={this.currentAssistant || undefined}
+                                shouldDisableRetry={this.shouldDisableInput}
                             />
                         </ScrollBar>
                         {/* 回到底部按钮 */}
@@ -1079,6 +1158,7 @@ export default defineComponent({
                             sendButtonText={this.shouldShowStopButton ? "停止" : "发送"}
                             isSending={this.shouldShowStopButton}
                             canSend={this.canSendMessage}
+                            sendBlockedReason={this.sendBlockedReason}
                             disabled={this.shouldDisableInput}
                             placeholder={this.inputPlaceholder}
                             actionMenuItems={this.inputAreaActionMenuItems}

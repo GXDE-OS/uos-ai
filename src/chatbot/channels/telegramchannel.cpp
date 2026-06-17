@@ -427,5 +427,5 @@ void TelegramChannel::applyCurrentProxy()
     if (m_apiBase.isEmpty())
         return;
 
-    uos_ai::applyProxyToNetworkAccessManager(m_http, QUrl(m_apiBase), logTelegram(), "Telegram");
+    ProxySettingsWrapper::applyProxyToNetworkAccessManager(m_http, QUrl(m_apiBase), logTelegram(), "Telegram");
 }

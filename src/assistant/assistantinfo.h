@@ -5,6 +5,7 @@
 #include "global_define.h"
 
 #include <QString>
+#include <QStringList>
 #include <QJsonObject>
 #include <QJsonArray>
 #include <QVariantHash>
@@ -26,6 +27,9 @@ struct AssistantInfo {
     // Example: { "line": "uos-ai", "outline": "uos-ai-outline" }
     QVariantHash icons;
     
+    // Stream gradient colors: 3 hex color strings
+    QStringList gradientColors;
+
     // Optional: for storing extra metadata if needed
     QVariantHash properties;
 
@@ -48,6 +52,13 @@ struct AssistantInfo {
         
         obj[STR_KEY_PATH] = path;
         obj[STR_KEY_PLACE_HOLDER] = placeHolder;
+
+        QJsonArray gradientArr;
+        for (const auto &color : gradientColors) {
+            gradientArr.append(color);
+        }
+        obj[STR_KEY_GRADIENT_COLORS] = gradientArr;
+
         return obj;
     }
 

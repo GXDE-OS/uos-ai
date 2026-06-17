@@ -6,6 +6,8 @@ import { DependencyPackage } from "@/types/conversation";
 import { useBackendStore } from "./backend";
 import { useMcpServicesStore } from "./mcpservices";
 import { useNotifyStore } from "./notify";
+import { useMainWindowStore } from "./mainwindow";
+import { MAIN_WINDOW_WORKSPACE_PAGES } from "@/types/mainwindow";
 import {
     DEFAULT_ASSISTANT_VISIBLE_COUNT,
     MAX_ASSISTANT_VISIBLE_COUNT,
@@ -13,6 +15,7 @@ import {
     normalizeAssistantVisibleCount,
     sortSidebarItemsByOrder,
 } from "@/utils/mainwindow/sidebarAssistantOrder";
+import { useConversationManagerStore } from "./conversationmanager";
 
 type AssistantOrderNormalizationResult = {
     order: string[];
@@ -104,11 +107,7 @@ const getNewSidebarAssistantIds = (previousAssistants: Assistant[], nextAssistan
     for (const assistant of nextAssistants) {
         const assistantId = assistant.id;
 
-        if (
-            assistantId === AssistantID.UOS_AI ||
-            previousAssistantIds.has(assistantId) ||
-            seen.has(assistantId)
-        ) {
+        if (assistantId === AssistantID.UOS_AI || previousAssistantIds.has(assistantId) || seen.has(assistantId)) {
             continue;
         }
 
@@ -225,6 +224,8 @@ export const useAssistantInfosStore = defineStore("assistantInfos", {
         isSignalInitialized: false,
         isHandlingAssistantChanged: false,
         pendingAssistantRefresh: false,
+        environmentCheckVersion: 0,
+        environmentToastId: null as string | null,
     }),
 
     getters: {
@@ -275,7 +276,7 @@ export const useAssistantInfosStore = defineStore("assistantInfos", {
                 do {
                     this.pendingAssistantRefresh = false;
                     console.info("Received assistantChanged signal, reloading assistant list");
-                    await this.loadAssistantList(useBackendStore(), { shouldExposeNewAssistants: true });
+                    await this.loadAssistantList(useBackendStore(), { shouldExposeNewAssistants: true }, true);
                 } while (this.pendingAssistantRefresh);
             } finally {
                 this.isHandlingAssistantChanged = false;
@@ -296,12 +297,15 @@ export const useAssistantInfosStore = defineStore("assistantInfos", {
         setCurrentAssistant(assistant: Assistant | null) {
             if (!assistant) {
                 this.currentAssistant = null;
+                this.invalidateEnvironmentCheck();
                 return;
             }
 
             this.currentAssistant = this.getAssistantById(assistant.id) || assistant;
 
-            this.checkEnvironment();
+            void this.checkEnvironment().catch((error) => {
+                console.error("Failed to check assistant environment:", error);
+            });
         },
 
         // 根据id获取助手
@@ -311,7 +315,11 @@ export const useAssistantInfosStore = defineStore("assistantInfos", {
         },
 
         // 加载助手列表
-        async loadAssistantList(backend: any = useBackendStore(), options: AssistantListLoadOptions = {}) {
+        async loadAssistantList(
+            backend: any = useBackendStore(),
+            options: AssistantListLoadOptions = {},
+            isRefresh = false,
+        ) {
             try {
                 this.setLoading(true);
                 const previousAssistants = [...this.assistantList];
@@ -352,13 +360,25 @@ export const useAssistantInfosStore = defineStore("assistantInfos", {
                 this.assistantVisibleCount = nextVisibleCount;
                 this.setAssistantList(sortAssistantsByOrder(assistants, nextOrder));
 
+                // 判断当前助手是否存在
+                const currentAssistantExists = this.assistantList.some(
+                    (assistant) => assistant.id === this.currentAssistant?.id,
+                );
+
+                // 判断当前是否为新会话
+                const isNewConversation =
+                    Object.keys(useConversationManagerStore().getCurrentMessagesRender?.messages || {}).length === 0;
+
                 const currentAssistantId = this.currentAssistant?.id;
-                // 优先保留当前助手；如果当前助手已失效，则回退到 UOS_AI，再退回列表第一个。
+                // 优先保留当前助手；如果当前助手已失效，则设置当前助手为null，再退回列表第一个。
+                // 如果是刷新操作，且当前助手已失效，则设置当前助手为null，再退回列表第一个。
                 const nextCurrentAssistant =
-                    (currentAssistantId ? this.getAssistantById(currentAssistantId) : undefined) ||
-                    this.getAssistantById(AssistantID.UOS_AI) ||
-                    this.assistantList[0] ||
-                    null;
+                    !currentAssistantExists && isRefresh && !isNewConversation
+                        ? null
+                        : (currentAssistantId ? this.getAssistantById(currentAssistantId) : undefined) ||
+                          this.getAssistantById(AssistantID.UOS_AI) ||
+                          this.assistantList[0] ||
+                          null;
 
                 this.setCurrentAssistant(nextCurrentAssistant);
                 console.info("Loaded assistant list:", this.assistantList);
@@ -471,10 +491,15 @@ export const useAssistantInfosStore = defineStore("assistantInfos", {
 
         // 检查环境是否支持运行
         async checkEnvironment() {
-            // 先关闭之前的 toast 弹窗
-            useNotifyStore().closeAllToasts();
+            const assistant = this.currentAssistant;
+            if (!assistant) {
+                this.closeEnvironmentToast();
+                return;
+            }
 
-            const assistant = this.currentAssistant as Assistant;
+            const checkVersion = ++this.environmentCheckVersion;
+            this.closeEnvironmentToast();
+
             let isShowToast = false;
             let message = "";
             let app = "";
@@ -489,6 +514,8 @@ export const useAssistantInfosStore = defineStore("assistantInfos", {
                         "To use AI Knowledge Base, install Embedding Plugins from App Store first.",
                     );
                     app = DependencyPackage.RAG;
+                } else {
+                    assistant.envExists = true;
                 }
             }
 
@@ -508,8 +535,16 @@ export const useAssistantInfosStore = defineStore("assistantInfos", {
                 }
             }
 
+            if (
+                checkVersion !== this.environmentCheckVersion ||
+                this.currentAssistant?.id !== assistant.id ||
+                useMainWindowStore().workspacePage !== MAIN_WINDOW_WORKSPACE_PAGES.CHAT
+            ) {
+                return;
+            }
+
             if (!isShowToast) {
-                useNotifyStore().closeAllToasts();
+                this.closeEnvironmentToast();
                 return;
             }
 
@@ -520,10 +555,34 @@ export const useAssistantInfosStore = defineStore("assistantInfos", {
                 actions: [{ key: "installNow", text: backend.translate("Install Now") }],
                 showClose: true,
             });
+            this.environmentToastId = id;
+
             const result = await promise;
-            if (result.key === "installNow") {
-                backend.requestServiceConfig("installApp", app);
+            const isActiveEnvironmentToast = this.environmentToastId === id;
+            if (isActiveEnvironmentToast) {
+                this.environmentToastId = null;
             }
+            if (isActiveEnvironmentToast && result.key === "installNow") {
+                void backend.requestServiceConfig("installApp", app).catch((error: unknown) => {
+                    console.error("Failed to install assistant dependency:", error);
+                });
+            }
+        },
+
+        // 当前环境检查结果只应在聊天页提示；离开聊天页或助手失效时关闭提示并让旧检查失效。
+        invalidateEnvironmentCheck() {
+            this.environmentCheckVersion += 1;
+            this.closeEnvironmentToast();
+        },
+
+        closeEnvironmentToast() {
+            if (!this.environmentToastId) {
+                return;
+            }
+
+            const toastId = this.environmentToastId;
+            this.environmentToastId = null;
+            useNotifyStore().closeToast(toastId);
         },
 
         // 依赖环境变化信号connect

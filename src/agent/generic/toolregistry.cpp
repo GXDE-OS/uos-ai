@@ -307,7 +307,7 @@ void ToolRegistry::registerSystemTools(QList<ModelTool> &tools)
 
         ModelToolProperty prop;
         prop.name = "size";
-        prop.type = "integer";
+        prop.type = "string";
         prop.description = "字号大小，支持11,12,13,14,15,16,18,20";
         prop.enums.append("11");
         prop.enums.append("12");

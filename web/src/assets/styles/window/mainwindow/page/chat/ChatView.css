@@ -71,7 +71,7 @@ html.dark {
     height: 50px;
     background: linear-gradient(to bottom, transparent, var(--chat-view-fade-bg));
     pointer-events: none;
-    z-index: 5;
+    z-index: 15;
     transition: opacity 0.2s ease;
 }
 
@@ -86,6 +86,7 @@ html.dark {
     max-width: 1000px;
     width: 100%;
     pointer-events: none;
+    z-index: 15;
 }
 
 /* 回到底部按钮 */
@@ -103,13 +104,18 @@ html.dark {
     cursor: pointer;
     box-shadow: var(--chat-view-scroll-button-shadow);
     transition: all 0.2s ease;
-    z-index: 10;
+    z-index: 15;
     pointer-events: auto;
 }
 
 .chat-view__scroll-to-bottom-button--advanced-css {
     background-color: var(--chat-view-scroll-button--advanced-css-bg);
     backdrop-filter: blur(20px);
+}
+
+/* Qt5 兼容降级：移除 inset */
+html.dark[data-legacy-css] {
+    --chat-view-scroll-button-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 .chat-view__scroll-to-bottom-button:hover {
@@ -140,7 +146,7 @@ html.dark {
     max-width: 1000px;
     width: 100%;
     position: relative;
-    z-index: 2;
+    z-index: 20;
 }
 
 /* 输入区域外层包装，用于快速输入浮层定位 */
@@ -151,7 +157,7 @@ html.dark {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 10;
+    z-index: 20;
 }
 
 /* 快速输入按钮浮层，悬浮在输入框上方正中 */

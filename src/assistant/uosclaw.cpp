@@ -51,6 +51,11 @@ QString UOSClaw::faq()
     return QJsonDocument(faqArray).toJson(QJsonDocument::Compact);
 }
 
+void UOSClaw::invokeAction(const QJsonObject &action)
+{
+    emit requestAgentAction(action);
+}
+
 QVariantHash UOSClaw::run()
 {
     QVariantHash result;
@@ -63,6 +68,7 @@ QVariantHash UOSClaw::run()
 
     QScopedPointer<DefaultAgentWithSkills> agent(new DefaultAgentWithSkills);
     connect(this, &UOSClaw::requestCancel, agent.data(), &DefaultAgent::cancel, Qt::DirectConnection); // must be DirectConnection
+    connect(this, &UOSClaw::requestAgentAction, agent.data(), &DefaultAgentWithSkills::invokeAction, Qt::DirectConnection); // must be DirectConnection
 
     agent->initialize();
 
@@ -88,7 +94,7 @@ QVariantHash UOSClaw::run()
 
     QVariantHash modelParams;
     modelParams[STR_KEY_STREAM] = true;
-    modelParams[STR_KEY_THINKING] = m_parameters.value(STR_KEY_THINKING);
+    modelParams[STR_KEY_THINKING] = m_parameters.value(STR_KEY_THINKING, false).toBool();
     agent->setModelParams(modelParams);
 
     QList<ModelMessage> historyMsg;
@@ -105,6 +111,7 @@ QVariantHash UOSClaw::run()
 
     QVariantHash agentParams;
     agentParams["mcpServers"] = m_parameters.value("mcpServers");
+    agentParams[STR_KEY_ALWAYS_APPROVE] = m_parameters.value(STR_KEY_ALWAYS_APPROVE);
 
     QVariantHash response = agent->processRequest(currentMessage, historyMsg, agentParams);
     qCDebug(logAssistant) << "DefaultAgent processRequest response:" << response;

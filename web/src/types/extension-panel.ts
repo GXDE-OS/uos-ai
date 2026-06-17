@@ -43,4 +43,8 @@ export interface ExtensionPanelState {
   extensionContent: ComponentContent | null;
   /** Panel fullscreen: chat area animates out, panel fills the entire workspace */
   panelFullscreen: boolean;
+  /** Chat area auto-hidden by window resize */
+  isChatAreaAutoHiddenByResize: boolean;
+  /** Fullscreen auto-enabled by window resize */
+  isPanelFullscreenAutoByResize: boolean;
 }

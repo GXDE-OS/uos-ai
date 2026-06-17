@@ -9,7 +9,13 @@ var initialize = async function () {
     const router = useRouter();
     const backendStore = useBackendStore();
 
-    const wsTransport = new WebSocketTransport("ws://localhost:8081");
+    // 使用当前访问的主机名，支持跨网访问
+    // 如果 hostname 为空（如 file:// 协议），则回退到 localhost
+    const wsHost = window.location.hostname || 'localhost'
+    const wsPort = 8081
+    const wsUrl = `ws://${wsHost}:${wsPort}`
+    console.log(`WebSocket connecting to: ${wsUrl}`)
+    const wsTransport = new WebSocketTransport(wsUrl);
     wsTransport.connect().then(() => {
         new Qt(wsTransport, async function (channel: any) {
             backendStore.setSessionChannel(channel.objects.sessObj);

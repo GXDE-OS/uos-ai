@@ -19,7 +19,7 @@ import type {
     SidebarGroup,
     SidebarItem,
     SidebarHandlers,
-    SidebarHeaderIconClickHandlers,
+    SidebarGroupHeaderClickHandlers,
 } from "@/views/window/mainwindow/sidebar/types";
 import { createDefaultConversation, createTemporaryConversation } from "@/utils/mainwindow/conversationActions";
 import { createId } from "@/utils/date";
@@ -66,7 +66,6 @@ export default defineComponent({
         BaseItem,
         GroupHeader,
     },
-    emits: ["rightButtonIconClick"],
     setup() {
         const assistantInfos = useAssistantInfosStore();
         const modelInfosStore = useModelInfosStore();
@@ -107,6 +106,7 @@ export default defineComponent({
             icon: mainWindowStore.isDarkMode ? "icon_new_conversation_dark" : "icon_new_conversation",
             data: null,
         }));
+        const isStickyGroupHeadersEnabled = computed(() => backendStore.isEnableAdvancedCssFeatures);
 
         // 原始数据
         const assistantList = computed(() => assistantInfos.getAssistantList);
@@ -193,6 +193,8 @@ export default defineComponent({
                 conversationIndexes: conversationIndexList.value,
                 temporaryVisibleAssistantId: effectiveTemporaryVisibleAssistantId.value,
                 selectedAssistantId: effectiveSelectedAssistantId.value,
+                shouldHighlightCurrentItem: mainWindowStore.workspacePage === MAIN_WINDOW_WORKSPACE_PAGES.CHAT,
+                groupCollapsedStates: mainWindowStore.sidebarGroupCollapsedStates,
             });
         });
 
@@ -205,7 +207,6 @@ export default defineComponent({
         // 定义点击处理器映射
         const handlers: SidebarHandlers = {
             "new-conversation": async () => {
-                notifyStore.closeAllToasts();
                 await createDefaultConversation();
             },
             "agent-store": async (item: SidebarItem) => {
@@ -222,18 +223,19 @@ export default defineComponent({
                     pendingSelectedAssistantId.value = assistant.id;
                     temporaryVisibleAssistantId.value = isAssistantInExpandedItems(assistant.id) ? assistant.id : null;
 
-                    assistantInfos.setCurrentAssistant(assistant);
                     await modelInfosStore.loadModelList(assistant.id);
-                    if (selectionVersion !== assistantSelectionVersion) {
-                        // 有更新的助手切换已经开始，当前异步结果直接丢弃。
-                        return;
-                    }
                     // 会话管理器创建对话
                     conversationManagerStore.createConversation(
                         createId(), // 初始化会话ID，使用当前时间戳
                         assistant.id,
                         modelInfosStore.getCurrentModel?.id || "", // TODO: 暂时使用当前模型
                     );
+                    assistantInfos.setCurrentAssistant(assistant);
+
+                    if (selectionVersion !== assistantSelectionVersion) {
+                        // 有更新的助手切换已经开始，当前异步结果直接丢弃。
+                        return;
+                    }
                     extensionPanelStore.closeExtensionPanel();
                     await switchToChatPageIfNeeded();
                 } catch (error) {
@@ -280,17 +282,15 @@ export default defineComponent({
             }
         };
 
-        // 右侧按钮点击映射处理器
-        const rightButtonIconClickHandlers: SidebarHeaderIconClickHandlers = {
+        const groupHeaderClickHandlers: SidebarGroupHeaderClickHandlers = {
             "conversation-list": async () => {
                 historyConversationStore.setOpenedMenuId(null);
-                await toggleHistoryConversationPage();
+                await openHistoryConversationPage();
             },
         };
 
-        // 处理右侧按钮点击（GroupHeader 的按钮）
-        const handleRightButtonClick = async (params: Record<string, any>) => {
-            const handler = rightButtonIconClickHandlers[params.groupId];
+        const handleGroupHeaderClick = async (params: Record<string, any>) => {
+            const handler = groupHeaderClickHandlers[params.groupId];
             if (handler) {
                 await handler(params);
             } else {
@@ -368,10 +368,6 @@ export default defineComponent({
                                     await historyConversationStore.deleteConversations(
                                         selectedMenuItem.value!.id as string,
                                     );
-                                    // 如果删除当前会话，则新建会话
-                                    if (selectedMenuItem.value?.id === currentConversationId.value) {
-                                        await createDefaultConversation();
-                                    }
                                 }
                             });
                     }
@@ -381,8 +377,10 @@ export default defineComponent({
             }
         };
 
-        const toggleHistoryConversationPage = async () => {
-            await mainWindowStore.toggleHistoryConversationPage();
+        const openHistoryConversationPage = async () => {
+            if (mainWindowStore.workspacePage !== MAIN_WINDOW_WORKSPACE_PAGES.HISTORY_CONVERSATION) {
+                await mainWindowStore.openHistoryConversationPage();
+            }
         };
 
         const handleSidebarScroll = (nextScrollTop: number) => {
@@ -393,9 +391,23 @@ export default defineComponent({
             }
         };
 
+        const resetStickyState = () => {
+            stickyGroups.value = [];
+            stickyStackHeight.value = 0;
+        };
+
         const handleStickyChange = (payload: { groups: SidebarGroup[]; stackHeight: number }) => {
+            if (!isStickyGroupHeadersEnabled.value) {
+                resetStickyState();
+                return;
+            }
+
             stickyGroups.value = payload.groups;
             stickyStackHeight.value = payload.stackHeight;
+        };
+
+        const handleGroupCollapse = (payload: { groupId: string; collapsed: boolean }) => {
+            mainWindowStore.setSidebarGroupCollapsed(payload.groupId, payload.collapsed);
         };
 
         const handleMenuVisibleChange = (visible: boolean) => {
@@ -412,7 +424,6 @@ export default defineComponent({
 
         const handleCreateTemporaryConversation = async (event: MouseEvent) => {
             event.stopPropagation();
-            notifyStore.closeAllToasts();
             reportChannelStore.writeReportEvent([{ type: ReportEventType.PrivateChatClickedPoint }]);
             await createTemporaryConversation();
         };
@@ -420,7 +431,9 @@ export default defineComponent({
         const listShellStyle = computed(
             () =>
                 ({
-                    "--window-sidebar-sticky-stack-height": `${stickyStackHeight.value}px`,
+                    "--window-sidebar-sticky-stack-height": isStickyGroupHeadersEnabled.value
+                        ? `${stickyStackHeight.value + 16}px`
+                        : "0px",
                 }) as Record<string, string>,
         );
 
@@ -518,15 +531,22 @@ export default defineComponent({
             resetSidebarFileDragState();
         });
 
+        watch(isStickyGroupHeadersEnabled, (enabled) => {
+            if (!enabled) {
+                resetStickyState();
+            }
+        });
+
         return {
             groups,
             handleItemClick,
             handleNewItemClick,
             handleReorder,
-            handleRightButtonClick,
+            handleGroupHeaderClick,
             handleItemRightButtonClick,
             handleSidebarScroll,
             handleStickyChange,
+            handleGroupCollapse,
             listShellStyle,
             newItem,
             handleCreateTemporaryConversation,
@@ -538,7 +558,8 @@ export default defineComponent({
             scrollTop,
             stickyGroups,
             stickyStackHeight,
-            isSidebarCollapsed: computed(() => mainWindowStore.isCollapsed),
+            isStickyGroupHeadersEnabled,
+            isSidebarCollapsed: computed(() => mainWindowStore.isSidebarCollapsed),
             // 菜单相关
             isMenuVisible,
             menuTriggerRef,
@@ -574,36 +595,53 @@ export default defineComponent({
                             onClick={this.handleCreateTemporaryConversation}
                         />
                     </div>
-                    <div class="window-sidebar__list-shell" style={this.listShellStyle}>
-                        <div class="window-sidebar__sticky-stack">
-                            {this.stickyGroups.map((group) => (
-                                <GroupHeader
-                                    key={`sticky-${group.id}`}
-                                    groupName={group.name}
-                                    groupId={group.id}
-                                    headerDomId={`stacked-group-header-${group.id}`}
-                                    {...(group.rightButtonIcon && { rightButtonIcon: group.rightButtonIcon })}
-                                    {...(group.rightButtonTooltip && { rightButtonTooltip: group.rightButtonTooltip })}
-                                    onRightButtonIconClick={this.handleRightButtonClick}
-                                />
-                            ))}
-                        </div>
+                    <div
+                        class={[
+                            "window-sidebar__list-shell",
+                            this.isStickyGroupHeadersEnabled && "window-sidebar__list-shell--sticky-enabled",
+                        ]}
+                        style={this.listShellStyle}
+                    >
+                        {this.isStickyGroupHeadersEnabled && (
+                            <div class="window-sidebar__sticky-stack">
+                                {this.stickyGroups.map((group) => (
+                                    <GroupHeader
+                                        key={`sticky-${group.id}`}
+                                        groupName={group.name}
+                                        groupId={group.id}
+                                        headerDomId={`stacked-group-header-${group.id}`}
+                                        tooltip={group.tooltip}
+                                        collapsible={group.collapsible}
+                                        collapsed={group.collapsed}
+                                        onClick={this.handleGroupHeaderClick}
+                                        onCollapse={() =>
+                                            this.handleGroupCollapse({
+                                                groupId: group.id,
+                                                collapsed: !group.collapsed,
+                                            })
+                                        }
+                                    />
+                                ))}
+                            </div>
+                        )}
                         <ScrollBar
                             ref="sidebarScrollBarRef"
                             class="window-sidebar__scroll"
                             edgeBounce
                             momentum
-                            maxScrollOffset={this.stickyStackHeight}
+                            maxScrollOffset={this.isStickyGroupHeadersEnabled ? this.stickyStackHeight : 0}
                             onScroll={this.handleSidebarScroll}
                         >
                             <ItemList
                                 groups={this.groups}
                                 scrollTop={this.scrollTop}
+                                stickyGroupHeadersEnabled={this.isStickyGroupHeadersEnabled}
                                 onItem-click={this.handleItemClick}
                                 onReorder={this.handleReorder}
-                                onRightButtonIconClick={this.handleRightButtonClick}
+                                onGroupHeaderClick={this.handleGroupHeaderClick}
                                 onStickyChange={this.handleStickyChange}
                                 onRightButtonClick={this.handleItemRightButtonClick}
+                                onCollapse={this.handleGroupCollapse}
                             />
                         </ScrollBar>
                     </div>

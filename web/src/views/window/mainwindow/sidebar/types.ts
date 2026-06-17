@@ -6,10 +6,10 @@ import type { VNode } from "vue";
 export interface SidebarItem {
     /** 唯一标识 */
     id: string;
-    /** SVG 图标名称（不包含 #icon- 前缀）或渲染函数 */
-    icon?: string | (() => VNode);
-    /** 名称：可以是字符串或渲染函数 */
-    name: string | (() => VNode);
+    /** SVG 图标名称（不包含 #icon- 前缀）或 file:// 图标路径 */
+    icon?: string;
+    /** 名称 */
+    name: string;
     /** 右侧内容：可以是字符串或渲染函数（放置按钮、状态标志、示意图标等） */
     right?: string | (() => VNode);
     /** 是否选中 */
@@ -36,6 +36,8 @@ export interface SidebarGroup {
     id: string;
     /** 分组名称 */
     name: string;
+    /** 分组头部提示 */
+    tooltip?: string;
     /** 是否显示分组头部，默认显示 */
     showHeader?: boolean;
     /** 分组内的项列表 */
@@ -52,6 +54,10 @@ export interface SidebarGroup {
     rightButtonIcon?: string;
     /** 右侧按钮提示 */
     rightButtonTooltip?: string;
+    /** 是否可折叠，默认 false */
+    collapsible?: boolean;
+    /** 是否已折叠 */
+    collapsed?: boolean;
 }
 
 /**
@@ -62,8 +68,8 @@ export type SidebarHandlers = Partial<{
 }>;
 
 /**
- * 侧边栏header的icon点击处理器映射
+ * 侧边栏header的点击处理器映射
  */
-export type SidebarHeaderIconClickHandlers = Partial<{
+export type SidebarGroupHeaderClickHandlers = Partial<{
     [type: string]: (params: Record<string, any>) => void | Promise<void>;
 }>;

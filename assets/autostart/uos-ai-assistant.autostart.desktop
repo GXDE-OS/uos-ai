@@ -1,16 +1,18 @@
 [Desktop Entry]
+Categories=Utility;AI;
 Comment=uos-ai
 Exec=/usr/bin/uos-ai-assistant
 GenericName=UOS AI
-Icon=UosAiAssistantLogo
+Icon=UosAiAssistant
 Name=UOS AI
 StartupNotify=false
 Type=Application
 NoDisplay=true
-X-Deepin-ManualID=uos-ai-assistant
-X-Deepin-TurboType=dtkwidget
-X-Deepin-Vendor=user-custom
-X-Deepin-CreatedBy=com.deepin.dde.daemon.Launcher
-X-Deepin-AppID=uos-ai
 X-GNOME-Autostart-Delay=3
 X-GNOME-Autostart-Notify=false
+GenericName[zh_CN]=小U同学
+GenericName[zh_TW]=小U同學
+GenericName[zh_HK]=小U同學
+Name[zh_CN]=小U同学
+Name[zh_TW]=小U同學
+Name[zh_HK]=小U同學

@@ -2,6 +2,7 @@
 #include "toolregistry.h"
 #include "toolhandler.h"
 #include "conversation/messagenode.h"
+#include "util.h"
 
 #include <QDir>
 #include <QDate>
@@ -17,10 +18,9 @@ GenericAgent::GenericAgent(QObject *parent)
 {
     m_name = "GenericAgent";
     m_description = "A Generic Agent for UOS AI";
-    m_systemPrompt = R"(You are UOS AI, an intelligent AI assistant integrated into the Deepin Desktop Environment (DDE) on UOS (an operating system based on Debian Linux).
-    m_systemPrompt = R"(You are %1, an intelligent AI assistant integrated into the Deepin Desktop Environment (DDE) on UOS (an operating system based on Debian Linux).
+    m_systemPrompt = R"(You are %1, an intelligent AI assistant integrated into the Deepin Desktop Environment (DDE) on %2 (an operating system based on Debian Linux).
 You have tools at your disposal to solve user's task. Only calls tools when they are necessary. If the USER's task is general or you already know the answer, just respond without calling tools.
-Today is %2.)";
+**Today** is %3.)";
 }
 
 GenericAgent::~GenericAgent()
@@ -35,9 +35,16 @@ bool GenericAgent::initialize()
 
 QString GenericAgent::systemPrompt() const
 {
-    return m_systemPrompt
+    QString tmp = m_systemPrompt
             .arg(QCoreApplication::translate("uos_ai::AssistantManager", "UOS AI"))
-            .arg(QDateTime::currentDateTime().toString("yyyy-MM-dd ddd"));
+            .arg(Util::isCommunity() ? "Deepin" : "UOS")
+            .arg(QDateTime::currentDateTime().toString(tr("yyyy-MM-dd ddd (year-month-day week)")));
+    if (!searchedContent.isEmpty()) {
+       tmp = tmp + QString("\n\nThe following is the search result obtained from the internet, which may be used as reference information to answer user questions:\n\n%1")
+                .arg(searchedContent);
+    }
+
+    return tmp;
 }
 
 void GenericAgent::createTools()

@@ -76,9 +76,9 @@ Application::Application(int &argc, char **argv)
     setObjectName(APP_NAME_KEY);
     setOrganizationName("deepin");
     loadTranslator();
-    setApplicationDisplayName(tr("UOS AI"));
+    setApplicationDisplayName(QCoreApplication::translate("uos_ai::AssistantManager", "UOS AI"));
     setApplicationVersion(DApplication::buildVersion(APP_VERSION));
-    setProductName(tr("UOS AI"));
+    setProductName(QCoreApplication::translate("uos_ai::AssistantManager", "UOS AI"));
     setProductIcon(QIcon::fromTheme(getApplicationIconName()));
     setApplicationDescription(tr("UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions."));
     setAttribute(Qt::AA_UseHighDpiPixmaps);
@@ -243,6 +243,16 @@ void Application::showChatWindow()
     WmIns()->showWindow(WmIns()->currentMode());
 }
 
+void Application::launchChatWindowWithToken(int index, const QString &token)
+{
+    if (!token.isEmpty()) {
+        qCInfo(logMain) << "Applying activation token before launching chat window";
+        qputenv("XDG_ACTIVATION_TOKEN", token.toUtf8());
+    }
+
+    launchChatWindow(index);
+}
+
 void Application::launchChatWindow(int index)
 {
     if (!checkAgreement()) {
@@ -256,7 +266,8 @@ void Application::launchChatWindow(int index)
             qCInfo(logMain) << "Launching chat window for DigitalMode";
             WmIns()->showWindow(WmIns()->currentMode());
         }
-        WmIns()->context()->taskCh->changeToDigitalMode();
+        if (WmIns()->context() && WmIns()->context()->taskCh)
+            WmIns()->context()->taskCh->changeToDigitalMode();
     } else {
         if (WmIns()->isWindowExist() && WmIns()->isActiveWindow()) {
             WmIns()->hideWindow();

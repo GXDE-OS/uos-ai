@@ -6,8 +6,13 @@
 #include "report/aibarpoint.h"
 #include "report/eventlogutil.h"
 
+#ifdef HAVE_DDE_SHELL_XDG_ACTIVATION
+#include <dde-shell/xdgactivation.h>
+#endif
+
 #include <QCoreApplication>
 #include <QFileInfo>
+#include <QProcessEnvironment>
 #include <QSettings>
 #include <QStandardPaths>
 #include <QDebug>
@@ -21,7 +26,36 @@ DS_USE_NAMESPACE
 
 namespace uos_ai {
 
-AiBar::AiBar(QObject *parent) : DApplet(parent)
+bool AiBar::isTreelandSession() const
+{
+#ifdef COMPILE_ON_V25
+    const auto environment = QProcessEnvironment::systemEnvironment();
+    const QString sessionType = environment.value(QStringLiteral("XDG_SESSION_TYPE"));
+    const QString waylandDisplay = environment.value(QStringLiteral("WAYLAND_DISPLAY"));
+
+    return sessionType == QLatin1String("wayland")
+           || waylandDisplay.contains(QLatin1String("wayland"), Qt::CaseInsensitive);
+#else
+    return false;
+#endif
+}
+
+QString AiBar::launchChatPageByDBus(const QString &activationToken) const
+{
+    QDBusInterface notification("com.deepin.copilot",
+                                "/com/deepin/copilot",
+                                "com.deepin.copilot",
+                                QDBusConnection::sessionBus());
+
+    if (!activationToken.isEmpty()) {
+        return notification.call(QDBus::Block, "launchChatPageWithToken", 0, activationToken).errorMessage();
+    }
+
+    qCDebug(logAIBar) << "Activation token is empty, attempting to launch chat page without token.";
+    return notification.call(QDBus::Block, "launchChatPage").errorMessage();
+}
+
+AiBar::AiBar(QObject *parent) : DAppletDock(parent)
 {
     ConfigerIns();
 
@@ -30,15 +64,16 @@ AiBar::AiBar(QObject *parent) : DApplet(parent)
     updateItemList();
 }
 
-bool AiBar::visible() const
+DockItemInfo AiBar::dockItemInfo()
 {
-    return m_visible;
-}
-
-void AiBar::setVisible(bool visible)
-{
-    m_visible = visible;
-    emit visibleChanged();
+    DockItemInfo info;
+    info.name = "uos-ai";
+    info.displayName = tr("UOS AI");
+    info.itemKey = "uos-ai";
+    info.settingKey = "uos-ai";
+    info.visible = visible();
+    info.dccIcon = "dcc-uos-ai.dci";
+    return info;
 }
 
 void AiBar::onClickRecommend()
@@ -48,23 +83,37 @@ void AiBar::onClickRecommend()
 
 void AiBar::onClickIcon()
 {
-    qCDebug(logAIBar) << "Attempting to launch AI assistant";
-    QDBusConnection connection = QDBusConnection::sessionBus();
-    bool isServiceRegistered = connection.interface()->isServiceRegistered("com.deepin.copilot");
-    if (isServiceRegistered) {
-        qCDebug(logAIBar) << "Found copilot service, attempting to launch chat page";
-        QDBusInterface notification("com.deepin.copilot", "/com/deepin/copilot", "com.deepin.copilot", QDBusConnection::sessionBus());
-        QString error = notification.call(QDBus::Block, "launchChatPage").errorMessage();
-        if (error.isEmpty()) {
-            qCDebug(logAIBar) << "Successfully launched chat page via DBus";
-            return;
-        }
-        qCWarning(logAIBar) << "Failed to launch chat page via DBus:" << error;
+#ifdef HAVE_DDE_SHELL_XDG_ACTIVATION
+    if (isTreelandSession()) {
+        auto xdgActivation = new ds::XdgActivation(this);
+        connect(xdgActivation, &ds::XdgActivation::tokenReady, this, [this, xdgActivation](const QString &token) {
+            qCDebug(logAIBar) << "Attempting to launch AI assistant";
+            qCDebug(logAIBar) << "Found copilot service, attempting to launch chat page";
+
+            const QString error = launchChatPageByDBus(token);
+            if (error.isEmpty()) {
+                qCDebug(logAIBar) << "Successfully launched chat page with token via DBus";
+                xdgActivation->deleteLater();
+                return;
+            }
+
+            qCWarning(logAIBar) << "Failed to launch chat page with token via DBus:" << error;
+            xdgActivation->deleteLater();
+        });
+        xdgActivation->requestToken();
+        return;
     }
-    qCDebug(logAIBar) << "Starting uos-ai-assistant process directly";
-    QStringList arguments;
-    arguments << "--chat";
-    QProcess::startDetached("uos-ai-assistant", arguments);
+#endif
+
+    qCDebug(logAIBar) << "Attempting to launch AI assistant";
+    qCDebug(logAIBar) << "Found copilot service, attempting to launch chat page";
+    const QString error = launchChatPageByDBus();
+    if (error.isEmpty()) {
+        qCDebug(logAIBar) << "Successfully launched chat page via DBus";
+        return;
+    }
+
+    qCWarning(logAIBar) << "Failed to launch chat page via DBus:" << error;
 }
 
 MeetingAssistant::MeetAssistantStatus AiBar::getNowMeetAssistantStatus()

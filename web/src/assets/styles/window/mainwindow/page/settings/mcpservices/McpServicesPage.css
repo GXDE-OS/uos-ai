@@ -68,30 +68,6 @@ html.dark {
     line-height: var(--uosai-line-height-normal);
 }
 
-.mcp-services-page__add-button {
-    display: inline-flex;
-    align-items: center;
-    height: 30px;
-    padding: 0;
-    border: none;
-    background: transparent;
-    color: var(--system-active-color);
-    cursor: pointer;
-}
-
-.mcp-services-page__add-button:hover {
-    opacity: 0.7;
-}
-
-.mcp-services-page__add-button:active {
-    opacity: 1;
-}
-
-.mcp-services-page__add-button-text {
-    font-size: var(--uosai-font-size-base);
-    line-height: var(--uosai-line-height-relaxed);
-}
-
 .mcp-services-page__content {
     display: flex;
     flex-direction: column;

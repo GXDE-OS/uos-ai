@@ -59,13 +59,14 @@ QVariantHash FreeAccountService::validateUsage(const QString &id)
     bool claimAgain = true;
 
     const QString apiKey = acc->account.auth.value(STR_KEY_API_KEY).toString();
-    int code = UosFreeAccounts::instance().getDeterAccountLegal(apiKey, available, modelUrl, claimAgain);
+    QString msg;
+    int code = UosFreeAccounts::instance().getDeterAccountLegal(apiKey, available, modelUrl, claimAgain, &msg);
 
     if (code != QNetworkReply::NoError) {
         error[STR_KEY_ERROR] = HttpError;
         error[STR_KEY_HTTP_ERROR] = code;
         error[STR_KEY_ERROR_MESSAGE] = "⚠️ " + HttpCodeTranslation::translation(
-                    static_cast<QNetworkReply::NetworkError>(code), tr("Network error"));
+                    static_cast<QNetworkReply::NetworkError>(code), msg.isEmpty() ? tr("Network error") : msg);
         return error;
     }
 

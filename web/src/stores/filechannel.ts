@@ -23,6 +23,8 @@ export const useFileChannelStore = defineStore("fileChannel", {
                 });
                 uploadFilesStore.setFileChannelListenerRegistered(true);
             }
+
+            void uploadFilesStore.checkScreenshotVisibility();
         },
     },
 });

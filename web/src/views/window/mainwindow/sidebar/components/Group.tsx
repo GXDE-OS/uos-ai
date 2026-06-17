@@ -40,11 +40,6 @@ export default defineComponent({
             type: Object as PropType<SidebarGroup>,
             required: true,
         },
-        headerOrder: {
-            type: Number,
-            required: false,
-            default: 0,
-        },
         headerDomId: {
             type: String,
             required: false,
@@ -55,9 +50,10 @@ export default defineComponent({
             default: false,
         },
     },
-    emits: ["item-click", "reorder", "rightButtonIconClick", "rightButtonClick"],
+    emits: ["item-click", "reorder", "rightButtonIconClick", "headerClick", "rightButtonClick", "collapse"],
     setup(props, { emit }) {
         const expanded = ref(false);
+        const collapsed = ref(props.group.collapsed ?? false);
         const groupRef = ref<HTMLElement | null>(null);
 
         const dragState = ref<DragState | null>(null);
@@ -122,7 +118,8 @@ export default defineComponent({
         const shouldUseHiddenSlotKeys = computed(() => !draggedItemId.value);
 
         // 临时露出的助手固定在展示槽位中，除非它本身正在被拖拽。
-        const isFixedDuringDrag = (item: SidebarItem) => Boolean(item.reorderDisabled && item.id !== draggedItemId.value);
+        const isFixedDuringDrag = (item: SidebarItem) =>
+            Boolean(item.reorderDisabled && item.id !== draggedItemId.value);
 
         const getMovableItems = (items: SidebarItem[]) => items.filter((item) => !isFixedDuringDrag(item));
 
@@ -210,8 +207,8 @@ export default defineComponent({
         });
 
         // 临时露出的助手始终拼在常驻区末尾，隐藏区只切分真实可排序项。
-        const temporaryVisibleToken = computed(() =>
-            renderTokens.value.find((token) => token.item.reorderDisabled) ?? null,
+        const temporaryVisibleToken = computed(
+            () => renderTokens.value.find((token) => token.item.reorderDisabled) ?? null,
         );
         const movableRenderTokens = computed(() => renderTokens.value.filter((token) => !token.item.reorderDisabled));
         const movableVisibleCount = computed(() =>
@@ -266,8 +263,22 @@ export default defineComponent({
             expanded.value = !expanded.value;
         };
 
-        const clampDropIndex = (index: number) =>
-            Math.max(0, Math.min(index, movableItemsWithoutDragged.value.length));
+        const handleCollapseToggle = () => {
+            if (!props.group.collapsible) {
+                return;
+            }
+            collapsed.value = !collapsed.value;
+            emit("collapse", { groupId: props.group.id, collapsed: collapsed.value });
+        };
+
+        watch(
+            () => props.group.collapsed,
+            (newCollapsed) => {
+                collapsed.value = newCollapsed ?? false;
+            },
+        );
+
+        const clampDropIndex = (index: number) => Math.max(0, Math.min(index, movableItemsWithoutDragged.value.length));
 
         const collectRenderedSortableItemElements = () => {
             const groupElement = groupRef.value;
@@ -558,6 +569,10 @@ export default defineComponent({
             emit("rightButtonIconClick", params);
         };
 
+        const handleHeaderClick = (params: Record<string, any>) => {
+            emit("headerClick", params);
+        };
+
         const handleRightButtonClick = (params: { item: SidebarItem; event: MouseEvent }) => {
             emit("rightButtonClick", params);
         };
@@ -662,6 +677,7 @@ export default defineComponent({
 
         return {
             expanded,
+            collapsed,
             visibleTokens,
             hiddenTokens,
             showToggleExpand,
@@ -673,7 +689,9 @@ export default defineComponent({
             shouldUseHiddenSlotKeys,
             handleItemClick,
             handleToggle,
+            handleCollapseToggle,
             handleRightButtonIconClick,
+            handleHeaderClick,
             handleRightButtonClick,
             renderToken,
             renderDragPreviewToken,
@@ -702,17 +720,13 @@ export default defineComponent({
                     {children}
                 </TransitionGroup>
             );
-        const groupStyle = this.showHeader
-            ? ({
-                  "--group-sticky-order": String(this.headerOrder),
-              } as Record<string, string>)
-            : undefined;
-
         return (
             <div
                 id={`group-${this.group.id}`}
-                class={["group", this.suppressReorderTransition && "group--reorder-transition-suppressed"]}
-                style={groupStyle}
+                class={[
+                    "group",
+                    this.suppressReorderTransition && "group--reorder-transition-suppressed",
+                ]}
                 ref={this.setGroupRef}
             >
                 {this.showHeader && (
@@ -721,40 +735,50 @@ export default defineComponent({
                         groupId={this.group.id}
                         {...(this.headerDomId && { headerDomId: this.headerDomId })}
                         hidden={this.headerHidden}
+                        tooltip={this.group.tooltip}
+                        collapsible={this.group.collapsible}
+                        collapsed={this.collapsed}
                         {...(this.group.rightButtonIcon && { rightButtonIcon: this.group.rightButtonIcon })}
                         {...(this.group.rightButtonTooltip && { rightButtonTooltip: this.group.rightButtonTooltip })}
                         onRightButtonIconClick={this.handleRightButtonIconClick}
+                        onClick={this.handleHeaderClick}
+                        onCollapse={this.handleCollapseToggle}
                     />
                 )}
 
-                {this.shouldUseUnifiedDragPreview ? (
-                    renderReorderList("group__drag-preview-list", dragPreviewChildren)
-                ) : (
-                    <>
-                        {renderReorderList("group__items", visibleChildren)}
+                {!this.collapsed &&
+                    (this.shouldUseUnifiedDragPreview ? (
+                        renderReorderList("group__drag-preview-list", dragPreviewChildren)
+                    ) : (
+                        <>
+                            {renderReorderList("group__items", visibleChildren)}
 
-                        {this.showToggleExpand && (
-                            <>
-                                <ToggleExpand
-                                    expanded={this.expanded}
-                                    hiddenCount={this.hiddenTokens.length}
-                                    onToggle={this.handleToggle}
-                                />
+                            {this.showToggleExpand && (
+                                <>
+                                    <ToggleExpand
+                                        expanded={this.expanded}
+                                        hiddenCount={this.hiddenTokens.length}
+                                        onToggle={this.handleToggle}
+                                    />
 
-                                <ExpandableContainer
-                                    expanded={this.expanded}
-                                    disableTransition={this.suppressReorderTransition}
-                                >
-                                    {renderReorderList("group__hidden-items", hiddenChildrenFixed)}
-                                </ExpandableContainer>
-                            </>
-                        )}
-                    </>
-                )}
+                                    <ExpandableContainer
+                                        expanded={this.expanded}
+                                        disableTransition={this.suppressReorderTransition}
+                                    >
+                                        {renderReorderList("group__hidden-items", hiddenChildrenFixed)}
+                                    </ExpandableContainer>
+                                </>
+                            )}
+                        </>
+                    ))}
 
                 {this.draggedItem && this.dragOverlayStyle && (
                     <Teleport to="body">
-                        <div class="group__drag-overlay-item" style={this.dragOverlayStyle} ref={this.setDragOverlayRef}>
+                        <div
+                            class="group__drag-overlay-item"
+                            style={this.dragOverlayStyle}
+                            ref={this.setDragOverlayRef}
+                        >
                             <BaseItem item={this.draggedItem} draggable={false} dragging={true} />
                         </div>
                     </Teleport>

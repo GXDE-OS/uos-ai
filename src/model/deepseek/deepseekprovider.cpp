@@ -28,11 +28,8 @@ AbstractModel* DeepSeekProvider::createModel(const ModelAccountPtr &acc)
     DeepSeekChatModel *model = new DeepSeekChatModel();
 
     QVariantHash parameters;
-    // 只有deepseek 3.2模型，开启回传 reasoning 功能
-    static QSet<QString> reasoningBack = {DEEPSEEK_DEEPSEEK_V3_2, DEEPSEEK_DEEPSEEK_V4_FLASH, DEEPSEEK_DEEPSEEK_V4_PRO};
-    if (reasoningBack.contains(acc->model.id)) {
-        parameters.insert(STR_KEY_ATTACH_REASONING, true);
-    }
+    parameters.insert(STR_KEY_ATTACH_REASONING, true);
+
     model->setParameters(parameters);
 
     // 设置模型账户信息

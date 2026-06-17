@@ -24,31 +24,31 @@ HttpManager::~HttpManager()
 
 QNetworkReply *HttpManager::get(const QNetworkRequest &request)
 {
-    uos_ai::applyProxyToNetworkAccessManager(m_manager, request.url(), logNet(), "HttpManager GET");
+    ProxySettingsWrapper::applyProxyToNetworkAccessManager(m_manager, request.url(), logNet(), "HttpManager GET");
     return m_manager->get(request);
 }
 
 QNetworkReply *HttpManager::put(const QNetworkRequest &request, const QByteArray &data)
 {
-    uos_ai::applyProxyToNetworkAccessManager(m_manager, request.url(), logNet(), "HttpManager PUT");
+    ProxySettingsWrapper::applyProxyToNetworkAccessManager(m_manager, request.url(), logNet(), "HttpManager PUT");
     return m_manager->put(request, data);
 }
 
 QNetworkReply *HttpManager::post(const QNetworkRequest &request, const QByteArray &data)
 {
-    uos_ai::applyProxyToNetworkAccessManager(m_manager, request.url(), logNet(), "HttpManager POST");
+    ProxySettingsWrapper::applyProxyToNetworkAccessManager(m_manager, request.url(), logNet(), "HttpManager POST");
     return m_manager->post(request, data);
 }
 
 QNetworkReply *HttpManager::post(const QNetworkRequest &request, QHttpMultiPart *multiPart)
 {
-    uos_ai::applyProxyToNetworkAccessManager(m_manager, request.url(), logNet(), "HttpManager POST multipart");
+    ProxySettingsWrapper::applyProxyToNetworkAccessManager(m_manager, request.url(), logNet(), "HttpManager POST multipart");
     return m_manager->post(request, multiPart);
 }
 
 QNetworkReply *HttpManager::sendCustomRequest(const QNetworkRequest &request, const QByteArray &verb, const QByteArray &data)
 {
-    uos_ai::applyProxyToNetworkAccessManager(m_manager, request.url(), logNet(), "HttpManager custom");
+    ProxySettingsWrapper::applyProxyToNetworkAccessManager(m_manager, request.url(), logNet(), "HttpManager custom");
     return m_manager->sendCustomRequest(request, verb, data);
 }
 
@@ -104,7 +104,7 @@ void HttpManager::setSocketProxy(const QString &host, quint16 port, const QStrin
 void HttpManager::setSystemProxy(const QString &host, quint16 port)
 {
     const QString scheme = port == 443 ? QStringLiteral("https") : QStringLiteral("http");
-    uos_ai::applyProxyToNetworkAccessManager(m_manager,
+    ProxySettingsWrapper::applyProxyToNetworkAccessManager(m_manager,
                                              QUrl(QStringLiteral("%1://%2:%3").arg(scheme, host).arg(port)),
                                              logNet(), "HttpManager SYSTEM");
 }

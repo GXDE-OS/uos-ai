@@ -8,6 +8,7 @@ import {
     onMounted,
     onBeforeUnmount,
     nextTick,
+    Teleport,
     type PropType,
 } from "vue";
 import type { ArticleReference } from "@/types/conversation";
@@ -64,6 +65,9 @@ import { useMilkdownPrintExport } from "./composables/useMilkdownPrintExport";
 import "@/assets/styles/components/MarkdownEditor.css";
 import MarkdownEditorToolbar from "./MarkdownEditorToolbar";
 import ScrollBar from "@/components/ScrollBar";
+import Menu from "@/components/menu/Menu";
+import type { MenuItem } from "@/types/menu";
+import { CopyDataType } from "@/types/message";
 
 /**
  * Markdown 编辑器内部组件（需要 MilkdownProvider 包裹）
@@ -618,6 +622,53 @@ export default defineComponent({
         const keydownHandlerRef = ref<((event: KeyboardEvent) => void) | null>(null);
         // 存储标题 Backspace 拦截处理函数引用，用于清理
         const headingBackspaceHandlerRef = ref<((event: KeyboardEvent) => void) | null>(null);
+        // 存储右键菜单处理函数引用，用于清理
+        const contextmenuHandlerRef = ref<((event: MouseEvent) => void) | null>(null);
+
+        // 右键菜单相关状态
+        const isContextMenuVisible = ref(false);
+        const contextMenuItems = ref<MenuItem[]>([]);
+        const contextMenuPosition = ref<{ x: number; y: number } | null>(null);
+
+        // ─── 右键菜单：文字选中复制 ───
+        const handleEditorContextMenu = async (event: MouseEvent) => {
+            const selection = window.getSelection();
+            const hasSelection = selection && !selection.isCollapsed && selection.toString().trim().length > 0;
+
+            if (!hasSelection) return;
+
+            event.preventDefault();
+            contextMenuPosition.value = { x: event.clientX, y: event.clientY };
+            contextMenuItems.value = [
+                { type: "item", id: "copy-selection", label: backendStore.translate("Copy") },
+            ];
+            await nextTick();
+            isContextMenuVisible.value = true;
+        };
+
+        const handleEditorMenuSelect = async (menuItem: MenuItem) => {
+            if (menuItem.type !== "item" || menuItem.id !== "copy-selection") return;
+
+            const selection = window.getSelection();
+            if (!selection || selection.isCollapsed) return;
+
+            try {
+                const success = document.execCommand("copy");
+                if (success) return;
+            } catch (error) {
+                console.error("execCommand copy failed:", error);
+            }
+
+            try {
+                backendStore.requestSystem("copyToClipboard", selection.toString(), CopyDataType.CopyText);
+            } catch (error) {
+                console.error("Copy text failed:", error);
+            }
+        };
+
+        const handleEditorMenuVisibleChange = (visible: boolean) => {
+            isContextMenuVisible.value = visible;
+        };
 
         const stopLinkHover = () => {
             if (linkHoverShowTimerRef.value !== null) {
@@ -933,6 +984,16 @@ export default defineComponent({
                     const view = ctx.get(editorViewCtx);
                     if (view?.dom) {
                         view.dom.removeEventListener("keydown", headingBackspaceHandlerRef.value!, true);
+                    }
+                });
+            }
+
+            // 清理右键菜单监听器，避免内存泄漏
+            if (contextmenuHandlerRef.value) {
+                editorInstance.value?.action((ctx: any) => {
+                    const view = ctx.get(editorViewCtx);
+                    if (view?.dom) {
+                        view.dom.removeEventListener("contextmenu", contextmenuHandlerRef.value!);
                     }
                 });
             }
@@ -1295,6 +1356,10 @@ export default defineComponent({
                     };
                     view.dom.addEventListener("keydown", headingBackspaceHandler, true);
                     headingBackspaceHandlerRef.value = headingBackspaceHandler;
+
+                    // ─── 右键菜单：文字选中复制 ───
+                    view.dom.addEventListener("contextmenu", handleEditorContextMenu);
+                    contextmenuHandlerRef.value = handleEditorContextMenu;
 
                     // 初始更新一次状态
                     setTimeout(updateActiveStates, 100);
@@ -1713,8 +1778,22 @@ export default defineComponent({
                         });
                     };
 
+                    const formatCopyError = (err: any) => {
+                        if (err instanceof Error) {
+                            return `${err.name}: ${err.message}`;
+                        }
+                        if (typeof err === "string") {
+                            return err;
+                        }
+                        try {
+                            return JSON.stringify(err);
+                        } catch {
+                            return String(err);
+                        }
+                    };
+
                     const showError = (err: any) => {
-                        console.error("[MarkdownEditor] Copy failed:", err);
+                        console.error(`[MarkdownEditor] Copy failed: ${formatCopyError(err)}`, err);
                         void notifyStore.showToast({
                             type: "error",
                             message: backendStore.translate("Copy failed. Please try again."),
@@ -1722,29 +1801,62 @@ export default defineComponent({
                         });
                     };
 
-                    // Qt5WebEngine fallback: 不支持现代 Clipboard API
-                    if (!navigator.clipboard) {
+                    const fallbackCopyWithExecCommand = () => {
                         const textarea = document.createElement("textarea");
                         textarea.value = text;
                         textarea.style.position = "fixed";
                         textarea.style.opacity = "0";
                         document.body.appendChild(textarea);
+                        textarea.focus();
                         textarea.select();
+                        textarea.setSelectionRange(0, textarea.value.length);
 
                         try {
                             // eslint-disable-next-line deprecation/deprecation
                             const successful = document.execCommand("copy");
-                            successful ? showSuccess() : showError("execCommand returned false");
-                        } catch (err) {
-                            showError(err);
+                            if (!successful) {
+                                throw new Error("execCommand returned false");
+                            }
+                            showSuccess();
                         } finally {
                             document.body.removeChild(textarea);
                         }
-                        break;
+                    };
+
+                    const fallbackCopyWithWebApi = () => {
+                        if (!navigator.clipboard?.writeText) {
+                            fallbackCopyWithExecCommand();
+                            return;
+                        }
+
+                        navigator.clipboard.writeText(text).then(showSuccess).catch((err) => {
+                            console.warn(`[MarkdownEditor] Clipboard API copy failed, fallback to execCommand: ${formatCopyError(err)}`, err);
+                            try {
+                                fallbackCopyWithExecCommand();
+                            } catch (fallbackErr) {
+                                showError(fallbackErr);
+                            }
+                        });
+                    };
+
+                    // Qt WebEngine 中浏览器剪贴板能力不稳定，优先走 native QClipboard 通道。
+                    // copyToClipboard 是 C++ void slot，QWebChannel 不一定会回调 Promise，需直接派发调用。
+                    const systemChannel = backendStore.systemChannel as any;
+                    if (systemChannel && typeof systemChannel.copyToClipboard === "function") {
+                        try {
+                            systemChannel.copyToClipboard(text, CopyDataType.CopyText);
+                            showSuccess();
+                            break;
+                        } catch (err) {
+                            console.warn(`[MarkdownEditor] Native copy failed, fallback to Web API: ${formatCopyError(err)}`, err);
+                        }
                     }
 
-                    // Modern Clipboard API (Qt6+)
-                    navigator.clipboard.writeText(text).then(showSuccess).catch(showError);
+                    try {
+                        fallbackCopyWithWebApi();
+                    } catch (fallbackErr) {
+                        showError(fallbackErr);
+                    }
                     break;
                 }
 
@@ -1869,6 +1981,12 @@ export default defineComponent({
             isContentEmpty,
             backendStore,
             isEnableAdvancedCssFeatures: computed(() => backendStore.isEnableAdvancedCssFeatures),
+            // 右键菜单相关
+            isContextMenuVisible,
+            contextMenuItems,
+            contextMenuPosition,
+            handleEditorMenuSelect,
+            handleEditorMenuVisibleChange,
         };
     },
 
@@ -2064,6 +2182,17 @@ export default defineComponent({
                         </div>
                     </ScrollBar>
                 </div>
+
+                {/* 右键菜单 - Teleport 到 body 避免 position: fixed 受祖先 transform 影响 */}
+                <Teleport to="body">
+                    <Menu
+                        items={this.contextMenuItems}
+                        visible={this.isContextMenuVisible}
+                        position={this.contextMenuPosition}
+                        onUpdateVisible={this.handleEditorMenuVisibleChange}
+                        onSelectItem={this.handleEditorMenuSelect}
+                    />
+                </Teleport>
             </div>
         );
     },

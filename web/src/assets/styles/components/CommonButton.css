@@ -1,0 +1,185 @@
+html {
+    --common-button-bg: linear-gradient(180deg, rgba(245, 245, 245, 1) 0%, rgba(239, 239, 239, 1) 100%);
+    --common-button-hover-bg: rgba(230, 230, 230, 1);
+    --common-button-active-bg: linear-gradient(180deg, rgba(169, 169, 169, 0.6) 0%, rgba(202, 202, 202, 0.5) 100%);
+    --common-button-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(0, 0, 0, 0.1);
+    --common-button-shadow-hover:
+        0 2px 0 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.15), 0 1px 0 0 rgba(0, 0, 0, 0.1);
+    --common-button-shadow-active:
+        0 2px 0 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.15), 0 1px 0 0 rgba(0, 0, 0, 0.08);
+    --common-button-inner-highlight: rgba(255, 255, 255, 0.4);
+    --common-button-text: rgba(0, 0, 0, 0.7);
+    --common-button-danger-text: rgba(255, 87, 54, 1);
+    --common-button-primary-text: var(--system-active-color);
+    --common-button-filled-bg: var(--system-active-color);
+    --common-button-filled-inner-shadow: rgba(0, 0, 0, 0.2);
+    --common-button-filled-text: rgba(255, 255, 255, 1);
+}
+
+html.dark {
+    --common-button-bg: linear-gradient(180deg, rgba(60, 60, 60, 1) 0%, rgba(45, 45, 45, 1) 100%);
+    --common-button-hover-bg: linear-gradient(180deg, rgba(110, 110, 110, 1) 0%, rgba(66, 66, 66, 1) 100%);
+    --common-button-active-bg: linear-gradient(180deg, rgba(40, 40, 40, 1) 0%, rgba(46, 46, 46, 1) 100%);
+    --common-button-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+    --common-button-shadow-hover: 0 0 0 1px rgba(0, 0, 0, 0.05);
+    --common-button-shadow-active: 0 1px 0 0 rgba(0, 0, 0, 0.4), 0 1px 0 0 inset rgba(255, 255, 255, 0.07);
+    --common-button-inner-highlight: rgba(255, 255, 255, 0.07);
+    --common-button-text: rgba(255, 255, 255, 0.7);
+    --common-button-danger-text: rgba(255, 87, 54, 1);
+    --common-button-primary-text: var(--system-active-color);
+    --common-button-filled-bg: var(--system-active-color);
+    --common-button-filled-inner-shadow: rgba(0, 0, 0, 0.1);
+    --common-button-filled-text: rgba(255, 255, 255, 1);
+}
+
+.common-button {
+    position: relative;
+    box-sizing: border-box;
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: var(--radius-normal);
+    background: var(--common-button-bg);
+    box-shadow: var(--common-button-shadow);
+    color: var(--common-button-text);
+    font-size: var(--uosai-font-size-base);
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    overflow: hidden;
+    transition:
+        background var(--transition-normal),
+        color var(--transition-normal),
+        box-shadow var(--transition-normal),
+        filter var(--transition-normal),
+        opacity var(--transition-normal);
+}
+
+.common-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    height: 1px;
+    border-radius: inherit;
+    background: var(--common-button-inner-highlight);
+    pointer-events: none;
+}
+
+.common-button__text {
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.common-button--default {
+    color: var(--common-button-text);
+}
+
+.common-button--danger {
+    color: var(--common-button-danger-text);
+}
+
+.common-button--primary {
+    color: var(--common-button-primary-text);
+}
+
+.common-button:hover:not(.common-button--disabled) {
+    background: var(--common-button-hover-bg);
+    box-shadow: var(--common-button-shadow-hover);
+}
+
+.common-button:active:not(.common-button--disabled) {
+    background: var(--common-button-active-bg);
+    box-shadow: var(--common-button-shadow-active);
+}
+
+.common-button:active:not(.common-button--disabled)::before {
+    opacity: 0;
+}
+
+/* .common-button--primary:hover:not(.common-button--disabled) {
+    background: var(--common-button-hover-bg);
+    box-shadow: var(--common-button-shadow-hover);
+} */
+
+.common-button--primary:active:not(.common-button--disabled) {
+    background: var(--common-button-bg);
+    box-shadow: var(--common-button-shadow);
+}
+
+.common-button--filled {
+    background: var(--common-button-filled-bg);
+    color: var(--common-button-filled-text);
+    box-shadow: none;
+}
+
+.common-button--filled::before {
+    display: none;
+}
+
+.common-button--filled::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    height: 1px;
+    border-radius: inherit;
+    background: var(--common-button-filled-inner-shadow);
+    pointer-events: none;
+}
+
+.common-button--filled:hover:not(.common-button--disabled) {
+    background: var(--common-button-filled-bg);
+    box-shadow: none;
+    filter: brightness(1.2);
+}
+
+.common-button--filled:active:not(.common-button--disabled) {
+    background: var(--common-button-filled-bg);
+    box-shadow: none;
+    filter: brightness(0.8);
+}
+
+.common-button--filled:active:not(.common-button--disabled)::after {
+    opacity: 0;
+}
+
+.common-button--disabled {
+    cursor: not-allowed;
+    opacity: var(--bg-opacity-disabled);
+}
+
+.common-button:focus-visible {
+    outline: 2px solid rgba(52, 152, 219, 0.5);
+    outline-offset: 2px;
+}
+
+.common-button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .common-button,
+    .common-button *,
+    .common-button::before,
+    .common-button::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Qt5 兼容降级：移除 inset */
+html.dark[data-legacy-css] {
+    --common-button-shadow-active: 0 1px 0 0 rgba(0, 0, 0, 0.4), 0 1px 0 0 rgba(255, 255, 255, 0.07);
+}

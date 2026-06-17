@@ -2,4354 +2,709 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="hr">
 <context>
-    <name>AddModelDialog</name>
-    <message>
-        <source>Add model</source>
-        <translation type="vanished">Dodaj model</translation>
-    </message>
-    <message>
-        <source>LLM</source>
-        <translation type="vanished">LLM</translation>
-    </message>
-    <message>
-        <source>APPID</source>
-        <translation type="vanished">APPID</translation>
-    </message>
-    <message>
-        <source>Required, please input</source>
-        <translation type="vanished">Obavezno, unesite</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">API ključ</translation>
-    </message>
-    <message>
-        <source>APISecret</source>
-        <translation type="vanished">API tajna</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Račun</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Obavezno za razlikovanje više modela</translation>
-    </message>
-    <message>
-        <source>Optional</source>
-        <translation type="vanished">Neobavezno</translation>
-    </message>
-    <message>
-        <source>Optional. The default address will be used if not filled in.</source>
-        <translation type="vanished">Neobavezno. Ako se ne unese, koristit će se zadana adresa.</translation>
-    </message>
-    <message>
-        <source>Models List</source>
-        <translation type="vanished">Popis modela</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="vanished">Prilagođeno</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Nije moguće povezati se s poslužiteljem, provjerite mrežu ili pokušajte ponovo kasnije.</translation>
-    </message>
-    <message>
-        <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="vanished">Za postavke proxyja, idite na sistemske postavke proxyja</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Idi na postavke</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Odustani</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Naziv modela</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Domena</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Potvrdi</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Spremanje nije uspjelo, pokušajte ponovo kasnije</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">Naziv računa već postoji, promijenite ga</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">Ne više od 20 znakova</translation>
-    </message>
-    <message>
-        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="vanished">Za testiranje dostupnosti modela, sustav šalje testne podatke velikom modelu, što će potrošiti malu količinu tokena.</translation>
-    </message>
-    <message>
-        <source>This LLM already exists, please do not add it again.</source>
-        <translation type="vanished">Ovaj LLM već postoji, nemojte ga ponovno dodavati.</translation>
-    </message>
-</context>
-<context>
-    <name>AiCodeTranslation</name>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Trenutno je previše posjetitelja, pokušajte ponovo kasnije.</translation>
-    </message>
-</context>
-<context>
-    <name>AiQuickDialog</name>
-    <message>
-        <source>type</source>
-        <translation type="vanished">tip</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Odustani</translation>
-    </message>
-    <message>
-        <source>Read Aloud</source>
-        <translation type="vanished">Čitaj naglas</translation>
-    </message>
-    <message>
-        <source>The audio device is not detected, please check and try again.</source>
-        <translation type="vanished">Audio uređaj nije detektiran, provjerite i pokušajte ponovo.</translation>
-    </message>
-    <message>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="vanished">Sadržaj generiran od strane AI-a je samo za referencu, obratite pažnju na točnost informacija.</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="vanished">Kopiraj</translation>
-    </message>
-    <message>
-        <source>Polish this passage for me and just give me the result without any extra content.
-text：</source>
-        <translation type="vanished">Dorađujte ovaj odlomak za mene i dajte mi samo rezultat bez dodatnog sadržaja.
-
-tekst:</translation>
-    </message>
-    <message>
-        <source>Current model: </source>
-        <translation type="vanished">Trenutni model: </translation>
-    </message>
-    <message>
-        <source>Regenerate</source>
-        <translation type="vanished">Ponovno generiraj</translation>
-    </message>
-    <message>
-        <source>simplified Chinese</source>
-        <translation type="vanished">pojednostavljeni kineski</translation>
-    </message>
-    <message>
-        <source>traditional Chinese</source>
-        <translation type="vanished">tradicionalni kineski</translation>
-    </message>
-    <message>
-        <source>Tibetan</source>
-        <translation type="vanished">tibetanski</translation>
-    </message>
-    <message>
-        <source>English</source>
-        <translation type="vanished">engleski</translation>
-    </message>
-    <message>
-        <source>Japanese </source>
-        <translation type="vanished">japanski</translation>
-    </message>
-    <message>
-        <source>German</source>
-        <translation type="vanished">njemački</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation type="vanished">španjolski</translation>
-    </message>
-    <message>
-        <source>French</source>
-        <translation type="vanished">francuski</translation>
-    </message>
-    <message>
-        <source>Italian</source>
-        <translation type="vanished">talijanski</translation>
-    </message>
-    <message>
-        <source>Korean</source>
-        <translation type="vanished">korejski</translation>
-    </message>
-    <message>
-        <source>Malay</source>
-        <translation type="vanished">malajski</translation>
-    </message>
-    <message>
-        <source>Portuguese</source>
-        <translation type="vanished">portugalski</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation type="vanished">ruski</translation>
-    </message>
-    <message>
-        <source>Thai</source>
-        <translation type="vanished">tajlandski</translation>
-    </message>
-    <message>
-        <source>Vietnamese</source>
-        <translation type="vanished">vijetnamski</translation>
-    </message>
-    <message>
-        <source>Continue Dialog</source>
-        <translation type="vanished">Nastavi dijalog</translation>
-    </message>
-    <message>
-        <source>Automatic Detection</source>
-        <translation type="vanished">Automatsko otkrivanje</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Pretraži</translation>
-    </message>
-    <message>
-        <source>Explain</source>
-        <translation type="vanished">Objasni</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation type="vanished">Prevedi</translation>
-    </message>
-    <message>
-        <source>Expand</source>
-        <translation type="vanished">Proširi</translation>
-    </message>
-    <message>
-        <source>Correct</source>
-        <translation type="vanished">Ispravi</translation>
-    </message>
-    <message>
-        <source>Add to the AI knowledge base</source>
-        <translation type="vanished">Dodaj u bazu znanja AI</translation>
-    </message>
-    <message>
-        <source>Added</source>
-        <translation type="vanished">Dodano</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Konfiguracija modela</translation>
-    </message>
-    <message>
-        <source>Copied</source>
-        <translation type="vanished">Kopirano</translation>
-    </message>
-    <message>
-        <source>No text recognized.</source>
-        <translation type="vanished">Nije prepoznat nijedan tekst.</translation>
-    </message>
-    <message>
-        <source>The added content must be more than 10 words</source>
-        <translation type="vanished">Dodani sadržaj mora imati više od 10 riječi</translation>
-    </message>
-    <message>
-        <source>Summary</source>
-        <translation type="vanished">Sažetak</translation>
-    </message>
-    <message>
-        <source>Paste to Text</source>
-        <translation type="vanished">Zalijepi u tekst</translation>
-    </message>
-    <message>
-        <source>Continue writing</source>
-        <translation type="vanished">Nastavi pisati</translation>
-    </message>
-    <message>
-        <source>Polish</source>
-        <translation type="vanished">Poljski</translation>
-    </message>
-    <message>
-        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation type="vanished">Rezultat prijevoda ograničen je mogućnostima modela. Ako niste zadovoljni prijevodom, prebacite se na druge modele na početnoj stranici UOS AI.</translation>
-    </message>
-    <message>
-        <source>Translate this passage into %1 and give me a clear result directly.
-text：</source>
-        <translation type="vanished">Prevedi ovaj odlomak na %1 i daj mi jasan rezultat izravno. tekst：</translation>
-    </message>
-    <message>
-        <source>Not clickable</source>
-        <translation type="vanished">Nije klikabilno</translation>
-    </message>
-    <message>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation type="vanished">Funkcija se može koristiti tek nakon ponovnog pokretanja metode unosa. Upute su sljedeće: 1. Desnim klikom na ikonu metode unosa u traci zadataka. 2. Kliknite &quot;Ponovno pokreni&quot;.</translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <comment>button</comment>
-        <translation type="vanished">U redu</translation>
-    </message>
-    <message>
-        <source>Fill failed</source>
-        <translation type="vanished">Ispuna nije uspjela</translation>
-    </message>
-    <message>
-        <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="vanished">Nije odabran okvir za unos, odaberite okvir za unos i ponovno ga ispunite.</translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <translation type="vanished">U redu</translation>
-    </message>
-    <message>
-        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
-text：</source>
-        <translation type="vanished">Objasni ovaj odlomak jednostavnim jezikom. Daj mi jasan rezultat bez suvišnog sadržaja. tekst：</translation>
-    </message>
-    <message>
-        <source>Summarize this passage and give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="vanished">Sažmi ovaj odlomak i daj mi jasan rezultat izravno bez ikakvog suvišnog sadržaja. tekst：</translation>
-    </message>
-    <message>
-        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="vanished">Nastavi ovaj odlomak prikladno. Nema potrebe za puno riječi. Daj mi jasan rezultat bez ikakvog suvišnog sadržaja. tekst：</translation>
-    </message>
-    <message>
-        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="vanished">Proširi ovaj odlomak prikladno. Nema potrebe za posebno dugim tekstom. Daj mi jasan rezultat bez ikakvog suvišnog sadržaja. tekst：</translation>
-    </message>
-    <message>
-        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="vanished">Provjeri ima li pogrešaka u ovom odlomku. Ako ima, naznači gdje se nalaze. Daj mi jasan rezultat izravno bez ikakvog suvišnog sadržaja. tekst：</translation>
-    </message>
-    <message>
-        <source> &quot;%1&quot; </source>
-        <translation type="vanished">&quot;%1&quot;</translation>
-    </message>
-    <message>
-        <source>Currently no model</source>
-        <translation type="vanished">Trenutno nema modela</translation>
-    </message>
-    <message>
-        <source>Go to configure  </source>
-        <translation type="vanished">Idi na konfiguraciju</translation>
-    </message>
-</context>
-<context>
-    <name>AiToastMessage</name>
-    <message>
-        <source>Chat history cleared</source>
-        <translation type="vanished">Povijest razgovora izbrisana</translation>
-    </message>
-    <message>
-        <source>Copied successfully</source>
-        <translation type="vanished">Uspješno kopirano</translation>
-    </message>
-</context>
-<context>
-    <name>Application</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="vanished">UOS AI je pametni asistent za stolna računala, vaš osobni asistent! Možete komunicirati s njim putem teksta ili glasa, a on može pomoći u odgovaranju na pitanja, pružanju informacija i generiranju slika na temelju vaših opisa.</translation>
-    </message>
-    <message>
-        <source>UOS AI FollowAlong/Write</source>
-        <translation type="vanished">UOS AI FollowAlong/Write</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Upravljanje bazom znanja</translation>
-    </message>
-</context>
-<context>
     <name>AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="146"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>Nije moguće povezati se s poslužiteljem, provjerite mrežu ili pokušajte ponovo kasnije.</translation>
-    </message>
-</context>
-<context>
-    <name>ChatSeesion</name>
-    <message>
-        <source>function parsing failed</source>
-        <translation type="vanished">neuspjela analiza funkcije</translation>
-    </message>
-    <message>
-        <source>Application file does not exist</source>
-        <translation type="vanished">Datoteka aplikacije ne postoji</translation>
-    </message>
-    <message>
-        <source>Started successfully</source>
-        <translation type="vanished">Uspješno pokrenuto</translation>
-    </message>
-    <message>
-        <source>Startup failed</source>
-        <translation type="vanished">Pokretanje nije uspjelo</translation>
-    </message>
-    <message>
-        <source> The execution output content is </source>
-        <translation type="vanished">Sadržaj izlaza izvršenja je</translation>
-    </message>
-</context>
-<context>
-    <name>ChatWindow</name>
-    <message>
-        <source>Mode</source>
-        <translation type="vanished">Način rada</translation>
-    </message>
-    <message>
-        <source>Window Mode</source>
-        <translation type="vanished">Prozorski način</translation>
-    </message>
-    <message>
-        <source>Sidebar Mode</source>
-        <translation type="vanished">Način bočne trake</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Postavke</translation>
-    </message>
-    <message>
-        <source>Update Log</source>
-        <translation type="vanished">Dnevnik ažuriranja</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Glasovni razgovor</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Odustani</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Izbriši</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Potvrdi</translation>
-    </message>
-    <message>
-        <source>Confirm deletion %1?</source>
-        <translation type="vanished">Potvrdi brisanje %1?</translation>
-    </message>
-    <message>
-        <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation type="vanished">Nakon brisanja ovaj poslužitelj više neće biti dostupan. Postupajte s oprezom.</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="obsolete">Ažuriraj</translation>
-    </message>
-    <message>
-        <source>Non-vectorized plugin</source>
-        <translation type="vanished">Nevektorizirani dodatak</translation>
-    </message>
-    <message>
-        <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
-        <translation type="vanished">Prije korištenja [Baze znanja AI] prvo morate instalirati vektorizacijski dodatak kako bi funkcija baze znanja AI ispravno radila.</translation>
-    </message>
-    <message>
-        <source>Install</source>
-        <translation type="obsolete">Instaliraj</translation>
-    </message>
-    <message>
-        <source>The knowledge base is empty</source>
-        <translation type="vanished">Baza znanja je prazna</translation>
-    </message>
-    <message>
-        <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
-        <translation type="vanished">Prije korištenja [Baze znanja AI] prvo morate dodati dokumente u bazu znanja. Nakon dodavanja, AI će odgovarati na pitanja temeljem sadržaja koji ste dodali u bazu znanja.</translation>
-    </message>
-    <message>
-        <source>Add Files</source>
-        <translation type="vanished">Dodaj datoteke</translation>
-    </message>
-    <message>
-        <source>The following file has expired and cannot be used. Continue?</source>
-        <translation type="vanished">Sljedeća datoteka je istekla i ne može se koristiti. Nastaviti?</translation>
-    </message>
-    <message>
-        <source>Use later</source>
-        <translation type="vanished">Koristi kasnije</translation>
-    </message>
-    <message>
-        <source>Install Now</source>
-        <translation type="vanished">Instaliraj sada</translation>
-    </message>
-    <message>
-        <source>MCP environment missing</source>
-        <translation type="vanished">MCP okruženje nedostaje</translation>
-    </message>
-    <message>
-        <source>Please go to the App Store to install UOS AI Agent</source>
-        <translation type="vanished">Idite u Trgovinu aplikacija kako biste instalirali UOS AI Agent</translation>
-    </message>
-    <message>
-        <source>Not Now</source>
-        <translation type="vanished">Ne sada</translation>
-    </message>
-    <message>
-        <source>Claim Credits</source>
-        <translation type="vanished">Zatraži kredite</translation>
-    </message>
-    <message>
-        <source>Free Credits Delivered</source>
-        <translation type="vanished">Besplatni krediti isporučeni</translation>
-    </message>
-    <message>
-        <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation type="vanished">Potrošili ste besplatne kredite za generiranje za svoj probni račun. Dodali smo vam dodatnih 200 besplatnih kredita koji vrijede ovaj mjesec. Istražite više mogućnosti i otključajte neograničene sposobnosti UOS AI-ja!</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">U redu</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="vanished">Uspješno zatraženo</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="vanished">Neuspješno zatraženo. Molimo pokušajte ponovno.</translation>
-    </message>
-    <message>
-        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="vanished">UOS AI je pametni asistent za radnu površinu, vaš osobni asistent! Možete komunicirati s njim putem teksta ili glasa, a on može pomoći u odgovaranju na pitanja, pružanju informacija i generiranju slika na temelju vaših opisa.</translation>
-    </message>
-    <message>
-        <source>Filing Information</source>
-        <translation type="vanished">Podaci o arhiviranju</translation>
-    </message>
-</context>
-<context>
-    <name>CodeTranslation360</name>
-    <message>
-        <source>Authentication failed, insufficient balance</source>
-        <translation type="vanished">Autentifikacija nije uspjela, nedovoljan saldo</translation>
-    </message>
-    <message>
-        <source>Authentication failed, daily limit exceeded</source>
-        <translation type="vanished">Autentifikacija nije uspjela, dnevni limit prekoračen</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Trenutno je previše posjetitelja, pokušajte ponovo kasnije.</translation>
-    </message>
-    <message>
-        <source>The service is abnormal. Please contact the development team for troubleshooting.</source>
-        <translation type="vanished">Usluga je neispravna. Obratite se razvojnom timu za rješavanje problema.</translation>
-    </message>
-</context>
-<context>
-    <name>CommonFailDialog</name>
-    <message>
-        <source>Error</source>
-        <translation type="vanished">Greška</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <comment>button</comment>
-        <translation type="vanished">U redu</translation>
+        <translation>Nije moguće povezati se s poslužiteljem. Provjerite mrežu ili pokušajte ponovno kasnije.</translation>
     </message>
 </context>
 <context>
     <name>DocParse</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/docparse.cpp" line="24"/>
         <source>The document content is invalid or empty.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>EAiExecutor</name>
-    <message>
-        <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation type="vanished">Osobni asistent za znanje može se koristiti tek nakon konfiguriranja baze znanja.</translation>
-    </message>
-    <message>
-        <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">Osobni asistent za znanje može se koristiti tek nakon konfiguriranja modela plugina.</translation>
-    </message>
-    <message>
-        <source>The Deep System Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">Dubinski sistemski asistent može se koristiti tek nakon konfiguriranja modela plugina.</translation>
-    </message>
-    <message>
-        <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">UOS sistemski asistent može se koristiti tek nakon konfiguriranja modela plugina.</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Upravljanje bazom znanja</translation>
-    </message>
-    <message>
-        <source>MCP Server</source>
-        <translation type="vanished">MCP poslužitelj</translation>
-    </message>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI zahtijeva konfiguriranje računa AI modela prije upotrebe. Molimo prvo konfigurirajte račun modela.</translation>
-    </message>
-    <message>
-        <source>Please configure the knowledge base.</source>
-        <translation type="vanished">Konfigurirajte bazu znanja.</translation>
-    </message>
-    <message>
-        <source>Please install the model plug.</source>
-        <translation type="vanished">Instalirajte priključak modela.</translation>
-    </message>
-    <message>
-        <source>Export Image As</source>
-        <translation type="vanished">Izvezi sliku kao</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="obsolete">Uspješno zatraženo</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="obsolete">Neuspješno zatraženo. Molimo pokušajte ponovno.</translation>
-    </message>
-    <message>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="vanished">Možete prenijeti najviše 3 datoteke ili sliku</translation>
-    </message>
-</context>
-<context>
-    <name>EAiFAQInit</name>
-    <message>
-        <source>Translate the following text into English for me.</source>
-        <translation type="vanished">Prevedite sljedeći tekst na engleski za mene.</translation>
-    </message>
-    <message>
-        <source>Translate the following document into Chinese.</source>
-        <translation type="vanished">Prevedite sljedeći dokument na kineski.</translation>
-    </message>
-    <message>
-        <source>What does the word “Agent” mean in the AI industry?</source>
-        <translation type="vanished">Što znači riječ &apos;Agent&apos; u AI industriji?</translation>
-    </message>
-    <message>
-        <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation type="vanished">Molimo prevedite sljedeći sadržaj na kineski. Zahtjevi: Točno u značenju, formalno i profesionalno u jeziku.</translation>
-    </message>
-    <message>
-        <source>What are some colloquial ways to address a friend in English?</source>
-        <translation type="vanished">Koji su neki kolokvijalni načini oslovljavanja prijatelja na engleskom?</translation>
-    </message>
-    <message>
-        <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation type="vanished">Prevedite sljedeći klasični kineski tekst na moderni kineski.</translation>
-    </message>
-    <message>
-        <source>Summarize</source>
-        <translation type="vanished">Sažeti</translation>
-    </message>
-    <message>
-        <source>Proofread</source>
-        <translation type="vanished">Lektoriraj</translation>
-    </message>
-    <message>
-        <source>Explain</source>
-        <translation type="vanished">Objasni</translation>
-    </message>
-    <message>
-        <source>Expand</source>
-        <translation type="vanished">Proširi</translation>
-    </message>
-    <message>
-        <source>Continue</source>
-        <translation type="vanished">Nastavi</translation>
-    </message>
-    <message>
-        <source>Polish</source>
-        <translation type="vanished">Dorađuj</translation>
-    </message>
-    <message>
-        <source>Please help me write a work summary based on this document</source>
-        <translation type="vanished">Molim te pomozi mi napisati sažetak rada na temelju ovog dokumenta</translation>
-    </message>
-    <message>
-        <source>I need a work summary for Project A, please help me organize the key points</source>
-        <translation type="vanished">Trebam sažetak rada za Projekt A, pomozi mi organizirati ključne točke</translation>
-    </message>
-    <message>
-        <source>Please generate a concise work summary based on my input text</source>
-        <translation type="vanished">Molim te generiraj sažetak rada na temelju mog unosa</translation>
-    </message>
-    <message>
-        <source>Analyze this report and extract key points for the work summary</source>
-        <translation type="vanished">Analiziraj ovo izvješće i izvuci ključne točke za sažetak rada</translation>
-    </message>
-    <message>
-        <source>I need a work summary including quarterly data, please refer to the attachment</source>
-        <translation type="vanished">Trebam sažetak rada s kvartalnim podacima, pogledaj prilog</translation>
-    </message>
-    <message>
-        <source>Help me write a work summary highlighting personal contributions</source>
-        <translation type="vanished">Pomozi mi napisati sažetak rada s naglaskom na osobne doprinose</translation>
-    </message>
-    <message>
-        <source>Generate a work summary from meeting notes, focusing on action items</source>
-        <translation type="vanished">Generiraj sažetak rada iz bilješki sa sastanka, s fokusom na akcijske točke</translation>
-    </message>
-    <message>
-        <source>I need a bilingual work summary in Chinese and English, please refer to the provided materials</source>
-        <translation type="vanished">Trebam dvojezični sažetak rada na kineskom i engleskom, pogledaj dostavljene materijale</translation>
-    </message>
-    <message>
-        <source>Help me organize last month&apos;s work content and generate a summary</source>
-        <translation type="vanished">Pomozi mi organizirati prošlimjesečni sadržaj rada i napraviti sažetak</translation>
-    </message>
-    <message>
-        <source>Write a work summary based on these task lists, emphasizing completion status</source>
-        <translation type="vanished">Napiši sažetak rada na temelju ovih popisa zadataka, s naglaskom na status dovršetka</translation>
-    </message>
-    <message>
-        <source>Check for grammatical errors in this passage</source>
-        <translation type="vanished">Provjeri gramatičke greške u ovom odlomku</translation>
-    </message>
-    <message>
-        <source>Help me find spelling mistakes in this article</source>
-        <translation type="vanished">Pomozi mi pronaći pravopisne greške u ovom članku</translation>
-    </message>
-    <message>
-        <source>Correct the inappropriate word choices in this dialogue</source>
-        <translation type="vanished">Ispravi neprikladan izbor riječi u ovom dijalogu</translation>
-    </message>
-    <message>
-        <source>Fix the punctuation issues in this document</source>
-        <translation type="vanished">Ispravi probleme s interpunkcijom u ovom dokumentu</translation>
-    </message>
-    <message>
-        <source>Revise the unclear expressions in this text</source>
-        <translation type="vanished">Revidiraj nejasne izraze u ovom tekstu</translation>
-    </message>
-    <message>
-        <source>Edit the language errors in this email</source>
-        <translation type="vanished">Uredi jezične greške u ovom e-mailu</translation>
-    </message>
-    <message>
-        <source>Check if this text follows standard English conventions</source>
-        <translation type="vanished">Provjeri prati li ovaj tekst standardne engleske konvencije</translation>
-    </message>
-    <message>
-        <source>Correct the logical flaws in this report</source>
-        <translation type="vanished">Ispravi logičke nedostatke u ovom izvješću</translation>
-    </message>
-    <message>
-        <source>Identify language errors in this code comment</source>
-        <translation type="vanished">Identificiraj jezične greške u ovom komentaru koda</translation>
-    </message>
-    <message>
-        <source>Fix the ambiguous statements in this contract</source>
-        <translation type="vanished">Ispravi dvosmislene izjave u ovom ugovoru</translation>
-    </message>
-    <message>
-        <source>Explain the basic principles of quantum computing</source>
-        <translation type="vanished">Objasni osnovna načela kvantnog računanja</translation>
-    </message>
-    <message>
-        <source>Describe photosynthesis in simple terms</source>
-        <translation type="vanished">Opisuj fotosintezu jednostavnim riječima</translation>
-    </message>
-    <message>
-        <source>Detail how blockchain technology works</source>
-        <translation type="vanished">Detaljno objasni kako funkcionira blockchain tehnologija</translation>
-    </message>
-    <message>
-        <source>Explain relativity from a professional perspective</source>
-        <translation type="vanished">Objasni relativnost s profesionalne perspektive</translation>
-    </message>
-    <message>
-        <source>Use metaphors to describe what artificial intelligence is</source>
-        <translation type="vanished">Koristi metafore da opišeš što je umjetna inteligencija</translation>
-    </message>
-    <message>
-        <source>Describe climate change in layman&apos;s terms</source>
-        <translation type="vanished">Objasni klimatske promjene jednostavnim jezikom</translation>
-    </message>
-    <message>
-        <source>Explain the structure of the solar system to elementary students</source>
-        <translation type="vanished">Objasni strukturu Sunčevog sustava osnovnoškolcima</translation>
-    </message>
-    <message>
-        <source>Expand this text to 300 words, focusing on scene details and character emotions</source>
-        <translation type="vanished">Proširi ovaj tekst na 300 riječi, s naglaskom na detaljima scene i emocijama likova</translation>
-    </message>
-    <message>
-        <source>Rewrite this paragraph into 500 words in an academic style, adding data support and citations</source>
-        <translation type="vanished">Prepiši ovaj odlomak u 500 riječi u akademskom stilu, dodajući podršku podataka i citate</translation>
-    </message>
-    <message>
-        <source>Expand this passage with more metaphors and rhetorical devices to make it more vivid</source>
-        <translation type="vanished">Proširi ovaj odlomak s više metafora i retoričkih sredstava kako bi bio živopisniji</translation>
-    </message>
-    <message>
-        <source>Please extend this short article to 1000 words, supplementing with specific cases and practical steps</source>
-        <translation type="vanished">Proširi ovaj kratki članak na 1000 riječi, dodajući specifične slučajeve i praktične korake</translation>
-    </message>
-    <message>
-        <source>Expand this dialogue by adding characters&apos; psychological activities and dialogue details</source>
-        <translation type="vanished">Proširi ovaj dijalog dodajući psihološke aktivnosti likova i detalje dijaloga</translation>
-    </message>
-    <message>
-        <source>Rewrite the content of this document into a report format, including abstract, body, and conclusion</source>
-        <translation type="vanished">Prepiši sadržaj ovog dokumenta u format izvješća, uključujući sažetak, tijelo i zaključak</translation>
-    </message>
-    <message>
-        <source>Expand this technical description to 800 words, adding more technical parameters and diagram explanations</source>
-        <translation type="vanished">Proširi ovaj tehnički opis na 800 riječi, dodajući više tehničkih parametara i objašnjenja dijagrama</translation>
-    </message>
-    <message>
-        <source>Rewrite this email to be more formal and professional, supplementing relevant background information</source>
-        <translation type="vanished">Prepiši ovaj e-mail da bude formalniji i profesionalniji, dodajući relevantne pozadinske informacije</translation>
-    </message>
-    <message>
-        <source>Expand this story to 1500 words, adding more plot twists and character backgrounds</source>
-        <translation type="vanished">Proširi ovu priču na 1500 riječi, dodajući više obrata radnje i pozadine likova</translation>
-    </message>
-    <message>
-        <source>Please expand this summary, highlighting key achievements and future plans, word count unlimited</source>
-        <translation type="vanished">Proširi ovaj sažetak, ističući ključna postignuća i buduće planove, bez ograničenja riječi</translation>
-    </message>
-    <message>
-        <source>Please continue writing this short passage about future technology, focusing on how AI changes daily life, around 300 words, in a popular science style</source>
-        <translation type="vanished">Nastavi pisati ovaj kratki odlomak o budućoj tehnologiji, fokusirajući se na to kako AI mijenja svakodnevni život, oko 300 riječi, u popularnoznanstvenom stilu</translation>
-    </message>
-    <message>
-        <source>Help me expand the last paragraph of this business plan, emphasizing market potential and competitive advantages, no word limit, formal style</source>
-        <translation type="vanished">Pomozi mi proširiti posljednji odlomak ovog poslovnog plana, naglašavajući tržišni potencijal i konkurentske prednosti, bez ograničenja riječi, formalni stil</translation>
-    </message>
-    <message>
-        <source>Continue the ending of this fairy tale, warm and touching, the protagonist achieves their dream, about 200 words</source>
-        <translation type="vanished">Nastavi završetak ove bajke, topao i dirljiv, protagonist ostvaruje svoj san, oko 200 riječi</translation>
-    </message>
-    <message>
-        <source>Please write the second half of this email, tone friendly and professional, focusing on collaboration details, within 150 words</source>
-        <translation type="vanished">Napiši drugu polovicu ovog e-maila, prijateljski i profesionalan ton, fokusirajući se na detalje suradnje, unutar 150 riječi</translation>
-    </message>
-    <message>
-        <source>Expand the next paragraph of this travelogue, describing the scenery in the valley, vivid and imaginative, around 200 words</source>
-        <translation type="vanished">Proširi sljedeći odlomak ovog putopisa, opisujući krajolik u dolini, živopisan i maštovit, oko 200 riječi</translation>
-    </message>
-    <message>
-        <source>Continue the next chapter of this mystery novel, with a plot twist, maintaining suspense, no word limit</source>
-        <translation type="vanished">Nastavi sljedeće poglavlje ovog misterijskog romana, s obratom radnje, održavajući napetost, bez ograničenja riječi</translation>
-    </message>
-    <message>
-        <source>Help me write the conclusion of this speech, inspiring and emphasizing teamwork, about 100 words</source>
-        <translation type="vanished">Pomozi mi napisati zaključak ovog govora, inspirativan i naglašava timski rad, oko 100 riječi</translation>
-    </message>
-    <message>
-        <source>Expand the performance description section of this product manual, detailed and accurate, around 300 words</source>
-        <translation type="vanished">Proširi odjeljak opisa performansi ovog priručnika za proizvod, detaljan i točan, oko 300 riječi</translation>
-    </message>
-    <message>
-        <source>Continue the beginning of this love story, set in rainy Paris, romantic style, 150 words</source>
-        <translation type="vanished">Nastavi početak ove ljubavne priče, smještene u kišni Pariz, romantični stil, 150 riječi</translation>
-    </message>
-    <message>
-        <source>Please write the discussion section of this paper, focusing on the limitations of the experimental result, academic style, no word limit</source>
-        <translation type="vanished">Napiši odjeljak za raspravu ovog rada, fokusirajući se na ograničenja eksperimentalnih rezultata, akademski stil, bez ograničenja riječi</translation>
-    </message>
-    <message>
-        <source>Please polish this text to make it more formal and professional for a business email</source>
-        <translation type="vanished">Dorađeni ovaj tekst kako bi bio formalniji i profesionalniji za poslovni e-mail</translation>
-    </message>
-    <message>
-        <source>Rewrite this passage to be more lively and engaging for social media posts</source>
-        <translation type="vanished">Prepiši ovaj odlomak da bude življi i privlačniji za objave na društvenim mrežama</translation>
-    </message>
-    <message>
-        <source>I need to refine the abstract of this academic paper to be more concise and clear within 200 words</source>
-        <translation type="vanished">Moram doraditi sažetak ovog akademskog rada da bude sažet i jasan unutar 200 riječi</translation>
-    </message>
-    <message>
-        <source>Polish this dialogue to make it more natural and fluent for spoken communication</source>
-        <translation type="vanished">Dorađeni ovaj dijalog kako bi bio prirodniji i tečniji za govornu komunikaciju</translation>
-    </message>
-    <message>
-        <source>Enhance this product description to highlight its premium and innovative features for potential customers</source>
-        <translation type="vanished">Poboljšaj ovaj opis proizvoda kako bi istaknuo njegove premium i inovativne značajke za potencijalne kupce</translation>
-    </message>
-    <message>
-        <source>Help me polish this cover letter to make it more persuasive and personalized</source>
-        <translation type="vanished">Pomozi mi doraditi ovaj propratni da bude uvjerljiviji i personaliziraniji</translation>
-    </message>
-    <message>
-        <source>Rewrite this blog post to be more humorous and appealing to young readers</source>
-        <translation type="vanished">Prepiši ovaj blog post da bude duhovitiji i privlačniji mladim čitateljima</translation>
-    </message>
-    <message>
-        <source>Refine the opening section of this report to make it more captivating</source>
-        <translation type="vanished">Dorađeni uvodni odjeljak ovog izvješća kako bi bio privlačniji</translation>
-    </message>
-    <message>
-        <source>I need to polish this technical document to make it more accessible for non-experts</source>
-        <translation type="vanished">Moram dotjerati ovaj tehnički dokument kako bi bio pristupačniji ne-stručnjacima</translation>
-    </message>
-    <message>
-        <source>Please help me rewrite this apology letter to sound more sincere and appropriate</source>
-        <translation type="vanished">Molim vas pomozite mi prepisati ovo pismo isprike kako bi zvučalo iskrenije i prikladnije</translation>
-    </message>
-    <message>
-        <source>Articles</source>
-        <translation type="vanished">Članci</translation>
-    </message>
-    <message>
-        <source>Speeches</source>
-        <translation type="vanished">Govori</translation>
-    </message>
-    <message>
-        <source>Outlines</source>
-        <translation type="vanished">Nacrti</translation>
-    </message>
-    <message>
-        <source>Notifications</source>
-        <translation type="vanished">Obavijesti</translation>
-    </message>
-    <message>
-        <source>Posts</source>
-        <translation type="vanished">Objave</translation>
-    </message>
-    <message>
-        <source>Work Report</source>
-        <translation type="vanished">Izvještaj o radu</translation>
-    </message>
-    <message>
-        <source>Research Report</source>
-        <translation type="vanished">Istraživačko izvješće</translation>
-    </message>
-    <message>
-        <source>Please summarize the key points of this document</source>
-        <translation type="vanished">Molim vas sažmite ključne točke ovog dokumenta</translation>
-    </message>
-    <message>
-        <source>List the main ideas of this file for me</source>
-        <translation type="vanished">Navedite glavne ideje iz ove datoteke za mene</translation>
-    </message>
-    <message>
-        <source>Summarize the core idea of this passage</source>
-        <translation type="vanished">Sažmite glavnu ideju ovog odlomka</translation>
-    </message>
-    <message>
-        <source>Use concise language to summarize this article</source>
-        <translation type="vanished">Koristite sažet jezik za sažimanje ovog članka</translation>
-    </message>
-    <message>
-        <source>I need a summary of this report, no more than 200 words</source>
-        <translation type="vanished">Trebam sažetak ovog izvješća, ne više od 200 riječi</translation>
-    </message>
-    <message>
-        <source>Extract the main data and conclusions from this document</source>
-        <translation type="vanished">Izdvojite glavne podatke i zaključke iz ovog dokumenta</translation>
-    </message>
-    <message>
-        <source>Summarize the main sections and points of this lengthy content</source>
-        <translation type="vanished">Sažmite glavne odjeljke i točke ovog opsežnog sadržaja</translation>
-    </message>
-    <message>
-        <source>Help me summarize the research methods and findings of this paper</source>
-        <translation type="vanished">Pomozite mi sažeti istraživačke metode i nalaze ovog rada</translation>
-    </message>
-    <message>
-        <source>Please summarize the key points of this article in a table format</source>
-        <translation type="vanished">Molim vas sažmite ključne točke ovog članka u obliku tablice</translation>
-    </message>
-    <message>
-        <source>Summarize the operational steps in this file using bullet points</source>
-        <translation type="vanished">Sažmite operativne korake u ovoj datoteci koristeći točkice</translation>
-    </message>
-    <message>
-        <source>Display the key clauses of this contract in bullet list format</source>
-        <translation type="vanished">Prikažite ključne klauzule ovog ugovora u obliku popisa s točkicama</translation>
-    </message>
-    <message>
-        <source>Create an outline for a report on AI trends, covering technology, ethics, and applications</source>
-        <translation type="vanished">Napravite nacrt izvješća o trendovima umjetne inteligencije, uključujući tehnologiju, etiku i primjene</translation>
-    </message>
-    <message>
-        <source>Organize the uploaded paper into a structured research framework outline</source>
-        <translation type="vanished">Organizirajte preneseni rad u strukturirani nacrt istraživačkog okvira</translation>
-    </message>
-    <message>
-        <source>I need a business plan outline including market analysis, product description, and financial planning</source>
-        <translation type="vanished">Trebam nacrt poslovnog plana koji uključuje analizu tržišta, opis proizvoda i financijsko planiranje</translation>
-    </message>
-    <message>
-        <source>Convert this speech into a PowerPoint outline with bullet points for each section</source>
-        <translation type="vanished">Pretvorite ovaj govor u PowerPoint nacrt s točkicama za svaki odjeljak</translation>
-    </message>
-    <message>
-        <source>Write a book summary outline covering key points and my personal reflections</source>
-        <translation type="vanished">Napišite nacrt sažetka knjige koji obuhvaća ključne točke i moja osobna razmišljanja</translation>
-    </message>
-    <message>
-        <source>Summarize the meeting notes file into a project execution plan outline</source>
-        <translation type="vanished">Sažmite datoteku sa bilješkama sastanka u nacrt plana izvedbe projekta</translation>
-    </message>
-    <message>
-        <source>I need a thesis chapter outline including introduction, literature review, and methodology</source>
-        <translation type="vanished">Trebam nacrt poglavlja diplomskog rada koji uključuje uvod, pregled literature i metodologiju</translation>
-    </message>
-    <message>
-        <source>Create a product requirements document (PRD) outline with feature descriptions and user flows</source>
-        <translation type="vanished">Napravite nacrt dokumenta s zahtjevima za proizvod (PRD) s opisima značajki i korisničkim tokovima</translation>
-    </message>
-    <message>
-        <source>Extract key data from this industry report to make a summary outline</source>
-        <translation type="vanished">Izdvojite ključne podatke iz ovog industrijskog izvješća kako biste napravili sažeti nacrt</translation>
-    </message>
-    <message>
-        <source>Write an event planning outline including schedule, team roles, and budget</source>
-        <translation type="vanished">Napišite nacrt planiranja događaja koji uključuje raspored, uloge tima i proračun</translation>
-    </message>
-    <message>
-        <source>Generate a three-level outline from this document</source>
-        <translation type="vanished">Generirajte trostupanjski okvir iz ovog dokumenta</translation>
-    </message>
-    <message>
-        <source>Extract core framework from meeting notes</source>
-        <translation type="vanished">Izdvojite ključni okvir iz bilješki sa sastanka</translation>
-    </message>
-    <message>
-        <source>Organize research report structure</source>
-        <translation type="vanished">Organizirajte strukturu istraživačkog izvješća</translation>
-    </message>
-    <message>
-        <source>Create product feature overview</source>
-        <translation type="vanished">Izradite pregled značajki proizvoda</translation>
-    </message>
-    <message>
-        <source>Design training course syllabus</source>
-        <translation type="vanished">Dizajnirajte nastavni plan i program za obuku</translation>
-    </message>
-    <message>
-        <source>Analyze literature review framework</source>
-        <translation type="vanished">Analizirajte okvir pregleda literature</translation>
-    </message>
-    <message>
-        <source>Generate business plan table of contents</source>
-        <translation type="vanished">Generirajte sadržaj poslovnog plana</translation>
-    </message>
-    <message>
-        <source>Write event planning flow points</source>
-        <translation type="vanished">Napišite točke toka planiranja događaja</translation>
-    </message>
-    <message>
-        <source>Help me write a meeting notice for tomorrow at 3 PM in Conference Room A about project progress reporting</source>
-        <translation type="vanished">Pomozite mi napisati obavijest o sastanku za sutra u 15 sati u Konferencijskoj sobi A o izvješćivanju o napretku projekta</translation>
-    </message>
-    <message>
-        <source>Create a concise notice based on this document highlighting the deadline and submission method</source>
-        <translation type="vanished">Izradite sažetu obavijest na temelju ovog dokumenta koja ističe rok i način podnošenja</translation>
-    </message>
-    <message>
-        <source>Draft a holiday notice for Spring Festival from February 10 to 17 with work resuming on February 18</source>
-        <translation type="vanished">Nacrtajte obavijest o odmoru za Proljetni festival od 10. do 17. veljače s nastavkom rada 18. veljače</translation>
-    </message>
-    <message>
-        <source>I need an activity notice for staff training all day next Wednesday at the company auditorium</source>
-        <translation type="vanished">Trebam obavijest o aktivnosti za obuku osoblja cijeli dan sljedeće srijede u tvrtkinom auditoriju</translation>
-    </message>
-    <message>
-        <source>Format the provided text materials into a formal notice with standard formatting and professional tone</source>
-        <translation type="vanished">Formatirajte dostavljene tekstualne materijale u službenu obavijest sa standardnim formatiranjem i profesionalnim tonom</translation>
-    </message>
-    <message>
-        <source>Write a power outage notice for this Saturday from 9 AM to 5 PM affecting the entire office building</source>
-        <translation type="vanished">Napišite obavijest o nestanku struje za ovu subotu od 9 do 17 sati koja će utjecati na cijelu poslovnu zgradu</translation>
-    </message>
-    <message>
-        <source>Generate a meeting change notice shifting the original time to Friday at 10 AM keeping other details same</source>
-        <translation type="vanished">Generirajte obavijest o promjeni sastanka pomakom izvornog vremena na petak u 10 sati uz zadržavanje ostalih detalja</translation>
-    </message>
-    <message>
-        <source>Prepare a brief notice based on the attached meeting minutes for absent attendees</source>
-        <translation type="vanished">Pripremite kratku obavijest na temelju priloženih zapisnika sa sastanka za odsutne sudionike</translation>
-    </message>
-    <message>
-        <source>Draft a system upgrade notice scheduled tonight from midnight to 3 AM with system downtime</source>
-        <translation type="vanished">Nacrtajte obavijest o nadogradnji sustava zakazanoj za večeras od ponoći do 3 sata ujutro s prekidom rada sustava</translation>
-    </message>
-    <message>
-        <source>Write a concise holiday duty arrangement notice listing on-duty staff and contact information</source>
-        <translation type="vanished">Napišite sažetu obavijest o rasporedu dežurstva za praznike s popisom dežurnog osoblja i kontaktnim podacima</translation>
-    </message>
-    <message>
-        <source>Help me write a public health article about healthy eating in simple language for general readers</source>
-        <translation type="vanished">Pomozite mi napisati članak o javnom zdravlju o zdravoj prehrani jednostavnim jezikom za širu čitateljsku publiku</translation>
-    </message>
-    <message>
-        <source>Create a fun and engaging tech trend post based on this document</source>
-        <translation type="vanished">Izradite zabavan i privlačan post o tehnološkim trendovima na temelju ovog dokumenta</translation>
-    </message>
-    <message>
-        <source>Draft a holiday promotion post highlighting discounts and event schedule</source>
-        <translation type="vanished">Nacrtajte promotivni post za praznike koji ističe popuste i raspored događaja</translation>
-    </message>
-    <message>
-        <source>I need a product launch article focusing on features and customer reviews</source>
-        <translation type="vanished">Trebam članak o lansiranju proizvoda koji se fokusira na značajke i recenzije kupaca</translation>
-    </message>
-    <message>
-        <source>Turn this interview transcript into a casual personality profile post</source>
-        <translation type="vanished">Pretvorite ovaj transkript intervjua u ležerni post o profilu osobnosti</translation>
-    </message>
-    <message>
-        <source>Write a travel guide recommending three popular spots with practical tips</source>
-        <translation type="vanished">Napišite vodič za putovanja koji preporučuje tri popularna mjesta s praktičnim savjetima</translation>
-    </message>
-    <message>
-        <source>Generate an anniversary post reviewing company history and thanking customers</source>
-        <translation type="vanished">Generirajte post za godišnjicu koji pregleda povijest tvrtke i zahvaljuje kupcima</translation>
-    </message>
-    <message>
-        <source>Analyze this industry report with visualized data for an insightful post</source>
-        <translation type="vanished">Analizirajte ovo industrijsko izvješće s vizualiziranim podacima za pronicljiv post</translation>
-    </message>
-    <message>
-        <source>Draft a charity campaign post encouraging participation with clear instructions</source>
-        <translation type="vanished">Nacrtajte post o dobrotvornoj kampanji koji potiče sudjelovanje s jasnim uputama</translation>
-    </message>
-    <message>
-        <source>Write a career skills article with five actionable tips and real examples</source>
-        <translation type="vanished">Napišite članak o vještinama u karijeri s pet praktičnih savjeta i stvarnim primjerima</translation>
-    </message>
-    <message>
-        <source>Help me write a weekly work summary focusing on project progress and team collaboration</source>
-        <translation type="vanished">Pomozite mi napisati tjedni sažetak rada s fokusom na napredak projekta i suradnju tima</translation>
-    </message>
-    <message>
-        <source>Generate a concise work summary based on the meeting notes file I uploaded</source>
-        <translation type="vanished">Generirajte sažetak rada na temelju datoteke sa zapisnicima sastanka koju sam prenio</translation>
-    </message>
-    <message>
-        <source>I need a quarterly work summary including data analysis and personal growth reflection</source>
-        <translation type="vanished">Trebam kvartalni sažetak rada koji uključuje analizu podataka i razmišljanje o osobnom rastu</translation>
-    </message>
-    <message>
-        <source>Create a work summary based on the following text [paste text]</source>
-        <translation type="vanished">Izradite sažetak rada na temelju sljedećeg teksta [zalijepite tekst]</translation>
-    </message>
-    <message>
-        <source>Write a work summary highlighting this month&apos;s KPI achievements and challenges encountered</source>
-        <translation type="vanished">Napišite sažetak rada s naglaskom na postignuća KPI-ja ovog mjeseca i naiđene izazove</translation>
-    </message>
-    <message>
-        <source>Help me summarize last week&apos;s work categorized by projects</source>
-        <translation type="vanished">Pomozite mi sažeti prošlotjedni rad kategoriziran po projektima</translation>
-    </message>
-    <message>
-        <source>Generate a work summary from email content emphasizing pending tasks and completions</source>
-        <translation type="vanished">Generirajte sažetak rada iz sadržaja e-pošte s naglaskom na zadatke na čekanju i dovršene zadatke</translation>
-    </message>
-    <message>
-        <source>I need an annual summary including work highlights and improvement plans</source>
-        <translation type="vanished">Trebam godišnji sažetak koji uključuje vrhunske rezultate rada i planove za poboljšanje</translation>
-    </message>
-    <message>
-        <source>Generate a monthly work report from the data I uploaded</source>
-        <translation type="vanished">Generirajte mjesečno izvješće o radu iz podataka koje sam prenio</translation>
-    </message>
-    <message>
-        <source>Help me organize scattered work notes into a structured work summary</source>
-        <translation type="vanished">Pomozite mi organizirati rasute bilješke o radu u strukturirani sažetak rada</translation>
-    </message>
-    <message>
-        <source>Analyze the uploaded data and generate a market trend report</source>
-        <translation type="vanished">Analizirajte prenesene podatke i generirajte izvješće o tržišnim trendovima</translation>
-    </message>
-    <message>
-        <source>Extract key information from the text and compile an industry analysis report</source>
-        <translation type="vanished">Izdvojite ključne informacije iz teksta i sastavite izvješće o analizi industrije</translation>
-    </message>
-    <message>
-        <source>Combine the contents of the file to write a competitor research report</source>
-        <translation type="vanished">Kombinirajte sadržaje datoteke da napišete izvješće o istraživanju konkurencije</translation>
-    </message>
-    <message>
-        <source>Generate a user needs research summary based on the provided interview records</source>
-        <translation type="vanished">Generirajte sažetak istraživanja korisničkih potreba na temelju dostupnih zapisa intervjua</translation>
-    </message>
-    <message>
-        <source>Analyze these sales data and produce a quarterly market performance report</source>
-        <translation type="vanished">Analizirajte ove podatke o prodaji i izradite kvartalno izvješće o tržišnom učinku</translation>
-    </message>
-    <message>
-        <source>Write a technical research report based on the given product description</source>
-        <translation type="vanished">Napišite tehničko istraživačko izvješće na temelju danog opisa proizvoda</translation>
-    </message>
-    <message>
-        <source>Organize these user feedback and generate a product improvement suggestion report</source>
-        <translation type="vanished">Organizirajte ove povratne informacije korisnika i generirajte izvješće s prijedlozima za poboljšanje proizvoda</translation>
-    </message>
-    <message>
-        <source>Please write a market opportunity analysis report based on the provided file</source>
-        <translation type="vanished">Molimo napišite izvješće o analizi tržišnih prilika na temelju dostupne datoteke</translation>
-    </message>
-    <message>
-        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation type="vanished">Pomozite mi napisati esej na temu [%1] s [jasnom strukturom i bogatim sadržajem].</translation>
-    </message>
-    <message>
-        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation type="vanished">Pomozite mi napisati javni tweet na temu [%1], s [jasnom strukturom] i [opuštenim] tonom.</translation>
-    </message>
-    <message>
-        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation type="vanished">Pomozite mi napisati sažetak mog nedavnog rada, uključujući [%1] i [rezultate], s [formalnim] tonom.</translation>
-    </message>
-    <message>
-        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation type="vanished">Pomozite mi napisati istraživačko izvješće o [%1], koje mora uključivati [opis statusa, analizu problema, protumjere i prijedloge, zaključke istraživanja].</translation>
-    </message>
-    <message>
-        <source>Artificial Intelligence</source>
-        <translation type="vanished">Umjetna inteligencija</translation>
-    </message>
-    <message>
-        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation type="vanished">Pomozite mi napisati govor na temu [%1] za [vodstvo tvrtke], s [jasnom strukturom i živopisnim jezikom].</translation>
-    </message>
-    <message>
-        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation type="vanished">Pomozite mi napisati nacrt na temu [%1], koji će se koristiti za [izradu PPT-a].</translation>
-    </message>
-    <message>
-        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation type="vanished">Pomozite mi napisati obavijest o [%1], primatelj su [svi zaposlenici], a pošiljatelj je [administrativni odjel].</translation>
-    </message>
-    <message>
-        <source>National Day Holiday</source>
-        <translation type="vanished">Dan državnosti</translation>
-    </message>
-    <message>
-        <source>work content</source>
-        <translation type="vanished">sadržaj rada</translation>
-    </message>
-</context>
-<context>
-    <name>EAiPrompt</name>
-    <message>
-        <source>---Role---
-You are a helpful assistant, answering questions about the background knowledge provided.
-
----Goal---
-Respond to users&apos; questions, incorporating any relevant common sense.If you don&apos;t know the answer, just say so. Don&apos;t make it up.
-
----knowledge---
-%1
-
----question---
-%2
-</source>
-        <translation type="vanished">---Uloga---
-
-Vi ste koristan pomoćnik koji odgovara na pitanja o priloženom pozadinskom znanju.
-
----Cilj---
-
-Odgovarajte na korisnička pitanja, uključujući relevantno opće znanje. Ako ne znate odgovor, jednostavno to recite. Ne izmišljajte.
-
----znanje---
-
-%1
-
----pitanje---
-
-%2</translation>
-    </message>
-    <message>
-        <source>The output answer starts with &quot;No relevant information was found in your knowledge base.&quot;---question--
-:%1
-</source>
-        <translation type="vanished">Izlazni odgovor počinje s &quot;Nije pronađena relevantna informacija u vašoj bazi znanja.&quot;---pitanje--
-
-:%1</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a helpful assistant, answering questions about the background knowledge provided.
-
----Goal---
-Respond to users&apos; questions, incorporating any relevant common sense.If you don&apos;t know the answer, just say so. Don&apos;t make it up.
-
----knowledge---
-%1
-
----question---
-%2</source>
-        <translation type="vanished">---Uloga---
-
-Vi ste koristan pomoćnik koji odgovara na pitanja o priloženom pozadinskom znanju.
-
----Cilj---
-
-Odgovarajte na korisnička pitanja, uključujući relevantno opće znanje. Ako ne znate odgovor, jednostavno to recite. Ne izmišljajte.
-
----znanje---
-
-%1
-
----pitanje---
-
-%2</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a professional writer with expertise in various writing styles and formats.
-
----Goal---
-Based on the user&apos;s request, create high-quality content that meets their specific needs.
-
----Writing Types---
-1. Article: Write well-structured articles with clear arguments and engaging content
-2. Speeches: Create compelling speeches with proper opening, body, and conclusion
-
-3. Outlines: Create a structured outline for the given topic
-4. Notifications: Write formal notices or announcements
-5. Posts: Create engaging social media content
-6. Work Report: Write comprehensive work reports
-7. Research Report: Create detailed research reports
----Input---
-%1
-
----Output Format---
-Please provide the content in the following format:
-Title:
-Content:</source>
-        <translation type="vanished">---Uloga---
-
-Vi ste profesionalni pisac s iskustvom u različitim stilovima i formatima pisanja.
-
----Cilj---
-
-Na temelju korisničkog zahtjeva stvorite visokokvalitetni sadržaj koji zadovoljava njihove specifične potrebe.
-
----Vrste pisanja---
-
-1. Članak: Napišite dobro strukturirane članke s jasnim argumentima i zanimljivim sadržajem
-
-2. Govori: Stvorite uvjerljive govore s odgovarajućim uvodom, tijelom i zaključkom
-
-
-3. Obrasci: Izradite strukturirani obrazac za zadanu temu
-
-4. Obavijesti: Napišite službene obavijesti ili najave
-
-5. Objave: Stvorite zanimljiv sadržaj za društvene mreže
-
-6. Izvještaj o radu: Napišite sveobuhvatne izvještaje o radu
-
-7. Istraživački izvještaj: Izradite detaljne istraživačke izvještaje
-
----Ulaz---
-
-%1
-
----Format izlaza---
-
-Molimo pružite sadržaj u sljedećem formatu:
-
-Naslov:
-
-Sadržaj:</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a text processing expert with deep expertise in language analysis, writing techniques, and text optimization.
-
----Goal---
-Process and improve the input text while maintaining its original meaning and style.
-
----Processing Types---
-1. Summary: Create a concise summary of the main points
-2. Proofread: Identify and fix grammatical, spelling, and stylistic errors
-3. Explain: Provide detailed explanations of complex concepts or passages
-4. Expand: Elaborate on key points while maintaining the original style
-5. Continue: Continue the text in a coherent and natural way
-6. Polish: Enhance the text&apos;s clarity, flow, and impact while preserving its essence
-
----Input---
-%1
-
----Output Format---
-Please provide the processed text directly without any additional characters or formatting.</source>
-        <translation type="vanished">---Uloga---
-
-Vi ste stručnjak za obradu teksta s dubokim znanjem o analizi jezika, tehnikama pisanja i optimizaciji teksta.
-
----Cilj---
-
-Obradite i poboljšajte ulazni tekst zadržavajući njegovo izvorno značenje i stil.
-
----Vrste obrade---
-
-1. Sažetak: Izradite sažeti sažetak glavnih točaka
-
-2. Lektoriranje: Identificirajte i ispravite gramatičke, pravopisne i stilske pogreške
-
-3. Objašnjenje: Pružite detaljna objašnjenja složenih koncepata ili odlomaka
-
-4. Proširenje: Razradite ključne točke zadržavajući izvorni stil
-
-5. Nastavak: Nastavite tekst koherentno i prirodno
-
-6. Poliranje: Poboljšajte jasnoću, tijek i utjecaj teksta zadržavajući njegovu srž
-
----Ulaz---
-
-%1
-
----Format izlaza---
-
-Molimo pružite obrađeni tekst izravno bez dodatnih znakova ili formatiranja.</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a professional translator and language expert. Your task is to:
-1. Accurately translate text as requested
-2. Answer language-related questions
-3. Identify and handle specific translation requests
-
----Goal---
-Carefully analyze the user&apos;s input to determine their intent:
-1. If the input contains phrases like &apos;what does this mean&apos;, &apos;explain this phrase&apos;, or similar - provide ONLY a language explanation (no translation)
-2. If the input specifies a particular sentence/paragraph to translate (e.g. &apos;Translate this sentence:...&apos;) - translate ONLY the specified portion (no full translation)
-3. Only when no specific request is detected, perform full translation between Chinese and English
-
-Always maintain the original meaning, tone, and style. For translations:
-- Chinese → English
-- English → Chinese
-
-For language questions, provide clear, concise explanations.
-
----Input---
-%1
-
----Output Format---
-1. For full translations: Provide only the translation without additional formatting
-2. For partial translations: Provide only the specified portion&apos;s translation
-3. For explanations: Provide only the explanation in the same language as the question
-Never combine explanation with translation or provide full translation after partial translation</source>
-        <translation type="vanished">---Uloga---
-
-Vi ste profesionalni prevoditelj i jezikoslovni stručnjak. Vaš zadatak je:
-
-1. Točno prevesti tekst prema zahtjevu
-
-2. Odgovarati na jeziku vezana pitanja
-
-3. Identificirati i obraditi specifične zahtjeve za prevođenjem
-
----Cilj---
-
-Pažljivo analizirajte korisnički unos kako biste odredili njihovu namjeru:
-
-1. Ako unos sadrži fraze poput &apos;što ovo znači&apos;, &apos;objasni ovu frazu&apos;, ili slično - pružite SAMO jezično objašnjenje (bez prijevoda)
-
-2. Ako unos određuje određenu rečenicu/odlomak za prevođenje (npr. &apos;Prevedi ovu rečenicu:...&apos;) - prevedite SAMO određeni dio (bez cjelovitog prijevoda)
-
-3. Samo kada nije otkriven nikakav specifičan zahtjev, izvršite cjelovito prevođenje između kineskog i engleskog
-
-Uvijek zadržavajte izvorno značenje, ton i stil. Za prijevode:
-
-- Kineski → Engleski
-
-- Engleski → Kineski
-
-Za jezikoslovna pitanja, pružite jasna, sažeta objašnjenja.
-
----Ulaz---
-
-%1
-
----Format izlaza---
-
-1. Za cjelovite prijevode: Pružite samo prijevod bez dodatnog formatiranja
-
-2. Za djelomične prijevode: Pružite samo prijevod određenog dijela
-
-3. Za objašnjenja: Pružite samo objašnjenje na istom jeziku kao i pitanje
-
-Nikada nemojte kombinirati objašnjenje s prijevodom ili pružiti cjeloviti prijevod nakon djelomičnog</translation>
-    </message>
-</context>
-<context>
-    <name>EAiProxy</name>
-    <message>
-        <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
-        <translation type="vanished">Ažurirajte UOS Screen Recorder na verziju 6.6 ili noviju i ponovno pokrenite računalo kako biste omogućili Snimku ekrana s pitanjima i odgovorima.</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Konfiguracija modela</translation>
-    </message>
-    <message>
-        <source>Go to configuration</source>
-        <translation type="vanished">Idi na konfiguraciju</translation>
-    </message>
-    <message>
-        <source>No account</source>
-        <translation type="vanished">Nema računa</translation>
-    </message>
-    <message>
-        <source>Input question</source>
-        <translation type="vanished">Unesite pitanje</translation>
-    </message>
-    <message>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="vanished">Sadržaj generiran od strane AI-a je samo za referencu, obratite pažnju na točnost informacija.</translation>
-    </message>
-    <message>
-        <source>Welcome to UOS AI</source>
-        <translation type="vanished">Dobrodošli u UOS AI</translation>
-    </message>
-    <message>
-        <source>Here are some of the things UOS AI can help you do</source>
-        <translation type="vanished">Evo nekoliko stvari u kojima vam UOS AI može pomoći</translation>
-    </message>
-    <message>
-        <source>Stop</source>
-        <translation type="vanished">Zaustavi</translation>
-    </message>
-    <message>
-        <source>Regenerate</source>
-        <translation type="vanished">Ponovno generiraj</translation>
-    </message>
-    <message>
-        <source>Clear conversation history</source>
-        <translation type="vanished">Očisti povijest razgovora</translation>
-    </message>
-    <message>
-        <source>Please connect the microphone and try again</source>
-        <translation type="vanished">Molimo spojite mikrofon i pokušajte ponovno</translation>
-    </message>
-    <message>
-        <source>Chat history cleared</source>
-        <translation type="vanished">Povijest razgovora očišćena</translation>
-    </message>
-    <message>
-        <source>Click to start/stop recording</source>
-        <translation type="vanished">Kliknite za početak/prekid snimanja</translation>
-    </message>
-    <message>
-        <source>Listening</source>
-        <translation type="vanished">Slušanje</translation>
-    </message>
-    <message>
-        <source>Sleeping</source>
-        <translation type="vanished">Spavanje</translation>
-    </message>
-    <message>
-        <source>Microphone not detected</source>
-        <translation type="vanished">Mikrofon nije detektiran</translation>
-    </message>
-    <message>
-        <source>Connection failed, click to try again</source>
-        <translation type="vanished">Veza nije uspjela, kliknite za ponovni pokušaj</translation>
-    </message>
-    <message>
-        <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation type="vanished">Kliknite na animaciju ili Ctrl+Super+Space za aktivaciju</translation>
-    </message>
-    <message>
-        <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation type="vanished">Govorni unos je privremeno nedostupan, provjerite mrežu!</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Nije moguće povezati se s poslužiteljem, provjerite mrežu ili pokušajte kasnije.</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Govorni razgovor</translation>
-    </message>
-    <message>
-        <source>Click the animation or press Enter to send</source>
-        <translation type="vanished">Kliknite animaciju ili pritisnite Enter za slanje</translation>
-    </message>
-    <message>
-        <source>Stop recording after %1 seconds</source>
-        <translation type="vanished">Zaustavi snimanje nakon %1 sekundi</translation>
-    </message>
-    <message>
-        <source>Thinking</source>
-        <translation type="vanished">Razmišljanje</translation>
-    </message>
-    <message>
-        <source>Click animation to interrupt</source>
-        <translation type="vanished">Kliknite animaciju za prekid</translation>
-    </message>
-    <message>
-        <source>Answering</source>
-        <translation type="vanished">Odgovaranje</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="vanished">Kvota vašeg besplatnog računa je iscrpljena, konfigurirajte račun modela za nastavak korištenja.</translation>
-    </message>
-    <message>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="vanished">Vaš besplatni račun je istekao, konfigurirajte račun modela za nastavak korištenja.</translation>
-    </message>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI zahtijeva konfiguraciju računa AI modela prije upotrebe. Molimo prvo konfigurirajte račun modela.</translation>
-    </message>
-    <message>
-        <source>Activate</source>
-        <translation type="vanished">Aktiviraj</translation>
-    </message>
-    <message>
-        <source>Voice input</source>
-        <translation type="vanished">Glasovni unos</translation>
-    </message>
-    <message>
-        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation type="vanished">Glasovno emitiranje je privremeno nedostupno, molimo provjerite mrežu!</translation>
-    </message>
-    <message>
-        <source>Turn off voice conversation</source>
-        <translation type="vanished">Isključi glasovni razgovor</translation>
-    </message>
-    <message>
-        <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation type="vanished">Slika je generirana, molimo prebacite se na sučelje chata za pregled.</translation>
-    </message>
-    <message>
-        <source>No account, please configure an account</source>
-        <translation type="vanished">Nema računa, molimo konfigurirajte račun</translation>
-    </message>
-    <message>
-        <source>Answer each question up to 5 times</source>
-        <translation type="vanished">Odgovorite na svako pitanje do 5 puta</translation>
-    </message>
-    <message>
-        <source>Copied successfully</source>
-        <translation type="vanished">Uspješno kopirano</translation>
-    </message>
-    <message>
-        <source>Sound output device not detected</source>
-        <translation type="vanished">Izlazni uređaj za zvuk nije detektiran</translation>
-    </message>
-    <message>
-        <source>The sound output device is not detected, please check and try again!</source>
-        <translation type="vanished">Izlazni uređaj za zvuk nije detektiran, molimo provjerite i pokušajte ponovno!</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Postavke</translation>
-    </message>
-    <message>
-        <source>About</source>
-        <translation type="vanished">O programu</translation>
-    </message>
-    <message>
-        <source>Mode</source>
-        <translation type="vanished">Način rada</translation>
-    </message>
-    <message>
-        <source>Window Mode</source>
-        <translation type="vanished">Prozorski način rada</translation>
-    </message>
-    <message>
-        <source>Sidebar Mode</source>
-        <translation type="vanished">Bočni način rada</translation>
-    </message>
-    <message>
-        <source>Assistant List</source>
-        <translation type="vanished">Popis asistenata</translation>
-    </message>
-    <message>
-        <source>Agent List</source>
-        <translation type="vanished">Popis agenata</translation>
-    </message>
-    <message>
-        <source>Agent Store</source>
-        <translation type="vanished">Trgovina agenata</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">Sustavski asistent UOS</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Sustavski asistent Deepin</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Osobni asistent za znanje</translation>
-    </message>
-    <message>
-        <source>Please configure the knowledge base</source>
-        <translation type="vanished">Molimo konfigurirajte bazu znanja</translation>
-    </message>
-    <message>
-        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation type="vanished">Prije korištenja [Osobnog asistenta za znanje] potrebno je konfigurirati bazu znanja. Nakon konfiguracije baze znanja, AI će odgovarati na pitanja ili generirati sadržaj na temelju sadržaja koji ste konfigurirali u bazi znanja.</translation>
-    </message>
-    <message>
-        <source>Please configure the large model</source>
-        <translation type="vanished">Molimo konfigurirajte veliki model</translation>
-    </message>
-    <message>
-        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation type="vanished">Osobni asistent za znanje može se koristiti tek nakon konfiguracije velikog modela.</translation>
-    </message>
-    <message>
-        <source>To configure</source>
-        <translation type="vanished">Za konfiguraciju</translation>
-    </message>
-    <message>
-        <source>To install</source>
-        <translation type="vanished">Za instalaciju</translation>
-    </message>
-    <message>
-        <source>Please install [EmbeddingPlugins]</source>
-        <translation type="vanished">Molimo instalirajte [EmbeddingPlugins]</translation>
-    </message>
-    <message>
-        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation type="vanished">Ovaj asistent zahtijeva instalaciju EmbeddingPlugins-a za rad</translation>
-    </message>
-    <message>
-        <source>Drag files here to add them.</source>
-        <translation type="vanished">Povucite datoteke ovdje da ih dodate.</translation>
-    </message>
-    <message>
-        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation type="vanished">Možete dodati samo 3 datoteke, podržani tipovi datoteka uključuju: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, kodne datoteke i dr.</translation>
-    </message>
-    <message>
-        <source>MCP Server</source>
-        <translation type="vanished">MCP poslužitelj</translation>
-    </message>
-    <message>
-        <source>Add Mcp Server</source>
-        <translation type="vanished">Dodaj MCP poslužitelj</translation>
-    </message>
-    <message>
-        <source>Add Server</source>
-        <translation type="vanished">Dodaj poslužitelj</translation>
-    </message>
-    <message>
-        <source>Add failed! Error reason:</source>
-        <translation type="vanished">Dodavanje nije uspjelo! Razlog greške:</translation>
-    </message>
-    <message>
-        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation type="vanished">MCP okruženje nedostaje. Instalirajte 【UOS AI Agent】</translation>
-    </message>
-    <message>
-        <source>Calling</source>
-        <translation type="vanished">Pozivam</translation>
-    </message>
-    <message>
-        <source>Completed</source>
-        <translation type="vanished">Dovršeno</translation>
-    </message>
-    <message>
-        <source>Call Failed</source>
-        <translation type="vanished">Poziv nije uspio</translation>
-    </message>
-    <message>
-        <source>Cancelled</source>
-        <translation type="vanished">Otkazano</translation>
-    </message>
-    <message>
-        <source>params</source>
-        <translation type="vanished">parametri</translation>
-    </message>
-    <message>
-        <source>result</source>
-        <translation type="vanished">rezultat</translation>
-    </message>
-    <message>
-        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="vanished">Za MCP poslužitelj, prebacite se na službeno izdani model &quot;DeepSeek-Trial Account&quot;</translation>
-    </message>
-    <message>
-        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation type="vanished">Unesite MCP poslužiteljsku naredbu, npr. &quot;Prebaci sustav u tamni način rada za mene&quot;</translation>
-    </message>
-    <message>
-        <source>Agent server is not available</source>
-        <translation type="vanished">Agent poslužitelj nije dostupan</translation>
-    </message>
-    <message>
-        <source>Agent server exception</source>
-        <translation type="vanished">Iznimka agent poslužitelja</translation>
-    </message>
-    <message>
-        <source>MCP server is not available</source>
-        <translation type="vanished">MCP poslužitelj nije dostupan</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Odustani</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="obsolete">Potvrdi</translation>
-    </message>
-    <message>
-        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation type="vanished">Automatizirajte zadatke s više datoteka i aplikacija jednom naredbom pomoću MCP usluge. Isprobajte odmah!</translation>
-    </message>
-    <message>
-        <source>Use later</source>
-        <translation type="vanished">Koristi kasnije</translation>
-    </message>
-    <message>
-        <source>Install Now</source>
-        <translation type="vanished">Instaliraj sada</translation>
-    </message>
-    <message>
-        <source>Enable MCP Server</source>
-        <translation type="vanished">Omogući MCP poslužitelj</translation>
-    </message>
-    <message>
-        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation type="vanished">Nakon instalacije MCP okruženja &quot;UOS AI Agent&quot;, kliknite na </translation>
-    </message>
-    <message>
-        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation type="vanished"> i odaberite &quot;uos-mcp&quot; s popisa MCP poslužitelja.</translation>
-    </message>
-    <message>
-        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation type="vanished">Isprobajte reći: &quot;Prebaci sustav u tamni način rada&quot;.</translation>
-    </message>
-    <message>
-        <source>Try it now</source>
-        <translation type="vanished">Isprobaj odmah</translation>
-    </message>
-    <message>
-        <source>Add Mcp Server[GuidePage]</source>
-        <translation type="vanished">Dodaj MCP poslužitelj [Vodič]</translation>
-    </message>
-    <message>
-        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation type="vanished">Prvi korisnici: Instalirajte MCP okruženje &quot;UOS AI Agent&quot; putem Trgovine aplikacija.</translation>
-    </message>
-    <message>
-        <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation type="vanished">JSON format datoteke je neispravan, molimo provjerite i pošaljite ponovno</translation>
-    </message>
-    <message>
-        <source>Install Now &gt;</source>
-        <translation type="vanished">Instaliraj sada &gt;</translation>
-    </message>
-    <message>
-        <source>General Chat</source>
-        <translation type="vanished">Opći razgovor</translation>
-    </message>
-    <message>
-        <source>Private Chat</source>
-        <translation type="vanished">Privatni razgovor</translation>
-    </message>
-    <message>
-        <source>Now in Private Chat</source>
-        <translation type="vanished">Sada u privatnom razgovoru</translation>
-    </message>
-    <message>
-        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation type="vanished">Privatne poruke u chatu ne spremaju se u povijest i trajno će se izbrisati kada napustite chat.</translation>
-    </message>
-    <message>
-        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation type="vanished">Screenshot Q&amp;A Prečac (Ctrl+Alt+Q), podržava do 3 slike.</translation>
-    </message>
-    <message>
-        <source>Cannot be used during screen recording</source>
-        <translation type="vanished">Nije dostupno tijekom snimanja zaslona</translation>
-    </message>
-    <message>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="vanished">Možete prenijeti do 3 datoteke ili slike</translation>
-    </message>
-    <message>
-        <source>Upload Files</source>
-        <translation type="vanished">Prenesi datoteke</translation>
-    </message>
-    <message>
-        <source>Please delete the abnormal file and send it again</source>
-        <translation type="vanished">Izbrišite neispravnu datoteku i pošaljite ponovno</translation>
-    </message>
-    <message>
-        <source>Add Private Chat</source>
-        <translation type="vanished">Dodaj privatni chat</translation>
-    </message>
-    <message>
-        <source>Add [Screenshot Q&amp;A]</source>
-        <translation type="vanished">Dodaj [Screenshot Q&amp;A]</translation>
-    </message>
-    <message>
-        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation type="vanished">Snimite zaslon i pošaljite sadržaj UOS AI-ju. Također možete izravno prenijeti sliku.</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">U redu</translation>
-    </message>
-    <message>
-        <source>Next</source>
-        <translation type="vanished">Dalje</translation>
-    </message>
-    <message>
-        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation type="vanished">Dodaj [ Privatni način rada ] – razgovori se neće spremati.</translation>
-    </message>
-    <message>
-        <source>No text extracted</source>
-        <translation type="vanished">Nije izdvojen nijedan tekst</translation>
-    </message>
-    <message>
-        <source>Image size exceeds 15 MB</source>
-        <translation type="vanished">Veličina slike prelazi 15 MB</translation>
-    </message>
-    <message>
-        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation type="vanished">Nakon otvaranja baze znanja, odgovori će se temeljiti na njezinom sadržaju. Brzina odgovora ovisi o performansama stroja i veličini baze znanja.</translation>
-    </message>
-    <message>
-        <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation type="vanished">Baza znanja nije dostupna ako je odabran bilo koji naredbeni ili MCP modul.</translation>
-    </message>
-    <message>
-        <source>MCP is disabled while the knowledge base is active.</source>
-        <translation type="vanished">MCP je onemogućen dok je baza znanja aktivna.</translation>
-    </message>
-    <message>
-        <source>Commands disabled while knowledge base is active.</source>
-        <translation type="vanished">Naredbe su onemogućene dok je baza znanja aktivna.</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="obsolete">Kopiraj</translation>
-    </message>
-    <message>
-        <source>Re-edit</source>
-        <translation type="vanished">Uredi ponovno</translation>
-    </message>
-    <message>
-        <source>Copy succeeded.</source>
-        <translation type="vanished">Kopiranje uspješno.</translation>
-    </message>
-    <message>
-        <source>Copy failed. Please try again.</source>
-        <translation type="vanished">Kopiranje nije uspjelo. Pokušajte ponovno.</translation>
-    </message>
-    <message>
-        <source>Searching</source>
-        <translation type="vanished">Pretraživanje</translation>
-    </message>
-    <message>
-        <source>%1 reference documents have been obtained (%2s)</source>
-        <translation type="vanished">Dobiveno je %1 referentnih dokumenata (%2 s)</translation>
-    </message>
-    <message>
-        <source>Clear History</source>
-        <translation type="vanished">Očisti povijest</translation>
-    </message>
-    <message>
-        <source>Delete all records?</source>
-        <translation type="vanished">Izbrisati sve zapise?</translation>
-    </message>
-    <message>
-        <source>Once deleted, the content cannot be recovered!</source>
-        <translation type="vanished">Nakon brisanja sadržaj se ne može vratiti!</translation>
-    </message>
-    <message>
-        <source>Recommend official models</source>
-        <translation type="vanished">Preporučite službene modele</translation>
-    </message>
-    <message>
-        <source>Disable MCP</source>
-        <translation type="vanished">Onemogući MCP</translation>
-    </message>
-    <message>
-        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="vanished">Preporuča se korištenje službenog modela „DeepSeek-Trial Account“</translation>
-    </message>
-    <message>
-        <source>Quick Open</source>
-        <translation type="vanished">Brzo otvaranje</translation>
-    </message>
-    <message>
-        <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation type="vanished">Nadogradnja MCP poslužitelja na automatski način rada</translation>
-    </message>
-    <message>
-        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation type="vanished">MCP poslužitelji su nadograđeni u automatski način rada, što omogućuje pristup svim MCP poslužiteljima jednim klikom</translation>
-    </message>
-    <message>
-        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation type="vanished">. To omogućuje automatizaciju zadataka poput postavljanja sustava i obrade datoteka jednim klikom.</translation>
-    </message>
-    <message>
-        <source>Adding MCP Server has been moved to Settings.</source>
-        <translation type="vanished">Dodavanje MCP poslužitelja premješteno je u Postavke.</translation>
-    </message>
-    <message>
-        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation type="vanished">Za dodavanje još MCP poslužitelja idite na Postavke &gt; MCP poslužitelj.</translation>
-    </message>
-    <message>
-        <source>Got it</source>
-        <translation type="obsolete">Shvaćam</translation>
-    </message>
-    <message>
-        <source>Complimentary Model Credits</source>
-        <translation type="vanished">Besplatni krediti za model</translation>
-    </message>
-    <message>
-        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation type="vanished">Trenutni sustav nudi DeepSeek probni račun modela, koji automatski obnavlja besplatnu kvotu na početku svakog mjeseca, omogućujući vam da ga koristite bez brige.</translation>
-    </message>
-    <message>
-        <source>Claim Credits</source>
-        <translation type="vanished">Zatraži kredite</translation>
-    </message>
-    <message>
-        <source>Get a free account</source>
-        <translation type="obsolete">Nabavite besplatni račun</translation>
-    </message>
-    <message>
-        <source>Claim Free Credits</source>
-        <translation type="vanished">Zatraži besplatne kredite</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="vanished">Uspješno zatraženo</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="vanished">Neuspješno zatraženo. Molimo pokušajte ponovno.</translation>
-    </message>
-    <message>
-        <source>Enable MCP Server&amp;</source>
-        <translation type="vanished">Omogući MCP poslužitelj&amp;</translation>
-    </message>
-    <message>
-        <source>Disable MCP Server</source>
-        <translation type="vanished">Onemogući MCP poslužitelj</translation>
-    </message>
-    <message>
-        <source>Configure MCP Server</source>
-        <translation type="vanished">Konfiguriraj MCP poslužitelj</translation>
-    </message>
-    <message>
-        <source>You can only add a maximum of one file.</source>
-        <translation type="vanished">Možete dodati najviše jednu datoteku.</translation>
-    </message>
-    <message>
-        <source>The file format is not supported.</source>
-        <translation type="vanished">Format datoteke nije podržan.</translation>
-    </message>
-    <message>
-        <source>Summarize the key content of the file.</source>
-        <translation type="vanished">Sažmite ključni sadržaj datoteke.</translation>
-    </message>
-    <message>
-        <source>Parsing...</source>
-        <translation type="vanished">Obrada...</translation>
-    </message>
-    <message>
-        <source>File Error</source>
-        <translation type="vanished">Greška u datoteci</translation>
-    </message>
-    <message>
-        <source>File has been deleted.</source>
-        <translation type="vanished">Datoteka je izbrisana.</translation>
-    </message>
-    <message>
-        <source>The file size exceeds the 100MB limit.</source>
-        <translation type="vanished">Veličina datoteke premašuje ograničenje od 100MB.</translation>
-    </message>
-    <message>
-        <source>Upload a document</source>
-        <translation type="vanished">Prenesite dokument</translation>
-    </message>
-    <message>
-        <source>File deleted</source>
-        <translation type="vanished">Datoteka izbrisana</translation>
-    </message>
-    <message>
-        <source>No text was parsed</source>
-        <translation type="vanished">Nije pronađen tekst</translation>
-    </message>
-    <message>
-        <source>Reference</source>
-        <translation type="vanished">Referenca</translation>
-    </message>
-    <message>
-        <source>Instruction</source>
-        <translation type="vanished">Upute</translation>
-    </message>
-    <message>
-        <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation type="vanished">Upišite &quot;/&quot; u polje za unos da biste aktivirali.</translation>
-    </message>
-    <message>
-        <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation type="vanished">Unesite; „Ctrl+Enter“ za promjenu retka.</translation>
-    </message>
-    <message>
-        <source>Enter your question, or enter &quot;/&quot; to select a command
-&quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation type="vanished">Unesite svoje pitanje ili upišite &quot;/&quot; za odabir naredbe
-&quot;Ctrl+Enter&quot; za novi redak</translation>
-    </message>
-    <message>
-        <source>Search complete.</source>
-        <translation type="vanished">Pretraživanje završeno.</translation>
-    </message>
-    <message>
-        <source>Click to view results</source>
-        <translation type="vanished">Kliknite za pregled rezultata</translation>
-    </message>
-    <message>
-        <source>edit</source>
-        <translation type="vanished">uredi</translation>
-    </message>
-    <message>
-        <source>save</source>
-        <translation type="vanished">spremi</translation>
-    </message>
-    <message>
-        <source>copy</source>
-        <translation type="vanished">kopiraj</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Pretraži</translation>
-    </message>
-    <message>
-        <source>DeepThink(R1)</source>
-        <translation type="vanished">DeepThink(R1)</translation>
-    </message>
-    <message>
-        <source>Thinking has stopped</source>
-        <translation type="vanished">Razmišljanje je zaustavljeno</translation>
-    </message>
-    <message>
-        <source>Back to bottom</source>
-        <translation type="vanished">Natrag na dno</translation>
-    </message>
-    <message>
-        <source>Deeply thought (%1 seconds)</source>
-        <translation type="vanished">Duboko razmišljanje (%1 sekundi)</translation>
-    </message>
-    <message>
-        <source>New Conversation</source>
-        <translation type="vanished">Novi razgovor</translation>
-    </message>
-    <message>
-        <source>History</source>
-        <translation type="vanished">Povijest</translation>
-    </message>
-    <message>
-        <source>No History Records</source>
-        <translation type="vanished">Nema zapisa u povijesti</translation>
-    </message>
-    <message>
-        <source>Today</source>
-        <translation type="vanished">Danas</translation>
-    </message>
-    <message>
-        <source>Yesterday</source>
-        <translation type="vanished">Jučer</translation>
-    </message>
-    <message>
-        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation type="vanished">Jeste li sigurni da želite izbrisati razgovor? Nakon brisanja neće biti moguće oporaviti.</translation>
-    </message>
-    <message>
-        <source>The %1 agent used in this conversation has been deleted</source>
-        <translation type="vanished">Agent %1 korišten u ovom razgovoru je izbrisan</translation>
-    </message>
-    <message>
-        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation type="vanished">Ovaj razgovor se ne može pregledati. Da biste ga vidjeli, instalirajte agenta %1 i pokušajte ponovno.</translation>
-    </message>
-    <message>
-        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation type="vanished">Izvorni model razgovora je izbrisan. Prebacili smo vas na novi model kako biste nastavili razgovor.</translation>
-    </message>
-    <message>
-        <source>Recommendations</source>
-        <translation type="vanished">Preporuke</translation>
-    </message>
-    <message>
-        <source>More</source>
-        <translation type="vanished">Više</translation>
-    </message>
-    <message>
-        <source>Add Model</source>
-        <translation type="vanished">Dodaj model</translation>
-    </message>
-    <message>
-        <source>No Model</source>
-        <translation type="vanished">Nema modela</translation>
-    </message>
-    <message>
-        <source>No model available. Please install or configure a model in the settings.</source>
-        <translation type="vanished">Nema dostupnog modela. Instalirajte ili konfigurirajte model u postavkama.</translation>
-    </message>
-    <message>
-        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation type="vanished">Molimo opišite temu sadržaja i zahtjeve za vašu kreaciju.</translation>
-    </message>
-    <message>
-        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation type="vanished">Unesite sadržaj koji želite prevesti i navedite ciljani jezik. Zadani prijevod je na kineski.</translation>
-    </message>
-    <message>
-        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation type="vanished">Unesite tekst koji trebate obraditi i navedite svoje zahtjeve.</translation>
-    </message>
-    <message>
-        <source>New Agent Added</source>
-        <translation type="vanished">Dodan je novi agent</translation>
-    </message>
-    <message>
-        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation type="vanished">Dodani su novi agenti za pisanje, obradu teksta i prijevod. Pogledajte ih sada.</translation>
-    </message>
-    <message>
-        <source>Try it</source>
-        <translation type="vanished">Isprobajte</translation>
-    </message>
-    <message>
-        <source>Write an article based on the following document:</source>
-        <translation type="vanished">Napišite članak na temelju sljedećeg dokumenta:</translation>
-    </message>
-    <message>
-        <source>Translate the following document into English:</source>
-        <translation type="vanished">Prevedite sljedeći dokument na engleski:</translation>
-    </message>
-</context>
-<context>
-    <name>EChatButton</name>
-    <message>
-        <source>Turn off voice conversation</source>
-        <translation type="vanished">Isključi glasovni razgovor</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Glasovni razgovor</translation>
-    </message>
-</context>
-<context>
-    <name>EPPTWebView</name>
-    <message>
-        <source>Export Item As</source>
-        <translation type="vanished">Izvezi stavku kao</translation>
-    </message>
-</context>
-<context>
-    <name>EParserDocument</name>
-    <message>
-        <source>Supported files</source>
-        <translation type="vanished">Podržane datoteke</translation>
+        <translation>Sadržaj dokumenta je neispravan ili prazan.</translation>
     </message>
 </context>
 <context>
     <name>FileParser</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/fileparser.cpp" line="83"/>
         <source>Unsupported file format</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FunctionsParser</name>
-    <message>
-        <source>Function not available</source>
-        <translation type="vanished">Funkcija nije dostupna</translation>
-    </message>
-</context>
-<context>
-    <name>GetFreeAccountDialog</name>
-    <message>
-        <source>Get a free trial account</source>
-        <translation type="vanished">Nabavite besplatni probni račun</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Odustani</translation>
-    </message>
-    <message>
-        <source>Get account</source>
-        <comment>button</comment>
-        <translation type="vanished">Nabavi račun</translation>
-    </message>
-    <message>
-        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="vanished">Primanjem računa potvrđujete da razumijete i prihvaćate uvjete događaja,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Detalji događaja&gt;&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Probni račun</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Spremanje nije uspjelo, pokušajte ponovno kasnije</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Potvrdi</translation>
-    </message>
-    <message>
-        <source>Trial account received successfully.</source>
-        <translation type="vanished">Probni račun je uspješno primljen.</translation>
-    </message>
-    <message>
-        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="vanished">Broj korištenja i trajanje probnog računa su ograničeni, molimo konfigurirajte svoj osobni račun modela na vrijeme! Za detalje pogledajte pojedinosti događaja.</translation>
-    </message>
-    <message>
-        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="vanished">Engleska podrška za probne račune nije zadovoljavajuća. Broj korištenja i trajanje probnog računa su ograničeni. Pravočasno konfigurirajte svoj osobni model račun!</translation>
-    </message>
-    <message>
-        <source>Start trial</source>
-        <comment>button</comment>
-        <translation type="vanished">Započni probu</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">Aktivnost besplatnog računa završava.</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Nije moguće povezati se s poslužiteljem, provjerite mrežu ili pokušajte ponovo kasnije.</translation>
+        <translation>Nepodržani format datoteke</translation>
     </message>
 </context>
 <context>
     <name>IatCodeTranslation</name>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="10"/>
         <source>appid authorization failed</source>
-        <translation>Autorizacija appid-a nije uspjela</translation>
+        <translation>autorizacija appid-a nije uspjela</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="11"/>
         <source>Failed to obtain a certain parameter</source>
-        <translation>Nije uspjelo dobiti određeni parametar</translation>
+        <translation>Nije uspjelo dobivanje određenog parametra</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="12"/>
         <source>Parameter value is illegal</source>
-        <translation>Vrijednost parametra je nezakonita</translation>
+        <translation>Vrijednost parametra je neispravna</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="13"/>
         <source>Insufficient engine authorization</source>
-        <translation>Nedovoljna autorizacija motora</translation>
+        <translation>Nedovoljna autorizacija pogona</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="14"/>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="15"/>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="18"/>
         <source>Session timeout</source>
-        <translation>Isteklo vrijeme sesije</translation>
+        <translation>Istek sesije</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="16"/>
         <source>Audio decoding failed</source>
         <translation>Dekodiranje zvuka nije uspjelo</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="17"/>
         <source>Engine session ended</source>
-        <translation>Sesija motora je završena</translation>
+        <translation>Sesija pogona je završena</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="19"/>
         <source>Parameter error</source>
         <translation>Greška parametra</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="20"/>
         <source>appid cannot be empty</source>
-        <translation>appid ne može biti prazan</translation>
+        <translation>appid ne smije biti prazan</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="21"/>
         <source>Illegal version</source>
-        <translation>Nezakonita verzija</translation>
+        <translation>Neispravna verzija</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="22"/>
         <source>permission denied</source>
-        <translation>Dopuštenje odbijeno</translation>
+        <translation>pristup odbijen</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="23"/>
         <source>Daily flow control exceeds limit</source>
-        <translation>Dnevna kontrola protoka premašuje ograničenje</translation>
+        <translation>Dnevno ograničenje prometa je premašeno</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="24"/>
         <source>The request data format is illegal</source>
-        <translation>Format podataka zahtjeva je nezakonit</translation>
+        <translation>Format podataka zahtjeva je neispravan</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="25"/>
         <source>base64 decoding failed</source>
-        <translation>Dekodiranje base64 nije uspjelo</translation>
+        <translation>base64 dekodiranje nije uspjelo</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="26"/>
         <source>Required parameters are missing or the parameters are illegal</source>
-        <translation>Nedostaju potrebni parametri ili su parametri nezakoniti</translation>
+        <translation>Nedostaju potrebni parametri ili su parametri neispravni</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="27"/>
         <source>Invalid handle</source>
-        <translation>Nevažeći upravljač</translation>
+        <translation>Neispravan ručica</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="28"/>
         <source>Reading data timeout</source>
-        <translation>Isteklo vrijeme čitanja podataka</translation>
+        <translation>Istek vremena čitanja podataka</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="37"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>Povezivanje nije uspjelo, provjerite unesene podatke.</translation>
-    </message>
-</context>
-<context>
-    <name>IconButtonEx</name>
-    <message>
-        <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation type="vanished">Novododane datoteke zahtijevaju predobradu prije upotrebe, a tijekom obrade podataka može se potrošiti značajna količina računalnih i pohrambenih resursa. Obrada podataka će prestati nakon brisanja podataka.</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseItem</name>
-    <message>
-        <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation type="vanished">Jeste li sigurni da želite izbrisati ovu datoteku baze znanja?</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Odustani</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Potvrdi</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseListWidget</name>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Izbriši</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">Dodaj</translation>
-    </message>
-    <message>
-        <source>Please install the embedding model plugins first</source>
-        <translation type="vanished">Prvo instalirajte dodatke za model ugradnje</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Upravljanje baze znanja</translation>
-    </message>
-    <message>
-        <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation type="vanished">Ovdje se može definirati baza znanja Osobnog pomoćnika za znanje, a Osobni pomoćnik za znanje će odgovarati na pitanja na temelju dolje dodanih datoteka.</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Gotovo</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="vanished">Ništa</translation>
-    </message>
-    <message>
-        <source>File already exist</source>
-        <translation type="vanished">Datoteka već postoji</translation>
-    </message>
-    <message>
-        <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation type="vanished">Datoteka %1 već postoji i ne može se ponovno dodati. Promijenite naziv datoteke ili izbrišite postojeću datoteku prije ponovnog dodavanja.</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation type="vanished">Sve datoteke</translation>
-    </message>
-    <message>
-        <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation type="vanished">Ova značajka zahtijeva visoke hardverske resurse, a referentna konfiguracija je: CPU Intel 11. generacije i7 ili više; Memorija od 16GB ili više; NVIDIA grafička kartica serije 10 ili viša je najbolja opcija. Ako je konfiguracija preniska, mogu se pojaviti problemi poput zaostajanja i netočnih odgovora.</translation>
+        <translation>Povezivanje nije uspjelo, molimo provjerite unesene podatke.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseManager</name>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="275"/>
         <source>FollowAlong</source>
         <translation>Prati</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="284"/>
         <source>Insufficient knowledge base capacity</source>
-        <translation type="unfinished">Nedovoljan kapacitet baze znanja</translation>
+        <translation>Nedovoljan kapacitet baze znanja</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="285"/>
         <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
-        <translation type="unfinished">Ukupni kapacitet baze znanja je %1M, s preostalim %2. Ukupan broj datoteka dodanih ovaj put je %3. Nije moguće dovršiti operaciju dodavanja u bazu znanja.</translation>
+        <translation>Ukupni kapacitet baze znanja je %1M, a preostalo je %2. Ukupan broj datoteka dodanih ovaj put je %3. Nije moguće dovršiti dodavanje u bazu znanja.</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="291"/>
-        <source>OK</source>
-        <comment>button</comment>
-        <translation type="unfinished">U redu</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="305"/>
-        <source>Not enough disk space</source>
-        <translation type="unfinished">Nedovoljno prostora na disku</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="306"/>
-        <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
-        <translation type="unfinished">Za pohranu novododanih datoteka potrebno je najmanje %1 prostora na disku. Trenutni preostali prostor je %2. Oslobodite dovoljno prostora na tvrdom disku i pokušajte ponovno.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="324"/>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="unfinished">Dodavanje u bazu znanja zahtijeva instalaciju dodatka za vektorski model. Molimo idite u trgovinu aplikacija da preuzmete i instalirate.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="332"/>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="unfinished">Ne instaliraj</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="333"/>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="unfinished">Odmah instaliraj</translation>
-    </message>
-</context>
-<context>
-    <name>LLM</name>
-    <message>
-        <source>Vincent picture service is not supported</source>
-        <translation type="vanished">Vincent usluga slika nije podržana</translation>
-    </message>
-</context>
-<context>
-    <name>LLMServerProxy</name>
-    <message>
-        <source>GPT3.5（OpenAI）</source>
-        <translation type="vanished">GPT3.5 (OpenAI)</translation>
-    </message>
-    <message>
-        <source>GPT4（OpenAI）</source>
-        <translation type="vanished">GPT4 (OpenAI)</translation>
-    </message>
-    <message>
-        <source>星火大模型1.5（讯飞）</source>
-        <translation type="vanished">Spark Big Model 1.5 (iFLYTEK)</translation>
-    </message>
-    <message>
-        <source>星火大模型2.0（讯飞）</source>
-        <translation type="vanished">Spark Big Model 2.0 (iFLYTEK)</translation>
-    </message>
-    <message>
-        <source>星火大模型3.0（讯飞）</source>
-        <translation type="vanished">Spark Big Model 3.0 (iFLYTEK)</translation>
-    </message>
-    <message>
-        <source>ERNIE 3.5</source>
-        <translation type="vanished">ERNIE 3.5</translation>
-    </message>
-    <message>
-        <source>ERNIE-Bot-turbo</source>
-        <translation type="vanished">ERNIE-Bot-turbo</translation>
-    </message>
-    <message>
-        <source>ERNIE-Bot-4</source>
-        <translation type="vanished">ERNIE-Bot-4</translation>
-    </message>
-    <message>
-        <source>360 AI</source>
-        <translation type="vanished">360 AI</translation>
-    </message>
-    <message>
-        <source>iFLYTEK-Spark</source>
-        <translation type="vanished">iFLYTEK-Spark</translation>
-    </message>
-    <message>
-        <source>Baidu-Ernie</source>
-        <translation type="vanished">Baidu-Ernie</translation>
-    </message>
-    <message>
-        <source>ChatGLM-turbo</source>
-        <translation type="vanished">ChatGLM-turbo</translation>
-    </message>
-    <message>
-        <source>Gemini 1.5 Flash</source>
-        <translation type="vanished">Gemini 1.5 Flash</translation>
-    </message>
-    <message>
-        <source>Gemini 1.5 Pro</source>
-        <translation type="vanished">Gemini 1.5 Pro</translation>
-    </message>
-    <message>
-        <source>TextToImage(Local)</source>
-        <translation type="vanished">TekstUSliku (Lokalno)</translation>
-    </message>
-    <message>
-        <source>YouRong 1.5B</source>
-        <translation type="vanished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <source>YouRong 7B</source>
-        <translation type="vanished">YouRong 7B</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="vanished">Prilagođeno</translation>
-    </message>
-    <message>
-        <source>Private deployment model</source>
-        <translation type="vanished">Privatni model implementacije</translation>
-    </message>
-    <message>
-        <source>OpenRouter</source>
-        <translation type="vanished">OpenRouter</translation>
-    </message>
-    <message>
-        <source>DeepSeek-R1</source>
-        <translation type="vanished">DeepSeek-R1</translation>
-    </message>
-    <message>
-        <source>DeepSeek</source>
-        <translation type="vanished">DeepSeek</translation>
-    </message>
-    <message>
-        <source>unknown model</source>
-        <translation type="vanished">nepoznat model</translation>
-    </message>
-</context>
-<context>
-    <name>LLMUtils</name>
-    <message>
-        <source>Your system environment is Linux, and the user home path is</source>
-        <translation type="vanished">Vaš sustavski okoliš je Linux, a korisnički kućni put je</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelItem</name>
-    <message>
-        <source>Install</source>
-        <translation type="vanished">Instaliraj</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="vanished">Ažuriraj</translation>
-    </message>
-    <message>
-        <source>Uninstall</source>
-        <translation type="vanished">Deinstaliraj</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelListItem</name>
-    <message>
-        <source>uninstall</source>
-        <translation type="vanished">deinstaliraj</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelListWidget</name>
-    <message>
-        <source>Local model</source>
-        <translation type="vanished">Lokalni model</translation>
-    </message>
-    <message>
-        <source>Text to image model</source>
-        <translation type="vanished">Model za pretvorbu teksta u sliku</translation>
-    </message>
-    <message>
-        <source>Use a local model to generate images. After turning it on, you can select the model in the model list in the chat interface.</source>
-        <translation type="vanished">Koristite lokalni model za generiranje slika. Nakon uključivanja, možete odabrati model s popisa modela u sučelju za chat.</translation>
-    </message>
-    <message>
-        <source>speech model</source>
-        <translation type="vanished">model govora</translation>
-    </message>
-    <message>
-        <source>When turned on, the speech recognition and speech reading in the chat interface will use the local model without requiring an Internet connection.</source>
-        <translation type="vanished">Kada je uključeno, prepoznavanje govora i čitanje govora u sučelju za chat koristit će lokalni model bez potrebe za internetskom vezom.</translation>
-    </message>
-    <message>
-        <source>ULLM-1.5B</source>
-        <translation type="vanished">ULLM-1.5B</translation>
-    </message>
-    <message>
-        <source>ULLM-7B</source>
-        <translation type="vanished">ULLM-7B</translation>
-    </message>
-    <message>
-        <source>DeepSeek-R1-1.5B</source>
-        <translation type="vanished">DeepSeek-R1-1.5B</translation>
-    </message>
-    <message>
-        <source>UOS AI large model</source>
-        <translation type="vanished">UOS AI veliki model</translation>
-    </message>
-    <message>
-        <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation type="vanished">Nakon instalacije, ne trebate internetsku vezu za korištenje UOS AI.</translation>
-    </message>
-    <message>
-        <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation type="vanished">Preuzmite iz zajednice otvorenog koda na vlastitu odgovornost. Koristite u UOS AI pomoćniku nakon instalacije.</translation>
-    </message>
-    <message>
-        <source>Embedding Plugins</source>
-        <translation type="vanished">Ugradni dodaci</translation>
-    </message>
-    <message>
-        <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation type="vanished">Nakon instalacije modela, mogu se pokrenuti Sustavni asistent i Asistent za osobno znanje.</translation>
-    </message>
-</context>
-<context>
-    <name>MgmtWindow</name>
-    <message>
-        <source>Successfully connected</source>
-        <translation type="vanished">Uspješno povezano</translation>
-    </message>
-    <message>
-        <source>User Agreement</source>
-        <translation type="vanished">Korisnički ugovor</translation>
-    </message>
-    <message>
-        <source>UOS AI User Agreement</source>
-        <translation type="vanished">Korisnički ugovor UOS AI</translation>
-    </message>
-    <message>
-        <source>Read and agreed</source>
-        <translation type="vanished">Pročitano i prihvaćeno</translation>
-    </message>
-    <message>
-        <source>Proxy Settings</source>
-        <translation type="vanished">Postavke proxyja</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Idi na postavke</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Konfiguracija modela</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">Aktivnost besplatnog računa završava.</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Potvrdi</translation>
-    </message>
-    <message>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="vanished">Dodavanje u bazu znanja zahtijeva instalaciju dodatka za vektorski model. Molimo idite u trgovinu aplikacija da preuzmete i instalirate.</translation>
-    </message>
-    <message>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="vanished">Ne instaliraj</translation>
-    </message>
-    <message>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="vanished">Odmah instaliraj</translation>
-    </message>
-</context>
-<context>
-    <name>ModelListItem</name>
-    <message>
-        <source>Are you sure you want to delete this model?</source>
-        <translation type="vanished">Jeste li sigurni da želite izbrisati ovaj model?</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Otkaži</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Potvrdi</translation>
-    </message>
-</context>
-<context>
-    <name>ModelListWidget</name>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">Nabavite besplatni račun</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Izbriši</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">Dodaj</translation>
-    </message>
-    <message>
-        <source>Online model</source>
-        <translation type="vanished">Online model</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Gotovo</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="vanished">Ništa</translation>
-    </message>
-</context>
-<context>
-    <name>ModifyModelDialog</name>
-    <message>
-        <source>LLM</source>
-        <translation type="vanished">LLM</translation>
-    </message>
-    <message>
-        <source>APPID</source>
-        <translation type="vanished">APPID</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">API ključ</translation>
-    </message>
-    <message>
-        <source>APISecret</source>
-        <translation type="vanished">API tajna</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Račun</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Naziv modela</translation>
-    </message>
-    <message>
-        <source>API Address</source>
-        <translation type="vanished">API adresa</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Obavezno, za razlikovanje više modela</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Domena</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Otkaži</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Potvrdi</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">Ne više od 20 znakova</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">Naziv računa već postoji, molimo promijenite ga</translation>
-    </message>
-</context>
-<context>
-    <name>OcrParse</name>
-    <message>
-        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="25"/>
-        <source>The image file does not exist: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="34"/>
-        <source>OCR did not recognize the text content</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>OperatingLineWidget</name>
-    <message>
-        <source>In data processing</source>
-        <translation type="vanished">U obradi podataka</translation>
-    </message>
-    <message>
-        <source>Data processing error</source>
-        <translation type="vanished">Greška u obradi podataka</translation>
-    </message>
-    <message>
-        <source>File error, unable to process, please delete.</source>
-        <translation type="vanished">Greška u datoteci, nije moguće obraditi, molimo izbrišite.</translation>
-    </message>
-</context>
-<context>
-    <name>QObject</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">UOS Sustavski asistent</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Deepin sustavski asistent</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Osobni asistent za znanje</translation>
-    </message>
-    <message>
-        <source>AI Writing</source>
-        <translation type="vanished">AI pisanje</translation>
-    </message>
-    <message>
-        <source>AI Text Processing</source>
-        <translation type="vanished">AI obrada teksta</translation>
-    </message>
-    <message>
-        <source>AI Translation</source>
-        <translation type="vanished">AI prijevod</translation>
-    </message>
-    <message>
-        <source>System&apos;s Comprehensive AI Assistant.</source>
-        <translation type="vanished">Sveobuhvatni AI asistent sustava.</translation>
-    </message>
-    <message>
-        <source>Assists you with UOS system-related inquiries.</source>
-        <translation type="vanished">Pomaže vam u upitima vezanim uz UOS sustav.</translation>
-    </message>
-    <message>
-        <source>Assists you with Deepin system-related inquiries.</source>
-        <translation type="vanished">Pomaže vam u upitima vezanim uz Deepin sustav.</translation>
-    </message>
-    <message>
-        <source>Write Based on Your Topic and Requirements.</source>
-        <translation type="vanished">Piši temeljem tvoje teme i zahtjeva.</translation>
-    </message>
-    <message>
-        <source>Answers questions based on your personal knowledge base.</source>
-        <translation type="vanished">Odgovara na pitanja temeljena na vašoj osobnoj bazi znanja.</translation>
-    </message>
-    <message>
-        <source>Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting.</source>
-        <translation type="vanished">Sposoban obavljati zadatke obrade teksta kao što su sažimanje, lektoriranje i prepisivanje.</translation>
-    </message>
-    <message>
-        <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation type="vanished">Vaš asistent za prijevod, koji vlada više jezika.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="311"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="222"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>U redu</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="831"/>
-        <source>Search</source>
-        <translation>Pretraži</translation>
+        <source>Not enough disk space</source>
+        <translation>Nema dovoljno prostora na disku</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="833"/>
-        <source>Explain</source>
-        <translation>Objasni</translation>
+        <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
+        <translation>Za spremanje novododanih datoteka potrebno je najmanje %1 prostora na disku. Trenutno preostalo je %2. Molimo oslobodite dovoljno prostora na hard disku i pokušajte ponovno.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="835"/>
-        <source>Summary</source>
-        <translation>Sažetak</translation>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation>Dodavanje u bazu znanja zahtijeva instalaciju dodatka za model vektorizacije. Molimo idite u trgovinu aplikacija za preuzimanje i instalaciju.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="837"/>
-        <source>Translate</source>
-        <translation>Prevedi</translation>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation>Ne instaliraj</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="839"/>
-        <source>Continue Writing</source>
-        <translation>Nastavi pisati</translation>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation>Instaliraj odmah</translation>
+    </message>
+</context>
+<context>
+    <name>MarkdownEditor</name>
+    <message>
+        <source>Outline</source>
+        <translation>Obris</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="841"/>
-        <source>Expand</source>
-        <translation>Proširi</translation>
+        <source>No outline</source>
+        <translation>Nema obrisa</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="843"/>
-        <source>Polish</source>
-        <translation>Dotjeraj</translation>
+        <source>References</source>
+        <translation>Reference</translation>
+    </message>
+</context>
+<context>
+    <name>OcrParse</name>
+    <message>
+        <source>The image file does not exist: %1</source>
+        <translation>Datoteka slike ne postoji: %1</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="845"/>
-        <source>Correct</source>
-        <translation>Ispravi</translation>
+        <source>OCR did not recognize the text content</source>
+        <translation>OCR nije prepoznao sadržaj teksta</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>System AI Intelligent ButlerFunction
+Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
+Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
+        <translation>Sustavski AI inteligentni pomoćnik
+Uvod: Inteligentno planira alate sustava za izvođenje složenih sustavskih operacija, podržava upravljanje sustavom, upravljanje datotekama, upravljanje aplikacijama i mrežne protokole.
+Primjer upita: Imenuj sve datoteke u novostvorenoj mapi na radnoj površini kao projektne materijale i poredaj ih po rednom broju.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="847"/>
-        <source>Add to the AI knowledge base</source>
-        <translation>Dodaj u bazu znanja AI-a</translation>
+        <source>Ask a question...</source>
+        <translation>Postavite pitanje...</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/selectiontagobject.cpp" line="235"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="32"/>
+        <source>Discord gateway error: %1</source>
+        <translation>Greška Discord pristupne točke: %1</translation>
+    </message>
+    <message>
+        <source>Missing Discord bot token.</source>
+        <translation>Nedostaje token Discord bota.</translation>
+    </message>
+    <message>
+        <source>Generating...</source>
+        <translation>Generiranje...</translation>
+    </message>
+    <message>
+        <source>Discord placeholder message missing id.</source>
+        <translation>Nedostaje ID zamjenske poruke Discorda.</translation>
+    </message>
+    <message>
+        <source>Discord gateway URL is empty.</source>
+        <translation>URL adresa pristupne točke Discorda je prazna.</translation>
+    </message>
+    <message>
+        <source>Ask UOS AI a question</source>
+        <translation>Postavite pitanje UOS AI-u</translation>
+    </message>
+    <message>
+        <source>Question for UOS AI</source>
+        <translation>Pitanje za UOS AI</translation>
+    </message>
+    <message>
+        <source>Missing Telegram bot token.</source>
+        <translation>Nedostaje token Telegram bota.</translation>
+    </message>
+    <message>
+        <source>Telegram placeholder message missing message_id.</source>
+        <translation>U zamjenskoj poruci Telegrama nedostaje message_id.</translation>
+    </message>
+    <message>
+        <source>Telegram API request failed.</source>
+        <translation>Zahtjev Telegram API-ja nije uspio.</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <comment>button</comment>
+        <translation>U redu</translation>
+    </message>
+    <message>
+        <source>OpenAI</source>
+        <translation>OpenAI</translation>
+    </message>
+    <message>
+        <source>DeepSeek</source>
+        <translation>DeepSeek</translation>
+    </message>
+    <message>
+        <source>UOS AI Trial Account</source>
+        <translation>Probni račun UOS AI</translation>
+    </message>
+    <message>
+        <source>Custom</source>
+        <translation>Prilagođeno</translation>
+    </message>
+    <message>
+        <source>Private deployment model</source>
+        <translation>Model privatne implementacije</translation>
+    </message>
+    <message>
         <source>{selection}</source>
         <translation>{selection}</translation>
     </message>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="237"/>
         <source>Cancel</source>
         <translation>Odustani</translation>
     </message>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="238"/>
         <source>Restart immediately</source>
         <translation>Odmah ponovno pokreni</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="97"/>
         <source>Simplified Chinese</source>
         <translation>Pojednostavljeni kineski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="100"/>
         <source>Traditional Chinese</source>
         <translation>Tradicionalni kineski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="103"/>
         <source>Tibetan</source>
-        <translation type="unfinished">tibetanski</translation>
+        <translation>Tibetanski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="106"/>
         <source>English</source>
-        <translation type="unfinished">engleski</translation>
+        <translation>Engleski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="109"/>
         <source>Japanese</source>
         <translation>Japanski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="112"/>
         <source>German</source>
-        <translation type="unfinished">njemački</translation>
+        <translation>Njemački</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="115"/>
         <source>Spanish</source>
-        <translation type="unfinished">španjolski</translation>
+        <translation>Španjolski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="118"/>
         <source>French</source>
-        <translation type="unfinished">francuski</translation>
+        <translation>Francuski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="121"/>
         <source>Italian</source>
-        <translation type="unfinished">talijanski</translation>
+        <translation>Talijanski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="124"/>
         <source>Korean</source>
-        <translation type="unfinished">korejski</translation>
+        <translation>Korejski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="127"/>
         <source>Malay</source>
-        <translation type="unfinished">malajski</translation>
+        <translation>Malajski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="130"/>
         <source>Portuguese</source>
-        <translation type="unfinished">portugalski</translation>
+        <translation>Portugalski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="133"/>
         <source>Russian</source>
-        <translation type="unfinished">ruski</translation>
+        <translation>Ruski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="136"/>
         <source>Thai</source>
-        <translation type="unfinished">tajlandski</translation>
+        <translation>Tajlandski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="139"/>
         <source>Vietnamese</source>
-        <translation type="unfinished">vijetnamski</translation>
+        <translation>Vijetnamski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="142"/>
         <source>Arabic (SA)</source>
         <translation>Arapski (SA)</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/defaultmcpserver.cpp" line="20"/>
-        <source>System AI Intelligent ButlerFunction
-Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
-Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
-        <translation>Sustav AI Inteligentni Batler
-
-Uvod: Inteligentno planira sistemske alate za izvođenje složenih operacija sustava, podržava upravljanje sustavom, upravljanje datotekama, upravljanje aplikacijama i mrežne protokole.
-
-Primjer upita: Nazovite sve datoteke u novostvorenoj mapi na radnoj površini kao materijale projekta i posložite ih brojčanim redoslijedom.</translation>
+        <source>Search</source>
+        <translation>Pretraži</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantinfo.h" line="23"/>
-        <source>Ask a question...</source>
-        <translation type="unfinished"></translation>
+        <source>Explain</source>
+        <translation>Objasni</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="99"/>
-        <source>OpenAI</source>
-        <translation type="unfinished"></translation>
+        <source>Summary</source>
+        <translation>Sažetak</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="118"/>
-        <source>DeepSeek</source>
-        <translation type="unfinished">DeepSeek</translation>
+        <source>Translate</source>
+        <translation>Prevedi</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="137"/>
-        <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <source>Continue Writing</source>
+        <translation>Nastavi pisati</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="182"/>
-        <source>Custom</source>
-        <translation type="unfinished">Prilagođeno</translation>
+        <source>Expand</source>
+        <translation>Proširi</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="232"/>
-        <source>Private deployment model</source>
-        <translation type="unfinished">Privatni model implementacije</translation>
+        <source>Polish</source>
+        <translation>Uglači</translation>
     </message>
     <message>
-        <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation type="obsolete">Polje &apos;mcpServers&apos; nedostaje.</translation>
+        <source>Correct</source>
+        <translation>Ispravi</translation>
     </message>
     <message>
-        <source>no valid mcp server.</source>
-        <translation type="obsolete">nema valjanog MCP poslužitelja.</translation>
-    </message>
-    <message>
-        <source>url field cannot be empty.</source>
-        <translation type="obsolete">polje url ne smije biti prazno.</translation>
-    </message>
-    <message>
-        <source>command field cannot be empty.</source>
-        <translation type="obsolete">polje naredbe ne smije biti prazno.</translation>
-    </message>
-    <message>
-        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation type="obsolete">Polje &apos;command&apos; ili &apos;url&apos; nedostaje</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/taskchannel.cpp" line="198"/>
-        <source>Knowledge Base Management</source>
-        <translation type="unfinished"></translation>
+        <source>Add to the AI knowledge base</source>
+        <translation>Dodaj u AI bazu znanja</translation>
     </message>
 </context>
 <context>
     <name>ResearchTools</name>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="60"/>
         <source>The uos-ai-agent plugin (approximately %1) must be installed to save documents.</source>
-        <translation type="unfinished"></translation>
+        <translation>Za spremanje dokumenata mora biti instaliran dodatak uos-ai-agent (približno %1).</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="62"/>
         <source>The uos-ai-agent plugin must be installed to save documents.</source>
-        <translation type="unfinished"></translation>
+        <translation>Za spremanje dokumenata mora biti instaliran dodatak uos-ai-agent.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="69"/>
         <source>Note</source>
-        <translation type="unfinished"></translation>
+        <translation>Napomena</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="71"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Odustani</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="72"/>
         <source>Download Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ServerCodeTranslation</name>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Nije moguće povezati se s poslužiteljem, provjerite svoju mrežu ili pokušajte ponovo kasnije.</translation>
-    </message>
-    <message>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation type="vanished">Veza nije uspjela, provjerite unesene podatke.</translation>
-    </message>
-    <message>
-        <source>Sorry, according to relevant laws, regulations and policies, the results are not displayed for the time being.</source>
-        <translation type="vanished">Nažalost, prema važećim zakonima, propisima i pravilima, rezultati se trenutno ne prikazuju.</translation>
-    </message>
-    <message>
-        <source>Operation canceled.</source>
-        <translation type="vanished">Operacija otkazana.</translation>
-    </message>
-    <message>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="vanished">Vaš besplatni račun je istekao, konfigurirajte svoj model računa da biste nastavili koristiti uslugu.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="vanished">Vaša besplatna kvota je iscrpljena, konfigurirajte svoj model računa da biste nastavili koristiti uslugu.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation type="vanished">Vaša besplatna kvota za chat je iscrpljena, konfigurirajte svoj model računa da biste nastavili koristiti uslugu.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted for text2image, please configure your model account to continue using it.</source>
-        <translation type="vanished">Vaša besplatna kvota za text2image je iscrpljena, konfigurirajte svoj model računa da biste nastavili koristiti uslugu.</translation>
-    </message>
-    <message>
-        <source>Invalid input device</source>
-        <translation type="vanished">Nevažeći ulazni uređaj</translation>
-    </message>
-    <message>
-        <source>Invalid output device</source>
-        <translation type="vanished">Nevažeći izlazni uređaj</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Nažalost, nisu pronađene odgovarajuće operacije.</translation>
-    </message>
-    <message>
-        <source>The total number of characters in the conversation has exceeded the limit, please clear the conversation history and try again.</source>
-        <translation type="vanished">Ukupan broj znakova u razgovoru premašio je ograničenje, očistite povijest razgovora i pokušajte ponovo.</translation>
+        <translation>Preuzmi sada</translation>
     </message>
 </context>
 <context>
     <name>ServiceConfigChannel</name>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="123"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation type="unfinished">Polje &apos;mcpServers&apos; nedostaje.</translation>
+        <translation>Polje &apos;mcpServers&apos; nedostaje.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="132"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="145"/>
         <source>no valid mcp server.</source>
-        <translation type="unfinished">nema valjanog MCP poslužitelja.</translation>
+        <translation>nema valjanog mcp poslužitelja.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="138"/>
         <source>Only one MCP service can be edited at a time.</source>
-        <translation type="unfinished"></translation>
+        <translation>U isto vrijeme se može uređivati samo jedna MCP usluga.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="152"/>
         <source>url field cannot be empty.</source>
-        <translation type="unfinished">polje url ne smije biti prazno.</translation>
+        <translation>polje url ne smije biti prazno.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="161"/>
         <source>command field cannot be empty.</source>
-        <translation type="unfinished">polje naredbe ne smije biti prazno.</translation>
+        <translation>polje naredbe ne smije biti prazno.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="168"/>
         <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation type="unfinished">Polje &apos;command&apos; ili &apos;url&apos; nedostaje</translation>
+        <translation>Nedostaje polje &apos;command&apos; ili &apos;url&apos;</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="219"/>
         <source>JSON configuration format is invalid.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Session</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">UOS Sustavski asistent</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Deepin sustavski asistent</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Osobni asistent za znanje</translation>
-    </message>
-    <message>
-        <source>AI Writing</source>
-        <translation type="vanished">AI pisanje</translation>
-    </message>
-    <message>
-        <source>AI Text Processing</source>
-        <translation type="vanished">AI obrada teksta</translation>
-    </message>
-    <message>
-        <source>AI Translation</source>
-        <translation type="vanished">AI prijevod</translation>
-    </message>
-</context>
-<context>
-    <name>SessionPrivate</name>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI zahtijeva konfiguraciju AI model računa prije upotrebe. Molimo konfigurirajte model računa prvo.</translation>
-    </message>
-    <message>
-        <source>Agent server is not available.</source>
-        <translation type="vanished">Agent poslužitelj nije dostupan.</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="obsolete">Uspješno zatraženo</translation>
-    </message>
-    <message>
-        <source>Account not found</source>
-        <translation type="vanished">Račun nije pronađen</translation>
-    </message>
-    <message>
-        <source>Only support deepseek account</source>
-        <translation type="vanished">Podržava samo deepseek račun</translation>
-    </message>
-    <message>
-        <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation type="vanished">Već ste sudjelovali u događaju i ne možete ponovno zatražiti nagradu.</translation>
-    </message>
-    <message>
-        <source>Server system error</source>
-        <translation type="vanished">Pogreška serverskog sustava</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="obsolete">Neuspješno zatraženo. Molimo pokušajte ponovno.</translation>
+        <translation>Format JSON konfiguracije je neispravan.</translation>
     </message>
 </context>
 <context>
     <name>TextParse</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="22"/>
         <source>Unable to open file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nije moguće otvoriti datoteku: %1</translation>
     </message>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="31"/>
         <source>The file content is in binary format</source>
-        <translation type="unfinished"></translation>
+        <translation>Sadržaj datoteke je u binarnom formatu</translation>
     </message>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="39"/>
         <source>Unable to read file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nije moguće pročitati datoteku: %1</translation>
     </message>
 </context>
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="137"/>
         <source>Feedback</source>
         <translation>Povratne informacije</translation>
+    </message>
+    <message>
+        <source>Light Theme</source>
+        <translation>Svijetla tema</translation>
+    </message>
+    <message>
+        <source>Dark Theme</source>
+        <translation>Tamna tema</translation>
+    </message>
+    <message>
+        <source>System Theme</source>
+        <translation>Tema sustava</translation>
+    </message>
+    <message>
+        <source>Theme</source>
+        <translation>Tema</translation>
     </message>
 </context>
 <context>
     <name>TtsCodeTranslation</name>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="10"/>
         <source>appid authorization failed</source>
-        <translation>Autorizacija appid nije uspjela</translation>
+        <translation>autorizacija appid-a nije uspjela</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="11"/>
         <source>Failed to obtain a certain parameter</source>
-        <translation>Nije uspjelo dohvatiti određeni parametar</translation>
+        <translation>Nije uspjelo dobiti određeni parametar</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="12"/>
         <source>Parameter value is illegal</source>
-        <translation>Vrijednost parametra je nevažeća</translation>
+        <translation>Vrijednost parametra je neispravna</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="13"/>
         <source>Insufficient engine authorization</source>
-        <translation>Nedovoljna autorizacija motora</translation>
+        <translation>Nedovoljna autorizacija pogona</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="14"/>
         <source>Request text length is illegal</source>
-        <translation>Duljina teksta zahtjeva je nevažeća</translation>
+        <translation>Dužina teksta zahtjeva je neispravna</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="15"/>
         <source>session timeout</source>
-        <translation>istek sesije</translation>
+        <translation>sesija je istekla</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="16"/>
         <source>Engine session ended</source>
-        <translation>Sesija motora je završila</translation>
+        <translation>Sesija pogona je završena</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="17"/>
         <source>appid cannot be empty</source>
         <translation>appid ne može biti prazan</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="18"/>
         <source>Illegal version</source>
-        <translation>Nevažeća verzija</translation>
+        <translation>Neispravna verzija</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="19"/>
         <source>permission denied</source>
-        <translation>Dozvola odbijena</translation>
+        <translation>pristup odbijen</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="20"/>
         <source>Daily flow control exceeds limit</source>
-        <translation>Dnevna kontrola protoka premašuje ograničenje</translation>
+        <translation>Dnevno ograničenje prometa je premašeno</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="21"/>
         <source>The request data format is illegal</source>
-        <translation>Format podataka zahtjeva je nezakonit</translation>
+        <translation>Format podataka zahtjeva je neispravan</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="22"/>
         <source>base64 decoding failed</source>
-        <translation>Dekodiranje base64 nije uspjelo</translation>
+        <translation>base64 dekodiranje nije uspjelo</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="23"/>
         <source>Required parameters are missing or the parameters are illegal</source>
-        <translation>Nedostaju obavezni parametri ili su parametri nezakoniti</translation>
+        <translation>Nedostaju potrebni parametri ili su parametri neispravni</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="24"/>
         <source>Reading data timeout</source>
-        <translation>Vrijeme za čitanje podataka je isteklo</translation>
+        <translation>Isteklo vrijeme čitanja podataka</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="25"/>
         <source>network anomaly</source>
-        <translation>Mrežna anomalija</translation>
+        <translation>mrežna anomalija</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="34"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>Veza nije uspjela, provjerite unesene podatke.</translation>
-    </message>
-</context>
-<context>
-    <name>TtsCompositeWidget</name>
-    <message>
-        <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation type="vanished">Odabrani tekst premašuje ograničenje od 5000 znakova.</translation>
+        <translation>Povezivanje nije uspjelo, provjerite unesene informacije.</translation>
     </message>
 </context>
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1223"/>
         <source>I haven&apos;t implemented this feature yet.</source>
-        <translation>Još nisam implementirao ovu funkciju.</translation>
+        <translation>Još nisam implementirao ovu značajku.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1227"/>
         <source>service is not available!</source>
-        <translation>Usluga nije dostupna!</translation>
+        <translation>usluga nije dostupna!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1232"/>
         <source>Invalid parameter!</source>
-        <translation>Nevažeći parametar!</translation>
+        <translation>Neispravan parametar!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1237"/>
         <source>This app cannot be found!</source>
         <translation>Ova aplikacija se ne može pronaći!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1242"/>
         <source>Failed to start application!</source>
-        <translation>Pokretanje aplikacije nije uspjelo!</translation>
-    </message>
-</context>
-<context>
-    <name>UOSAbilityManager</name>
-    <message>
-        <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation type="vanished">Svjetlina je već na maksimumu i ne može se povećati.</translation>
-    </message>
-    <message>
-        <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation type="vanished">Svjetlina je već na minimumu i ne može se smanjiti.</translation>
-    </message>
-    <message>
-        <source>Your system memory is %0.</source>
-        <translation type="vanished">Sistemska memorija je %0.</translation>
-    </message>
-    <message>
-        <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation type="vanished">Sučelje za postavke jezika je otvoreno. Postavite ga u ovom sučelju.</translation>
-    </message>
-    <message>
-        <source>The current mode is already %1 mode.</source>
-        <translation type="vanished">Trenutni način rada je već %1 način.</translation>
-    </message>
-    <message>
-        <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation type="vanished">Nije moguće zatvoriti jer trenutni način %1 ne odgovara ciljnom načinu.</translation>
-    </message>
-    <message>
-        <source>Balance mode cannot be turned off.</source>
-        <translation type="vanished">Način rada ravnoteže ne može se isključiti.</translation>
-    </message>
-    <message>
-        <source>The lock screen has been opened for you</source>
-        <translation type="vanished">Zaključavanje zaslona je omogućeno za vas</translation>
-    </message>
-    <message>
-        <source>Screen shotting or recording has been completed</source>
-        <translation type="vanished">Snimanje zaslona ili snimanje je završeno</translation>
-    </message>
-    <message>
-        <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation type="vanished">Samo jedan zaslon, nije moguće promijeniti način rada zaslona.</translation>
-    </message>
-    <message>
-        <source>It is the same as the current display mode. Please try again.</source>
-        <translation type="vanished">Isto je kao trenutni način prikaza. Pokušajte ponovno.</translation>
-    </message>
-    <message>
-        <source>Only one screen, can&apos;t switch screen.</source>
-        <translation type="vanished">Samo jedan zaslon, nije moguće promijeniti zaslon.</translation>
-    </message>
-    <message>
-        <source>Your command has been issued.</source>
-        <translation type="vanished">Vaša naredba je izdana.</translation>
-    </message>
-</context>
-<context>
-    <name>UserAgreementDialog</name>
-    <message>
-        <source>UOS AI User Agreement</source>
-        <translation type="vanished">Korisnički ugovor UOS AI</translation>
-    </message>
-    <message>
-        <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="vanished">Potvrđujem da imam više od 18 godina. Prihvaćam i slažem se da sadržaji koje šaljem i primam putem Aplikacije izravna su razmjena podataka s davateljem usluga velikog modela i nemaju nikakve veze s Tvrtkom.</translation>
-    </message>
-    <message>
-        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="vanished">Slažem se sudjelovati u planu korisničkog iskustva Aplikacije i ovlašćujem vašu tvrtku da prikuplja sadržaje koje šaljem tijekom korištenja Aplikacije, vrijeme slanja, vrstu traženog velikog modela, specifičnu aplikaciju i je li tekst uspješno generirao sliku, kako bi se poboljšala kvaliteta usluge i poboljšalo iskustvo rada. (Ako odbijete pružiti gore navedene informacije, to neće utjecati na vaše normalno korištenje Aplikacije.)</translation>
-    </message>
-</context>
-<context>
-    <name>WXQFCodeTranslation</name>
-    <message>
-        <source>Server internal error</source>
-        <translation type="vanished">Interna pogreška poslužitelja</translation>
-    </message>
-    <message>
-        <source>Service is temporarily unavailable</source>
-        <translation type="vanished">Usluga je privremeno nedostupna</translation>
-    </message>
-    <message>
-        <source>The API being called does not exist. Please check the request URL and try again. Generally, there are non-English characters in the URL, such as &quot;-&quot;. You can enter it manually and try again.</source>
-        <translation type="vanished">Pozvani API ne postoji. Provjerite URL zahtjeva i pokušajte ponovno. Obično postoje neengleski znakovi u URL-u, poput &quot;-&quot;. Možete ga ručno unijeti i pokušati ponovno.</translation>
-    </message>
-    <message>
-        <source>No interface calling permission, the relevant Qianfan interface is not checked when creating the application</source>
-        <translation type="vanished">Nema dopuštenja za pozivanje sučelja, relevantno Qianfan sučelje nije označeno prilikom kreiranja aplikacije</translation>
-    </message>
-    <message>
-        <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
-        <translation type="vanished">Pogreška pri pozivanju modela: Dosegnuto je ograničenje zahtjeva za model ili je model offline. Prijedlozi: Ponovno dodajte model ili kontaktirajte korisničku službu pružatelja usluge velikog modela kako biste riješili ovaj problem.</translation>
-    </message>
-    <message>
-        <source>Failed to obtain token</source>
-        <translation type="vanished">Neuspješno dobivanje tokena</translation>
-    </message>
-    <message>
-        <source>IAM authentication failed</source>
-        <translation type="vanished">IAM autentifikacija nije uspjela</translation>
-    </message>
-    <message>
-        <source>The application does not exist or failed to be created</source>
-        <translation type="vanished">Aplikacija ne postoji ili nije uspjela biti kreirana</translation>
-    </message>
-    <message>
-        <source>The number of requests per day exceeds the limit</source>
-        <translation type="vanished">Broj zahtjeva dnevno premašuje ograničenje</translation>
-    </message>
-    <message>
-        <source>The total number of requests exceeds the limit</source>
-        <translation type="vanished">Ukupan broj zahtjeva premašuje ograničenje</translation>
-    </message>
-    <message>
-        <source>Invalid access_token parameter</source>
-        <translation type="vanished">Nevažeći access_token parametar</translation>
-    </message>
-    <message>
-        <source>access_token is invalid</source>
-        <translation type="vanished">access_token je nevažeći</translation>
-    </message>
-    <message>
-        <source>access token expires</source>
-        <translation type="vanished">access token je istekao</translation>
-    </message>
-    <message>
-        <source>Service error, template does not exist</source>
-        <translation type="vanished">Pogreška usluge, predložak ne postoji</translation>
-    </message>
-    <message>
-        <source>A system error occurred, please try again later</source>
-        <translation type="vanished">Došlo je do pogreške u sustavu, pokušajte ponovno kasnije</translation>
-    </message>
-    <message>
-        <source>The knowledge base server cannot be accessed</source>
-        <translation type="vanished">Poslužitelj baze znanja nije dostupan</translation>
-    </message>
-    <message>
-        <source>Knowledge base data download exception</source>
-        <translation type="vanished">Iznimka pri preuzimanju podataka baze znanja</translation>
-    </message>
-    <message>
-        <source>Prompt word is too long</source>
-        <translation type="vanished">Prompt riječ je preduga</translation>
-    </message>
-    <message>
-        <source>Model does not exist</source>
-        <translation type="vanished">Model ne postoji</translation>
-    </message>
-    <message>
-        <source>Request parameter error</source>
-        <translation type="vanished">Pogreška u parametru zahtjeva</translation>
-    </message>
-    <message>
-        <source>Image processing failed</source>
-        <translation type="vanished">Obrada slike nije uspjela</translation>
-    </message>
-    <message>
-        <source>Service handling exception error</source>
-        <translation type="vanished">Pogreška u iznimnoj obradi usluge</translation>
-    </message>
-    <message>
-        <source>Service internal error</source>
-        <translation type="vanished">Interna pogreška usluge</translation>
-    </message>
-    <message>
-        <source>The input parameter format is incorrect, such as missing necessary parameters.</source>
-        <translation type="vanished">Format ulaznog parametra je neispravan, npr. nedostaju potrebni parametri.</translation>
-    </message>
-    <message>
-        <source>The input parameter body is not in standard JSON format</source>
-        <translation type="vanished">Tijelo ulaznog parametra nije u standardnom JSON formatu</translation>
-    </message>
-    <message>
-        <source>Parameter verification is illegal</source>
-        <translation type="vanished">Provjera parametra je nezakonita</translation>
-    </message>
-    <message>
-        <source>Permission control error</source>
-        <translation type="vanished">Pogreška u kontroli dopuštenja</translation>
-    </message>
-    <message>
-        <source>Customized model service apiname does not exist</source>
-        <translation type="vanished">Prilagođeno ime API-ja usluge modela ne postoji</translation>
-    </message>
-    <message>
-        <source>Service internal error, please try again later</source>
-        <translation type="vanished">Interna pogreška usluge, pokušajte ponovno kasnije</translation>
-    </message>
-    <message>
-        <source>Illegal HTTP Method, currently only supports POST requests</source>
-        <translation type="vanished">Nedopuštena HTTP metoda, trenutno se podržavaju samo POST zahtjevi</translation>
-    </message>
-    <message>
-        <source>The requested content exceeds the large model internal limit</source>
-        <translation type="vanished">Zatraženi sadržaj premašuje internu ograničenost velikog modela</translation>
-    </message>
-    <message>
-        <source>internal error</source>
-        <translation type="vanished">interna pogreška</translation>
-    </message>
-    <message>
-        <source>Vincent diagram model service timeout</source>
-        <translation type="vanished">Vremensko ograničenje usluge Vincent dijagram modela</translation>
-    </message>
-    <message>
-        <source>There are security issues with prompt and negative_prompt</source>
-        <translation type="vanished">Postoje sigurnosni problemi s prompt i negative_prompt</translation>
-    </message>
-    <message>
-        <source>There are security issues with output images</source>
-        <translation type="vanished">Postoje sigurnosni problemi s izlaznim slikama</translation>
-    </message>
-    <message>
-        <source>Parameter error</source>
-        <translation type="vanished">Pogreška parametra</translation>
-    </message>
-    <message>
-        <source>No access</source>
-        <translation type="vanished">Nema pristupa</translation>
-    </message>
-</context>
-<context>
-    <name>WXQFText2Image</name>
-    <message>
-        <source>The image description exceeds the 256 character limit</source>
-        <translation type="vanished">Opis slike premašuje ograničenje od 256 znakova</translation>
-    </message>
-</context>
-<context>
-    <name>WelcomeDialog</name>
-    <message>
-        <source>Welcome to UOS AI</source>
-        <translation type="vanished">Dobrodošli u UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation type="vanished">UOS AI, vaš pametni asistent, osmišljen je kako bi poboljšao vašu produktivnost i pružio vam visokokvalitetno radno iskustvo.</translation>
-    </message>
-    <message>
-        <source>Get a free trial account</source>
-        <translation type="vanished">Nabavite besplatni probni račun</translation>
-    </message>
-    <message>
-        <source>Add Model</source>
-        <translation type="vanished">Dodaj model</translation>
-    </message>
-    <message>
-        <source>Start using</source>
-        <translation type="vanished">Počnite koristiti</translation>
-    </message>
-    <message>
-        <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="vanished">Potvrđujem da imam više od 18 godina. Prihvaćam i slažem se s &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI Korisničkim ugovorom&quot;&lt;/a&gt;, a sadržaji koje šaljem i primam putem aplikacije izravna su razmjena podataka s davateljem usluge velikog modela i nemaju veze s Tvrtkom.</translation>
-    </message>
-    <message>
-        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="vanished">Primanje računa označava da razumijete i prihvaćate uvjete događaja,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Detalji događaja&gt;&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Probni račun</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Spremanje nije uspjelo, pokušajte ponovo kasnije</translation>
-    </message>
-    <message>
-        <source>Trial account received successfully.</source>
-        <translation type="obsolete">UOS AI试用账号领取成功！</translation>
-    </message>
-    <message>
-        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="vanished">Broj upotreba i trajanje probnog računa su ograničeni, molimo konfigurirajte svoj osobni model računa na vrijeme! Za detalje pogledajte detalje događaja.</translation>
-    </message>
-    <message>
-        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="vanished">Engleska podrška za probne račune nije zadovoljavajuća. Broj korištenja i trajanje probnog računa su ograničeni. Pravočasno konfigurirajte svoj osobni model račun!</translation>
-    </message>
-    <message>
-        <source>Start trial</source>
-        <comment>button</comment>
-        <translation type="vanished">Započni probu</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">Besplatna aktivnost računa je završila.</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">Nije moguće povezati se s poslužiteljem, provjerite svoju mrežu ili pokušajte ponovo kasnije.</translation>
-    </message>
-    <message>
-        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="vanished">Slažem se sudjelovati u planu korisničkog iskustva aplikacije i ovlašćujem vašu tvrtku da prikuplja sadržaje koje šaljem tijekom korištenja aplikacije, vrijeme slanja, vrstu traženog velikog modela, specifičnu aplikaciju i je li tekst uspješno generirao sliku, kako bi se poboljšala kvaliteta usluge i unaprijedilo radno iskustvo. (Ako odbijete pružiti gore navedene informacije, to neće utjecati na vaše normalno korištenje aplikacije.)</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Potvrdi</translation>
+        <translation>Neuspjelo pokretanje aplikacije!</translation>
     </message>
 </context>
 <context>
     <name>WorkspaceStore</name>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="257"/>
         <source>Note: Part of the document content may be generated by AI</source>
-        <translation type="unfinished"></translation>
+        <translation>Napomena: Dio sadržaja dokumenta može biti generirao AI</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="261"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>Reference</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="288"/>
         <source>Word files (*.docx)</source>
-        <translation type="unfinished"></translation>
+        <translation>Word datoteke (*.docx)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="291"/>
         <source>PDF files (*.pdf)</source>
-        <translation type="unfinished"></translation>
+        <translation>PDF datoteke (*.pdf)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="294"/>
         <source>Markdown files (*.md)</source>
-        <translation type="unfinished"></translation>
+        <translation>Markdown datoteke (*.md)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="301"/>
         <source>Save Article</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>XFCodeTranslation</name>
-    <message>
-        <source>Error while upgrading to WebSocket</source>
-        <translation type="vanished">Pogreška tijekom nadogradnje na WebSocket</translation>
-    </message>
-    <message>
-        <source>Error reading user&apos;s message via WebSocket</source>
-        <translation type="vanished">Pogreška pri čitanju korisničke poruke putem WebSocket-a</translation>
-    </message>
-    <message>
-        <source>Error sending message to user via WebSocket</source>
-        <translation type="vanished">Pogreška pri slanju poruke korisniku putem WebSocket-a</translation>
-    </message>
-    <message>
-        <source>The user&apos;s message format is incorrect</source>
-        <translation type="vanished">Format korisničke poruke nije ispravan</translation>
-    </message>
-    <message>
-        <source>Schema error for user data</source>
-        <translation type="vanished">Pogreška sheme za korisničke podatke</translation>
-    </message>
-    <message>
-        <source>User parameter value is wrong</source>
-        <translation type="vanished">Vrijednost korisničkog parametra je pogrešna</translation>
-    </message>
-    <message>
-        <source>User concurrency error: The current user is already connected, and the same user cannot connect to multiple places at the same time.</source>
-        <translation type="vanished">Pogreška istodobnosti korisnika: Trenutni korisnik je već povezan, a isti korisnik ne može se povezati na više mjesta istovremeno.</translation>
-    </message>
-    <message>
-        <source>User traffic is limited: The service is processing the user&apos;s current problem and needs to wait for the processing to be completed before sending a new request. (You must wait for a complete reply from the  model before sending the next question)</source>
-        <translation type="vanished">Promet korisnika je ograničen: Usluga obrađuje trenutni problem korisnika i potrebno je pričekati da se obrada završi prije slanja novog zahtjeva. (Morate pričekati potpuni odgovor modela prije slanja sljedećeg pitanja)</translation>
-    </message>
-    <message>
-        <source>Insufficient service capacity, please contact staff</source>
-        <translation type="vanished">Nedovoljan kapacitet usluge, molimo kontaktirajte osoblje</translation>
-    </message>
-    <message>
-        <source>Failed to establish connection with engine</source>
-        <translation type="vanished">Neuspješno uspostavljanje veze s motorom</translation>
-    </message>
-    <message>
-        <source>Error receiving engine data</source>
-        <translation type="vanished">Pogreška pri primanju podataka motora</translation>
-    </message>
-    <message>
-        <source>Error sending data to engine</source>
-        <translation type="vanished">Pogreška pri slanju podataka motoru</translation>
-    </message>
-    <message>
-        <source>Engine internal error</source>
-        <translation type="vanished">Interna pogreška motora</translation>
-    </message>
-    <message>
-        <source>The input content does not pass the review and is suspected of violating the rules. Please readjust the input content.</source>
-        <translation type="vanished">Uneseni sadržaj ne prolazi pregled i sumnja se da krši pravila. Molimo prilagodite unos sadržaja.</translation>
-    </message>
-    <message>
-        <source>The output content involves sensitive information, the review fails, and subsequent results cannot be displayed to the user.</source>
-        <translation type="vanished">Izlazni sadržaj uključuje osjetljive informacije, pregled ne uspijeva, a sljedeći rezultati ne mogu se prikazati korisniku.</translation>
-    </message>
-    <message>
-        <source>appid is in the blacklist</source>
-        <translation type="vanished">appid je na crnoj listi</translation>
-    </message>
-    <message>
-        <source>Appid authorization class error. For example: this function is not activated, the corresponding version is not activated, the token is insufficient, the concurrency exceeds authorization, etc.</source>
-        <translation type="vanished">Pogreška klase autorizacije Appid. Na primjer: ova funkcija nije aktivirana, odgovarajuća verzija nije aktivirana, token je nedovoljan, istodobnost premašuje autorizaciju itd.</translation>
-    </message>
-    <message>
-        <source>Clear history failed</source>
-        <translation type="vanished">Brisanje povijesti nije uspjelo</translation>
-    </message>
-    <message>
-        <source>Indicates that the content of this session has a tendency to involve illegal information; it is recommended that developers give the user a prompt after receiving this error code to enter information that involves illegal information.</source>
-        <translation type="vanished">Ukazuje da sadržaj ove sesije ima tendenciju uključivanja nezakonitih informacija; preporuča se da programeri nakon primitka ovog koda pogreške daju korisniku upozorenje za unos informacija koje uključuju nezakonite informacije.</translation>
-    </message>
-    <message>
-        <source>Service is busy, please try again later</source>
-        <translation type="vanished">Usluga je zauzeta, molimo pokušajte ponovo kasnije</translation>
-    </message>
-    <message>
-        <source>The parameters of the request engine are abnormal, and the engine schema check fails.</source>
-        <translation type="vanished">Parametri zahtjeva motora su abnormalni, a provjera sheme motora ne uspijeva.</translation>
-    </message>
-    <message>
-        <source>Engine network abnormality</source>
-        <translation type="vanished">Abnormalnost mreže motora</translation>
-    </message>
-    <message>
-        <source>The number of tokens exceeds the upper limit. The number of words in the conversation history and question is too large and needs to be simplified.</source>
-        <translation type="vanished">Broj tokena premašuje gornju granicu. Broj riječi u povijesti razgovora i pitanju prevelik je i potrebno ga je pojednostaviti.</translation>
-    </message>
-    <message>
-        <source>Authorization error: The appId does not have authorization for related functions or the business volume exceeds the limit</source>
-        <translation type="vanished">Pogreška autorizacije: appId nema ovlaštenje za povezane funkcije ili poslovni volumen premašuje ograničenje</translation>
-    </message>
-    <message>
-        <source>Authorization error: Daily flow control limit exceeded. Exceeded the maximum number of visits for the day</source>
-        <translation type="vanished">Pogreška autorizacije: Prekoračen dnevni limit kontrole protoka. Premašen je maksimalni broj posjeta za dan</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Trenutno je previše posjetitelja, molimo pokušajte ponovo kasnije.</translation>
-    </message>
-    <message>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation type="vanished">Veza nije uspjela, molimo provjerite unesene podatke.</translation>
-    </message>
-</context>
-<context>
-    <name>ZhiPuCodeTranslation</name>
-    <message>
-        <source>Server internal error</source>
-        <translation type="vanished">Interna pogreška poslužitelja</translation>
-    </message>
-    <message>
-        <source>Authentication failed</source>
-        <translation type="vanished">Autentifikacija nije uspjela</translation>
-    </message>
-    <message>
-        <source>The Authentication parameter was not received in the header and authentication could not be performed.</source>
-        <translation type="vanished">Parametar autentifikacije nije primljen u zaglavlju i autentifikacija se nije mogla izvesti.</translation>
-    </message>
-    <message>
-        <source>The Authentication Token is illegal. Please confirm that the Authentication Token is delivered correctly.</source>
-        <translation type="vanished">Token autentifikacije je nezakonit. Molimo potvrdite da je token autentifikacije isporučen ispravno.</translation>
-    </message>
-    <message>
-        <source>Authentication Token has expired, please regenerate/obtain it</source>
-        <translation type="vanished">Token autentifikacije je istekao, molimo regenerirajte/obnovite ga</translation>
-    </message>
-    <message>
-        <source>Verification via Authentication Token failed</source>
-        <translation type="vanished">Provjera putem tokena autentifikacije nije uspjela</translation>
-    </message>
-    <message>
-        <source>Account reading and writing</source>
-        <translation type="vanished">Čitanje i pisanje računa</translation>
-    </message>
-    <message>
-        <source>Your account is currently inactive. Please check account information</source>
-        <translation type="vanished">Vaš račun je trenutno neaktivan. Molimo provjerite podatke računa</translation>
-    </message>
-    <message>
-        <source>Your account does not exist</source>
-        <translation type="vanished">Vaš račun ne postoji</translation>
-    </message>
-    <message>
-        <source>Your account has been locked, please contact customer service to unlock it</source>
-        <translation type="vanished">Vaš račun je zaključan, molimo kontaktirajte korisničku podršku da ga otključaju</translation>
-    </message>
-    <message>
-        <source>Your account is in arrears, please recharge and try again</source>
-        <translation type="vanished">Vaš račun je u minusu, molimo dopunite ga i pokušajte ponovno</translation>
-    </message>
-    <message>
-        <source>Unable to successfully access your account, please try again later</source>
-        <translation type="vanished">Nije moguće uspješno pristupiti vašem računu, molimo pokušajte kasnije</translation>
-    </message>
-    <message>
-        <source>API call error</source>
-        <translation type="vanished">Greška u pozivu API-ja</translation>
-    </message>
-    <message>
-        <source>API call parameters are incorrect, please check the documentation</source>
-        <translation type="vanished">Parametri poziva API-ja su netočni, molimo provjerite dokumentaciju</translation>
-    </message>
-    <message>
-        <source>Model does not exist, please check the model code</source>
-        <translation type="vanished">Model ne postoji, molimo provjerite kod modela</translation>
-    </message>
-    <message>
-        <source>The current model does not support the ${method} calling method</source>
-        <translation type="vanished">Trenutni model ne podržava metodu poziva ${method}</translation>
-    </message>
-    <message>
-        <source>${field} Parameters not received normally</source>
-        <translation type="vanished">Parametri ${field} nisu normalno primljeni</translation>
-    </message>
-    <message>
-        <source>The ${field}  parameter is illegal. Please check the documentation</source>
-        <translation type="vanished">Parametar ${field} je nelegalan. Molimo provjerite dokumentaciju</translation>
-    </message>
-    <message>
-        <source>${field1} and ${field2} cannot be set at the same time, please check the documentation</source>
-        <translation type="vanished">${field1} i ${field2} ne mogu biti postavljeni istovremeno, molimo provjerite dokumentaciju</translation>
-    </message>
-    <message>
-        <source>You do not have access to  ${API_name}</source>
-        <translation type="vanished">Nemate pristup ${API_name}</translation>
-    </message>
-    <message>
-        <source>API ${API_name} is offline</source>
-        <translation type="vanished">API ${API_name} je offline</translation>
-    </message>
-    <message>
-        <source>API ${API_name}  does not exist</source>
-        <translation type="vanished">API ${API_name} ne postoji</translation>
-    </message>
-    <message>
-        <source>API call process error</source>
-        <translation type="vanished">Greška u procesu poziva API-ja</translation>
-    </message>
-    <message>
-        <source>You have requested: ${request_id}</source>
-        <translation type="vanished">Zatražili ste: ${request_id}</translation>
-    </message>
-    <message>
-        <source>When getting asynchronous request results, please use task_id</source>
-        <translation type="vanished">Prilikom dobivanja rezultata asinkronog zahtjeva, molimo koristite task_id</translation>
-    </message>
-    <message>
-        <source>Task: ${task_id} does not exist</source>
-        <translation type="vanished">Zadatak: ${task_id} ne postoji</translation>
-    </message>
-    <message>
-        <source>Network error, error id: ${error_id}, please contact customer service</source>
-        <translation type="vanished">Mrežna greška, ID greške: ${error_id}, molimo kontaktirajte korisničku podršku</translation>
-    </message>
-    <message>
-        <source>API run error</source>
-        <translation type="vanished">Greška u izvođenju API-ja</translation>
-    </message>
-    <message>
-        <source>Prompt super long</source>
-        <translation type="vanished">Prompt je predugačak</translation>
-    </message>
-    <message>
-        <source>API call blocked by policy</source>
-        <translation type="vanished">Poziv API-ja blokiran zbog pravila</translation>
-    </message>
-    <message>
-        <source>The system has detected that the input or generated content may contain unsafe or sensitive content. Please avoid entering prompts that may easily generate sensitive content. Thank you for your cooperation.</source>
-        <translation type="vanished">Sustav je otkrio da unos ili generirani sadržaj mogu sadržavati nesiguran ili osjetljiv sadržaj. Molimo izbjegavajte unos promptova koji lako mogu generirati osjetljiv sadržaj. Hvala na suradnji.</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Trenutno je previše posjetitelja, molimo pokušajte kasnije.</translation>
-    </message>
-    <message>
-        <source>This API has reached the limit of calls for today. If you need more, please contact customer service to purchase.</source>
-        <translation type="vanished">Ovaj API je dosegao dnevni limit poziva. Ako vam treba više, molimo kontaktirajte korisničku podršku za kupnju.</translation>
+        <translation>Spremi članak</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AITranslation</name>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="27"/>
         <source>Translate the following text into English for me.</source>
-        <translation type="unfinished">Prevedite sljedeći tekst na engleski za mene.</translation>
+        <translation>Prevedi sljedeći tekst na engleski za mene.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="28"/>
         <source>Translate the following document into Chinese.</source>
-        <translation type="unfinished">Prevedite sljedeći dokument na kineski.</translation>
+        <translation>Prevedi sljedeći dokument na kineski.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="29"/>
         <source>What does the word Ǌgent” mean in the AI industry?</source>
-        <translation type="unfinished"></translation>
+        <translation>Što riječ „agent” znači u AI industriji?</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="30"/>
         <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation type="unfinished">Molimo prevedite sljedeći sadržaj na kineski. Zahtjevi: Točno u značenju, formalno i profesionalno u jeziku.</translation>
+        <translation>Molim vas prevedite sljedeći sadržaj na kineski. Zahtjevi: Točno značenje, formalan i profesionalan jezik.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="31"/>
         <source>What are some colloquial ways to address a friend in English?</source>
-        <translation type="unfinished">Koji su neki kolokvijalni načini oslovljavanja prijatelja na engleskom?</translation>
+        <translation>Koji su neki kolokvijalni načini oslovljavanja prijatelja na engleskom?</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="32"/>
         <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation type="unfinished">Prevedite sljedeći klasični kineski tekst na moderni kineski.</translation>
+        <translation>Prevedi sljedeći klasični kineski tekst na moderni kineski.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AIWriter</name>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="66"/>
         <source>Today </source>
-        <translation type="unfinished"></translation>
+        <translation>Danas </translation>
     </message>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="68"/>
         <source>Yesterday </source>
-        <translation type="unfinished"></translation>
+        <translation>Jučer </translation>
     </message>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="70"/>
         <source>MMM d HH:mm</source>
-        <translation type="unfinished"></translation>
+        <translation>MMM d HH:mm</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AboutWindow</name>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="24"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI je pametna asistentica za radnu površinu, vaš osobni asistent! Možete komunicirati s njom putem teksta ili glasa, a ona može pomoći u odgovaranju na pitanja, pružanju informacija i generiranju slika na temelju vaših opisa.</translation>
     </message>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="59"/>
         <source>Filing Information</source>
-        <translation type="unfinished">Podaci o arhiviranju</translation>
+        <translation>Informacije o dokumentaciji</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::AddPrivateModelDialog</name>
+    <name>uos_ai::AbstractAssistant</name>
     <message>
-        <source>Add model</source>
-        <translation type="vanished">Dodaj model</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">API ključ</translation>
-    </message>
-    <message>
-        <source>Required, please input</source>
-        <translation type="vanished">Obavezno, molimo unesite</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Račun</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Obavezno, za razlikovanje više modela</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Naziv modela</translation>
-    </message>
-    <message>
-        <source>Optional</source>
-        <translation type="vanished">Neobavezno</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Domena</translation>
-    </message>
-    <message>
-        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="vanished">Kako bi se provjerila dostupnost modela, sustav šalje testne informacije velikom modelu, što će potrošiti malu količinu tokena.</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Odustani</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Potvrdi</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">Najviše 20 znakova</translation>
-    </message>
-    <message>
-        <source>This LLM already exists, please do not add it again.</source>
-        <translation type="vanished">Ovaj LLM već postoji, nemojte ga ponovno dodavati.</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">Spremanje nije uspjelo, pokušajte ponovo kasnije.</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">Naziv računa već postoji, promijenite ga.</translation>
-    </message>
-    <message>
-        <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="vanished">Za postavke proxyja, idite na sistemske postavke proxyja.</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Idi na postavke</translation>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation>UOS AI OS zahtijeva konfiguraciju računa AI modela prije korištenja. Molimo konfigurirajte račun modela prvo.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddSkillDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="62"/>
         <source>Add Skill</source>
         <translation>Dodaj vještinu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
         <source>Skill Name</source>
         <translation>Naziv vještine</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="69"/>
         <source>Enter skill name</source>
         <translation>Unesite naziv vještine</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="83"/>
         <source>Skill Command</source>
         <translation>Naredba vještine</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="91"/>
         <source> {selection} </source>
-        <translation> {selection} </translation>
+        <translation> {odabir} </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="95"/>
         <source>represents the text selected by word selection.</source>
-        <translation>predstavlja tekst odabran odabirom riječi.</translation>
+        <translation>predstavlja tekst odabran pomoću odabira riječi.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="100"/>
         <source>Instructions</source>
         <translation>Upute</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="126"/>
         <source>Cancel</source>
         <translation>Odustani</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
         <source>Save</source>
         <translation>Spremi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="246"/>
         <source>Skill name cannot be empty</source>
         <translation>Naziv vještine ne može biti prazan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="291"/>
         <source>Exceeded character limit</source>
-        <translation>Prekoračen je ograničenje znakova</translation>
+        <translation>Prekoračeno je ograničenje znakova</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="403"/>
         <source>The skill name already exists.</source>
         <translation>Naziv vještine već postoji.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="438"/>
         <source>Command Instructions</source>
         <translation>Upute za naredbu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="476"/>
         <source>If you want to translate the selected text &quot;Hello&quot;, as shown above, you can enter the command: Translate {selection} into English.</source>
-        <translation>Ako želite prevesti odabrani tekst &quot;Pozdrav&quot;, kao što je prikazano gore, možete unijeti naredbu: Prevedi {selection} na engleski.</translation>
+        <translation>Ako želite prevesti odabrani tekst &quot;Hello&quot;, kao što je prikazano iznad, možete unijeti naredbu: Prevedi {odabir} na engleski.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="483"/>
         <source>Advanced Tips</source>
         <translation>Napredni savjeti</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="489"/>
         <source>The more specific the command, the more accurate the generated content. For example:
 • Generate a PPT outline for {selection} with 3 chapters and 10 key points.
 • Polish {selection} into a recruitment copy within 100 words, highlighting teamwork.</source>
-        <translation>Što je naredba specifičnija, to će generirani sadržaj biti točniji. Na primjer: • Generirajte PPT okvir za {selection} s 3 poglavlja i 10 ključnih točaka. • Dotjerajte {selection} u rekrutacijski tekst unutar 100 riječi, naglašavajući timski rad.</translation>
+        <translation>Što je naredba specifičnija, to je generirani sadržaj točniji. Na primjer:
+• Generirajte PPT osnovu za {odabir} s 3 poglavlja i 10 ključnih točaka.
+• Uredite {odabir} u tekst za zapošljavanje od 100 riječi, naglašavajući timski rad.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="561"/>
         <source>Clicking the label can still insert it into the input field.</source>
-        <translation>Klikom na oznaku i dalje je možete umetnuti u polje za unos.</translation>
+        <translation>Klikom na oznaku možete je i dalje umetnuti u polje za unos.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
         <source>OK</source>
         <translation>U redu</translation>
     </message>
@@ -4357,17 +712,14 @@ Primjer upita: Nazovite sve datoteke u novostvorenoj mapi na radnoj površini ka
 <context>
     <name>uos_ai::AiBarWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="32"/>
         <source>DDE Shell AI Bar</source>
         <translation>DDE Shell AI traka</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="52"/>
         <source>Drag files quickly</source>
-        <translation>Brzo povucite datoteke</translation>
+        <translation>Brzo povlačenje datoteka</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="52"/>
         <source>Drag files to the AI ribbon for intelligent processing</source>
         <translation>Povucite datoteke na AI traku za inteligentnu obradu</translation>
     </message>
@@ -4375,511 +727,393 @@ Primjer upita: Nazovite sve datoteke u novostvorenoj mapi na radnoj površini ka
 <context>
     <name>uos_ai::AiQuickDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="124"/>
         <source>simplified Chinese</source>
-        <translation type="unfinished">pojednostavljeni kineski</translation>
+        <translation>pojednostavljeni kineski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="125"/>
         <source>traditional Chinese</source>
-        <translation type="unfinished">tradicionalni kineski</translation>
+        <translation>tradicionalni kineski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="126"/>
         <source>Tibetan</source>
-        <translation type="unfinished">tibetanski</translation>
+        <translation>tibetanski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="127"/>
         <source>English</source>
-        <translation type="unfinished">engleski</translation>
+        <translation>engleski</translation>
     </message>
     <message>
-        <source>Japanese </source>
-        <translation type="obsolete">japanski</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="128"/>
         <source>Japanese</source>
-        <translation type="unfinished">Japanski</translation>
+        <translation>japanski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="129"/>
         <source>German</source>
-        <translation type="unfinished">njemački</translation>
+        <translation>njemački</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="130"/>
         <source>Spanish</source>
-        <translation type="unfinished">španjolski</translation>
+        <translation>španjolski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="131"/>
         <source>French</source>
-        <translation type="unfinished">francuski</translation>
+        <translation>francuski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="132"/>
         <source>Italian</source>
-        <translation type="unfinished">talijanski</translation>
+        <translation>talijanski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="133"/>
         <source>Korean</source>
-        <translation type="unfinished">korejski</translation>
+        <translation>korejski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="134"/>
         <source>Malay</source>
-        <translation type="unfinished">malajski</translation>
+        <translation>malajski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="135"/>
         <source>Portuguese</source>
-        <translation type="unfinished">portugalski</translation>
+        <translation>portugalski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="136"/>
         <source>Russian</source>
-        <translation type="unfinished">ruski</translation>
+        <translation>ruski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="137"/>
         <source>Thai</source>
-        <translation type="unfinished">tajlandski</translation>
+        <translation>tajlandski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="138"/>
         <source>Vietnamese</source>
-        <translation type="unfinished">vijetnamski</translation>
+        <translation>vijetnamski</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="203"/>
         <source>type</source>
-        <translation type="unfinished">tip</translation>
+        <translation>vrsta</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="302"/>
-        <source>Cancel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="327"/>
-        <source>Read Aloud</source>
-        <translation type="unfinished">Čitaj naglas</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="334"/>
-        <source>Paste to Text</source>
-        <translation type="unfinished">Zalijepi u tekst</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="348"/>
-        <source>Regenerate</source>
-        <translation type="unfinished">Ponovno generiraj</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="355"/>
-        <source>Copy</source>
-        <translation type="unfinished">Kopiraj</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="373"/>
-        <source>Continue Dialog</source>
-        <translation type="unfinished">Nastavi dijalog</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="386"/>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="unfinished">Sadržaj generiran od strane AI-a je samo za referencu, obratite pažnju na točnost informacija.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="422"/>
-        <source>Automatic Detection</source>
-        <translation type="unfinished">Automatsko otkrivanje</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="498"/>
-        <source>Search</source>
-        <translation type="unfinished">Pretraži</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="499"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1315"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
-        <source>Explain</source>
-        <translation type="unfinished">Objasni</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="500"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1320"/>
-        <source>Summary</source>
-        <translation type="unfinished">Sažetak</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="501"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1325"/>
-        <source>Translate</source>
-        <translation type="unfinished">Prevedi</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="502"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1344"/>
-        <source>Continue writing</source>
-        <translation type="unfinished">Nastavi pisati</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="503"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1349"/>
-        <source>Expand</source>
-        <translation type="unfinished">Proširi</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="504"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1354"/>
-        <source>Correct</source>
-        <translation type="unfinished">Ispravi</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="505"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
-        <source>Polish</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="525"/>
-        <source>Add to the AI knowledge base</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="632"/>
-        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation type="unfinished">Rezultat prijevoda ograničen je mogućnostima modela. Ako niste zadovoljni prijevodom, prebacite se na druge modele na početnoj stranici UOS AI.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="633"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="954"/>
-        <source>Ok</source>
-        <translation type="unfinished">U redu</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="639"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1341"/>
-        <source>Translate this passage into %1 and give me a clear result directly.
-text：</source>
-        <translation type="unfinished">Prevedi ovaj odlomak na %1 i daj mi jasan rezultat izravno. tekst：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="826"/>
-        <source>Not clickable</source>
-        <translation type="unfinished">Nije klikabilno</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="909"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
-        <source>The audio device is not detected, please check and try again.</source>
-        <translation type="unfinished">Audio uređaj nije detektiran, provjerite i pokušajte ponovo.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="915"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="941"/>
-        <source>Ok</source>
-        <comment>button</comment>
-        <translation type="unfinished">U redu</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="934"/>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="952"/>
-        <source>Fill failed</source>
-        <translation type="unfinished">Ispuna nije uspjela</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="953"/>
-        <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1018"/>
-        <source>Added</source>
-        <translation type="unfinished">Dodano</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1292"/>
-        <source>Copied</source>
-        <translation type="unfinished">Kopirano</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1317"/>
-        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
-text：</source>
-        <translation type="unfinished">Objasni ovaj odlomak jednostavnim jezikom. Daj mi jasan rezultat bez suvišnog sadržaja. tekst：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1322"/>
-        <source>Summarize this passage and give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="unfinished">Sažmi ovaj odlomak i daj mi jasan rezultat izravno bez ikakvog suvišnog sadržaja. tekst：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1346"/>
-        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="unfinished">Nastavi ovaj odlomak prikladno. Nema potrebe za puno riječi. Daj mi jasan rezultat bez ikakvog suvišnog sadržaja. tekst：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1351"/>
-        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="unfinished">Proširi ovaj odlomak prikladno. Nema potrebe za posebno dugim tekstom. Daj mi jasan rezultat bez ikakvog suvišnog sadržaja. tekst：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1356"/>
-        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="unfinished">Provjeri ima li pogrešaka u ovom odlomku. Ako ima, naznači gdje se nalaze. Daj mi jasan rezultat izravno bez ikakvog suvišnog sadržaja. tekst：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1361"/>
-        <source>Polish this passage for me and just give me the result without any extra content.
-text：</source>
-        <translation type="unfinished">Dorađujte ovaj odlomak za mene i dajte mi samo rezultat bez dodatnog sadržaja.
-
-tekst:</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1402"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1404"/>
-        <source> &quot;%1&quot; </source>
-        <translation type="unfinished">&quot;%1&quot;</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1779"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1795"/>
-        <source>Current model: </source>
-        <translation type="unfinished">Trenutni model: </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1800"/>
-        <source>Currently no model</source>
-        <translation type="unfinished">Trenutno nema modela</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1819"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1829"/>
-        <source>Go to configure  </source>
-        <translation type="unfinished">Idi na konfiguraciju</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1823"/>
-        <source>Claim Free Credits  </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2014"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2049"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2095"/>
-        <source>No text recognized.</source>
-        <translation type="unfinished">Nije prepoznat nijedan tekst.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2114"/>
-        <source>The added content must be more than 10 words</source>
-        <translation type="unfinished">Dodani sadržaj mora imati više od 10 riječi</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::AiWriterDialog</name>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="111"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="429"/>
-        <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
-        <translation>Unesite što želite stvoriti (pritisnite Enter za generiranje/Esc za izlaz)</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
-        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation>Pomozite mi napisati esej na temu [%1] s [jasnom strukturom i bogatim sadržajem].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
-        <source>Artificial Intelligence</source>
-        <translation>Umjetna inteligencija</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
-        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation>Pomozite mi napisati nacrt na temu [%1], koji će se koristiti za [izradu PPT-a].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
-        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation>Pomozite mi napisati obavijest o [%1], primatelj je [Svi zaposlenici], a pošiljatelj je [Administrativni odjel].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
-        <source>National Day Holiday</source>
-        <translation>Praznik državnosti</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
-        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation>Pomozite mi napisati istraživačko izvješće o [%1], mora uključivati [opis stanja, analizu problema, protumjere i prijedloge, zaključke istraživanja].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
-        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation>Pomozite mi napisati govor na temu [%1] za [Vodstvo tvrtke], zahtijeva [jasnu strukturu i živopisni jezik].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
-        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation>Pomozite mi napisati sažetak mog nedavnog rada, uključujući [%1] i [rezultate], zahtijeva [formalni] ton.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
-        <source>work content</source>
-        <translation>sadržaj rada</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
-        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation>Pomozite mi napisati javni tweet na temu [%1], zahtijeva [jasnu strukturu] i [opušten] ton.</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Konfiguracija modela</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1100"/>
-        <source>Go to configure  </source>
-        <translation>Idi na konfiguraciju</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="282"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1393"/>
         <source>Cancel</source>
         <translation>Odustani</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="100"/>
-        <source>AI Writer</source>
-        <translation>AI pisac</translation>
+        <source>Read Aloud</source>
+        <translation>Čitaj naglas</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="204"/>
-        <source>Article</source>
-        <translation>Članak</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="208"/>
-        <source>Outline</source>
-        <translation>Nacrt</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="212"/>
-        <source>Notification</source>
-        <translation>Obavijest</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="216"/>
-        <source>Research Report</source>
-        <translation>Istraživačko izvješće</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="220"/>
-        <source>Speeches</source>
-        <translation>Govori</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="224"/>
-        <source>Work Summary</source>
-        <translation>Sažetak rada</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="228"/>
-        <source>Tweets</source>
-        <translation>Tweetovi</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="320"/>
         <source>Paste to Text</source>
-        <translation>Zalijepi u tekst</translation>
+        <translation>Zaljepi u tekst</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="338"/>
         <source>Regenerate</source>
         <translation>Ponovno generiraj</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="346"/>
         <source>Copy</source>
         <translation>Kopiraj</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="364"/>
+        <source>Continue Dialog</source>
+        <translation>Nastavi dijalog</translation>
+    </message>
+    <message>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>Sadržaj generiran od strane AI-a je samo za referencu, obratite pažnju na točnost informacija.</translation>
+        <translation>Sadržaj koji je generirao AI služi samo kao referenca. Obrite pozornost na točnost informacija.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="857"/>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation>Funkcija se može koristiti tek nakon ponovnog pokretanja metode unosa. Upute su sljedeće:
-
-1. Desnim klikom kliknite na ikonu metode unosa u traci zadataka.
-
-2. Kliknite &quot;Ponovno pokreni&quot;.</translation>
+        <source>Automatic Detection</source>
+        <translation>Automatska detekcija</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="861"/>
+        <source>Search</source>
+        <translation>Pretraži</translation>
+    </message>
+    <message>
+        <source>Explain</source>
+        <translation>Objasni</translation>
+    </message>
+    <message>
+        <source>Summary</source>
+        <translation>Sažetak</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Prevedi</translation>
+    </message>
+    <message>
+        <source>Continue writing</source>
+        <translation>Nastavi pisati</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>Proširi</translation>
+    </message>
+    <message>
+        <source>Correct</source>
+        <translation>Ispravi</translation>
+    </message>
+    <message>
+        <source>Polish</source>
+        <translation>Uredi</translation>
+    </message>
+    <message>
+        <source>Add to the AI knowledge base</source>
+        <translation>Dodaj u AI bazu znanja</translation>
+    </message>
+    <message>
+        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
+        <translation>Rezultat prijevoda ograničen je mogućnostima modela. Ako niste zadovoljni prijevodom, na stranici UOS AI početne prebacite se na druge modele.</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <translation>U redu</translation>
+    </message>
+    <message>
+        <source>Translate this passage into %1 and give me a clear result directly.
+text：</source>
+        <translation>Prevedi ovaj odlomak na %1 i daj mi izravno jasan rezultat.
+tekst：</translation>
+    </message>
+    <message>
+        <source>Not clickable</source>
+        <translation>Nije moguće kliknuti</translation>
+    </message>
+    <message>
+        <source>The audio device is not detected, please check and try again.</source>
+        <translation>Zvučni uređaj nije otkriven. Provjerite i pokušajte ponovo.</translation>
+    </message>
+    <message>
         <source>Ok</source>
         <comment>button</comment>
         <translation>U redu</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1040"/>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation>Ova se funkcija može koristiti tek nakon ponovnog pokretanja načina unosa. Upute su sljedeće:
+1. Desnom tipkom miša kliknite na ikonu načina unosa na traci zadataka.
+2. Kliknite &quot;Ponovno pokreni&quot;.</translation>
+    </message>
+    <message>
+        <source>Fill failed</source>
+        <translation>Popunjavanje nije uspjelo</translation>
+    </message>
+    <message>
+        <source>No input box selected, please select the input box and re-fill it.</source>
+        <translation>Nije odabran okvir za unos. Odaberite okvir za unos i pokušajte ga ponovno ispuniti.</translation>
+    </message>
+    <message>
+        <source>Added</source>
+        <translation>Dodano</translation>
+    </message>
+    <message>
         <source>Copied</source>
         <translation>Kopirano</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1063"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1077"/>
+        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
+text：</source>
+        <translation>Objasni ovaj odlomak običnim jezikom. Daj mi jasnan rezultat bez suvišnog sadržaja.
+tekst：</translation>
+    </message>
+    <message>
+        <source>Summarize this passage and give me a clear result directly without any other redundant content.
+text：</source>
+        <translation>Sažmi ovaj odlomak i daj mi izravno jasnan rezultat bez ikakvog drugog suvišnog sadržaja.
+tekst：</translation>
+    </message>
+    <message>
+        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation>Prikladno nastavi ovaj odlomak. Nema potrebe za puno riječi. Daj mi samo jasnan rezultat bez ikakvog drugog suvišnog sadržaja.
+tekst：</translation>
+    </message>
+    <message>
+        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation>Prikladno proširi ovaj odlomak. Nema potrebe za osobito dug tekst. Daj mi samo jasnan rezultat bez ikakvog drugog suvišnog sadržaja.
+tekst：</translation>
+    </message>
+    <message>
+        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
+text：</source>
+        <translation>Provjeri ima li u ovom odlomku pravopisnih pogrešaka. Ako ih ima, naznači položaj grešaka. Daj mi izravno jasnan rezultat bez ikakog drugog suvišnog sadržaja.
+tekst：</translation>
+    </message>
+    <message>
+        <source>Polish this passage for me and just give me the result without any extra content.
+text：</source>
+        <translation>Uredi mi ovaj odlomak i daj mi samo rezultat bez ikakvog dodatnog sadržaja.
+tekst：</translation>
+    </message>
+    <message>
+        <source> &quot;%1&quot; </source>
+        <translation> &quot;%1&quot; </translation>
+    </message>
+    <message>
         <source>Current model: </source>
         <translation>Trenutni model: </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1081"/>
         <source>Currently no model</source>
         <translation>Trenutno nema modela</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1114"/>
+        <source>Go to configure  </source>
+        <translation>Idi na konfiguriranje  </translation>
+    </message>
+    <message>
+        <source>Claim Free Credits  </source>
+        <translation>Zatraži besplatne kredite  </translation>
+    </message>
+    <message>
+        <source>No text recognized.</source>
+        <translation>Nije prepoznat tekst.</translation>
+    </message>
+    <message>
+        <source>The added content must be more than 10 words</source>
+        <translation>Dodani sadržaj mora imati više od 10 riječi</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AiWriterDialog</name>
+    <message>
+        <source>AI Writer</source>
+        <translation>AI pisac</translation>
+    </message>
+    <message>
+        <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
+        <translation>Unesite što želite stvoriti (pritisnite Enter za generiranje/Esc za izlaz)</translation>
+    </message>
+    <message>
+        <source>Article</source>
+        <translation>Članak</translation>
+    </message>
+    <message>
+        <source>Outline</source>
+        <translation>Obris</translation>
+    </message>
+    <message>
+        <source>Notification</source>
+        <translation>Obavijest</translation>
+    </message>
+    <message>
+        <source>Research Report</source>
+        <translation>Izvještaj o istraživanju</translation>
+    </message>
+    <message>
+        <source>Speeches</source>
+        <translation>Govori</translation>
+    </message>
+    <message>
+        <source>Work Summary</source>
+        <translation>Sažetak rada</translation>
+    </message>
+    <message>
+        <source>Tweets</source>
+        <translation>Tweetovi</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Odustani</translation>
+    </message>
+    <message>
+        <source>Paste to Text</source>
+        <translation>Umetni u tekst</translation>
+    </message>
+    <message>
+        <source>Regenerate</source>
+        <translation>Ponovno generiraj</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiraj</translation>
+    </message>
+    <message>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation>Sadržaj koji je generirao AI samo je za referencu; obratite pozornost na točnost informacija.</translation>
+    </message>
+    <message>
+        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
+        <translation>Pomogni mi napisati esej o temi [%1] s [jasnom strukturom i bogatim sadržajem].</translation>
+    </message>
+    <message>
+        <source>Artificial Intelligence</source>
+        <translation>Umjetna inteligencija</translation>
+    </message>
+    <message>
+        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
+        <translation>Pomogni mi napisati obras o temi [%1], koji će se koristiti za [izradu PPT-a].</translation>
+    </message>
+    <message>
+        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
+        <translation>Pomogni mi napisati obavijest o [%1], primatelj je [Svi zaposleni], a pošiljatelj [Upravni odjel].</translation>
+    </message>
+    <message>
+        <source>National Day Holiday</source>
+        <translation>Državni praznik</translation>
+    </message>
+    <message>
+        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
+        <translation>Pomogni mi napisati izvještaj o istraživanju o [%1]; mora uključivati [opis stanja, analizu problema, protumjere i prijedloge, zaključke istraživanja].</translation>
+    </message>
+    <message>
+        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
+        <translation>Pomogni mi napisati govor o temi [%1] za [vodstvo tvrtke], uz zahtjev za [jasnom strukturom i živahnim jezikom].</translation>
+    </message>
+    <message>
+        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
+        <translation>Pomozite mi napisati sažetak mog nedavnog rada, uključujući [%1] i [rezultate], uzhtijevajući [formalni] ton.</translation>
+    </message>
+    <message>
+        <source>work content</source>
+        <translation>sadržaj rada</translation>
+    </message>
+    <message>
+        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
+        <translation>Pomozite mi napisati javni tweet o temi [%1], uzhtijevajući [jasnu strukturu] i [opušteni] ton.</translation>
+    </message>
+    <message>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation>Funkcija se može koristiti tek nakon ponovnog pokretanja načina unosa. Uputstvo je sljedeće:
+1. Desnom tipkom miša kliknite na ikonu načina unosa na traci zadataka.
+2. Kliknite &quot;Ponovno pokreni&quot;.</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <comment>button</comment>
+        <translation>U redu</translation>
+    </message>
+    <message>
+        <source>Copied</source>
+        <translation>Kopirano</translation>
+    </message>
+    <message>
+        <source>Current model: </source>
+        <translation>Trenutni model: </translation>
+    </message>
+    <message>
+        <source>Currently no model</source>
+        <translation>Trenutno nema modela</translation>
+    </message>
+    <message>
+        <source>Go to configure  </source>
+        <translation>Idi na konfiguriranje  </translation>
+    </message>
+    <message>
         <source>Modify the content, change the tone…</source>
-        <translation>Izmijenite sadržaj, promijenite ton…</translation>
+        <translation>Izmijeni sadržaj, promijeni ton...</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1391"/>
         <source>Fill failed</source>
-        <translation>Ispuna nije uspjela</translation>
+        <translation>Popunjavanje nije uspjelo</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1392"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation>Nije odabran unosni okvir, odaberite unosni okvir i ponovno ga ispunite.</translation>
+        <translation>Nije odabran okvir za unos, odaberite okvir za unos i ponovno ga popunite.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1394"/>
         <source>Ok</source>
         <translation>U redu</translation>
     </message>
@@ -4887,162 +1121,130 @@ tekst:</translation>
 <context>
     <name>uos_ai::AppUtils</name>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="43"/>
         <source>File Manager</source>
         <translation>Upravitelj datoteka</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="44"/>
         <source>UOS AI</source>
         <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="45"/>
         <source>Mail</source>
         <translation>Pošta</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="46"/>
         <source>Calendar</source>
         <translation>Kalendar</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="47"/>
         <source>Web Browser</source>
         <translation>Web preglednik</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="48"/>
         <source>Text Editor</source>
-        <translation>Tekstualni uređivač</translation>
+        <translation>Uređivač teksta</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="49"/>
         <source>Screenshot</source>
         <translation>Snimka zaslona</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="50"/>
         <source>Voice Notes</source>
         <translation>Glasovne bilješke</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="51"/>
         <source>Document Viewer</source>
         <translation>Preglednik dokumenata</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="52"/>
         <source>App Store</source>
         <translation>Trgovina aplikacija</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="53"/>
         <source>Manual</source>
         <translation>Priručnik</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="54"/>
         <source>WPS Writer</source>
         <translation>WPS Writer</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="55"/>
         <source>WPS Spreadsheets</source>
-        <translation>WPS proračunske tablice</translation>
+        <translation>WPS Spreadsheets</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="56"/>
         <source>WPS Presentation</source>
-        <translation>WPS prezentacija</translation>
+        <translation>WPS Presentation</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="57"/>
         <source>QQ</source>
         <translation>QQ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="58"/>
         <source>SuwellReader</source>
         <translation>SuwellReader</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="59"/>
         <source>DingTalk</source>
         <translation>DingTalk</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="60"/>
         <source>FoxitOfficeSuite</source>
         <translation>FoxitOfficeSuite</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="61"/>
         <source>Foxit PDF Editor</source>
-        <translation>Foxit PDF uređivač</translation>
+        <translation>Foxit PDF Editor</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="62"/>
         <source>Yozo Document 2024</source>
         <translation>Yozo Document 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="63"/>
         <source>Yozo Office 2024</source>
         <translation>Yozo Office 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="64"/>
         <source>Yozo Presentation 2024</source>
-        <translation>Yozo prezentacija 2024</translation>
+        <translation>Yozo Presentation 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="65"/>
         <source>Yozo Sheet 2024</source>
-        <translation>Yozo tablica 2024</translation>
+        <translation>Yozo Sheet 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="66"/>
         <source>Yozo-xReader</source>
         <translation>Yozo-xReader</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="67"/>
         <source>wpspdf</source>
         <translation>wpspdf</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="68"/>
         <source>doubao</source>
         <translation>doubao</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="69"/>
         <source>Foxmail</source>
         <translation>Foxmail</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="70"/>
         <source>zjd</source>
         <translation>zjd</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="71"/>
         <source>Wechat</source>
         <translation>Wechat</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="72"/>
         <source>WXWork</source>
         <translation>WXWork</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="73"/>
         <source>Feishu</source>
         <translation>Feishu</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="74"/>
         <source>Chrome</source>
         <translation>Chrome</translation>
     </message>
@@ -5050,852 +1252,699 @@ tekst:</translation>
 <context>
     <name>uos_ai::Application</name>
     <message>
-        <location filename="../src/app/application.cpp" line="66"/>
-        <location filename="../src/app/application.cpp" line="68"/>
-        <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
-    </message>
-    <message>
-        <location filename="../src/app/application.cpp" line="70"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI je pametna asistentka na radnoj površini, vaša osobna asistentica! Možete komunicirati s njom putem teksta ili glasa, a ona može pomoći u odgovaranju na pitanja, pružanju informacija i stvaranju slika na temelju vaših opisa.</translation>
     </message>
     <message>
-        <location filename="../src/app/application.cpp" line="112"/>
         <source>UOS AI FollowAlong/Write</source>
-        <translation type="unfinished">UOS AI FollowAlong/Write</translation>
+        <translation>UOS AI Pratnja/Pisanje</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ArticleAdjustAgent</name>
     <message>
-        <location filename="../src/agent/research/articleadjustagent.cpp" line="179"/>
         <source>Untitled</source>
-        <translation type="unfinished"></translation>
+        <translation>Bez naslova</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AssistantManager</name>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="42"/>
         <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="43"/>
         <source>Hello, I&apos;m UOS AI.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pozdrav, ja sam UOS AI.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="55"/>
         <source>AI Writing</source>
-        <translation type="unfinished">AI pisanje</translation>
+        <translation>AI pisanje</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="56"/>
         <source>Infinite inspiration, worry-free writing</source>
-        <translation type="unfinished"></translation>
+        <translation>Neiscrpna inspiracija, pisanje bez brige</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="63"/>
         <source>Please enter the topic and requirements of the document, and UOS AI will help you complete the creation.</source>
-        <translation type="unfinished"></translation>
+        <translation>Unesite temu i zahtjeve za dokument, a UOS AI će vam pomoći da ga dovršite.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="70"/>
         <source>AI Translation</source>
-        <translation type="unfinished">AI prijevod</translation>
+        <translation>AI prijevod</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="71"/>
         <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation type="unfinished">Vaš asistent za prijevod, koji vlada više jezika.</translation>
+        <translation>Vaš asistent za prijevod, vladanje više jezika.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="78"/>
         <source>Please enter the content to be translated and specify the target language; the default target language is Chinese.</source>
-        <translation type="unfinished"></translation>
+        <translation>Unesite sadržaj koji treba prevesti i navedite razvedbeni jezik; zadani razvedbeni jezik je kineski.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="87"/>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="unfinished">Osobni asistent za znanje</translation>
+        <source>AI Knowledge Base</source>
+        <translation>AI baza znanja</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="88"/>
         <source>Answers questions based on your personal knowledge base.</source>
-        <translation type="unfinished">Odgovara na pitanja temeljena na vašoj osobnoj bazi znanja.</translation>
+        <translation>Odgovara na pitanja na temelju vaše osobne baze znanja.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="95"/>
         <source>Ask questions based on the knowledge base.</source>
-        <translation type="unfinished"></translation>
+        <translation>Postavite pitanja na temelju baze znanja.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="104"/>
-        <source>MCP Server</source>
-        <translation type="unfinished"></translation>
+        <source>MCP&amp;Skills</source>
+        <translation>MCP&amp;Vještine</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="105"/>
-        <source>Built-in efficient MCP tools for office work, support for importing custom MCP services, and the flexibility to choose MCP services for conversations.</source>
-        <translation type="unfinished"></translation>
+        <source>Built-in common MCP &amp; Skills, supports custom tool import, freely choose tools for conversation.</source>
+        <translation>Ugrađeni zajednički MCP i vještine, podržava uvoz prilagođenih alata, slobodno birajte alate za razgovor.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="112"/>
-        <source>Please enter MCP Server commands.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::AudioChannel</name>
-    <message>
-        <location filename="../src/gui/web/audiochannel.cpp" line="102"/>
-        <source>Failed to start recorder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/audiochannel.cpp" line="149"/>
-        <source>Failed to play text audio</source>
-        <translation type="unfinished"></translation>
+        <source>Please enter MCP&amp;Skills commands.</source>
+        <translation>Unesite naredbe MCP i vještina.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="84"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="183"/>
-        <source>invalid input device</source>
-        <translation type="unfinished"></translation>
+        <source>No microphone detected</source>
+        <translation>Nije pronađen mikrofon</translation>
     </message>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="94"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="230"/>
-        <source>invalid output device</source>
-        <translation type="unfinished"></translation>
+        <source>No speaker detected</source>
+        <translation>Nisu pronađeni zvučnici</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::BuiltinModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="1024"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Test</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::BuiltinProvider</name>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="54"/>
         <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="59"/>
         <source>Intelligent Routing</source>
-        <translation type="unfinished"></translation>
+        <translation>Inteligentno usmjeravanje</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="71"/>
         <source>Online Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Pretraživanje na mreži</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="83"/>
         <source>DeepSeek-V3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>DeepSeek-V3.2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="96"/>
-        <location filename="../src/model/builtinprovider.cpp" line="334"/>
         <source>GLM-4.7</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM-4.7</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="110"/>
         <source>Doubao-Seed-1.8</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed-1.8</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="127"/>
         <source>Custom</source>
-        <translation type="unfinished">Prilagođeno</translation>
+        <translation>Prilagođeno</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="135"/>
         <source>Private deployment</source>
-        <translation type="unfinished"></translation>
+        <translation>Privatna implementacija</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="144"/>
         <source>OpenAI</source>
-        <translation type="unfinished"></translation>
+        <translation>OpenAI</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="149"/>
         <source>GPT-3.5 Turbo</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-3.5 Turbo</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="162"/>
         <source>GPT-4</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-4</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="175"/>
         <source>GPT-4.1</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-4.1</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="188"/>
         <source>o1</source>
-        <translation type="unfinished"></translation>
+        <translation>o1</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="201"/>
         <source>GPT-5.3 Chat</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-5.3 Chat</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="217"/>
         <source>doubao/seed</source>
-        <translation type="unfinished"></translation>
+        <translation>doubao/seed</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="223"/>
         <source>Doubao-Seed 2.0</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed 2.0</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="236"/>
         <source>Doubao-Seed 2.0-Code</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed 2.0-Code</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="252"/>
         <source>DeepSeek</source>
-        <translation type="unfinished">DeepSeek</translation>
+        <translation>DeepSeek</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="257"/>
         <source>DeepSeek V3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>DeepSeek V3.2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="273"/>
+        <source>DeepSeek V4 Flash</source>
+        <translation>DeepSeek V4 Flash</translation>
+    </message>
+    <message>
+        <source>DeepSeek V4 Pro</source>
+        <translation>DeepSeek V4 Pro</translation>
+    </message>
+    <message>
         <source>MiniMax</source>
-        <translation type="unfinished"></translation>
+        <translation>MiniMax</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="279"/>
         <source>MiniMax-M2.5</source>
-        <translation type="unfinished"></translation>
+        <translation>MiniMax-M2.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="295"/>
         <source>Moonshot (KIMI)</source>
-        <translation type="unfinished"></translation>
+        <translation>Moonshot (KIMI)</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="300"/>
         <source>Kimi K2</source>
-        <translation type="unfinished"></translation>
+        <translation>Kimi K2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="313"/>
         <source>Kimi K2.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Kimi K2.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="329"/>
         <source>GLM</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="347"/>
         <source>GLM-5</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM-5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="363"/>
         <source>Qwen</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="369"/>
         <source>Qwen3</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen3</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="382"/>
         <source>Qwen3.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen3.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="399"/>
         <source>Anthropic</source>
-        <translation type="unfinished"></translation>
+        <translation>Anthropic</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="406"/>
         <source>Gemini</source>
-        <translation type="unfinished"></translation>
+        <translation>Gemini</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ChatBotPlatformDialog</name>
+    <message>
+        <source>Lark Integration Settings</source>
+        <translation>Postavke integracije Lark</translation>
+    </message>
+    <message>
+        <source>DingTalk Integration Settings</source>
+        <translation>Postavke integracije DingTalk</translation>
+    </message>
+    <message>
+        <source>Telegram Integration Settings</source>
+        <translation>Postavke integracije Telegrama</translation>
+    </message>
+    <message>
+        <source>Discord Integration Settings</source>
+        <translation>Postavke integracije Discorda</translation>
+    </message>
+    <message>
+        <source>QQ Integration Settings</source>
+        <translation>Postavke integracije QQ-a</translation>
+    </message>
+    <message>
+        <source>Required</source>
+        <translation>Obavezno</translation>
+    </message>
+    <message>
+        <source>Optional</source>
+        <translation>Opcionalno</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Odustani</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation>Potvrdi</translation>
+    </message>
+    <message>
+        <source>Configuration Guide &gt;</source>
+        <translation>Vodič za konfiguraciju &gt;</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ChatBotWidget</name>
+    <message>
+        <source>IM Integration</source>
+        <translation>Integracija IM-a</translation>
+    </message>
+    <message>
+        <source>Third-party IM Integration</source>
+        <translation>Integracija IM-a treće strane</translation>
+    </message>
+    <message>
+        <source>Enable Message Forwarding Service</source>
+        <translation>Omogući uslugu prosljeđivanja poruka</translation>
+    </message>
+    <message>
+        <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, QQ, Telegram, and Discord bots. You can then directly interact with UOS AI in your IM client.</source>
+        <translation>Nakon omogućavanja, UOS AI će primati poruke s konfiguriranih botova za Lark, DingTalk, QQ, Telegram i Discord. Zatim možete izravno komunicirati s UOS AI-om u svom IM klijentu.</translation>
+    </message>
+    <message>
+        <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, and QQ bots. You can then directly interact with UOS AI in your IM client.</source>
+        <translation>Nakon omogućavanja, UOS AI će primati poruke s konfiguriranih botova za Lark, DingTalk i QQ. Zatim možete izravno komunicirati s UOS AI-om u svom IM klijentu.</translation>
+    </message>
+    <message>
+        <source>Lark</source>
+        <translation>Lark</translation>
+    </message>
+    <message>
+        <source>DingTalk</source>
+        <translation>DingTalk</translation>
+    </message>
+    <message>
+        <source>QQ</source>
+        <translation>QQ</translation>
+    </message>
+    <message>
+        <source>Telegram</source>
+        <translation>Telegram</translation>
+    </message>
+    <message>
+        <source>Discord</source>
+        <translation>Discord</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ClickableLabel</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="695"/>
         <source>Insert it into the input field</source>
-        <translation>Umetnite u polje za unos</translation>
+        <translation>Umetni u polje za unos</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CommonFailDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="31"/>
         <source>Error</source>
-        <translation type="unfinished">Greška</translation>
+        <translation>Greška</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="53"/>
         <source>OK</source>
         <comment>button</comment>
-        <translation type="unfinished">U redu</translation>
+        <translation>U redu</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ConversationRecord</name>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="13"/>
-        <location filename="../src/conversation/conversationrecord.cpp" line="23"/>
         <source>New Conversation</source>
-        <translation type="unfinished">Novi razgovor</translation>
+        <translation>Novi razgovor</translation>
     </message>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="305"/>
         <source>Null</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::CreateScheduleInst</name>
-    <message>
-        <source>Create Schedule</source>
-        <translation type="vanished">Kreiraj raspored</translation>
-    </message>
-    <message>
-        <source>Schedule a meeting with the Marketing Department from 2 PM to 5 PM.</source>
-        <translation type="vanished">Zakažite sastanak s Odjelom za marketing od 14 do 17 sati.</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Nažalost, nisu pronađene odgovarajuće operacije.</translation>
-    </message>
-    <message>
-        <source>Please parse the corresponding parameters from the input content to match the schedule template in the following JSON format,and output only the JSON content, excluding any irrelevant information.
-
-Schedule template format:
-json
-{&quot;subject&quot;: &quot;Subject&quot;, &quot;startTime&quot;: &quot;Schedule Start Time, format: yyyy-MM-ddThh:mm:ss&quot;, &quot;endTime&quot;: &quot;Schedule End Time, format: yyyy-MM-ddThh:mm:ss&quot;}
-
-Input: %1
-Current time: %2</source>
-        <translation type="vanished">Izvuci odgovarajuće parametre iz ulaznog sadržaja kako bi odgovarali predlošku rasporeda u sljedećem JSON formatu i ispiši samo JSON sadržaj, bez ikakvih nebitnih informacija.
-
-Format predloška rasporeda:
-
-json
-{&quot;subject&quot;: &quot;Predmet&quot;, &quot;startTime&quot;: &quot;Vrijeme početka rasporeda, format: yyyy-MM-ddThh:mm:ss&quot;, &quot;endTime&quot;: &quot;Vrijeme završetka rasporeda, format: yyyy-MM-ddThh:mm:ss&quot;}
-
-Ulaz: %1
-Trenutno vrijeme: %2</translation>
+        <translation>Null</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="40"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="86"/>
         <source>Add MCP Server</source>
         <translation>Dodaj MCP poslužitelj</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="49"/>
         <source>Edit MCP Server</source>
-        <translation>Uredi MCP poslužitelj</translation>
+        <translation>Uredi MCP poslužitelitelj</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="96"/>
         <source>JSON configuration:</source>
         <translation>JSON konfiguracija:</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="100"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="106"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
-        <translation>Zalijepite MCP JSON konfiguracijski kod u okvir za unos.</translation>
+        <translation>Molim zalijepite MCP JSON konfiguracijski kod u polje za unos.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="120"/>
         <source>Describe</source>
-        <translation>Opiši</translation>
+        <translation>Opis</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="126"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
-        <translation>Opišite funkcije MCP poslužitelja kako biste olakšali alate za brzu pretragu</translation>
+        <translation>Opiši funkcije MCP poslužitelja za olakšavanje alata za brzo pretraživanje</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="155"/>
         <source>Cancel</source>
         <translation>Odustani</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="167"/>
         <source>Confirm</source>
-        <translation type="unfinished">Potvrdi</translation>
+        <translation>Potvrdi</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CustomModelGroup</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="963"/>
         <source>Please enter the model ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Molim unesite ID modela</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="967"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Test</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="988"/>
         <source>Please enter the model name</source>
-        <translation type="unfinished"></translation>
+        <translation>Molim unesite naziv modela</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DConfigManager</name>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="234"/>
         <source>The device needs to be restarted before this function can be fully used.</source>
-        <translation>Uređaj je potrebno ponovno pokrenuti prije nego što se ova funkcija može u potpunosti koristiti.</translation>
+        <translation>Uređaj treba ponovno pokrenuti prije nego se ova funkcija može u potpunosti koristiti.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DeepResearchAgent</name>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="107"/>
         <source>Collecting and analyzing data</source>
-        <translation type="unfinished"></translation>
+        <translation>Prikupljanje i analiza podataka</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="148"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="163"/>
         <source>Data collection and analysis completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Prikupljanje i analiza podataka dovršena</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="149"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="166"/>
         <source>Research completed. %1 references collected:
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Istraživanje dovršeno. Prikupljeno je %1 referenci:
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="224"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="282"/>
-        <source>搜索成功</source>
-        <translation type="unfinished"></translation>
+        <source>Search succeeded</source>
+        <translation>Pretraživanje uspjelo</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="227"/>
-        <source>ERROR: 未搜索到信息！</source>
-        <translation type="unfinished"></translation>
+        <source>ERROR: No information found!</source>
+        <translation>GREŠKA: Nije pronađena nijedna informacija!</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="285"/>
-        <source>未找到相关文档</source>
-        <translation type="unfinished"></translation>
+        <source>No relevant documents found</source>
+        <translation>Nije pronađen nijedan relevantan dokument</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="327"/>
         <source>Local Knowledge Base</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::DeepSeekInfo</name>
-    <message>
-        <source>After receiving the gift, the original Baidu model and iFlytek model will be replaced with DeepSeek</source>
-        <translation type="vanished">Nakon primitka poklona, izvorni Baidu model i iFlytek model bit će zamijenjeni s DeepSeek</translation>
-    </message>
-    <message>
-        <source>Manually collect later</source>
-        <translation type="vanished">Ručno prikupiti kasnije</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Probni račun</translation>
-    </message>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">Nabavite besplatni račun</translation>
-    </message>
-    <message>
-        <source>Try again</source>
-        <translation type="vanished">Pokušajte ponovno</translation>
-    </message>
-    <message>
-        <source>Enter UOS AI</source>
-        <translation type="vanished">Unesite UOS AI</translation>
-    </message>
-    <message>
-        <source>Receiving...</source>
-        <translation type="vanished">Primanje...</translation>
-    </message>
-    <message>
-        <source>Use it immediately</source>
-        <translation type="vanished">Koristite odmah</translation>
-    </message>
-    <message>
-        <source>Checking account status...</source>
-        <translation type="vanished">Provjera statusa računa...</translation>
-    </message>
-    <message>
-        <source>DeepSeek account claim failed!</source>
-        <translation type="vanished">Zatraživanje DeepSeek računa nije uspjelo!</translation>
-    </message>
-    <message>
-        <source>Please check the network and try again later！</source>
-        <translation type="vanished">Molimo provjerite mrežu i pokušajte ponovno kasnije！</translation>
-    </message>
-    <message>
-        <source>DeepSeek account successfully claimed!</source>
-        <translation type="vanished">DeepSeek račun uspješno zatražen!</translation>
-    </message>
-    <message>
-        <source>Please check the network and try again or manually claim in UOS AI settings later</source>
-        <translation type="vanished">Molimo provjerite mrežu i pokušajte ponovno ili ručno zatražite u postavkama UOS AI kasnije</translation>
-    </message>
-    <message>
-        <source>UOS AI has been fully integrated into DeepSeek</source>
-        <translation type="vanished">UOS AI je u potpunosti integriran u DeepSeek</translation>
-    </message>
-    <message>
-        <source>The free account activity has ended.</source>
-        <translation type="vanished">Aktivnost besplatnog računa je završila.</translation>
-    </message>
-    <message>
-        <source>Come and experience it!</source>
-        <translation type="vanished">Dođite i isprobajte!</translation>
-    </message>
-    <message>
-        <source>Come and claim your account!</source>
-        <translation type="vanished">Dođite i zatražite svoj račun!</translation>
+        <translation>Lokalna baza znanja</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DeepSeekModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="48"/>
         <source>Precautions</source>
-        <translation>Mjere opreza</translation>
+        <translation>Oprez</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="49"/>
         <source>The DeepSeek local model has certain requirements for computer configuration. If the configuration is lower than the recommended one, the experience will be affected.</source>
-        <translation>DeepSeek lokalni model ima određene zahtjeve za konfiguraciju računala. Ako je konfiguracija niža od preporučene, iskustvo će biti narušeno.</translation>
+        <translation>Lokalni model DeepSeek ima određene zahtjeve za konfiguraciju računala. Ako je konfiguracija niža od preporučene, to će utjecati na iskustvo.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="54"/>
         <source>Recommended configuration</source>
         <translation>Preporučena konfiguracija</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="55"/>
         <source>&lt;b&gt;Recommended Configuration&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;High-performance multi-core CPU (such as Intel i5/i7 or AMD Ryzen 5/7 series), with a clock speed of above 3.0 GHz.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;With a video memory of above 4GB.&lt;br&gt;&lt;b&gt;Memory: &lt;/b&gt;8GB and above.&lt;br&gt;&lt;b&gt;Hard Drive: &lt;/b&gt;Solid State Drive (SSD) with at least 5GB of free space reserved.</source>
-        <translation type="unfinished">&lt;b&gt;推荐配置&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU：&lt;/b&gt;高性能多核CPU（如Intel i5/i7或AMD Ryzen 5/7系列），主频3.0 GHz以上&lt;br&gt;&lt;b&gt;GPU：&lt;/b&gt;显存4GB以上&lt;br&gt;&lt;b&gt;内存：&lt;/b&gt;8GB及以上&lt;br&gt;&lt;b&gt;硬盘：&lt;/b&gt;固态硬盘（SSD）并预留5GB以上空间</translation>
+        <translation>&lt;b&gt;Preporučena konfiguracija&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;Visokoučinski višejezgreni procesor (poput Intel i5/i7 ili AMD Ryzen 5/7 serija), s taktom iznad 3,0 GHz.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;S video memorijom iznad 4 GB.&lt;br&gt;&lt;b&gt;Memorija: &lt;/b&gt;8 GB ili više.&lt;br&gt;&lt;b&gt;Hard disk: &lt;/b&gt;SSD (Solid State Drive) s najmanje 5 GB slobodnog prostora.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="64"/>
         <source>Install later</source>
         <translation>Instaliraj kasnije</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="65"/>
         <source>Confirm installation</source>
         <translation>Potvrdi instalaciju</translation>
     </message>
 </context>
 <context>
+    <name>uos_ai::DefaultAgent</name>
+    <message>
+        <source>yyyy-MM-dd hh:mm ddd (year-month-day hour:minute week)</source>
+        <translation>yyyy-MM-dd hh:mm ddd (godina-mjesec-dan sat:minuta tjedan)</translation>
+    </message>
+</context>
+<context>
     <name>uos_ai::DisableAppWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/disableappwidget.cpp" line="47"/>
         <source>Hide FollowAlong in the following applications</source>
-        <translation>Sakrij FollowAlong u sljedećim aplikacijama</translation>
+        <translation>Sakrij Prati me u sljedećim aplikacijama</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ECheckAgreementDialog</name>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="62"/>
         <source>Enabling MCP Server Features</source>
         <translation>Omogućavanje značajki MCP poslužitelja</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="81"/>
         <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
-        <translation>Neke značajke MCP poslužitelja trećih strana nose određene rizike. Koristite ih s oprezom. Ako omogućite ovu uslugu, ugrađeni alat će otkriti i automatski preuzeti potrebne ovisnosti. Ovaj proces preuzimanja naplatit će se prema količini podataka. Budite svjesni tih rizika i postupajte oprezno.</translation>
+        <translation>Neke značajke poslužitelja treće strane (MCP) nose određene rizike. Molimo vas da ih koristite oprezno. Ako omogućite ovu uslugu, ugrađeni aljat će otkriti i automatski preuzeti potrebne ovisnosti. Ovaj postupak preuzimanja će prouzročiti trošak podataka. Svjesni ste tih rizika i nastavite s oprezom.</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="97"/>
         <source>I have understood and agree to use this service</source>
-        <translation>Razumio sam i pristajem na korištenje ove usluge</translation>
+        <translation>Razumijem i slažem se koristiti ovu uslugu</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="110"/>
         <source>Cancel</source>
         <translation>Odustani</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="112"/>
         <source>Confirm</source>
-        <translation type="unfinished">Potvrdi</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::EParserDocument</name>
-    <message>
-        <source>Supported files</source>
-        <translation type="obsolete">Podržane datoteke</translation>
+        <translation>Potvrdi</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::FileChannel</name>
     <message>
-        <location filename="../src/gui/web/filechannel.cpp" line="96"/>
         <source>Supported files</source>
-        <translation type="unfinished">Podržane datoteke</translation>
+        <translation>Podržane datoteke</translation>
+    </message>
+    <message>
+        <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
+        <translation>Ažurirajte UOS snimatelj zaslona na verziju 6.6 ili noviju i ponovno pokrenite računalo kako biste omogućili Q&amp;A snimke zaslona.</translation>
+    </message>
+    <message>
+        <source>The file format is not supported.</source>
+        <translation>Format datoteke nije podržan.</translation>
+    </message>
+    <message>
+        <source>The image exceeds the 15 MB size limit.</source>
+        <translation>Slika prelazi ograničenje veličine od 15 MB.</translation>
+    </message>
+    <message>
+        <source>The file exceeds the 100 MB size limit.</source>
+        <translation>Datoteka prelazi ograničenje veličine od 100 MB.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::FreeAccountService</name>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="68"/>
         <source>Network error</source>
-        <translation type="unfinished"></translation>
+        <translation>Mrežna pogreška</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="76"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaš besplatni račun je istekao. Konfigurirajte račun modela kako biste nastavili ga koristiti.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="81"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kvota vašeg besplatnog računa je iscrpljena. Konfigurirajte račun modela kako biste nastavili ga koristiti.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="86"/>
         <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation type="unfinished">Vaša besplatna kvota za chat je iscrpljena, konfigurirajte svoj model računa da biste nastavili koristiti uslugu.</translation>
+        <translation>Kvota vašeg besplatnog računa za razgovor je iscrpljena. Konfigurirajte račun modela kako biste nastavili ga koristiti.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="110"/>
         <source>Not Now</source>
-        <translation type="unfinished">Ne sada</translation>
+        <translation>Ne sada</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="111"/>
         <source>Claim Credits</source>
-        <translation type="unfinished">Zatraži kredite</translation>
+        <translation>Preuzmi kredite</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="113"/>
         <source>Free Credits Delivered</source>
-        <translation type="unfinished">Besplatni krediti isporučeni</translation>
+        <translation>Besplatni krediti isporučeni</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="114"/>
-        <source>You&apos;ve used up of free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation type="unfinished"></translation>
+        <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation>Potrošili ste besplatne kredite za generiranje na probnom računu. Dodijelili smo vam dodatnih 200 besplatnih kredita vrijednih ovaj mjesec. Istražite više značajki i otključajte neograničene mogućnosti UOS AI-a!</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="143"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="152"/>
         <source>Successfully Claimed</source>
-        <translation type="unfinished">Uspješno zatraženo</translation>
+        <translation>Uspješno preuzeto</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="146"/>
         <source>Account not found</source>
-        <translation type="unfinished">Račun nije pronađen</translation>
+        <translation>Račun nije pronađen</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="149"/>
         <source>Only support trial account</source>
-        <translation type="unfinished"></translation>
+        <translation>Podržava se samo probni račun</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="156"/>
         <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation type="unfinished">Već ste sudjelovali u događaju i ne možete ponovno zatražiti nagradu.</translation>
+        <translation>Već ste sudjelovali u događaju i ne možete ponovno preuzeti nagradu.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="159"/>
         <source>Server system error</source>
-        <translation type="unfinished">Pogreška serverskog sustava</translation>
+        <translation>Pogreška poslužitelja</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="162"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="174"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">Neuspješno zatraženo. Molimo pokušajte ponovno.</translation>
+        <translation>Preuzimanje nije uspjelo. Pokušajte ponovno.</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::GenerateImageInst</name>
+    <name>uos_ai::GenericAgent</name>
     <message>
-        <source>Generate Image</source>
-        <translation type="vanished">Generiraj sliku</translation>
-    </message>
-    <message>
-        <source>Describe Image Content</source>
-        <translation type="vanished">Opiši sadržaj slike</translation>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>yyyy-MM-dd ddd (godina-mjesec-dan tjedan)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::GetFreeAccountDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="46"/>
         <source>Get a free trial account</source>
-        <translation type="unfinished">Nabavite besplatni probni račun</translation>
+        <translation>Nabavite besplatni probni račun</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="63"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Odustani</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="64"/>
         <source>Get account</source>
         <comment>button</comment>
-        <translation type="unfinished">Nabavi račun</translation>
+        <translation>Nabavi račun</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="91"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Primanjem računa potvrđujete da razumijete i slažete se s uvjetima događaja,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Pojedinosti događaja&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="120"/>
         <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Probni račun UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="128"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Spremanje nije uspjelo, pokušajte ponovno kasnije</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="129"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="143"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="168"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="177"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Potvrdi</translation>
+        <translation>Potvrdi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="157"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished"></translation>
+        <translation>Probni račun je uspješno primljen.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="159"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>Broj uporaba i trajanje probnog računa su ograničeni, pravodobno podesite svoj osobni račun modela! Pogledajte detalje događaja za više informacija.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="unfinished">Engleska podrška za probne račune nije zadovoljavajuća. Broj korištenja i trajanje probnog računa su ograničeni. Pravočasno konfigurirajte svoj osobni model račun!</translation>
+        <translation>Podrška za engleski jezik kod probnih računa nije zadovoljavajuća. Također su broj uporaba i trajanje probnog računa ograničeni. Podesite svoj osobni račun modela na vrijeme!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation type="unfinished">Započni probu</translation>
+        <translation>Pokreni probnu verziju</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="167"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>Akcija besplatnog računa je završila.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="176"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nije moguće povezati se s poslužiteljem, provjerite mrežu ili pokušajte ponovno kasnije.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::HttpCodeTranslation</name>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="19"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nije moguće povezati se s poslužiteljem, provjerite mrežu ili pokušajte ponovno kasnije.</translation>
     </message>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="22"/>
+        <source>Request timeout due to server load or network issues. Please try again later.</source>
+        <translation>Istek je vremena zahtjeva zbog opterećenja poslužitelja ili mrežnih problema. Pokušajte ponovno kasnije.</translation>
+    </message>
+    <message>
         <source>Connection failed, please check the fill in information.</source>
-        <translation type="unfinished"></translation>
+        <translation>Povezivanje nije uspjelo, provjerite unesene informacije.</translation>
     </message>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="25"/>
         <source>Operation canceled.</source>
-        <translation type="unfinished">Operacija otkazana.</translation>
+        <translation>Operacija je otkazana.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::IatWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="152"/>
         <source>Speak now</source>
         <translation>Govorite sada</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="160"/>
         <source>Low input volume</source>
-        <translation>Nizak ulazni volumen</translation>
+        <translation>Niska glasnoća ulaza</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="163"/>
         <source>Settings</source>
         <translation>Postavke</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="244"/>
         <source>Network unavailable</source>
-        <translation>Mreža nedostupna</translation>
+        <translation>Mreža nije dostupna</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::IconButtonEx</name>
     <message>
-        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="202"/>
         <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation type="unfinished">Novododane datoteke zahtijevaju predobradu prije upotrebe, a tijekom obrade podataka može se potrošiti značajna količina računalnih i pohrambenih resursa. Obrada podataka će prestati nakon brisanja podataka.</translation>
+        <translation>Novododane datoteke zahtijevaju predobradu prije uporabe, a tijekom obrade podataka može se potrošiti značajna količina računalnih i prostornih resursa. Obrada podataka će stati nakon brisanja podataka.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::InputPlaceholderWidget</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="38"/>
-        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="72"/>
         <source>Ask AI</source>
         <translation>Pitaj AI</translation>
     </message>
@@ -5903,230 +1952,162 @@ Trenutno vrijeme: %2</translation>
 <context>
     <name>uos_ai::InputWindow</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="82"/>
         <source>What to ask about this?</source>
         <translation>Što pitati o ovome?</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="114"/>
         <source>Hide until restarting this app</source>
-        <translation>Sakrij do ponovnog pokretanja aplikacije</translation>
+        <translation>Sakrij do ponovnog pokretanja ove aplikacije</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="115"/>
         <source>Disable in This Application</source>
-        <translation type="unfinished">Onemogući u ovoj aplikaciji</translation>
+        <translation>Onemogući u ovoj aplikaciji</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="116"/>
         <source>Disable Globally</source>
-        <translation type="unfinished">Onemogući globalno</translation>
+        <translation>Onemogući globalno</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="134"/>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="456"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
-        <translation>Idi na &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Postavke&lt;/a&gt; kako bi ponovno omogućio.</translation>
+        <translation>Idite na &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Postavke&lt;/a&gt; da biste ga ponovno omogućili.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseAgent</name>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="160"/>
         <source>Searching knowledge base</source>
-        <translation type="unfinished"></translation>
+        <translation>Pretraživanje baze znanja</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="196"/>
         <source>Search complete · %1s</source>
-        <translation type="unfinished"></translation>
+        <translation>Pretraga završena · %1s</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="200"/>
         <source>Search complete · %1m%2s</source>
-        <translation type="unfinished"></translation>
+        <translation>Pretraga završena · %1m%2s</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="211"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>Reference</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
         <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation type="unfinished">Jeste li sigurni da želite izbrisati ovu datoteku baze znanja?</translation>
+        <translation>Jeste li sigurni da želite izbrisati ovu datoteku baze znanja?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Odustani</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Potvrdi</translation>
+        <translation>Potvrdi</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="65"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="383"/>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="69"/>
         <source>Add</source>
-        <translation type="unfinished">Dodaj</translation>
+        <translation>Dodaj</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="75"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="314"/>
         <source>Please install the embedding model plugins first</source>
-        <translation type="unfinished">Prvo instalirajte dodatke za model ugradnje</translation>
+        <translation>Prvo instalirajte dodatke za modele ugniježđivanja</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="81"/>
         <source>Knowledge Base Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Upravljanje bazom znanja</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="95"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="566"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation type="unfinished">Ova značajka zahtijeva visoke hardverske resurse, a referentna konfiguracija je: CPU Intel 11. generacije i7 ili više; Memorija od 16GB ili više; NVIDIA grafička kartica serije 10 ili viša je najbolja opcija. Ako je konfiguracija preniska, mogu se pojaviti problemi poput zaostajanja i netočnih odgovora.</translation>
+        <translation>Ova značajka zahtijeva snažan hardver, a referentna konfiguracija je: CPU Intel 11. generacija i7 ili noviji; Memorija 16 GB ili više; Posjedovanje NVIDIA grafičke kartice serije 10 ili novije je najbolja opcija. Ako je konfiguracija preslaba, može doći do problema poput kašnjenja i netočnih odgovora.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="108"/>
         <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation type="unfinished">Ovdje se može definirati baza znanja Osobnog pomoćnika za znanje, a Osobni pomoćnik za znanje će odgovarati na pitanja na temelju dolje dodanih datoteka.</translation>
+        <translation>Ovdje se može definirati baza znanja osobnog pomoćnika za znanje, a osobni pomoćnik za znanje odgovarat će na pitanja na temelju datoteka dodanih u nastavku.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
         <source>Done</source>
-        <translation type="unfinished">Gotovo</translation>
+        <translation>Gotovo</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="171"/>
         <source>None</source>
-        <translation type="unfinished">Ništa</translation>
+        <translation>Nijedan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="217"/>
         <source>File already exist</source>
-        <translation type="unfinished">Datoteka već postoji</translation>
+        <translation>Datoteka već postoji</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="218"/>
         <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation type="unfinished">Datoteka %1 već postoji i ne može se ponovno dodati. Promijenite naziv datoteke ili izbrišite postojeću datoteku prije ponovnog dodavanja.</translation>
+        <translation>Datoteka %1 već postoji i ne može se ponovno dodati. Promijenite naziv datoteke ili izbrišite postojeću datoteku prije ponovnog dodavanja</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="243"/>
         <source>All files</source>
-        <translation type="unfinished">Sve datoteke</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::LaunchAppInst</name>
-    <message>
-        <source>Launch or Close App</source>
-        <translation type="vanished">Pokreni ili zatvori aplikaciju</translation>
-    </message>
-    <message>
-        <source>WPS, Music, Album, Control Center, Log Viewer ...</source>
-        <translation type="vanished">WPS, Glazba, Album, Upravljački centar, Preglednik zapisa ...</translation>
+        <translation>Sve datoteke</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::LocalModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
         <source>Install</source>
-        <translation type="unfinished">Instaliraj</translation>
+        <translation>Instaliraj</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
         <source>Uninstall</source>
-        <translation type="unfinished">Deinstaliraj</translation>
+        <translation>Deinstaliraj</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
         <source>Update</source>
-        <translation type="unfinished">Ažuriraj</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::LocalModelListItem</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="34"/>
-        <source>uninstall</source>
-        <translation type="unfinished">deinstaliraj</translation>
+        <translation>Ažuriraj</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::LocalModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
         <source>Local model</source>
-        <translation type="unfinished">Lokalni model</translation>
+        <translation>Lokalni model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
         <source>ULLM-1.5B</source>
-        <translation type="unfinished">ULLM-1.5B</translation>
+        <translation>ULLM-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation type="unfinished">Nakon instalacije, ne trebate internetsku vezu za korištenje UOS AI.</translation>
+        <translation>Nakon instalacije za korištenje UOS AI-a nije vam potrebna internetska veza.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
         <source>ULLM-7B</source>
-        <translation type="unfinished">ULLM-7B</translation>
+        <translation>ULLM-7B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
         <source>DeepSeek-R1-1.5B</source>
-        <translation type="unfinished">DeepSeek-R1-1.5B</translation>
+        <translation>DeepSeek-R1-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
         <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation type="unfinished">Preuzmite iz zajednice otvorenog koda na vlastitu odgovornost. Koristite u UOS AI pomoćniku nakon instalacije.</translation>
+        <translation>Preuzmite iz zajednice otvorenog koda na vlastitu odgovornost. Nakon instalacije koristite ga u UOS AI Asistentu.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
-        <source>UOS AI large model</source>
-        <translation type="unfinished">UOS AI veliki model</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
         <source>Embedding Plugins</source>
-        <translation type="unfinished">Ugradni dodaci</translation>
+        <translation>Dodaci za ugrađivanje</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
         <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation type="unfinished">Nakon instalacije modela, mogu se pokrenuti Sustavni asistent i Asistent za osobno znanje.</translation>
+        <translation>Nakon što se model instalira, mogu se pokrenuti Sustavski asistent i Osobni asistent za znanje.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MCPAgent</name>
     <message>
-        <location filename="../src/agent/mcpagent.cpp" line="118"/>
         <source>MCP server is not available</source>
         <translation>MCP poslužitelj nije dostupan</translation>
     </message>
@@ -6134,96 +2115,76 @@ Trenutno vrijeme: %2</translation>
 <context>
     <name>uos_ai::MCPServer</name>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="67"/>
-        <location filename="../src/agent/mcpserver.cpp" line="139"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
         <translation>Polje &apos;mcpServers&apos; nedostaje.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="76"/>
         <source>Remove old custom server config failed, server name: %0</source>
-        <translation>Neuspjelo uklanjanje stare konfiguracije prilagođenog poslužitelja, naziv poslužitelja: %0</translation>
+        <translation>Uklanjanje stare konfiguracije prilagođenog poslužitelja nije uspjelo, naziv poslužitelja: %0</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="89"/>
-        <location filename="../src/agent/mcpserver.cpp" line="163"/>
         <source>no valid mcp server.</source>
-        <translation>nema valjanog MCP poslužitelja.</translation>
+        <translation>nema valjanog mcp poslužitelja.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="147"/>
         <source>Duplicate MCP server name: %0.</source>
-        <translation>Duplicirani naziv MCP poslužitelja: %0.</translation>
+        <translation>Dvostruki naziv MCP poslužitelja: %0.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="150"/>
         <source>MCP server name &apos;%1&apos; already exists</source>
         <translation>Naziv MCP poslužitelja &apos;%1&apos; već postoji</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="176"/>
         <source>Server name &apos;%1&apos; already exists</source>
         <translation>Naziv poslužitelja &apos;%1&apos; već postoji</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="223"/>
-        <location filename="../src/agent/mcpserver.cpp" line="268"/>
         <source>Failed to open custom config file for writing</source>
-        <translation>Neuspjelo otvaranje prilagođene konfiguracijske datoteke za pisanje</translation>
+        <translation>Nije uspjelo otvaranje datoteke prilagođene konfiguracije za pisanje</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="231"/>
         <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
         <translation>Poslužitelj &apos;%1&apos; nije prilagođeni poslužitelj ili ne postoji</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="246"/>
         <source>No custom server found.</source>
         <translation>Nije pronađen nijedan prilagođeni poslužitelj.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="252"/>
         <source>Server &apos;%1&apos; not found.</source>
         <translation>Poslužitelj &apos;%1&apos; nije pronađen.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="326"/>
         <source>url field cannot be empty.</source>
         <translation>polje url ne smije biti prazno.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="333"/>
         <source>command field cannot be empty.</source>
         <translation>polje naredbe ne smije biti prazno.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="337"/>
         <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation>Polje &apos;command&apos; ili &apos;url&apos; nedostaje</translation>
+        <translation>Nedostaje polje &apos;command&apos; ili &apos;url&apos;</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="51"/>
         <source>Install</source>
-        <translation type="unfinished">Instaliraj</translation>
+        <translation>Instaliraj</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="56"/>
         <source>Uninstall</source>
-        <translation type="unfinished">Deinstaliraj</translation>
+        <translation>Deinstaliraj</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="63"/>
         <source>Update</source>
-        <translation type="unfinished">Ažuriraj</translation>
+        <translation>Ažuriraj</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="63"/>
         <source>built-in</source>
         <translation>ugrađeni</translation>
     </message>
@@ -6231,70 +2192,57 @@ Trenutno vrijeme: %2</translation>
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
         <source>MCP Server</source>
-        <translation>MCP Poslužitelj</translation>
+        <translation>MCP poslužitelj</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>All</source>
         <translation>Svi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Built-in</source>
         <translation>Ugrađeni</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
         <source>Custom</source>
-        <translation type="unfinished">Prilagođeno</translation>
+        <translation>Prilagođeni</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="145"/>
         <source>Add MCP Server</source>
         <translation>Dodaj MCP poslužitelj</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>Confirm deletion %1?</source>
-        <translation>Potvrdi brisanje %1?</translation>
+        <translation>Potvrdite brisanje %1?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation>Nakon brisanja, ovaj poslužitelj više neće biti dostupan. Postupajte s oprezom.</translation>
+        <translation>Nakon brisanja ovaj poslužitelj neće biti dostupan. Postupajte oprezno.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Cancel</source>
         <translation>Odustani</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="330"/>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="60"/>
         <source>Mcp Enviorment</source>
-        <translation>MCP okruženje</translation>
+        <translation>Mcp okruženje</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="92"/>
         <source>MCP Server</source>
         <translation>MCP poslužitelj</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="167"/>
         <source>Install UOS AI Agent</source>
-        <translation>Instaliraj UOS AI agenta</translation>
+        <translation>Instaliraj UOS AI Agenta</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="168"/>
         <source>After installation, MCP Server will be available.</source>
         <translation>Nakon instalacije, MCP poslužitelj će biti dostupan.</translation>
     </message>
@@ -6302,567 +2250,470 @@ Trenutno vrijeme: %2</translation>
 <context>
     <name>uos_ai::MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="112"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="451"/>
         <source>Model Configuration</source>
-        <translation type="unfinished">Konfiguracija modela</translation>
+        <translation>Konfiguracija modela</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="115"/>
         <source>Knowledge Base Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Upravljanje bazom znanja</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="118"/>
         <source>UOS AI FollowAlong</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI FollowAlong</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="336"/>
         <source>User Agreement</source>
-        <translation type="unfinished">Korisnički ugovor</translation>
+        <translation>Korisnički ugovor</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="347"/>
         <source>UOS AI User Agreement</source>
-        <translation type="unfinished">Korisnički ugovor UOS AI</translation>
+        <translation>Korisnički ugovor UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="348"/>
         <source>Read and agreed</source>
-        <translation type="unfinished">Pročitano i prihvaćeno</translation>
+        <translation>Pročitao i pristao</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="374"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="385"/>
         <source>Proxy Settings</source>
-        <translation type="unfinished">Postavke proxyja</translation>
+        <translation>Postavke poslužitelja (proxy)</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="386"/>
         <source>Go to settings</source>
-        <translation type="unfinished">Idi na postavke</translation>
+        <translation>Idi na postavke</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="523"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivnost besplatnog računa je završena.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="524"/>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="unfinished">Potvrdi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="630"/>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="unfinished">Dodavanje u bazu znanja zahtijeva instalaciju dodatka za vektorski model. Molimo idite u trgovinu aplikacija da preuzmete i instalirate.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="638"/>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="unfinished">Ne instaliraj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="639"/>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="unfinished">Odmah instaliraj</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelHubLLM</name>
-    <message>
-        <source>YouRong 1.5B</source>
-        <translation type="vanished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <source>YouRong 7B</source>
-        <translation type="vanished">YouRong 7B</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelHubProvider</name>
-    <message>
-        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="54"/>
-        <source>YouRong 1.5B</source>
-        <translation type="unfinished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="57"/>
-        <source>YouRong 7B</source>
-        <translation type="unfinished">YouRong 7B</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelListWidget</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
-        <source>Get a free account</source>
-        <translation type="unfinished">Nabavite besplatni račun</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="43"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
-        <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="47"/>
-        <source>Add</source>
-        <translation type="unfinished">Dodaj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="54"/>
-        <source>Online model</source>
-        <translation type="unfinished">Online model</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
-        <source>Done</source>
-        <translation type="unfinished">Gotovo</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="131"/>
-        <source>None</source>
-        <translation type="unfinished">Ništa</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelScopeItem</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="97"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="304"/>
-        <source>Install</source>
-        <translation>Instaliraj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="107"/>
-        <source>Update</source>
-        <translation>Ažuriraj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="101"/>
-        <source>Uninstall</source>
-        <translation>Deinstaliraj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="112"/>
-        <source>Cancel</source>
-        <translation>Otkaži</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="150"/>
-        <source>About %1GB</source>
-        <translation>Oko %1GB</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="193"/>
-        <source>Installing</source>
-        <translation>Instaliranje</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="220"/>
-        <source>Are you sure you want to delete this model?</source>
-        <translation>Jeste li sigurni da želite izbrisati ovaj model?</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation>Otkaži</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
         <source>Confirm</source>
         <comment>button</comment>
         <translation>Potvrdi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="244"/>
-        <source>Checking</source>
-        <translation>Provjeravanje</translation>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation>Dodavanje u bazu znanja zahtijeva instalaciju dodatka za vektorizaciju modela. Idite u trgovinu aplikacija za preuzimanje i instalaciju.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="264"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="491"/>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation>Ne instaliraj</translation>
+    </message>
+    <message>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation>Instaliraj odmah</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelHubProvider</name>
+    <message>
+        <source>YouRong 1.5B</source>
+        <translation>YouRong 1.5B</translation>
+    </message>
+    <message>
+        <source>YouRong 7B</source>
+        <translation>YouRong 7B</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelListWidget</name>
+    <message>
+        <source>Get a free account</source>
+        <translation>Nabavi besplatni račun</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Izbriši</translation>
+    </message>
+    <message>
+        <source>Add</source>
+        <translation>Dodaj</translation>
+    </message>
+    <message>
+        <source>Online model</source>
+        <translation>Mrežni model</translation>
+    </message>
+    <message>
+        <source>Done</source>
+        <translation>Gotovo</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>Nijedan</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ModelScopeItem</name>
+    <message>
+        <source>Install</source>
+        <translation>Instaliraj</translation>
+    </message>
+    <message>
+        <source>Uninstall</source>
+        <translation>Deinstaliraj</translation>
+    </message>
+    <message>
+        <source>Update</source>
+        <translation>Ažuriraj</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Odustani</translation>
+    </message>
+    <message>
+        <source>About %1GB</source>
+        <translation>Oko %1GB</translation>
+    </message>
+    <message>
+        <source>Installing</source>
+        <translation>Instaliranje</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to delete this model?</source>
+        <translation>Jeste li sigurni da želite izbrisati ovaj model?</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation>Odustani</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <comment>button</comment>
+        <translation>Potvrdi</translation>
+    </message>
+    <message>
+        <source>Checking</source>
+        <translation>Provjera</translation>
+    </message>
+    <message>
         <source>Ok</source>
         <comment>button</comment>
         <translation>U redu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
         <source>%0 download failed, please try again!</source>
-        <translation>&apos;Preuzimanje %0 nije uspjelo, pokušajte ponovno!&apos;</translation>
+        <translation>%0 preuzimanje nije uspjelo, pokušajte ponovno!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="312"/>
         <source>Please install the &quot;Embedding Plugins&quot; first before installing this model.</source>
-        <translation>Molimo prvo instalirajte &quot;Embedding Plugins&quot; prije instaliranja ovog modela.</translation>
+        <translation>Prvo instalirajte &quot;Dodatke za ugradnju&quot; prije instalacije ovog modela.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>target folder trash failed, please try again!</source>
-        <translation>Neuspješno premještanje ciljne mape u smeće, pokušajte ponovno!</translation>
+        <translation>prebacivanje u smeće ciljne mape nije uspjelo, pokušajte ponovno!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="528"/>
         <source>%1 seconds</source>
-        <translation>&apos;%1 sekundi&apos;</translation>
+        <translation>%1 sekundi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="530"/>
         <source>%1 minutes</source>
-        <translation>&apos;%1 minuta&apos;</translation>
+        <translation>%1 minuta</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="535"/>
         <source>%1MB/%2GB downloaded, %3 left.</source>
-        <translation>&apos;%1MB/%2GB preuzeto, preostalo %3.&apos;</translation>
+        <translation>Preuzeto %1MB/%2GB, preostalo %3.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelSubItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="38"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation type="unfinished">Jeste li sigurni da želite izbrisati ovaj model?</translation>
+        <translation>Jeste li sigurni da želite izbrisati ovaj model?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="39"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Otkaži</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="40"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Potvrdi</translation>
+        <translation>Potvrdi</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelValidator</name>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="37"/>
         <source>Invalid model account</source>
-        <translation type="unfinished"></translation>
+        <translation>Nevažeći račun modela</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="54"/>
         <source>Unsupported model type</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodržana vrsta modela</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="62"/>
         <source>Model does not support chat completion</source>
-        <translation type="unfinished"></translation>
+        <translation>Model ne podržava dovršavanje razgovora</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="89"/>
         <source>Model is available</source>
-        <translation type="unfinished"></translation>
+        <translation>Model je dostupan</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="98"/>
         <source>HTTP error: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>HTTP pogreška: %1</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="108"/>
         <source>Unknown error</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepoznata pogreška</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModifyProviderDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="91"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Za postavke poslužitelja idite na postavke poslužitelja sustava</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="94"/>
         <source>Go to settings</source>
-        <translation type="unfinished">Idi na postavke</translation>
+        <translation>Idi na postavke</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="104"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="264"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
         <source>Edit Model</source>
-        <translation type="unfinished"></translation>
+        <translation>Uredi model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
         <source>Add Model</source>
-        <translation type="unfinished">Dodaj model</translation>
+        <translation>Dodaj model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="153"/>
         <source>Account</source>
-        <translation type="unfinished">Račun</translation>
+        <translation>Račun</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="161"/>
         <source>Required, to distinguish multiple models</source>
-        <translation type="unfinished"></translation>
+        <translation>Obavezno, za razlikovanje više modela</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="168"/>
         <source>Provider</source>
-        <translation type="unfinished"></translation>
+        <translation>Pružatelj usluge</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="186"/>
         <source>APIKey</source>
-        <translation type="unfinished">API ključ</translation>
+        <translation>API ključ</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="194"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="206"/>
         <source>Required, please input</source>
-        <translation type="unfinished"></translation>
+        <translation>Obavezno, unesite</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="198"/>
         <source>Domain</source>
-        <translation type="unfinished">Domena</translation>
+        <translation>Domena</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="212"/>
         <source>Enable</source>
-        <translation type="unfinished">Omogući</translation>
+        <translation>Omogući</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="249"/>
         <source>Custom</source>
-        <translation type="unfinished">Prilagođeno</translation>
+        <translation>Prilagođeno</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="269"/>
         <source>Add</source>
-        <translation type="unfinished">Dodaj</translation>
+        <translation>Dodaj</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="296"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="unfinished"></translation>
+        <translation>Za testiranje dostupnosti modela sustav šalje testne informacije velikom modelu, što će potrošiti malu količinu tokena.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="346"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Odustani</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="348"/>
         <source>Confirm</source>
-        <translation type="unfinished">Potvrdi</translation>
+        <translation>Potvrdi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="523"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="612"/>
         <source>Name and Model ID must be filled in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Naziv i ID modela moraju biti ispunjeni.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="674"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="684"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Spremanje nije uspjelo, pokušajte ponovno kasnije</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
         <source>Done</source>
-        <translation type="unfinished">Gotovo</translation>
+        <translation>Gotovo</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="787"/>
         <source>Test passed</source>
-        <translation type="unfinished"></translation>
+        <translation>Test uspješan</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="788"/>
         <source>The model service is available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Usluga modela je dostupna.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="789"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Potvrdi</translation>
+        <translation>Potvrdi</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::MultimediaControlInst</name>
+    <name>uos_ai::OnlineSearchAgent</name>
     <message>
-        <source>Multimedia Control</source>
-        <translation type="vanished">Multimedijska kontrola</translation>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>yyyy-MM-dd ddd (godina-mjesec-dan tjedan)</translation>
     </message>
     <message>
-        <source>Play music, state control, seek...</source>
-        <translation type="vanished">Reprodukcija glazbe, kontrola stanja, pretraživanje...</translation>
+        <source>Searching for relevant information</source>
+        <translation>Pretraživanje relevantnih informacija</translation>
+    </message>
+    <message>
+        <source>References %0 sources</source>
+        <translation>Reference %0 izvora</translation>
+    </message>
+    <message>
+        <source>%0 pages found</source>
+        <translation>Pronađeno %0 stranica</translation>
+    </message>
+    <message>
+        <source>Browsing %0</source>
+        <translation>Pregledavanje %0</translation>
+    </message>
+    <message>
+        <source>page %0</source>
+        <translation>stranica %0</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::OperatingLineWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="194"/>
         <source>In data processing</source>
-        <translation type="unfinished">U obradi podataka</translation>
+        <translation>Obrada podataka</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="206"/>
         <source>Data processing error</source>
-        <translation type="unfinished">Greška u obradi podataka</translation>
+        <translation>Greška u obradi podataka</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="218"/>
         <source>File error, unable to process, please delete.</source>
-        <translation type="unfinished">Greška u datoteci, nije moguće obraditi, molimo izbrišite.</translation>
+        <translation>Greška datoteke, nije moguće obraditi, molim vas izbrišite je.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::OutlineAgent</name>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="114"/>
         <source>Generating outline</source>
-        <translation type="unfinished"></translation>
+        <translation>Generiranje obrasca</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="117"/>
         <source>Generating outline content for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Generiranje sadržaja obrasca za vas.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="143"/>
-        <source>Outline generated, please confirm</source>
-        <translation type="unfinished"></translation>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation>Uredivi obrazac je generiran. Nakon potvrde kliknite na plavi gumb ispod za nastavak na generiranje dokumenta.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="145"/>
         <source>Detected that you have uploaded a local outline,  Currently parsing the outline content for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Otkriveno da ste prenijeli lokalni obrazac, trenutno se analizira sadržaj obrasca za vas.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="148"/>
         <source>Detected uploaded local outline, please confirm.</source>
-        <translation type="unfinished"></translation>
+        <translation>Otkriven preneseni lokalni obrazac, molim vas potvrdite.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="150"/>
         <source>Failed to parse the uploaded outline file, please re-upload</source>
-        <translation type="unfinished"></translation>
+        <translation>Nije uspjela analiza prenesene datoteke obrasca, molim vas ponovno je prenesite</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="163"/>
         <source>Generating outline content failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Neuspjelo generiranje sadržaja obrasca</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="193"/>
         <source>Based on your writing task, I have generated the following outline for **%1**:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Na temelju vašeg pisanja zadaće, generirao sam sljedeći obrazac za **%1**:
+
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="195"/>
         <source>I have parsed your uploaded outline and structured it as **%1**:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Analizirao sam vaš preneseni obrazac i strukturirao ga kao **%1**:
+
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="208"/>
         <source>
 The outline contains %1 sections in total. Please confirm to proceed with research and writing.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+Obrazac sadrži ukupno %1 odjeljaka. Potvrdite za nastavak istraživanja i pisanja.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PersonalKnowledgeAssistant</name>
     <message>
-        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="43"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation type="unfinished">Osobni asistent za znanje može se koristiti tek nakon konfiguriranja modela plugina.</translation>
+        <translation>Osobni pomoćnik za znanje može se koristiti tek nakon konfiguriranja modela dodatka.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="49"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation type="unfinished">Osobni asistent za znanje može se koristiti tek nakon konfiguriranja baze znanja.</translation>
+        <translation>Osobni pomoćnik za znanje može se koristiti tek nakon konfiguriranje baze znanja.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="35"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Delete</source>
         <translation>Izbriši</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="39"/>
         <source>Add</source>
         <translation>Dodaj</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="46"/>
         <source>Private deployment model</source>
-        <translation>Privatni model implementacije</translation>
+        <translation>Model privatne implementacije</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Done</source>
         <translation>Gotovo</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="127"/>
         <source>None</source>
-        <translation>Ništa</translation>
+        <translation>Nijedan</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ProviderListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="127"/>
         <source>Are you sure you want to delete this provider?</source>
-        <translation type="unfinished"></translation>
+        <translation>Jeste li sigurni da želite izbrisati ovog pružatelja usluga?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="128"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Otkaži</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="129"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Potvrdi</translation>
+        <translation>Potvrdi</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ReferenceDialog</name>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="55"/>
         <source>Reference</source>
         <translation>Referenca</translation>
     </message>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="115"/>
         <source>Open</source>
         <translation>Otvori</translation>
     </message>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="150"/>
         <source>Documents don&apos;t exits!</source>
         <translation>Dokumenti ne postoje!</translation>
     </message>
@@ -6870,2063 +2721,2052 @@ The outline contains %1 sections in total. Please confirm to proceed with resear
 <context>
     <name>uos_ai::ReportWriterAgent</name>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="177"/>
         <source>Document Generating</source>
-        <translation type="unfinished"></translation>
+        <translation>Izrada dokumenta</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="216"/>
         <source>failed</source>
-        <translation type="unfinished"></translation>
+        <translation>neuspjelo</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="443"/>
         <source>Document Generated</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokument je izrađen</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="444"/>
         <source>The document has been generated based on the outline. You can click the card below to edit the content, or click the &quot;Save As&quot; button to save it locally for further editing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokument je izrađen na temelju obrisa. Možete kliknuti na karticu ispod za uređivanje sadržaja ili kliknuti gumb &quot;Spremi kao&quot; da biste ga spremili lokalno za daljnje uređivanje.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="455"/>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="603"/>
         <source>You can ask follow-up questions or request adjust the article.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SearchOnlineInst</name>
-    <message>
-        <source>Search Online</source>
-        <translation type="vanished">Pretraživanje na mreži</translation>
-    </message>
-    <message>
-        <source>Enter Search Content</source>
-        <translation type="vanished">Unesite sadržaj za pretraživanje</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SendMailInst</name>
-    <message>
-        <source>Send Mail</source>
-        <translation type="vanished">Pošalji e-poštu</translation>
-    </message>
-    <message>
-        <source>Help me send an email to [Recipient&apos;s Name], with the content: [Email Content].</source>
-        <translation type="vanished">Pomozi mi poslati e-poštu na [Ime primatelja], sa sadržajem: [Sadržaj e-pošte].</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Nažalost, nisu pronađene odgovarajuće operacije.</translation>
-    </message>
-    <message>
-        <source>Please extract the relevant parameters from the provided input to match the following JSON email template format,and output only the JSON content. Do not include any extraneous information.
-
-Email template format:
-json
-{&quot;subject&quot;: &quot;Email Subject&quot;, &quot;content&quot;: &quot;Email Body&quot;, &quot;to&quot;: &quot;Recipient&quot;, &quot;cc&quot;: &quot;CC Recipient&quot;, &quot;bcc&quot;: &quot;BCC Recipient&quot;}
-
-Input: %1</source>
-        <translation type="vanished">Izvucite relevantne parametre iz priloženog unosa kako biste odgovarali sljedećem JSON predlošku e-pošte i ispišite samo JSON sadržaj. Ne uključujte nikakve dodatne informacije.
-
-Predložak e-pošte:
-
-json
-{&quot;subject&quot;: &quot;Predmet e-pošte&quot;, &quot;content&quot;: &quot;Tijelo e-pošte&quot;, &quot;to&quot;: &quot;Primatelj&quot;, &quot;cc&quot;: &quot;CC primatelj&quot;, &quot;bcc&quot;: &quot;BCC primatelj&quot;}
-
-Unos: %1</translation>
+        <translation>Možete postaviti dodatna pitanja ili zatražiti prilagodbu članka.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ServiceConfigChannel</name>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="271"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="282"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="328"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="346"/>
         <source>Failed to get MCP server instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nije uspjelo dobiti instancu MCP poslužitelja.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="304"/>
         <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
-        <translation type="unfinished">Poslužitelj &apos;%1&apos; nije prilagođeni poslužitelj ili ne postoji</translation>
+        <translation>Poslužitelj &apos;%1&apos; nije prilagođeni poslužitelj ili ne postoji</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="307"/>
         <source>MCP server name &apos;%1&apos; already exists</source>
-        <translation type="unfinished">Naziv MCP poslužitelja &apos;%1&apos; već postoji</translation>
+        <translation>Naziv MCP poslužitelja &apos;%1&apos; već postoji</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="350"/>
         <source>Server &apos;%1&apos; does not exist</source>
-        <translation type="unfinished"></translation>
+        <translation>Poslužitelj &apos;%1&apos; ne postoji</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SessionManager</name>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="52"/>
         <source>Session with ID %1 already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Sesija s ID-om %1 već postoji</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="63"/>
         <source>Session %1 create assistant %2 failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Stvaranje pomoćnika %2 za sesiju %1 nije uspjelo</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="74"/>
         <source>Session %1 create success</source>
-        <translation type="unfinished"></translation>
+        <translation>Sesija %1 je uspješno stvorena</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="120"/>
         <source>Session %1 not found</source>
-        <translation type="unfinished"></translation>
+        <translation>Sesija %1 nije pronađena</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="128"/>
         <source>Session %1 is not idle</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ShortcutUpdateDialog</name>
-    <message>
-        <source>Shortcut: [Super + Space]. Quickly invoke UOS AI to access all AI features in one place.</source>
-        <translation type="vanished">Prečac: [Super + Razmak]. Brzo pozivanje UOS AI za pristup svim AI značajkama na jednom mjestu.</translation>
-    </message>
-    <message>
-        <source>Got it</source>
-        <translation type="vanished">Shvaćam</translation>
-    </message>
-    <message>
-        <source>This prompt will appear %1 more times, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Do not show again&lt;/a&gt;</source>
-        <translation type="vanished">Ovaj upit će se pojaviti još %1 puta, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Ne prikazuj više&lt;/a&gt;</translation>
+        <translation>Sesija %1 nije neaktivna</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillCommandTextEdit</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="55"/>
         <source>Take </source>
-        <translation>&apos;Uzeti &apos;</translation>
+        <translation>Preuzmi </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="56"/>
         <source> translate into English</source>
-        <translation>&apos; prevesti na engleski&apos;</translation>
+        <translation> prevedi na engleski</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="185"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="218"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="459"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="604"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="792"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="796"/>
         <source>Exceeded character limit</source>
-        <translation>Prekoračenje ograničenja znakova</translation>
+        <translation>Prekoračeno je ograničenje znakova</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
-        <source>Enable</source>
-        <translation>Omogući</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
         <source>Disabled</source>
         <translation>Onemogućeno</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>Omogući</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="64"/>
         <source>Skill Management</source>
         <translation>Upravljanje vještinama</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="68"/>
         <source>Add Skill</source>
         <translation>Dodaj vještinu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="75"/>
         <source>The first 4 skills will be displayed on the toolbar, and others will be hidden in the More menu.</source>
         <translation>Prve 4 vještine bit će prikazane na alatnoj traci, a ostale će biti skrivene u izborniku Više.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="215"/>
         <source>Saved</source>
         <translation>Spremljeno</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="239"/>
         <source>Are you sure you want to delete the skill &quot;%1&quot;?</source>
         <translation>Jeste li sigurni da želite izbrisati vještinu &quot;%1&quot;?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="240"/>
         <source>Cancel</source>
         <translation>Odustani</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="241"/>
         <source>Delete</source>
         <translation>Izbriši</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SystemChannel</name>
+    <name>uos_ai::SkillsManager</name>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="145"/>
-        <source>UOS AI</source>
-        <translation type="unfinished">UOS AI</translation>
+        <source>The archive file does not exist.</source>
+        <translation>Arhivska datoteka ne postoji.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="146"/>
-        <source>Ask UOS AI, kiss your worries goodbye.</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to create temporary directory for extraction.</source>
+        <translation>Nije uspjelo stvaranje privremenog direktorija za raspakiravanje.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="147"/>
-        <source>Update History</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to extract the archive. The file may be corrupted or the format is not supported.</source>
+        <translation>Nije uspjelo raspakiravanje arhive. Datoteka je možda oštećena ili format nije podržan.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="148"/>
-        <source>Settings</source>
-        <translation type="unfinished">Postavke</translation>
+        <source>No SKILL.md file found in the archive.</source>
+        <translation>U arhivi nije pronađena datoteka SKILL.md.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="149"/>
-        <source>Help</source>
-        <translation type="unfinished"></translation>
+        <source>The specified path is invalid.</source>
+        <translation>Navedena putanja je nevažeća.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="150"/>
-        <source>About</source>
-        <translation type="unfinished">O programu</translation>
+        <source>Failed to read SKILL.md.</source>
+        <translation>Nije uspjelo čitanje SKILL.md.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="151"/>
-        <source>New Chat</source>
-        <translation type="unfinished"></translation>
+        <source>SKILL.md is missing the required &apos;name&apos; field.</source>
+        <translation>U SKILL.md nedostaje obavezno polje &apos;name&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="152"/>
-        <source>Temporary Chat</source>
-        <translation type="unfinished"></translation>
+        <source>The skill directory does not exist.</source>
+        <translation>Direktorij vještine ne postoji.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="153"/>
-        <source>AI Writing</source>
-        <translation type="unfinished">AI pisanje</translation>
+        <source>The skill cannot be imported from this path.</source>
+        <translation>Vještina se ne može uvesti s ove putanje.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="154"/>
-        <source>AI Translation</source>
-        <translation type="unfinished">AI prijevod</translation>
+        <source>No SKILL.md file found in the skill directory.</source>
+        <translation>Nije pronađena datoteka SKILL.md u direktoriju vještine.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="155"/>
-        <source>AI Knowledge Base</source>
-        <translation type="unfinished"></translation>
+        <source>The skill contains too many files (maximum %1 allowed).</source>
+        <translation>Vještina sadrži previše datoteka (maksimalno je dopušteno %1).</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="156"/>
-        <source>MCP Server</source>
-        <translation type="unfinished"></translation>
+        <source>The skill size exceeds the limit (maximum 10 MB allowed).</source>
+        <translation>Veličina vještine prelazi ograničenje (maksimalno je dopušteno 10 MB).</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="157"/>
-        <source>Commands</source>
-        <translation type="unfinished"></translation>
+        <source>The skill folder name is invalid.</source>
+        <translation>Naziv mape vještine je nevaljan.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="158"/>
-        <source>Agent Store</source>
-        <translation type="unfinished">Trgovina agenata</translation>
+        <source>Failed to overwrite the existing skill.</source>
+        <translation>Nije uspjelo prebrisivanje postojeće vještine.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="159"/>
-        <source>More</source>
-        <translation type="unfinished">Više</translation>
+        <source>Failed to create the skills directory.</source>
+        <translation>Nije uspjelo stvaranje direktorija vještina.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="160"/>
-        <source>Chat History</source>
-        <translation type="unfinished"></translation>
+        <source>Failed to copy the skill files.</source>
+        <translation>Nije uspjelo kopiranje datoteka vještine.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="161"/>
-        <source>Today</source>
-        <translation type="unfinished">Danas</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="162"/>
-        <source>Yesterday</source>
-        <translation type="unfinished">Jučer</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="163"/>
-        <source>Last 7 Days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="164"/>
-        <source>Last 30 Days</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="165"/>
-        <source>January</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="166"/>
-        <source>February</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="167"/>
-        <source>March</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="168"/>
-        <source>April</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="169"/>
-        <source>May</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="170"/>
-        <source>June</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="171"/>
-        <source>July</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="172"/>
-        <source>August</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="173"/>
-        <source>September</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="174"/>
-        <source>October</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="175"/>
-        <source>November</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="176"/>
-        <source>year</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="177"/>
-        <source>Earlier</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="178"/>
-        <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="179"/>
-        <source>Confirm Deletion</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="180"/>
-        <source>This action will delete all content related to this chat from UOS AI.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="181"/>
-        <source>Confirm Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="182"/>
-        <source>Cancel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="183"/>
-        <source>Batch Manage</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="184"/>
-        <source>All</source>
-        <translation type="unfinished">Svi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="185"/>
-        <source>Select All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="186"/>
-        <source>%1 conversations selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="187"/>
-        <source>No chat history yet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="188"/>
-        <source>Chat content not found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="189"/>
-        <source>DeepThink</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="190"/>
-        <source>Search</source>
-        <translation type="unfinished">Pretraži</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="191"/>
-        <source>Attachments</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="192"/>
-        <source>Upload Files</source>
-        <translation type="unfinished">Prenesi datoteke</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="193"/>
-        <source>Screenshot Q&amp;A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="194"/>
-        <source>Voice Input</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="195"/>
-        <source>Send</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="196"/>
-        <source>Ask a question...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="197"/>
-        <source>Voice Read</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="198"/>
-        <source>Stop Reading</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="199"/>
-        <source>Copy</source>
-        <translation type="unfinished">Kopiraj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="200"/>
-        <source>Regenerate</source>
-        <translation type="unfinished">Ponovno generiraj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="201"/>
-        <source>Re-edit</source>
-        <translation type="unfinished">Uredi ponovno</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="202"/>
-        <source>Stop Generating</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="203"/>
-        <source>Generation stopped</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="204"/>
-        <source>You stopped this answer, please re-edit your question</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="205"/>
-        <source>Back to Bottom</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="206"/>
-        <source>Thinking...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="207"/>
-        <source>Deep think completed (took %1s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="208"/>
-        <source>Parsing...</source>
-        <translation type="unfinished">Obrada...</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="209"/>
-        <source>Parsing failed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="210"/>
-        <source>You can add up to 50 files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="211"/>
-        <source>Summarize the core content of the file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="212"/>
-        <source>Model List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="213"/>
-        <source>Smart Recommendation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="214"/>
-        <source>Smart switch for best match</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="215"/>
-        <source>Local Model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="216"/>
-        <source>Online Model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="217"/>
-        <source>Add Model</source>
-        <translation type="unfinished">Dodaj model</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="218"/>
-        <source>Official</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="219"/>
-        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="220"/>
-        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="221"/>
-        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="222"/>
-        <source>You have X newly answered chats</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="223"/>
-        <source>View Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="224"/>
-        <source>Remind Me Later</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="225"/>
-        <source>Infinite inspiration, worry-free writing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="226"/>
-        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="227"/>
-        <source>Upload files/images as references</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="228"/>
-        <source>Reference Outline / Local File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="229"/>
-        <source>As reference material / As outline file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="230"/>
-        <source>File Upload</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="231"/>
-        <source>As Material</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="232"/>
-        <source>As Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="233"/>
-        <source>Only 1 file is supported for outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="234"/>
-        <source>Local Materials</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="235"/>
-        <source>File Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="236"/>
-        <source>Outline</source>
-        <translation type="unfinished">Nacrt</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="237"/>
-        <source>View All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="238"/>
-        <source>Collapse</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="239"/>
-        <source>Recent Creations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="240"/>
-        <source>Upload File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="241"/>
-        <source>Reference Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="242"/>
-        <source>Local File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="243"/>
-        <source>Heading</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="244"/>
-        <source>Export Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="245"/>
-        <source>Exit Full Screen</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="246"/>
-        <source>Untitled Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="247"/>
-        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="248"/>
-        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="249"/>
-        <source>2. Turn off &quot;Web Search&quot;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="250"/>
-        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="251"/>
-        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="252"/>
-        <source>Enable Privacy Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="253"/>
-        <source>Continue Generating</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="254"/>
-        <source>You can enter more requirements to optimize or adjust the generated content.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="255"/>
-        <source>Detected local outline uploaded. Analyzing outline content...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="256"/>
-        <source>Generating outline content...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="257"/>
-        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="258"/>
-        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="259"/>
-        <source>Re-upload Outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="260"/>
-        <source>Directly generate outline using AI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="261"/>
-        <source>Add sub-chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="262"/>
-        <source>Delete chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="263"/>
-        <source>Add chapter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="264"/>
-        <source>Enter chapter title</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="265"/>
-        <source>Delete this heading?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="266"/>
-        <source>Generate document from outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="267"/>
-        <source>Save as Word</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="268"/>
-        <source>Save as PDF</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="269"/>
-        <source>Save as Markdown</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="270"/>
-        <source>Saving...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="271"/>
-        <source>Saved successfully!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="272"/>
-        <source>Failed to save, please try again.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="273"/>
-        <source>Undo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="274"/>
-        <source>Redo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="275"/>
-        <source>Body Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="276"/>
-        <source>Heading %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="277"/>
-        <source>Bold</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="278"/>
-        <source>Italic</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="279"/>
-        <source>Strikethrough</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="280"/>
-        <source>Link Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="281"/>
-        <source>Bulleted List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="282"/>
-        <source>Numbered List</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="283"/>
-        <source>Decrease Indent</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="284"/>
-        <source>Increase Indent</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="285"/>
-        <source>Blockquote</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="286"/>
-        <source>Divider</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="287"/>
-        <source>Copy Full Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="288"/>
-        <source>Print Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="289"/>
-        <source>Share Document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="290"/>
-        <source>Zoom Out</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="291"/>
-        <source>Full Screen</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="292"/>
-        <source>Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="293"/>
-        <source>Please enter the text to be translated first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="294"/>
-        <source>Identifying source language...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="295"/>
-        <source>My MCP Server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="296"/>
-        <source>Add MCP Server</source>
-        <translation type="unfinished">Dodaj MCP poslužitelj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="297"/>
-        <source>Delete MCP Server</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="298"/>
-        <source>Built-in Only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="299"/>
-        <source>Custom Added Only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="300"/>
-        <source>To use MCP services, please install the MCP environment (UOS AI Agent) from the App Store first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="301"/>
-        <source>Install Now</source>
-        <translation type="unfinished">Instaliraj sada</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="302"/>
-        <source>System Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="303"/>
-        <source>Bluetooth</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="304"/>
-        <source>Wireless Network</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="305"/>
-        <source>DND Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="306"/>
-        <source>Eye Comfort</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="307"/>
-        <source>Brightness</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="308"/>
-        <source>Volume</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="309"/>
-        <source>Font Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="310"/>
-        <source>App Store</source>
-        <translation type="unfinished">Trgovina aplikacija</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="311"/>
-        <source>Schedule Management</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="312"/>
-        <source>Click to download</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="313"/>
-        <source>downloads</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="316"/>
-        <source>Go to configuration</source>
-        <translation type="unfinished">Idi na konfiguraciju</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="317"/>
-        <source>No account</source>
-        <translation type="unfinished">Nema računa</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="318"/>
-        <source>Input question</source>
-        <translation type="unfinished">Unesite pitanje</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="319"/>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="unfinished">Sadržaj generiran od strane AI-a je samo za referencu, obratite pažnju na točnost informacija.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="320"/>
-        <source>Welcome to UOS AI</source>
-        <translation type="unfinished">Dobrodošli u UOS AI</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="321"/>
-        <source>Here are some of the things UOS AI can help you do</source>
-        <translation type="unfinished">Evo nekoliko stvari u kojima vam UOS AI može pomoći</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="322"/>
-        <source>Stop</source>
-        <translation type="unfinished">Zaustavi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="323"/>
-        <source>Play</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="324"/>
-        <source>Retry</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="325"/>
-        <source>Clear conversation history</source>
-        <translation type="unfinished">Očisti povijest razgovora</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="326"/>
-        <source>Please connect the microphone and try again</source>
-        <translation type="unfinished">Molimo spojite mikrofon i pokušajte ponovno</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="327"/>
-        <source>Chat history cleared</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="328"/>
-        <source>Click to start/stop recording</source>
-        <translation type="unfinished">Kliknite za početak/prekid snimanja</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="329"/>
-        <source>Listening</source>
-        <translation type="unfinished">Slušanje</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="330"/>
-        <source>Sleeping</source>
-        <translation type="unfinished">Spavanje</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="331"/>
-        <source>Microphone not detected</source>
-        <translation type="unfinished">Mikrofon nije detektiran</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="332"/>
-        <source>Connection failed, click to try again</source>
-        <translation type="unfinished">Veza nije uspjela, kliknite za ponovni pokušaj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="333"/>
-        <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation type="unfinished">Kliknite na animaciju ili Ctrl+Super+Space za aktivaciju</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="334"/>
-        <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation type="unfinished">Govorni unos je privremeno nedostupan, provjerite mrežu!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="335"/>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="336"/>
-        <source>Voice conversation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="337"/>
-        <source>Click the animation or press Enter to send</source>
-        <translation type="unfinished">Kliknite animaciju ili pritisnite Enter za slanje</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="338"/>
-        <source>Stop recording after %1 seconds</source>
-        <translation type="unfinished">Zaustavi snimanje nakon %1 sekundi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="339"/>
-        <source>Thinking</source>
-        <translation type="unfinished">Razmišljanje</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="340"/>
-        <source>Click animation to interrupt</source>
-        <translation type="unfinished">Kliknite animaciju za prekid</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="341"/>
-        <source>Answering</source>
-        <translation type="unfinished">Odgovaranje</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="342"/>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="343"/>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="344"/>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="345"/>
-        <source>Activate</source>
-        <translation type="unfinished">Aktiviraj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="346"/>
-        <source>Voice input</source>
-        <translation type="unfinished">Glasovni unos</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="347"/>
-        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation type="unfinished">Glasovno emitiranje je privremeno nedostupno, molimo provjerite mrežu!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="348"/>
-        <source>Turn off voice conversation</source>
-        <translation type="unfinished">Isključi glasovni razgovor</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="349"/>
-        <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation type="unfinished">Slika je generirana, molimo prebacite se na sučelje chata za pregled.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="350"/>
-        <source>No account, please configure an account</source>
-        <translation type="unfinished">Nema računa, molimo konfigurirajte račun</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="351"/>
-        <source>Answer each question up to 5 times</source>
-        <translation type="unfinished">Odgovorite na svako pitanje do 5 puta</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="352"/>
-        <source>Copied successfully</source>
-        <translation type="unfinished">Uspješno kopirano</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="353"/>
-        <source>Sound output device not detected</source>
-        <translation type="unfinished">Izlazni uređaj za zvuk nije detektiran</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="354"/>
-        <source>The sound output device is not detected, please check and try again!</source>
-        <translation type="unfinished">Izlazni uređaj za zvuk nije detektiran, molimo provjerite i pokušajte ponovno!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="355"/>
-        <source>Mode</source>
-        <translation type="unfinished">Način rada</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="356"/>
-        <source>Window Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="357"/>
-        <source>Sidebar Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="358"/>
-        <source>Assistant List</source>
-        <translation type="unfinished">Popis asistenata</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="359"/>
-        <source>Agent List</source>
-        <translation type="unfinished">Popis agenata</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="360"/>
-        <source>UOS System Assistant</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="361"/>
-        <source>Deepin System Assistant</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="362"/>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="unfinished">Osobni asistent za znanje</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="363"/>
-        <source>Please configure the knowledge base</source>
-        <translation type="unfinished">Molimo konfigurirajte bazu znanja</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="364"/>
-        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation type="unfinished">Prije korištenja [Osobnog asistenta za znanje] potrebno je konfigurirati bazu znanja. Nakon konfiguracije baze znanja, AI će odgovarati na pitanja ili generirati sadržaj na temelju sadržaja koji ste konfigurirali u bazi znanja.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="365"/>
-        <source>Please configure the large model</source>
-        <translation type="unfinished">Molimo konfigurirajte veliki model</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="366"/>
-        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation type="unfinished">Osobni asistent za znanje može se koristiti tek nakon konfiguracije velikog modela.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="367"/>
-        <source>To configure</source>
-        <translation type="unfinished">Za konfiguraciju</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="368"/>
-        <source>To install</source>
-        <translation type="unfinished">Za instalaciju</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="369"/>
-        <source>Please install [EmbeddingPlugins]</source>
-        <translation type="unfinished">Molimo instalirajte [EmbeddingPlugins]</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="370"/>
-        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation type="unfinished">Ovaj asistent zahtijeva instalaciju EmbeddingPlugins-a za rad</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="373"/>
-        <source>Drag files here to add them.</source>
-        <translation type="unfinished">Povucite datoteke ovdje da ih dodate.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="374"/>
-        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation type="unfinished">Možete dodati samo 3 datoteke, podržani tipovi datoteka uključuju: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, kodne datoteke i dr.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="375"/>
-        <source>You can only add a maximum of one file.</source>
-        <translation type="unfinished">Možete dodati najviše jednu datoteku.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="376"/>
-        <source>The file format is not supported.</source>
-        <translation type="unfinished">Format datoteke nije podržan.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="377"/>
-        <source>Summarize the key content of the file.</source>
-        <translation type="unfinished">Sažmite ključni sadržaj datoteke.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="378"/>
-        <source>File Error</source>
-        <translation type="unfinished">Greška u datoteci</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="379"/>
-        <source>File has been deleted.</source>
-        <translation type="unfinished">Datoteka je izbrisana.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="380"/>
-        <source>The file size exceeds the 100MB limit.</source>
-        <translation type="unfinished">Veličina datoteke premašuje ograničenje od 100MB.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="381"/>
-        <source>Upload a document</source>
-        <translation type="unfinished">Prenesite dokument</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="382"/>
-        <source>File deleted</source>
-        <translation type="unfinished">Datoteka izbrisana</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="383"/>
-        <source>No text was parsed</source>
-        <translation type="unfinished">Nije pronađen tekst</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="384"/>
-        <source>Reference</source>
-        <translation type="unfinished">Referenca</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="387"/>
-        <source>Instruction</source>
-        <translation type="unfinished">Upute</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="388"/>
-        <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation type="unfinished">Upišite &quot;/&quot; u polje za unos da biste aktivirali.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="389"/>
-        <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation type="unfinished">Unesite; „Ctrl+Enter“ za promjenu retka.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="390"/>
-        <source>Enter your question, or enter &quot;/&quot; to select a command
-&quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation type="unfinished">Unesite svoje pitanje ili upišite &quot;/&quot; za odabir naredbe
-&quot;Ctrl+Enter&quot; za novi redak</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="393"/>
-        <source>Search complete.</source>
-        <translation type="unfinished">Pretraživanje završeno.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="394"/>
-        <source>Click to view results</source>
-        <translation type="unfinished">Kliknite za pregled rezultata</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="397"/>
-        <source>edit</source>
-        <translation type="unfinished">uredi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="398"/>
-        <source>save</source>
-        <translation type="unfinished">spremi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="399"/>
-        <source>copy</source>
-        <translation type="unfinished">kopiraj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="402"/>
-        <source>Thinking has stopped</source>
-        <translation type="unfinished">Razmišljanje je zaustavljeno</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="403"/>
-        <source>Back to bottom</source>
-        <translation type="unfinished">Natrag na dno</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="404"/>
-        <source>Deeply thought (%1 seconds)</source>
-        <translation type="unfinished">Duboko razmišljanje (%1 sekundi)</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="407"/>
-        <source>New Conversation</source>
-        <translation type="unfinished">Novi razgovor</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="408"/>
-        <source>History</source>
-        <translation type="unfinished">Povijest</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="409"/>
-        <source>No History Records</source>
-        <translation type="unfinished">Nema zapisa u povijesti</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="410"/>
-        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation type="unfinished">Jeste li sigurni da želite izbrisati razgovor? Nakon brisanja neće biti moguće oporaviti.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="411"/>
-        <source>The %1 agent used in this conversation has been deleted</source>
-        <translation type="unfinished">Agent %1 korišten u ovom razgovoru je izbrisan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="412"/>
-        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation type="unfinished">Ovaj razgovor se ne može pregledati. Da biste ga vidjeli, instalirajte agenta %1 i pokušajte ponovno.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="413"/>
-        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation type="unfinished">Izvorni model razgovora je izbrisan. Prebacili smo vas na novi model kako biste nastavili razgovor.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="416"/>
-        <source>Recommendations</source>
-        <translation type="unfinished">Preporuke</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="417"/>
-        <source>No Model</source>
-        <translation type="unfinished">Nema modela</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="418"/>
-        <source>No model available. Please install or configure a model in the settings.</source>
-        <translation type="unfinished">Nema dostupnog modela. Instalirajte ili konfigurirajte model u postavkama.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="419"/>
-        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation type="unfinished">Molimo opišite temu sadržaja i zahtjeve za vašu kreaciju.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="420"/>
-        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation type="unfinished">Unesite sadržaj koji želite prevesti i navedite ciljani jezik. Zadani prijevod je na kineski.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="421"/>
-        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation type="unfinished">Unesite tekst koji trebate obraditi i navedite svoje zahtjeve.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="422"/>
-        <source>New Agent Added</source>
-        <translation type="unfinished">Dodan je novi agent</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="423"/>
-        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation type="unfinished">Dodani su novi agenti za pisanje, obradu teksta i prijevod. Pogledajte ih sada.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="424"/>
-        <source>Try it</source>
-        <translation type="unfinished">Isprobajte</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="425"/>
-        <source>Write an article based on the following document:</source>
-        <translation type="unfinished">Napišite članak na temelju sljedećeg dokumenta:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="426"/>
-        <source>Translate the following document into English:</source>
-        <translation type="unfinished">Prevedite sljedeći dokument na engleski:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="429"/>
-        <source>Add Mcp Server</source>
-        <translation type="unfinished">Dodaj MCP poslužitelj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="430"/>
-        <source>Add Server</source>
-        <translation type="unfinished">Dodaj poslužitelj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="431"/>
-        <source>Add failed! Error reason:</source>
-        <translation type="unfinished">Dodavanje nije uspjelo! Razlog greške:</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="432"/>
-        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation type="unfinished">MCP okruženje nedostaje. Instalirajte 【UOS AI Agent】</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="433"/>
-        <source>Calling</source>
-        <translation type="unfinished">Pozivam</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="434"/>
-        <source>Completed</source>
-        <translation type="unfinished">Dovršeno</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="435"/>
-        <source>Call Failed</source>
-        <translation type="unfinished">Poziv nije uspio</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="436"/>
-        <source>Cancelled</source>
-        <translation type="unfinished">Otkazano</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="437"/>
-        <source>params</source>
-        <translation type="unfinished">parametri</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="438"/>
-        <source>result</source>
-        <translation type="unfinished">rezultat</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="439"/>
-        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="unfinished">Za MCP poslužitelj, prebacite se na službeno izdani model &quot;DeepSeek-Trial Account&quot;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="440"/>
-        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation type="unfinished">Unesite MCP poslužiteljsku naredbu, npr. &quot;Prebaci sustav u tamni način rada za mene&quot;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="441"/>
-        <source>Agent server is not available</source>
-        <translation type="unfinished">Agent poslužitelj nije dostupan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="442"/>
-        <source>Agent server exception</source>
-        <translation type="unfinished">Iznimka agent poslužitelja</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="443"/>
-        <source>MCP server is not available</source>
-        <translation type="unfinished">MCP poslužitelj nije dostupan</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="444"/>
-        <source>Confirm</source>
-        <translation type="unfinished">Potvrdi</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="445"/>
-        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation type="unfinished">Automatizirajte zadatke s više datoteka i aplikacija jednom naredbom pomoću MCP usluge. Isprobajte odmah!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="446"/>
-        <source>Use later</source>
-        <translation type="unfinished">Koristi kasnije</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="447"/>
-        <source>Enable MCP Server</source>
-        <translation type="unfinished">Omogući MCP poslužitelj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="448"/>
-        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation type="unfinished">Nakon instalacije MCP okruženja &quot;UOS AI Agent&quot;, kliknite na </translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="449"/>
-        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation type="unfinished"> i odaberite &quot;uos-mcp&quot; s popisa MCP poslužitelja.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="450"/>
-        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation type="unfinished">Isprobajte reći: &quot;Prebaci sustav u tamni način rada&quot;.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="451"/>
-        <source>Try it now</source>
-        <translation type="unfinished">Isprobaj odmah</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="452"/>
-        <source>Add Mcp Server[GuidePage]</source>
-        <translation type="unfinished">Dodaj MCP poslužitelj [Vodič]</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="453"/>
-        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation type="unfinished">Prvi korisnici: Instalirajte MCP okruženje &quot;UOS AI Agent&quot; putem Trgovine aplikacija.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="454"/>
-        <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation type="unfinished">JSON format datoteke je neispravan, molimo provjerite i pošaljite ponovno</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="455"/>
-        <source>Install Now &gt;</source>
-        <translation type="unfinished">Instaliraj sada &gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="458"/>
-        <source>General Chat</source>
-        <translation type="unfinished">Opći razgovor</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="459"/>
-        <source>Now in Private Chat</source>
-        <translation type="unfinished">Sada u privatnom razgovoru</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="460"/>
-        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation type="unfinished">Privatne poruke u chatu ne spremaju se u povijest i trajno će se izbrisati kada napustite chat.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="461"/>
-        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation type="unfinished">Screenshot Q&amp;A Prečac (Ctrl+Alt+Q), podržava do 3 slike.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="462"/>
-        <source>Cannot be used during screen recording</source>
-        <translation type="unfinished">Nije dostupno tijekom snimanja zaslona</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="463"/>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="464"/>
-        <source>Please delete the abnormal file and send it again</source>
-        <translation type="unfinished">Izbrišite neispravnu datoteku i pošaljite ponovno</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="465"/>
-        <source>Add Private Chat</source>
-        <translation type="unfinished">Dodaj privatni chat</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="466"/>
-        <source>Add [Screenshot Q&amp;A]</source>
-        <translation type="unfinished">Dodaj [Screenshot Q&amp;A]</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="467"/>
-        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation type="unfinished">Snimite zaslon i pošaljite sadržaj UOS AI-ju. Također možete izravno prenijeti sliku.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="468"/>
-        <source>OK</source>
-        <translation type="unfinished">U redu</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="469"/>
-        <source>Next</source>
-        <translation type="unfinished">Dalje</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="470"/>
-        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation type="unfinished">Dodaj [ Privatni način rada ] – razgovori se neće spremati.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="471"/>
-        <source>No text extracted</source>
-        <translation type="unfinished">Nije izdvojen nijedan tekst</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="472"/>
-        <source>Image size exceeds 15 MB</source>
-        <translation type="unfinished">Veličina slike prelazi 15 MB</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="475"/>
-        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation type="unfinished">Nakon otvaranja baze znanja, odgovori će se temeljiti na njezinom sadržaju. Brzina odgovora ovisi o performansama stroja i veličini baze znanja.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="476"/>
-        <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation type="unfinished">Baza znanja nije dostupna ako je odabran bilo koji naredbeni ili MCP modul.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="477"/>
-        <source>MCP is disabled while the knowledge base is active.</source>
-        <translation type="unfinished">MCP je onemogućen dok je baza znanja aktivna.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="478"/>
-        <source>Commands disabled while knowledge base is active.</source>
-        <translation type="unfinished">Naredbe su onemogućene dok je baza znanja aktivna.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="479"/>
-        <source>Copy succeeded.</source>
-        <translation type="unfinished">Kopiranje uspješno.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="480"/>
-        <source>Copy failed. Please try again.</source>
-        <translation type="unfinished">Kopiranje nije uspjelo. Pokušajte ponovno.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="481"/>
-        <source>Searching</source>
-        <translation type="unfinished">Pretraživanje</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="482"/>
-        <source>%1 reference documents have been obtained (%2s)</source>
-        <translation type="unfinished">Dobiveno je %1 referentnih dokumenata (%2 s)</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="483"/>
-        <source>Clear History</source>
-        <translation type="unfinished">Očisti povijest</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="484"/>
-        <source>Delete all records?</source>
-        <translation type="unfinished">Izbrisati sve zapise?</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="485"/>
-        <source>Once deleted, the content cannot be recovered!</source>
-        <translation type="unfinished">Nakon brisanja sadržaj se ne može vratiti!</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="486"/>
-        <source>Recommend official models</source>
-        <translation type="unfinished">Preporučite službene modele</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="487"/>
-        <source>Disable MCP</source>
-        <translation type="unfinished">Onemogući MCP</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="490"/>
-        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="unfinished">Preporuča se korištenje službenog modela „DeepSeek-Trial Account“</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="491"/>
-        <source>Quick Open</source>
-        <translation type="unfinished">Brzo otvaranje</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="492"/>
-        <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation type="unfinished">Nadogradnja MCP poslužitelja na automatski način rada</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="493"/>
-        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation type="unfinished">MCP poslužitelji su nadograđeni u automatski način rada, što omogućuje pristup svim MCP poslužiteljima jednim klikom</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="494"/>
-        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation type="unfinished">. To omogućuje automatizaciju zadataka poput postavljanja sustava i obrade datoteka jednim klikom.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="495"/>
-        <source>Adding MCP Server has been moved to Settings.</source>
-        <translation type="unfinished">Dodavanje MCP poslužitelja premješteno je u Postavke.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="496"/>
-        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation type="unfinished">Za dodavanje još MCP poslužitelja idite na Postavke &gt; MCP poslužitelj.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="497"/>
-        <source>Got it</source>
-        <translation type="unfinished">Shvaćam</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="498"/>
-        <source>Complimentary Model Credits</source>
-        <translation type="unfinished">Besplatni krediti za model</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="499"/>
-        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation type="unfinished">Trenutni sustav nudi DeepSeek probni račun modela, koji automatski obnavlja besplatnu kvotu na početku svakog mjeseca, omogućujući vam da ga koristite bez brige.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="500"/>
-        <source>Claim Credits</source>
-        <translation type="unfinished">Zatraži kredite</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="501"/>
-        <source>Get a free account</source>
-        <translation type="unfinished">Nabavite besplatni račun</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="502"/>
-        <source>Claim Free Credits</source>
-        <translation type="unfinished">Zatraži besplatne kredite</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="503"/>
-        <source>Successfully Claimed</source>
-        <translation type="unfinished">Uspješno zatraženo</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="504"/>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">Neuspješno zatraženo. Molimo pokušajte ponovno.</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="505"/>
-        <source>Enable MCP Server&amp;</source>
-        <translation type="unfinished">Omogući MCP poslužitelj&amp;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="506"/>
-        <source>Disable MCP Server</source>
-        <translation type="unfinished">Onemogući MCP poslužitelj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="507"/>
-        <source>Configure MCP Server</source>
-        <translation type="unfinished">Konfiguriraj MCP poslužitelj</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="957"/>
-        <source>UOS AI FollowAlong/Write</source>
-        <translation type="unfinished">UOS AI FollowAlong/Write</translation>
+        <source>Supported files</source>
+        <translation>Podržane datoteke</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::SystemControlInst</name>
+    <name>uos_ai::SystemChannel</name>
     <message>
-        <source>System Control</source>
-        <translation type="vanished">Kontrola sustava</translation>
+        <source>UOS AI</source>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <source>Switch to a new wallpaper. set the screen brightness to 30%...</source>
-        <translation type="vanished">Promijeni pozadinu. Postavi svjetlinu zaslona na 30%...</translation>
+        <source>Ask UOS AI, kiss your worries goodbye.</source>
+        <translation>Upitajte UOS AI, i zaboravite brige.</translation>
+    </message>
+    <message>
+        <source>Changelog</source>
+        <translation>Popis promjena</translation>
+    </message>
+    <message>
+        <source>Start Chatting</source>
+        <translation>Pokrenite razgovor</translation>
+    </message>
+    <message>
+        <source>Choose an assistant on the left, then enter a question or instruction to start a new chat.</source>
+        <translation>Odaberite asistenta lijevo, zatim upišite pitanje ili uputu za pokretanje novog razgovora.</translation>
+    </message>
+    <message>
+        <source>Voice Interaction</source>
+        <translation>Glasovna interakcija</translation>
+    </message>
+    <message>
+        <source>If you prefer voice control, switch quickly from the related entry to reduce repeated operations.</source>
+        <translation>Ako želite glasovno upravljanje, brzo se prebacite s odgovarajuće stavke kako biste smanjili ponavljajuće radnje.</translation>
+    </message>
+    <message>
+        <source>Keep Exploring</source>
+        <translation>Nastavite istraživati</translation>
+    </message>
+    <message>
+        <source>Use history and settings to continue your tasks and adjust models, tools, and appearance.</source>
+        <translation>Koristite povijest i postavke za nastavak zadataka i prilagodbu modela, alata i izgleda.</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>Postavke</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>Pomoć</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation>O programu</translation>
+    </message>
+    <message>
+        <source>New Chat</source>
+        <translation>Novi razgovor</translation>
+    </message>
+    <message>
+        <source>Temporary Chat</source>
+        <translation>Privremeni razgovor</translation>
+    </message>
+    <message>
+        <source>AI Writing</source>
+        <translation>AI pisanje</translation>
+    </message>
+    <message>
+        <source>AI Translation</source>
+        <translation>AI prijevod</translation>
+    </message>
+    <message>
+        <source>AI Knowledge Base</source>
+        <translation>AI baza znanja</translation>
+    </message>
+    <message>
+        <source>MCP Server</source>
+        <translation>MCP poslužitelj</translation>
+    </message>
+    <message>
+        <source>Commands</source>
+        <translation>Naredbe</translation>
+    </message>
+    <message>
+        <source>Agent Store</source>
+        <translation>Trgovina agentima</translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation>Više</translation>
+    </message>
+    <message>
+        <source>Chat History</source>
+        <translation>Povijest razgovora</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Danas</translation>
+    </message>
+    <message>
+        <source>Yesterday</source>
+        <translation>Jučer</translation>
+    </message>
+    <message>
+        <source>Last 7 Days</source>
+        <translation>Posljednjih 7 dana</translation>
+    </message>
+    <message>
+        <source>Last 30 Days</source>
+        <translation>Posljednjih 30 dana</translation>
+    </message>
+    <message>
+        <source>January</source>
+        <translation>Siječanj</translation>
+    </message>
+    <message>
+        <source>February</source>
+        <translation>Veljača</translation>
+    </message>
+    <message>
+        <source>March</source>
+        <translation>Ožujak</translation>
+    </message>
+    <message>
+        <source>April</source>
+        <translation>Travanj</translation>
+    </message>
+    <message>
+        <source>May</source>
+        <translation>Svibanj</translation>
+    </message>
+    <message>
+        <source>June</source>
+        <translation>Lipanj</translation>
+    </message>
+    <message>
+        <source>July</source>
+        <translation>Srpanj</translation>
+    </message>
+    <message>
+        <source>August</source>
+        <translation>Kolovoz</translation>
+    </message>
+    <message>
+        <source>September</source>
+        <translation>Rujan</translation>
+    </message>
+    <message>
+        <source>October</source>
+        <translation>Listopad</translation>
+    </message>
+    <message>
+        <source>November</source>
+        <translation>Studeni</translation>
+    </message>
+    <message>
+        <source>year</source>
+        <translation>godina</translation>
+    </message>
+    <message>
+        <source>Earlier</source>
+        <translation>Starije</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Izbriši</translation>
+    </message>
+    <message>
+        <source>Confirm Deletion</source>
+        <translation>Potvrdi brisanje</translation>
+    </message>
+    <message>
+        <source>Confirm deletion</source>
+        <translation>Potvrdi brisanje</translation>
+    </message>
+    <message>
+        <source>After deletion, this server will be unavailable. Proceed with caution.</source>
+        <translation>Nakon brisanja ovaj poslužitelj neće biti dostupan. Postupajte oprezno.</translation>
+    </message>
+    <message>
+        <source>This action will delete all content related to this chat from UOS AI.</source>
+        <translation>Ova će se radnja izbrisati sav sadržaj povezan s ovim razgovorom iz UOS AI.</translation>
+    </message>
+    <message>
+        <source>Confirm Delete</source>
+        <translation>Potvrdi brisanje</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Odustani</translation>
+    </message>
+    <message>
+        <source>Batch Manage</source>
+        <translation>Skupno upravljanje</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Sve</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Odaberi sve</translation>
+    </message>
+    <message>
+        <source>%1 conversations selected</source>
+        <translation>Odabrano %1 razgovora</translation>
+    </message>
+    <message>
+        <source>No chat history yet</source>
+        <translation>Još nema povijesti razgovora</translation>
+    </message>
+    <message>
+        <source>Chat content not found</source>
+        <translation>Sadržaj razgovora nije pronađen</translation>
+    </message>
+    <message>
+        <source>DeepThink</source>
+        <translation>DeepThink</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Pretraživanje</translation>
+    </message>
+    <message>
+        <source>Attachments</source>
+        <translation>Privitci</translation>
+    </message>
+    <message>
+        <source>Upload Files</source>
+        <translation>Prenesi datoteke</translation>
+    </message>
+    <message>
+        <source>Screenshot Q&amp;A</source>
+        <translation>Snimka zaslona P&amp;A</translation>
+    </message>
+    <message>
+        <source>Voice Input</source>
+        <translation>Glasovni unos</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Pošalji</translation>
+    </message>
+    <message>
+        <source>Ask a question...</source>
+        <translation>Postavi pitanje...</translation>
+    </message>
+    <message>
+        <source>Voice Read</source>
+        <translation>Glasovno čitanje</translation>
+    </message>
+    <message>
+        <source>Stop Reading</source>
+        <translation>Zaustavi čitanje</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopiraj</translation>
+    </message>
+    <message>
+        <source>Regenerate</source>
+        <translation>Ponovno generiraj</translation>
+    </message>
+    <message>
+        <source>Re-edit</source>
+        <translation>Ponovno uredi</translation>
+    </message>
+    <message>
+        <source>Stop Generating</source>
+        <translation>Zaustavi generiranje</translation>
+    </message>
+    <message>
+        <source>Generation stopped</source>
+        <translation>Generiranje zaustavljeno</translation>
+    </message>
+    <message>
+        <source>You stopped this answer, </source>
+        <translation>Zaustavili ste ovaj odgovor, </translation>
+    </message>
+    <message>
+        <source>please re-edit your question</source>
+        <translation>molim vas ponovno uredite svoje pitanje</translation>
+    </message>
+    <message>
+        <source>Back to Bottom</source>
+        <translation>Vrati na dno</translation>
+    </message>
+    <message>
+        <source>Thinking...</source>
+        <translation>Razmišljanje...</translation>
+    </message>
+    <message>
+        <source>Deep think completed (took %1s)</source>
+        <translation>Duboko razmišljanje završeno (trajalo %1 s)</translation>
+    </message>
+    <message>
+        <source>Parsing...</source>
+        <translation>Analiza...</translation>
+    </message>
+    <message>
+        <source>Parsing failed</source>
+        <translation>Analiza nije uspjela</translation>
+    </message>
+    <message>
+        <source>You can add up to 50 files</source>
+        <translation>Možete dodati do 50 datoteka</translation>
+    </message>
+    <message>
+        <source>Summarize the core content of the file</source>
+        <translation>Sažmi osnovni sadržaj datoteke</translation>
+    </message>
+    <message>
+        <source>Model List</source>
+        <translation>Popis modela</translation>
+    </message>
+    <message>
+        <source>Smart Recommendation</source>
+        <translation>Pametna preporuka</translation>
+    </message>
+    <message>
+        <source>Smart switch for best match</source>
+        <translation>Pametno prebacivanje za najbolju podudarnost</translation>
+    </message>
+    <message>
+        <source>Local Model</source>
+        <translation>Lokalni model</translation>
+    </message>
+    <message>
+        <source>Online Model</source>
+        <translation>Mrežni model</translation>
+    </message>
+    <message>
+        <source>Add Model</source>
+        <translation>Dodaj model</translation>
+    </message>
+    <message>
+        <source>Private Model</source>
+        <translation>Privatni model</translation>
+    </message>
+    <message>
+        <source>Official</source>
+        <translation>Službeni</translation>
+    </message>
+    <message>
+        <source>AI-generated content is for reference only. Please verify its accuracy.</source>
+        <translation>Sadržaj generiran umjetnom inteligencijom namijenjen je samo za referencu. Molimo provjerite njegovu točnost.</translation>
+    </message>
+    <message>
+        <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
+        <translation>Privremeni razgovori ne spremljaju se u povijest. Sadržaj će se potpuno izbrisati pri odlasku.</translation>
+    </message>
+    <message>
+        <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
+        <translation>Dostignut je maksimum od 10 istovremenih razgovora. Molimo pokušajte kasnije.</translation>
+    </message>
+    <message>
+        <source>View Now</source>
+        <translation>Prikaži sada</translation>
+    </message>
+    <message>
+        <source>Remind Me Later</source>
+        <translation>Podsjeti me kasnije</translation>
+    </message>
+    <message>
+        <source>Infinite inspiration, worry-free writing</source>
+        <translation>Beskrajna inspiracija, pisanje bez brige</translation>
+    </message>
+    <message>
+        <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
+        <translation>Omogućite pretraživanje weba za real-time, opsežnije i točnije reference.</translation>
+    </message>
+    <message>
+        <source>Upload files/images as references</source>
+        <translation>Prenesi datoteke/slike kao reference</translation>
+    </message>
+    <message>
+        <source>Reference Outline / Local File</source>
+        <translation>Prijedni nacrt / Lokalna datoteka</translation>
+    </message>
+    <message>
+        <source>As reference material / As outline file</source>
+        <translation>Kao referentni materijal / Kao datoteku nacrta</translation>
+    </message>
+    <message>
+        <source>File Upload</source>
+        <translation>Prijenos datoteke</translation>
+    </message>
+    <message>
+        <source>As Material</source>
+        <translation>Kao materijal</translation>
+    </message>
+    <message>
+        <source>As Outline</source>
+        <translation>Kao nacrt</translation>
+    </message>
+    <message>
+        <source>Only supports uploading 1 outline file</source>
+        <translation>Podržava prijenos samo 1 datoteke nacrta</translation>
+    </message>
+    <message>
+        <source>Local Materials</source>
+        <translation>Lokalni materijali</translation>
+    </message>
+    <message>
+        <source>File Outline</source>
+        <translation>Nacrt datoteke</translation>
+    </message>
+    <message>
+        <source>Outline</source>
+        <translation>Nacrt</translation>
+    </message>
+    <message>
+        <source>View All</source>
+        <translation>Prikaži sve</translation>
+    </message>
+    <message>
+        <source>Recent Creations</source>
+        <translation>Nedavne kreacije</translation>
+    </message>
+    <message>
+        <source>Upload File</source>
+        <translation>Prenesi datoteku</translation>
+    </message>
+    <message>
+        <source>Reference Outline</source>
+        <translation>Prijedni nacrt</translation>
+    </message>
+    <message>
+        <source>Local File</source>
+        <translation>Lokalna datoteka</translation>
+    </message>
+    <message>
+        <source>Heading</source>
+        <translation>Naslov</translation>
+    </message>
+    <message>
+        <source>Export Document</source>
+        <translation>Izvoz dokumenta</translation>
+    </message>
+    <message>
+        <source>Exit Full Screen</source>
+        <translation>Izlaz iz cjeloekranskog prikaza</translation>
+    </message>
+    <message>
+        <source>Untitled Document</source>
+        <translation>Dokument bez naslova</translation>
+    </message>
+    <message>
+        <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
+        <translation>Ako ne želite da se lokalni materijali prenose, prije generiranja sadržaja možete učiniti sljedeće:</translation>
+    </message>
+    <message>
+        <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
+        <translation>1. Prebacite se na lokalni model (npr. DeepSeek-R1-1.5B) ili na privatno implementirani model</translation>
+    </message>
+    <message>
+        <source>2. Turn off &quot;Web Search&quot;</source>
+        <translation>2. Isključite &quot;Pretraživanje weba&quot;</translation>
+    </message>
+    <message>
+        <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
+        <translation>Materijali će biti preneseni na mrežni model radi analize. Nastaviti s generiranjem?</translation>
+    </message>
+    <message>
+        <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
+        <translation>Materijali će biti preneseni na mrežni model (%1) radi analize. Nastaviti s generiranjem?</translation>
+    </message>
+    <message>
+        <source>Enable Privacy Mode</source>
+        <translation>Omogući način rada privatnosti</translation>
+    </message>
+    <message>
+        <source>Continue Generating</source>
+        <translation>Nastavi s generiranjem</translation>
+    </message>
+    <message>
+        <source>You can enter more requirements to optimize or adjust the generated content.</source>
+        <translation>Možete unijeti dodatne zahtjeve za optimizaciju ili prilagodbu generiranog sadržaja.</translation>
+    </message>
+    <message>
+        <source>Detected local outline uploaded. Analyzing outline content...</source>
+        <translation>Otkriven je otpremljeni lokalni nacrt. Analizira se sadržaj nacrta...</translation>
+    </message>
+    <message>
+        <source>Generating outline content...</source>
+        <translation>Generiranje sadržaja nacrta...</translation>
+    </message>
+    <message>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation>Generiran je nacrto koji se može uređivati. Nakon potvrde kliknite plavi gumb ispod za nastavak na generiranje dokumenta.</translation>
+    </message>
+    <message>
+        <source>Unable to parse the uploaded outline file. Please re-upload.</source>
+        <translation>Nije moguće analizirati otpremljenu datoteku nacrta. Molim vas da je ponovno otpremite.</translation>
+    </message>
+    <message>
+        <source>Re-upload Outline</source>
+        <translation>Ponovno otpremi nacrt</translation>
+    </message>
+    <message>
+        <source>Directly generate outline using AI</source>
+        <translation>Izravno generiraj nacrt pomoću AI</translation>
+    </message>
+    <message>
+        <source>Add sub-chapter</source>
+        <translation>Dodaj podpoglavlje</translation>
+    </message>
+    <message>
+        <source>Delete sub-chapter</source>
+        <translation>Izbriši podpoglavlje</translation>
+    </message>
+    <message>
+        <source>Delete chapter</source>
+        <translation>Izbriši poglavlje</translation>
+    </message>
+    <message>
+        <source>Add chapter</source>
+        <translation>Dodaj poglavlje</translation>
+    </message>
+    <message>
+        <source>Enter chapter title</source>
+        <translation>Unesite naslov poglavlja</translation>
+    </message>
+    <message>
+        <source>Delete this heading?</source>
+        <translation>Izbrisati ovaj naslov?</translation>
+    </message>
+    <message>
+        <source>Generate document from outline</source>
+        <translation>Generiraj dokument iz nacrta</translation>
+    </message>
+    <message>
+        <source>Save as Word</source>
+        <translation>Spremi kao Word</translation>
+    </message>
+    <message>
+        <source>Save as PDF</source>
+        <translation>Spremi kao PDF</translation>
+    </message>
+    <message>
+        <source>Save as Markdown</source>
+        <translation>Spremi kao Markdown</translation>
+    </message>
+    <message>
+        <source>Saving...</source>
+        <translation>Spremanje...</translation>
+    </message>
+    <message>
+        <source>Saved successfully!</source>
+        <translation>Uspješno spremljeno!</translation>
+    </message>
+    <message>
+        <source>Failed to save, please try again.</source>
+        <translation>Spremanje nije uspjelo, pokušajte ponovno.</translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation>Poništi</translation>
+    </message>
+    <message>
+        <source>Redo</source>
+        <translation>Ponovi</translation>
+    </message>
+    <message>
+        <source>Body Text</source>
+        <translation>Tekst tijela</translation>
+    </message>
+    <message>
+        <source>Heading %1</source>
+        <translation>Naslov %1</translation>
+    </message>
+    <message>
+        <source>Bold</source>
+        <translation>Podebljano</translation>
+    </message>
+    <message>
+        <source>Italic</source>
+        <translation>Kurziv</translation>
+    </message>
+    <message>
+        <source>Strikethrough</source>
+        <translation>Prekriženo</translation>
+    </message>
+    <message>
+        <source>Link Text</source>
+        <translation>Tekst poveznice</translation>
+    </message>
+    <message>
+        <source>Bulleted List</source>
+        <translation>Neuređeni popis</translation>
+    </message>
+    <message>
+        <source>Numbered List</source>
+        <translation>Uređeni popis</translation>
+    </message>
+    <message>
+        <source>Decrease Indent</source>
+        <translation>Smanji uvlačenje</translation>
+    </message>
+    <message>
+        <source>Increase Indent</source>
+        <translation>Povećaj uvlačenje</translation>
+    </message>
+    <message>
+        <source>Blockquote</source>
+        <translation>Blok citata</translation>
+    </message>
+    <message>
+        <source>Divider</source>
+        <translation>Razdjelnik</translation>
+    </message>
+    <message>
+        <source>Copy Full Text</source>
+        <translation>Kopiraj cijeli tekst</translation>
+    </message>
+    <message>
+        <source>Print Document</source>
+        <translation>Ispiši dokument</translation>
+    </message>
+    <message>
+        <source>Share Document</source>
+        <translation>Dijeli dokument</translation>
+    </message>
+    <message>
+        <source>Zoom Out</source>
+        <translation>Umanji</translation>
+    </message>
+    <message>
+        <source>Full Screen</source>
+        <translation>Cijeli zaslon</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Zatvori</translation>
+    </message>
+    <message>
+        <source>Insert Link</source>
+        <translation>Umetni poveznicu</translation>
+    </message>
+    <message>
+        <source>Text:</source>
+        <translation>Tekst:</translation>
+    </message>
+    <message>
+        <source>Link:</source>
+        <translation>Poveznica:</translation>
+    </message>
+    <message>
+        <source>Please enter a valid link</source>
+        <translation>Unesite valjanu poveznicu</translation>
+    </message>
+    <message>
+        <source>Link text</source>
+        <translation>Tekst poveznice</translation>
+    </message>
+    <message>
+        <source>Please enter the text to be translated first.</source>
+        <translation>Prvo unesite tekst koji treba prevesti.</translation>
+    </message>
+    <message>
+        <source>Identifying source language...</source>
+        <translation>Prepoznavanje izvornog jezika...</translation>
+    </message>
+    <message>
+        <source>My MCP Server</source>
+        <translation>Moj MCP poslužitelj</translation>
+    </message>
+    <message>
+        <source>Add MCP Server</source>
+        <translation>Dodaj MCP poslužitelj</translation>
+    </message>
+    <message>
+        <source>Delete MCP Server</source>
+        <translation>Izbriši MCP poslužitelj</translation>
+    </message>
+    <message>
+        <source>Edit MCP Server</source>
+        <translation>Uredi MCP poslužitelj</translation>
+    </message>
+    <message>
+        <source>Built-in Only</source>
+        <translation>Samo ugrađeni</translation>
+    </message>
+    <message>
+        <source>Custom Added Only</source>
+        <translation>Samo prilagođeni</translation>
+    </message>
+    <message>
+        <source>To use MCP&amp;Skills, install UOS AI Agent from the App Store first.</source>
+        <translation>Za korištenje MCP&amp;Vještina, prvo instalirajte UOS AI Agent iz trgovine aplikacija.</translation>
+    </message>
+    <message>
+        <source>To use AI Knowledge Base, install Embedding Plugins from App Store first.</source>
+        <translation>Za korištenje AI baze znanja, prvo instalirajte priključke za ugradnju iz trgovine aplikacija.</translation>
+    </message>
+    <message>
+        <source>Install Now</source>
+        <translation>Instaliraj odmah</translation>
+    </message>
+    <message>
+        <source>System Settings</source>
+        <translation>Postavke sustava</translation>
+    </message>
+    <message>
+        <source>Bluetooth</source>
+        <translation>Bluetooth</translation>
+    </message>
+    <message>
+        <source>Wireless Network</source>
+        <translation>Bežična mreža</translation>
+    </message>
+    <message>
+        <source>DND Mode</source>
+        <translation>Način Ne smetaj</translation>
+    </message>
+    <message>
+        <source>Eye Comfort</source>
+        <translation>Zaštita očiju</translation>
+    </message>
+    <message>
+        <source>Brightness</source>
+        <translation>Svjetlina</translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation>Glasnoća</translation>
+    </message>
+    <message>
+        <source>Font Size</source>
+        <translation>Veličina fonta</translation>
+    </message>
+    <message>
+        <source>App Store</source>
+        <translation>Trgovina aplikacija</translation>
+    </message>
+    <message>
+        <source>Schedule Management</source>
+        <translation>Upravljanje rasporedom</translation>
+    </message>
+    <message>
+        <source>Click to download</source>
+        <translation>Kliknite za preuzimanje</translation>
+    </message>
+    <message>
+        <source>&lt;10k downloads</source>
+        <translation>&lt;10k preuzimanja</translation>
+    </message>
+    <message>
+        <source>&lt;100k downloads</source>
+        <translation>&lt;100k preuzimanja</translation>
+    </message>
+    <message>
+        <source>100k+ downloads</source>
+        <translation>100k+ preuzimanja</translation>
+    </message>
+    <message>
+        <source>%1 stars</source>
+        <translation>%1 zvjezdica</translation>
+    </message>
+    <message>
+        <source>Click to go to app</source>
+        <translation>Kliknite za odlazak na aplikaciju</translation>
+    </message>
+    <message>
+        <source>Sunday</source>
+        <translation>Nedjelja</translation>
+    </message>
+    <message>
+        <source>Monday</source>
+        <translation>Ponedjeljak</translation>
+    </message>
+    <message>
+        <source>Tuesday</source>
+        <translation>Utorak</translation>
+    </message>
+    <message>
+        <source>Wednesday</source>
+        <translation>Srijeda</translation>
+    </message>
+    <message>
+        <source>Thursday</source>
+        <translation>Četvrtak</translation>
+    </message>
+    <message>
+        <source>Friday</source>
+        <translation>Petak</translation>
+    </message>
+    <message>
+        <source>Saturday</source>
+        <translation>Subota</translation>
+    </message>
+    <message>
+        <source>MCP Servers</source>
+        <translation>MCP poslužitelji</translation>
+    </message>
+    <message>
+        <source>Select All MCP Servers</source>
+        <translation>Odaberi sve MCP poslužitelje</translation>
+    </message>
+    <message>
+        <source>You can add and manage MCP servers</source>
+        <translation>Možete dodavati i upravljati MCP poslužiteljima</translation>
+    </message>
+    <message>
+        <source>Describe</source>
+        <translation>Opiši</translation>
+    </message>
+    <message>
+        <source>JSON configuration</source>
+        <translation>JSON konfiguracija</translation>
+    </message>
+    <message>
+        <source>Please paste the MCP JSON configuration code into the input box.</source>
+        <translation>Molim vas zalijepite MCP JSON konfiguracijski kod u polje za unos.</translation>
+    </message>
+    <message>
+        <source>Describe MCP server functions to facilitate quick search tools</source>
+        <translation>Opiši funkcije MCP poslužitelja kako biste olakšali brze alate za pretraživanje</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Natrag</translation>
+    </message>
+    <message>
+        <source>Free Credits Delivered</source>
+        <translation>Besplatni krediti isporučeni</translation>
+    </message>
+    <message>
+        <source>You&apos;ve&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation>Iskoristili ste besplatne generacijske kredite za svoj probni račun. Dodijelili smo vam dodatnih 200 besplatnih kredita vrijednih ovaj mjesec. Istražite više značajki i otključajte neograničene mogućnosti UOS AI-a!</translation>
+    </message>
+    <message>
+        <source>Not Now</source>
+        <translation>Ne sada</translation>
+    </message>
+    <message>
+        <source>I am {{enter identity/position}}. Help me write a {{report/article/outline/WeChat public account post/notice/research report/work summary/speech}} about {{enter topic}}, around {{1000}} words in length. The content requirements are {{enter requirements/content focus/writing style, etc..}}</source>
+        <translation>Ja sam {{unesi identitet/poziciju}}. Pomogni mi napisati {{izvještaj/članak/skeč/objavu na javnom WeChat računu/obavijest/istraživački izvještaj/sažetak rada/govor}} o {{unesi temu}}, duljine oko {{1000}} riječi. Zahtjevi za sadržaj su {{unesi zahtjeve/fokus sadržaja/stil pisanja itd..}}</translation>
+    </message>
+    <message>
+        <source>Manage Chat History</source>
+        <translation>Upravljaj poviješću razgovora</translation>
+    </message>
+    <message>
+        <source>Voice Chat</source>
+        <translation>Glasovni razgovor</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>Proširi</translation>
+    </message>
+    <message>
+        <source>Collapse</source>
+        <translation>Sažmi</translation>
+    </message>
+    <message>
+        <source>Edited on</source>
+        <translation>Uređeno</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Stvoreno</translation>
+    </message>
+    <message>
+        <source>You have %1 newly answered chats</source>
+        <translation>Imate %1 novih odgovorenih razgovora</translation>
+    </message>
+    <message>
+        <source>Search History</source>
+        <translation>Povijest pretraživanja</translation>
+    </message>
+    <message>
+        <source>Confirm delete this conversation</source>
+        <translation>Potvrdi brisanje ovog razgovora</translation>
+    </message>
+    <message>
+        <source>This will remove all related content from UOS AI</source>
+        <translation>Ovo će ukloniti sav povezani sadržaj iz UOS AI</translation>
+    </message>
+    <message>
+        <source>Use it now</source>
+        <translation>Koristi odmah</translation>
+    </message>
+    <message>
+        <source>My Skills</source>
+        <translation>Moje vještine</translation>
+    </message>
+    <message>
+        <source>Open installation directory</source>
+        <translation>Otvori mapu instalacije</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>Osvježi</translation>
+    </message>
+    <message>
+        <source>Import Skill</source>
+        <translation>Uvezi vještinu</translation>
+    </message>
+    <message>
+        <source>You can add and manage Skills</source>
+        <translation>Možete dodavati i upravljati vještinama</translation>
+    </message>
+    <message>
+        <source>Exit Voice Chat</source>
+        <translation>Izlaz iz glasnog razgovora</translation>
+    </message>
+    <message>
+        <source>The following %1 files are invalid and unavailable. Continue?</source>
+        <translation>Sljedećih %1 datoteka je nevažećih i nedostupnih. Nastaviti?</translation>
+    </message>
+    <message>
+        <source>The following file is invalid and unavailable. Continue?</source>
+        <translation>Sljedeća datoteka je nevažeća i nedostupna. Nastaviti?</translation>
+    </message>
+    <message>
+        <source>Previous</source>
+        <translation>Prethodno</translation>
+    </message>
+    <message>
+        <source>UOS AI 3.0: All-New UI Upgrade</source>
+        <translation>UOS AI 3.0: Potpuno nova nadogradnja sučelja</translation>
+    </message>
+    <message>
+        <source>New Windowed Mode for a fresh interaction experience</source>
+        <translation>Novi prozorski način za iskustvo svježe interakcije</translation>
+    </message>
+    <message>
+        <source>Clear sidebar navigation for organized access and ease of use</source>
+        <translation>Jasna bočna navigacija za organizirani pristup i jednostavnu upotrebu</translation>
+    </message>
+    <message>
+        <source>A wider, focused workspace with richer content</source>
+        <translation>Širi, fokusirani radni prostor s bogatijim sadržajem</translation>
+    </message>
+    <message>
+        <source>Clearer hierarchy to keep core tasks focused and immersive</source>
+        <translation>Jasnija hijerarhija kako bi se ključni zadaci zadržali usredotočenim i uronjenim</translation>
+    </message>
+    <message>
+        <source>Multi-tasking to save your valuable time</source>
+        <translation>Višezadaćnost radi uštede vašeg dragocjenog vremena</translation>
+    </message>
+    <message>
+        <source>Silent background multi-tasking: No more waiting</source>
+        <translation>Tiha višezadaćnost u pozadini: Nema više čekanja</translation>
+    </message>
+    <message>
+        <source>Assign tasks anytime without breaking your flow</source>
+        <translation>Dodijelite zadatke bilo kada bez prekida rada</translation>
+    </message>
+    <message>
+        <source>Get instant progress updates without constant monitoring</source>
+        <translation>Primajte trenutna ažuriranja napretka bez stalnog nadzora</translation>
+    </message>
+    <message>
+        <source>Immersive split-screen writing: Accurate, secure, and traceable</source>
+        <translation>Uronjeno pisanje na podijeljenom zaslonj: točno, sigurno i pratljivo</translation>
+    </message>
+    <message>
+        <source>Split-screen chat &amp; edit: No more window switching</source>
+        <translation>Razgovor i uređivanje na podijeljenom zaslonu: Nema više prebacivanja prozora</translation>
+    </message>
+    <message>
+        <source>Deep data &quot;feeding&quot; for well-grounded content creation</source>
+        <translation>Duboko &quot;hranjenje&quot; podacima za dobro utemeljeno stvaranje sadržaja</translation>
+    </message>
+    <message>
+        <source>Outline first with manual correction and one-click export</source>
+        <translation>Prvo nacrt s ručnim ispravcima i izvozom jednim klikom</translation>
+    </message>
+    <message>
+        <source>On-device/Private models ensure data privacy and security</source>
+        <translation>Modeli na uređaju/privatni osiguravaju privatnost i sigurnost podataka</translation>
+    </message>
+    <message>
+        <source>System control &amp; vast Skills: All within a single command</source>
+        <translation>Kontrola sustava i ogroman broj vještina: Sve unutar jedne naredbe</translation>
+    </message>
+    <message>
+        <source>Visual system control: Adjust fonts, toggle Wi-Fi, and more</source>
+        <translation>Vizualna kontrola sustava: Prilagodba fontova, uključivanje/isključivanje Wi-Fija i još mnogo toga</translation>
+    </message>
+    <message>
+        <source>High-frequency office skills: Writing, translation, and merging</source>
+        <translation>Vještine visoke učestalosti za ured: pisanje, prijevod i spajanje</translation>
+    </message>
+    <message>
+        <source>One-click Skill import to unlock endless capabilities</source>
+        <translation>Uvoz vještina jednim klikom za otključavanje beskrajnih mogućnosti</translation>
+    </message>
+    <message>
+        <source>Batch management and precise search for history</source>
+        <translation>Skupno upravljanje i precizno pretraživanje povijesti</translation>
+    </message>
+    <message>
+        <source>Global quick search: Access history in seconds</source>
+        <translation>Globalno brzo pretraživanje: Pristupite povijesti u nekoliko sekundi</translation>
+    </message>
+    <message>
+        <source>Agent-based filtering for precise chat history search</source>
+        <translation>Filtriranje temeljeno na agentima za precizno pretraživanje povijesti razgovora</translation>
+    </message>
+    <message>
+        <source>Efficient batch management for a clean and organized workspace</source>
+        <translation>Učinkovito skupno upravljanje za uredan i organiziran radni prostor</translation>
+    </message>
+    <message>
+        <source>Go to configuration</source>
+        <translation>Idi na konfiguraciju</translation>
+    </message>
+    <message>
+        <source>No account</source>
+        <translation>Nema računa</translation>
+    </message>
+    <message>
+        <source>Input question</source>
+        <translation>Unesite pitanje</translation>
+    </message>
+    <message>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation>Sadržaj koji generira umjetna inteligencija služi samo kao referenca. Molimo vas, obratite pozornost na točnost informacija.</translation>
+    </message>
+    <message>
+        <source>Welcome to UOS AI</source>
+        <translation>Dobrodošli u UOS AI</translation>
+    </message>
+    <message>
+        <source>Here are some of the things UOS AI can help you do</source>
+        <translation>Evo nekoliko stvari koje UOS AI može pomoći vam da učinite</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>Zaustavi</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation>Reproduciraj</translation>
+    </message>
+    <message>
+        <source>Retry</source>
+        <translation>Pokušaj ponovno</translation>
+    </message>
+    <message>
+        <source>Clear conversation history</source>
+        <translation>Obriši povijest razgovora</translation>
+    </message>
+    <message>
+        <source>Please connect the microphone and try again</source>
+        <translation>Molimo vas, povežite mikrofon i pokušajte ponovno</translation>
+    </message>
+    <message>
+        <source>Chat history cleared</source>
+        <translation>Povijest razgovora obrisana</translation>
+    </message>
+    <message>
+        <source>Click to start/stop recording</source>
+        <translation>Kliknite za pokretanje/zaustavljanje snimanja</translation>
+    </message>
+    <message>
+        <source>Listening</source>
+        <translation>Slušanje</translation>
+    </message>
+    <message>
+        <source>Sleeping</source>
+        <translation>Spavanje</translation>
+    </message>
+    <message>
+        <source>No microphone detected</source>
+        <translation>Nema pronađenog mikrofona</translation>
+    </message>
+    <message>
+        <source>Connection failed, click to try again</source>
+        <translation>Povezivanje nije uspjelo, kliknite za pokušaj ponovno</translation>
+    </message>
+    <message>
+        <source>Click on the animation%1 to activate</source>
+        <translation>Kliknite na animaciju%1 za aktiviranje</translation>
+    </message>
+    <message>
+        <source>Voice input is temporarily unavailable, please check the network!</source>
+        <translation>Glasovni unos je privremeno nedostupan, molimo vas provjerite mrežu!</translation>
+    </message>
+    <message>
+        <source>Unable to connect to the server, please check your network or try again later.</source>
+        <translation>Nije moguće povezati se s poslužiteljem, molimo vas provjerite mrežu ili pokušajte ponovno kasnije.</translation>
+    </message>
+    <message>
+        <source>Voice conversation</source>
+        <translation>Glasovni razgovor</translation>
+    </message>
+    <message>
+        <source>Click the animation or press Enter to send</source>
+        <translation>Kliknite na animaciju ili pritisnite Enter za slanje</translation>
+    </message>
+    <message>
+        <source>Stop recording after %1 seconds</source>
+        <translation>Zaustavi snimanje nakon %1 sekundi</translation>
+    </message>
+    <message>
+        <source>Thinking</source>
+        <translation>Razmišljanje</translation>
+    </message>
+    <message>
+        <source>Click animation to interrupt</source>
+        <translation>Kliknite na animaciju da prekinete</translation>
+    </message>
+    <message>
+        <source>Answering</source>
+        <translation>Odgovaranje</translation>
+    </message>
+    <message>
+        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
+        <translation>Vaša besplatna kvota je iskorištena. Konfigurirajte račun modela da biste nastavili ga koristiti.</translation>
+    </message>
+    <message>
+        <source>Your free account has expired, please configure your model account to continue using it.</source>
+        <translation>Vaš besplatni račun je istekao. Konfigurirajte račun modela da biste nastavili ga koristiti.</translation>
+    </message>
+    <message>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation>UOS AI zahtijeva konfiguriranje računa AI modela prije korištenja. Prvo konfigurirajte račun modela.</translation>
+    </message>
+    <message>
+        <source>Activate</source>
+        <translation>Aktiviraj</translation>
+    </message>
+    <message>
+        <source>Voice input</source>
+        <translation>Glasovni unos</translation>
+    </message>
+    <message>
+        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
+        <translation>Glasovno emitiranje je privremeno nedostupno. Provjerite mrežu!</translation>
+    </message>
+    <message>
+        <source>Turn off voice conversation</source>
+        <translation>Isključi glasovni razgovor</translation>
+    </message>
+    <message>
+        <source>The picture has been generated, please switch to the chat interface to view it.</source>
+        <translation>Slika je generirana. Prijeđite na sučelje za razgovor kako biste je vidjeli.</translation>
+    </message>
+    <message>
+        <source>No account, please configure an account</source>
+        <translation>Nema računa. Konfigurirajte račun.</translation>
+    </message>
+    <message>
+        <source>Answer each question up to 5 times</source>
+        <translation>Odgovori na svako pitanje do 5 puta</translation>
+    </message>
+    <message>
+        <source>Copied successfully</source>
+        <translation>Uspješno kopirano</translation>
+    </message>
+    <message>
+        <source>Sound output device not detected</source>
+        <translation>Izlazni zvučni uređaj nije otkriven</translation>
+    </message>
+    <message>
+        <source>The sound output device is not detected, please check and try again!</source>
+        <translation>Izlazni zvučni uređaj nije otkriven. Provjerite i pokušajte ponovo!</translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation>Način rada</translation>
+    </message>
+    <message>
+        <source>Window Mode</source>
+        <translation>Način prozora</translation>
+    </message>
+    <message>
+        <source>Sidebar Mode</source>
+        <translation>Način bočne trake</translation>
+    </message>
+    <message>
+        <source>Assistant List</source>
+        <translation>Popis pomoćnika</translation>
+    </message>
+    <message>
+        <source>Agent List</source>
+        <translation>Popis agenata</translation>
+    </message>
+    <message>
+        <source>UOS System Assistant</source>
+        <translation>Sistemski pomoćnik UOS</translation>
+    </message>
+    <message>
+        <source>Deepin System Assistant</source>
+        <translation>Sistemski pomoćnik Deepin</translation>
+    </message>
+    <message>
+        <source>Personal Knowledge Assistant</source>
+        <translation>Osobni pomoćnik za znanje</translation>
+    </message>
+    <message>
+        <source>Please configure the knowledge base</source>
+        <translation>Konfigurirajte bazu znanja</translation>
+    </message>
+    <message>
+        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
+        <translation>Prije korištenja [Osobnog pomoćnika za znanje] potrebno je konfigurirati bazu znanja. Nakon konfiguracije baze znanja, AI će odgovarati na pitanja ili stvarati sadržaj na temelju sadržaja koji ste konfigurirali u bazi znanja.</translation>
+    </message>
+    <message>
+        <source>Please configure the large model</source>
+        <translation>Konfigurirajte veliki model</translation>
+    </message>
+    <message>
+        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
+        <translation>Osobni pomoćnik za znanje može se koristiti tek nakon konfiguriranja velikog modela.</translation>
+    </message>
+    <message>
+        <source>To configure</source>
+        <translation>Konfiguriraj</translation>
+    </message>
+    <message>
+        <source>To install</source>
+        <translation>Instaliraj</translation>
+    </message>
+    <message>
+        <source>Please install [EmbeddingPlugins]</source>
+        <translation>Instalirajte [EmbeddingPlugins]</translation>
+    </message>
+    <message>
+        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
+        <translation>Ovaj pomoćnik zahtijeva instalaciju dodataka EmbeddingPlugins za rad</translation>
+    </message>
+    <message>
+        <source>Drag files here to add them.</source>
+        <translation>Povucite datoteke ovdje da biste ih dodali.</translation>
+    </message>
+    <message>
+        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
+        <translation>Možete dodati samo 3 datoteke. Podržani tipovi datoteka uključuju: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, datoteke s kodom itd.</translation>
+    </message>
+    <message>
+        <source>You can only add a maximum of one file.</source>
+        <translation>Možete dodati najviše jednu datoteku.</translation>
+    </message>
+    <message>
+        <source>The file format is not supported.</source>
+        <translation>Format datoteke nije podržan.</translation>
+    </message>
+    <message>
+        <source>Summarize the key content of the file.</source>
+        <translation>Sažmi ključni sadržaj datoteke.</translation>
+    </message>
+    <message>
+        <source>File Error</source>
+        <translation>Greška datoteke</translation>
+    </message>
+    <message>
+        <source>File has been deleted.</source>
+        <translation>Datoteka je obrisana.</translation>
+    </message>
+    <message>
+        <source>The file size exceeds the 100MB limit.</source>
+        <translation>Veličina datoteke prelazi ograničenje od 100与其他.</translation>
+    </message>
+    <message>
+        <source>Upload a document</source>
+        <translation>Prenesi dokument</translation>
+    </message>
+    <message>
+        <source>File deleted</source>
+        <translation>Datoteka izbrisana</translation>
+    </message>
+    <message>
+        <source>No text was parsed</source>
+        <translation>Nije pronađen tekst</translation>
+    </message>
+    <message>
+        <source>Reference</source>
+        <translation>Referenca</translation>
+    </message>
+    <message>
+        <source>Instruction</source>
+        <translation>Uputstvo</translation>
+    </message>
+    <message>
+        <source>Type &quot;/&quot; in the input box to activate.</source>
+        <translation>Upišite &quot;/&quot; u polje za unos za aktivaciju.</translation>
+    </message>
+    <message>
+        <source>Please enter; “Ctrl+Enter” to change the line.</source>
+        <translation>Molim unesite; &quot;Ctrl+Enter&quot; za promjenu retka.</translation>
+    </message>
+    <message>
+        <source>Enter your question, or enter &quot;/&quot; to select a command
+&quot;Ctrl+Enter&quot;  to start a new line</source>
+        <translation>Unesite svoje pitanje ili upišite &quot;/&quot; za odabir naredbe
+&quot;Ctrl+Enter&quot; za početak novog retka</translation>
+    </message>
+    <message>
+        <source>Search complete.</source>
+        <translation>Pretraga završena.</translation>
+    </message>
+    <message>
+        <source>Click to view results</source>
+        <translation>Kliknite za prikaz rezultata</translation>
+    </message>
+    <message>
+        <source>edit</source>
+        <translation>uredi</translation>
+    </message>
+    <message>
+        <source>save</source>
+        <translation>spremi</translation>
+    </message>
+    <message>
+        <source>copy</source>
+        <translation>kopiraj</translation>
+    </message>
+    <message>
+        <source>lines of code collapsed</source>
+        <translation>redaka koda sklopljeno</translation>
+    </message>
+    <message>
+        <source>Save As</source>
+        <translation>Spremi kao</translation>
+    </message>
+    <message>
+        <source>Thinking has stopped</source>
+        <translation>Razmišljanje je zaustavljeno</translation>
+    </message>
+    <message>
+        <source>Deeply thought (%1 seconds)</source>
+        <translation>Duboko razmišljanje (%1 sekundi)</translation>
+    </message>
+    <message>
+        <source>New Conversation</source>
+        <translation>Novi razgovor</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>Povijest</translation>
+    </message>
+    <message>
+        <source>No History Records</source>
+        <translation>Nema zapisa povijesti</translation>
+    </message>
+    <message>
+        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
+        <translation>Jeste li sigurni da želite izbrisati razgovor? Nakon brisanja neće se moći vratiti.</translation>
+    </message>
+    <message>
+        <source>The %1 agent used in this conversation has been deleted</source>
+        <translation>Agent %1 korišten u ovom razgovoru je izbrisan</translation>
+    </message>
+    <message>
+        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
+        <translation>Ovaj se razgovor ne može pregledavati. Da biste ga pregledali, instalirajte agent %1 i pokušajte ponovno.</translation>
+    </message>
+    <message>
+        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
+        <translation>Izvorni model razgovora je izbrisan. Prebacili smo vas na novi model kako biste mogli nastaviti razgovor.</translation>
+    </message>
+    <message>
+        <source>Recommendations</source>
+        <translation>Preporuke</translation>
+    </message>
+    <message>
+        <source>No Model</source>
+        <translation>Nema modela</translation>
+    </message>
+    <message>
+        <source>No model available. Please install or configure a model in the settings.</source>
+        <translation>Nema dostupnog modela. Instalirajte ili podesite model u postavkama.</translation>
+    </message>
+    <message>
+        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
+        <translation>Opišite temu sadržaja i zahtjeve za svoje stvaranje.</translation>
+    </message>
+    <message>
+        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
+        <translation>Unesite sadržaj koji želite prevesti i navedite ciljni jezik. Prevedeno je na kineski ako nije drugačije.</translation>
+    </message>
+    <message>
+        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
+        <translation>Unesite tekst koji trebate obraditi i navedite svoje zahtjeve.</translation>
+    </message>
+    <message>
+        <source>New Agent Added</source>
+        <translation>Dodan novi agent</translation>
+    </message>
+    <message>
+        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
+        <translation>Dodani su novi agenti za pisanje, obradu teksta i prijevod. Provjerite ih odmah.</translation>
+    </message>
+    <message>
+        <source>Try it</source>
+        <translation>Isprobajte</translation>
+    </message>
+    <message>
+        <source>Write an article based on the following document:</source>
+        <translation>Napišite članak na temelju sljedećeg dokumenta:</translation>
+    </message>
+    <message>
+        <source>Translate the following document into English:</source>
+        <translation>Prevedite sljedeći dokument na engleski:</translation>
+    </message>
+    <message>
+        <source>Add Mcp Server</source>
+        <translation>Dodaj MCP poslužitelj</translation>
+    </message>
+    <message>
+        <source>Add Server</source>
+        <translation>Dodaj poslužitelj</translation>
+    </message>
+    <message>
+        <source>Add failed! Error reason:</source>
+        <translation>Dodavanje nije uspjelo! Razlog pogreške:</translation>
+    </message>
+    <message>
+        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
+        <translation>Okolina MCP nedostaje. Instalirajte 【UOS AI Agent】</translation>
+    </message>
+    <message>
+        <source>Calling</source>
+        <translation>Pozivanje</translation>
+    </message>
+    <message>
+        <source>Completed</source>
+        <translation>Završeno</translation>
+    </message>
+    <message>
+        <source>Call Failed</source>
+        <translation>Poziv nije uspio</translation>
+    </message>
+    <message>
+        <source>Cancelled</source>
+        <translation>Otkazano</translation>
+    </message>
+    <message>
+        <source>params</source>
+        <translation>parametri</translation>
+    </message>
+    <message>
+        <source>result</source>
+        <translation>rezultat</translation>
+    </message>
+    <message>
+        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation>Za MCP poslužitelj, prebacite se na službeno objavljeni model &quot;DeepSeek-Trial Account&quot;</translation>
+    </message>
+    <message>
+        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
+        <translation>Unesite naredbu MCP poslužitelja, npr. &quot;Promijeni sustav u tamni način rada za mene&quot;</translation>
+    </message>
+    <message>
+        <source>Agent server is not available</source>
+        <translation>Agent poslužitelj nije dostupan</translation>
+    </message>
+    <message>
+        <source>Agent server exception</source>
+        <translation>Iznimka agent poslužitelja</translation>
+    </message>
+    <message>
+        <source>MCP server is not available</source>
+        <translation>MCP poslužitelj nije dostupan</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation>Potvrdi</translation>
+    </message>
+    <message>
+        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
+        <translation>Automatizirajte zadatke s više datoteka i aplikacija jednom naredbom pomoću MCP usluge. Isprobajte odmah!</translation>
+    </message>
+    <message>
+        <source>Use later</source>
+        <translation>Koristi kasnije</translation>
+    </message>
+    <message>
+        <source>Enable MCP Server</source>
+        <translation>Omogući MCP poslužitelj</translation>
+    </message>
+    <message>
+        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
+        <translation>Nakon instalacije MCP okruženja &quot;UOS AI Agent&quot;, kliknite na </translation>
+    </message>
+    <message>
+        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
+        <translation> i odaberite &quot;uos-mcp&quot; na popisu MCP poslužitelja.</translation>
+    </message>
+    <message>
+        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
+        <translation>Pokušajte reći: &quot;Promijeni sustav u tamni način rada&quot;.</translation>
+    </message>
+    <message>
+        <source>Try it now</source>
+        <translation>Isprobajte odmah</translation>
+    </message>
+    <message>
+        <source>Add Mcp Server[GuidePage]</source>
+        <translation>Dodaj Mcp poslužitelj[GuidePage]</translation>
+    </message>
+    <message>
+        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
+        <translation>Prvokorisnici: Instalirajte MCP okruženje &quot;UOS AI Agent&quot; putem trgovine aplikacija.</translation>
+    </message>
+    <message>
+        <source>The JSON file format is incorrect, please check and submit again</source>
+        <translation>Oblik JSON datoteke je netočan, provjerite ga i ponovno ga pošaljite</translation>
+    </message>
+    <message>
+        <source>Install Now &gt;</source>
+        <translation>Instaliraj sada &gt;</translation>
+    </message>
+    <message>
+        <source>General Chat</source>
+        <translation>Opći razgovor</translation>
+    </message>
+    <message>
+        <source>Now in Private Chat</source>
+        <translation>Sada ste u privatnom razgovoru</translation>
+    </message>
+    <message>
+        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
+        <translation>Poruke privatnog razgovora ne spremaju se u povijest i trajno će se izbrisati kada napustite razgovor.</translation>
+    </message>
+    <message>
+        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
+        <translation>P&amp;I Q&amp;A    Prečac (Ctrl+Alt+Q), podržano do 3 slike.</translation>
+    </message>
+    <message>
+        <source>Cannot be used during screen recording</source>
+        <translation>Nije moguće koristiti tijekom snimanja zaslona</translation>
+    </message>
+    <message>
+        <source>You can upload up to 3 files or image</source>
+        <translation>Možete prenijeti do 3 datoteke ili slike</translation>
+    </message>
+    <message>
+        <source>Please delete the abnormal file and send it again</source>
+        <translation>Izbrišite neispravnu datoteku i ponovno je pošaljite</translation>
+    </message>
+    <message>
+        <source>Add Private Chat</source>
+        <translation>Dodaj privatni razgovor</translation>
+    </message>
+    <message>
+        <source>Add [Screenshot Q&amp;A]</source>
+        <translation>Dodaj [P&amp;I Q&amp;A]</translation>
+    </message>
+    <message>
+        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
+        <translation>Napravite snimku zaslona i pošaljite sadržaj UOS AI-u. Također možete izravno prenijeti sliku.</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>U redu</translation>
+    </message>
+    <message>
+        <source>Next</source>
+        <translation>Dalje</translation>
+    </message>
+    <message>
+        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
+        <translation>Dodaj [Način privatnog razgovora] - Razgovori neće biti spremljeni.</translation>
+    </message>
+    <message>
+        <source>No text extracted</source>
+        <translation>Nije izvađen tekst</translation>
+    </message>
+    <message>
+        <source>Image size exceeds 15 MB</source>
+        <translation>Veličina slike prelazi 15 MB</translation>
+    </message>
+    <message>
+        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
+        <translation>Nakon otvaranja baze znanja, odgovori će se temeljiti na njezinom sadržaju. Brzina odgovora ovisi o performansama računala i veličini baze znanja.</translation>
+    </message>
+    <message>
+        <source>Knowledge base unavailable when any command or MCP is selected.</source>
+        <translation>Baza znanja nije dostupna kada je odabran bilo koji naredba ili MCP.</translation>
+    </message>
+    <message>
+        <source>MCP is disabled while the knowledge base is active.</source>
+        <translation>MCP je onemogućen dok je baza znanja aktivna.</translation>
+    </message>
+    <message>
+        <source>Commands disabled while knowledge base is active.</source>
+        <translation>Naredbe su onemogućene dok je baza znanja aktivna.</translation>
+    </message>
+    <message>
+        <source>Copy succeeded.</source>
+        <translation>Kopiranje uspjelo.</translation>
+    </message>
+    <message>
+        <source>Copy failed. Please try again.</source>
+        <translation>Kopiranje neuspjelo. Pokušajte ponovno.</translation>
+    </message>
+    <message>
+        <source>Searching</source>
+        <translation>Pretraživanje</translation>
+    </message>
+    <message>
+        <source>%1 reference documents have been obtained (%2s)</source>
+        <translation>%1 referentnih dokumenata je preuzeto (%2s)</translation>
+    </message>
+    <message>
+        <source>Clear History</source>
+        <translation>Obriši povijest</translation>
+    </message>
+    <message>
+        <source>Delete all records?</source>
+        <translation>Izbrisati sve zapise?</translation>
+    </message>
+    <message>
+        <source>Once deleted, the content cannot be recovered!</source>
+        <translation>Jednom izbrisano, sadržaj se ne može vratiti!</translation>
+    </message>
+    <message>
+        <source>Recommend official models</source>
+        <translation>Preporučeni službeni modeli</translation>
+    </message>
+    <message>
+        <source>Disable MCP</source>
+        <translation>Onemogući MCP</translation>
+    </message>
+    <message>
+        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
+        <translation>Preporučuje se korištenje službenog modela &quot;DeepSeek-Trial Account&quot;</translation>
+    </message>
+    <message>
+        <source>Quick Open</source>
+        <translation>Brzo otvaranje</translation>
+    </message>
+    <message>
+        <source>MCP Server Upgrade to Automatic Mode</source>
+        <translation>Nadogradnja MCP poslužitelja na automatski način rada</translation>
+    </message>
+    <message>
+        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
+        <translation>MCP poslužitelj je nadograđen na automatski način rada, omogućujući vam pristup svim MCP poslužiteljima jednim klikom </translation>
+    </message>
+    <message>
+        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
+        <translation>. To vam omogućuje automatizaciju zadataka poput postavljanja sustava i obrade datoteka jednim klikom.</translation>
+    </message>
+    <message>
+        <source>Adding MCP Server has been moved to Settings.</source>
+        <translation>Dodavanje MCP poslužitelja premješteno je u Postavke.</translation>
+    </message>
+    <message>
+        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
+        <translation>Za dodavanje više MCP poslužitelja, idite na Postavke &gt; MCP poslužitelj.</translation>
+    </message>
+    <message>
+        <source>Got it</source>
+        <translation>Razumijem</translation>
+    </message>
+    <message>
+        <source>Complimentary Model Credits</source>
+        <translation>Besplatni krediti za modele</translation>
+    </message>
+    <message>
+        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
+        <translation>Trenutni sustav nudi model probnog računa DeepSeek koji automatski obnavlja besplatnu kvotu početkom svakog mjeseca, omogućujući vam da ga koristite bez brige.</translation>
+    </message>
+    <message>
+        <source>Claim Credits</source>
+        <translation>Preuzmi kredite</translation>
+    </message>
+    <message>
+        <source>Get a free account</source>
+        <translation>Nabavi besplatni račun</translation>
+    </message>
+    <message>
+        <source>Claim Free Credits</source>
+        <translation>Preuzmi besplatne kredite</translation>
+    </message>
+    <message>
+        <source>Successfully Claimed</source>
+        <translation>Uspješno preuzeto</translation>
+    </message>
+    <message>
+        <source>Failed to Claim. Please Try Again.</source>
+        <translation>Neuspjelo preuzimanje. Pokušajte ponovo.</translation>
+    </message>
+    <message>
+        <source>Enable MCP Server&amp;</source>
+        <translation>Omogući MCP poslužitelj&amp;</translation>
+    </message>
+    <message>
+        <source>Disable MCP Server</source>
+        <translation>Onemogući MCP poslužitelj</translation>
+    </message>
+    <message>
+        <source>Configure MCP Server</source>
+        <translation>Konfiguriraj MCP poslužitelj</translation>
+    </message>
+    <message>
+        <source>Enabling MCP Server Features</source>
+        <translation>Omogućavanje značajki MCP poslužitelja</translation>
+    </message>
+    <message>
+        <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
+        <translation>Neke značajke poslužitelja MCP treće strane nose određene rizike. Molimo vas da ih koristite oprezno. Ako omogućite ovu uslugu, ugrađeni aljat će otkriti i automatski preuzeti potrebne ovisnosti. Ovaj proces preuzimanja uzrokovat će promet podataka. Svjesni ste tih rizika i nastavljate s oprezom.</translation>
+    </message>
+    <message>
+        <source>I have understood and agree to use this service</source>
+        <translation>Razumijem i slažem se koristiti ovu uslugu</translation>
+    </message>
+    <message>
+        <source>UOS AI FollowAlong/Write</source>
+        <translation>UOS AI Prati/Piši</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::TtsCompositeWidget</name>
     <message>
-        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="72"/>
         <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation type="unfinished">Odabrani tekst premašuje ograničenje od 5000 znakova.</translation>
+        <translation>Odabrani tekst prelazi ograničenje od 5000 znakova.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::TtsWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/ttswidget.cpp" line="86"/>
         <source>The text you have selected has exceeded the 2000 character limit.</source>
-        <translation>Odabrani tekst premašuje ograničenje od 2000 znakova.</translation>
+        <translation>Odabrani tekst prelazi ograničenje od 2000 znakova.</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/ttswidget.cpp" line="141"/>
         <source>Network is offline , stop text to speech</source>
-        <translation>Mreža je offline, zaustavlja se pretvaranje teksta u govor</translation>
+        <translation>Mreža je nedostupna, zaustavljanje pretvaranja teksta u govor</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="571"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation type="unfinished">Svjetlina je već na maksimumu i ne može se povećati.</translation>
+        <translation>Svjetlina je već na maksimumu i ne može se povećati.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="581"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation type="unfinished">Svjetlina je već na minimumu i ne može se smanjiti.</translation>
+        <translation>Svjetlina je već na minimumu i ne može se smanjiti.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="715"/>
         <source>AI Meeting Schedule</source>
-        <translation type="unfinished"></translation>
+        <translation>AI raspored sastanka</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="854"/>
         <source>Your system memory is %0.</source>
-        <translation type="unfinished">Sistemska memorija je %0.</translation>
+        <translation>Memorija vašeg sustava je %0.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="874"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation type="unfinished">Sučelje za postavke jezika je otvoreno. Postavite ga u ovom sučelju.</translation>
+        <translation>Sučelje za postavke jezika je otvoreno. Postavite ga u ovom sučelju.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="918"/>
         <source>The current mode is already %1 mode.</source>
-        <translation type="unfinished">Trenutni način rada je već %1 način.</translation>
+        <translation>Trenutni je način rada već %1.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation type="unfinished">Nije moguće zatvoriti jer trenutni način %1 ne odgovara ciljnom načinu.</translation>
+        <translation>Nije moguće zatvoriti jer trenutni način %1 ne odgovara ciljanom načinu.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="945"/>
         <source>Balance mode cannot be turned off.</source>
-        <translation type="unfinished">Način rada ravnoteže ne može se isključiti.</translation>
+        <translation>Način ravnoteže se ne može isključiti.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="963"/>
         <source>The lock screen has been opened for you</source>
-        <translation type="unfinished">Zaključavanje zaslona je omogućeno za vas</translation>
+        <translation>Zaključavanje zaslona vam je otvoreno</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="977"/>
         <source>Screen shotting or recording has been completed</source>
-        <translation type="unfinished">Snimanje zaslona ili snimanje je završeno</translation>
+        <translation>Snimanje zaslona ili snimanje zaslona je dovršeno</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="994"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation type="unfinished">Samo jedan zaslon, nije moguće promijeniti način rada zaslona.</translation>
+        <translation>Samo jedan zaslon, nije moguće promijeniti način zaslona.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1006"/>
         <source>It is the same as the current display mode. Please try again.</source>
-        <translation type="unfinished">Isto je kao trenutni način prikaza. Pokušajte ponovno.</translation>
+        <translation>Isto kao i trenutni način prikaza. Pokušajte ponovno.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1079"/>
         <source>Only one screen, can&apos;t switch screen.</source>
-        <translation type="unfinished">Samo jedan zaslon, nije moguće promijeniti zaslon.</translation>
+        <translation>Samo jedan zaslon, nije moguće promijeniti zaslon.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1184"/>
         <source>Your command has been issued.</source>
-        <translation type="unfinished">Vaša naredba je izdana.</translation>
+        <translation>Vaša naredba je izdana.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1689"/>
         <source>Failed to rename file %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Neuspjelo preimenovanje datoteke %1</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1695"/>
         <source>Batch rename completed, successfully renamed %1 files, failed %2 files.
 Error details:
 %3</source>
-        <translation type="unfinished"></translation>
+        <translation>Skupno preimenovanje dovršeno, uspješno preimenovano %1 datoteka, neuspješno %2 datoteka.
+Pojedinosti pogreške:
+%3</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1824"/>
         <source>Email client has been opened, please confirm to send</source>
-        <translation type="unfinished"></translation>
+        <translation>Klijent e-pošte je otvoren, potvrdite slanje</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1956"/>
         <source>App store has been opened, preparing to install application: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Trgovina aplikacija je otvorena, priprema za instalaciju aplikacije: %1</translation>
+    </message>
+    <message>
+        <source>App store target is empty</source>
+        <translation>Cilj trgovine aplikacija je prazan</translation>
+    </message>
+    <message>
+        <source>Failed to open App Store target: %1</source>
+        <translation>Neuspjelo otvaranje cilja trgovine aplikacija: %1</translation>
+    </message>
+    <message>
+        <source>App store has been opened for: %1</source>
+        <translation>Trgovina aplikacija je otvorena za: %1</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::UOSClaw</name>
+    <message>
+        <source>Get system memory usage</source>
+        <translation>Dohvati upotrebu memorije sustava</translation>
+    </message>
+    <message>
+        <source>Get system CPU usage</source>
+        <translation>Dohvati upotrebu procesora sustava</translation>
+    </message>
+    <message>
+        <source>Get system disk information</source>
+        <translation>Dohvati informacije o disku sustava</translation>
+    </message>
+    <message>
+        <source>Switch to dark theme</source>
+        <translation>Prebaci na tamnu temu</translation>
+    </message>
+    <message>
+        <source>Switch to light theme</source>
+        <translation>Prebaci na svijetlu temu</translation>
+    </message>
+    <message>
+        <source>Change desktop background</source>
+        <translation>Promijeni pozadinu radne površine</translation>
+    </message>
+    <message>
+        <source>Switch dock mode</source>
+        <translation>Prebaci način doka</translation>
+    </message>
+    <message>
+        <source>Enable eye protection mode</source>
+        <translation>Omogući način zaštite očiju</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UpdateButton</name>
     <message>
-        <location filename="../src/gui/mgmt/private/updatebutton.cpp" line="81"/>
         <source>Update</source>
         <translation>Ažuriraj</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/updatebutton.cpp" line="81"/>
         <source>Cancel Update</source>
         <translation>Otkaži ažuriranje</translation>
     </message>
@@ -8934,211 +4774,164 @@ Error details:
 <context>
     <name>uos_ai::UpdateLogDialog</name>
     <message>
-        <location filename="../src/gui/upgrade/updatelogdialog.cpp" line="40"/>
         <source>UOS AI Assistant Update Log</source>
-        <translation>Dnevnik ažuriranja UOS AI asistenta</translation>
+        <translation>Dnevnik ažuriranja UOS AI pomoćnika</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UserAgreementDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="46"/>
         <source>UOS AI User Agreement</source>
-        <translation type="unfinished">Korisnički ugovor UOS AI</translation>
+        <translation>Korisnički ugovor UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="79"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="unfinished">Potvrđujem da imam više od 18 godina. Prihvaćam i slažem se da sadržaji koje šaljem i primam putem Aplikacije izravna su razmjena podataka s davateljem usluga velikog modela i nemaju nikakve veze s Tvrtkom.</translation>
+        <translation>Potvrđujem da imam više od 18 godina. Priznajem i slažem se da su sadržaji koje šaljem i primam putem Aplikacije izravne razmjene podataka s pružateljem usluge velikog modela i nemaju veze s Tvrtkom.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="123"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="unfinished"></translation>
+        <translation>Slažem se sudjelovati u planu korisničkog iskustva Aplikacije te ovlašujem vašu tvrtku da prikuplja sadržaje koje šaljem tijekom korištenja Aplikacije, vrijeme slanja, vrstu zatraženog velikog modela, specifičnu aplikaciju i je li tekst uspješno generirao sliku, kako bi se poboljšala kvaliteta usluge i unaprijedio korisnički doživljaj. (Ako odbijete pružiti navedene informacije, to neće utjecati na vašu normalnu upotrebu Aplikacije.)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WelcomeDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="74"/>
         <source>Welcome to UOS AI</source>
-        <translation type="unfinished">Dobrodošli u UOS AI</translation>
+        <translation>Dobrodošli u UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="80"/>
         <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation type="unfinished">UOS AI, vaš pametni asistent, osmišljen je kako bi poboljšao vašu produktivnost i pružio vam visokokvalitetno radno iskustvo.</translation>
+        <translation>UOS AI, vaša pametna pomoćnica, dizajnirana je za povećanje vaše produktivnosti i uživanje u visokokvalitetnom radnom iskustvu.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="105"/>
         <source>Get a free account</source>
-        <translation type="unfinished">Nabavite besplatni račun</translation>
+        <translation>Nabavi besplatni račun</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
         <source>Add Model</source>
-        <translation type="unfinished">Dodaj model</translation>
+        <translation>Dodaj model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="132"/>
         <source>Start using</source>
-        <translation type="unfinished">Počnite koristiti</translation>
+        <translation>Počni koristiti</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="276"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="278"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="unfinished">Potvrđujem da imam više od 18 godina. Prihvaćam i slažem se s &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI Korisničkim ugovorom&quot;&lt;/a&gt;, a sadržaji koje šaljem i primam putem aplikacije izravna su razmjena podataka s davateljem usluge velikog modela i nemaju veze s Tvrtkom.</translation>
+        <translation>Potvrđujem da imam više od 18 godina. Priznajem i slažem se s &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI Korisničkim ugovorom&quot;&lt;/a&gt;, te da su sadržaji koje šaljem i primaz putem Aplikacije izravne razmjene podataka s pružateljem usluge velikog modela i nemaju veze s Tvrtkom.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Primanje računa znači da razumijete i slažete se s uvjetima događaja, &lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Detalji događaja&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="339"/>
         <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Probni račun UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="347"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="361"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Spremanje nije uspjelo, pokušajte ponovno kasnije</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="348"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="362"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="389"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="398"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished">Potvrdi</translation>
+        <translation>Potvrdi</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="375"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished"></translation>
+        <translation>Probni račun je uspješno primljen.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="378"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>Broj uporaba i trajanje probnog računa su ograničeni, molimo vas da na vrijeme podesite svoj osobni račun za model! Pogledajte detalje događaja za više informacija.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="380"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="unfinished">Engleska podrška za probne račune nije zadovoljavajuća. Broj korištenja i trajanje probnog računa su ograničeni. Pravočasno konfigurirajte svoj osobni model račun!</translation>
+        <translation>Podrška za engleski jezik kod probnih računa nije zadovoljavajuća. Također su ograničeni broj uporaba i trajanje probnog računa. Molimo vas da na vrijeme podesite svoj osobni račun za model!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="381"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation type="unfinished">Započni probu</translation>
+        <translation>Pokreni probnu verziju</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="388"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivnost besplatnog računa je završena.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="397"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nije moguće povezati se s poslužiteljem, molimo vas provjerite svoju mrežu ili pokušajte ponovno kasnije.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="418"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="unfinished"></translation>
+        <translation>Slažem se sudjelovati u planu iskustva korisnika Aplikacije te ovlašćujem vašu tvrtku da prikuplja sadržaje koje šaljem tijekom korištenja Aplikacije, vrijeme slanja, vrstu zatraženog velikog modela, specifičnu aplikaciju i je li generiranje slike iz teksta uspješno, kako bi se poboljšala kvaliteta usluge i unaprijedio iskustvo rada. (Ako odbijete pružiti navedene informacije, to neće utjecati na vašu normalnu upotrebu Aplikacije.)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WizardWrapper</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="106"/>
         <source>Hide until restarting this app</source>
-        <translation>Sakrij do ponovnog pokretanja aplikacije</translation>
+        <translation>Sakrij do ponovnog pokretanja ove aplikacije</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="127"/>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
-        <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
-        <translation>Idi na &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Postavke&lt;/a&gt; kako bi ponovno omogućio.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="799"/>
-        <source>The added content must be more than 10 words</source>
-        <translation>Dodani sadržaj mora imati više od 10 riječi</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="848"/>
-        <source>Search</source>
-        <translation>Pretraži</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="852"/>
-        <source>Explain</source>
-        <translation>Objasni</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="856"/>
-        <source>Summary</source>
-        <translation>Sažetak</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="860"/>
-        <source>Translate</source>
-        <translation>Prevedi</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="864"/>
-        <source>Continue Writing</source>
-        <translation>Nastavi pisati</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="868"/>
-        <source>Expand</source>
-        <translation>Proširi</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="872"/>
-        <source>Correct</source>
-        <translation>Ispravi</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="880"/>
-        <source>Add to the AI knowledge base</source>
-        <translation>Dodaj u bazu znanja AI</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="107"/>
         <source>Disable in This Application</source>
         <translation>Onemogući u ovoj aplikaciji</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="108"/>
         <source>Disable Globally</source>
         <translation>Onemogući globalno</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="118"/>
         <source>Custom Settings</source>
         <translation>Prilagođene postavke</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="876"/>
+        <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
+        <translation>Idite na &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Postavke&lt;/a&gt; da biste ga ponovno omogućili.</translation>
+    </message>
+    <message>
+        <source>The added content must be more than 10 words</source>
+        <translation>Dodani sadržaj mora imati više od 10 riječi</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Pretraži</translation>
+    </message>
+    <message>
+        <source>Explain</source>
+        <translation>Objasni</translation>
+    </message>
+    <message>
+        <source>Summary</source>
+        <translation>Sažetak</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Prevedi</translation>
+    </message>
+    <message>
+        <source>Continue Writing</source>
+        <translation>Nastavi pisati</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>Proširi</translation>
+    </message>
+    <message>
+        <source>Correct</source>
+        <translation>Ispravi</translation>
+    </message>
+    <message>
         <source>Polish</source>
-        <translation>Poljski</translation>
+        <translation>Uredi</translation>
+    </message>
+    <message>
+        <source>Add to the AI knowledge base</source>
+        <translation>Dodaj u AI bazu znanja</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <source>UOS AI FollowAlong</source>
-        <translation type="vanished">UOS AI FollowAlong</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="656"/>
         <source>Added</source>
         <translation>Dodano</translation>
     </message>
@@ -9146,19 +4939,91 @@ Error details:
 <context>
     <name>uos_ai::WordWizardWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="37"/>
         <source>UOS AI FollowAlong</source>
-        <translation>UOS AI Praćenje</translation>
+        <translation>UOS AI Pratilac</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>
         <source>Automatically display the UOS AI FollowAlong toolbar when text is selected.</source>
-        <translation>Automatski prikaži alatnu traku UOS AI Praćenje kada je tekst odabran.</translation>
+        <translation>Automatski prikaži alatnu traku UOS AI Pratilac kada je odabran tekst.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>
         <source>After closing, the selected text can still be woken up by the shortcut Super+R bar.</source>
-        <translation>Nakon zatvaranja, odabrani tekst se i dalje može probuditi pomoću prečaca Super+R traka.</translation>
+        <translation>Nakon zatvaranja, odabrani tekst se i dalje može aktivirati prečacom Super+R.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::ChatBotCommandHandler</name>
+    <message>
+        <source>Unknown command: %1
+Send /help to see available commands.</source>
+        <translation>Nepoznata naredba: %1
+Pošaljite /help za pregled dostupnih naredbi.</translation>
+    </message>
+    <message>
+        <source>New conversation started.</source>
+        <translation>Pokrenut je novi razgovor.</translation>
+    </message>
+    <message>
+        <source>Conversation history has been cleared.</source>
+        <translation>Povijest razgovora je obrisana.</translation>
+    </message>
+    <message>
+        <source>Available commands:
+  /help   — Show this help message
+  /new    — Start a new conversation (clears current context)
+  /stop   — Cancel the current in-progress request
+  /clear  — Clear all conversation history</source>
+        <translation>Dostupne naredbe:
+  /help   — Prikaži ovu poruku pomoći
+  /new    — Pokreni novi razgovor (briše trenutni kontekst)
+  /stop   — Otkaži trenutni zahtjev u tijeku
+  /clear  — Obriši svu povijest razgovora</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::ChatBotRequestProcessor</name>
+    <message>
+        <source>No model found. Please configure a model first.</source>
+        <translation>Model nije pronađen. Molimo konfigurirajte model prvo.</translation>
+    </message>
+    <message>
+        <source>AI request failed</source>
+        <translation>Neuspjeli AI zahtjev</translation>
+    </message>
+    <message>
+        <source>Request timed out, please try again</source>
+        <translation>Zahtjev je istekao, pokušajte ponovno</translation>
+    </message>
+    <message>
+        <source>No active request to stop.</source>
+        <translation>Nema aktivnog zahtjeva za zaustavljanje.</translation>
+    </message>
+    <message>
+        <source>Request cancelled.</source>
+        <translation>Zahtjev je otkazan.</translation>
+    </message>
+    <message>
+        <source>Calling tool: %1</source>
+        <translation>Pozivanje alata: %1</translation>
+    </message>
+    <message>
+        <source>Tool call failed: %1</source>
+        <translation>Neuspjeli poziv alata: %1</translation>
+    </message>
+    <message>
+        <source>AI error (code: %1)</source>
+        <translation>AI pogreška (kôd: %1)</translation>
+    </message>
+    <message>
+        <source>Platform error, request cancelled: %1</source>
+        <translation>Pogreška platforme, zahtjev otkazan: %1</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::FeishuChannel</name>
+    <message>
+        <source>Thinking...</source>
+        <translation>Razmišljanje...</translation>
     </message>
 </context>
 </TS>

@@ -1,4 +1,4 @@
-import { defineComponent, type PropType, computed, watch, ref } from "vue";
+import { defineComponent, type PropType, computed, watch, ref, onMounted, onBeforeUnmount } from "vue";
 import IconButton from "@/components/IconButton";
 import SvgIcon from "@/components/SvgIcon";
 import { DigitalHumanState } from "@/types/DigitalHuman";
@@ -49,6 +49,8 @@ export default defineComponent({
         start: null,
         // 停止按钮点击事件
         stop: null,
+        // Enter 键点击事件
+        enter: null,
         // 操作被取消信号
         operationCanceled: () => {
             return true;
@@ -212,6 +214,23 @@ export default defineComponent({
                 emit("stop");
             }
         };
+
+        // 处理 Enter 键发送事件（仅在 Listen 状态下触发）
+        const handleKeyDownCapture = (e: KeyboardEvent) => {
+            if (props.state !== DigitalHumanState.Listen) return;
+            if (e.key === "Enter" && !e.shiftKey && !e.ctrlKey && !e.altKey && !e.metaKey) {
+                e.preventDefault();
+                emit("enter", DigitalHumanState.Listen);
+            }
+        };
+
+        onMounted(() => {
+            window.addEventListener("keydown", handleKeyDownCapture, { capture: true });
+        });
+
+        onBeforeUnmount(() => {
+            window.removeEventListener("keydown", handleKeyDownCapture, true);
+        });
 
         // 根据状态获取状态文本
         const getStateText = () => {

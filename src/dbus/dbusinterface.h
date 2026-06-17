@@ -83,6 +83,21 @@ public Q_SLOTS:
     Q_SCRIPTABLE void launchChatPage(int index = 0);
 
     /**
+     * @brief Raise the chat window with an optional XDG activation token.
+     *
+     * The token is expected to be a short-lived value obtained by the caller
+     * for the current user interaction. It is only applied to
+     * XDG_ACTIVATION_TOKEN immediately before activating the window and must
+     * not be persisted or logged by the service.
+     *
+     * Callers should use launchChatPage when no valid activation token is
+     * available.
+     *
+     * This function was added in v3.0.
+     */
+    Q_SCRIPTABLE void launchChatPageWithToken(int index, const QString &token);
+
+    /**
      * @brief LLM Configuration dialog box pops up.
      * This function was added in v1.0
      * @param openAddAccountDialog Add llm dialog opens immediately after launch

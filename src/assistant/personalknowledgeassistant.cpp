@@ -76,7 +76,7 @@ QVariantHash PersonalKnowledgeAssistant::run()
 
     QVariantHash modelParams;
     modelParams[STR_KEY_STREAM] = true;
-    modelParams[STR_KEY_THINKING] = m_parameters.value(STR_KEY_THINKING);
+    modelParams[STR_KEY_THINKING] = m_parameters.value(STR_KEY_THINKING, false).toBool();
     agent->setModelParams(modelParams);
 
     QList<ModelMessage> historyMsg;

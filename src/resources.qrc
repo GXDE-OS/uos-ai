@@ -187,5 +187,6 @@
         <file>../assets/assistants/ai-writing/writing-templates/icons/industry.svg</file>
         <file>../assets/assistants/ai-writing/writing-templates/icons/tech.svg</file>
         <file>../assets/app/deepin-app-infos.json</file>
+        <file>../assets/agent/Readbody.js</file>
     </qresource>
 </RCC>

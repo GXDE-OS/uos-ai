@@ -28,7 +28,7 @@ QString BaiduSearch::getApiKey()
 {
     auto defEnv = UosInfo()->pureEnvironment();
     // Using the key provided in the python example as default
-    QString defaultKey = "bce-v3/ALTAK-ZKb1J0NginiV0cDccUQe1/5a2a64f505bc36a5b8e37843c8a24d112fed9a88";
+    QString defaultKey = "bce-v3/ALTAK-Xr4uS1tkM500HqkkbrXnZ/3cb370e143294753a0ddbee89840e51e76dce1d9";
     QString apiKey = defEnv.value("BAIDU_SEARCH_API_KEY", defaultKey);
 
     return apiKey;
@@ -82,6 +82,7 @@ QJsonArray BaiduSearch::search(const QString &query, int maxResults)
     timer.setInterval(60000); // 60s timeout
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
     connect(&timer, &QTimer::timeout, reply, &QNetworkReply::abort);
+    connect(this, &SearchEngine::requestAbort, reply, &QNetworkReply::abort);
     timer.start();
     loop.exec();
     timer.stop();

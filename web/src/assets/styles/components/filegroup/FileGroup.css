@@ -144,6 +144,45 @@ html.dark {
     height: 100%;
 }
 
+.file-group__image-mask {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: var(--radius-normal);
+    background-color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.file-group__image-warning-icon,
+.file-group__image-loading-icon {
+    position: absolute;
+    right: -6px;
+    bottom: -6px;
+    z-index: 2;
+    width: 21px;
+    height: 21px;
+    pointer-events: none;
+}
+
+.file-group__image-warning-icon .svg-icon,
+.file-group__image-loading-icon .svg-icon {
+    display: block;
+}
+
+.file-group__image-loading-icon .svg-icon {
+    animation: file-group-spin 0.8s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes file-group-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* Small mode container */
 .file-group__image--small {
     width: 52px;
@@ -157,8 +196,8 @@ html.dark {
 
 /* Small mode image */
 .file-group__image-file--small {
-    min-width: 52px;
-    min-height: 52px;
+    min-width: 50px;
+    min-height: 50px;
     max-width: 52px;
     max-height: 52px;
     object-position: center;
@@ -169,6 +208,7 @@ html.dark {
     position: absolute;
     top: -7px;
     right: -7px;
+    z-index: 3;
     opacity: 0;
     visibility: hidden;
     transition:

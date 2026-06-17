@@ -36,6 +36,10 @@ export default defineComponent({
             type: Boolean,
             default: false,
         },
+        sendBlockedReason: {
+            type: String,
+            default: "",
+        },
         // 是否禁用
         disabled: {
             type: Boolean,
@@ -123,6 +127,8 @@ export default defineComponent({
 
         const assistantViewConfig = inject(ASSISTANT_VIEW_CONFIG_KEY);
         const currentModel = computed(() => modelInfosStore.getCurrentModel);
+        const isSendBlocked = computed(() => props.sendBlockedReason.trim().length > 0);
+        const isSendButtonDisabled = computed(() => props.disabled || (!props.canSend && !isSendBlocked.value));
 
         // 深度思考默认开
         const showDeepThink = computed(() => {
@@ -137,15 +143,8 @@ export default defineComponent({
 
         // 联网搜索默认关
         const showSearch = computed(() => {
-            const configEnabled = assistantViewConfig?.value.input?.showSearch ?? 0;
-            if (configEnabled < 1) return false;
-            if (configEnabled === 1) return true;
-
-            const provider = currentModel.value?.provider;
-            if (provider === undefined || provider === null) return false;
-
-            // 免费模型才支持联网搜索
-            return provider === "uos_ai";
+            const configEnabled = assistantViewConfig?.value.input?.showSearch ?? false;
+            return configEnabled;
         });
 
         // 菜单状态
@@ -215,6 +214,8 @@ export default defineComponent({
             addTooltip,
             voiceTooltip,
             webSearchTooltip,
+            isSendBlocked,
+            isSendButtonDisabled,
         };
     },
 
@@ -294,14 +295,19 @@ export default defineComponent({
                     {/* 发送按钮 */}
                     {!this.$props.isSending && this.$props.showSendButton && (
                         <IconButton
-                            class="input-area__send-button"
+                            class={[
+                                "input-area__send-button",
+                                this.isSendBlocked && "input-area__send-button--blocked",
+                                this.isSendBlocked && "icon-button-disabled",
+                            ]}
                             icon="send"
                             iconSize={[16, 16]}
                             size={[30, 30]}
                             shape={ButtonShape.Circle}
                             onClick={this.handleSendClick}
                             tooltip={this.sendTooltip}
-                            disabled={this.$props.disabled || !this.$props.canSend}
+                            disabled={this.isSendButtonDisabled}
+                            aria-disabled={this.isSendBlocked || this.isSendButtonDisabled ? "true" : undefined}
                         />
                     )}
                 </div>

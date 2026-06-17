@@ -12,10 +12,11 @@
 #include "appdatabase.h"
 #include "builtinprovider.h"
 #include "modelvendor.h"
+#include "app/application.h"
 
 #include <DTitlebar>
 #include <DLabel>
-#include <DFontSizeManager>
+
 #include <DDialog>
 #include <DPaletteHelper>
 
@@ -79,14 +80,24 @@ void WelcomeDialog::initUI()
     titleLable->setPaletteColor(QPalette::Text, QPalette::BrightText, 0.9);
     titleLable->setAlignment(Qt::AlignLeft);
     titleLable->setFixedWidth(dialogWidth * 0.87);
-    DFontSizeManager::instance()->bind(titleLable, DFontSizeManager::T3, QFont::Medium);
+    {
+        QFont font;
+        font.setPixelSize(24);
+        font.setWeight(QFont::Medium);
+        titleLable->setFont(font);
+    }
 
     m_pIntroduce = new ThemedLable(tr("UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience."));
     m_pIntroduce->setPaletteColor(QPalette::Text, DPalette::BrightText, 0.7);
     m_pIntroduce->setFixedWidth(dialogWidth * 0.87);
     m_pIntroduce->setAlignment(Qt::AlignLeft);
     m_pIntroduce->setWordWrap(true);
-    DFontSizeManager::instance()->bind(m_pIntroduce, DFontSizeManager::T5, QFont::Normal);
+    {
+        QFont font;
+        font.setPixelSize(16);
+        font.setWeight(QFont::Normal);
+        m_pIntroduce->setFont(font);
+    }
 
     auto labelLayout = new QHBoxLayout();
     labelLayout->setContentsMargins(0, 0, 0, 0);
@@ -98,7 +109,12 @@ void WelcomeDialog::initUI()
     m_pAgrCheckbox->setOpenExternalLinks(true);
     m_pAgrCheckbox->setTextMaxWidth(dialogWidth - 102);
     m_pAgrCheckbox->setFixedWidth(dialogWidth - 72);
-    m_pAgrCheckbox->setFontSize(DFontSizeManager::T8, QFont::Normal);
+    {
+        QFont font;
+        font.setPixelSize(12);
+        font.setWeight(QFont::Normal);
+        m_pAgrCheckbox->setTextFont(font);
+    }
 
     auto agrLayout = new QHBoxLayout();
     agrLayout->setContentsMargins(0, 0, 0, 0);
@@ -116,7 +132,12 @@ void WelcomeDialog::initUI()
     m_pActivity->setFixedWidth(240);
     m_pActivity->setAlignment(Qt::AlignCenter);
     m_pActivity->setWordWrap(true);
-    DFontSizeManager::instance()->bind(m_pActivity, DFontSizeManager::T10, QFont::Medium);
+    {
+        QFont font;
+        font.setPixelSize(10);
+        font.setWeight(QFont::Medium);
+        m_pActivity->setFont(font);
+    }
 
     m_pFreeWidget = new DWidget();
     auto freeLayout = new QVBoxLayout(m_pFreeWidget);
@@ -133,7 +154,12 @@ void WelcomeDialog::initUI()
     m_pAddModel->setText(tr("Add Model"));
     m_pFreeAccount->setDisabled(true);
     m_pAddModel->setDisabled(true);
-    DFontSizeManager::instance()->bind(m_pAddModel, DFontSizeManager::T6, QFont::Normal);
+    {
+        QFont font;
+        font.setPixelSize(14);
+        font.setWeight(QFont::Normal);
+        m_pAddModel->setFont(font);
+    }
 
     m_pStartUsing = new ThemedButton();
     m_pStartUsing->setButtonStyle(ThemedButton::Default);
@@ -185,7 +211,7 @@ void WelcomeDialog::initConnect()
 
     connect(m_pAddModel, &DPushButton::clicked, this, [this ](int state) {
         updateAgree();
-        emit signalShowMgmtWindowAfterChatInitFinished();
+        QMetaObject::invokeMethod(aiApp, "showConfig", Qt::QueuedConnection, Q_ARG(int, MgmtWindow::Page::ModelList));
     });
 
     connect(m_pAddModel, &DPushButton::clicked, this, &WelcomeDialog::accept);
@@ -332,7 +358,7 @@ void WelcomeDialog::onGetFreeAccount()
 
     UosFreeAccount freeAccount;
     int status;
-    QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(1, 82, freeAccount, status);
+    QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(1, 83, freeAccount, status);
 
     m_pFreeAccount->setDisabled(false);
     if (QNetworkReply::NoError == error) {
@@ -380,7 +406,7 @@ void WelcomeDialog::onGetFreeAccount()
         qCInfo(logAIGUI) << "Free account configuration saved successfully";
         emit freeModelAppend();
 
-        dlg.setTitle(tr("Trial account received successfully."));// UOS AI试用账号领取成功！
+        dlg.setTitle(tr("Trial account received successfully."));// 小U同学试用账号领取成功！
 
         if (Util::checkLanguage())
             dlg.setMessage(tr("The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details."));
@@ -431,7 +457,12 @@ DArrowRectangle *WelcomeDialog::showArrowRectangle(DArrowRectangle::ArrowDirecti
     pExpContent->setPalette(pl);
     pExpContent->setForegroundRole(QPalette::Text);
     pExpContent->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
-    DFontSizeManager::instance()->bind(pExpContent, DFontSizeManager::T8, QFont::Medium);
+    {
+        QFont font;
+        font.setPixelSize(12);
+        font.setWeight(QFont::Medium);
+        pExpContent->setFont(font);
+    }
     pExpTips->setContent(pExpContent);
 
     return pExpTips;

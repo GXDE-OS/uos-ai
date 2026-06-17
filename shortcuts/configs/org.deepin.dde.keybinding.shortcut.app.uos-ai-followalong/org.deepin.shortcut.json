@@ -1,0 +1,90 @@
+{
+    "magic": "dsg.config.meta",
+    "version": "1.0",
+    "contents": {
+        "appId": {
+            "value": "org.deepin.dde.shortcut.ai",
+            "serial": 0,
+            "flags": [],
+            "name": "appId",
+            "name[zh_CN]": "提供快捷键应用Id",
+            "description": "provide shortcut app id",
+            "permissions": "",
+            "visibility": "private"
+        },
+        "displayName": {
+            "value": "UOS AI FollowAlong/Write",
+            "serial": 0,
+            "flags": [],
+            "name": "displayName",
+            "name[zh_CN]": "AI随航/写作",
+            "description": "UOS AI FollowAlong/Write",
+            "permissions": "",
+            "visibility": "private"
+        },
+        "hotkeys": {
+            "value": [
+                "Meta+R"
+            ],
+            "serial": 0,
+            "flags": [],
+            "name": "hotkeys",
+            "name[zh_CN]": "快捷键组合",
+            "description": "UOS AI FollowAlong/Write shortcut",
+            "permissions": "readwrite",
+            "visibility": "private"
+        },
+        "triggerType": {
+            "value": 1,
+            "serial": 0,
+            "flags": [],
+            "name": "triggerType",
+            "name[zh_CN]": "快捷键触发动作类型",
+            "description": "command type",
+            "permissions": "",
+            "visibility": "private"
+        },
+        "triggerValue": {
+            "value": [
+                "/usr/bin/uos-ai-assistant", "--wordwizard"
+            ],
+            "serial": 0,
+            "flags": [],
+            "name": "triggerValue",
+            "name[zh_CN]": "快捷键触发动作",
+            "description": "launch UOS AI wordwizard",
+            "permissions": "",
+            "visibility": "private"
+        },
+        "category": {
+            "value": 1,
+            "serial": 0,
+            "flags": [],
+            "name": "category",
+            "name[zh_CN]": "快捷键类别,1:系统",
+            "description": "系统快捷键",
+            "permissions": "",
+            "visibility": "private"
+        },
+        "enabled": {
+            "value": true,
+            "serial": 0,
+            "flags": [],
+            "name": "enabled",
+            "name[zh_CN]": "使能",
+            "description": "是否启用快捷键",
+            "permissions": "readwrite",
+            "visibility": "private"
+        },
+        "modifiable": {
+            "value": true,
+            "serial": 0,
+            "flags": [],
+            "name": "modifiable",
+            "name[zh_CN]": "能否修改快捷键",
+            "description": "用户可修改快捷键",
+            "permissions": "",
+            "visibility": "private"
+        }
+    }
+}

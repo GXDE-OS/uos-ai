@@ -65,7 +65,6 @@ cleanup_manual() {
     log_info "正在清理进程..."
     stop_qt_app
     stop_dev_server
-    stop_mock_server
     restore_root_vue
 }
 
@@ -155,41 +154,6 @@ build_cmake() {
     }
 
     log_success "CMake 项目编译完成"
-}
-
-# 启动 Mock 服务器
-start_mock_server() {
-    log_info "启动 Mock 服务器..."
-    cd "$SCRIPT_DIR"
-
-    # 检查是否已经在运行
-    if pgrep -f "node.*websocket-server.js" > /dev/null; then
-        log_warning "Mock 服务器已在运行，跳过启动"
-        return
-    fi
-
-    # 在后台启动 mock 服务器
-    nohup npm run mock > mock-server.log 2>&1 &
-    MOCK_PID=$!
-    echo $MOCK_PID > mock-server.pid
-    log_success "Mock 服务器已启动 (PID: $MOCK_PID)"
-
-    # 等待服务器启动
-    log_info "等待 Mock 服务器启动..."
-    sleep 2
-}
-
-# 停止 Mock 服务器
-stop_mock_server() {
-    if [ -f "$SCRIPT_DIR/mock-server.pid" ]; then
-        MOCK_PID=$(cat "$SCRIPT_DIR/mock-server.pid")
-        if ps -p $MOCK_PID > /dev/null; then
-            log_info "停止 Mock 服务器 (PID: $MOCK_PID)..."
-            kill $MOCK_PID 2>/dev/null || true
-            rm "$SCRIPT_DIR/mock-server.pid"
-        fi
-    fi
-    pkill -f "node.*websocket-server.js" > /dev/null 2>&1 || true
 }
 
 # 启动 Qt 应用程序
@@ -304,10 +268,6 @@ step1_start_server() {
     log_info "1.2 编译前端代码"
     build_frontend
 
-    # 1.3 npm run mock
-    log_info "1.3 启动 Mock 服务器"
-    start_mock_server
-
     log_success "步骤 1 完成"
 }
 
@@ -359,12 +319,10 @@ step3_debug_mode() {
     log_success "所有调试服务已就绪"
     echo ""
     echo "后台调试服务正在运行："
-    echo "  - Mock 服务器 (PID: $(cat mock-server.pid 2>/dev/null || echo 'N/A'))"
     echo "  - Qt 应用 (PID: $(cat "$PROJECT_ROOT/qt-app.pid" 2>/dev/null || echo 'N/A'))"
     echo "  - 前端调试服务器 (PID: $(cat dev-server.pid 2>/dev/null || echo 'N/A'))"
     echo ""
     echo "日志文件："
-    echo "  - Mock 服务器: mock-server.log"
     echo "  - Qt 应用: $(basename "$PROJECT_ROOT")/qt-app.log"
     echo "  - 前端调试服务器: dev-server.log"
     echo ""
@@ -413,15 +371,13 @@ UOS AI 调试流程脚本
 
 完整调试流程:
     workflow         执行完整调试流程（推荐）
-                     步骤1: 启动 Mock 服务器
-                     步骤2: 编译前端 + CMake 并启动 Qt 应用和聊天界面
-                     步骤3: 启动前端调试服务器
+                     步骤1: 编译前端 + CMake 并启动 Qt 应用和聊天界面
+                     步骤2: 启动前端调试服务器
                      调试完成后执行: $0 clean
 
 单独执行步骤:
-    step1            执行步骤 1（启动 Mock 服务器）
-    step2            执行步骤 2（编译前端和 CMake，启动 Qt 应用）
-    step3            执行步骤 3（启动前端调试服务器）
+    step1            执行步骤 1（编译前端和 CMake，启动 Qt 应用）
+    step2            执行步骤 2（启动前端调试服务器）
 
 其他命令:
     backup           备份原始 Root.vue 文件
@@ -429,8 +385,6 @@ UOS AI 调试流程脚本
     set [mode]       设置指定模式 (prod/mock/devfront)
     build            编译前端代码
     build-cmake      编译 CMake 项目
-    start-mock       启动 Mock 服务器
-    stop-mock        停止 Mock 服务器
     start-qt         启动 Qt 应用
     stop-qt          停止 Qt 应用
     start-dev        启动前端调试服务器
@@ -476,16 +430,6 @@ main() {
             log_warning "前端调试服务器已启动，按 Ctrl+C 结束"
             wait
             ;;
-        start-mock)
-            backup_root_vue
-            start_mock_server
-            log_warning "按 Ctrl+C 停止 Mock 服务器"
-            wait
-            ;;
-        stop-mock)
-            stop_mock_server
-            restore_root_vue
-            ;;
         start-qt)
             build_cmake
             backup_root_vue
@@ -522,10 +466,9 @@ main() {
         clean)
             stop_qt_app
             stop_dev_server
-            stop_mock_server
             restore_root_vue
-            rm -f "$SCRIPT_DIR/mock-server.log" "$SCRIPT_DIR/dev-server.log" "$PROJECT_ROOT/qt-app.log"
-            rm -f "$SCRIPT_DIR/mock-server.pid" "$SCRIPT_DIR/dev-server.pid" "$PROJECT_ROOT/qt-app.pid"
+            rm -f "$SCRIPT_DIR/dev-server.log" "$PROJECT_ROOT/qt-app.log"
+            rm -f "$SCRIPT_DIR/dev-server.pid" "$PROJECT_ROOT/qt-app.pid"
             log_success "清理完成"
             ;;
         set)

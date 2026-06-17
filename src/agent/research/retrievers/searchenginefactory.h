@@ -12,7 +12,8 @@ class SearchEngineFactory
 public:
     enum class EngineType {
         Serper,
-        Baidu
+        Baidu,
+        Volcano
     };
 
     static QSharedPointer<SearchEngine> create(EngineType type);

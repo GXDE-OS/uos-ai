@@ -6,6 +6,8 @@
 #include "meetingassistant.h"
 
 #include <applet.h>
+#include <dock/dappletdock.h>
+#include <dock/dockiteminfo.h>
 
 namespace uos_ai {
 class AIItem
@@ -30,10 +32,9 @@ private:
     QString m_imageFile;
 };
 
-class AiBar : public DS_NAMESPACE::DApplet
+class AiBar : public DS_NAMESPACE::DAppletDock
 {
     Q_OBJECT
-    Q_PROPERTY(bool visible READ visible WRITE setVisible NOTIFY visibleChanged)
 public:
     enum DocType {
         Summary = 0,
@@ -43,8 +44,6 @@ public:
     };
 public:
     explicit AiBar(QObject *parent = nullptr);
-    Q_INVOKABLE bool visible() const;
-    Q_INVOKABLE void setVisible(bool visible);
     Q_INVOKABLE bool isSupportDrop(const QString &file) const;
     Q_INVOKABLE void handleDrop(const QString &file) const;
     Q_INVOKABLE void docAction(int type, const QString &file) const;
@@ -54,13 +53,15 @@ public:
     Q_INVOKABLE void onClickRecommend();
     Q_INVOKABLE MeetingAssistant::MeetAssistantStatus getNowMeetAssistantStatus();
     Q_INVOKABLE void onClickIcon();
+
+    DockItemInfo dockItemInfo();
 Q_SIGNALS:
-    void visibleChanged();
     void sigMeetAssistantStatusChanged(MeetingAssistant::MeetAssistantStatus status);
 
     void dragActivated(const QStringList &urls);
 private:
-    bool m_visible = true;
+    bool isTreelandSession() const;
+    QString launchChatPageByDBus(const QString &activationToken = QString()) const;
     DragMonitor drag;
     UosAiInterface uosai;
     QList<QVariant> m_itemList;

@@ -156,7 +156,9 @@ export default defineComponent({
     setup(props, { emit }) {
         const backend = useBackendStore();
         const description = ref("");
-        const jsonConfig = ref(DEFAULT_JSON_CONFIG);
+        const jsonConfig = ref("");
+        const isJsonWatermarkVisible = ref(true); // JSON 编辑器暗文是否显示
+        const isDescriptionWatermarkVisible = ref(true); // 描述编辑器暗文是否显示
         const localErrorMessage = ref("");
         const jsonEditorRef = ref<HTMLDivElement | null>(null);
         const descriptionEditorRef = ref<HTMLDivElement | null>(null);
@@ -170,7 +172,11 @@ export default defineComponent({
 
         const syncFormState = () => {
             description.value = props.initialDraft?.description || "";
-            jsonConfig.value = props.initialDraft?.jsonConfig || DEFAULT_JSON_CONFIG;
+            const draftConfig = props.initialDraft?.jsonConfig || "";
+            jsonConfig.value = draftConfig;
+            // 有草稿内容时暗文隐藏；无草稿时显示默认暗文
+            isJsonWatermarkVisible.value = !draftConfig;
+            isDescriptionWatermarkVisible.value = !description.value;
             localErrorMessage.value = "";
             void nextTick(() => {
                 syncEditableFields();
@@ -196,12 +202,15 @@ export default defineComponent({
         const handleDescriptionInput = (event: Event) => {
             const currentTarget = event.currentTarget as HTMLDivElement | null;
             description.value = getEditablePlainText(currentTarget);
+            isDescriptionWatermarkVisible.value = !description.value;
         };
 
         const handleConfigInput = (event: Event) => {
             const currentTarget = event.currentTarget as HTMLDivElement | null;
             jsonConfig.value = getEditablePlainText(currentTarget);
             localErrorMessage.value = "";
+            // 用户首次输入时隐藏暗文；如果用户输入后内容恰好等于默认模板，恢复暗文样式
+            isJsonWatermarkVisible.value = !jsonConfig.value;
         };
 
         const handlePlainTextPaste = (
@@ -253,6 +262,7 @@ export default defineComponent({
                 (currentTarget) => {
                     jsonConfig.value = getEditablePlainText(currentTarget);
                     localErrorMessage.value = "";
+                    isJsonWatermarkVisible.value = !jsonConfig.value;
                 },
                 jsonScrollBarRef.value,
             );
@@ -263,6 +273,7 @@ export default defineComponent({
                 event,
                 (currentTarget) => {
                     description.value = getEditablePlainText(currentTarget);
+                    isDescriptionWatermarkVisible.value = !description.value;
                 },
                 descriptionScrollBarRef.value,
             );
@@ -287,6 +298,30 @@ export default defineComponent({
                 },
                 descriptionScrollBarRef.value,
             );
+        };
+
+        const focusEditor = (editorRef: typeof jsonEditorRef) => {
+            editorRef.value?.focus();
+        };
+
+        const handleJsonShellClick = (event: MouseEvent) => handleShellMouseDown(event, jsonEditorRef);
+        const handleDescriptionShellClick = (event: MouseEvent) => handleShellMouseDown(event, descriptionEditorRef);
+
+        // 阻止点击编辑器时事件冒泡到 shell，避免先失焦再聚焦导致闪烁
+        const handleEditorClick = (event: MouseEvent) => {
+            event.stopPropagation();
+        };
+
+        // mousedown 阶段阻止冒泡，避免 preventDefault 阻止文本选择
+        const handleEditorMouseDown = (event: MouseEvent) => {
+            event.stopPropagation();
+        };
+
+        // mousedown 阶段就聚焦，避免 click 阶段编辑器已失焦导致闪烁
+        const handleShellMouseDown = (event: MouseEvent, editorRef: typeof jsonEditorRef) => {
+            // 阻止浏览器默认的 focus 行为（点击 shell 会让当前焦点元素失焦）
+            event.preventDefault();
+            editorRef.value?.focus();
         };
 
         const validateJsonConfig = () => {
@@ -359,12 +394,19 @@ export default defineComponent({
             handleDescriptionKeyDown,
             descriptionText,
             jsonConfigText,
+            isJsonWatermarkVisible,
+            isDescriptionWatermarkVisible,
+            isDefaultJsonConfig: computed(() => jsonConfig.value === DEFAULT_JSON_CONFIG),
             jsonConfigHintText,
             descriptionPlaceholder,
             jsonEditorRef,
             descriptionEditorRef,
             jsonScrollBarRef,
             descriptionScrollBarRef,
+            handleJsonShellClick,
+            handleDescriptionShellClick,
+            handleEditorClick,
+            handleEditorMouseDown,
         };
     },
 
@@ -397,6 +439,7 @@ export default defineComponent({
                             "mcp-service-editor-dialog__editor-shell",
                             "mcp-service-editor-dialog__editor-shell--json",
                         ]}
+                        onMousedown={this.handleJsonShellClick}
                     >
                         <ScrollBar
                             ref="jsonScrollBarRef"
@@ -410,15 +453,20 @@ export default defineComponent({
                                     "mcp-service-editor-dialog__editor",
                                     "mcp-service-editor-dialog__editor--json",
                                     !this.jsonConfig && "mcp-service-editor-dialog__editor--empty",
+                                    this.isJsonWatermarkVisible && "mcp-service-editor-dialog__editor--watermark",
+                                    this.isDefaultJsonConfig && "mcp-service-editor-dialog__editor--default",
                                 ]}
                                 contenteditable="true"
                                 data-placeholder=""
+                                data-watermark={DEFAULT_JSON_CONFIG}
                                 role="textbox"
                                 aria-multiline="true"
                                 spellcheck={false}
                                 onInput={this.handleConfigInput}
                                 onKeydown={this.handleConfigKeyDown}
                                 onPaste={this.handleConfigPaste}
+                                onClick={this.handleEditorClick}
+                                onMousedown={this.handleEditorMouseDown}
                             />
                         </ScrollBar>
                     </div>
@@ -431,6 +479,7 @@ export default defineComponent({
                             "mcp-service-editor-dialog__editor-shell",
                             "mcp-service-editor-dialog__editor-shell--description",
                         ]}
+                        onMousedown={this.handleDescriptionShellClick}
                     >
                         <ScrollBar
                             ref="descriptionScrollBarRef"
@@ -443,15 +492,17 @@ export default defineComponent({
                                 class={[
                                     "mcp-service-editor-dialog__editor",
                                     "mcp-service-editor-dialog__editor--description",
-                                    !this.description && "mcp-service-editor-dialog__editor--empty",
+                                    this.isDescriptionWatermarkVisible && "mcp-service-editor-dialog__editor--watermark",
                                 ]}
                                 contenteditable="true"
-                                data-placeholder={this.descriptionPlaceholder}
+                                data-watermark={this.descriptionPlaceholder}
                                 role="textbox"
                                 aria-multiline="true"
                                 onInput={this.handleDescriptionInput}
                                 onKeydown={this.handleDescriptionKeyDown}
                                 onPaste={this.handleDescriptionPaste}
+                                onClick={this.handleEditorClick}
+                                onMousedown={this.handleEditorMouseDown}
                             />
                         </ScrollBar>
                     </div>

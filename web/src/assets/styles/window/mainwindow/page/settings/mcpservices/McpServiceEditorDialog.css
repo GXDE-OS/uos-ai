@@ -27,16 +27,24 @@ html.dark {
     height: min(416px, calc(100vh - 32px));
     max-height: calc(100vh - 32px);
     border-radius: var(--radius-large);
-    box-shadow:
+    box-shadow: var(
+        --mcp-service-editor-dialog-shadow,
         0 0 0 0.5px inset rgba(255, 255, 255, 0.2),
         0 0 0 0.5px rgba(255, 255, 255, 0.2),
         0 0 0 0.5px rgba(0, 0, 0, 0.1),
         0 0 0 0.5px rgba(0, 0, 0, 0.1),
-        0 8px 20px 0 rgba(0, 0, 0, 0.2);
+        0 8px 20px 0 rgba(0, 0, 0, 0.2)
+    );
 }
 
 .dialog.mcp-service-editor-dialog.dialog--blur {
     backdrop-filter: blur(45px);
+}
+
+/* Qt5 兼容降级：移除 inset、0.5px → 1px、去重 */
+html[data-legacy-css] {
+    --mcp-service-editor-dialog-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 8px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .dialog.mcp-service-editor-dialog .dialog__app-icon {
@@ -123,6 +131,7 @@ html.dark {
     background: var(--mcp-service-editor-textarea-bg-color);
     overflow: hidden;
     box-sizing: border-box;
+    cursor: text;
 }
 
 .mcp-service-editor-dialog__editor-shell:focus-within {
@@ -179,20 +188,39 @@ html.dark {
     padding: 5px 18px 5px 10px;
 }
 
-.mcp-service-editor-dialog__editor--empty::before {
-    content: attr(data-placeholder);
-    color: var(--mcp-service-editor-placeholder-color);
-    pointer-events: none;
+.mcp-service-editor-dialog__editor--json {
+    tab-size: 4;
 }
 
-.mcp-service-editor-dialog__editor--description.mcp-service-editor-dialog__editor--empty::before {
+/* 描述编辑器暗文水印：与 JSON 编辑器一致的 ::after 实现 */
+.mcp-service-editor-dialog__editor--description.mcp-service-editor-dialog__editor--watermark::after {
+    padding: 5px 18px 5px 10px;
     font-size: var(--uosai-font-size-base);
     font-weight: 400;
     font-style: normal;
 }
 
-.mcp-service-editor-dialog__editor--json {
-    tab-size: 4;
+/* 暗文水印：纯视觉提示，不可选中、不可交互 */
+.mcp-service-editor-dialog__editor--watermark::after {
+    content: attr(data-watermark);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 20px 0px 12px;
+    color: var(--mcp-service-editor-placeholder-color);
+    pointer-events: none;
+    user-select: none;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: var(--uosai-font-size-xs);
+    line-height: 20px;
+    min-height: 100%; /* 撑满父元素高度 */
+}
+
+/* 用户输入的内容恰好等于默认模板时，显示暗文样式 */
+.mcp-service-editor-dialog__editor--default {
+    color: var(--mcp-service-editor-placeholder-color);
 }
 
 /* .mcp-service-editor-dialog__editor-scroll .scroll-bar-thumb {

@@ -2,4388 +2,709 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="ca">
 <context>
-    <name>AddModelDialog</name>
-    <message>
-        <source>Add model</source>
-        <translation type="vanished">Afegeix model</translation>
-    </message>
-    <message>
-        <source>LLM</source>
-        <translation type="vanished">LLM</translation>
-    </message>
-    <message>
-        <source>APPID</source>
-        <translation type="vanished">APPID</translation>
-    </message>
-    <message>
-        <source>Required, please input</source>
-        <translation type="vanished">Obligatori, si us plau introdueix</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">Clau d&apos;API</translation>
-    </message>
-    <message>
-        <source>APISecret</source>
-        <translation type="vanished">Secret d&apos;API</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Compte</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Obligatori, per distingir múltiples models</translation>
-    </message>
-    <message>
-        <source>Optional</source>
-        <translation type="vanished">Opcional</translation>
-    </message>
-    <message>
-        <source>Optional. The default address will be used if not filled in.</source>
-        <translation type="vanished">Opcional. S&apos;utilitzarà l&apos;adreça per defecte si no s&apos;omple.</translation>
-    </message>
-    <message>
-        <source>Models List</source>
-        <translation type="vanished">Llista de models</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="vanished">Personalitzat</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">No s&apos;ha pogut connectar al servidor, si us plau comprova la teva xarxa o torna-ho a provar més tard.</translation>
-    </message>
-    <message>
-        <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="vanished">Per configurar el proxy, si us plau ves a la configuració del proxy del sistema</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Ves a configuració</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Cancel·la</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Nom del model</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Domini</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Confirma</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">No s&apos;ha pogut desar, si us plau torna-ho a provar més tard</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">El nom del compte ja existeix, si us plau canvia&apos;l</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">No més de 20 caràcters</translation>
-    </message>
-    <message>
-        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="vanished">Per provar si el model està disponible, el sistema envia informació de prova al model gran, cosa que consumirà una petita quantitat de tokens.</translation>
-    </message>
-    <message>
-        <source>This LLM already exists, please do not add it again.</source>
-        <translation type="vanished">Aquest LLM ja existeix, si us plau no l&apos;afegeixis de nou.</translation>
-    </message>
-</context>
-<context>
-    <name>AiCodeTranslation</name>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Actualment hi ha massa visitants, si us plau torna-ho a provar més tard.</translation>
-    </message>
-</context>
-<context>
-    <name>AiQuickDialog</name>
-    <message>
-        <source>type</source>
-        <translation type="vanished">tipus</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Cancel·la</translation>
-    </message>
-    <message>
-        <source>Read Aloud</source>
-        <translation type="vanished">Llegeix en veu alta</translation>
-    </message>
-    <message>
-        <source>The audio device is not detected, please check and try again.</source>
-        <translation type="vanished">No s&apos;ha detectat el dispositiu d&apos;àudio, si us plau comprova-ho i torna-ho a provar.</translation>
-    </message>
-    <message>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="vanished">El contingut generat per la IA és només per a referència, si us plau presta atenció a l&apos;exactitud de la informació.</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="vanished">Còpia</translation>
-    </message>
-    <message>
-        <source>Polish this passage for me and just give me the result without any extra content.
-text：</source>
-        <translation type="vanished">Polir aquest passatge per a mi i només donar-me el resultat sense cap contingut addicional.
-
-text：</translation>
-    </message>
-    <message>
-        <source>Current model: </source>
-        <translation type="vanished">Model actual: </translation>
-    </message>
-    <message>
-        <source>Regenerate</source>
-        <translation type="vanished">Regenerar</translation>
-    </message>
-    <message>
-        <source>simplified Chinese</source>
-        <translation type="vanished">xinès simplificat</translation>
-    </message>
-    <message>
-        <source>traditional Chinese</source>
-        <translation type="vanished">xinès tradicional</translation>
-    </message>
-    <message>
-        <source>Tibetan</source>
-        <translation type="vanished">tibetà</translation>
-    </message>
-    <message>
-        <source>English</source>
-        <translation type="vanished">anglès</translation>
-    </message>
-    <message>
-        <source>Japanese </source>
-        <translation type="vanished">japonès</translation>
-    </message>
-    <message>
-        <source>German</source>
-        <translation type="vanished">alemany</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation type="vanished">espanyol</translation>
-    </message>
-    <message>
-        <source>French</source>
-        <translation type="vanished">francès</translation>
-    </message>
-    <message>
-        <source>Italian</source>
-        <translation type="vanished">italià</translation>
-    </message>
-    <message>
-        <source>Korean</source>
-        <translation type="vanished">coreà</translation>
-    </message>
-    <message>
-        <source>Malay</source>
-        <translation type="vanished">malai</translation>
-    </message>
-    <message>
-        <source>Portuguese</source>
-        <translation type="vanished">portuguès</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation type="vanished">rus</translation>
-    </message>
-    <message>
-        <source>Thai</source>
-        <translation type="vanished">tailandès</translation>
-    </message>
-    <message>
-        <source>Vietnamese</source>
-        <translation type="vanished">vietnamita</translation>
-    </message>
-    <message>
-        <source>Continue Dialog</source>
-        <translation type="vanished">Continuar Diàleg</translation>
-    </message>
-    <message>
-        <source>Automatic Detection</source>
-        <translation type="vanished">Detecció Automàtica</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Cercar</translation>
-    </message>
-    <message>
-        <source>Explain</source>
-        <translation type="vanished">Explicar</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation type="vanished">Traduir</translation>
-    </message>
-    <message>
-        <source>Expand</source>
-        <translation type="vanished">Ampliar</translation>
-    </message>
-    <message>
-        <source>Correct</source>
-        <translation type="vanished">Corregir</translation>
-    </message>
-    <message>
-        <source>Add to the AI knowledge base</source>
-        <translation type="vanished">Afegeix a la base de coneixements de la IA</translation>
-    </message>
-    <message>
-        <source>Added</source>
-        <translation type="vanished">Afegit</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Configuració del Model</translation>
-    </message>
-    <message>
-        <source>Copied</source>
-        <translation type="vanished">Copiat</translation>
-    </message>
-    <message>
-        <source>No text recognized.</source>
-        <translation type="vanished">No s&apos;ha reconegut cap text.</translation>
-    </message>
-    <message>
-        <source>The added content must be more than 10 words</source>
-        <translation type="vanished">El contingut afegit ha de tenir més de 10 paraules</translation>
-    </message>
-    <message>
-        <source>Summary</source>
-        <translation type="vanished">Resum</translation>
-    </message>
-    <message>
-        <source>Paste to Text</source>
-        <translation type="vanished">Enganxar al Text</translation>
-    </message>
-    <message>
-        <source>Continue writing</source>
-        <translation type="vanished">Continua escrivint</translation>
-    </message>
-    <message>
-        <source>Polish</source>
-        <translation type="vanished">Polir</translation>
-    </message>
-    <message>
-        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation type="vanished">El resultat de la traducció està limitat per les capacitats del model. Si no esteu satisfet amb la traducció, canvieu a altres models a la pàgina d&apos;inici de UOS AI.</translation>
-    </message>
-    <message>
-        <source>Translate this passage into %1 and give me a clear result directly.
-text：</source>
-        <translation type="vanished">Tradueix aquest passatge a %1 i dóna&apos;m un resultat clar directament.
-text：</translation>
-    </message>
-    <message>
-        <source>Not clickable</source>
-        <translation type="vanished">No es pot fer clic</translation>
-    </message>
-    <message>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation type="vanished">La funció només es pot utilitzar després de reiniciar el mètode d&apos;entrada. El tutorial és el següent:
-
-1. Feu clic amb el botó dret a la icona del mètode d&apos;entrada a la barra de tasques.
-
-2. Feu clic a &quot;Reiniciar&quot;.</translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <comment>button</comment>
-        <translation type="vanished">D&apos;acord</translation>
-    </message>
-    <message>
-        <source>Fill failed</source>
-        <translation type="vanished">Ompliment fallit</translation>
-    </message>
-    <message>
-        <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="vanished">No s&apos;ha seleccionat cap quadre d&apos;entrada, seleccioneu el quadre d&apos;entrada i torneu a omplir-lo.</translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <translation type="vanished">D&apos;acord</translation>
-    </message>
-    <message>
-        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
-text：</source>
-        <translation type="vanished">Explica aquest passatge en un llenguatge senzill. Només dóna&apos;m un resultat clar sense contingut redundant.
-
-text：</translation>
-    </message>
-    <message>
-        <source>Summarize this passage and give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="vanished">Resumeix aquest passatge i dóna&apos;m un resultat clar directament sense cap altre contingut redundant.
-
-text：</translation>
-    </message>
-    <message>
-        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="vanished">Continua aquest passatge de manera adequada. No calen moltes paraules. Només dóna&apos;m un resultat clar sense cap altre contingut redundant.
-
-text：</translation>
-    </message>
-    <message>
-        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="vanished">Amplia aquest passatge de manera adequada. No cal un text especialment llarg. Només dóna&apos;m un resultat clar sense cap altre contingut redundant.
-
-text：</translation>
-    </message>
-    <message>
-        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="vanished">Comprova si hi ha errors tipogràfics en aquest passatge. Si n&apos;hi ha, assenyal la ubicació dels errors. Dóna&apos;m un resultat clar directament sense cap altre contingut redundant.
-
-text：</translation>
-    </message>
-    <message>
-        <source> &quot;%1&quot; </source>
-        <translation type="vanished">&quot;%1&quot;</translation>
-    </message>
-    <message>
-        <source>Currently no model</source>
-        <translation type="vanished">Actualment no hi ha cap model</translation>
-    </message>
-    <message>
-        <source>Go to configure  </source>
-        <translation type="vanished">Anar a configurar</translation>
-    </message>
-</context>
-<context>
-    <name>AiToastMessage</name>
-    <message>
-        <source>Chat history cleared</source>
-        <translation type="vanished">Historial de xat esborrat</translation>
-    </message>
-    <message>
-        <source>Copied successfully</source>
-        <translation type="vanished">Copiat amb èxit</translation>
-    </message>
-</context>
-<context>
-    <name>Application</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="vanished">UOS AI és un assistent intel·ligent d&apos;escriptori, el vostre assistent personal! Podeu comunicar-vos-hi mitjançant text o veu, i pot ajudar a respondre preguntes, proporcionar informació i generar imatges basades en les vostres descripcions.</translation>
-    </message>
-    <message>
-        <source>UOS AI FollowAlong/Write</source>
-        <translation type="vanished">UOS AI FollowAlong/Escriure</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Gestió de la base de coneixement</translation>
-    </message>
-</context>
-<context>
     <name>AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="146"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation>No es pot connectar al servidor, comproveu la vostra xarxa o torneu-ho a provar més tard.</translation>
-    </message>
-</context>
-<context>
-    <name>ChatSeesion</name>
-    <message>
-        <source>function parsing failed</source>
-        <translation type="vanished">l&apos;anàlisi de la funció ha fallat</translation>
-    </message>
-    <message>
-        <source>Application file does not exist</source>
-        <translation type="vanished">El fitxer de l&apos;aplicació no existeix</translation>
-    </message>
-    <message>
-        <source>Started successfully</source>
-        <translation type="vanished">Iniciat amb èxit</translation>
-    </message>
-    <message>
-        <source>Startup failed</source>
-        <translation type="vanished">Inici fallit</translation>
-    </message>
-    <message>
-        <source> The execution output content is </source>
-        <translation type="vanished">El contingut de sortida de l&apos;execució és</translation>
-    </message>
-</context>
-<context>
-    <name>ChatWindow</name>
-    <message>
-        <source>Mode</source>
-        <translation type="vanished">Mode</translation>
-    </message>
-    <message>
-        <source>Window Mode</source>
-        <translation type="vanished">Mode finestra</translation>
-    </message>
-    <message>
-        <source>Sidebar Mode</source>
-        <translation type="vanished">Mode barra lateral</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Configuració</translation>
-    </message>
-    <message>
-        <source>Update Log</source>
-        <translation type="vanished">Registre d&apos;actualitzacions</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Conversa de veu</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Cancel·lar</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Eliminar</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Confirmar</translation>
-    </message>
-    <message>
-        <source>Confirm deletion %1?</source>
-        <translation type="vanished">Confirmeu l&apos;eliminació %1?</translation>
-    </message>
-    <message>
-        <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation type="vanished">Després de l&apos;eliminació, aquest servidor no estarà disponible. Procediu amb precaució.</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="obsolete">Actualitzar</translation>
-    </message>
-    <message>
-        <source>Non-vectorized plugin</source>
-        <translation type="vanished">Connector no vectoritzat</translation>
-    </message>
-    <message>
-        <source>Before using the [AI Knowledge Base], you need to install the vectorization plugin first, so that the AI knowledge base function can work properly.</source>
-        <translation type="vanished">Abans d&apos;utilitzar la [Base de coneixements de la IA], cal instal·lar primer el connector de vectorització perquè la funció de la base de coneixements de la IA pugui funcionar correctament.</translation>
-    </message>
-    <message>
-        <source>Install</source>
-        <translation type="obsolete">Instal·lar</translation>
-    </message>
-    <message>
-        <source>The knowledge base is empty</source>
-        <translation type="vanished">La base de coneixements està buida</translation>
-    </message>
-    <message>
-        <source>Before using the [AI Knowledge Base], you need to first add documents to the knowledge base. After adding, the AI will answer questions based on the content you have added to the knowledge base.</source>
-        <translation type="vanished">Abans d&apos;utilitzar la [Base de coneixements de la IA], heu d&apos;afegir primer documents a la base de coneixements. Un cop afegits, la IA respondrà a les preguntes basant-se en el contingut que heu afegit.</translation>
-    </message>
-    <message>
-        <source>Add Files</source>
-        <translation type="vanished">Afegeix fitxers</translation>
-    </message>
-    <message>
-        <source>The following file has expired and cannot be used. Continue?</source>
-        <translation type="vanished">El fitxer següent ha caducat i no es pot utilitzar. Voleu continuar?</translation>
-    </message>
-    <message>
-        <source>Use later</source>
-        <translation type="vanished">Utilitza-ho més tard</translation>
-    </message>
-    <message>
-        <source>Install Now</source>
-        <translation type="vanished">Instal·la ara</translation>
-    </message>
-    <message>
-        <source>MCP environment missing</source>
-        <translation type="vanished">Falta l&apos;entorn MCP</translation>
-    </message>
-    <message>
-        <source>Please go to the App Store to install UOS AI Agent</source>
-        <translation type="vanished">Aneu a la Botiga d&apos;aplicacions per instal·lar l&apos;Agent UOS AI</translation>
-    </message>
-    <message>
-        <source>Not Now</source>
-        <translation type="vanished">Ara no</translation>
-    </message>
-    <message>
-        <source>Claim Credits</source>
-        <translation type="vanished">Reclama crèdits</translation>
-    </message>
-    <message>
-        <source>Free Credits Delivered</source>
-        <translation type="vanished">Crèdits gratuïts entregats</translation>
-    </message>
-    <message>
-        <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation type="vanished">Has esgotat els crèdits gratuïts de generació del teu compte de prova. T&apos;hem donat 200 crèdits gratuïts addicionals vàlids aquest mes. Explora més funcions i desbloqueja les capacitats il·limitades de la IA UOS!</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">D&apos;acord</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="vanished">Reclamat amb èxit</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="vanished">No s&apos;ha pogut reclamar. Si us plau, torna-ho a provar.</translation>
-    </message>
-    <message>
-        <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="vanished">UOS AI és un assistent intel·ligent d&apos;escriptori, el vostre assistent personal! Podeu comunicar-vos-hi mitjançant text o veu, i pot ajudar a respondre preguntes, proporcionar informació i generar imatges basades en les vostres descripcions.</translation>
-    </message>
-    <message>
-        <source>Filing Information</source>
-        <translation type="vanished">Informació d&apos;arxivament</translation>
-    </message>
-</context>
-<context>
-    <name>CodeTranslation360</name>
-    <message>
-        <source>Authentication failed, insufficient balance</source>
-        <translation type="vanished">Autenticació fallida, saldo insuficient</translation>
-    </message>
-    <message>
-        <source>Authentication failed, daily limit exceeded</source>
-        <translation type="vanished">Autenticació fallida, límit diari excedit</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Actualment hi ha massa visitants, torneu-ho a provar més tard.</translation>
-    </message>
-    <message>
-        <source>The service is abnormal. Please contact the development team for troubleshooting.</source>
-        <translation type="vanished">El servei és anormal. Poseu-vos en contacte amb l&apos;equip de desenvolupament per solucionar problemes.</translation>
-    </message>
-</context>
-<context>
-    <name>CommonFailDialog</name>
-    <message>
-        <source>Error</source>
-        <translation type="vanished">Error</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <comment>button</comment>
-        <translation type="vanished">D&apos;acord</translation>
+        <translation>No s&apos;ha pogut connectar al servidor, comproveu la vostra xarxa o torneu-ho a provar més tard.</translation>
     </message>
 </context>
 <context>
     <name>DocParse</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/docparse.cpp" line="24"/>
         <source>The document content is invalid or empty.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>EAiExecutor</name>
-    <message>
-        <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation type="vanished">L&apos;Assistent de Coneixement Personal només es pot utilitzar després de configurar la base de coneixements.</translation>
-    </message>
-    <message>
-        <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">L&apos;Assistent de Coneixement Personal només es pot utilitzar després de configurar el connector del model.</translation>
-    </message>
-    <message>
-        <source>The Deep System Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">L&apos;Assistent de Sistema Profund només es pot utilitzar després de configurar el connector del model.</translation>
-    </message>
-    <message>
-        <source>The UOS System  Assistant can only be used after configuring the model plug.</source>
-        <translation type="vanished">L&apos;Assistent del Sistema UOS només es pot utilitzar després de configurar el connector del model.</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Gestió de la base de coneixements</translation>
-    </message>
-    <message>
-        <source>MCP Server</source>
-        <translation type="obsolete">Servidor MCP</translation>
-    </message>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI requereix que es configuri un compte de model d&apos;IA abans de poder-lo utilitzar. Configureu primer un compte de model.</translation>
-    </message>
-    <message>
-        <source>Please configure the knowledge base.</source>
-        <translation type="vanished">Configureu la base de coneixements.</translation>
-    </message>
-    <message>
-        <source>Please install the model plug.</source>
-        <translation type="vanished">Instal·leu el connector del model.</translation>
-    </message>
-    <message>
-        <source>Export Image As</source>
-        <translation type="vanished">Exportar imatge com</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="obsolete">Reclamat amb èxit</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="obsolete">No s&apos;ha pogut reclamar. Si us plau, torna-ho a provar.</translation>
-    </message>
-    <message>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="vanished">Podeu penjar fins a 3 fitxers o imatges</translation>
-    </message>
-</context>
-<context>
-    <name>EAiFAQInit</name>
-    <message>
-        <source>Translate the following text into English for me.</source>
-        <translation type="vanished">Tradueix el següent text a l&apos;anglès per a mi.</translation>
-    </message>
-    <message>
-        <source>Translate the following document into Chinese.</source>
-        <translation type="vanished">Tradueix el següent document al xinès.</translation>
-    </message>
-    <message>
-        <source>What does the word “Agent” mean in the AI industry?</source>
-        <translation type="vanished">Què significa la paraula &quot;Agent&quot; en la indústria de la IA?</translation>
-    </message>
-    <message>
-        <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation type="vanished">Si us plau, tradueix el següent contingut al xinès. Requisits: Precís en el significat, formal i professional en el llenguatge.</translation>
-    </message>
-    <message>
-        <source>What are some colloquial ways to address a friend in English?</source>
-        <translation type="vanished">Quines són algunes maneres col·loquials de dirigir-se a un amic en anglès?</translation>
-    </message>
-    <message>
-        <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation type="vanished">Tradueix el següent text clàssic xinès al xinès modern.</translation>
-    </message>
-    <message>
-        <source>Summarize</source>
-        <translation type="vanished">Resumir</translation>
-    </message>
-    <message>
-        <source>Proofread</source>
-        <translation type="vanished">Correcció</translation>
-    </message>
-    <message>
-        <source>Explain</source>
-        <translation type="vanished">Explicar</translation>
-    </message>
-    <message>
-        <source>Expand</source>
-        <translation type="vanished">Ampliar</translation>
-    </message>
-    <message>
-        <source>Continue</source>
-        <translation type="vanished">Continuar</translation>
-    </message>
-    <message>
-        <source>Polish</source>
-        <translation type="vanished">Polir</translation>
-    </message>
-    <message>
-        <source>Please help me write a work summary based on this document</source>
-        <translation type="vanished">Si us plau, ajuda&apos;m a escriure un resum de treball basat en aquest document</translation>
-    </message>
-    <message>
-        <source>I need a work summary for Project A, please help me organize the key points</source>
-        <translation type="vanished">Necessito un resum de treball per al Projecte A, si us plau ajuda&apos;m a organitzar els punts clau</translation>
-    </message>
-    <message>
-        <source>Please generate a concise work summary based on my input text</source>
-        <translation type="vanished">Si us plau, genera un resum de treball concís basat en el meu text d&apos;entrada</translation>
-    </message>
-    <message>
-        <source>Analyze this report and extract key points for the work summary</source>
-        <translation type="vanished">Analitza aquest informe i extreu els punts clau per al resum de treball</translation>
-    </message>
-    <message>
-        <source>I need a work summary including quarterly data, please refer to the attachment</source>
-        <translation type="vanished">Necessito un resum de treball que inclogui dades trimestrals, si us plau fes referència a l&apos;adjunt</translation>
-    </message>
-    <message>
-        <source>Help me write a work summary highlighting personal contributions</source>
-        <translation type="vanished">Ajuda&apos;m a escriure un resum de treball que destacui les contribucions personals</translation>
-    </message>
-    <message>
-        <source>Generate a work summary from meeting notes, focusing on action items</source>
-        <translation type="vanished">Genera un resum de treball a partir de les notes de la reunió, centrant-te en els punts d&apos;acció</translation>
-    </message>
-    <message>
-        <source>I need a bilingual work summary in Chinese and English, please refer to the provided materials</source>
-        <translation type="vanished">Necessito un resum de treball bilingüe en xinès i anglès, si us plau fes referència als materials proporcionats</translation>
-    </message>
-    <message>
-        <source>Help me organize last month&apos;s work content and generate a summary</source>
-        <translation type="vanished">Ajuda&apos;m a organitzar el contingut de treball del mes passat i generar un resum</translation>
-    </message>
-    <message>
-        <source>Write a work summary based on these task lists, emphasizing completion status</source>
-        <translation type="vanished">Escriu un resum de treball basat en aquestes llistes de tasques, emfasitzant l&apos;estat de completat</translation>
-    </message>
-    <message>
-        <source>Check for grammatical errors in this passage</source>
-        <translation type="vanished">Comprova els errors gramaticals en aquest passatge</translation>
-    </message>
-    <message>
-        <source>Help me find spelling mistakes in this article</source>
-        <translation type="vanished">Ajuda&apos;m a trobar errors ortogràfics en aquest article</translation>
-    </message>
-    <message>
-        <source>Correct the inappropriate word choices in this dialogue</source>
-        <translation type="vanished">Corregeix les eleccions de paraules inadequades en aquest diàleg</translation>
-    </message>
-    <message>
-        <source>Fix the punctuation issues in this document</source>
-        <translation type="vanished">Arregla els problemes de puntuació en aquest document</translation>
-    </message>
-    <message>
-        <source>Revise the unclear expressions in this text</source>
-        <translation type="vanished">Revisa les expressions poc clares en aquest text</translation>
-    </message>
-    <message>
-        <source>Edit the language errors in this email</source>
-        <translation type="vanished">Edita els errors lingüístics en aquest correu electrònic</translation>
-    </message>
-    <message>
-        <source>Check if this text follows standard English conventions</source>
-        <translation type="vanished">Comprova si aquest text segueix les convencions estàndard de l&apos;anglès</translation>
-    </message>
-    <message>
-        <source>Correct the logical flaws in this report</source>
-        <translation type="vanished">Corregeix les falles lògiques en aquest informe</translation>
-    </message>
-    <message>
-        <source>Identify language errors in this code comment</source>
-        <translation type="vanished">Identifica els errors lingüístics en aquest comentari de codi</translation>
-    </message>
-    <message>
-        <source>Fix the ambiguous statements in this contract</source>
-        <translation type="vanished">Arregla les declaracions ambigües en aquest contracte</translation>
-    </message>
-    <message>
-        <source>Explain the basic principles of quantum computing</source>
-        <translation type="vanished">Explica els principis bàsics de la computació quàntica</translation>
-    </message>
-    <message>
-        <source>Describe photosynthesis in simple terms</source>
-        <translation type="vanished">Descriu la fotosíntesi en termes simples</translation>
-    </message>
-    <message>
-        <source>Detail how blockchain technology works</source>
-        <translation type="vanished">Detalla com funciona la tecnologia blockchain</translation>
-    </message>
-    <message>
-        <source>Explain relativity from a professional perspective</source>
-        <translation type="vanished">Explica la relativitat des d&apos;una perspectiva professional</translation>
-    </message>
-    <message>
-        <source>Use metaphors to describe what artificial intelligence is</source>
-        <translation type="vanished">Utilitza metàfores per descriure què és la intel·ligència artificial</translation>
-    </message>
-    <message>
-        <source>Describe climate change in layman&apos;s terms</source>
-        <translation type="vanished">Descriu el canvi climàtic en termes senzills</translation>
-    </message>
-    <message>
-        <source>Explain the structure of the solar system to elementary students</source>
-        <translation type="vanished">Explica l&apos;estructura del sistema solar a alumnes de primària</translation>
-    </message>
-    <message>
-        <source>Expand this text to 300 words, focusing on scene details and character emotions</source>
-        <translation type="vanished">Amplia aquest text fins a 300 paraules, centrant-te en els detalls de l&apos;escena i les emocions dels personatges</translation>
-    </message>
-    <message>
-        <source>Rewrite this paragraph into 500 words in an academic style, adding data support and citations</source>
-        <translation type="vanished">Reescriu aquest paràgraf en 500 paraules amb un estil acadèmic, afegint suport de dades i citacions</translation>
-    </message>
-    <message>
-        <source>Expand this passage with more metaphors and rhetorical devices to make it more vivid</source>
-        <translation type="vanished">Amplia aquest passatge amb més metàfores i recursos retòrics per fer-lo més viu</translation>
-    </message>
-    <message>
-        <source>Please extend this short article to 1000 words, supplementing with specific cases and practical steps</source>
-        <translation type="vanished">Si us plau, amplia aquest article curt fins a 1000 paraules, complementant amb casos específics i passos pràctics</translation>
-    </message>
-    <message>
-        <source>Expand this dialogue by adding characters&apos; psychological activities and dialogue details</source>
-        <translation type="vanished">Amplia aquest diàleg afegint les activitats psicològiques dels personatges i detalls del diàleg</translation>
-    </message>
-    <message>
-        <source>Rewrite the content of this document into a report format, including abstract, body, and conclusion</source>
-        <translation type="vanished">Reescriu el contingut d&apos;aquest document en format d&apos;informe, incloent resum, cos i conclusió</translation>
-    </message>
-    <message>
-        <source>Expand this technical description to 800 words, adding more technical parameters and diagram explanations</source>
-        <translation type="vanished">Amplia aquesta descripció tècnica fins a 800 paraules, afegint més paràmetres tècnics i explicacions de diagrames</translation>
-    </message>
-    <message>
-        <source>Rewrite this email to be more formal and professional, supplementing relevant background information</source>
-        <translation type="vanished">Reescriu aquest correu electrònic perquè sigui més formal i professional, complementant amb informació de fons rellevant</translation>
-    </message>
-    <message>
-        <source>Expand this story to 1500 words, adding more plot twists and character backgrounds</source>
-        <translation type="vanished">Amplia aquesta història fins a 1500 paraules, afegint més girs argumentals i antecedents dels personatges</translation>
-    </message>
-    <message>
-        <source>Please expand this summary, highlighting key achievements and future plans, word count unlimited</source>
-        <translation type="vanished">Si us plau, amplia aquest resum, destacant els assoliments clau i els plans futurs, sense límit de paraules</translation>
-    </message>
-    <message>
-        <source>Please continue writing this short passage about future technology, focusing on how AI changes daily life, around 300 words, in a popular science style</source>
-        <translation type="vanished">Si us plau, continua escrivint aquest passatge curt sobre la tecnologia futura, centrant-te en com la IA canvia la vida diària, al voltant de 300 paraules, en un estil de divulgació científica</translation>
-    </message>
-    <message>
-        <source>Help me expand the last paragraph of this business plan, emphasizing market potential and competitive advantages, no word limit, formal style</source>
-        <translation type="vanished">Ajuda&apos;m a ampliar l&apos;últim paràgraf d&apos;aquest pla de negocis, emfatitzant el potencial del mercat i els avantatges competitius, sense límit de paraules, en estil formal</translation>
-    </message>
-    <message>
-        <source>Continue the ending of this fairy tale, warm and touching, the protagonist achieves their dream, about 200 words</source>
-        <translation type="vanished">Continua el final d&apos;aquest conte de fades, càlid i commovedor, on el protagonista aconsegueix el seu somni, al voltant de 200 paraules</translation>
-    </message>
-    <message>
-        <source>Please write the second half of this email, tone friendly and professional, focusing on collaboration details, within 150 words</source>
-        <translation type="vanished">Si us plau, escriu la segona meitat d&apos;aquest correu electrònic, amb un to amable i professional, centrant-se en els detalls de la col·laboració, dins de 150 paraules</translation>
-    </message>
-    <message>
-        <source>Expand the next paragraph of this travelogue, describing the scenery in the valley, vivid and imaginative, around 200 words</source>
-        <translation type="vanished">Amplia el següent paràgraf d&apos;aquest relat de viatge, descrivint el paisatge de la vall, viu i imaginatiu, al voltant de 200 paraules</translation>
-    </message>
-    <message>
-        <source>Continue the next chapter of this mystery novel, with a plot twist, maintaining suspense, no word limit</source>
-        <translation type="vanished">Continua el següent capítol d&apos;aquesta novel·la de misteri, amb un gir argumental, mantenint la suspensió, sense límit de paraules</translation>
-    </message>
-    <message>
-        <source>Help me write the conclusion of this speech, inspiring and emphasizing teamwork, about 100 words</source>
-        <translation type="vanished">Ajuda&apos;m a escriure la conclusió d&apos;aquest discurs, inspirador i emfatitzant el treball en equip, al voltant de 100 paraules</translation>
-    </message>
-    <message>
-        <source>Expand the performance description section of this product manual, detailed and accurate, around 300 words</source>
-        <translation type="vanished">Amplia la secció de descripció de rendiment d&apos;aquest manual del producte, detallada i precisa, al voltant de 300 paraules</translation>
-    </message>
-    <message>
-        <source>Continue the beginning of this love story, set in rainy Paris, romantic style, 150 words</source>
-        <translation type="vanished">Continua el començament d&apos;aquesta història d&apos;amor, ambientada a la plujosa París, en estil romàntic, 150 paraules</translation>
-    </message>
-    <message>
-        <source>Please write the discussion section of this paper, focusing on the limitations of the experimental result, academic style, no word limit</source>
-        <translation type="vanished">Si us plau, escriu la secció de discussió d&apos;aquest article, centrant-se en les limitacions del resultat experimental, en estil acadèmic, sense límit de paraules</translation>
-    </message>
-    <message>
-        <source>Please polish this text to make it more formal and professional for a business email</source>
-        <translation type="vanished">Si us plau, polida aquest text per fer-lo més formal i professional per a un correu electrònic de negocis</translation>
-    </message>
-    <message>
-        <source>Rewrite this passage to be more lively and engaging for social media posts</source>
-        <translation type="vanished">Reescriu aquest passatge perquè sigui més viu i atractiu per a publicacions a les xarxes socials</translation>
-    </message>
-    <message>
-        <source>I need to refine the abstract of this academic paper to be more concise and clear within 200 words</source>
-        <translation type="vanished">Necessito refinar el resum d&apos;aquest article acadèmic perquè sigui més concís i clar dins de 200 paraules</translation>
-    </message>
-    <message>
-        <source>Polish this dialogue to make it more natural and fluent for spoken communication</source>
-        <translation type="vanished">Polida aquest diàleg per fer-lo més natural i fluid per a la comunicació oral</translation>
-    </message>
-    <message>
-        <source>Enhance this product description to highlight its premium and innovative features for potential customers</source>
-        <translation type="vanished">Millora aquesta descripció del producte per destacar les seves característiques premiums i innovadores per als clients potencials</translation>
-    </message>
-    <message>
-        <source>Help me polish this cover letter to make it more persuasive and personalized</source>
-        <translation type="vanished">Ajuda&apos;m a polir aquesta carta de presentació per fer-la més persuasiva i personalitzada</translation>
-    </message>
-    <message>
-        <source>Rewrite this blog post to be more humorous and appealing to young readers</source>
-        <translation type="vanished">Reescriu aquesta entrada de blog perquè sigui més humorística i atractiva per als lectors joves</translation>
-    </message>
-    <message>
-        <source>Refine the opening section of this report to make it more captivating</source>
-        <translation type="vanished">Refina la secció inicial d&apos;aquest informe per fer-lo més captivador</translation>
-    </message>
-    <message>
-        <source>I need to polish this technical document to make it more accessible for non-experts</source>
-        <translation type="vanished">Necessito polir aquest document tècnic per fer-lo més accessible per a no experts</translation>
-    </message>
-    <message>
-        <source>Please help me rewrite this apology letter to sound more sincere and appropriate</source>
-        <translation type="vanished">Si us plau, ajuda&apos;m a reescriure aquesta carta de disculpa perquè soni més sincera i adequada</translation>
-    </message>
-    <message>
-        <source>Articles</source>
-        <translation type="vanished">Articles</translation>
-    </message>
-    <message>
-        <source>Speeches</source>
-        <translation type="vanished">Discursos</translation>
-    </message>
-    <message>
-        <source>Outlines</source>
-        <translation type="vanished">Esquemes</translation>
-    </message>
-    <message>
-        <source>Notifications</source>
-        <translation type="vanished">Notificacions</translation>
-    </message>
-    <message>
-        <source>Posts</source>
-        <translation type="vanished">Publicacions</translation>
-    </message>
-    <message>
-        <source>Work Report</source>
-        <translation type="vanished">Informe de Treball</translation>
-    </message>
-    <message>
-        <source>Research Report</source>
-        <translation type="vanished">Informe de Recerca</translation>
-    </message>
-    <message>
-        <source>Please summarize the key points of this document</source>
-        <translation type="vanished">Si us plau, resumeix els punts clau d&apos;aquest document</translation>
-    </message>
-    <message>
-        <source>List the main ideas of this file for me</source>
-        <translation type="vanished">Enumera les idees principals d&apos;aquest fitxer per a mi</translation>
-    </message>
-    <message>
-        <source>Summarize the core idea of this passage</source>
-        <translation type="vanished">Resumeix la idea principal d&apos;aquest passatge</translation>
-    </message>
-    <message>
-        <source>Use concise language to summarize this article</source>
-        <translation type="vanished">Utilitza un llenguatge concís per resumir aquest article</translation>
-    </message>
-    <message>
-        <source>I need a summary of this report, no more than 200 words</source>
-        <translation type="vanished">Necessito un resum d&apos;aquest informe, no més de 200 paraules</translation>
-    </message>
-    <message>
-        <source>Extract the main data and conclusions from this document</source>
-        <translation type="vanished">Extreu les dades principals i les conclusions d&apos;aquest document</translation>
-    </message>
-    <message>
-        <source>Summarize the main sections and points of this lengthy content</source>
-        <translation type="vanished">Resumeix les seccions principals i els punts d&apos;aquest contingut extens</translation>
-    </message>
-    <message>
-        <source>Help me summarize the research methods and findings of this paper</source>
-        <translation type="vanished">Ajuda&apos;m a resumir els mètodes de recerca i els resultats d&apos;aquest article</translation>
-    </message>
-    <message>
-        <source>Please summarize the key points of this article in a table format</source>
-        <translation type="vanished">Si us plau, resumeix els punts clau d&apos;aquest article en format de taula</translation>
-    </message>
-    <message>
-        <source>Summarize the operational steps in this file using bullet points</source>
-        <translation type="vanished">Resumeix els passos operatius d&apos;aquest fitxer utilitzant punts de llista</translation>
-    </message>
-    <message>
-        <source>Display the key clauses of this contract in bullet list format</source>
-        <translation type="vanished">Mostra les clàusules clau d&apos;aquest contracte en format de llista</translation>
-    </message>
-    <message>
-        <source>Create an outline for a report on AI trends, covering technology, ethics, and applications</source>
-        <translation type="vanished">Crea un esquema per a un informe sobre tendències d&apos;IA, cobrint tecnologia, ètica i aplicacions</translation>
-    </message>
-    <message>
-        <source>Organize the uploaded paper into a structured research framework outline</source>
-        <translation type="vanished">Organitza el document pujat en un esquema estructurat de marc de recerca</translation>
-    </message>
-    <message>
-        <source>I need a business plan outline including market analysis, product description, and financial planning</source>
-        <translation type="vanished">Necessito un esquema de pla de negoci que inclogui anàlisi de mercat, descripció del producte i planificació financera</translation>
-    </message>
-    <message>
-        <source>Convert this speech into a PowerPoint outline with bullet points for each section</source>
-        <translation type="vanished">Converteix aquest discurs en un esquema de PowerPoint amb punts de llista per a cada secció</translation>
-    </message>
-    <message>
-        <source>Write a book summary outline covering key points and my personal reflections</source>
-        <translation type="vanished">Escriu un esquema de resum del llibre que inclogui punts clau i les meves reflexions personals</translation>
-    </message>
-    <message>
-        <source>Summarize the meeting notes file into a project execution plan outline</source>
-        <translation type="vanished">Resumeix el fitxer de notes de la reunió en un esquema de pla d&apos;execució del projecte</translation>
-    </message>
-    <message>
-        <source>I need a thesis chapter outline including introduction, literature review, and methodology</source>
-        <translation type="vanished">Necessito un esquema de capítol de tesi que inclogui introducció, revisió bibliogràfica i metodologia</translation>
-    </message>
-    <message>
-        <source>Create a product requirements document (PRD) outline with feature descriptions and user flows</source>
-        <translation type="vanished">Crea un esquema de document de requisits del producte (PRD) amb descripcions de funcionalitats i fluxos d&apos;usuari</translation>
-    </message>
-    <message>
-        <source>Extract key data from this industry report to make a summary outline</source>
-        <translation type="vanished">Extreu dades clau d&apos;aquest informe de la indústria per fer un esquema de resum</translation>
-    </message>
-    <message>
-        <source>Write an event planning outline including schedule, team roles, and budget</source>
-        <translation type="vanished">Escriu un esquema de planificació d&apos;esdeveniments que inclogui horari, rols de l&apos;equip i pressupost</translation>
-    </message>
-    <message>
-        <source>Generate a three-level outline from this document</source>
-        <translation type="vanished">Genera un esquema de tres nivells d&apos;aquest document</translation>
-    </message>
-    <message>
-        <source>Extract core framework from meeting notes</source>
-        <translation type="vanished">Extreu l&apos;estructura bàsica de les notes de la reunió</translation>
-    </message>
-    <message>
-        <source>Organize research report structure</source>
-        <translation type="vanished">Organitza l&apos;estructura de l&apos;informe de recerca</translation>
-    </message>
-    <message>
-        <source>Create product feature overview</source>
-        <translation type="vanished">Crea una visió general de les característiques del producte</translation>
-    </message>
-    <message>
-        <source>Design training course syllabus</source>
-        <translation type="vanished">Dissenyar el programa del curs de formació</translation>
-    </message>
-    <message>
-        <source>Analyze literature review framework</source>
-        <translation type="vanished">Analitzar l&apos;estructura de la revisió bibliogràfica</translation>
-    </message>
-    <message>
-        <source>Generate business plan table of contents</source>
-        <translation type="vanished">Generar la taula de continguts del pla de negocis</translation>
-    </message>
-    <message>
-        <source>Write event planning flow points</source>
-        <translation type="vanished">Escriure els punts clau del flux de planificació d&apos;esdeveniments</translation>
-    </message>
-    <message>
-        <source>Help me write a meeting notice for tomorrow at 3 PM in Conference Room A about project progress reporting</source>
-        <translation type="vanished">Ajuda&apos;m a redactar un avís de reunió per demà a les 15 hores a la Sala de Conferències A sobre l&apos;informe de progrés del projecte</translation>
-    </message>
-    <message>
-        <source>Create a concise notice based on this document highlighting the deadline and submission method</source>
-        <translation type="vanished">Crear un avís concís basat en aquest document destacant la data límit i el mètode d&apos;entrega</translation>
-    </message>
-    <message>
-        <source>Draft a holiday notice for Spring Festival from February 10 to 17 with work resuming on February 18</source>
-        <translation type="vanished">Redactar un avís de vacances per al Festival de Primavera del 10 al 17 de febrer, reprenent la feina el 18 de febrer</translation>
-    </message>
-    <message>
-        <source>I need an activity notice for staff training all day next Wednesday at the company auditorium</source>
-        <translation type="vanished">Necessito un avís d&apos;activitat per a la formació del personal tot el dia dimecres vinent a l&apos;auditori de l&apos;empresa</translation>
-    </message>
-    <message>
-        <source>Format the provided text materials into a formal notice with standard formatting and professional tone</source>
-        <translation type="vanished">Formatejar els materials de text proporcionats en un avís formal amb format estàndard i to professional</translation>
-    </message>
-    <message>
-        <source>Write a power outage notice for this Saturday from 9 AM to 5 PM affecting the entire office building</source>
-        <translation type="vanished">Redactar un avís de tall de corrent per aquest dissabte de 9 a 17 hores que afectarà tot l&apos;edifici d&apos;oficines</translation>
-    </message>
-    <message>
-        <source>Generate a meeting change notice shifting the original time to Friday at 10 AM keeping other details same</source>
-        <translation type="vanished">Generar un avís de canvi de reunió canviant l&apos;hora original al divendres a les 10 hores mantenint la resta de detalls iguals</translation>
-    </message>
-    <message>
-        <source>Prepare a brief notice based on the attached meeting minutes for absent attendees</source>
-        <translation type="vanished">Preparar un avís breu basat en l&apos;acta de la reunió adjunta per als assistents absents</translation>
-    </message>
-    <message>
-        <source>Draft a system upgrade notice scheduled tonight from midnight to 3 AM with system downtime</source>
-        <translation type="vanished">Redactar un avís d&apos;actualització del sistema programada per aquesta nit de mitjanit a les 3 hores amb temps d&apos;inactivitat del sistema</translation>
-    </message>
-    <message>
-        <source>Write a concise holiday duty arrangement notice listing on-duty staff and contact information</source>
-        <translation type="vanished">Redactar un avís concís d&apos;organització de torns de vacances que enumeri el personal de servei i les dades de contacte</translation>
-    </message>
-    <message>
-        <source>Help me write a public health article about healthy eating in simple language for general readers</source>
-        <translation type="vanished">Ajuda&apos;m a escriure un article de salut pública sobre alimentació saludable en llenguatge senzill per a lectors en general</translation>
-    </message>
-    <message>
-        <source>Create a fun and engaging tech trend post based on this document</source>
-        <translation type="vanished">Crear una publicació divertida i atractiva sobre tendències tecnològiques basada en aquest document</translation>
-    </message>
-    <message>
-        <source>Draft a holiday promotion post highlighting discounts and event schedule</source>
-        <translation type="vanished">Redactar una publicació promocional de vacances destacant descomptes i l&apos;agenda d&apos;esdeveniments</translation>
-    </message>
-    <message>
-        <source>I need a product launch article focusing on features and customer reviews</source>
-        <translation type="vanished">Necessito un article de llançament de producte centrat en característiques i valoracions de clients</translation>
-    </message>
-    <message>
-        <source>Turn this interview transcript into a casual personality profile post</source>
-        <translation type="vanished">Converteix aquesta transcripció de l&apos;entrevista en una publicació informal de perfil personal</translation>
-    </message>
-    <message>
-        <source>Write a travel guide recommending three popular spots with practical tips</source>
-        <translation type="vanished">Escriure una guia de viatges recomanant tres llocs populars amb consells pràctics</translation>
-    </message>
-    <message>
-        <source>Generate an anniversary post reviewing company history and thanking customers</source>
-        <translation type="vanished">Generar una publicació d&apos;aniversari revisant la història de l&apos;empresa i agraïnt als clients</translation>
-    </message>
-    <message>
-        <source>Analyze this industry report with visualized data for an insightful post</source>
-        <translation type="vanished">Analitzar aquest informe de la indústria amb dades visualitzades per a una publicació perspicaç</translation>
-    </message>
-    <message>
-        <source>Draft a charity campaign post encouraging participation with clear instructions</source>
-        <translation type="vanished">Redactar una publicació de campanya benèfica que encoratgi la participació amb instruccions clares</translation>
-    </message>
-    <message>
-        <source>Write a career skills article with five actionable tips and real examples</source>
-        <translation type="vanished">Escriure un article sobre habilitats professionals amb cinc consells pràctics i exemples reals</translation>
-    </message>
-    <message>
-        <source>Help me write a weekly work summary focusing on project progress and team collaboration</source>
-        <translation type="vanished">Ajuda&apos;m a redactar un resum setmanal de treball centrat en el progrés del projecte i la col·laboració de l&apos;equip</translation>
-    </message>
-    <message>
-        <source>Generate a concise work summary based on the meeting notes file I uploaded</source>
-        <translation type="vanished">Generar un resum de treball concís basat en el fitxer de notes de reunió que he pujat</translation>
-    </message>
-    <message>
-        <source>I need a quarterly work summary including data analysis and personal growth reflection</source>
-        <translation type="vanished">Necessito un resum trimestral de treball que inclogui anàlisi de dades i reflexió sobre el creixement personal</translation>
-    </message>
-    <message>
-        <source>Create a work summary based on the following text [paste text]</source>
-        <translation type="vanished">Crea un resum de treball basat en el text següent [enganxa text]</translation>
-    </message>
-    <message>
-        <source>Write a work summary highlighting this month&apos;s KPI achievements and challenges encountered</source>
-        <translation type="vanished">Escriu un resum de treball que destaqui els assoliments dels KPI d&apos;aquest mes i els reptes trobats</translation>
-    </message>
-    <message>
-        <source>Help me summarize last week&apos;s work categorized by projects</source>
-        <translation type="vanished">Ajuda&apos;m a resumir el treball de la setmana passada categoritzat per projectes</translation>
-    </message>
-    <message>
-        <source>Generate a work summary from email content emphasizing pending tasks and completions</source>
-        <translation type="vanished">Genera un resum de treball a partir del contingut dels correus electrònics emfatitzant tasques pendents i completades</translation>
-    </message>
-    <message>
-        <source>I need an annual summary including work highlights and improvement plans</source>
-        <translation type="vanished">Necessito un resum anual que inclogui punts destacats del treball i plans de millora</translation>
-    </message>
-    <message>
-        <source>Generate a monthly work report from the data I uploaded</source>
-        <translation type="vanished">Genera un informe mensual de treball a partir de les dades que he pujat</translation>
-    </message>
-    <message>
-        <source>Help me organize scattered work notes into a structured work summary</source>
-        <translation type="vanished">Ajuda&apos;m a organitzar notes de treball disperses en un resum estructurat</translation>
-    </message>
-    <message>
-        <source>Analyze the uploaded data and generate a market trend report</source>
-        <translation type="vanished">Analitza les dades pujades i genera un informe de tendències de mercat</translation>
-    </message>
-    <message>
-        <source>Extract key information from the text and compile an industry analysis report</source>
-        <translation type="vanished">Extreu informació clau del text i compila un informe d&apos;anàlisi de la indústria</translation>
-    </message>
-    <message>
-        <source>Combine the contents of the file to write a competitor research report</source>
-        <translation type="vanished">Combina els continguts del fitxer per escriure un informe de recerca sobre competidors</translation>
-    </message>
-    <message>
-        <source>Generate a user needs research summary based on the provided interview records</source>
-        <translation type="vanished">Genera un resum de recerca sobre necessitats dels usuaris basat en les entrevistes proporcionades</translation>
-    </message>
-    <message>
-        <source>Analyze these sales data and produce a quarterly market performance report</source>
-        <translation type="vanished">Analitza aquestes dades de vendes i produeix un informe trimestral de rendiment del mercat</translation>
-    </message>
-    <message>
-        <source>Write a technical research report based on the given product description</source>
-        <translation type="vanished">Escriu un informe de recerca tècnica basat en la descripció del producte proporcionada</translation>
-    </message>
-    <message>
-        <source>Organize these user feedback and generate a product improvement suggestion report</source>
-        <translation type="vanished">Organitza aquests comentaris d&apos;usuaris i genera un informe de suggeriments per millorar el producte</translation>
-    </message>
-    <message>
-        <source>Please write a market opportunity analysis report based on the provided file</source>
-        <translation type="vanished">Si us plau, escriu un informe d&apos;anàlisi d&apos;oportunitats de mercat basat en el fitxer proporcionat</translation>
-    </message>
-    <message>
-        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation type="vanished">Ajuda&apos;m a escriure un assaig sobre el tema [%1] amb [estructura clara i contingut ric].</translation>
-    </message>
-    <message>
-        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation type="vanished">Ajuda&apos;m a escriure un tuit públic sobre el tema [%1], que requereixi [estructura clara] i to [relaxat].</translation>
-    </message>
-    <message>
-        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation type="vanished">Ajuda&apos;m a escriure un resum del meu treball recent, incloent [%1] i [resultats], que requereixi un to [formal].</translation>
-    </message>
-    <message>
-        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation type="vanished">Ajuda&apos;m a escriure un informe de recerca sobre [%1], que com a mínim inclogui [descripció de l&apos;estat, anàlisi del problema, contramesures i suggeriments, conclusions de la recerca].</translation>
-    </message>
-    <message>
-        <source>Artificial Intelligence</source>
-        <translation type="vanished">Intel·ligència Artificial</translation>
-    </message>
-    <message>
-        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation type="vanished">Ajuda&apos;m a escriure un discurs sobre el tema [%1] per a [Líders de l&apos;Empresa], que requereixi [estructura clara i llenguatge viu].</translation>
-    </message>
-    <message>
-        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation type="vanished">Ajuda&apos;m a escriure un esquema sobre el tema [%1], que s&apos;utilitzarà per a [producció de PPT].</translation>
-    </message>
-    <message>
-        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation type="vanished">Ajuda&apos;m a escriure un avís sobre [%1], el destinatari és [Tots els Empleats] i el remitent és [Departament d&apos;Administració].</translation>
-    </message>
-    <message>
-        <source>National Day Holiday</source>
-        <translation type="vanished">Festa Nacional</translation>
-    </message>
-    <message>
-        <source>work content</source>
-        <translation type="vanished">contingut del treball</translation>
-    </message>
-</context>
-<context>
-    <name>EAiPrompt</name>
-    <message>
-        <source>---Role---
-You are a helpful assistant, answering questions about the background knowledge provided.
-
----Goal---
-Respond to users&apos; questions, incorporating any relevant common sense.If you don&apos;t know the answer, just say so. Don&apos;t make it up.
-
----knowledge---
-%1
-
----question---
-%2
-</source>
-        <translation type="vanished">---Rol---
-
-Ets un assistent útil que respon preguntes sobre el coneixement de fons proporcionat.
-
-
----Objectiu---
-
-Respon a les preguntes dels usuaris, incorporant qualsevol sentit comú rellevant. Si no saps la resposta, simplement digues-ho. No inventis res.
-
-
----Coneixement---
-
-%1
-
-
----Pregunta---
-
-%2</translation>
-    </message>
-    <message>
-        <source>The output answer starts with &quot;No relevant information was found in your knowledge base.&quot;---question--
-:%1
-</source>
-        <translation type="vanished">La resposta de sortida comença amb &quot;No s&apos;ha trobat informació rellevant a la vostra base de coneixement.&quot;---pregunta--
-
-:%1</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a helpful assistant, answering questions about the background knowledge provided.
-
----Goal---
-Respond to users&apos; questions, incorporating any relevant common sense.If you don&apos;t know the answer, just say so. Don&apos;t make it up.
-
----knowledge---
-%1
-
----question---
-%2</source>
-        <translation type="vanished">---Rol---
-
-Ets un assistent útil que respon preguntes sobre el coneixement de fons proporcionat.
-
-
----Objectiu---
-
-Respon a les preguntes dels usuaris, incorporant qualsevol sentit comú rellevant. Si no saps la resposta, simplement digues-ho. No inventis res.
-
-
----Coneixement---
-
-%1
-
-
----Pregunta---
-
-%2</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a professional writer with expertise in various writing styles and formats.
-
----Goal---
-Based on the user&apos;s request, create high-quality content that meets their specific needs.
-
----Writing Types---
-1. Article: Write well-structured articles with clear arguments and engaging content
-2. Speeches: Create compelling speeches with proper opening, body, and conclusion
-
-3. Outlines: Create a structured outline for the given topic
-4. Notifications: Write formal notices or announcements
-5. Posts: Create engaging social media content
-6. Work Report: Write comprehensive work reports
-7. Research Report: Create detailed research reports
----Input---
-%1
-
----Output Format---
-Please provide the content in the following format:
-Title:
-Content:</source>
-        <translation type="vanished">---Rol---
-
-Ets un escriptor professional amb experiència en diversos estils i formats d&apos;escriptura.
-
-
----Objectiu---
-
-Basat en la sol·licitud de l&apos;usuari, crea contingut d&apos;alta qualitat que satisfaci les seves necessitats específiques.
-
-
----Tipus d&apos;Escriptura---
-
-1. Article: Escriu articles ben estructurats amb arguments clars i contingut atractiu
-
-2. Discursos: Crea discursos convincent amb introducció, cos i conclusió adequats
-
-
-3. Esquemes: Crea un esquema estructurat per al tema donat
-
-4. Notificacions: Escriu avisos o anuncis formals
-
-5. Publicacions: Crea contingut atractiu per a xarxes socials
-
-6. Informes de Treball: Escriu informes de treball exhaustius
-
-7. Informes de Recerca: Crea informes de recerca detallats
-
----Entrada---
-
-%1
-
-
----Format de Sortida---
-
-Si us plau, proporciona el contingut en el següent format:
-
-Títol:
-
-Contingut:</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a text processing expert with deep expertise in language analysis, writing techniques, and text optimization.
-
----Goal---
-Process and improve the input text while maintaining its original meaning and style.
-
----Processing Types---
-1. Summary: Create a concise summary of the main points
-2. Proofread: Identify and fix grammatical, spelling, and stylistic errors
-3. Explain: Provide detailed explanations of complex concepts or passages
-4. Expand: Elaborate on key points while maintaining the original style
-5. Continue: Continue the text in a coherent and natural way
-6. Polish: Enhance the text&apos;s clarity, flow, and impact while preserving its essence
-
----Input---
-%1
-
----Output Format---
-Please provide the processed text directly without any additional characters or formatting.</source>
-        <translation type="vanished">---Rol---
-
-Ets un expert en processament de text amb un profund coneixement en anàlisi lingüística,
-tècniques d&apos;escriptura i optimització de text.
-
-
----Objectiu---
-
-Processa i millora el text d&apos;entrada mantenint-ne el significat i l&apos;estil originals.
-
-
----Tipus de processament---
-
-1. Resum: Crea un resum concís dels punts principals
-
-2. Correcció: Identifica i corregeix errors gramaticals, ortogràfics i d&apos;estil
-
-3. Explicació: Proporciona explicacions detallades de conceptes o passatges complexos
-
-4. Ampliació: Desenvolupa punts clau mantenint l&apos;estil original
-
-5. Continuació: Continua el text de manera coherent i natural
-
-6. Poliment: Millora la claredat, fluïdesa i impacte del text preservant-ne l&apos;essència
-
-
----Entrada---
-
-%1
-
-
----Format de sortida---
-
-Proporciona el text processat directament sense caràcters o format addicionals.</translation>
-    </message>
-    <message>
-        <source>---Role---
-You are a professional translator and language expert. Your task is to:
-1. Accurately translate text as requested
-2. Answer language-related questions
-3. Identify and handle specific translation requests
-
----Goal---
-Carefully analyze the user&apos;s input to determine their intent:
-1. If the input contains phrases like &apos;what does this mean&apos;, &apos;explain this phrase&apos;, or similar - provide ONLY a language explanation (no translation)
-2. If the input specifies a particular sentence/paragraph to translate (e.g. &apos;Translate this sentence:...&apos;) - translate ONLY the specified portion (no full translation)
-3. Only when no specific request is detected, perform full translation between Chinese and English
-
-Always maintain the original meaning, tone, and style. For translations:
-- Chinese → English
-- English → Chinese
-
-For language questions, provide clear, concise explanations.
-
----Input---
-%1
-
----Output Format---
-1. For full translations: Provide only the translation without additional formatting
-2. For partial translations: Provide only the specified portion&apos;s translation
-3. For explanations: Provide only the explanation in the same language as the question
-Never combine explanation with translation or provide full translation after partial translation</source>
-        <translation type="vanished">---Rol---
-
-Ets un traductor professional i expert lingüístic. La teva tasca és:
-
-1. Traduir amb precisió el text sol·licitat
-
-2. Respondre preguntes relacionades amb el llenguatge
-
-3. Identificar i gestionar peticions de traducció específiques
-
-
----Objectiu---
-
-Analitza acuradament l&apos;entrada de l&apos;usuari per determinar la seva intenció:
-
-1. Si l&apos;entrada conté frases com &apos;què vol dir això&apos;, &apos;explica aquesta frase&apos;, o similars - proporciona NOMÉS una explicació lingüística (sense traducció)
-
-2. Si l&apos;entrada especifica una frase o paràgraf concret per traduir (p. ex. &apos;Tradueix aquesta frase:...&apos;) - tradueix NOMÉS la porció especificada (sense traducció completa)
-
-3. Només quan no es detecti cap petició específica, realitza una traducció completa entre xinès i anglès
-
-
-Mantingues sempre el significat, to i estil originals. Per a les traduccions:
-
-- Xinès → Anglès
-
-- Anglès → Xinès
-
-
-Per a preguntes sobre llenguatge, proporciona explicacions clares i concises.
-
-
----Entrada---
-
-%1
-
-
----Format de sortida---
-
-1. Per a traduccions completes: Proporciona només la traducció sense format addicional
-
-2. Per a traduccions parcials: Proporciona només la traducció de la porció especificada
-
-3. Per a explicacions: Proporciona només l&apos;explicació en la mateixa llengua que la pregunta
-
-Mai combinis l&apos;explicació amb la traducció o proporcionis una traducció completa després d&apos;una traducció parcial</translation>
-    </message>
-</context>
-<context>
-    <name>EAiProxy</name>
-    <message>
-        <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
-        <translation type="vanished">Actualitzeu l&apos;Enregistrador de pantalla UOS a la versió 6.6 o posterior i reinicieu l&apos;ordinador per activar les preguntes i respostes de captures de pantalla.</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Configuració del model</translation>
-    </message>
-    <message>
-        <source>Go to configuration</source>
-        <translation type="vanished">Anar a configuració</translation>
-    </message>
-    <message>
-        <source>No account</source>
-        <translation type="vanished">Sense compte</translation>
-    </message>
-    <message>
-        <source>Input question</source>
-        <translation type="vanished">Pregunta d&apos;entrada</translation>
-    </message>
-    <message>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="vanished">El contingut generat per la IA és només per a referència, si us plau, presta atenció a l&apos;exactitud de la informació.</translation>
-    </message>
-    <message>
-        <source>Welcome to UOS AI</source>
-        <translation type="vanished">Benvingut/da a UOS AI</translation>
-    </message>
-    <message>
-        <source>Here are some of the things UOS AI can help you do</source>
-        <translation type="vanished">Aquí tens algunes de les coses que UOS AI pot ajudar-te a fer</translation>
-    </message>
-    <message>
-        <source>Stop</source>
-        <translation type="vanished">Aturar</translation>
-    </message>
-    <message>
-        <source>Regenerate</source>
-        <translation type="vanished">Regenerar</translation>
-    </message>
-    <message>
-        <source>Clear conversation history</source>
-        <translation type="vanished">Esborrar historial de conversa</translation>
-    </message>
-    <message>
-        <source>Please connect the microphone and try again</source>
-        <translation type="vanished">Si us plau, connecta el micròfon i torna a provar</translation>
-    </message>
-    <message>
-        <source>Chat history cleared</source>
-        <translation type="vanished">Historial de xat esborrat</translation>
-    </message>
-    <message>
-        <source>Click to start/stop recording</source>
-        <translation type="vanished">Fes clic per iniciar/aturar la gravació</translation>
-    </message>
-    <message>
-        <source>Listening</source>
-        <translation type="vanished">Escoltant</translation>
-    </message>
-    <message>
-        <source>Sleeping</source>
-        <translation type="vanished">En repòs</translation>
-    </message>
-    <message>
-        <source>Microphone not detected</source>
-        <translation type="vanished">No s&apos;ha detectat el micròfon</translation>
-    </message>
-    <message>
-        <source>Connection failed, click to try again</source>
-        <translation type="vanished">Connexió fallida, fes clic per tornar a provar</translation>
-    </message>
-    <message>
-        <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation type="vanished">Fes clic a l&apos;animació o prem Ctrl+Super+Espai per activar</translation>
-    </message>
-    <message>
-        <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation type="vanished">L&apos;entrada de veu no està disponible temporalment, si us plau, comprova la xarxa!</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">No s&apos;ha pogut connectar al servidor, si us plau, comprova la xarxa o torna a provar més tard.</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Conversa de veu</translation>
-    </message>
-    <message>
-        <source>Click the animation or press Enter to send</source>
-        <translation type="vanished">Fes clic a l&apos;animació o prem Retorn per enviar</translation>
-    </message>
-    <message>
-        <source>Stop recording after %1 seconds</source>
-        <translation type="vanished">Aturar la gravació després de %1 segons</translation>
-    </message>
-    <message>
-        <source>Thinking</source>
-        <translation type="vanished">Pensant</translation>
-    </message>
-    <message>
-        <source>Click animation to interrupt</source>
-        <translation type="vanished">Fes clic a l&apos;animació per interrompre</translation>
-    </message>
-    <message>
-        <source>Answering</source>
-        <translation type="vanished">Responent</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="vanished">La teva quota de compte gratuït s&apos;ha esgotat, si us plau, configura el teu compte de model per continuar utilitzant-lo.</translation>
-    </message>
-    <message>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="vanished">El teu compte gratuït ha caducat, si us plau, configura el teu compte de model per continuar utilitzant-lo.</translation>
-    </message>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">L&apos;UOS AI requereix que es configuri un compte de model d&apos;IA abans de poder-lo utilitzar. Si us plau, configureu un compte de model primer.</translation>
-    </message>
-    <message>
-        <source>Activate</source>
-        <translation type="vanished">Activar</translation>
-    </message>
-    <message>
-        <source>Voice input</source>
-        <translation type="vanished">Entrada de veu</translation>
-    </message>
-    <message>
-        <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation type="vanished">La transmissió de veu està temporalment no disponible, si us plau, comproveu la xarxa!</translation>
-    </message>
-    <message>
-        <source>Turn off voice conversation</source>
-        <translation type="vanished">Desactivar la conversa de veu</translation>
-    </message>
-    <message>
-        <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation type="vanished">La imatge ha estat generada, si us plau, canvieu a la interfície de xat per veure-la.</translation>
-    </message>
-    <message>
-        <source>No account, please configure an account</source>
-        <translation type="vanished">No hi ha compte, si us plau, configureu un compte</translation>
-    </message>
-    <message>
-        <source>Answer each question up to 5 times</source>
-        <translation type="vanished">Respon cada pregunta fins a 5 vegades</translation>
-    </message>
-    <message>
-        <source>Copied successfully</source>
-        <translation type="vanished">Copiat amb èxit</translation>
-    </message>
-    <message>
-        <source>Sound output device not detected</source>
-        <translation type="vanished">No s&apos;ha detectat cap dispositiu de sortida de so</translation>
-    </message>
-    <message>
-        <source>The sound output device is not detected, please check and try again!</source>
-        <translation type="vanished">No s&apos;ha detectat cap dispositiu de sortida de so, si us plau, comproveu-ho i torneu-ho a provar!</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Configuració</translation>
-    </message>
-    <message>
-        <source>About</source>
-        <translation type="vanished">Quant a</translation>
-    </message>
-    <message>
-        <source>Mode</source>
-        <translation type="vanished">Mode</translation>
-    </message>
-    <message>
-        <source>Window Mode</source>
-        <translation type="vanished">Mode finestra</translation>
-    </message>
-    <message>
-        <source>Sidebar Mode</source>
-        <translation type="vanished">Mode barra lateral</translation>
-    </message>
-    <message>
-        <source>Assistant List</source>
-        <translation type="vanished">Llista d&apos;assistents</translation>
-    </message>
-    <message>
-        <source>Agent List</source>
-        <translation type="vanished">Llista d&apos;agents</translation>
-    </message>
-    <message>
-        <source>Agent Store</source>
-        <translation type="vanished">Botiga d&apos;agents</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">Assistent del sistema UOS</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Assistent del sistema Deepin</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Assistent de coneixement personal</translation>
-    </message>
-    <message>
-        <source>Please configure the knowledge base</source>
-        <translation type="vanished">Si us plau, configureu la base de coneixement</translation>
-    </message>
-    <message>
-        <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation type="vanished">Abans d&apos;utilitzar l&apos;[Assistent de Coneixement Personal], cal configurar la base de coneixement. Després de configurar la base de coneixement, la IA respondrà preguntes o generarà contingut basat en el contingut que hàgiu configurat a la base de coneixement.</translation>
-    </message>
-    <message>
-        <source>Please configure the large model</source>
-        <translation type="vanished">Si us plau, configureu el model gran</translation>
-    </message>
-    <message>
-        <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation type="vanished">L&apos;assistent de coneixement personal només es pot utilitzar després de configurar un model gran.</translation>
-    </message>
-    <message>
-        <source>To configure</source>
-        <translation type="vanished">Per configurar</translation>
-    </message>
-    <message>
-        <source>To install</source>
-        <translation type="vanished">Per instal·lar</translation>
-    </message>
-    <message>
-        <source>Please install [EmbeddingPlugins]</source>
-        <translation type="vanished">Si us plau, instal·leu [EmbeddingPlugins]</translation>
-    </message>
-    <message>
-        <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation type="vanished">Aquest assistent requereix la instal·lació dels EmbeddingPlugins per funcionar</translation>
-    </message>
-    <message>
-        <source>Drag files here to add them.</source>
-        <translation type="vanished">Arrossega fitxers aquí per afegir-los.</translation>
-    </message>
-    <message>
-        <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation type="vanished">Només podeu afegir 3 fitxers; els tipus de fitxer admesos inclouen: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, fitxers de codi, etc.</translation>
-    </message>
-    <message>
-        <source>MCP Server</source>
-        <translation type="vanished">Servidor MCP</translation>
-    </message>
-    <message>
-        <source>Add Mcp Server</source>
-        <translation type="vanished">Afegeix servidor MCP</translation>
-    </message>
-    <message>
-        <source>Add Server</source>
-        <translation type="vanished">Afegeix servidor</translation>
-    </message>
-    <message>
-        <source>Add failed! Error reason:</source>
-        <translation type="vanished">Error en afegir! Raó de l&apos;error:</translation>
-    </message>
-    <message>
-        <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation type="vanished">Falta l&apos;entorn MCP. Instal·leu 【UOS AI Agent】</translation>
-    </message>
-    <message>
-        <source>Calling</source>
-        <translation type="vanished">Trucant</translation>
-    </message>
-    <message>
-        <source>Completed</source>
-        <translation type="vanished">Completat</translation>
-    </message>
-    <message>
-        <source>Call Failed</source>
-        <translation type="vanished">Trucada fallida</translation>
-    </message>
-    <message>
-        <source>Cancelled</source>
-        <translation type="vanished">Cancel·lat</translation>
-    </message>
-    <message>
-        <source>params</source>
-        <translation type="vanished">paràmetres</translation>
-    </message>
-    <message>
-        <source>result</source>
-        <translation type="vanished">resultat</translation>
-    </message>
-    <message>
-        <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="vanished">Per al servidor MCP, canvia al model publicat oficialment &quot;Compte de prova DeepSeek&quot;</translation>
-    </message>
-    <message>
-        <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation type="vanished">Introdueix l&apos;ordre del servidor MCP, p. ex. &quot;Canvia el sistema al mode fosc&quot;</translation>
-    </message>
-    <message>
-        <source>Agent server is not available</source>
-        <translation type="vanished">El servidor d&apos;agents no està disponible</translation>
-    </message>
-    <message>
-        <source>Agent server exception</source>
-        <translation type="vanished">Excepció del servidor d&apos;agents</translation>
-    </message>
-    <message>
-        <source>MCP server is not available</source>
-        <translation type="vanished">El servidor MCP no està disponible</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Cancel·la</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Confirma</translation>
-    </message>
-    <message>
-        <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation type="vanished">Automatitza tasques multi-fitxer i multi-aplicació amb una sola ordre mitjançant el servei MCP. Prova-ho ara!</translation>
-    </message>
-    <message>
-        <source>Use later</source>
-        <translation type="vanished">Utilitza-ho més tard</translation>
-    </message>
-    <message>
-        <source>Install Now</source>
-        <translation type="vanished">Instal·la ara</translation>
-    </message>
-    <message>
-        <source>Enable MCP Server</source>
-        <translation type="vanished">Activa el servidor MCP</translation>
-    </message>
-    <message>
-        <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation type="vanished">Després d&apos;instal·lar l&apos;entorn MCP &quot;UOS AI Agent&quot;, fes clic al </translation>
-    </message>
-    <message>
-        <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation type="vanished"> i selecciona &quot;uos-mcp&quot; a la llista de servidors MCP.</translation>
-    </message>
-    <message>
-        <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation type="vanished">Prova de dir: &quot;Canvia el sistema al mode fosc&quot;.</translation>
-    </message>
-    <message>
-        <source>Try it now</source>
-        <translation type="vanished">Prova-ho ara</translation>
-    </message>
-    <message>
-        <source>Add Mcp Server[GuidePage]</source>
-        <translation type="vanished">Afegeix servidor MCP [pàgina guia]</translation>
-    </message>
-    <message>
-        <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation type="vanished">Usuaris per primera vegada: instal·la l&apos;entorn MCP &quot;UOS AI Agent&quot; des de la Botiga d&apos;aplicacions.</translation>
-    </message>
-    <message>
-        <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation type="vanished">El format del fitxer JSON és incorrecte; comprova-ho i torna a enviar-lo</translation>
-    </message>
-    <message>
-        <source>Install Now &gt;</source>
-        <translation type="vanished">Instal·la ara &gt;</translation>
-    </message>
-    <message>
-        <source>General Chat</source>
-        <translation type="vanished">Xat general</translation>
-    </message>
-    <message>
-        <source>Private Chat</source>
-        <translation type="vanished">Xat privat</translation>
-    </message>
-    <message>
-        <source>Now in Private Chat</source>
-        <translation type="vanished">Ara al xat privat</translation>
-    </message>
-    <message>
-        <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation type="vanished">Els missatges del xat privat no es desen a l&apos;historial i s&apos;eliminaran permanentment quan surtis del xat.</translation>
-    </message>
-    <message>
-        <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation type="vanished">Captura de pantalla i preguntes Drecera (Ctrl+Alt+Q), admet fins a 3 imatges.</translation>
-    </message>
-    <message>
-        <source>Cannot be used during screen recording</source>
-        <translation type="vanished">No es pot utilitzar durant la gravació de pantalla</translation>
-    </message>
-    <message>
-        <source>You can upload up to 3 files or image</source>
-        <translation type="vanished">Pots penjar fins a 3 fitxers o imatges</translation>
-    </message>
-    <message>
-        <source>Upload Files</source>
-        <translation type="vanished">Puja fitxers</translation>
-    </message>
-    <message>
-        <source>Please delete the abnormal file and send it again</source>
-        <translation type="vanished">Si us plau, esborra el fitxer anòmal i torna’l a enviar</translation>
-    </message>
-    <message>
-        <source>Add Private Chat</source>
-        <translation type="vanished">Afegeix un xat privat</translation>
-    </message>
-    <message>
-        <source>Add [Screenshot Q&amp;A]</source>
-        <translation type="vanished">Afegeix [Captura i preguntes]</translation>
-    </message>
-    <message>
-        <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation type="vanished">Fes una captura de pantalla i envia el contingut a l’UOS AI. També pots pujar una imatge directament.</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">D&apos;acord</translation>
-    </message>
-    <message>
-        <source>Next</source>
-        <translation type="vanished">Següent</translation>
-    </message>
-    <message>
-        <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation type="vanished">Afegeix [Mode de xat privat] – els xats no es desaran.</translation>
-    </message>
-    <message>
-        <source>No text extracted</source>
-        <translation type="vanished">No s’ha extret cap text</translation>
-    </message>
-    <message>
-        <source>Image size exceeds 15 MB</source>
-        <translation type="vanished">La imatge supera els 15 MB</translation>
-    </message>
-    <message>
-        <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation type="vanished">Un cop oberta la base de coneixement, les respostes es basaran en el seu contingut. La velocitat de resposta depèn del rendiment de la màquina i de la mida de la base de coneixement.</translation>
-    </message>
-    <message>
-        <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation type="vanished">La base de coneixement no està disponible quan s’ha seleccionat qualsevol ordre o MCP.</translation>
-    </message>
-    <message>
-        <source>MCP is disabled while the knowledge base is active.</source>
-        <translation type="vanished">El MCP està desactivat mentre la base de coneixement està activa.</translation>
-    </message>
-    <message>
-        <source>Commands disabled while knowledge base is active.</source>
-        <translation type="vanished">Les ordres estan desactivades mentre la base de coneixement està activa.</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="vanished">Copia</translation>
-    </message>
-    <message>
-        <source>Re-edit</source>
-        <translation type="vanished">Reedita</translation>
-    </message>
-    <message>
-        <source>Copy succeeded.</source>
-        <translation type="vanished">S’ha copiat correctament.</translation>
-    </message>
-    <message>
-        <source>Copy failed. Please try again.</source>
-        <translation type="vanished">No s’ha pogut copiar. Torna-ho a provar.</translation>
-    </message>
-    <message>
-        <source>Searching</source>
-        <translation type="vanished">S’està cercant</translation>
-    </message>
-    <message>
-        <source>%1 reference documents have been obtained (%2s)</source>
-        <translation type="vanished">S’han obtingut %1 documents de referència (%2 s)</translation>
-    </message>
-    <message>
-        <source>Clear History</source>
-        <translation type="vanished">Esborra l’historial</translation>
-    </message>
-    <message>
-        <source>Delete all records?</source>
-        <translation type="vanished">Vols esborrar tots els registres?</translation>
-    </message>
-    <message>
-        <source>Once deleted, the content cannot be recovered!</source>
-        <translation type="vanished">Un cop esborrat, el contingut no es podrà recuperar!</translation>
-    </message>
-    <message>
-        <source>Recommend official models</source>
-        <translation type="vanished">Recomana models oficials</translation>
-    </message>
-    <message>
-        <source>Disable MCP</source>
-        <translation type="vanished">Desactiva MCP</translation>
-    </message>
-    <message>
-        <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="vanished">Es recomana utilitzar el model oficial &quot;DeepSeek-Trial Account&quot;</translation>
-    </message>
-    <message>
-        <source>Quick Open</source>
-        <translation type="vanished">Obertura ràpida</translation>
-    </message>
-    <message>
-        <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation type="vanished">Actualització del servidor MCP al mode automàtic</translation>
-    </message>
-    <message>
-        <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation type="vanished">El servidor MCP s’ha actualitzat al mode automàtic, cosa que et permet accedir a tots els servidors MCP amb només un clic</translation>
-    </message>
-    <message>
-        <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation type="vanished">. Això et permet automatitzar tasques com la configuració del sistema i el processament de fitxers amb un sol clic.</translation>
-    </message>
-    <message>
-        <source>Adding MCP Server has been moved to Settings.</source>
-        <translation type="vanished">Afegir un servidor MCP s’ha traslladat a Configuració.</translation>
-    </message>
-    <message>
-        <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation type="vanished">Per afegir més servidors MCP, ves a Configuració &gt; Servidor MCP.</translation>
-    </message>
-    <message>
-        <source>Got it</source>
-        <translation type="obsolete">Entesos</translation>
-    </message>
-    <message>
-        <source>Complimentary Model Credits</source>
-        <translation type="vanished">Crèdits del model de cortesia</translation>
-    </message>
-    <message>
-        <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation type="vanished">El sistema actual ofereix el model de compte de prova DeepSeek, que actualitza automàticament la quota gratuïta a l&apos;inici de cada mes, permetent-vos utilitzar-lo sense preocupacions.</translation>
-    </message>
-    <message>
-        <source>Claim Credits</source>
-        <translation type="vanished">Reclama crèdits</translation>
-    </message>
-    <message>
-        <source>Get a free account</source>
-        <translation type="obsolete">Obtenir un compte gratuït</translation>
-    </message>
-    <message>
-        <source>Claim Free Credits</source>
-        <translation type="vanished">Reclama crèdits gratuïts</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="vanished">Reclamat amb èxit</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="vanished">No s&apos;ha pogut reclamar. Si us plau, torna-ho a provar.</translation>
-    </message>
-    <message>
-        <source>Enable MCP Server&amp;</source>
-        <translation type="vanished">Activa el servidor MCP&amp;</translation>
-    </message>
-    <message>
-        <source>Disable MCP Server</source>
-        <translation type="vanished">Desactiva el servidor MCP</translation>
-    </message>
-    <message>
-        <source>Configure MCP Server</source>
-        <translation type="vanished">Configura el servidor MCP</translation>
-    </message>
-    <message>
-        <source>You can only add a maximum of one file.</source>
-        <translation type="vanished">Només pots afegir un fitxer com a màxim.</translation>
-    </message>
-    <message>
-        <source>The file format is not supported.</source>
-        <translation type="vanished">El format del fitxer no està suportat.</translation>
-    </message>
-    <message>
-        <source>Summarize the key content of the file.</source>
-        <translation type="vanished">Resum el contingut clau del fitxer.</translation>
-    </message>
-    <message>
-        <source>Parsing...</source>
-        <translation type="vanished">Analitzant...</translation>
-    </message>
-    <message>
-        <source>File Error</source>
-        <translation type="vanished">Error de fitxer</translation>
-    </message>
-    <message>
-        <source>File has been deleted.</source>
-        <translation type="vanished">El fitxer s&apos;ha eliminat.</translation>
-    </message>
-    <message>
-        <source>The file size exceeds the 100MB limit.</source>
-        <translation type="vanished">La mida del fitxer supera el límit de 100MB.</translation>
-    </message>
-    <message>
-        <source>Upload a document</source>
-        <translation type="vanished">Puja un document</translation>
-    </message>
-    <message>
-        <source>File deleted</source>
-        <translation type="vanished">Fitxer eliminat</translation>
-    </message>
-    <message>
-        <source>No text was parsed</source>
-        <translation type="vanished">No s&apos;ha analitzat cap text</translation>
-    </message>
-    <message>
-        <source>Reference</source>
-        <translation type="vanished">Referència</translation>
-    </message>
-    <message>
-        <source>Instruction</source>
-        <translation type="vanished">Instrucció</translation>
-    </message>
-    <message>
-        <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation type="vanished">Escriu &quot;/&quot; a la caixa d&apos;entrada per activar.</translation>
-    </message>
-    <message>
-        <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation type="vanished">Si us plau, prem &quot;Ctrl+Retorn&quot; per canviar de línia.</translation>
-    </message>
-    <message>
-        <source>Enter your question, or enter &quot;/&quot; to select a command
-&quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation type="vanished">Introdueix la teva pregunta, o escriu &quot;/&quot; per seleccionar una ordre
-&quot;Ctrl+Retorn&quot; per començar una nova línia</translation>
-    </message>
-    <message>
-        <source>Search complete.</source>
-        <translation type="vanished">Cerca completada.</translation>
-    </message>
-    <message>
-        <source>Click to view results</source>
-        <translation type="vanished">Fes clic per veure els resultats</translation>
-    </message>
-    <message>
-        <source>edit</source>
-        <translation type="vanished">edita</translation>
-    </message>
-    <message>
-        <source>save</source>
-        <translation type="vanished">desa</translation>
-    </message>
-    <message>
-        <source>copy</source>
-        <translation type="vanished">copia</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Cerca</translation>
-    </message>
-    <message>
-        <source>DeepThink(R1)</source>
-        <translation type="vanished">Pensament profund(R1)</translation>
-    </message>
-    <message>
-        <source>Thinking has stopped</source>
-        <translation type="vanished">El pensament s&apos;ha aturat</translation>
-    </message>
-    <message>
-        <source>Back to bottom</source>
-        <translation type="vanished">Torna a baix</translation>
-    </message>
-    <message>
-        <source>Deeply thought (%1 seconds)</source>
-        <translation type="vanished">Pensament profund (%1 segons)</translation>
-    </message>
-    <message>
-        <source>New Conversation</source>
-        <translation type="vanished">Nova conversa</translation>
-    </message>
-    <message>
-        <source>History</source>
-        <translation type="vanished">Historial</translation>
-    </message>
-    <message>
-        <source>No History Records</source>
-        <translation type="vanished">No hi ha registres d&apos;historial</translation>
-    </message>
-    <message>
-        <source>Today</source>
-        <translation type="vanished">Avui</translation>
-    </message>
-    <message>
-        <source>Yesterday</source>
-        <translation type="vanished">Ahir</translation>
-    </message>
-    <message>
-        <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation type="vanished">Esteu segur que voleu suprimir la conversa? Un cop suprimida, no es podrà recuperar.</translation>
-    </message>
-    <message>
-        <source>The %1 agent used in this conversation has been deleted</source>
-        <translation type="vanished">L&apos;agent %1 utilitzat en aquesta conversa ha estat suprimit</translation>
-    </message>
-    <message>
-        <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation type="vanished">Aquesta conversa no es pot visualitzar. Per veure-la, instal·leu l&apos;agent %1 i torneu-ho a provar.</translation>
-    </message>
-    <message>
-        <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation type="vanished">El model original de la conversa ha estat suprimit. Hem canviat a un model nou perquè pugueu continuar la conversa.</translation>
-    </message>
-    <message>
-        <source>Recommendations</source>
-        <translation type="vanished">Recomanacions</translation>
-    </message>
-    <message>
-        <source>More</source>
-        <translation type="vanished">Més</translation>
-    </message>
-    <message>
-        <source>Add Model</source>
-        <translation type="vanished">Afegir model</translation>
-    </message>
-    <message>
-        <source>No Model</source>
-        <translation type="vanished">Sense model</translation>
-    </message>
-    <message>
-        <source>No model available. Please install or configure a model in the settings.</source>
-        <translation type="vanished">No hi ha cap model disponible. Instal·leu o configureu un model a la configuració.</translation>
-    </message>
-    <message>
-        <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation type="vanished">Descriviu el tema del contingut i els requisits per a la vostra creació.</translation>
-    </message>
-    <message>
-        <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation type="vanished">Introduïu el contingut que voleu traduir i especifiqueu l&apos;idioma de destinació. La traducció per defecte és al xinès.</translation>
-    </message>
-    <message>
-        <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation type="vanished">Introduïu el text que necessiteu processar i especifiqueu els vostres requisits.</translation>
-    </message>
-    <message>
-        <source>New Agent Added</source>
-        <translation type="vanished">S&apos;ha afegit un nou agent</translation>
-    </message>
-    <message>
-        <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation type="vanished">S&apos;han afegit nous agents d&apos;escriptura, processament de text i traducció. Consulteu-los ara.</translation>
-    </message>
-    <message>
-        <source>Try it</source>
-        <translation type="vanished">Proveu-ho</translation>
-    </message>
-    <message>
-        <source>Write an article based on the following document:</source>
-        <translation type="vanished">Escriviu un article basat en el document següent:</translation>
-    </message>
-    <message>
-        <source>Translate the following document into English:</source>
-        <translation type="vanished">Traduïu el document següent a l&apos;anglès:</translation>
-    </message>
-</context>
-<context>
-    <name>EChatButton</name>
-    <message>
-        <source>Turn off voice conversation</source>
-        <translation type="vanished">Desactivar la conversa de veu</translation>
-    </message>
-    <message>
-        <source>Voice conversation</source>
-        <translation type="vanished">Conversa de veu</translation>
-    </message>
-</context>
-<context>
-    <name>EPPTWebView</name>
-    <message>
-        <source>Export Item As</source>
-        <translation type="vanished">Exportar l&apos;element com</translation>
-    </message>
-</context>
-<context>
-    <name>EParserDocument</name>
-    <message>
-        <source>Supported files</source>
-        <translation type="vanished">Fitxers compatibles</translation>
+        <translation>El contingut del document no és vàlid o està buit.</translation>
     </message>
 </context>
 <context>
     <name>FileParser</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/fileparser.cpp" line="83"/>
         <source>Unsupported file format</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FunctionsParser</name>
-    <message>
-        <source>Function not available</source>
-        <translation type="vanished">Funció no disponible</translation>
-    </message>
-</context>
-<context>
-    <name>GetFreeAccountDialog</name>
-    <message>
-        <source>Get a free trial account</source>
-        <translation type="vanished">Obteniu un compte de prova gratuït</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Cancel·lar</translation>
-    </message>
-    <message>
-        <source>Get account</source>
-        <comment>button</comment>
-        <translation type="vanished">Obtenir compte</translation>
-    </message>
-    <message>
-        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="vanished">Rebre un compte indica que compreneu i accepteu els termes de l&apos;esdeveniment,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Detalls de l&apos;esdeveniment&gt;&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Compte de prova</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">No s&apos;ha pogut desar, torneu-ho a provar més tard</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Confirma</translation>
-    </message>
-    <message>
-        <source>Trial account received successfully.</source>
-        <translation type="vanished">Compte de prova rebut amb èxit.</translation>
-    </message>
-    <message>
-        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="vanished">El nombre d&apos;usos i la durada del compte de prova són limitats, si us plau, configureu el vostre compte de model personal a temps! Consulteu els detalls de l&apos;esdeveniment per a més informació.</translation>
-    </message>
-    <message>
-        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="vanished">El suport en anglès per als comptes de prova no és satisfactori. A més, el nombre d&apos;usos i la durada del compte de prova són limitats. Si us plau, configureu el vostre compte de model personal a temps!</translation>
-    </message>
-    <message>
-        <source>Start trial</source>
-        <comment>button</comment>
-        <translation type="vanished">Comença la prova</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">L&apos;activitat del compte gratuït ha finalitzat.</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">No s&apos;ha pogut connectar al servidor, si us plau, comproveu la vostra xarxa o torneu-ho a provar més tard.</translation>
+        <translation>Format de fitxer no compatible</translation>
     </message>
 </context>
 <context>
     <name>IatCodeTranslation</name>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="10"/>
         <source>appid authorization failed</source>
-        <translation>L&apos;autorització de l&apos;appid ha fallat</translation>
+        <translation>ha fallat l&apos;autorització de l&apos;identificador de l&apos;aplicació</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="11"/>
         <source>Failed to obtain a certain parameter</source>
-        <translation>No s&apos;ha pogut obtenir un determinat paràmetre</translation>
+        <translation>No s&apos;ha pogut obtenir un paràmetre determinat</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="12"/>
         <source>Parameter value is illegal</source>
         <translation>El valor del paràmetre és il·legal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="13"/>
         <source>Insufficient engine authorization</source>
         <translation>Autorització del motor insuficient</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="14"/>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="15"/>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="18"/>
         <source>Session timeout</source>
-        <translation>Temps d&apos;espera de la sessió</translation>
+        <translation>S&apos;ha exhaurit el temps de la sessió</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="16"/>
         <source>Audio decoding failed</source>
-        <translation>La descodificació de l&apos;àudio ha fallat</translation>
+        <translation>Ha fallat la descodificació de l&apos;àudio</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="17"/>
         <source>Engine session ended</source>
-        <translation>La sessió del motor ha finalitzat</translation>
+        <translation>Ha finalitzat la sessió del motor</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="19"/>
         <source>Parameter error</source>
         <translation>Error de paràmetre</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="20"/>
         <source>appid cannot be empty</source>
-        <translation>L&apos;appid no pot estar buit</translation>
+        <translation>l&apos;identificador de l&apos;aplicació no pot estar buit</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="21"/>
         <source>Illegal version</source>
         <translation>Versió il·legal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="22"/>
         <source>permission denied</source>
-        <translation>Permís denegat</translation>
+        <translation>permís denegat</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="23"/>
         <source>Daily flow control exceeds limit</source>
         <translation>El control de flux diari supera el límit</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="24"/>
         <source>The request data format is illegal</source>
-        <translation>El format de les dades de la sol·licitud és il·legal</translation>
+        <translation>El format de les dades de sol·licitud és il·legal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="25"/>
         <source>base64 decoding failed</source>
-        <translation>La descodificació base64 ha fallat</translation>
+        <translation>ha fallat la descodificació base64</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="26"/>
         <source>Required parameters are missing or the parameters are illegal</source>
-        <translation>Falten paràmetres necessaris o els paràmetres són il·legals</translation>
+        <translation>Falten els paràmetres necessaris o els paràmetres són il·legals</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="27"/>
         <source>Invalid handle</source>
-        <translation>Manejador no vàlid</translation>
+        <translation>Identificador no vàlid</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="28"/>
         <source>Reading data timeout</source>
         <translation>Temps d&apos;espera de lectura de dades</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/iatcodetranslation.cpp" line="37"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>La connexió ha fallat, si us plau, comproveu la informació introduïda.</translation>
-    </message>
-</context>
-<context>
-    <name>IconButtonEx</name>
-    <message>
-        <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation type="vanished">Els fitxers afegits recentment requereixen un preprocessament abans de poder ser utilitzats, i durant el procés de processament de dades, pot consumir una quantitat significativa de recursos de computació i emmagatzematge. El processament de dades s&apos;aturarà després d&apos;eliminar les dades.</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseItem</name>
-    <message>
-        <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation type="vanished">Esteu segur que voleu eliminar aquest fitxer de la base de coneixements?</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Cancel·la</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Confirma</translation>
-    </message>
-</context>
-<context>
-    <name>KnowledgeBaseListWidget</name>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Elimina</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">Afegir</translation>
-    </message>
-    <message>
-        <source>Please install the embedding model plugins first</source>
-        <translation type="vanished">Primer instal·leu els connectors del model d&apos;incrustació</translation>
-    </message>
-    <message>
-        <source>Knowledge Base Management</source>
-        <translation type="vanished">Gestió de la base de coneixement</translation>
-    </message>
-    <message>
-        <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation type="vanished">Aquí es pot definir la base de coneixement de l&apos;Assistent de Coneixement Personal, i l&apos;Assistent respondrà preguntes basant-se en els fitxers afegits a continuació.</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Fet</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="vanished">Cap</translation>
-    </message>
-    <message>
-        <source>File already exist</source>
-        <translation type="vanished">El fitxer ja existeix</translation>
-    </message>
-    <message>
-        <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation type="vanished">El fitxer %1 ja existeix i no es pot afegir de nou. Modifiqueu el nom del fitxer o suprimiu el fitxer existent abans d&apos;afegir-lo de nou</translation>
-    </message>
-    <message>
-        <source>All files</source>
-        <translation type="vanished">Tots els fitxers</translation>
-    </message>
-    <message>
-        <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation type="vanished">Aquesta funció requereix recursos de maquinari elevats, i la configuració de referència és: CPU Intel 11a generació i7 o superior; Memòria de 16GB o més; Tenir una targeta gràfica NVIDIA i una sèrie 10 o superior és la millor opció. Si la configuració és massa baixa, poden sorgir problemes com ara retard i respostes inexactes.</translation>
+        <translation>Ha fallat la connexió, comproveu la informació introduïda.</translation>
     </message>
 </context>
 <context>
     <name>KnowledgeBaseManager</name>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="275"/>
         <source>FollowAlong</source>
-        <translation>Segueix-me</translation>
+        <translation>FollowAlong</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="284"/>
         <source>Insufficient knowledge base capacity</source>
-        <translation type="unfinished">Capacitat insuficient de la base de coneixement</translation>
+        <translation>Capacitat insuficient de la base de coneixement</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="285"/>
         <source>The total capacity of the knowledge base is %1M, with a remaining %2. The total number of files added this time is %3. Unable to complete the add to knowledge base operation.</source>
-        <translation type="unfinished">La capacitat total de la base de coneixement és de %1M, amb un %2 restant. El nombre total de fitxers afegits aquesta vegada és %3. No es pot completar l&apos;operació d&apos;afegir a la base de coneixement.</translation>
+        <translation>La capacitat total de la base de coneixement és de %1M, amb un %2 restant. El nombre total de fitxers afegits aquesta vegada és de %3. No s&apos;ha pogut completar l&apos;operació d&apos;afegir a la base de coneixement.</translation>
     </message>
     <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="291"/>
-        <source>OK</source>
-        <comment>button</comment>
-        <translation type="unfinished">D&apos;acord</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="305"/>
-        <source>Not enough disk space</source>
-        <translation type="unfinished">No hi ha prou espai al disc</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="306"/>
-        <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
-        <translation type="unfinished">Per emmagatzemar els fitxers afegits recentment, es requereix almenys %1 d&apos;espai al disc. L&apos;espai restant actual és %2. Netegeu prou espai al disc dur i torneu-ho a provar.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="324"/>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="unfinished">Afegir a la base de coneixement requereix instal·lar el connector del model de vectorització. Si us plau, aneu a la botiga d&apos;aplicacions per descarregar-lo i instal·lar-lo.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="332"/>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="unfinished">No instal·lar</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="333"/>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="unfinished">Instal·lar immediatament</translation>
-    </message>
-</context>
-<context>
-    <name>LLM</name>
-    <message>
-        <source>Vincent picture service is not supported</source>
-        <translation type="vanished">El servei d&apos;imatges Vincent no està suportat</translation>
-    </message>
-</context>
-<context>
-    <name>LLMServerProxy</name>
-    <message>
-        <source>GPT3.5（OpenAI）</source>
-        <translation type="vanished">GPT3.5 (OpenAI)</translation>
-    </message>
-    <message>
-        <source>GPT4（OpenAI）</source>
-        <translation type="vanished">GPT4 (OpenAI)</translation>
-    </message>
-    <message>
-        <source>星火大模型1.5（讯飞）</source>
-        <translation type="vanished">Model Spark 1.5 (iFLYTEK)</translation>
-    </message>
-    <message>
-        <source>星火大模型2.0（讯飞）</source>
-        <translation type="vanished">Model Spark 2.0 (iFLYTEK)</translation>
-    </message>
-    <message>
-        <source>星火大模型3.0（讯飞）</source>
-        <translation type="vanished">Model Spark 3.0 (iFLYTEK)</translation>
-    </message>
-    <message>
-        <source>ERNIE 3.5</source>
-        <translation type="vanished">ERNIE 3.5</translation>
-    </message>
-    <message>
-        <source>ERNIE-Bot-turbo</source>
-        <translation type="vanished">ERNIE-Bot-turbo</translation>
-    </message>
-    <message>
-        <source>ERNIE-Bot-4</source>
-        <translation type="vanished">ERNIE-Bot-4</translation>
-    </message>
-    <message>
-        <source>360 AI</source>
-        <translation type="vanished">360 AI</translation>
-    </message>
-    <message>
-        <source>iFLYTEK-Spark</source>
-        <translation type="vanished">iFLYTEK-Spark</translation>
-    </message>
-    <message>
-        <source>Baidu-Ernie</source>
-        <translation type="vanished">Baidu-Ernie</translation>
-    </message>
-    <message>
-        <source>ChatGLM-turbo</source>
-        <translation type="vanished">ChatGLM-turbo</translation>
-    </message>
-    <message>
-        <source>Gemini 1.5 Flash</source>
-        <translation type="vanished">Gemini 1.5 Flash</translation>
-    </message>
-    <message>
-        <source>Gemini 1.5 Pro</source>
-        <translation type="vanished">Gemini 1.5 Pro</translation>
-    </message>
-    <message>
-        <source>TextToImage(Local)</source>
-        <translation type="vanished">TextAImatge(Local)</translation>
-    </message>
-    <message>
-        <source>YouRong 1.5B</source>
-        <translation type="vanished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <source>YouRong 7B</source>
-        <translation type="vanished">YouRong 7B</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation type="vanished">Personalitzat</translation>
-    </message>
-    <message>
-        <source>Private deployment model</source>
-        <translation type="vanished">Model de desplegament privat</translation>
-    </message>
-    <message>
-        <source>OpenRouter</source>
-        <translation type="vanished">OpenRouter</translation>
-    </message>
-    <message>
-        <source>DeepSeek-R1</source>
-        <translation type="vanished">DeepSeek-R1</translation>
-    </message>
-    <message>
-        <source>DeepSeek</source>
-        <translation type="vanished">DeepSeek</translation>
-    </message>
-    <message>
-        <source>unknown model</source>
-        <translation type="vanished">model desconegut</translation>
-    </message>
-</context>
-<context>
-    <name>LLMUtils</name>
-    <message>
-        <source>Your system environment is Linux, and the user home path is</source>
-        <translation type="vanished">El vostre entorn de sistema és Linux, i la ruta de l&apos;usuari és</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelItem</name>
-    <message>
-        <source>Install</source>
-        <translation type="vanished">Instal·lar</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="vanished">Actualitzar</translation>
-    </message>
-    <message>
-        <source>Uninstall</source>
-        <translation type="vanished">Desinstal·lar</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelListItem</name>
-    <message>
-        <source>uninstall</source>
-        <translation type="vanished">desinstal·lar</translation>
-    </message>
-</context>
-<context>
-    <name>LocalModelListWidget</name>
-    <message>
-        <source>Local model</source>
-        <translation type="vanished">Model local</translation>
-    </message>
-    <message>
-        <source>Text to image model</source>
-        <translation type="vanished">Model de text a imatge</translation>
-    </message>
-    <message>
-        <source>Use a local model to generate images. After turning it on, you can select the model in the model list in the chat interface.</source>
-        <translation type="vanished">Utilitzeu un model local per generar imatges. Un cop activat, podeu seleccionar el model a la llista de models a la interfície de xat.</translation>
-    </message>
-    <message>
-        <source>speech model</source>
-        <translation type="vanished">model de veu</translation>
-    </message>
-    <message>
-        <source>When turned on, the speech recognition and speech reading in the chat interface will use the local model without requiring an Internet connection.</source>
-        <translation type="vanished">Quan està activat, el reconeixement de veu i la lectura de veu a la interfície de xat utilitzaran el model local sense necessitar connexió a Internet.</translation>
-    </message>
-    <message>
-        <source>ULLM-1.5B</source>
-        <translation type="vanished">ULLM-1.5B</translation>
-    </message>
-    <message>
-        <source>ULLM-7B</source>
-        <translation type="vanished">ULLM-7B</translation>
-    </message>
-    <message>
-        <source>DeepSeek-R1-1.5B</source>
-        <translation type="vanished">DeepSeek-R1-1.5B</translation>
-    </message>
-    <message>
-        <source>UOS AI large model</source>
-        <translation type="vanished">Model gran d&apos;IA UOS</translation>
-    </message>
-    <message>
-        <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation type="vanished">Un cop instal·lat, no necessiteu connexió a Internet per utilitzar UOS AI.</translation>
-    </message>
-    <message>
-        <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation type="vanished">Baixeu de la comunitat de codi obert sota la vostra responsabilitat. Utilitzeu-lo a l&apos;Assistent d&apos;IA UOS després de la instal·lació.</translation>
-    </message>
-    <message>
-        <source>Embedding Plugins</source>
-        <translation type="vanished">Connectors d&apos;incrustació</translation>
-    </message>
-    <message>
-        <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation type="vanished">Després d&apos;instal·lar el model, es poden executar l&apos;Assistent del Sistema i l&apos;Assistent de Coneixement Personal.</translation>
-    </message>
-</context>
-<context>
-    <name>MgmtWindow</name>
-    <message>
-        <source>Successfully connected</source>
-        <translation type="vanished">Connectat amb èxit</translation>
-    </message>
-    <message>
-        <source>User Agreement</source>
-        <translation type="vanished">Acord d&apos;usuari</translation>
-    </message>
-    <message>
-        <source>UOS AI User Agreement</source>
-        <translation type="vanished">Acord d&apos;usuari d&apos;IA UOS</translation>
-    </message>
-    <message>
-        <source>Read and agreed</source>
-        <translation type="vanished">Llegit i acceptat</translation>
-    </message>
-    <message>
-        <source>Proxy Settings</source>
-        <translation type="vanished">Configuració del proxy</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Anar a la configuració</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Configuració del model</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">L&apos;activitat del compte gratuït finalitza.</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Confirmar</translation>
-    </message>
-    <message>
-        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="vanished">Afegir a la base de coneixement requereix instal·lar el connector del model de vectorització. Si us plau, aneu a la botiga d&apos;aplicacions per descarregar-lo i instal·lar-lo.</translation>
-    </message>
-    <message>
-        <source>Do not install</source>
-        <comment>button</comment>
-        <translation type="vanished">No instal·lar</translation>
-    </message>
-    <message>
-        <source>Install immediately</source>
-        <comment>button</comment>
-        <translation type="vanished">Instal·lar immediatament</translation>
-    </message>
-</context>
-<context>
-    <name>ModelListItem</name>
-    <message>
-        <source>Are you sure you want to delete this model?</source>
-        <translation type="vanished">Esteu segur que voleu suprimir aquest model?</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation type="vanished">Cancel·lar</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Confirmar</translation>
-    </message>
-</context>
-<context>
-    <name>ModelListWidget</name>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">Obtenir un compte gratuït</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Suprimir</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="vanished">Afegir</translation>
-    </message>
-    <message>
-        <source>Online model</source>
-        <translation type="vanished">Model en línia</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Fet</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="vanished">Cap</translation>
-    </message>
-</context>
-<context>
-    <name>ModifyModelDialog</name>
-    <message>
-        <source>LLM</source>
-        <translation type="vanished">LLM</translation>
-    </message>
-    <message>
-        <source>APPID</source>
-        <translation type="vanished">APPID</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">ClauAPI</translation>
-    </message>
-    <message>
-        <source>APISecret</source>
-        <translation type="vanished">SecretAPI</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Compte</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Nom del model</translation>
-    </message>
-    <message>
-        <source>API Address</source>
-        <translation type="vanished">Adreça API</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Obligatori, per distingir múltiples models</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Domini</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Cancel·lar</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Confirmar</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">No més de 20 caràcters</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">El nom del compte ja existeix, canvieu-lo</translation>
-    </message>
-</context>
-<context>
-    <name>OcrParse</name>
-    <message>
-        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="25"/>
-        <source>The image file does not exist: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/services/fileservice/parsers/ocrparse.cpp" line="34"/>
-        <source>OCR did not recognize the text content</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>OperatingLineWidget</name>
-    <message>
-        <source>In data processing</source>
-        <translation type="vanished">En processament de dades</translation>
-    </message>
-    <message>
-        <source>Data processing error</source>
-        <translation type="vanished">Error en el processament de dades</translation>
-    </message>
-    <message>
-        <source>File error, unable to process, please delete.</source>
-        <translation type="vanished">Error de fitxer, no es pot processar, suprimiu-lo.</translation>
-    </message>
-</context>
-<context>
-    <name>QObject</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS IA</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">Assistent del sistema UOS</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Assistent del sistema Deepin</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Assistent de coneixement personal</translation>
-    </message>
-    <message>
-        <source>AI Writing</source>
-        <translation type="vanished">Escriptura amb IA</translation>
-    </message>
-    <message>
-        <source>AI Text Processing</source>
-        <translation type="vanished">Processament de text amb IA</translation>
-    </message>
-    <message>
-        <source>AI Translation</source>
-        <translation type="vanished">Traducció amb IA</translation>
-    </message>
-    <message>
-        <source>System&apos;s Comprehensive AI Assistant.</source>
-        <translation type="vanished">Assistent d&apos;IA integral del sistema.</translation>
-    </message>
-    <message>
-        <source>Assists you with UOS system-related inquiries.</source>
-        <translation type="vanished">T’ajuda amb consultes relacionades amb el sistema UOS.</translation>
-    </message>
-    <message>
-        <source>Assists you with Deepin system-related inquiries.</source>
-        <translation type="vanished">T’ajuda amb consultes relacionades amb el sistema Deepin.</translation>
-    </message>
-    <message>
-        <source>Write Based on Your Topic and Requirements.</source>
-        <translation type="vanished">Escriu segons el teu tema i els teus requisits.</translation>
-    </message>
-    <message>
-        <source>Answers questions based on your personal knowledge base.</source>
-        <translation type="vanished">Respon preguntes basades en la vostra base de coneixement personal.</translation>
-    </message>
-    <message>
-        <source>Capable of Handling Text Processing Tasks Such as Summarizing, Proofreading, and Rewriting.</source>
-        <translation type="vanished">Capacitat per gestionar tasques de processament de text com ara resumir, revisar i reescriure.</translation>
-    </message>
-    <message>
-        <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation type="vanished">El vostre assistent de traducció, amb domini de múltiples idiomes.</translation>
-    </message>
-    <message>
-        <location filename="../src/database/knowledgebasemanager.cpp" line="311"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="222"/>
         <source>OK</source>
         <comment>button</comment>
         <translation>D&apos;acord</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="831"/>
-        <source>Search</source>
-        <translation>Cerca</translation>
+        <source>Not enough disk space</source>
+        <translation>No hi ha prou espai al disc</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="833"/>
-        <source>Explain</source>
-        <translation>Explica</translation>
+        <source>To store the newly added files, at least %1 of disk space is required. The current remaining space is %2. Please clear enough hard disk space and try again.</source>
+        <translation>Per emmagatzemar els fitxers afegits recentment, cal com a mínim %1 d&apos;espai al disc. L&apos;espai restant actual és de %2. Allibereu prou espai al disc dur i torneu-ho a provar.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="835"/>
-        <source>Summary</source>
-        <translation>Resum</translation>
+        <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
+        <translation>Per afegir a la base de coneixement cal instal·lar el connector del model de vectorització. Aneu a la botiga d&apos;aplicacions per baixar-lo i instal·lar-lo.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="837"/>
-        <source>Translate</source>
-        <translation>Traduïu</translation>
+        <source>Do not install</source>
+        <comment>button</comment>
+        <translation>No instal·lar</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="839"/>
-        <source>Continue Writing</source>
-        <translation>Continua escrivint</translation>
+        <source>Install immediately</source>
+        <comment>button</comment>
+        <translation>Instal·lar ara</translation>
+    </message>
+</context>
+<context>
+    <name>MarkdownEditor</name>
+    <message>
+        <source>Outline</source>
+        <translation>Esquema</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="841"/>
-        <source>Expand</source>
-        <translation>Amplia</translation>
+        <source>No outline</source>
+        <translation>Sense esquema</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="843"/>
-        <source>Polish</source>
-        <translation>Polir</translation>
+        <source>References</source>
+        <translation>Referències</translation>
+    </message>
+</context>
+<context>
+    <name>OcrParse</name>
+    <message>
+        <source>The image file does not exist: %1</source>
+        <translation>El fitxer d&apos;imatge no existeix: %1</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="845"/>
-        <source>Correct</source>
-        <translation>Corregir</translation>
+        <source>OCR did not recognize the text content</source>
+        <translation>L&apos;OCR no ha reconegut el contingut del text</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>System AI Intelligent ButlerFunction
+Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
+Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
+        <translation>Sistema IA Butler Intel·ligent
+Introducció: Planifica de manera intel·ligent les eines del sistema per realitzar operacions complexes del sistema, admetent el control del sistema, la gestió de fitxers, la gestió d&apos;aplicacions i protocols de xarxa.
+Exemple de prompt: Anomena tots els fitxers de la carpeta creada recentment a l&apos;escriptori com a materials del projecte i ordena&apos;ls numèricament.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="847"/>
-        <source>Add to the AI knowledge base</source>
-        <translation>Afegeix a la base de coneixement de la IA</translation>
+        <source>Ask a question...</source>
+        <translation>Feu una pregunta...</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/selectiontagobject.cpp" line="235"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="32"/>
+        <source>Discord gateway error: %1</source>
+        <translation>Error de la passarel·la de Discord: %1</translation>
+    </message>
+    <message>
+        <source>Missing Discord bot token.</source>
+        <translation>Falta el token del bot de Discord.</translation>
+    </message>
+    <message>
+        <source>Generating...</source>
+        <translation>S&apos;està generant...</translation>
+    </message>
+    <message>
+        <source>Discord placeholder message missing id.</source>
+        <translation>Falta l&apos;identificador del missatge de marcador de posició de Discord.</translation>
+    </message>
+    <message>
+        <source>Discord gateway URL is empty.</source>
+        <translation>L&apos;URL de la passarel·la de Discord està buit.</translation>
+    </message>
+    <message>
+        <source>Ask UOS AI a question</source>
+        <translation>Feu una pregunta a UOS AI</translation>
+    </message>
+    <message>
+        <source>Question for UOS AI</source>
+        <translation>Pregunta per a UOS AI</translation>
+    </message>
+    <message>
+        <source>Missing Telegram bot token.</source>
+        <translation>Falta el testimoni del bot de Telegram.</translation>
+    </message>
+    <message>
+        <source>Telegram placeholder message missing message_id.</source>
+        <translation>El missatge de marcador de posició de Telegram no té el message_id.</translation>
+    </message>
+    <message>
+        <source>Telegram API request failed.</source>
+        <translation>Ha fallat la sol·licitud a l&apos;API de Telegram.</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <comment>button</comment>
+        <translation>D&apos;acord</translation>
+    </message>
+    <message>
+        <source>OpenAI</source>
+        <translation>OpenAI</translation>
+    </message>
+    <message>
+        <source>DeepSeek</source>
+        <translation>DeepSeek</translation>
+    </message>
+    <message>
+        <source>UOS AI Trial Account</source>
+        <translation>Compte de prova d&apos;UOS AI</translation>
+    </message>
+    <message>
+        <source>Custom</source>
+        <translation>Personalitzat</translation>
+    </message>
+    <message>
+        <source>Private deployment model</source>
+        <translation>Model de desplegament privat</translation>
+    </message>
+    <message>
         <source>{selection}</source>
         <translation>{selection}</translation>
     </message>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="237"/>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="238"/>
         <source>Restart immediately</source>
         <translation>Reinicia immediatament</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="97"/>
         <source>Simplified Chinese</source>
         <translation>Xinès simplificat</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="100"/>
         <source>Traditional Chinese</source>
         <translation>Xinès tradicional</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="103"/>
         <source>Tibetan</source>
-        <translation type="unfinished">tibetà</translation>
+        <translation>Tibetà</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="106"/>
         <source>English</source>
-        <translation type="unfinished">anglès</translation>
+        <translation>Anglès</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="109"/>
         <source>Japanese</source>
         <translation>Japonès</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="112"/>
         <source>German</source>
-        <translation type="unfinished">alemany</translation>
+        <translation>Alemany</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="115"/>
         <source>Spanish</source>
-        <translation type="unfinished">espanyol</translation>
+        <translation>Espanyol</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="118"/>
         <source>French</source>
-        <translation type="unfinished">francès</translation>
+        <translation>Francès</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="121"/>
         <source>Italian</source>
-        <translation type="unfinished">italià</translation>
+        <translation>Italià</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="124"/>
         <source>Korean</source>
-        <translation type="unfinished">coreà</translation>
+        <translation>Coreà</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="127"/>
         <source>Malay</source>
-        <translation type="unfinished">malai</translation>
+        <translation>Malai</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="130"/>
         <source>Portuguese</source>
-        <translation type="unfinished">portuguès</translation>
+        <translation>Portuguès</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="133"/>
         <source>Russian</source>
-        <translation type="unfinished">rus</translation>
+        <translation>Rus</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="136"/>
         <source>Thai</source>
-        <translation type="unfinished">tailandès</translation>
+        <translation>Tailandès</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="139"/>
         <source>Vietnamese</source>
-        <translation type="unfinished">vietnamita</translation>
+        <translation>Vietnamita</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/private/languageComboDelegate.cpp" line="142"/>
         <source>Arabic (SA)</source>
-        <translation>Àrab (Aràbia Saudita)</translation>
+        <translation>Àrab (SA)</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcp/defaultmcpserver.cpp" line="20"/>
-        <source>System AI Intelligent ButlerFunction
-Introduction: Intelligently schedules system tools to perform complex system operations, supporting system control, file management, application management, and networking protocols.
-Prompt Example: Name all files in the newly created folder on the desktop as project materials and arrange them in numerical order.</source>
-        <translation>Sistema AI Majordom Intel·ligent
-
-Introducció: Programa intel·ligentment les eines del sistema per realitzar operacions complexes del sistema, amb suport per al control del sistema, gestió de fitxers, gestió d&apos;aplicacions i protocols de xarxa.
-
-Exemple d&apos;indicació: Anomena tots els fitxers de la carpeta recentment creada a l&apos;escriptori com a materials del projecte i ordena&apos;ls numèricament.</translation>
+        <source>Search</source>
+        <translation>Cerca</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantinfo.h" line="23"/>
-        <source>Ask a question...</source>
-        <translation type="unfinished"></translation>
+        <source>Explain</source>
+        <translation>Explica</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="99"/>
-        <source>OpenAI</source>
-        <translation type="unfinished"></translation>
+        <source>Summary</source>
+        <translation>Resum</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="118"/>
-        <source>DeepSeek</source>
-        <translation type="unfinished">DeepSeek</translation>
+        <source>Translate</source>
+        <translation>Tradueix</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="137"/>
-        <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <source>Continue Writing</source>
+        <translation>Continua escrivint</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="182"/>
-        <source>Custom</source>
-        <translation type="unfinished">Personalitzat</translation>
+        <source>Expand</source>
+        <translation>Amplia</translation>
     </message>
     <message>
-        <location filename="../src/datamigration/llmmigration.cpp" line="232"/>
-        <source>Private deployment model</source>
-        <translation type="unfinished">Model de desplegament privat</translation>
+        <source>Polish</source>
+        <translation>Poleix</translation>
     </message>
     <message>
-        <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation type="obsolete">Falta el camp &apos;mcpServers&apos;.</translation>
+        <source>Correct</source>
+        <translation>Corregeix</translation>
     </message>
     <message>
-        <source>no valid mcp server.</source>
-        <translation type="obsolete">cap servidor MCP vàlid.</translation>
-    </message>
-    <message>
-        <source>url field cannot be empty.</source>
-        <translation type="obsolete">el camp url no pot estar buit.</translation>
-    </message>
-    <message>
-        <source>command field cannot be empty.</source>
-        <translation type="obsolete">el camp command no pot estar buit.</translation>
-    </message>
-    <message>
-        <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation type="obsolete">Falta el camp &apos;command&apos; o &apos;url&apos;</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/taskchannel.cpp" line="198"/>
-        <source>Knowledge Base Management</source>
-        <translation type="unfinished"></translation>
+        <source>Add to the AI knowledge base</source>
+        <translation>Afegeix a la base de coneixement de la IA</translation>
     </message>
 </context>
 <context>
     <name>ResearchTools</name>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="60"/>
         <source>The uos-ai-agent plugin (approximately %1) must be installed to save documents.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cal instal·lar el connector uos-ai-agent (aproximadament %1) per desar documents.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="62"/>
         <source>The uos-ai-agent plugin must be installed to save documents.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cal instal·lar el connector uos-ai-agent per desar documents.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="69"/>
         <source>Note</source>
-        <translation type="unfinished"></translation>
+        <translation>Nota</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="71"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/tools/researchtools.cpp" line="72"/>
         <source>Download Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ServerCodeTranslation</name>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">No s&apos;ha pogut connectar al servidor, comproveu la xarxa o torneu-ho a provar més tard.</translation>
-    </message>
-    <message>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation type="vanished">La connexió ha fallat, comproveu la informació introduïda.</translation>
-    </message>
-    <message>
-        <source>Sorry, according to relevant laws, regulations and policies, the results are not displayed for the time being.</source>
-        <translation type="vanished">Ho sentim, d&apos;acord amb les lleis, normatives i polítiques pertinents, els resultats no es mostren temporalment.</translation>
-    </message>
-    <message>
-        <source>Operation canceled.</source>
-        <translation type="vanished">Operació cancel·lada.</translation>
-    </message>
-    <message>
-        <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="vanished">El vostre compte gratuït ha caducat, configureu el compte del model per continuar utilitzant-lo.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="vanished">Heu exhaurit la quota del vostre compte gratuït, configureu el compte del model per continuar utilitzant-lo.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation type="vanished">Heu exhaurit la quota del vostre compte gratuït per a xat, configureu el compte del model per continuar utilitzant-lo.</translation>
-    </message>
-    <message>
-        <source>Your free account quota has been exhausted for text2image, please configure your model account to continue using it.</source>
-        <translation type="vanished">Heu exhaurit la quota del vostre compte gratuït per a text2image, configureu el compte del model per continuar utilitzant-lo.</translation>
-    </message>
-    <message>
-        <source>Invalid input device</source>
-        <translation type="vanished">Dispositiu d&apos;entrada no vàlid</translation>
-    </message>
-    <message>
-        <source>Invalid output device</source>
-        <translation type="vanished">Dispositiu de sortida no vàlid</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Ho sentim, no s&apos;han trobat operacions coincidents.</translation>
-    </message>
-    <message>
-        <source>The total number of characters in the conversation has exceeded the limit, please clear the conversation history and try again.</source>
-        <translation type="vanished">El nombre total de caràcters en la conversa ha superat el límit, esborreu l&apos;historial de la conversa i torneu-ho a provar.</translation>
+        <translation>Baixa ara</translation>
     </message>
 </context>
 <context>
     <name>ServiceConfigChannel</name>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="123"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
-        <translation type="unfinished">Falta el camp &apos;mcpServers&apos;.</translation>
+        <translation>Manca el camp &apos;mcpServers&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="132"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="145"/>
         <source>no valid mcp server.</source>
-        <translation type="unfinished">cap servidor MCP vàlid.</translation>
+        <translation>no hi ha cap servidor mcp vàlid.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="138"/>
         <source>Only one MCP service can be edited at a time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Només es pot editar un servei MCP a la vegada.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="152"/>
         <source>url field cannot be empty.</source>
-        <translation type="unfinished">el camp url no pot estar buit.</translation>
+        <translation>el camp url no pot estar buit.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="161"/>
         <source>command field cannot be empty.</source>
-        <translation type="unfinished">el camp command no pot estar buit.</translation>
+        <translation>el camp command no pot estar buit.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="168"/>
         <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation type="unfinished">Falta el camp &apos;command&apos; o &apos;url&apos;</translation>
+        <translation>Manca el camp &apos;command&apos; o &apos;url&apos;</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="219"/>
         <source>JSON configuration format is invalid.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Session</name>
-    <message>
-        <source>UOS AI</source>
-        <translation type="vanished">UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS System Assistant</source>
-        <translation type="vanished">Assistent del sistema UOS</translation>
-    </message>
-    <message>
-        <source>Deepin System Assistant</source>
-        <translation type="vanished">Assistent del sistema Deepin</translation>
-    </message>
-    <message>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="vanished">Assistent de coneixement personal</translation>
-    </message>
-    <message>
-        <source>AI Writing</source>
-        <translation type="vanished">Escriptura amb IA</translation>
-    </message>
-    <message>
-        <source>AI Text Processing</source>
-        <translation type="vanished">Processament de text amb IA</translation>
-    </message>
-    <message>
-        <source>AI Translation</source>
-        <translation type="vanished">Traducció amb IA</translation>
-    </message>
-</context>
-<context>
-    <name>SessionPrivate</name>
-    <message>
-        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="vanished">UOS AI requereix que es configuri un compte de model d&apos;IA abans de poder-lo utilitzar. Configureu primer un compte de model.</translation>
-    </message>
-    <message>
-        <source>Agent server is not available.</source>
-        <translation type="vanished">El servidor d’agents no està disponible.</translation>
-    </message>
-    <message>
-        <source>Successfully Claimed</source>
-        <translation type="obsolete">Reclamat amb èxit</translation>
-    </message>
-    <message>
-        <source>Account not found</source>
-        <translation type="vanished">Compte no trobat</translation>
-    </message>
-    <message>
-        <source>Only support deepseek account</source>
-        <translation type="vanished">Només es permeten comptes deepseek</translation>
-    </message>
-    <message>
-        <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation type="vanished">Ja heu participat en l&apos;esdeveniment i no podeu reclamar la recompensa de nou.</translation>
-    </message>
-    <message>
-        <source>Server system error</source>
-        <translation type="vanished">Error del sistema del servidor</translation>
-    </message>
-    <message>
-        <source>Failed to Claim. Please Try Again.</source>
-        <translation type="obsolete">No s&apos;ha pogut reclamar. Si us plau, torna-ho a provar.</translation>
+        <translation>El format de configuració JSON no és vàlid.</translation>
     </message>
 </context>
 <context>
     <name>TextParse</name>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="22"/>
         <source>Unable to open file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut obrir el fitxer: %1</translation>
     </message>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="31"/>
         <source>The file content is in binary format</source>
-        <translation type="unfinished"></translation>
+        <translation>El contingut del fitxer està en format binari</translation>
     </message>
     <message>
-        <location filename="../src/services/fileservice/parsers/textparse.cpp" line="39"/>
         <source>Unable to read file: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut llegir el fitxer: %1</translation>
     </message>
 </context>
 <context>
     <name>TitleBarMenu</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="137"/>
         <source>Feedback</source>
-        <translation>Retroalimentació</translation>
+        <translation>Comentaris</translation>
+    </message>
+    <message>
+        <source>Light Theme</source>
+        <translation>Tema clar</translation>
+    </message>
+    <message>
+        <source>Dark Theme</source>
+        <translation>Tema fosc</translation>
+    </message>
+    <message>
+        <source>System Theme</source>
+        <translation>Tema del sistema</translation>
+    </message>
+    <message>
+        <source>Theme</source>
+        <translation>Tema</translation>
     </message>
 </context>
 <context>
     <name>TtsCodeTranslation</name>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="10"/>
         <source>appid authorization failed</source>
-        <translation>l&apos;autorització de l&apos;appid ha fallat</translation>
+        <translation>ha fallat l&apos;autorització de l&apos;appid</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="11"/>
         <source>Failed to obtain a certain parameter</source>
         <translation>No s&apos;ha pogut obtenir un determinat paràmetre</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="12"/>
         <source>Parameter value is illegal</source>
-        <translation>El valor del paràmetre no és vàlid</translation>
+        <translation>El valor del paràmetre és il·legal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="13"/>
         <source>Insufficient engine authorization</source>
         <translation>Autorització del motor insuficient</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="14"/>
         <source>Request text length is illegal</source>
-        <translation>La longitud del text de la sol·licitud no és vàlida</translation>
+        <translation>La longitud del text de la sol·licitud és il·legal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="15"/>
         <source>session timeout</source>
-        <translation>temps d&apos;espera de la sessió</translation>
+        <translation>temps d&apos;espera de la sessió exhaurit</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="16"/>
         <source>Engine session ended</source>
-        <translation>La sessió del motor ha finalitzat</translation>
+        <translation>Ha finalitzat la sessió del motor</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="17"/>
         <source>appid cannot be empty</source>
         <translation>l&apos;appid no pot estar buit</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="18"/>
         <source>Illegal version</source>
-        <translation>Versió no vàlida</translation>
+        <translation>Versió il·legal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="19"/>
         <source>permission denied</source>
-        <translation>Permís denegat</translation>
+        <translation>permís denegat</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="20"/>
         <source>Daily flow control exceeds limit</source>
-        <translation>El control de flux diari ha superat el límit</translation>
+        <translation>El control de flux diari excedeix el límit</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="21"/>
         <source>The request data format is illegal</source>
-        <translation>El format de les dades de la sol·licitud no és vàlid</translation>
+        <translation>El format de les dades de la sol·licitud és il·legal</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="22"/>
         <source>base64 decoding failed</source>
-        <translation>Ha fallat la descodificació base64</translation>
+        <translation>ha fallat la descodificació base64</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="23"/>
         <source>Required parameters are missing or the parameters are illegal</source>
-        <translation>Falten paràmetres obligatoris o els paràmetres no són vàlids</translation>
+        <translation>Falten paràmetres obligatoris o els paràmetres són il·legals</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="24"/>
         <source>Reading data timeout</source>
-        <translation>Temps d&apos;espera de lectura de dades</translation>
+        <translation>Temps d&apos;espera de lectura de dades exhaurit</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="25"/>
         <source>network anomaly</source>
-        <translation>Anomalia de xarxa</translation>
+        <translation>anomalia de xarxa</translation>
     </message>
     <message>
-        <location filename="../src/audio/trans/ttscodetranslation.cpp" line="34"/>
         <source>Connection failed, please check the fill in information.</source>
-        <translation>La connexió ha fallat, si us plau, comproveu la informació proporcionada.</translation>
-    </message>
-</context>
-<context>
-    <name>TtsCompositeWidget</name>
-    <message>
-        <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation type="vanished">El text que heu seleccionat ha superat el límit de 5000 caràcters.</translation>
+        <translation>Ha fallat la connexió, comproveu la informació introduïda.</translation>
     </message>
 </context>
 <context>
     <name>UOSAbility</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1223"/>
         <source>I haven&apos;t implemented this feature yet.</source>
         <translation>Encara no he implementat aquesta funció.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1227"/>
         <source>service is not available!</source>
-        <translation>El servei no està disponible!</translation>
+        <translation>el servei no està disponible!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1232"/>
         <source>Invalid parameter!</source>
         <translation>Paràmetre no vàlid!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1237"/>
         <source>This app cannot be found!</source>
-        <translation>No es pot trobar aquesta aplicació!</translation>
+        <translation>Aquesta aplicació no es pot trobar!</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1242"/>
         <source>Failed to start application!</source>
-        <translation>No s&apos;ha pogut iniciar l&apos;aplicació!</translation>
-    </message>
-</context>
-<context>
-    <name>UOSAbilityManager</name>
-    <message>
-        <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation type="vanished">La brillantor ja està al màxim i no es pot augmentar més.</translation>
-    </message>
-    <message>
-        <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation type="vanished">La brillantor ja està al mínim i no es pot disminuir més.</translation>
-    </message>
-    <message>
-        <source>Your system memory is %0.</source>
-        <translation type="vanished">La memòria del vostre sistema és %0.</translation>
-    </message>
-    <message>
-        <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation type="vanished">S&apos;ha obert la interfície de configuració de l&apos;idioma. Si us plau, configureu-la en aquesta interfície.</translation>
-    </message>
-    <message>
-        <source>The current mode is already %1 mode.</source>
-        <translation type="vanished">El mode actual ja és el mode %1.</translation>
-    </message>
-    <message>
-        <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation type="vanished">No es pot tancar perquè el mode actual %1 no coincideix amb el mode objectiu.</translation>
-    </message>
-    <message>
-        <source>Balance mode cannot be turned off.</source>
-        <translation type="vanished">El mode d&apos;equilibri no es pot desactivar.</translation>
-    </message>
-    <message>
-        <source>The lock screen has been opened for you</source>
-        <translation type="vanished">S&apos;ha obert la pantalla de bloqueig per a vostè</translation>
-    </message>
-    <message>
-        <source>Screen shotting or recording has been completed</source>
-        <translation type="vanished">S&apos;ha completat la captura de pantalla o la gravació</translation>
-    </message>
-    <message>
-        <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation type="vanished">Només hi ha una pantalla, no es pot canviar el mode de pantalla.</translation>
-    </message>
-    <message>
-        <source>It is the same as the current display mode. Please try again.</source>
-        <translation type="vanished">És el mateix que el mode de visualització actual. Si us plau, torneu-ho a provar.</translation>
-    </message>
-    <message>
-        <source>Only one screen, can&apos;t switch screen.</source>
-        <translation type="vanished">Només hi ha una pantalla, no es pot canviar de pantalla.</translation>
-    </message>
-    <message>
-        <source>Your command has been issued.</source>
-        <translation type="vanished">S&apos;ha emès la vostra ordre.</translation>
-    </message>
-</context>
-<context>
-    <name>UserAgreementDialog</name>
-    <message>
-        <source>UOS AI User Agreement</source>
-        <translation type="vanished">Acord d&apos;Usuari d&apos;UOS AI</translation>
-    </message>
-    <message>
-        <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="vanished">Confirmo que tinc més de 18 anys. Reconec i accepto que els continguts que envio i rebo mitjançant l&apos;Aplicació són intercanvis de dades directes amb el proveïdor del servei de model gran i no tenen res a veure amb l&apos;Empresa.</translation>
-    </message>
-    <message>
-        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="vanished">Accepto participar en el pla d&apos;experiència d&apos;usuari de l&apos;Aplicació, i autoritzo la vostra empresa a recollir els continguts que envio mentre utilitzo l&apos;Aplicació, l&apos;hora d&apos;enviament, el tipus de model gran sol·licitat, l&apos;aplicació específica i si el text ha generat la imatge amb èxit, per tal de millorar la qualitat del servei i millorar l&apos;experiència d&apos;operació. (Si refuseu proporcionar la informació anterior, no afectarà el vostre ús normal de l&apos;Aplicació.)</translation>
-    </message>
-</context>
-<context>
-    <name>WXQFCodeTranslation</name>
-    <message>
-        <source>Server internal error</source>
-        <translation type="vanished">Error intern del servidor</translation>
-    </message>
-    <message>
-        <source>Service is temporarily unavailable</source>
-        <translation type="vanished">El servei està temporalment no disponible</translation>
-    </message>
-    <message>
-        <source>The API being called does not exist. Please check the request URL and try again. Generally, there are non-English characters in the URL, such as &quot;-&quot;. You can enter it manually and try again.</source>
-        <translation type="vanished">L&apos;API a la qual s&apos;està trucant no existeix. Si us plau, comproveu l&apos;URL de la sol·licitud i torneu-ho a provar. Generalment, hi ha caràcters no anglesos a l&apos;URL, com &quot;-&quot;. Podeu introduir-lo manualment i tornar-ho a provar.</translation>
-    </message>
-    <message>
-        <source>No interface calling permission, the relevant Qianfan interface is not checked when creating the application</source>
-        <translation type="vanished">No hi ha permís per trucar a la interfície, la interfície Qianfan rellevant no està marcada en crear l&apos;aplicació</translation>
-    </message>
-    <message>
-        <source>Model Invocation Error: The model request limit has been reached, or the model is offline. Suggestions: Re-add the model, or contact the customer service of the large model service provider to resolve this issue.</source>
-        <translation type="vanished">Error d&apos;invocació del model: S&apos;ha arribat al límit de sol·licituds del model o el model està fora de línia. Suggeriments: Torneu a afegir el model o contacteu amb el servei al client del proveïdor de serveis de models grans per resoldre aquest problema.</translation>
-    </message>
-    <message>
-        <source>Failed to obtain token</source>
-        <translation type="vanished">No s&apos;ha pogut obtenir el token</translation>
-    </message>
-    <message>
-        <source>IAM authentication failed</source>
-        <translation type="vanished">L&apos;autenticació IAM ha fallat</translation>
-    </message>
-    <message>
-        <source>The application does not exist or failed to be created</source>
-        <translation type="vanished">L&apos;aplicació no existeix o ha fallat en crear-se</translation>
-    </message>
-    <message>
-        <source>The number of requests per day exceeds the limit</source>
-        <translation type="vanished">El nombre de sol·licituds per dia supera el límit</translation>
-    </message>
-    <message>
-        <source>The total number of requests exceeds the limit</source>
-        <translation type="vanished">El nombre total de sol·licituds supera el límit</translation>
-    </message>
-    <message>
-        <source>Invalid access_token parameter</source>
-        <translation type="vanished">El paràmetre access_token no és vàlid</translation>
-    </message>
-    <message>
-        <source>access_token is invalid</source>
-        <translation type="vanished">L&apos;access_token no és vàlid</translation>
-    </message>
-    <message>
-        <source>access token expires</source>
-        <translation type="vanished">L&apos;access_token ha caducat</translation>
-    </message>
-    <message>
-        <source>Service error, template does not exist</source>
-        <translation type="vanished">Error del servei, la plantilla no existeix</translation>
-    </message>
-    <message>
-        <source>A system error occurred, please try again later</source>
-        <translation type="vanished">S&apos;ha produït un error del sistema, si us plau torneu-ho a provar més tard</translation>
-    </message>
-    <message>
-        <source>The knowledge base server cannot be accessed</source>
-        <translation type="vanished">No es pot accedir al servidor de la base de coneixement</translation>
-    </message>
-    <message>
-        <source>Knowledge base data download exception</source>
-        <translation type="vanished">Excepció en la descàrrega de dades de la base de coneixement</translation>
-    </message>
-    <message>
-        <source>Prompt word is too long</source>
-        <translation type="vanished">La paraula d&apos;invite és massa llarga</translation>
-    </message>
-    <message>
-        <source>Model does not exist</source>
-        <translation type="vanished">El model no existeix</translation>
-    </message>
-    <message>
-        <source>Request parameter error</source>
-        <translation type="vanished">Error en el paràmetre de la sol·licitud</translation>
-    </message>
-    <message>
-        <source>Image processing failed</source>
-        <translation type="vanished">El processament de la imatge ha fallat</translation>
-    </message>
-    <message>
-        <source>Service handling exception error</source>
-        <translation type="vanished">Error d&apos;excepció en el maneig del servei</translation>
-    </message>
-    <message>
-        <source>Service internal error</source>
-        <translation type="vanished">Error intern del servei</translation>
-    </message>
-    <message>
-        <source>The input parameter format is incorrect, such as missing necessary parameters.</source>
-        <translation type="vanished">El format del paràmetre d&apos;entrada és incorrecte, com ara paràmetres necessaris que falten.</translation>
-    </message>
-    <message>
-        <source>The input parameter body is not in standard JSON format</source>
-        <translation type="vanished">El cos del paràmetre d&apos;entrada no està en format JSON estàndard</translation>
-    </message>
-    <message>
-        <source>Parameter verification is illegal</source>
-        <translation type="vanished">La verificació del paràmetre és il·legal</translation>
-    </message>
-    <message>
-        <source>Permission control error</source>
-        <translation type="vanished">Error en el control de permisos</translation>
-    </message>
-    <message>
-        <source>Customized model service apiname does not exist</source>
-        <translation type="vanished">El nom de l&apos;API del servei de model personalitzat no existeix</translation>
-    </message>
-    <message>
-        <source>Service internal error, please try again later</source>
-        <translation type="vanished">Error intern del servei, si us plau torneu-ho a provar més tard</translation>
-    </message>
-    <message>
-        <source>Illegal HTTP Method, currently only supports POST requests</source>
-        <translation type="vanished">Mètode HTTP il·legal, actualment només es permeten sol·licituds POST</translation>
-    </message>
-    <message>
-        <source>The requested content exceeds the large model internal limit</source>
-        <translation type="vanished">El contingut sol·licitat supera el límit intern del model gran</translation>
-    </message>
-    <message>
-        <source>internal error</source>
-        <translation type="vanished">error intern</translation>
-    </message>
-    <message>
-        <source>Vincent diagram model service timeout</source>
-        <translation type="vanished">Temps d&apos;espera del servei del model de diagrama Vincent</translation>
-    </message>
-    <message>
-        <source>There are security issues with prompt and negative_prompt</source>
-        <translation type="vanished">Hi ha problemes de seguretat amb prompt i negative_prompt</translation>
-    </message>
-    <message>
-        <source>There are security issues with output images</source>
-        <translation type="vanished">Hi ha problemes de seguretat amb les imatges de sortida</translation>
-    </message>
-    <message>
-        <source>Parameter error</source>
-        <translation type="vanished">Error de paràmetre</translation>
-    </message>
-    <message>
-        <source>No access</source>
-        <translation type="vanished">Sense accés</translation>
-    </message>
-</context>
-<context>
-    <name>WXQFText2Image</name>
-    <message>
-        <source>The image description exceeds the 256 character limit</source>
-        <translation type="vanished">La descripció de la imatge supera el límit de 256 caràcters</translation>
-    </message>
-</context>
-<context>
-    <name>WelcomeDialog</name>
-    <message>
-        <source>Welcome to UOS AI</source>
-        <translation type="vanished">Benvingut/da a UOS AI</translation>
-    </message>
-    <message>
-        <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation type="vanished">UOS AI, el vostre assistent intel·ligent, està dissenyat per millorar la vostra productivitat i gaudir d&apos;una experiència laboral de qualitat.</translation>
-    </message>
-    <message>
-        <source>Get a free trial account</source>
-        <translation type="vanished">Obteniu un compte de prova gratuït</translation>
-    </message>
-    <message>
-        <source>Add Model</source>
-        <translation type="vanished">Afegir model</translation>
-    </message>
-    <message>
-        <source>Start using</source>
-        <translation type="vanished">Començar a utilitzar</translation>
-    </message>
-    <message>
-        <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="vanished">Confirmo que tinc més de 18 anys. Reconec i accepto l&apos;&lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;Acord d&apos;Usuari d&apos;UOS AI&quot;&lt;/a&gt;, i que els continguts que envio i rebo mitjançant l&apos;Aplicació són intercanvis de dades directes amb el proveïdor del servei de model gran i no tenen res a veure amb l&apos;Empresa.</translation>
-    </message>
-    <message>
-        <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="vanished">Rebre un compte indica que enteneu i accepteu els termes de l&apos;esdeveniment,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Detalls de l&apos;esdeveniment&gt;&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Compte de prova</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">No s&apos;ha pogut desar, torneu-ho a provar més tard</translation>
-    </message>
-    <message>
-        <source>Trial account received successfully.</source>
-        <translation type="vanished">Compte de prova rebut amb èxit.</translation>
-    </message>
-    <message>
-        <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="vanished">El nombre d&apos;usos i la durada del compte de prova són limitats, configureu el vostre compte de model personal a temps! Consulteu els detalls de l&apos;esdeveniment per a més informació.</translation>
-    </message>
-    <message>
-        <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="vanished">El suport en anglès per als comptes de prova no és satisfactori. A més, el nombre d&apos;usos i la durada del compte de prova són limitats. Configureu el vostre compte de model personal a temps!</translation>
-    </message>
-    <message>
-        <source>Start trial</source>
-        <comment>button</comment>
-        <translation type="vanished">Començar prova</translation>
-    </message>
-    <message>
-        <source>The free account activity ends.</source>
-        <translation type="vanished">L&apos;activitat del compte gratuït ha finalitzat.</translation>
-    </message>
-    <message>
-        <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="vanished">No s&apos;ha pogut connectar al servidor, comproveu la vostra xarxa o torneu-ho a provar més tard.</translation>
-    </message>
-    <message>
-        <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="vanished">Accepto participar en el pla d&apos;experiència d&apos;usuari de l&apos;Aplicació, i autoritzo la vostra empresa a recollir els continguts que envio mentre utilitzo l&apos;Aplicació, l&apos;hora d&apos;enviament, el tipus de model gran sol·licitat, l&apos;aplicació específica i si el text ha generat la imatge amb èxit, per tal de millorar la qualitat del servei i millorar l&apos;experiència d&apos;operació. (Si refuseu proporcionar la informació anterior, no afectarà el vostre ús normal de l&apos;Aplicació.)</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <comment>button</comment>
-        <translation type="vanished">Confirmar</translation>
+        <translation>S&apos;ha produït un error en iniciar l&apos;aplicació!</translation>
     </message>
 </context>
 <context>
     <name>WorkspaceStore</name>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="257"/>
         <source>Note: Part of the document content may be generated by AI</source>
-        <translation type="unfinished"></translation>
+        <translation>Nota: Part del contingut del document pot ser generat per IA</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="261"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>Referències</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="288"/>
         <source>Word files (*.docx)</source>
-        <translation type="unfinished"></translation>
+        <translation>Fitxers Word (*.docx)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="291"/>
         <source>PDF files (*.pdf)</source>
-        <translation type="unfinished"></translation>
+        <translation>Fitxers PDF (*.pdf)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="294"/>
         <source>Markdown files (*.md)</source>
-        <translation type="unfinished"></translation>
+        <translation>Fitxers Markdown (*.md)</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/workspacestore.cpp" line="301"/>
         <source>Save Article</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>XFCodeTranslation</name>
-    <message>
-        <source>Error while upgrading to WebSocket</source>
-        <translation type="vanished">Error en actualitzar a WebSocket</translation>
-    </message>
-    <message>
-        <source>Error reading user&apos;s message via WebSocket</source>
-        <translation type="vanished">Error en llegir el missatge de l&apos;usuari mitjançant WebSocket</translation>
-    </message>
-    <message>
-        <source>Error sending message to user via WebSocket</source>
-        <translation type="vanished">Error en enviar missatge a l&apos;usuari mitjançant WebSocket</translation>
-    </message>
-    <message>
-        <source>The user&apos;s message format is incorrect</source>
-        <translation type="vanished">El format del missatge de l&apos;usuari és incorrecte</translation>
-    </message>
-    <message>
-        <source>Schema error for user data</source>
-        <translation type="vanished">Error d&apos;esquema per a les dades de l&apos;usuari</translation>
-    </message>
-    <message>
-        <source>User parameter value is wrong</source>
-        <translation type="vanished">El valor del paràmetre de l&apos;usuari és incorrecte</translation>
-    </message>
-    <message>
-        <source>User concurrency error: The current user is already connected, and the same user cannot connect to multiple places at the same time.</source>
-        <translation type="vanished">Error de concurrència d&apos;usuari: L&apos;usuari actual ja està connectat i no es pot connectar a múltiples llocs al mateix temps.</translation>
-    </message>
-    <message>
-        <source>User traffic is limited: The service is processing the user&apos;s current problem and needs to wait for the processing to be completed before sending a new request. (You must wait for a complete reply from the  model before sending the next question)</source>
-        <translation type="vanished">El trànsit de l&apos;usuari està limitat: El servei està processant el problema actual de l&apos;usuari i cal esperar que es completi el processament abans d&apos;enviar una nova sol·licitud. (Heu d&apos;esperar una resposta completa del model abans d&apos;enviar la següent pregunta)</translation>
-    </message>
-    <message>
-        <source>Insufficient service capacity, please contact staff</source>
-        <translation type="vanished">Capacitat del servei insuficient, poseu-vos en contacte amb el personal</translation>
-    </message>
-    <message>
-        <source>Failed to establish connection with engine</source>
-        <translation type="vanished">No s&apos;ha pogut establir connexió amb el motor</translation>
-    </message>
-    <message>
-        <source>Error receiving engine data</source>
-        <translation type="vanished">Error en rebre dades del motor</translation>
-    </message>
-    <message>
-        <source>Error sending data to engine</source>
-        <translation type="vanished">Error en enviar dades al motor</translation>
-    </message>
-    <message>
-        <source>Engine internal error</source>
-        <translation type="vanished">Error intern del motor</translation>
-    </message>
-    <message>
-        <source>The input content does not pass the review and is suspected of violating the rules. Please readjust the input content.</source>
-        <translation type="vanished">El contingut d&apos;entrada no passa la revisió i sospita de violar les normes. Ajusteu de nou el contingut d&apos;entrada.</translation>
-    </message>
-    <message>
-        <source>The output content involves sensitive information, the review fails, and subsequent results cannot be displayed to the user.</source>
-        <translation type="vanished">El contingut de sortida implica informació sensible, la revisió falla i els resultats posteriors no es poden mostrar a l&apos;usuari.</translation>
-    </message>
-    <message>
-        <source>appid is in the blacklist</source>
-        <translation type="vanished">l&apos;appid està a la llista negra</translation>
-    </message>
-    <message>
-        <source>Appid authorization class error. For example: this function is not activated, the corresponding version is not activated, the token is insufficient, the concurrency exceeds authorization, etc.</source>
-        <translation type="vanished">Error de classe d&apos;autorització de l&apos;appid. Per exemple: aquesta funció no està activada, la versió corresponent no està activada, el token és insuficient, la concurrència supera l&apos;autorització, etc.</translation>
-    </message>
-    <message>
-        <source>Clear history failed</source>
-        <translation type="vanished">No s&apos;ha pogut esborrar l&apos;historial</translation>
-    </message>
-    <message>
-        <source>Indicates that the content of this session has a tendency to involve illegal information; it is recommended that developers give the user a prompt after receiving this error code to enter information that involves illegal information.</source>
-        <translation type="vanished">Indica que el contingut d&apos;aquesta sessió té tendència a implicar informació il·legal; es recomana que els desenvolupadors donin a l&apos;usuari un avís després de rebre aquest codi d&apos;error per introduir informació que impliqui informació il·legal.</translation>
-    </message>
-    <message>
-        <source>Service is busy, please try again later</source>
-        <translation type="vanished">El servei està ocupat, torneu-ho a provar més tard</translation>
-    </message>
-    <message>
-        <source>The parameters of the request engine are abnormal, and the engine schema check fails.</source>
-        <translation type="vanished">Els paràmetres del motor de sol·licitud són anormals i la comprovació de l&apos;esquema del motor falla.</translation>
-    </message>
-    <message>
-        <source>Engine network abnormality</source>
-        <translation type="vanished">Anomalia de xarxa del motor</translation>
-    </message>
-    <message>
-        <source>The number of tokens exceeds the upper limit. The number of words in the conversation history and question is too large and needs to be simplified.</source>
-        <translation type="vanished">El nombre de tokens supera el límit superior. El nombre de paraules en l&apos;historial de conversa i la pregunta és massa gran i cal simplificar-lo.</translation>
-    </message>
-    <message>
-        <source>Authorization error: The appId does not have authorization for related functions or the business volume exceeds the limit</source>
-        <translation type="vanished">Error d&apos;autorització: L&apos;appId no té autorització per a funcions relacionades o el volum de negoci supera el límit</translation>
-    </message>
-    <message>
-        <source>Authorization error: Daily flow control limit exceeded. Exceeded the maximum number of visits for the day</source>
-        <translation type="vanished">Error d&apos;autorització: S&apos;ha superat el límit de control de flux diari. S&apos;ha superat el nombre màxim de visites del dia</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Actualment hi ha massa visitants, torneu-ho a provar més tard.</translation>
-    </message>
-    <message>
-        <source>Connection failed, please check the fill in information.</source>
-        <translation type="vanished">La connexió ha fallat, comproveu la informació omplerta.</translation>
-    </message>
-</context>
-<context>
-    <name>ZhiPuCodeTranslation</name>
-    <message>
-        <source>Server internal error</source>
-        <translation type="vanished">Error intern del servidor</translation>
-    </message>
-    <message>
-        <source>Authentication failed</source>
-        <translation type="vanished">L&apos;autenticació ha fallat</translation>
-    </message>
-    <message>
-        <source>The Authentication parameter was not received in the header and authentication could not be performed.</source>
-        <translation type="vanished">No s&apos;ha rebut el paràmetre d&apos;autenticació a la capçalera i no s&apos;ha pogut realitzar l&apos;autenticació.</translation>
-    </message>
-    <message>
-        <source>The Authentication Token is illegal. Please confirm that the Authentication Token is delivered correctly.</source>
-        <translation type="vanished">El Token d&apos;autenticació és il·legal. Confirmeu que el Token d&apos;autenticació s&apos;ha lliurat correctament.</translation>
-    </message>
-    <message>
-        <source>Authentication Token has expired, please regenerate/obtain it</source>
-        <translation type="vanished">El Token d&apos;autenticació ha caducat, torneu a generar-lo/obtenir-lo</translation>
-    </message>
-    <message>
-        <source>Verification via Authentication Token failed</source>
-        <translation type="vanished">La verificació mitjançant el Token d&apos;autenticació ha fallat</translation>
-    </message>
-    <message>
-        <source>Account reading and writing</source>
-        <translation type="vanished">Lectura i escriptura del compte</translation>
-    </message>
-    <message>
-        <source>Your account is currently inactive. Please check account information</source>
-        <translation type="vanished">El vostre compte està inactiu actualment. Comproveu la informació del compte</translation>
-    </message>
-    <message>
-        <source>Your account does not exist</source>
-        <translation type="vanished">El vostre compte no existeix</translation>
-    </message>
-    <message>
-        <source>Your account has been locked, please contact customer service to unlock it</source>
-        <translation type="vanished">El vostre compte està bloquejat, poseu-vos en contacte amb l&apos;atenció al client per desbloquejar-lo</translation>
-    </message>
-    <message>
-        <source>Your account is in arrears, please recharge and try again</source>
-        <translation type="vanished">El vostre compte està endarrerit, si us plau, recarregueu i torneu a provar</translation>
-    </message>
-    <message>
-        <source>Unable to successfully access your account, please try again later</source>
-        <translation type="vanished">No s&apos;ha pogut accedir al vostre compte, si us plau, torneu a provar més tard</translation>
-    </message>
-    <message>
-        <source>API call error</source>
-        <translation type="vanished">Error en la crida a l&apos;API</translation>
-    </message>
-    <message>
-        <source>API call parameters are incorrect, please check the documentation</source>
-        <translation type="vanished">Els paràmetres de la crida a l&apos;API són incorrectes, si us plau, consulteu la documentació</translation>
-    </message>
-    <message>
-        <source>Model does not exist, please check the model code</source>
-        <translation type="vanished">El model no existeix, si us plau, comproveu el codi del model</translation>
-    </message>
-    <message>
-        <source>The current model does not support the ${method} calling method</source>
-        <translation type="vanished">El model actual no admet el mètode de crida ${method}</translation>
-    </message>
-    <message>
-        <source>${field} Parameters not received normally</source>
-        <translation type="vanished">Els paràmetres ${field} no s&apos;han rebut correctament</translation>
-    </message>
-    <message>
-        <source>The ${field}  parameter is illegal. Please check the documentation</source>
-        <translation type="vanished">El paràmetre ${field} no és vàlid. Si us plau, consulteu la documentació</translation>
-    </message>
-    <message>
-        <source>${field1} and ${field2} cannot be set at the same time, please check the documentation</source>
-        <translation type="vanished">${field1} i ${field2} no es poden establir alhora, si us plau, consulteu la documentació</translation>
-    </message>
-    <message>
-        <source>You do not have access to  ${API_name}</source>
-        <translation type="vanished">No teniu accés a ${API_name}</translation>
-    </message>
-    <message>
-        <source>API ${API_name} is offline</source>
-        <translation type="vanished">L&apos;API ${API_name} està fora de línia</translation>
-    </message>
-    <message>
-        <source>API ${API_name}  does not exist</source>
-        <translation type="vanished">L&apos;API ${API_name} no existeix</translation>
-    </message>
-    <message>
-        <source>API call process error</source>
-        <translation type="vanished">Error en el procés de crida a l&apos;API</translation>
-    </message>
-    <message>
-        <source>You have requested: ${request_id}</source>
-        <translation type="vanished">Heu sol·licitat: ${request_id}</translation>
-    </message>
-    <message>
-        <source>When getting asynchronous request results, please use task_id</source>
-        <translation type="vanished">Quan obteniu resultats de sol·licituds asíncrones, si us plau, utilitzeu task_id</translation>
-    </message>
-    <message>
-        <source>Task: ${task_id} does not exist</source>
-        <translation type="vanished">La tasca: ${task_id} no existeix</translation>
-    </message>
-    <message>
-        <source>Network error, error id: ${error_id}, please contact customer service</source>
-        <translation type="vanished">Error de xarxa, ID d&apos;error: ${error_id}, poseu-vos en contacte amb l&apos;atenció al client</translation>
-    </message>
-    <message>
-        <source>API run error</source>
-        <translation type="vanished">Error en l&apos;execució de l&apos;API</translation>
-    </message>
-    <message>
-        <source>Prompt super long</source>
-        <translation type="vanished">L&apos;indicació és massa llarga</translation>
-    </message>
-    <message>
-        <source>API call blocked by policy</source>
-        <translation type="vanished">Crida a l&apos;API bloquejada per política</translation>
-    </message>
-    <message>
-        <source>The system has detected that the input or generated content may contain unsafe or sensitive content. Please avoid entering prompts that may easily generate sensitive content. Thank you for your cooperation.</source>
-        <translation type="vanished">El sistema ha detectat que l&apos;entrada o el contingut generat poden contenir contingut insegur o sensible. Si us plau, eviteu introduir indicacions que puguin generar fàcilment contingut sensible. Gràcies per la vostra cooperació.</translation>
-    </message>
-    <message>
-        <source>There are currently too many visitors, please try again later.</source>
-        <translation type="vanished">Actualment hi ha massa visitants, si us plau, torneu a provar més tard.</translation>
-    </message>
-    <message>
-        <source>This API has reached the limit of calls for today. If you need more, please contact customer service to purchase.</source>
-        <translation type="vanished">Aquesta API ha arribat al límit de trucades per avui. Si necessiteu més, poseu-vos en contacte amb l&apos;atenció al client per comprar.</translation>
+        <translation>Desa l&apos;article</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AITranslation</name>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="27"/>
         <source>Translate the following text into English for me.</source>
-        <translation type="unfinished">Tradueix el següent text a l&apos;anglès per a mi.</translation>
+        <translation>Tradueix el text següent a l&apos;anglès per a mi.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="28"/>
         <source>Translate the following document into Chinese.</source>
-        <translation type="unfinished">Tradueix el següent document al xinès.</translation>
+        <translation>Tradueix el document següent al xinès.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="29"/>
         <source>What does the word Ǌgent” mean in the AI industry?</source>
-        <translation type="unfinished"></translation>
+        <translation>Què significa la paraula &quot;agent&quot; a la indústria de la IA?</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="30"/>
         <source>Please translate the following content into Chinese. Requirements: Accurate in meaning, formal and professional in language.</source>
-        <translation type="unfinished">Si us plau, tradueix el següent contingut al xinès. Requisits: Precís en el significat, formal i professional en el llenguatge.</translation>
+        <translation>Si us plau, tradueix el contingut següent al xinès. Requisits: Precís en el significat, formal i professional en l&apos;idioma.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="31"/>
         <source>What are some colloquial ways to address a friend in English?</source>
-        <translation type="unfinished">Quines són algunes maneres col·loquials de dirigir-se a un amic en anglès?</translation>
+        <translation>Quines maneres col·loquials hi ha d&apos;adreçar-se a un amic en anglès?</translation>
     </message>
     <message>
-        <location filename="../src/assistant/aitranslation.cpp" line="32"/>
         <source>Translate the following classical Chinese text into modern Chinese.</source>
-        <translation type="unfinished">Tradueix el següent text clàssic xinès al xinès modern.</translation>
+        <translation>Tradueix el text xinès clàssic següent al xinès modern.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AIWriter</name>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="66"/>
         <source>Today </source>
-        <translation type="unfinished"></translation>
+        <translation>Avui </translation>
     </message>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="68"/>
         <source>Yesterday </source>
-        <translation type="unfinished"></translation>
+        <translation>Ahir </translation>
     </message>
     <message>
-        <location filename="../src/assistant/aiwriter.cpp" line="70"/>
         <source>MMM d HH:mm</source>
-        <translation type="unfinished"></translation>
+        <translation>MMM d HH:mm</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AboutWindow</name>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="24"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished">UOS AI és un assistent intel·ligent d&apos;escriptori, el vostre assistent personal! Podeu comunicar-vos-hi mitjançant text o veu, i pot ajudar a respondre preguntes, proporcionar informació i generar imatges basades en les vostres descripcions.</translation>
+        <translation>UOS AI és un assistent intel·ligent d&apos;escriptori, el teu assistent personal! Pots comunicar-te amb ell mitjançant text o veu, i pot ajudar-te a respondre preguntes, proporcionar informació i generar imatges basades en les teves descripcions.</translation>
     </message>
     <message>
-        <location filename="../src/gui/window/aboutwindow.cpp" line="59"/>
         <source>Filing Information</source>
-        <translation type="unfinished">Informació d&apos;arxivament</translation>
+        <translation>Informació de l&apos;arxiu</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::AddPrivateModelDialog</name>
+    <name>uos_ai::AbstractAssistant</name>
     <message>
-        <source>Add model</source>
-        <translation type="vanished">Afegir model</translation>
-    </message>
-    <message>
-        <source>APIKey</source>
-        <translation type="vanished">Clau d&apos;API</translation>
-    </message>
-    <message>
-        <source>Required, please input</source>
-        <translation type="vanished">Obligatori, si us plau, introduïu</translation>
-    </message>
-    <message>
-        <source>Account</source>
-        <translation type="vanished">Compte</translation>
-    </message>
-    <message>
-        <source>Required, to distinguish multiple models</source>
-        <translation type="vanished">Obligatori, per distingir múltiples models</translation>
-    </message>
-    <message>
-        <source>Model Name</source>
-        <translation type="vanished">Nom del model</translation>
-    </message>
-    <message>
-        <source>Optional</source>
-        <translation type="vanished">Opcional</translation>
-    </message>
-    <message>
-        <source>Domain</source>
-        <translation type="vanished">Domini</translation>
-    </message>
-    <message>
-        <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="vanished">Per comprovar si el model està disponible, el sistema envia informació de prova al model gran, cosa que consumirà una petita quantitat de tokens.</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Cancel·lar</translation>
-    </message>
-    <message>
-        <source>Confirm</source>
-        <translation type="vanished">Confirmar</translation>
-    </message>
-    <message>
-        <source>No more than 20 characters</source>
-        <translation type="vanished">No més de 20 caràcters</translation>
-    </message>
-    <message>
-        <source>This LLM already exists, please do not add it again.</source>
-        <translation type="vanished">Aquest LLM ja existeix, no el torneu a afegir.</translation>
-    </message>
-    <message>
-        <source>Save failed, please try again later</source>
-        <translation type="vanished">No s&apos;ha pogut desar, torneu-ho a provar més tard</translation>
-    </message>
-    <message>
-        <source>The account name already exists, please change it</source>
-        <translation type="vanished">El nom del compte ja existeix, canvieu-lo</translation>
-    </message>
-    <message>
-        <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="vanished">Per configurar el proxy, aneu a la configuració del proxy del sistema</translation>
-    </message>
-    <message>
-        <source>Go to settings</source>
-        <translation type="vanished">Anar a la configuració</translation>
+        <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
+        <translation>L&apos;UOS AI requereix que es configuri un compte de model d&apos;abans de poder-se utilitzar. Configureu primer un compte de model.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AddSkillDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="62"/>
         <source>Add Skill</source>
-        <translation>Afegir habilitat</translation>
+        <translation>Afegeix habilitat</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="64"/>
         <source>Skill Name</source>
         <translation>Nom de l&apos;habilitat</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="69"/>
         <source>Enter skill name</source>
         <translation>Introduïu el nom de l&apos;habilitat</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="83"/>
         <source>Skill Command</source>
         <translation>Ordre de l&apos;habilitat</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="91"/>
         <source> {selection} </source>
         <translation> {selection} </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="95"/>
         <source>represents the text selected by word selection.</source>
-        <translation>representa el text seleccionat per selecció de paraules.</translation>
+        <translation>representa el text seleccionat mitjançant la selecció de paraules.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="100"/>
         <source>Instructions</source>
         <translation>Instruccions</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="126"/>
         <source>Cancel</source>
-        <translation>Cancel·lar</translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="128"/>
         <source>Save</source>
-        <translation>Desar</translation>
+        <translation>Desa</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="246"/>
         <source>Skill name cannot be empty</source>
         <translation>El nom de l&apos;habilitat no pot estar buit</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="291"/>
         <source>Exceeded character limit</source>
-        <translation>S&apos;ha excedit el límit de caràcters</translation>
+        <translation>S&apos;ha superat el límit de caràcters</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="403"/>
         <source>The skill name already exists.</source>
         <translation>El nom de l&apos;habilitat ja existeix.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="438"/>
         <source>Command Instructions</source>
         <translation>Instruccions de l&apos;ordre</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="476"/>
         <source>If you want to translate the selected text &quot;Hello&quot;, as shown above, you can enter the command: Translate {selection} into English.</source>
-        <translation>Si voleu traduir el text seleccionat &quot;Hola&quot;, com es mostra a dalt, podeu introduir l&apos;ordre: Translate {selection} into English.</translation>
+        <translation>Si voleu traduir el text seleccionat &quot;Hello&quot;, com es mostra a sobre, podeu introduir l&apos;ordre: Tradueix {selection} a l&apos;anglès.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="483"/>
         <source>Advanced Tips</source>
         <translation>Consells avançats</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="489"/>
         <source>The more specific the command, the more accurate the generated content. For example:
 • Generate a PPT outline for {selection} with 3 chapters and 10 key points.
 • Polish {selection} into a recruitment copy within 100 words, highlighting teamwork.</source>
-        <translation>Com més específica sigui l&apos;ordre, més precís serà el contingut generat. Per exemple: • Genereu un esquema de PPT per a {selection} amb 3 capítols i 10 punts clau. • Poliu {selection} en un text de reclutament de 100 paraules, destacant el treball en equip.</translation>
+        <translation>Com més específica sigui l&apos;ordre, més precís serà el contingut generat. Per exemple:
+• Genera un esquema de PPT per a {selection} amb 3 capítols i 10 punts clau.
+• Redacta {selection} com a un text de reclutament de menys de 100 paraules, destacant el treball en equip.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="561"/>
         <source>Clicking the label can still insert it into the input field.</source>
-        <translation>En fer clic a l&apos;etiqueta encara es pot inserir al camp d&apos;entrada.</translation>
+        <translation>Si feu clic a l&apos;etiqueta, encara es pot inserir al camp d&apos;entrada.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/addskilldialog.cpp" line="563"/>
         <source>OK</source>
         <translation>D&apos;acord</translation>
     </message>
@@ -4391,540 +712,408 @@ Exemple d&apos;indicació: Anomena tots els fitxers de la carpeta recentment cre
 <context>
     <name>uos_ai::AiBarWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="32"/>
         <source>DDE Shell AI Bar</source>
-        <translation>Barra d&apos;IA DDE Shell</translation>
+        <translation>Barra IA de l&apos;intèrpret DDE</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="52"/>
         <source>Drag files quickly</source>
         <translation>Arrossega fitxers ràpidament</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/aibarwidget.cpp" line="52"/>
         <source>Drag files to the AI ribbon for intelligent processing</source>
-        <translation>Arrossega fitxers a la cinta d&apos;IA per a processament intel·ligent</translation>
+        <translation>Arrossega fitxers a la cinta d&apos;IA per al seu processament intel·ligent</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AiQuickDialog</name>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="124"/>
         <source>simplified Chinese</source>
-        <translation type="unfinished">xinès simplificat</translation>
+        <translation>xinès simplificat</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="125"/>
         <source>traditional Chinese</source>
-        <translation type="unfinished">xinès tradicional</translation>
+        <translation>xinès tradicional</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="126"/>
         <source>Tibetan</source>
-        <translation type="unfinished">tibetà</translation>
+        <translation>tibetà</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="127"/>
         <source>English</source>
-        <translation type="unfinished">anglès</translation>
+        <translation>anglès</translation>
     </message>
     <message>
-        <source>Japanese </source>
-        <translation type="obsolete">japonès</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="128"/>
         <source>Japanese</source>
-        <translation type="unfinished">Japonès</translation>
+        <translation>japonès</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="129"/>
         <source>German</source>
-        <translation type="unfinished">alemany</translation>
+        <translation>alemany</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="130"/>
         <source>Spanish</source>
-        <translation type="unfinished">espanyol</translation>
+        <translation>espanyol</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="131"/>
         <source>French</source>
-        <translation type="unfinished">francès</translation>
+        <translation>francès</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="132"/>
         <source>Italian</source>
-        <translation type="unfinished">italià</translation>
+        <translation>italià</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="133"/>
         <source>Korean</source>
-        <translation type="unfinished">coreà</translation>
+        <translation>coreà</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="134"/>
         <source>Malay</source>
-        <translation type="unfinished">malai</translation>
+        <translation>malai</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="135"/>
         <source>Portuguese</source>
-        <translation type="unfinished">portuguès</translation>
+        <translation>portuguès</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="136"/>
         <source>Russian</source>
-        <translation type="unfinished">rus</translation>
+        <translation>rus</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="137"/>
         <source>Thai</source>
-        <translation type="unfinished">tailandès</translation>
+        <translation>tailandès</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="138"/>
         <source>Vietnamese</source>
-        <translation type="unfinished">vietnamita</translation>
+        <translation>vietnamita</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="203"/>
         <source>type</source>
-        <translation type="unfinished">tipus</translation>
+        <translation>tipus</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="302"/>
-        <source>Cancel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="327"/>
-        <source>Read Aloud</source>
-        <translation type="unfinished">Llegeix en veu alta</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="334"/>
-        <source>Paste to Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="348"/>
-        <source>Regenerate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="355"/>
-        <source>Copy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="373"/>
-        <source>Continue Dialog</source>
-        <translation type="unfinished">Continuar Diàleg</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="386"/>
-        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="422"/>
-        <source>Automatic Detection</source>
-        <translation type="unfinished">Detecció Automàtica</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="498"/>
-        <source>Search</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="499"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1315"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1364"/>
-        <source>Explain</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="500"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1320"/>
-        <source>Summary</source>
-        <translation type="unfinished">Resum</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="501"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1325"/>
-        <source>Translate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="502"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1344"/>
-        <source>Continue writing</source>
-        <translation type="unfinished">Continua escrivint</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="503"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1349"/>
-        <source>Expand</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="504"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1354"/>
-        <source>Correct</source>
-        <translation type="unfinished">Corregir</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="505"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1359"/>
-        <source>Polish</source>
-        <translation type="unfinished">Polir</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="525"/>
-        <source>Add to the AI knowledge base</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="632"/>
-        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
-        <translation type="unfinished">El resultat de la traducció està limitat per les capacitats del model. Si no esteu satisfet amb la traducció, canvieu a altres models a la pàgina d&apos;inici de UOS AI.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="633"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="954"/>
-        <source>Ok</source>
-        <translation type="unfinished">D&apos;acord</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="639"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1341"/>
-        <source>Translate this passage into %1 and give me a clear result directly.
-text：</source>
-        <translation type="unfinished">Tradueix aquest passatge a %1 i dóna&apos;m un resultat clar directament.
-text：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="826"/>
-        <source>Not clickable</source>
-        <translation type="unfinished">No es pot fer clic</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="909"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="914"/>
-        <source>The audio device is not detected, please check and try again.</source>
-        <translation type="unfinished">No s&apos;ha detectat el dispositiu d&apos;àudio, si us plau comprova-ho i torna-ho a provar.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="915"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="941"/>
-        <source>Ok</source>
-        <comment>button</comment>
-        <translation type="unfinished">D&apos;acord</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="934"/>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="952"/>
-        <source>Fill failed</source>
-        <translation type="unfinished">Ompliment fallit</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="953"/>
-        <source>No input box selected, please select the input box and re-fill it.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1018"/>
-        <source>Added</source>
-        <translation type="unfinished">Afegit</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1292"/>
-        <source>Copied</source>
-        <translation type="unfinished">Copiat</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1317"/>
-        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
-text：</source>
-        <translation type="unfinished">Explica aquest passatge en un llenguatge senzill. Només dóna&apos;m un resultat clar sense contingut redundant.
-
-text：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1322"/>
-        <source>Summarize this passage and give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="unfinished">Resumeix aquest passatge i dóna&apos;m un resultat clar directament sense cap altre contingut redundant.
-
-text：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1346"/>
-        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="unfinished">Continua aquest passatge de manera adequada. No calen moltes paraules. Només dóna&apos;m un resultat clar sense cap altre contingut redundant.
-
-text：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1351"/>
-        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
-text：</source>
-        <translation type="unfinished">Amplia aquest passatge de manera adequada. No cal un text especialment llarg. Només dóna&apos;m un resultat clar sense cap altre contingut redundant.
-
-text：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1356"/>
-        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
-text：</source>
-        <translation type="unfinished">Comprova si hi ha errors tipogràfics en aquest passatge. Si n&apos;hi ha, assenyal la ubicació dels errors. Dóna&apos;m un resultat clar directament sense cap altre contingut redundant.
-
-text：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1361"/>
-        <source>Polish this passage for me and just give me the result without any extra content.
-text：</source>
-        <translation type="unfinished">Polir aquest passatge per a mi i només donar-me el resultat sense cap contingut addicional.
-
-text：</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1402"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1404"/>
-        <source> &quot;%1&quot; </source>
-        <translation type="unfinished">&quot;%1&quot;</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1779"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1795"/>
-        <source>Current model: </source>
-        <translation type="unfinished">Model actual: </translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1800"/>
-        <source>Currently no model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1819"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1829"/>
-        <source>Go to configure  </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="1823"/>
-        <source>Claim Free Credits  </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2014"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2049"/>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2095"/>
-        <source>No text recognized.</source>
-        <translation type="unfinished">No s&apos;ha reconegut cap text.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiquickdialog.cpp" line="2114"/>
-        <source>The added content must be more than 10 words</source>
-        <translation type="unfinished">El contingut afegit ha de tenir més de 10 paraules</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::AiWriterDialog</name>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="111"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="429"/>
-        <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
-        <translation>Introdueix el que vols crear (prem Retorn per generar/Esc per sortir)</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
-        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
-        <translation>Ajuda&apos;m a escriure un assaig sobre el tema [%1] amb [estructura clara i contingut ric].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="747"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
-        <source>Artificial Intelligence</source>
-        <translation>Intel·ligència Artificial</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="763"/>
-        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
-        <translation>Ajuda&apos;m a escriure un esquema sobre el tema [%1], que s&apos;utilitzarà per a [producció de PPT].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
-        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
-        <translation>Ajuda&apos;m a escriure un avís sobre [%1], el destinatari és [Tots els Empleats] i el remitent és [Departament d&apos;Administració].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="779"/>
-        <source>National Day Holiday</source>
-        <translation>Festa del Dia Nacional</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="795"/>
-        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
-        <translation>Ajuda&apos;m a escriure un informe de recerca sobre [%1], com a mínim ha d&apos;incloure [descripció de l&apos;estat, anàlisi del problema, contramesures i suggeriments, conclusions de la recerca].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="811"/>
-        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
-        <translation>Ajuda&apos;m a escriure un discurs sobre el tema [%1] per a [Líders de l&apos;Empresa], que requereix [estructura clara i llenguatge viu].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
-        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
-        <translation>Ajuda&apos;m a escriure un resum del meu treball recent, incloent [%1] i [resultats], que requereix un to [formal].</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="827"/>
-        <source>work content</source>
-        <translation>contingut del treball</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="843"/>
-        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
-        <translation>Ajuda&apos;m a escriure un tuit públic sobre el tema [%1], que requereix [estructura clara] i to [relaxat].</translation>
-    </message>
-    <message>
-        <source>Model Configuration</source>
-        <translation type="vanished">Configuració del Model</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1100"/>
-        <source>Go to configure  </source>
-        <translation>Ves a configurar</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="282"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1393"/>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="100"/>
-        <source>AI Writer</source>
-        <translation>Escriptor d&apos;IA</translation>
+        <source>Read Aloud</source>
+        <translation>Llegir en veu alta</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="204"/>
-        <source>Article</source>
-        <translation>Article</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="208"/>
-        <source>Outline</source>
-        <translation>Esquema</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="212"/>
-        <source>Notification</source>
-        <translation>Notificació</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="216"/>
-        <source>Research Report</source>
-        <translation>Informe de Recerca</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="220"/>
-        <source>Speeches</source>
-        <translation>Discursos</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="224"/>
-        <source>Work Summary</source>
-        <translation>Resum de Treball</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="228"/>
-        <source>Tweets</source>
-        <translation>Tuits</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="320"/>
         <source>Paste to Text</source>
-        <translation>Enganxa al Text</translation>
+        <translation>Enganxa al text</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="338"/>
         <source>Regenerate</source>
         <translation>Regenera</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="346"/>
         <source>Copy</source>
         <translation>Copia</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="364"/>
+        <source>Continue Dialog</source>
+        <translation>Continua el diàleg</translation>
+    </message>
+    <message>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation>El contingut generat per IA és només per a referència, si us plau, presta atenció a l&apos;exactitud de la informació.</translation>
+        <translation>El contingut generat per la IA només serveix com a referència; presteu atenció a la precisió de la informació.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="857"/>
-        <source>The function can be used only after restarting the input method. The tutorial is as follows:
-1. Right-click on the input method icon in the taskbar.
-2. Click &quot;Restart&quot;.</source>
-        <translation>La funció només es pot utilitzar després de reiniciar el mètode d&apos;entrada. El tutorial és el següent:
-
-1. Feu clic dret a la icona del mètode d&apos;entrada a la barra de tasques.
-
-2. Feu clic a &quot;Reinicia&quot;.</translation>
+        <source>Automatic Detection</source>
+        <translation>Detecció automàtica</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="861"/>
+        <source>Search</source>
+        <translation>Cerca</translation>
+    </message>
+    <message>
+        <source>Explain</source>
+        <translation>Explica</translation>
+    </message>
+    <message>
+        <source>Summary</source>
+        <translation>Resum</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Tradueix</translation>
+    </message>
+    <message>
+        <source>Continue writing</source>
+        <translation>Continua escrivint</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>Amplia</translation>
+    </message>
+    <message>
+        <source>Correct</source>
+        <translation>Corregeix</translation>
+    </message>
+    <message>
+        <source>Polish</source>
+        <translation>Polida</translation>
+    </message>
+    <message>
+        <source>Add to the AI knowledge base</source>
+        <translation>Afegeix a la base de coneixement de la IA</translation>
+    </message>
+    <message>
+        <source>The translation result is limited by the model&apos;s capabilities. If you are not satisfied with the translation, please switch to other models on the UOS AI Home page.</source>
+        <translation>El resultat de la traducció està limitat per les capacitats del model. Si no esteu satisfet amb la traducció, canvieu a altres models a la pàgina d&apos;inici de l&apos;UOS AI.</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <translation>D&apos;acord</translation>
+    </message>
+    <message>
+        <source>Translate this passage into %1 and give me a clear result directly.
+text：</source>
+        <translation>Tradueix aquest fragment a %1 i dóna&apos;m un resultat clar directament.
+text：</translation>
+    </message>
+    <message>
+        <source>Not clickable</source>
+        <translation>No es pot fer clic</translation>
+    </message>
+    <message>
+        <source>The audio device is not detected, please check and try again.</source>
+        <translation>No s&apos;ha detectat cap dispositiu d&apos;àudio; comproveu-ho i torneu-ho a provar.</translation>
+    </message>
+    <message>
         <source>Ok</source>
         <comment>button</comment>
         <translation>D&apos;acord</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1040"/>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation>Aquesta funció només es pot utilitzar després de reiniciar el mètode d&apos;entrada. El tutorial és el següent:
+1. Feu clic dret sobre la icona del mètode d&apos;entrada a la barra de tasques.
+2. Feu clic a «Reinicia».</translation>
+    </message>
+    <message>
+        <source>Fill failed</source>
+        <translation>Ha fallat l&apos;ompliment</translation>
+    </message>
+    <message>
+        <source>No input box selected, please select the input box and re-fill it.</source>
+        <translation>No s&apos;ha seleccionat cap quadre d&apos;entrada; seleccioneu el quadre d&apos;entrada i torneu-ho a omplir.</translation>
+    </message>
+    <message>
+        <source>Added</source>
+        <translation>Afegit</translation>
+    </message>
+    <message>
         <source>Copied</source>
         <translation>Copiat</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1063"/>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1077"/>
+        <source>Explain this passage in plain language. Just give me a clear result without redundant content.
+text：</source>
+        <translation>Explica aquest passatge en llenguatge senzill. Només vull un resultat clar sense contingut redundant.
+text：</translation>
+    </message>
+    <message>
+        <source>Summarize this passage and give me a clear result directly without any other redundant content.
+text：</source>
+        <translation>Resum aquest passatge i dóna&apos;m un resultat clar directament sense cap altre contingut redundant.
+text：</translation>
+    </message>
+    <message>
+        <source>Continue this passage appropriately. No need for a lot of words. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation>Continua aquest passatge de manera adequada. No calen moltes paraules. Només vull un resultat clar sense cap altre contingut redundant.
+text：</translation>
+    </message>
+    <message>
+        <source>Expand this passage appropriately. No need for a particularly long text. Just give me a clear result without any other redundant content.
+text：</source>
+        <translation>Amplia aquest passatge de manera adequada. No cal un text especialment llarg. Només vull un resultat clar sense cap altre contingut redundant.
+text：</translation>
+    </message>
+    <message>
+        <source>Check if there are any typos in this passage. If there are, point out the location of the errors. Give me a clear result directly without any other redundant content.
+text：</source>
+        <translation>Comprova si hi ha errors mecanogràfics en aquest passatge. Si n&apos;hi ha, senyala la ubicació dels errors. Dóna&apos;m un resultat clar directament sense cap altre contingut redundant.
+text：</translation>
+    </message>
+    <message>
+        <source>Polish this passage for me and just give me the result without any extra content.
+text：</source>
+        <translation>Millora aquest passatge i dóna&apos;m només el resultat sense cap contingut extra.
+text：</translation>
+    </message>
+    <message>
+        <source> &quot;%1&quot; </source>
+        <translation> &quot;%1&quot; </translation>
+    </message>
+    <message>
         <source>Current model: </source>
         <translation>Model actual: </translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1081"/>
         <source>Currently no model</source>
-        <translation>Actualment sense model</translation>
+        <translation>Actualment no hi ha cap model</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1114"/>
+        <source>Go to configure  </source>
+        <translation>Vés a la configuració  </translation>
+    </message>
+    <message>
+        <source>Claim Free Credits  </source>
+        <translation>Reclama crèdits gratuïts  </translation>
+    </message>
+    <message>
+        <source>No text recognized.</source>
+        <translation>No s&apos;ha reconegut cap text.</translation>
+    </message>
+    <message>
+        <source>The added content must be more than 10 words</source>
+        <translation>El contingut afegit ha de tenir més de 10 paraules</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::AiWriterDialog</name>
+    <message>
+        <source>AI Writer</source>
+        <translation>Escriptor IA</translation>
+    </message>
+    <message>
+        <source>Enter what you want to create (press Enter to generate/Esc to exit)</source>
+        <translation>Introduiu el que voleu crear (premeu Retorn per generar/Esc per sortir)</translation>
+    </message>
+    <message>
+        <source>Article</source>
+        <translation>Article</translation>
+    </message>
+    <message>
+        <source>Outline</source>
+        <translation>Esquema</translation>
+    </message>
+    <message>
+        <source>Notification</source>
+        <translation>Notificació</translation>
+    </message>
+    <message>
+        <source>Research Report</source>
+        <translation>Informe de recerca</translation>
+    </message>
+    <message>
+        <source>Speeches</source>
+        <translation>Discursos</translation>
+    </message>
+    <message>
+        <source>Work Summary</source>
+        <translation>Resum del treball</translation>
+    </message>
+    <message>
+        <source>Tweets</source>
+        <translation>Tuits</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Cancel·la</translation>
+    </message>
+    <message>
+        <source>Paste to Text</source>
+        <translation>Enganxa al text</translation>
+    </message>
+    <message>
+        <source>Regenerate</source>
+        <translation>Regenera</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copia</translation>
+    </message>
+    <message>
+        <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
+        <translation>El contingut generat per la IA només és per a referència; presteu atenció a la precisió de la informació.</translation>
+    </message>
+    <message>
+        <source>Help me write an essay on the topic of [%1] with [clear structure and rich content].</source>
+        <translation>Ajuda&apos;m a escriure un assaig sobre el tema [%1] amb [estructura clara i contingut ric].</translation>
+    </message>
+    <message>
+        <source>Artificial Intelligence</source>
+        <translation>Intel·ligència Artificial</translation>
+    </message>
+    <message>
+        <source>Help me write an outline on the topic of [%1], which will be used for [PPT production].</source>
+        <translation>Ajuda&apos;m a escriure un esquema sobre el tema [%1], que s&apos;utilitzarà per a [la producció de PPT].</translation>
+    </message>
+    <message>
+        <source>Help me write a notice about [%1], the receiver is [All Employees] and the sender is [Administration Department].</source>
+        <translation>Ajuda&apos;m a escriure un avís sobre [%1], el destinatari és [Tots els empleats] i el remitent és [Departament d&apos;Administració].</translation>
+    </message>
+    <message>
+        <source>National Day Holiday</source>
+        <translation>Festa Nacional</translation>
+    </message>
+    <message>
+        <source>Help me write a research report on [%1], at least it needs to include [status description, problem analysis, countermeasures and suggestions, research conclusions].</source>
+        <translation>Ajuda&apos;m a escriure un informe de recerca sobre [%1]; com a mínum ha d&apos;incloure [descripció de l&apos;estat, anàlisi del problema, contramesures i suggeriments, conclusions de la recerca].</translation>
+    </message>
+    <message>
+        <source>Help me write a speech on the topic of [%1] for [Company Leaders], requiring [clear structure and vivid language].</source>
+        <translation>Ajuda&apos;m a escriure un discurs sobre el tema [%1] per a [Líders de l&apos;empresa], requerint [estructura clara i llenguatge vívid].</translation>
+    </message>
+    <message>
+        <source>Help me write a summary of my recent work, including [%1] and [results], requiring a [formal] tone.</source>
+        <translation>Ajuda&apos;m a escriure un resum de la meva feina recent, incloent-hi [%1] i [resultats], requerint un to [formal].</translation>
+    </message>
+    <message>
+        <source>work content</source>
+        <translation>contingut de la feina</translation>
+    </message>
+    <message>
+        <source>Help me write a public tweet on the topic of [%1], requiring [clear structure] and [relaxed] tone.</source>
+        <translation>Ajuda&apos;m a escriure un tuit públic sobre el tema de [%1], requerint [estructura clara] i un to [relaxat].</translation>
+    </message>
+    <message>
+        <source>The function can be used only after restarting the input method. The tutorial is as follows:
+1. Right-click on the input method icon in the taskbar.
+2. Click &quot;Restart&quot;.</source>
+        <translation>La funció només es pot utilitzar després de reiniciar el mètode d&apos;entrada. El tutorial és el següent:
+1. Feu clic dret sobre la icona del mètode d&apos;entrada a la barra de tasques.
+2. Feu clic a &quot;Reiniciar&quot;.</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <comment>button</comment>
+        <translation>D&apos;acord</translation>
+    </message>
+    <message>
+        <source>Copied</source>
+        <translation>S&apos;ha copiat</translation>
+    </message>
+    <message>
+        <source>Current model: </source>
+        <translation>Model actual: </translation>
+    </message>
+    <message>
+        <source>Currently no model</source>
+        <translation>Actualment no hi ha cap model</translation>
+    </message>
+    <message>
+        <source>Go to configure  </source>
+        <translation>Vés a configurar  </translation>
+    </message>
+    <message>
         <source>Modify the content, change the tone…</source>
         <translation>Modifica el contingut, canvia el to…</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1391"/>
         <source>Fill failed</source>
-        <translation>Ompliment fallit</translation>
+        <translation>Ha fallat l&apos;emplenament</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1392"/>
         <source>No input box selected, please select the input box and re-fill it.</source>
         <translation>No s&apos;ha seleccionat cap quadre d&apos;entrada, seleccioneu el quadre d&apos;entrada i torneu-lo a omplir.</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/gui/aiwriterdialog.cpp" line="1394"/>
         <source>Ok</source>
         <translation>D&apos;acord</translation>
     </message>
@@ -4932,162 +1121,130 @@ text：</translation>
 <context>
     <name>uos_ai::AppUtils</name>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="43"/>
         <source>File Manager</source>
         <translation>Gestor de fitxers</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="44"/>
         <source>UOS AI</source>
         <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="45"/>
         <source>Mail</source>
         <translation>Correu</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="46"/>
         <source>Calendar</source>
         <translation>Calendari</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="47"/>
         <source>Web Browser</source>
         <translation>Navegador web</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="48"/>
         <source>Text Editor</source>
         <translation>Editor de text</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="49"/>
         <source>Screenshot</source>
         <translation>Captura de pantalla</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="50"/>
         <source>Voice Notes</source>
         <translation>Notes de veu</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="51"/>
         <source>Document Viewer</source>
         <translation>Visualitzador de documents</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="52"/>
         <source>App Store</source>
         <translation>Botiga d&apos;aplicacions</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="53"/>
         <source>Manual</source>
         <translation>Manual</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="54"/>
         <source>WPS Writer</source>
         <translation>WPS Writer</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="55"/>
         <source>WPS Spreadsheets</source>
-        <translation>WPS Fulls de càlcul</translation>
+        <translation>Fulls de càlcul WPS</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="56"/>
         <source>WPS Presentation</source>
-        <translation>WPS Presentació</translation>
+        <translation>Presentació WPS</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="57"/>
         <source>QQ</source>
         <translation>QQ</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="58"/>
         <source>SuwellReader</source>
         <translation>SuwellReader</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="59"/>
         <source>DingTalk</source>
         <translation>DingTalk</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="60"/>
         <source>FoxitOfficeSuite</source>
         <translation>FoxitOfficeSuite</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="61"/>
         <source>Foxit PDF Editor</source>
-        <translation>Editor PDF Foxit</translation>
+        <translation>Editor PDF de Foxit</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="62"/>
         <source>Yozo Document 2024</source>
         <translation>Yozo Document 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="63"/>
         <source>Yozo Office 2024</source>
         <translation>Yozo Office 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="64"/>
         <source>Yozo Presentation 2024</source>
-        <translation>Yozo Presentació 2024</translation>
+        <translation>Yozo Presentation 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="65"/>
         <source>Yozo Sheet 2024</source>
-        <translation>Full Yozo 2024</translation>
+        <translation>Yozo Sheet 2024</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="66"/>
         <source>Yozo-xReader</source>
-        <translation>Lector Yozo-x</translation>
+        <translation>Yozo-xReader</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="67"/>
         <source>wpspdf</source>
         <translation>wpspdf</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="68"/>
         <source>doubao</source>
         <translation>doubao</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="69"/>
         <source>Foxmail</source>
         <translation>Foxmail</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="70"/>
         <source>zjd</source>
         <translation>zjd</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="71"/>
         <source>Wechat</source>
-        <translation>Wechat</translation>
+        <translation>WeChat</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="72"/>
         <source>WXWork</source>
-        <translation>WXWork</translation>
+        <translation>WeChat Work</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="73"/>
         <source>Feishu</source>
         <translation>Feishu</translation>
     </message>
     <message>
-        <location filename="../src/utils/apputils.cpp" line="74"/>
         <source>Chrome</source>
         <translation>Chrome</translation>
     </message>
@@ -5095,411 +1252,380 @@ text：</translation>
 <context>
     <name>uos_ai::Application</name>
     <message>
-        <location filename="../src/app/application.cpp" line="66"/>
-        <location filename="../src/app/application.cpp" line="68"/>
-        <source>UOS AI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/app/application.cpp" line="70"/>
         <source>UOS AI is a desktop smart assistant, your personal assistant! You can communicate with it using text or voice, and it can help answer questions, provide information, and generate images based on your descriptions.</source>
-        <translation type="unfinished">UOS AI és un assistent intel·ligent d&apos;escriptori, el vostre assistent personal! Podeu comunicar-vos-hi mitjançant text o veu, i pot ajudar a respondre preguntes, proporcionar informació i generar imatges basades en les vostres descripcions.</translation>
+        <translation>UOS AI és un assistent intel·ligent d&apos;escriptori, el teu assistent personal! Pots comunicar-te amb ell mitjançant text o veu, i pot ajudar-te a respondre preguntes, proporcionar informació i generar imatges basades en les teves descripcions.</translation>
     </message>
     <message>
-        <location filename="../src/app/application.cpp" line="112"/>
         <source>UOS AI FollowAlong/Write</source>
-        <translation type="unfinished">UOS AI FollowAlong/Escriure</translation>
+        <translation>UOS AI Seguiment/Escriptura</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ArticleAdjustAgent</name>
     <message>
-        <location filename="../src/agent/research/articleadjustagent.cpp" line="179"/>
         <source>Untitled</source>
-        <translation type="unfinished"></translation>
+        <translation>Sense títol</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AssistantManager</name>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="42"/>
         <source>UOS AI</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="43"/>
         <source>Hello, I&apos;m UOS AI.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hola, sóc UOS AI.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="55"/>
         <source>AI Writing</source>
-        <translation type="unfinished">Escriptura amb IA</translation>
+        <translation>Escriptura IA</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="56"/>
         <source>Infinite inspiration, worry-free writing</source>
-        <translation type="unfinished"></translation>
+        <translation>Inspiració infinita, escriptura sense preocupacions</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="63"/>
         <source>Please enter the topic and requirements of the document, and UOS AI will help you complete the creation.</source>
-        <translation type="unfinished"></translation>
+        <translation>Si us plau, introduïu el tema i els requisits del document, i UOS AI us ajudarà a completar la creació.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="70"/>
         <source>AI Translation</source>
-        <translation type="unfinished">Traducció amb IA</translation>
+        <translation>Traducció IA</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="71"/>
         <source>Your Translation Assistant, Mastering Multiple Languages.</source>
-        <translation type="unfinished">El vostre assistent de traducció, amb domini de múltiples idiomes.</translation>
+        <translation>El teu assistent de traducció, dominador de múltiples idiomes.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="78"/>
         <source>Please enter the content to be translated and specify the target language; the default target language is Chinese.</source>
-        <translation type="unfinished"></translation>
+        <translation>Si us plau, introduïu el contingut per traduir i especifiqueu l&apos;idioma de destinació; l&apos;idioma de destinació predeterminat és el xinès.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="87"/>
-        <source>Personal Knowledge Assistant</source>
-        <translation type="unfinished">Assistent de coneixement personal</translation>
+        <source>AI Knowledge Base</source>
+        <translation>Base de coneixement IA</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="88"/>
         <source>Answers questions based on your personal knowledge base.</source>
-        <translation type="unfinished">Respon preguntes basades en la vostra base de coneixement personal.</translation>
+        <translation>Respon preguntes basades en la teva base de coneixement personal.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="95"/>
         <source>Ask questions based on the knowledge base.</source>
-        <translation type="unfinished"></translation>
+        <translation>Feu preguntes basades en la base de coneixement.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="104"/>
-        <source>MCP Server</source>
-        <translation type="unfinished">Servidor MCP</translation>
+        <source>MCP&amp;Skills</source>
+        <translation>MCP i Habilitats</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="105"/>
-        <source>Built-in efficient MCP tools for office work, support for importing custom MCP services, and the flexibility to choose MCP services for conversations.</source>
-        <translation type="unfinished"></translation>
+        <source>Built-in common MCP &amp; Skills, supports custom tool import, freely choose tools for conversation.</source>
+        <translation>MCP i Habilitats integrades comunes, admet la importació d&apos;eines personalitzades, tria lliurement les eines per a la conversació.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/assistantmanager.cpp" line="112"/>
-        <source>Please enter MCP Server commands.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::AudioChannel</name>
-    <message>
-        <location filename="../src/gui/web/audiochannel.cpp" line="102"/>
-        <source>Failed to start recorder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/audiochannel.cpp" line="149"/>
-        <source>Failed to play text audio</source>
-        <translation type="unfinished"></translation>
+        <source>Please enter MCP&amp;Skills commands.</source>
+        <translation>Introduïu les ordres de MCP i Habilitats.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::AudioControler</name>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="84"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="183"/>
-        <source>invalid input device</source>
-        <translation type="unfinished"></translation>
+        <source>No microphone detected</source>
+        <translation>No s&apos;ha detectat cap micròfon</translation>
     </message>
     <message>
-        <location filename="../src/audio/audiocontroler.cpp" line="94"/>
-        <location filename="../src/audio/audiocontroler.cpp" line="230"/>
-        <source>invalid output device</source>
-        <translation type="unfinished"></translation>
+        <source>No speaker detected</source>
+        <translation>No s&apos;ha detectat cap altaveu</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::BuiltinModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="1024"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Prova</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::BuiltinProvider</name>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="54"/>
         <source>UOS AI</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="59"/>
         <source>Intelligent Routing</source>
-        <translation type="unfinished"></translation>
+        <translation>Encaminament intel·ligent</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="71"/>
         <source>Online Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerca en línia</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="83"/>
         <source>DeepSeek-V3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>DeepSeek-V3.2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="96"/>
-        <location filename="../src/model/builtinprovider.cpp" line="334"/>
         <source>GLM-4.7</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM-4.7</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="110"/>
         <source>Doubao-Seed-1.8</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed-1.8</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="127"/>
         <source>Custom</source>
-        <translation type="unfinished">Personalitzat</translation>
+        <translation>Personalitzat</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="135"/>
         <source>Private deployment</source>
-        <translation type="unfinished"></translation>
+        <translation>Desplegament privat</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="144"/>
         <source>OpenAI</source>
-        <translation type="unfinished"></translation>
+        <translation>OpenAI</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="149"/>
         <source>GPT-3.5 Turbo</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-3.5 Turbo</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="162"/>
         <source>GPT-4</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-4</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="175"/>
         <source>GPT-4.1</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-4.1</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="188"/>
         <source>o1</source>
-        <translation type="unfinished"></translation>
+        <translation>o1</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="201"/>
         <source>GPT-5.3 Chat</source>
-        <translation type="unfinished"></translation>
+        <translation>GPT-5.3 Chat</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="217"/>
         <source>doubao/seed</source>
-        <translation type="unfinished"></translation>
+        <translation>doubao/seed</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="223"/>
         <source>Doubao-Seed 2.0</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed 2.0</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="236"/>
         <source>Doubao-Seed 2.0-Code</source>
-        <translation type="unfinished"></translation>
+        <translation>Doubao-Seed 2.0-Code</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="252"/>
         <source>DeepSeek</source>
-        <translation type="unfinished">DeepSeek</translation>
+        <translation>DeepSeek</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="257"/>
         <source>DeepSeek V3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>DeepSeek V3.2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="273"/>
+        <source>DeepSeek V4 Flash</source>
+        <translation>DeepSeek V4 Flash</translation>
+    </message>
+    <message>
+        <source>DeepSeek V4 Pro</source>
+        <translation>DeepSeek V4 Pro</translation>
+    </message>
+    <message>
         <source>MiniMax</source>
-        <translation type="unfinished"></translation>
+        <translation>MiniMax</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="279"/>
         <source>MiniMax-M2.5</source>
-        <translation type="unfinished"></translation>
+        <translation>MiniMax-M2.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="295"/>
         <source>Moonshot (KIMI)</source>
-        <translation type="unfinished"></translation>
+        <translation>Moonshot (KIMI)</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="300"/>
         <source>Kimi K2</source>
-        <translation type="unfinished"></translation>
+        <translation>Kimi K2</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="313"/>
         <source>Kimi K2.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Kimi K2.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="329"/>
         <source>GLM</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="347"/>
         <source>GLM-5</source>
-        <translation type="unfinished"></translation>
+        <translation>GLM-5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="363"/>
         <source>Qwen</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="369"/>
         <source>Qwen3</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen3</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="382"/>
         <source>Qwen3.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Qwen3.5</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="399"/>
         <source>Anthropic</source>
-        <translation type="unfinished"></translation>
+        <translation>Anthropic</translation>
     </message>
     <message>
-        <location filename="../src/model/builtinprovider.cpp" line="406"/>
         <source>Gemini</source>
-        <translation type="unfinished"></translation>
+        <translation>Gemini</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ChatBotPlatformDialog</name>
+    <message>
+        <source>Lark Integration Settings</source>
+        <translation>Configuració de la integració de Lark</translation>
+    </message>
+    <message>
+        <source>DingTalk Integration Settings</source>
+        <translation>Configuració de la integració de DingTalk</translation>
+    </message>
+    <message>
+        <source>Telegram Integration Settings</source>
+        <translation>Paràmetres d&apos;integració de Telegram</translation>
+    </message>
+    <message>
+        <source>Discord Integration Settings</source>
+        <translation>Paràmetres d&apos;integració de Discord</translation>
+    </message>
+    <message>
+        <source>QQ Integration Settings</source>
+        <translation>Paràmetres d&apos;integració de QQ</translation>
+    </message>
+    <message>
+        <source>Required</source>
+        <translation>Obligatori</translation>
+    </message>
+    <message>
+        <source>Optional</source>
+        <translation>Opcional</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Cancel·la</translation>
+    </message>
+    <message>
+        <source>Confirm</source>
+        <translation>Confirma</translation>
+    </message>
+    <message>
+        <source>Configuration Guide &gt;</source>
+        <translation>Guia de configuració &gt;</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::ChatBotWidget</name>
+    <message>
+        <source>IM Integration</source>
+        <translation>Integració de MI</translation>
+    </message>
+    <message>
+        <source>Third-party IM Integration</source>
+        <translation>Integració de MI de tercers</translation>
+    </message>
+    <message>
+        <source>Enable Message Forwarding Service</source>
+        <translation>Activa el servei de reenviament de missatges</translation>
+    </message>
+    <message>
+        <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, QQ, Telegram, and Discord bots. You can then directly interact with UOS AI in your IM client.</source>
+        <translation>Un cop activat, UOS AI rebrà missatges dels bots configurats de Lark, DingTalk, QQ, Telegram i Discord. A continuació, podeu interactuar directament amb UOS AI al vostre client de MI.</translation>
+    </message>
+    <message>
+        <source>After enabling, UOS AI will receive messages from the configured Lark, DingTalk, and QQ bots. You can then directly interact with UOS AI in your IM client.</source>
+        <translation>Un cop activat, UOS AI rebrà missatges dels bots configurats de Lark, DingTalk i QQ. A continuació, podeu interactuar directament amb UOS AI al vostre client de MI.</translation>
+    </message>
+    <message>
+        <source>Lark</source>
+        <translation>Lark</translation>
+    </message>
+    <message>
+        <source>DingTalk</source>
+        <translation>DingTalk</translation>
+    </message>
+    <message>
+        <source>QQ</source>
+        <translation>QQ</translation>
+    </message>
+    <message>
+        <source>Telegram</source>
+        <translation>Telegram</translation>
+    </message>
+    <message>
+        <source>Discord</source>
+        <translation>Discord</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ClickableLabel</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="695"/>
         <source>Insert it into the input field</source>
-        <translation>Inseriu-lo al camp d&apos;entrada</translation>
+        <translation>Insereix-lo al camp d&apos;entrada</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CommonFailDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="31"/>
         <source>Error</source>
-        <translation type="unfinished">Error</translation>
+        <translation>Error</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/commonfaildialog.cpp" line="53"/>
         <source>OK</source>
         <comment>button</comment>
-        <translation type="unfinished">D&apos;acord</translation>
+        <translation>D&apos;acord</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ConversationRecord</name>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="13"/>
-        <location filename="../src/conversation/conversationrecord.cpp" line="23"/>
         <source>New Conversation</source>
-        <translation type="unfinished">Nova conversa</translation>
+        <translation>Conversa nova</translation>
     </message>
     <message>
-        <location filename="../src/conversation/conversationrecord.cpp" line="305"/>
         <source>Null</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::CreateScheduleInst</name>
-    <message>
-        <source>Create Schedule</source>
-        <translation type="vanished">Crear horari</translation>
-    </message>
-    <message>
-        <source>Schedule a meeting with the Marketing Department from 2 PM to 5 PM.</source>
-        <translation type="vanished">Programa una reunió amb el Departament de Màrqueting de 2 PM a 5 PM.</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Ho sentim, no s&apos;han trobat operacions coincidents.</translation>
-    </message>
-    <message>
-        <source>Please parse the corresponding parameters from the input content to match the schedule template in the following JSON format,and output only the JSON content, excluding any irrelevant information.
-
-Schedule template format:
-json
-{&quot;subject&quot;: &quot;Subject&quot;, &quot;startTime&quot;: &quot;Schedule Start Time, format: yyyy-MM-ddThh:mm:ss&quot;, &quot;endTime&quot;: &quot;Schedule End Time, format: yyyy-MM-ddThh:mm:ss&quot;}
-
-Input: %1
-Current time: %2</source>
-        <translation type="vanished">Si us plau, analitzeu els paràmetres corresponents del contingut d&apos;entrada per coincidir amb la plantilla d&apos;horari en el següent format JSON, i només mostreu el contingut JSON, exclosa qualsevol informació irrellevant.
-
-Format de la plantilla d&apos;horari:
-
-json
-
-{&quot;subject&quot;: &quot;Assumpte&quot;, &quot;startTime&quot;: &quot;Hora d&apos;inici de l&apos;horari, format: yyyy-MM-ddThh:mm:ss&quot;, &quot;endTime&quot;: &quot;Hora de finalització de l&apos;horari, format: yyyy-MM-ddThh:mm:ss&quot;}
-
-Entrada: %1
-
-Hora actual: %2</translation>
+        <translation>Nul</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::CustomMcpServerEditor</name>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="40"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="86"/>
         <source>Add MCP Server</source>
-        <translation>Afegeix servidor MCP</translation>
+        <translation>Afegeix un servidor MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="49"/>
         <source>Edit MCP Server</source>
-        <translation>Edita servidor MCP</translation>
+        <translation>Edita el servidor MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="96"/>
         <source>JSON configuration:</source>
         <translation>Configuració JSON:</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="100"/>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="106"/>
         <source>Please paste the MCP JSON configuration code into the input box.</source>
-        <translation>Enganxa el codi de configuració MCP JSON al quadre d’entrada.</translation>
+        <translation>Enganxeu el codi de configuració JSON del MCP al quadre d&apos;entrada.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="120"/>
         <source>Describe</source>
         <translation>Descriu</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="126"/>
         <source>Describe MCP server functions to facilitate quick search tools</source>
-        <translation>Descriu les funcions del servidor MCP per facilitar eines de cerca ràpida</translation>
+        <translation>Descriu les funcions del servidor MCP per facilitar les eines de cerca ràpida</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="155"/>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/custommcpservereditor.cpp" line="167"/>
         <source>Confirm</source>
         <translation>Confirma</translation>
     </message>
@@ -5507,425 +1633,304 @@ Hora actual: %2</translation>
 <context>
     <name>uos_ai::CustomModelGroup</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="963"/>
         <source>Please enter the model ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Introduïu l&apos;identificador del model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="967"/>
         <source>Test</source>
-        <translation type="unfinished"></translation>
+        <translation>Prova</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="988"/>
         <source>Please enter the model name</source>
-        <translation type="unfinished"></translation>
+        <translation>Introduïu el nom del model</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DConfigManager</name>
     <message>
-        <location filename="../src/utils/dconfigmanager.cpp" line="234"/>
         <source>The device needs to be restarted before this function can be fully used.</source>
-        <translation>Cal reiniciar el dispositiu abans que aquesta funció pugui ser utilitzada completament.</translation>
+        <translation>Cal reiniciar el dispositiu abans de poder utilitzar completament aquesta funció.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DeepResearchAgent</name>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="107"/>
         <source>Collecting and analyzing data</source>
-        <translation type="unfinished"></translation>
+        <translation>Recollint i analitzant dades</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="148"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="163"/>
         <source>Data collection and analysis completed</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha completat la recollida i anàlisi de dades</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="149"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="166"/>
         <source>Research completed. %1 references collected:
 </source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha completat la recerca. S&apos;han recollit %1 referències:
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="224"/>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="282"/>
-        <source>搜索成功</source>
-        <translation type="unfinished"></translation>
+        <source>Search succeeded</source>
+        <translation>S&apos;ha completat la cerca</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="227"/>
-        <source>ERROR: 未搜索到信息！</source>
-        <translation type="unfinished"></translation>
+        <source>ERROR: No information found!</source>
+        <translation>ERROR: No s&apos;ha trobat informació!</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="285"/>
-        <source>未找到相关文档</source>
-        <translation type="unfinished"></translation>
+        <source>No relevant documents found</source>
+        <translation>No s&apos;han trobat documents rellevants</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/deepresearchagent.cpp" line="327"/>
         <source>Local Knowledge Base</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::DeepSeekInfo</name>
-    <message>
-        <source>After receiving the gift, the original Baidu model and iFlytek model will be replaced with DeepSeek</source>
-        <translation type="vanished">Després de rebre el regal, el model original de Baidu i el model iFlytek seran reemplaçats per DeepSeek</translation>
-    </message>
-    <message>
-        <source>Manually collect later</source>
-        <translation type="vanished">Recollir manualment més tard</translation>
-    </message>
-    <message>
-        <source>Trial Account</source>
-        <translation type="vanished">Compte de prova</translation>
-    </message>
-    <message>
-        <source>Get a free account</source>
-        <translation type="vanished">Obtenir un compte gratuït</translation>
-    </message>
-    <message>
-        <source>Try again</source>
-        <translation type="vanished">Torneu-ho a provar</translation>
-    </message>
-    <message>
-        <source>Enter UOS AI</source>
-        <translation type="vanished">Entrar a UOS AI</translation>
-    </message>
-    <message>
-        <source>Receiving...</source>
-        <translation type="vanished">Rebent...</translation>
-    </message>
-    <message>
-        <source>Use it immediately</source>
-        <translation type="vanished">Utilitzar-lo immediatament</translation>
-    </message>
-    <message>
-        <source>Checking account status...</source>
-        <translation type="vanished">Comprovant l&apos;estat del compte...</translation>
-    </message>
-    <message>
-        <source>DeepSeek account claim failed!</source>
-        <translation type="vanished">La sol·licitud del compte DeepSeek ha fallat!</translation>
-    </message>
-    <message>
-        <source>Please check the network and try again later！</source>
-        <translation type="vanished">Si us plau, comproveu la xarxa i torneu-ho a provar més tard！</translation>
-    </message>
-    <message>
-        <source>DeepSeek account successfully claimed!</source>
-        <translation type="vanished">Compte DeepSeek sol·licitat amb èxit!</translation>
-    </message>
-    <message>
-        <source>Please check the network and try again or manually claim in UOS AI settings later</source>
-        <translation type="vanished">Si us plau, comproveu la xarxa i torneu-ho a provar o sol·liciteu manualment a la configuració de UOS AI més tard</translation>
-    </message>
-    <message>
-        <source>UOS AI has been fully integrated into DeepSeek</source>
-        <translation type="vanished">UOS AI s&apos;ha integrat completament a DeepSeek</translation>
-    </message>
-    <message>
-        <source>The free account activity has ended.</source>
-        <translation type="vanished">L&apos;activitat del compte gratuït ha finalitzat.</translation>
-    </message>
-    <message>
-        <source>Come and experience it!</source>
-        <translation type="vanished">Vine i prova-ho!</translation>
-    </message>
-    <message>
-        <source>Come and claim your account!</source>
-        <translation type="vanished">Vine i reclama el teu compte!</translation>
+        <translation>Base de coneixement local</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DeepSeekModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="48"/>
         <source>Precautions</source>
-        <translation>Precauccions</translation>
+        <translation>Precaucions</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="49"/>
         <source>The DeepSeek local model has certain requirements for computer configuration. If the configuration is lower than the recommended one, the experience will be affected.</source>
-        <translation>El model local DeepSeek té certs requisits per a la configuració de l&apos;ordinador. Si la configuració és inferior a la recomanada, l&apos;experiència es veurà afectada.</translation>
+        <translation>El model local de DeepSeek té certs requisits de configuració de l&apos;ordinador. Si la configuració és inferior a la recomanada, l&apos;experiència es veurà afectada.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="54"/>
         <source>Recommended configuration</source>
         <translation>Configuració recomanada</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="55"/>
         <source>&lt;b&gt;Recommended Configuration&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;High-performance multi-core CPU (such as Intel i5/i7 or AMD Ryzen 5/7 series), with a clock speed of above 3.0 GHz.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;With a video memory of above 4GB.&lt;br&gt;&lt;b&gt;Memory: &lt;/b&gt;8GB and above.&lt;br&gt;&lt;b&gt;Hard Drive: &lt;/b&gt;Solid State Drive (SSD) with at least 5GB of free space reserved.</source>
-        <translation>&lt;b&gt;Configuració recomanada&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;CPU multicore d&apos;alt rendiment (com Intel i5/i7 o sèries AMD Ryzen 5/7), amb una velocitat de rellotge superior a 3,0 GHz.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;Amb una memòria de vídeo superior a 4 GB.&lt;br&gt;&lt;b&gt;Memòria: &lt;/b&gt;8 GB o més.&lt;br&gt;&lt;b&gt;Disc dur: &lt;/b&gt;Unitat d&apos;estat sòlid (SSD) amb almenys 5 GB d&apos;espai lliure reservat.</translation>
+        <translation>&lt;b&gt;Configuració recomanada&lt;/b&gt;&lt;br&gt;&lt;b&gt;CPU: &lt;/b&gt;CPU multi-nucli d&apos;alt rendiment (com ara Intel i5/i7 o AMD Ryzen 5/7), amb una velocitat de rellotge superior a 3,0 GHz.&lt;br&gt;&lt;b&gt;GPU: &lt;/b&gt;Amb una memòria de vídeo superior a 4 GB.&lt;br&gt;&lt;b&gt;Memòria: &lt;/b&gt;8 GB o superior.&lt;br&gt;&lt;b&gt;Disc dur: &lt;/b&gt;Unitat d&apos;estat sòlid (SSD) amb almenys 5 GB d&apos;espai lliure reservat.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="64"/>
         <source>Install later</source>
         <translation>Instal·lar més tard</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/deepseekmodelitem.cpp" line="65"/>
         <source>Confirm installation</source>
-        <translation>Confirmar instal·lació</translation>
+        <translation>Confirmar la instal·lació</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::DefaultAgent</name>
+    <message>
+        <source>yyyy-MM-dd hh:mm ddd (year-month-day hour:minute week)</source>
+        <translation>yyyy-MM-dd hh:mm ddd (any-mes-dia hora:minut setmana)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::DisableAppWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/disableappwidget.cpp" line="47"/>
         <source>Hide FollowAlong in the following applications</source>
-        <translation>Amaga FollowAlong a les aplicacions següents</translation>
+        <translation>Amaga el Seguiment a les aplicacions següents</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ECheckAgreementDialog</name>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="62"/>
         <source>Enabling MCP Server Features</source>
-        <translation>Activació de les funcions del servidor MCP</translation>
+        <translation>Activant les característiques del servidor MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="81"/>
         <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
-        <translation>Algunes funcions de servidors MCP de tercers comporten certs riscos. Utilitza’ls amb precaució. Si actives aquest servei, una eina integrada detectarà i descarregarà automàticament les dependències necessàries. Aquest procés de descàrrega generarà càrrecs de dades. Tingues present aquests riscos i procedeix amb precaució.</translation>
+        <translation>Algunes característiques de servidors MCP de tercers comporten certs riscos. Utilitzeu-les amb precaució. Si activeu aquest servei, una eina integrada detectarà i baixarà automàticament les dependències necessàries. Aquest procés de baixada comportarà càrregues de dades. Tingueu en compte aquests riscos i procediu amb precaució.</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="97"/>
         <source>I have understood and agree to use this service</source>
         <translation>He entès i accepto utilitzar aquest servei</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="110"/>
         <source>Cancel</source>
-        <translation>Cancel·la</translation>
+        <translation>Cancel·lar</translation>
     </message>
     <message>
-        <location filename="../src/gui/common/echeckagreementdialog.cpp" line="112"/>
         <source>Confirm</source>
-        <translation>Confirma</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::EParserDocument</name>
-    <message>
-        <source>Supported files</source>
-        <translation type="obsolete">Fitxers compatibles</translation>
+        <translation>Confirmar</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::FileChannel</name>
     <message>
-        <location filename="../src/gui/web/filechannel.cpp" line="96"/>
         <source>Supported files</source>
-        <translation type="unfinished">Fitxers compatibles</translation>
+        <translation>Fitxers compatibles</translation>
+    </message>
+    <message>
+        <source>Update the UOS Screen Recorder to version 6.6 or later and restart your computer to enable Screenshot Q&amp;A.</source>
+        <translation>Actualitzeu l&apos;UOS Screen Recorder a la versió 6.6 o posterior i reinicieu l&apos;ordinador per activar les Preguntes i respostes de captures de pantalla.</translation>
+    </message>
+    <message>
+        <source>The file format is not supported.</source>
+        <translation>El format del fitxer no és compatible.</translation>
+    </message>
+    <message>
+        <source>The image exceeds the 15 MB size limit.</source>
+        <translation>La imatge supera el límit de mida de 15 MB.</translation>
+    </message>
+    <message>
+        <source>The file exceeds the 100 MB size limit.</source>
+        <translation>El fitxer supera el límit de mida de 100 MB.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::FreeAccountService</name>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="68"/>
         <source>Network error</source>
-        <translation type="unfinished"></translation>
+        <translation>Error de xarxa</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="76"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
+        <translation>El teu compte gratuït ha caducat. Configura el teu compte de model per continuar utilitzant-lo.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="81"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
+        <translation>La teva quota gratuïta s&apos;ha esgotat. Configura el teu compte de model per continuar utilitzant-lo.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="86"/>
         <source>Your free account quota has been exhausted for chat, please configure your model account to continue using it.</source>
-        <translation type="unfinished">Heu exhaurit la quota del vostre compte gratuït per a xat, configureu el compte del model per continuar utilitzant-lo.</translation>
+        <translation>La teva quota gratuïta per al xat s&apos;ha esgotat. Configura el teu compte de model per continuar utilitzant-lo.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="110"/>
         <source>Not Now</source>
-        <translation type="unfinished">Ara no</translation>
+        <translation>Ara no</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="111"/>
         <source>Claim Credits</source>
-        <translation type="unfinished">Reclama crèdits</translation>
+        <translation>Rebre crèdits</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="113"/>
         <source>Free Credits Delivered</source>
-        <translation type="unfinished">Crèdits gratuïts entregats</translation>
+        <translation>Crèdits gratuïts entregats</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="114"/>
-        <source>You&apos;ve used up of free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
-        <translation type="unfinished"></translation>
+        <source>You&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation>Has esgotat els crèdits de generació gratuïts del teu compte de prova. T&apos;hem donat 200 crèdits gratuïts addicionals vàlids aquest mes. Descobreix més funcions i desbloqueca el potencial il·limitat d&apos;UOS AI!</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="143"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="152"/>
         <source>Successfully Claimed</source>
-        <translation type="unfinished">Reclamat amb èxit</translation>
+        <translation>Reclamat correctament</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="146"/>
         <source>Account not found</source>
-        <translation type="unfinished">Compte no trobat</translation>
+        <translation>Compte no trobat</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="149"/>
         <source>Only support trial account</source>
-        <translation type="unfinished"></translation>
+        <translation>Només admet comptes de prova</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="156"/>
         <source>You have already participated in the event and cannot claim the reward again.</source>
-        <translation type="unfinished">Ja heu participat en l&apos;esdeveniment i no podeu reclamar la recompensa de nou.</translation>
+        <translation>Ja has participat en l&apos;esdeveniment i no pots reclamar la recompensa una altra vegada.</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="159"/>
         <source>Server system error</source>
-        <translation type="unfinished">Error del sistema del servidor</translation>
+        <translation>Error del sistema del servidor</translation>
     </message>
     <message>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="162"/>
-        <location filename="../src/services/accountservice/freeaccountservice.cpp" line="174"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">No s&apos;ha pogut reclamar. Si us plau, torna-ho a provar.</translation>
+        <translation>No s&apos;ha pogut reclamar. Torna-ho a provar.</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::GenerateImageInst</name>
+    <name>uos_ai::GenericAgent</name>
     <message>
-        <source>Generate Image</source>
-        <translation type="vanished">Generar imatge</translation>
-    </message>
-    <message>
-        <source>Describe Image Content</source>
-        <translation type="vanished">Descriure el contingut de la imatge</translation>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>aaaa-MM-dd ddd (any-mes-dia setmana)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::GetFreeAccountDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="46"/>
         <source>Get a free trial account</source>
-        <translation type="unfinished">Obteniu un compte de prova gratuït</translation>
+        <translation>Obtenir un compte de prova gratuït</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="63"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Cancel·lar</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="64"/>
         <source>Get account</source>
         <comment>button</comment>
-        <translation type="unfinished">Obtenir compte</translation>
+        <translation>Obtenir compte</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="91"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&gt;&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>En rebre un compte, entens i acceptes les condicions de l&apos;esdeveniment.&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Detalls de l&apos;esdeveniment&gt;&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="120"/>
         <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Compte de prova d&apos;UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="128"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="142"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Ha fallat la desada, torneu-ho a provar més tard</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="129"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="143"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="168"/>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="177"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Confirma</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="157"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished">Compte de prova rebut amb èxit.</translation>
+        <translation>S&apos;ha rebut el compte de prova correctament.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="159"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>El nombre d&apos;usos i la durada del compte de prova són limitats. Configureu el vostre compte de model personal a temps! Vegeu els detalls de l&apos;esdeveniment per a més informació.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="161"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="unfinished"></translation>
+        <translation>El suport en anglès dels comptes de prova no és satisfactori. A més, el nombre d&apos;usos i la durada del compte de prova són limitats. Configureu el vostre compte de model personal a temps!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="162"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Inicia la prova</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="167"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;activitat del compte gratuït ha finalitzat.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/getfreeaccountdialog.cpp" line="176"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut connectar al servidor, comproveu la vostra xarxa o torneu-ho a provar més tard.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::HttpCodeTranslation</name>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="19"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut connectar al servidor, comproveu la vostra xarxa o torneu-ho a provar més tard.</translation>
     </message>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="22"/>
+        <source>Request timeout due to server load or network issues. Please try again later.</source>
+        <translation>S&apos;ha esgotat el temps d&apos;espera de la sol·licitud degut a la càrrega del servidor o problemes de xarxa. Torneu-ho a provar més tard.</translation>
+    </message>
+    <message>
         <source>Connection failed, please check the fill in information.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ha fallat la connexió, comproveu la informació introduïda.</translation>
     </message>
     <message>
-        <location filename="../src/network/httpcodetranslation.cpp" line="25"/>
         <source>Operation canceled.</source>
-        <translation type="unfinished">Operació cancel·lada.</translation>
+        <translation>S&apos;ha cancel·lat l&apos;operació.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::IatWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="152"/>
         <source>Speak now</source>
-        <translation>Parla ara</translation>
+        <translation>Parleu ara</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="160"/>
         <source>Low input volume</source>
         <translation>Volum d&apos;entrada baix</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="163"/>
         <source>Settings</source>
         <translation>Configuració</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/iatwidget.cpp" line="244"/>
         <source>Network unavailable</source>
         <translation>Xarxa no disponible</translation>
     </message>
@@ -5933,16 +1938,13 @@ Hora actual: %2</translation>
 <context>
     <name>uos_ai::IconButtonEx</name>
     <message>
-        <location filename="../src/gui/mgmt/private/iconbuttonex.cpp" line="202"/>
         <source>Newly added files require preprocessing before they can be used, and during the data processing process, it may consume a significant amount of computing and storage resources. Data processing will stop after deleting data.</source>
-        <translation type="unfinished">Els fitxers afegits recentment requereixen un preprocessament abans de poder ser utilitzats, i durant el procés de processament de dades, pot consumir una quantitat significativa de recursos de computació i emmagatzematge. El processament de dades s&apos;aturarà després d&apos;eliminar les dades.</translation>
+        <translation>Els fitxers afegits recentment requereixen un preprocessament abans de poder-se utilitzar, i durant el procés de tractament de dades, és possible que consumeixin una gran quantitat de recursos de càlcul i emmagatzematge. El tractament de dades s&apos;aturarà després d&apos;esborrar les dades.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::InputPlaceholderWidget</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="38"/>
-        <location filename="../src/wordwizard/wrapper/inputplaceholderwidget.cpp" line="72"/>
         <source>Ask AI</source>
         <translation>Pregunta a la IA</translation>
     </message>
@@ -5950,230 +1952,162 @@ Hora actual: %2</translation>
 <context>
     <name>uos_ai::InputWindow</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="82"/>
         <source>What to ask about this?</source>
         <translation>Què vols preguntar sobre això?</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="114"/>
         <source>Hide until restarting this app</source>
-        <translation>Amaga fins que es torni a iniciar l’aplicació</translation>
+        <translation>Amaga fins que es reiniciï aquesta aplicació</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="115"/>
         <source>Disable in This Application</source>
-        <translation type="unfinished">Desactivar en aquesta aplicació</translation>
+        <translation>Inhabilita en aquesta aplicació</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="116"/>
         <source>Disable Globally</source>
-        <translation type="unfinished">Desactivar globalment</translation>
+        <translation>Inhabilita globalment</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="134"/>
-        <location filename="../src/wordwizard/wrapper/inputwindow.cpp" line="456"/>
         <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
-        <translation>Ves a &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Configuració&lt;/a&gt; per tornar-ho a activar.</translation>
+        <translation>Vés a &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Paràmetres&lt;/a&gt; per tornar-lo a habilitar.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseAgent</name>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="160"/>
         <source>Searching knowledge base</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està cercant a la base de coneixement</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="196"/>
         <source>Search complete · %1s</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerca finalitzada · %1s</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="200"/>
         <source>Search complete · %1m%2s</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerca finalitzada · %1m%2s</translation>
     </message>
     <message>
-        <location filename="../src/agent/knowledge/knowledgebaseagent.cpp" line="211"/>
         <source>References</source>
-        <translation type="unfinished"></translation>
+        <translation>Referències</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="57"/>
         <source>Are you sure you want to delete this knowledge base file?</source>
-        <translation type="unfinished">Esteu segur que voleu eliminar aquest fitxer de la base de coneixements?</translation>
+        <translation>Esteu segur que voleu suprimir aquest fitxer de la base de coneixement?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="58"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistitem.cpp" line="59"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Confirma</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::KnowledgeBaseListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="65"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="383"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Suprimeix</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="69"/>
         <source>Add</source>
-        <translation type="unfinished">Afegir</translation>
+        <translation>Afegeix</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="73"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="75"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="312"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="314"/>
         <source>Please install the embedding model plugins first</source>
-        <translation type="unfinished">Primer instal·leu els connectors del model d&apos;incrustació</translation>
+        <translation>Instal·leu primer els connectors del model d&apos;incrustacions</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="81"/>
         <source>Knowledge Base Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestió de la base de coneixement</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="95"/>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="566"/>
         <source>This feature requires high hardware resources, and the reference benchmark configuration is: CPU Intel 11th generation i7 or above; Memory of 16GB or more; Having a NVIDIA graphics card and a 10 series or higher is the best option. If the configuration is too low, there may be issues such as lagging and inaccurate answers.</source>
-        <translation type="unfinished">Aquesta funció requereix recursos de maquinari elevats, i la configuració de referència és: CPU Intel 11a generació i7 o superior; Memòria de 16GB o més; Tenir una targeta gràfica NVIDIA i una sèrie 10 o superior és la millor opció. Si la configuració és massa baixa, poden sorgir problemes com ara retard i respostes inexactes.</translation>
+        <translation>Aquesta funció requereix molts recursos de maquinari i la configuració de referència recomanada és: CPU Intel 11a generació i7 o superior; memòria de 16 GB o més; tenir una targeta gràfica NVIDIA i una sèrie 10 o superior és l&apos;opció ideal. Si la configuració és massa baixa, pot haver-hi problemes com ara retards i respostes inexactes.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="108"/>
         <source>Here, the knowledge base of the Personal Knowledge Assistant can be defined, and the Personal Knowledge Assistant will answer questions based on the files added below.</source>
-        <translation type="unfinished">Aquí es pot definir la base de coneixement de l&apos;Assistent de Coneixement Personal, i l&apos;Assistent respondrà preguntes basant-se en els fitxers afegits a continuació.</translation>
+        <translation>Aquí es pot definir la base de coneixement de l&apos;Assistent de Coneixement Personal, i l&apos;Assistent de Coneixement Personal respondrà les preguntes basant-se en els fitxers afegits a continuació.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="158"/>
         <source>Done</source>
-        <translation type="unfinished">Fet</translation>
+        <translation>Fet</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="171"/>
         <source>None</source>
-        <translation type="unfinished">Cap</translation>
+        <translation>Cap</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="217"/>
         <source>File already exist</source>
-        <translation type="unfinished">El fitxer ja existeix</translation>
+        <translation>El fitxer ja existeix</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="218"/>
         <source>The %1 file already exists and cannot be added again. Please modify the file name or delete the existing file before adding it again</source>
-        <translation type="unfinished">El fitxer %1 ja existeix i no es pot afegir de nou. Modifiqueu el nom del fitxer o suprimiu el fitxer existent abans d&apos;afegir-lo de nou</translation>
+        <translation>El fitxer %1 ja existeix i no es pot tornar a afegir. Modifiqueu el nom del fitxer o suprimiu el fitxer existent abans de tornar-lo a afegir</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/knowledgebaselistwidget.cpp" line="243"/>
         <source>All files</source>
-        <translation type="unfinished">Tots els fitxers</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::LaunchAppInst</name>
-    <message>
-        <source>Launch or Close App</source>
-        <translation type="vanished">Inicia o tanca l&apos;aplicació</translation>
-    </message>
-    <message>
-        <source>WPS, Music, Album, Control Center, Log Viewer ...</source>
-        <translation type="vanished">WPS, Música, Àlbum, Centre de control, Visualitzador de registres ...</translation>
+        <translation>Tots els fitxers</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::LocalModelItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="63"/>
         <source>Install</source>
-        <translation type="unfinished">Instal·lar</translation>
+        <translation>Instal·la</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="68"/>
         <source>Uninstall</source>
-        <translation type="unfinished">Desinstal·lar</translation>
+        <translation>Desinstal·la</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodelitem.cpp" line="74"/>
         <source>Update</source>
-        <translation type="unfinished">Actualitzar</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::LocalModelListItem</name>
-    <message>
-        <location filename="../src/gui/mgmt/private/localmodellistitem.cpp" line="34"/>
-        <source>uninstall</source>
-        <translation type="unfinished">desinstal·lar</translation>
+        <translation>Actualitza</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::LocalModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="41"/>
         <source>Local model</source>
-        <translation type="unfinished">Model local</translation>
+        <translation>Model local</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
         <source>ULLM-1.5B</source>
-        <translation type="unfinished">ULLM-1.5B</translation>
+        <translation>ULLM-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="106"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
         <source>Once installed, you do not need an internet connection to use UOS AI.</source>
-        <translation type="unfinished">Un cop instal·lat, no necessiteu connexió a Internet per utilitzar UOS AI.</translation>
+        <translation>Un cop instal·lat, no necessiteu connexió a internet per utilitzar l&apos;UOS AI.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="125"/>
         <source>ULLM-7B</source>
-        <translation type="unfinished">ULLM-7B</translation>
+        <translation>ULLM-7B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
         <source>DeepSeek-R1-1.5B</source>
-        <translation type="unfinished">DeepSeek-R1-1.5B</translation>
+        <translation>DeepSeek-R1-1.5B</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="144"/>
         <source>Download from the open-source community at your own risk. Use it in UOS AI Assistant after installation.</source>
-        <translation type="unfinished">Baixeu de la comunitat de codi obert sota la vostra responsabilitat. Utilitzeu-lo a l&apos;Assistent d&apos;IA UOS després de la instal·lació.</translation>
+        <translation>Baixeu-lo de la comunitat de codi obert sota la vostra responsabilitat. Utilitzeu-lo a l&apos;Assistent UOS AI després de la instal·lació.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="163"/>
-        <source>UOS AI large model</source>
-        <translation type="unfinished">Model gran d&apos;IA UOS</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
         <source>Embedding Plugins</source>
-        <translation type="unfinished">Connectors d&apos;incrustació</translation>
+        <translation>Connectors d&apos;incrustació</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/localmodellistwidget.cpp" line="181"/>
         <source>After the model is installed, the System Assistant and the Personal Knowledge Assistantt can be run.</source>
-        <translation type="unfinished">Després d&apos;instal·lar el model, es poden executar l&apos;Assistent del Sistema i l&apos;Assistent de Coneixement Personal.</translation>
+        <translation>Un cop instal·lat el model, es poden executar l&apos;Assistent del Sistema i l&apos;Assistent de Coneixement Personal.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::MCPAgent</name>
     <message>
-        <location filename="../src/agent/mcpagent.cpp" line="118"/>
         <source>MCP server is not available</source>
         <translation>El servidor MCP no està disponible</translation>
     </message>
@@ -6181,96 +2115,76 @@ Hora actual: %2</translation>
 <context>
     <name>uos_ai::MCPServer</name>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="67"/>
-        <location filename="../src/agent/mcpserver.cpp" line="139"/>
         <source>The &apos;mcpServers&apos; field is missing.</source>
         <translation>Falta el camp &apos;mcpServers&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="76"/>
         <source>Remove old custom server config failed, server name: %0</source>
         <translation>No s&apos;ha pogut eliminar la configuració antiga del servidor personalitzat, nom del servidor: %0</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="89"/>
-        <location filename="../src/agent/mcpserver.cpp" line="163"/>
         <source>no valid mcp server.</source>
-        <translation>cap servidor MCP vàlid.</translation>
+        <translation>no hi ha cap servidor mcp vàlid.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="147"/>
         <source>Duplicate MCP server name: %0.</source>
         <translation>Nom de servidor MCP duplicat: %0.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="150"/>
         <source>MCP server name &apos;%1&apos; already exists</source>
         <translation>El nom del servidor MCP &apos;%1&apos; ja existeix</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="176"/>
         <source>Server name &apos;%1&apos; already exists</source>
         <translation>El nom del servidor &apos;%1&apos; ja existeix</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="223"/>
-        <location filename="../src/agent/mcpserver.cpp" line="268"/>
         <source>Failed to open custom config file for writing</source>
-        <translation>No s&apos;ha pogut obrir el fitxer de configuració personalitzada per escriure</translation>
+        <translation>No s&apos;ha pogut obrir el fitxer de configuració personalitzat per escriure</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="231"/>
         <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
-        <translation>El servidor &apos;%1&apos; no és un servidor personalitzat o no existeix</translation>
+        <translation>El servidor «%1» no és un servidor personalitzat o no existeix</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="246"/>
         <source>No custom server found.</source>
         <translation>No s&apos;ha trobat cap servidor personalitzat.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="252"/>
         <source>Server &apos;%1&apos; not found.</source>
-        <translation>No s&apos;ha trobat el servidor &apos;%1&apos;.</translation>
+        <translation>No s&apos;ha trobat el servidor «%1».</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="326"/>
         <source>url field cannot be empty.</source>
-        <translation>el camp url no pot estar buit.</translation>
+        <translation>El camp url no pot estar buit.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="333"/>
         <source>command field cannot be empty.</source>
-        <translation>el camp command no pot estar buit.</translation>
+        <translation>El camp ordre no pot estar buit.</translation>
     </message>
     <message>
-        <location filename="../src/agent/mcpserver.cpp" line="337"/>
         <source>The &apos;command&apos; or &apos;url&apos; field is missing</source>
-        <translation>Falta el camp &apos;command&apos; o &apos;url&apos;</translation>
+        <translation>Falta el camp «ordre» o «url»</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="51"/>
         <source>Install</source>
-        <translation type="unfinished">Instal·lar</translation>
+        <translation>Instal·la</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="56"/>
         <source>Uninstall</source>
-        <translation type="unfinished">Desinstal·lar</translation>
+        <translation>Desinstal·la</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserveritem.cpp" line="63"/>
         <source>Update</source>
-        <translation type="unfinished">Actualitzar</translation>
+        <translation>Actualitza</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistitem.cpp" line="63"/>
         <source>built-in</source>
         <translation>integrat</translation>
     </message>
@@ -6278,70 +2192,57 @@ Hora actual: %2</translation>
 <context>
     <name>uos_ai::McpServerListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="128"/>
         <source>MCP Server</source>
         <translation>Servidor MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="135"/>
         <source>All</source>
         <translation>Tots</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="136"/>
         <source>Built-in</source>
-        <translation>Integrats</translation>
+        <translation>Integrat</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="137"/>
         <source>Custom</source>
-        <translation type="unfinished">Personalitzat</translation>
+        <translation>Personalitzat</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="145"/>
         <source>Add MCP Server</source>
-        <translation>Afegir servidor MCP</translation>
+        <translation>Afegeix un servidor MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="327"/>
         <source>Confirm deletion %1?</source>
-        <translation>Confirmeu l&apos;eliminació de %1?</translation>
+        <translation>Voleu suprimir %1?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="328"/>
         <source>After deletion, this server will be unavailable. Proceed with caution.</source>
-        <translation>Després d&apos;eliminar-lo, aquest servidor no estarà disponible. Procediu amb precaució.</translation>
+        <translation>Després de la supressió, aquest servidor no estarà disponible. Procediu amb precaució.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="329"/>
         <source>Cancel</source>
-        <translation>Cancel·lar</translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverlistwidget.cpp" line="330"/>
         <source>Delete</source>
-        <translation>Eliminar</translation>
+        <translation>Suprimeix</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::McpServerWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="60"/>
         <source>Mcp Enviorment</source>
         <translation>Entorn MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="92"/>
         <source>MCP Server</source>
         <translation>Servidor MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="167"/>
         <source>Install UOS AI Agent</source>
-        <translation>Instal·lar l&apos;agent UOS AI</translation>
+        <translation>Instal·la l&apos;agent UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/mcpserverwidget.cpp" line="168"/>
         <source>After installation, MCP Server will be available.</source>
         <translation>Després de la instal·lació, el servidor MCP estarà disponible.</translation>
     </message>
@@ -6349,529 +2250,438 @@ Hora actual: %2</translation>
 <context>
     <name>uos_ai::MgmtWindow</name>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="112"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="451"/>
         <source>Model Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuració del model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="115"/>
         <source>Knowledge Base Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestió de la base de coneixement</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="118"/>
         <source>UOS AI FollowAlong</source>
-        <translation type="unfinished">UOS AI FollowAlong</translation>
+        <translation>UOS AI FollowAlong</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="336"/>
         <source>User Agreement</source>
-        <translation type="unfinished">Acord d&apos;usuari</translation>
+        <translation>Acord d&apos;usuari</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="347"/>
         <source>UOS AI User Agreement</source>
-        <translation type="unfinished"></translation>
+        <translation>Acord d&apos;usuari d&apos;UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="348"/>
         <source>Read and agreed</source>
-        <translation type="unfinished">Llegit i acceptat</translation>
+        <translation>Llegit i acceptat</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="374"/>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="385"/>
         <source>Proxy Settings</source>
-        <translation type="unfinished">Configuració del proxy</translation>
+        <translation>Configuració del servidor intermediari</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="386"/>
         <source>Go to settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Vés a la configuració</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="523"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;activitat del compte gratuït ha finalitzat.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="524"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Confirma</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="630"/>
         <source>Adding to the knowledge base requires installing the vectorization model plugin. Please go to the app store to download and install.</source>
-        <translation type="unfinished">Afegir a la base de coneixement requereix instal·lar el connector del model de vectorització. Si us plau, aneu a la botiga d&apos;aplicacions per descarregar-lo i instal·lar-lo.</translation>
+        <translation>Per afegir a la base de coneixement cal instal·lar el connector del model de vectorització. Vés a la botiga d&apos;aplicacions per descarregar-lo i instal·lar-lo.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="638"/>
         <source>Do not install</source>
         <comment>button</comment>
-        <translation type="unfinished">No instal·lar</translation>
+        <translation>No instal·lis</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/mgmtwindow.cpp" line="639"/>
         <source>Install immediately</source>
         <comment>button</comment>
-        <translation type="unfinished">Instal·lar immediatament</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ModelHubLLM</name>
-    <message>
-        <source>YouRong 1.5B</source>
-        <translation type="vanished">YouRong 1.5B</translation>
-    </message>
-    <message>
-        <source>YouRong 7B</source>
-        <translation type="vanished">YouRong 7B</translation>
+        <translation>Instal·la ara</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelHubProvider</name>
     <message>
-        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="54"/>
         <source>YouRong 1.5B</source>
-        <translation type="unfinished">YouRong 1.5B</translation>
+        <translation>YouRong 1.5B</translation>
     </message>
     <message>
-        <location filename="../src/model/modelhub/modelhubprovider.cpp" line="57"/>
         <source>YouRong 7B</source>
-        <translation type="unfinished">YouRong 7B</translation>
+        <translation>YouRong 7B</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="37"/>
         <source>Get a free account</source>
-        <translation type="unfinished">Obtenir un compte gratuït</translation>
+        <translation>Obtén un compte gratuït</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="43"/>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Suprimeix</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="47"/>
         <source>Add</source>
-        <translation type="unfinished">Afegir</translation>
+        <translation>Afegeix</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="54"/>
         <source>Online model</source>
-        <translation type="unfinished">Model en línia</translation>
+        <translation>Model en línia</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="120"/>
         <source>Done</source>
-        <translation type="unfinished">Fet</translation>
+        <translation>Fet</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modellistwidget.cpp" line="131"/>
         <source>None</source>
-        <translation type="unfinished">Cap</translation>
+        <translation>Cap</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelScopeItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="97"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="304"/>
         <source>Install</source>
-        <translation>Instal·lar</translation>
+        <translation>Instal·la</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="107"/>
-        <source>Update</source>
-        <translation>Actualitzar</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="101"/>
         <source>Uninstall</source>
-        <translation>Desinstal·lar</translation>
+        <translation>Desinstal·la</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="112"/>
+        <source>Update</source>
+        <translation>Actualitza</translation>
+    </message>
+    <message>
         <source>Cancel</source>
         <translation>Cancel·lar</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="150"/>
         <source>About %1GB</source>
-        <translation>Aproximadament %1 GB</translation>
+        <translation>Unes %1GB</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="193"/>
         <source>Installing</source>
         <translation>S&apos;està instal·lant</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="220"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation>Estàs segur que vols eliminar aquest model?</translation>
+        <translation>Esteu segur que voleu suprimir aquest model?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="221"/>
         <source>Cancel</source>
         <comment>button</comment>
         <translation>Cancel·lar</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="222"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation>Confirmar</translation>
+        <translation>Confirma</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="244"/>
         <source>Checking</source>
         <translation>S&apos;està comprovant</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="264"/>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="491"/>
         <source>Ok</source>
         <comment>button</comment>
         <translation>D&apos;acord</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="265"/>
         <source>%0 download failed, please try again!</source>
-        <translation>%0 descàrrega fallida, si us plau, torna-ho a provar!</translation>
+        <translation>%0 ha fallat la baixada, torneu-ho a provar!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="312"/>
         <source>Please install the &quot;Embedding Plugins&quot; first before installing this model.</source>
-        <translation>Si us plau, instal·la els &quot;Embedding Plugins&quot; abans d&apos;instal·lar aquest model.</translation>
+        <translation>Instal·leu primer els «Connectors d&apos;incrustació» abans d&apos;instal·lar aquest model.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="492"/>
         <source>target folder trash failed, please try again!</source>
-        <translation>la paperera de la carpeta de destí ha fallat, si us plau, torna-ho a provar!</translation>
+        <translation>ha fallat l&apos;enviament a la paperera de la carpeta de destinació, torneu-ho a provar!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="528"/>
         <source>%1 seconds</source>
         <translation>%1 segons</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="530"/>
         <source>%1 minutes</source>
         <translation>%1 minuts</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelscopeitem.cpp" line="535"/>
         <source>%1MB/%2GB downloaded, %3 left.</source>
-        <translation>%1MB/%2GB descarregats, %3 restants.</translation>
+        <translation>%1MB/%2GB baixats, %3 restant.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelSubItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="38"/>
         <source>Are you sure you want to delete this model?</source>
-        <translation type="unfinished"></translation>
+        <translation>Esteu segur que voleu suprimir aquest model?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="39"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modelsubitem.cpp" line="40"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Confirma</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModelValidator</name>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="37"/>
         <source>Invalid model account</source>
-        <translation type="unfinished"></translation>
+        <translation>Compte de model no vàlid</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="54"/>
         <source>Unsupported model type</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipus de model no compatible</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="62"/>
         <source>Model does not support chat completion</source>
-        <translation type="unfinished"></translation>
+        <translation>El model no admet la compleció de xat</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="89"/>
         <source>Model is available</source>
-        <translation type="unfinished"></translation>
+        <translation>El model està disponible</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="98"/>
         <source>HTTP error: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Error HTTP: %1</translation>
     </message>
     <message>
-        <location filename="../src/model/modelvalidator.cpp" line="108"/>
         <source>Unknown error</source>
-        <translation type="unfinished"></translation>
+        <translation>Error desconegut</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ModifyProviderDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="91"/>
         <source>For proxy settings, please go to system proxy settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Per a la configuració del servidor intermediari, aneu a la configuració del servidor intermediari del sistema</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="94"/>
         <source>Go to settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Vés a la configuració</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="104"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="264"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Suprimeix</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
         <source>Edit Model</source>
-        <translation type="unfinished"></translation>
+        <translation>Edita el model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="137"/>
         <source>Add Model</source>
-        <translation type="unfinished">Afegir model</translation>
+        <translation>Afegeix un model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="153"/>
         <source>Account</source>
-        <translation type="unfinished">Compte</translation>
+        <translation>Compte</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="161"/>
         <source>Required, to distinguish multiple models</source>
-        <translation type="unfinished">Obligatori, per distingir múltiples models</translation>
+        <translation>Obligatori, per distingir múltiples models</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="168"/>
         <source>Provider</source>
-        <translation type="unfinished"></translation>
+        <translation>Proveïdor</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="186"/>
         <source>APIKey</source>
-        <translation type="unfinished"></translation>
+        <translation>ClauAPI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="194"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="206"/>
         <source>Required, please input</source>
-        <translation type="unfinished"></translation>
+        <translation>Obligatori, introduïu-la</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="198"/>
         <source>Domain</source>
-        <translation type="unfinished">Domini</translation>
+        <translation>Domini</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="212"/>
         <source>Enable</source>
-        <translation type="unfinished">Activar</translation>
+        <translation>Activar</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="249"/>
         <source>Custom</source>
-        <translation type="unfinished">Personalitzat</translation>
+        <translation>Personalitzat</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="269"/>
         <source>Add</source>
-        <translation type="unfinished">Afegir</translation>
+        <translation>Afegir</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="296"/>
         <source>To test whether the model is available, the system sends test information to the large model, which will consume a small amount of tokens.</source>
-        <translation type="unfinished"></translation>
+        <translation>Per comprovar si el model està disponible, el sistema envia informació de prova al model gran, el qual consumirà una petita quantitat de tokens.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="346"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancel·lar</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="348"/>
         <source>Confirm</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirma</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="523"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="612"/>
         <source>Name and Model ID must be filled in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cal omplir el nom i l&apos;identificador del model.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="674"/>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="684"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Ha fallat el desament, torneu-ho a provar més tard</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="710"/>
         <source>Done</source>
-        <translation type="unfinished">Fet</translation>
+        <translation>Fet</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="787"/>
         <source>Test passed</source>
-        <translation type="unfinished"></translation>
+        <translation>Prova superada</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="788"/>
         <source>The model service is available.</source>
-        <translation type="unfinished"></translation>
+        <translation>El servei de model està disponible.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/modifyproviderdialog.cpp" line="789"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Confirma</translation>
     </message>
 </context>
 <context>
-    <name>uos_ai::MultimediaControlInst</name>
+    <name>uos_ai::OnlineSearchAgent</name>
     <message>
-        <source>Multimedia Control</source>
-        <translation type="vanished">Control Multimèdia</translation>
+        <source>yyyy-MM-dd ddd (year-month-day week)</source>
+        <translation>aaaa-MM-dd ddd (any-mes-dia setmana)</translation>
     </message>
     <message>
-        <source>Play music, state control, seek...</source>
-        <translation type="vanished">Reproduir música, control d&apos;estat, buscar...</translation>
+        <source>Searching for relevant information</source>
+        <translation>S&apos;està cercant informació rellevant</translation>
+    </message>
+    <message>
+        <source>References %0 sources</source>
+        <translation>Referències %0 fonts</translation>
+    </message>
+    <message>
+        <source>%0 pages found</source>
+        <translation>%0 pàgines trobades</translation>
+    </message>
+    <message>
+        <source>Browsing %0</source>
+        <translation>S&apos;està navegant per %0</translation>
+    </message>
+    <message>
+        <source>page %0</source>
+        <translation>pàgina %0</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::OperatingLineWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="194"/>
         <source>In data processing</source>
-        <translation type="unfinished">En processament de dades</translation>
+        <translation>En processament de dades</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="206"/>
         <source>Data processing error</source>
-        <translation type="unfinished">Error en el processament de dades</translation>
+        <translation>Error de processament de dades</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/operatinglinewidget.cpp" line="218"/>
         <source>File error, unable to process, please delete.</source>
-        <translation type="unfinished">Error de fitxer, no es pot processar, suprimiu-lo.</translation>
+        <translation>Error de fitxer, no es pot processar, suprimeix-lo.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::OutlineAgent</name>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="114"/>
         <source>Generating outline</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està generant l&apos;esquema</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="117"/>
         <source>Generating outline content for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està generant el contingut de l&apos;esquema per a vostè.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="143"/>
-        <source>Outline generated, please confirm</source>
-        <translation type="unfinished"></translation>
+        <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
+        <translation>S&apos;ha generat un esquema editable. Un cop confirmat, feu clic al botó blau de sota per continuar amb la generació del document.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="145"/>
         <source>Detected that you have uploaded a local outline,  Currently parsing the outline content for you.</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha detectat que heu pujat un esquema local, actualment s&apos;està analitzant el contingut de l&apos;esquema per a vostè.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="148"/>
         <source>Detected uploaded local outline, please confirm.</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha detectat l&apos;esquema local pujat, confirmeu-ho.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="150"/>
         <source>Failed to parse the uploaded outline file, please re-upload</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut analitzar el fitxer de l&apos;esquema pujat, torneu-lo a pujar</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="163"/>
         <source>Generating outline content failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Ha fallat la generació del contingut de l&apos;esquema</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="193"/>
         <source>Based on your writing task, I have generated the following outline for **%1**:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Segons la vostra tasca d&apos;escriptura, he generat el següent esquema per a **%1**:
+
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="195"/>
         <source>I have parsed your uploaded outline and structured it as **%1**:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>He analitzat el vostre esquema pujat i l&apos;he estructurat com a **%1**:
+
+</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/outlineagent.cpp" line="208"/>
         <source>
 The outline contains %1 sections in total. Please confirm to proceed with research and writing.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+L&apos;esquema conté un total de %1 seccions. Confirmeu per continuar amb la investigació i l&apos;escriptura.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PersonalKnowledgeAssistant</name>
     <message>
-        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="43"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the model plug.</source>
-        <translation type="unfinished">L&apos;Assistent de Coneixement Personal només es pot utilitzar després de configurar el connector del model.</translation>
+        <translation>L&apos;Assistent de Coneixement Personal només es pot utilitzar després de configurar el connector del model.</translation>
     </message>
     <message>
-        <location filename="../src/assistant/personalknowledgeassistant.cpp" line="49"/>
         <source>The Personal Knowledge Assistant can only be used after configuring the knowledge base.</source>
-        <translation type="unfinished">L&apos;Assistent de Coneixement Personal només es pot utilitzar després de configurar la base de coneixements.</translation>
+        <translation>L&apos;Assistent de Coneixement Personal només es pot utilitzar després de configurar la base de coneixement.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::PrivateModelListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="35"/>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Delete</source>
-        <translation>Eliminar</translation>
+        <translation>Suprimeix</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="39"/>
         <source>Add</source>
-        <translation>Afegir</translation>
+        <translation>Afegeix</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="46"/>
         <source>Private deployment model</source>
         <translation>Model de desplegament privat</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="118"/>
         <source>Done</source>
         <translation>Fet</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/privatemodellistwidget.cpp" line="127"/>
         <source>None</source>
         <translation>Cap</translation>
     </message>
@@ -6879,37 +2689,31 @@ The outline contains %1 sections in total. Please confirm to proceed with resear
 <context>
     <name>uos_ai::ProviderListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="127"/>
         <source>Are you sure you want to delete this provider?</source>
-        <translation type="unfinished"></translation>
+        <translation>Esteu segur que voleu suprimir aquest proveïdor?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="128"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/providerlistitem.cpp" line="129"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Confirma</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ReferenceDialog</name>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="55"/>
         <source>Reference</source>
         <translation>Referència</translation>
     </message>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="115"/>
         <source>Open</source>
-        <translation>Obrir</translation>
+        <translation>Obre</translation>
     </message>
     <message>
-        <location filename="../src/gui/knowledgebase/referencedialog.cpp" line="150"/>
         <source>Documents don&apos;t exits!</source>
         <translation>Els documents no existeixen!</translation>
     </message>
@@ -6917,2072 +2721,2059 @@ The outline contains %1 sections in total. Please confirm to proceed with resear
 <context>
     <name>uos_ai::ReportWriterAgent</name>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="177"/>
         <source>Document Generating</source>
-        <translation type="unfinished"></translation>
+        <translation>Generant document</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="216"/>
         <source>failed</source>
-        <translation type="unfinished"></translation>
+        <translation>ha fallat</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="443"/>
         <source>Document Generated</source>
-        <translation type="unfinished"></translation>
+        <translation>Document generat</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="444"/>
         <source>The document has been generated based on the outline. You can click the card below to edit the content, or click the &quot;Save As&quot; button to save it locally for further editing.</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha generat el document basat en l&apos;esquema. Podeu fer clic a la targeta de sota per editar el contingut, o fer clic al botó &quot;Anomena i desa&quot; per desar-lo localment i continuar editant-lo.</translation>
     </message>
     <message>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="455"/>
-        <location filename="../src/agent/research/reportwriteragent.cpp" line="603"/>
         <source>You can ask follow-up questions or request adjust the article.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SearchOnlineInst</name>
-    <message>
-        <source>Search Online</source>
-        <translation type="vanished">Cerca en línia</translation>
-    </message>
-    <message>
-        <source>Enter Search Content</source>
-        <translation type="vanished">Introdueix el contingut de cerca</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SendMailInst</name>
-    <message>
-        <source>Send Mail</source>
-        <translation type="vanished">Enviar correu</translation>
-    </message>
-    <message>
-        <source>Help me send an email to [Recipient&apos;s Name], with the content: [Email Content].</source>
-        <translation type="vanished">Ajuda&apos;m a enviar un correu electrònic a [Nom del destinatari], amb el contingut: [Contingut del correu].</translation>
-    </message>
-    <message>
-        <source>Sorry, no matching operations were found.</source>
-        <translation type="vanished">Ho sento, no s&apos;han trobat operacions coincidents.</translation>
-    </message>
-    <message>
-        <source>Please extract the relevant parameters from the provided input to match the following JSON email template format,and output only the JSON content. Do not include any extraneous information.
-
-Email template format:
-json
-{&quot;subject&quot;: &quot;Email Subject&quot;, &quot;content&quot;: &quot;Email Body&quot;, &quot;to&quot;: &quot;Recipient&quot;, &quot;cc&quot;: &quot;CC Recipient&quot;, &quot;bcc&quot;: &quot;BCC Recipient&quot;}
-
-Input: %1</source>
-        <translation type="vanished">Si us plau, extreu els paràmetres rellevants de l&apos;entrada proporcionada per coincidir amb el següent format de plantilla de correu electrònic JSON, i mostra només el contingut JSON. No incloguis cap informació extra.
-
-Format de la plantilla de correu:
-
-json
-
-{&quot;subject&quot;: &quot;Assumpte del correu&quot;, &quot;content&quot;: &quot;Cos del correu&quot;, &quot;to&quot;: &quot;Destinatari&quot;, &quot;cc&quot;: &quot;Destinatari en còpia&quot;, &quot;bcc&quot;: &quot;Destinatari en còpia oculta&quot;}
-
-Entrada: %1</translation>
+        <translation>Podeu fer preguntes de seguiment o sol·licitar l&apos;ajust de l&apos;article.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::ServiceConfigChannel</name>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="271"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="282"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="328"/>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="346"/>
         <source>Failed to get MCP server instance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Error en obtenir la instància del servidor MCP.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="304"/>
         <source>Server &apos;%1&apos; is not a custom server or does not exist</source>
-        <translation type="unfinished">El servidor &apos;%1&apos; no és un servidor personalitzat o no existeix</translation>
+        <translation>El servidor &apos;%1&apos; no és un servidor personalitzat o no existeix</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="307"/>
         <source>MCP server name &apos;%1&apos; already exists</source>
-        <translation type="unfinished">El nom del servidor MCP &apos;%1&apos; ja existeix</translation>
+        <translation>El nom del servidor MCP &apos;%1&apos; ja existeix</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/serviceconfigchannel.cpp" line="350"/>
         <source>Server &apos;%1&apos; does not exist</source>
-        <translation type="unfinished"></translation>
+        <translation>El servidor &apos;%1&apos; no existeix</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SessionManager</name>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="52"/>
         <source>Session with ID %1 already exists</source>
-        <translation type="unfinished"></translation>
+        <translation>La sessió amb l&apos;ID %1 ja existeix</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="63"/>
         <source>Session %1 create assistant %2 failed</source>
-        <translation type="unfinished"></translation>
+        <translation>La sessió %1 ha fallat en crear l&apos;assistent %2</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="74"/>
         <source>Session %1 create success</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessió %1 creada correctament</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="120"/>
         <source>Session %1 not found</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha trobat la sessió %1</translation>
     </message>
     <message>
-        <location filename="../src/session/sessionmanager.cpp" line="128"/>
         <source>Session %1 is not idle</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::ShortcutUpdateDialog</name>
-    <message>
-        <source>Shortcut: [Super + Space]. Quickly invoke UOS AI to access all AI features in one place.</source>
-        <translation type="vanished">Drecera: [Super + Espai]. Invoca ràpidament UOS AI per accedir a totes les funcions d&apos;IA en un sol lloc.</translation>
-    </message>
-    <message>
-        <source>Got it</source>
-        <translation type="vanished">Entesos</translation>
-    </message>
-    <message>
-        <source>This prompt will appear %1 more times, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;Do not show again&lt;/a&gt;</source>
-        <translation type="vanished">Aquesta finestra apareixerà %1 vegades més, &lt;a href=&quot;#nomore&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;No mostrar més&lt;/a&gt;</translation>
+        <translation>La sessió %1 no està inactiva</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillCommandTextEdit</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="55"/>
         <source>Take </source>
         <translation>Pren </translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="56"/>
         <source> translate into English</source>
-        <translation> traduir a l&apos;anglès</translation>
+        <translation> tradueix a l&apos;anglès</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="185"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="218"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="459"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="604"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="792"/>
-        <location filename="../src/gui/mgmt/private/skillcommandtextedit.cpp" line="796"/>
         <source>Exceeded character limit</source>
-        <translation>S&apos;ha excedit el límit de caràcters</translation>
+        <translation>S&apos;ha superat el límit de caràcters</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillListItem</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
-        <source>Enable</source>
-        <translation>Activar</translation>
+        <source>Disabled</source>
+        <translation>Inhabilitat</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="111"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="123"/>
-        <location filename="../src/gui/mgmt/private/skilllistitem.cpp" line="212"/>
-        <source>Disabled</source>
-        <translation>Desactivat</translation>
+        <source>Enable</source>
+        <translation>Habilita</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SkillListWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="64"/>
         <source>Skill Management</source>
         <translation>Gestió d&apos;habilitats</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="68"/>
         <source>Add Skill</source>
-        <translation>Afegir habilitat</translation>
+        <translation>Afegeix habilitat</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="75"/>
         <source>The first 4 skills will be displayed on the toolbar, and others will be hidden in the More menu.</source>
-        <translation>Les primeres 4 habilitats es mostraran a la barra d&apos;eines, i les altres s&apos;amagaran al menú Més.</translation>
+        <translation>Les primeres 4 habilitats es mostraran a la barra d&apos;eines i la resta s&apos;amagaran al menú Més.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="215"/>
         <source>Saved</source>
-        <translation>Desat</translation>
+        <translation>S&apos;ha desat</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="239"/>
         <source>Are you sure you want to delete the skill &quot;%1&quot;?</source>
         <translation>Esteu segur que voleu suprimir l&apos;habilitat &quot;%1&quot;?</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="240"/>
         <source>Cancel</source>
-        <translation>Cancel·lar</translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/skilllistwidget.cpp" line="241"/>
         <source>Delete</source>
-        <translation>Suprimir</translation>
+        <translation>Suprimeix</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::SkillsManager</name>
+    <message>
+        <source>The archive file does not exist.</source>
+        <translation>El fitxer de l&apos;arxiu no existeix.</translation>
+    </message>
+    <message>
+        <source>Failed to create temporary directory for extraction.</source>
+        <translation>Ha fallat la creació del directori temporal per a l&apos;extracció.</translation>
+    </message>
+    <message>
+        <source>Failed to extract the archive. The file may be corrupted or the format is not supported.</source>
+        <translation>Ha fallat l&apos;extracció de l&apos;arxiu. El fitxer pot estar malmès o el format no és compatible.</translation>
+    </message>
+    <message>
+        <source>No SKILL.md file found in the archive.</source>
+        <translation>No s&apos;ha trobat cap fitxer SKILL.md a l&apos;arxiu.</translation>
+    </message>
+    <message>
+        <source>The specified path is invalid.</source>
+        <translation>El camí especificat no és vàlid.</translation>
+    </message>
+    <message>
+        <source>Failed to read SKILL.md.</source>
+        <translation>Ha fallat la lectura de SKILL.md.</translation>
+    </message>
+    <message>
+        <source>SKILL.md is missing the required &apos;name&apos; field.</source>
+        <translation>A SKILL.md li falta el camp requerit &apos;name&apos;.</translation>
+    </message>
+    <message>
+        <source>The skill directory does not exist.</source>
+        <translation>El directori de l&apos;habilitat no existeix.</translation>
+    </message>
+    <message>
+        <source>The skill cannot be imported from this path.</source>
+        <translation>No es pot importar l&apos;habilitat des d&apos;aquest camí.</translation>
+    </message>
+    <message>
+        <source>No SKILL.md file found in the skill directory.</source>
+        <translation>No s&apos;ha trobat cap fitxer SKILL.md al directori de l&apos;habilitat.</translation>
+    </message>
+    <message>
+        <source>The skill contains too many files (maximum %1 allowed).</source>
+        <translation>L&apos;habilitat conté massa fitxers (màxim %1 permès).</translation>
+    </message>
+    <message>
+        <source>The skill size exceeds the limit (maximum 10 MB allowed).</source>
+        <translation>La mida de l&apos;habilitat supera el límit (màxim 10 MB permès).</translation>
+    </message>
+    <message>
+        <source>The skill folder name is invalid.</source>
+        <translation>El nom de la carpeta de l&apos;habilitat no és vàlid.</translation>
+    </message>
+    <message>
+        <source>Failed to overwrite the existing skill.</source>
+        <translation>No s&apos;ha pogut sobreescriure l&apos;habilitat existent.</translation>
+    </message>
+    <message>
+        <source>Failed to create the skills directory.</source>
+        <translation>No s&apos;ha pogut crear el directori d&apos;habilitats.</translation>
+    </message>
+    <message>
+        <source>Failed to copy the skill files.</source>
+        <translation>No s&apos;han pogut copiar els fitxers de l&apos;habilitat.</translation>
+    </message>
+    <message>
+        <source>Supported files</source>
+        <translation>Fitxers compatibles</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::SystemChannel</name>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="145"/>
         <source>UOS AI</source>
-        <translation type="unfinished"></translation>
+        <translation>UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="146"/>
         <source>Ask UOS AI, kiss your worries goodbye.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pregunta a l&apos;UOS AI, i digues adéu a les teves preocupacions.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="147"/>
-        <source>Update History</source>
-        <translation type="unfinished"></translation>
+        <source>Changelog</source>
+        <translation>Registre de canvis</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="148"/>
+        <source>Start Chatting</source>
+        <translation>Comença a xatejar</translation>
+    </message>
+    <message>
+        <source>Choose an assistant on the left, then enter a question or instruction to start a new chat.</source>
+        <translation>Trieu un assistent a l&apos;esquerra i després introduïu una pregunta o instrucció per iniciar un xat nou.</translation>
+    </message>
+    <message>
+        <source>Voice Interaction</source>
+        <translation>Interacció per veu</translation>
+    </message>
+    <message>
+        <source>If you prefer voice control, switch quickly from the related entry to reduce repeated operations.</source>
+        <translation>Si preferiu el control per veu, canvia ràpidament des de l&apos;entrada relacionada per reduir les operacions repetides.</translation>
+    </message>
+    <message>
+        <source>Keep Exploring</source>
+        <translation>Segueix explorant</translation>
+    </message>
+    <message>
+        <source>Use history and settings to continue your tasks and adjust models, tools, and appearance.</source>
+        <translation>Utilitzeu l&apos;historial i la configuració per continuar les tasques i ajustar els models, les eines i l&apos;aparença.</translation>
+    </message>
+    <message>
         <source>Settings</source>
-        <translation type="unfinished">Configuració</translation>
+        <translation>Configuració</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="149"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajuda</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="150"/>
         <source>About</source>
-        <translation type="unfinished">Quant a</translation>
+        <translation>Quant a</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="151"/>
         <source>New Chat</source>
-        <translation type="unfinished"></translation>
+        <translation>Xat nou</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="152"/>
         <source>Temporary Chat</source>
-        <translation type="unfinished"></translation>
+        <translation>Xat temporal</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="153"/>
         <source>AI Writing</source>
-        <translation type="unfinished">Escriptura amb IA</translation>
+        <translation>Escriptura IA</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="154"/>
         <source>AI Translation</source>
-        <translation type="unfinished">Traducció amb IA</translation>
+        <translation>Traducció IA</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="155"/>
         <source>AI Knowledge Base</source>
-        <translation type="unfinished"></translation>
+        <translation>Base de coneixement IA</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="156"/>
         <source>MCP Server</source>
-        <translation type="unfinished">Servidor MCP</translation>
+        <translation>Servidor MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="157"/>
         <source>Commands</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordres</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="158"/>
         <source>Agent Store</source>
-        <translation type="unfinished">Botiga d&apos;agents</translation>
+        <translation>Botiga d&apos;agents</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="159"/>
         <source>More</source>
-        <translation type="unfinished">Més</translation>
+        <translation>Més</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="160"/>
         <source>Chat History</source>
-        <translation type="unfinished"></translation>
+        <translation>Historial de xats</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="161"/>
         <source>Today</source>
-        <translation type="unfinished">Avui</translation>
+        <translation>Avui</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="162"/>
         <source>Yesterday</source>
-        <translation type="unfinished">Ahir</translation>
+        <translation>Ahir</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="163"/>
         <source>Last 7 Days</source>
-        <translation type="unfinished"></translation>
+        <translation>Els últims 7 dies</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="164"/>
         <source>Last 30 Days</source>
-        <translation type="unfinished"></translation>
+        <translation>Els últims 30 dies</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="165"/>
         <source>January</source>
-        <translation type="unfinished"></translation>
+        <translation>Gener</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="166"/>
         <source>February</source>
-        <translation type="unfinished"></translation>
+        <translation>Febrer</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="167"/>
         <source>March</source>
-        <translation type="unfinished"></translation>
+        <translation>Març</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="168"/>
         <source>April</source>
-        <translation type="unfinished"></translation>
+        <translation>Abril</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="169"/>
         <source>May</source>
-        <translation type="unfinished"></translation>
+        <translation>Maig</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="170"/>
         <source>June</source>
-        <translation type="unfinished"></translation>
+        <translation>Juny</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="171"/>
         <source>July</source>
-        <translation type="unfinished"></translation>
+        <translation>Juliol</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="172"/>
         <source>August</source>
-        <translation type="unfinished"></translation>
+        <translation>Agost</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="173"/>
         <source>September</source>
-        <translation type="unfinished"></translation>
+        <translation>Setembre</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="174"/>
         <source>October</source>
-        <translation type="unfinished"></translation>
+        <translation>Octubre</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="175"/>
         <source>November</source>
-        <translation type="unfinished"></translation>
+        <translation>Novembre</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="176"/>
         <source>year</source>
-        <translation type="unfinished"></translation>
+        <translation>any</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="177"/>
         <source>Earlier</source>
-        <translation type="unfinished"></translation>
+        <translation>Anterior</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="178"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Suprimeix</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="179"/>
         <source>Confirm Deletion</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirma la supressió</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="180"/>
+        <source>Confirm deletion</source>
+        <translation>Confirma la supressió</translation>
+    </message>
+    <message>
+        <source>After deletion, this server will be unavailable. Proceed with caution.</source>
+        <translation>Després de suprimir, aquest servidor no estarà disponible. Procedeix amb precaució.</translation>
+    </message>
+    <message>
         <source>This action will delete all content related to this chat from UOS AI.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aquesta acció suprimirà tot el contingut relacionat amb aquest xat de UOS AI.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="181"/>
         <source>Confirm Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirma la supressió</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="182"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="183"/>
         <source>Batch Manage</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestió per lots</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="184"/>
         <source>All</source>
-        <translation type="unfinished">Tots</translation>
+        <translation>Tot</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="185"/>
         <source>Select All</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecciona-ho tot</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="186"/>
         <source>%1 conversations selected</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 converses seleccionades</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="187"/>
         <source>No chat history yet</source>
-        <translation type="unfinished"></translation>
+        <translation>Encara no hi ha historial de xat</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="188"/>
         <source>Chat content not found</source>
-        <translation type="unfinished"></translation>
+        <translation>Contingut del xat no trobat</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="189"/>
         <source>DeepThink</source>
-        <translation type="unfinished"></translation>
+        <translation>Pensament profund</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="190"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerca</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="191"/>
         <source>Attachments</source>
-        <translation type="unfinished"></translation>
+        <translation>Adjunts</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="192"/>
         <source>Upload Files</source>
-        <translation type="unfinished">Puja fitxers</translation>
+        <translation>Puja fitxers</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="193"/>
         <source>Screenshot Q&amp;A</source>
-        <translation type="unfinished"></translation>
+        <translation>Captura de pantalla i Preguntes</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="194"/>
         <source>Voice Input</source>
-        <translation type="unfinished"></translation>
+        <translation>Entrada de veu</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="195"/>
         <source>Send</source>
-        <translation type="unfinished"></translation>
+        <translation>Envia</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="196"/>
         <source>Ask a question...</source>
-        <translation type="unfinished"></translation>
+        <translation>Fes una pregunta...</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="197"/>
         <source>Voice Read</source>
-        <translation type="unfinished"></translation>
+        <translation>Lectura de veu</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="198"/>
         <source>Stop Reading</source>
-        <translation type="unfinished"></translation>
+        <translation>Atura la lectura</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="199"/>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Copia</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="200"/>
         <source>Regenerate</source>
-        <translation type="unfinished"></translation>
+        <translation>Regenera</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="201"/>
         <source>Re-edit</source>
-        <translation type="unfinished">Reedita</translation>
+        <translation>Torna a editar</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="202"/>
         <source>Stop Generating</source>
-        <translation type="unfinished"></translation>
+        <translation>Atura la generació</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="203"/>
         <source>Generation stopped</source>
-        <translation type="unfinished"></translation>
+        <translation>Generació aturada</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="204"/>
-        <source>You stopped this answer, please re-edit your question</source>
-        <translation type="unfinished"></translation>
+        <source>You stopped this answer, </source>
+        <translation>Heu aturat aquesta resposta, </translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="205"/>
+        <source>please re-edit your question</source>
+        <translation>torneu a editar la vostra pregunta</translation>
+    </message>
+    <message>
         <source>Back to Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Torna avall</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="206"/>
         <source>Thinking...</source>
-        <translation type="unfinished"></translation>
+        <translation>Pensant...</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="207"/>
         <source>Deep think completed (took %1s)</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha completat el pensament profund (ha trigat %1s)</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="208"/>
         <source>Parsing...</source>
-        <translation type="unfinished">Analitzant...</translation>
+        <translation>S&apos;està analitzant...</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="209"/>
         <source>Parsing failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Ha fallat l&apos;anàlisi</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="210"/>
         <source>You can add up to 50 files</source>
-        <translation type="unfinished"></translation>
+        <translation>Podeu afegir fins a 50 fitxers</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="211"/>
         <source>Summarize the core content of the file</source>
-        <translation type="unfinished"></translation>
+        <translation>Resum del contingut principal del fitxer</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="212"/>
         <source>Model List</source>
-        <translation type="unfinished"></translation>
+        <translation>Llista de models</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="213"/>
         <source>Smart Recommendation</source>
-        <translation type="unfinished"></translation>
+        <translation>Recomanació intel·ligent</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="214"/>
         <source>Smart switch for best match</source>
-        <translation type="unfinished"></translation>
+        <translation>Canvi intel·ligent per a la millor coincidència</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="215"/>
         <source>Local Model</source>
-        <translation type="unfinished"></translation>
+        <translation>Model local</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="216"/>
         <source>Online Model</source>
-        <translation type="unfinished"></translation>
+        <translation>Model en línia</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="217"/>
         <source>Add Model</source>
-        <translation type="unfinished">Afegir model</translation>
+        <translation>Afegir model</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="218"/>
+        <source>Private Model</source>
+        <translation>Model privat</translation>
+    </message>
+    <message>
         <source>Official</source>
-        <translation type="unfinished"></translation>
+        <translation>Oficial</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="219"/>
         <source>AI-generated content is for reference only. Please verify its accuracy.</source>
-        <translation type="unfinished"></translation>
+        <translation>El contingut generat per la IA només és per a referència. Verifiqueu la seva precisió.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="220"/>
         <source>Temporary chats are not saved in history. The content will be completely deleted upon leaving.</source>
-        <translation type="unfinished"></translation>
+        <translation>Els xats temporals no es desen a l&apos;historial. El contingut s&apos;eliminarà completament en sortir.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="221"/>
         <source>Maximum of 10 concurrent chats reached. Please try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha assolit el màxim de 10 xats simultanis. Torneu-ho a provar més tard.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="222"/>
-        <source>You have X newly answered chats</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="223"/>
         <source>View Now</source>
-        <translation type="unfinished"></translation>
+        <translation>Veure ara</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="224"/>
         <source>Remind Me Later</source>
-        <translation type="unfinished"></translation>
+        <translation>Recorda-m&apos;ho més tard</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="225"/>
         <source>Infinite inspiration, worry-free writing</source>
-        <translation type="unfinished"></translation>
+        <translation>Inspiració infinita, escriptura sense preocupacions</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="226"/>
         <source>Enable to search the web for more real-time, comprehensive, and accurate references.</source>
-        <translation type="unfinished"></translation>
+        <translation>Activeu-la per cercar a la web i obtenir referències més en temps real, completes i precises.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="227"/>
         <source>Upload files/images as references</source>
-        <translation type="unfinished"></translation>
+        <translation>Carregueu fitxers/imatges com a referències</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="228"/>
         <source>Reference Outline / Local File</source>
-        <translation type="unfinished"></translation>
+        <translation>Esquema de referència / Fitxer local</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="229"/>
         <source>As reference material / As outline file</source>
-        <translation type="unfinished"></translation>
+        <translation>Com a material de referència / Com a fitxer d&apos;esquema</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="230"/>
         <source>File Upload</source>
-        <translation type="unfinished"></translation>
+        <translation>Carrega de fitxer</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="231"/>
         <source>As Material</source>
-        <translation type="unfinished"></translation>
+        <translation>Com a material</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="232"/>
         <source>As Outline</source>
-        <translation type="unfinished"></translation>
+        <translation>Com a esquema</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="233"/>
-        <source>Only 1 file is supported for outline</source>
-        <translation type="unfinished"></translation>
+        <source>Only supports uploading 1 outline file</source>
+        <translation>Només admet la càrrega d&apos;un fitxer d&apos;esquema</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="234"/>
         <source>Local Materials</source>
-        <translation type="unfinished"></translation>
+        <translation>Materials locals</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="235"/>
         <source>File Outline</source>
-        <translation type="unfinished"></translation>
+        <translation>Esquema del fitxer</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="236"/>
         <source>Outline</source>
-        <translation type="unfinished">Esquema</translation>
+        <translation>Esquema</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="237"/>
         <source>View All</source>
-        <translation type="unfinished"></translation>
+        <translation>Veure-ho tot</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="238"/>
-        <source>Collapse</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="239"/>
         <source>Recent Creations</source>
-        <translation type="unfinished"></translation>
+        <translation>Creacions recents</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="240"/>
         <source>Upload File</source>
-        <translation type="unfinished"></translation>
+        <translation>Carregar fitxer</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="241"/>
         <source>Reference Outline</source>
-        <translation type="unfinished"></translation>
+        <translation>Esquema de referència</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="242"/>
         <source>Local File</source>
-        <translation type="unfinished"></translation>
+        <translation>Fitxer local</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="243"/>
         <source>Heading</source>
-        <translation type="unfinished"></translation>
+        <translation>Encapçalament</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="244"/>
         <source>Export Document</source>
-        <translation type="unfinished"></translation>
+        <translation>Exportar document</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="245"/>
         <source>Exit Full Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Sortir de pantalla completa</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="246"/>
         <source>Untitled Document</source>
-        <translation type="unfinished"></translation>
+        <translation>Document sense títol</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="247"/>
         <source>If you don&apos;t want local materials to be uploaded, you can do the following before generating content:</source>
-        <translation type="unfinished"></translation>
+        <translation>Si no voleu que es carreguin materials locals, podeu fer el següent abans de generar contingut:</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="248"/>
         <source>1. Switch to a local model (e.g., DeepSeek-R1-1.5B) or a privately deployed model</source>
-        <translation type="unfinished"></translation>
+        <translation>1. Canviar a un model local (p. ex., DeepSeek-R1-1.5B) o a un model desplegat privatament</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="249"/>
         <source>2. Turn off &quot;Web Search&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>2. Desactiva la &quot;Cerca web&quot;</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="250"/>
         <source>Materials will be uploaded to the online model for analysis. Continue generating?</source>
-        <translation type="unfinished"></translation>
+        <translation>Els materials es pujaran al model en línia perquè s&apos;analitzin. Voleu continuar generant?</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="251"/>
         <source>Materials will be uploaded to the online model (%1) for analysis. Continue generating?</source>
-        <translation type="unfinished"></translation>
+        <translation>Els materials es pujaran al model en línia (%1) perquè s&apos;analitzin. Voleu continuar generant?</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="252"/>
         <source>Enable Privacy Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Activa el mode de privadesa</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="253"/>
         <source>Continue Generating</source>
-        <translation type="unfinished"></translation>
+        <translation>Continua generant</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="254"/>
         <source>You can enter more requirements to optimize or adjust the generated content.</source>
-        <translation type="unfinished"></translation>
+        <translation>Podeu introduir més requisits per optimitzar o ajustar el contingut generat.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="255"/>
         <source>Detected local outline uploaded. Analyzing outline content...</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha detectat una pujada d&apos;esquema local. S&apos;està analitzant el contingut de l&apos;esquema...</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="256"/>
         <source>Generating outline content...</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està generant el contingut de l&apos;esquema...</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="257"/>
         <source>An editable outline has been generated. After confirming, click the blue button below to proceed to document generation.</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha generat un esquema editable. Després de confirmar, feu clic al botó blau de sota per procedir a la generació del document.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="258"/>
         <source>Unable to parse the uploaded outline file. Please re-upload.</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut analitzar el fitxer d&apos;esquema pujat. Torneu-lo a pujar.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="259"/>
         <source>Re-upload Outline</source>
-        <translation type="unfinished"></translation>
+        <translation>Torna a pujar l&apos;esquema</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="260"/>
         <source>Directly generate outline using AI</source>
-        <translation type="unfinished"></translation>
+        <translation>Genera l&apos;esquema directament amb IA</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="261"/>
         <source>Add sub-chapter</source>
-        <translation type="unfinished"></translation>
+        <translation>Afegeix un subcapítol</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="262"/>
+        <source>Delete sub-chapter</source>
+        <translation>Suprimeix el subcapítol</translation>
+    </message>
+    <message>
         <source>Delete chapter</source>
-        <translation type="unfinished"></translation>
+        <translation>Suprimeix el capítol</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="263"/>
         <source>Add chapter</source>
-        <translation type="unfinished"></translation>
+        <translation>Afegeix un capítol</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="264"/>
         <source>Enter chapter title</source>
-        <translation type="unfinished"></translation>
+        <translation>Introduïu el títol del capítol</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="265"/>
         <source>Delete this heading?</source>
-        <translation type="unfinished"></translation>
+        <translation>Voleu suprimir aquest encapçalament?</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="266"/>
         <source>Generate document from outline</source>
-        <translation type="unfinished"></translation>
+        <translation>Genera el document a partir de l&apos;esquema</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="267"/>
         <source>Save as Word</source>
-        <translation type="unfinished"></translation>
+        <translation>Desa com a Word</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="268"/>
         <source>Save as PDF</source>
-        <translation type="unfinished"></translation>
+        <translation>Desa com a PDF</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="269"/>
         <source>Save as Markdown</source>
-        <translation type="unfinished"></translation>
+        <translation>Desa com a Markdown</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="270"/>
         <source>Saving...</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;estant desant...</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="271"/>
         <source>Saved successfully!</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha desat correctament!</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="272"/>
         <source>Failed to save, please try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut desar, torneu-ho a provar.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="273"/>
         <source>Undo</source>
-        <translation type="unfinished"></translation>
+        <translation>Desfés</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="274"/>
         <source>Redo</source>
-        <translation type="unfinished"></translation>
+        <translation>Refés</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="275"/>
         <source>Body Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Text del cos</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="276"/>
         <source>Heading %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Encapçalament %1</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="277"/>
         <source>Bold</source>
-        <translation type="unfinished"></translation>
+        <translation>Negreta</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="278"/>
         <source>Italic</source>
-        <translation type="unfinished"></translation>
+        <translation>Cursiva</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="279"/>
         <source>Strikethrough</source>
-        <translation type="unfinished"></translation>
+        <translation>Barrat</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="280"/>
         <source>Link Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Text de l&apos;enllaç</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="281"/>
         <source>Bulleted List</source>
-        <translation type="unfinished"></translation>
+        <translation>Llista amb pics</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="282"/>
         <source>Numbered List</source>
-        <translation type="unfinished"></translation>
+        <translation>Llista numerada</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="283"/>
         <source>Decrease Indent</source>
-        <translation type="unfinished"></translation>
+        <translation>Redueix el sagnat</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="284"/>
         <source>Increase Indent</source>
-        <translation type="unfinished"></translation>
+        <translation>Augmenta el sagnat</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="285"/>
         <source>Blockquote</source>
-        <translation type="unfinished"></translation>
+        <translation>Cita en bloc</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="286"/>
         <source>Divider</source>
-        <translation type="unfinished"></translation>
+        <translation>Divisor</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="287"/>
         <source>Copy Full Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Copia el text sencer</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="288"/>
         <source>Print Document</source>
-        <translation type="unfinished"></translation>
+        <translation>Imprimeix el document</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="289"/>
         <source>Share Document</source>
-        <translation type="unfinished"></translation>
+        <translation>Comparteix el document</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="290"/>
         <source>Zoom Out</source>
-        <translation type="unfinished"></translation>
+        <translation>Redueix</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="291"/>
         <source>Full Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Pantalla completa</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="292"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Tanca</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="293"/>
+        <source>Insert Link</source>
+        <translation>Insereix un enllaç</translation>
+    </message>
+    <message>
+        <source>Text:</source>
+        <translation>Text:</translation>
+    </message>
+    <message>
+        <source>Link:</source>
+        <translation>Enllaç:</translation>
+    </message>
+    <message>
+        <source>Please enter a valid link</source>
+        <translation>Introduïu un enllaç vàlid</translation>
+    </message>
+    <message>
+        <source>Link text</source>
+        <translation>Text de l&apos;enllaç</translation>
+    </message>
+    <message>
         <source>Please enter the text to be translated first.</source>
-        <translation type="unfinished"></translation>
+        <translation>Introduïu primer el text que voleu traduir.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="294"/>
         <source>Identifying source language...</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està identificant la llengua d&apos;origen...</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="295"/>
         <source>My MCP Server</source>
-        <translation type="unfinished"></translation>
+        <translation>El meu servidor MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="296"/>
         <source>Add MCP Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Afegeix un servidor MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="297"/>
         <source>Delete MCP Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Suprimeix el servidor MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="298"/>
+        <source>Edit MCP Server</source>
+        <translation>Edita el servidor MCP</translation>
+    </message>
+    <message>
         <source>Built-in Only</source>
-        <translation type="unfinished"></translation>
+        <translation>Només integrats</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="299"/>
         <source>Custom Added Only</source>
-        <translation type="unfinished"></translation>
+        <translation>Només personalitzats</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="300"/>
-        <source>To use MCP services, please install the MCP environment (UOS AI Agent) from the App Store first.</source>
-        <translation type="unfinished"></translation>
+        <source>To use MCP&amp;Skills, install UOS AI Agent from the App Store first.</source>
+        <translation>Per utilitzar MCP&amp;Skills, instal·leu primer l&apos;UOS AI Agent des de l&apos;App Store.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="301"/>
+        <source>To use AI Knowledge Base, install Embedding Plugins from App Store first.</source>
+        <translation>Per utilitzar la Base de coneixement IA, instal·leu primer els connectors d&apos;incrustació des de l&apos;App Store.</translation>
+    </message>
+    <message>
         <source>Install Now</source>
-        <translation type="unfinished">Instal·la ara</translation>
+        <translation>Instal·la ara</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="302"/>
         <source>System Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuració del sistema</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="303"/>
         <source>Bluetooth</source>
-        <translation type="unfinished"></translation>
+        <translation>Bluetooth</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="304"/>
         <source>Wireless Network</source>
-        <translation type="unfinished"></translation>
+        <translation>Xarxa sense fil</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="305"/>
         <source>DND Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode No molestar</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="306"/>
         <source>Eye Comfort</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode confort visual</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="307"/>
         <source>Brightness</source>
-        <translation type="unfinished"></translation>
+        <translation>Brillantor</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="308"/>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>Volum</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="309"/>
         <source>Font Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Mida de la lletra</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="310"/>
         <source>App Store</source>
-        <translation type="unfinished">Botiga d&apos;aplicacions</translation>
+        <translation>Botiga d&apos;aplicacions</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="311"/>
         <source>Schedule Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestió d&apos;horaris</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="312"/>
         <source>Click to download</source>
-        <translation type="unfinished"></translation>
+        <translation>Fes clic per baixar</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="313"/>
-        <source>downloads</source>
-        <translation type="unfinished"></translation>
+        <source>&lt;10k downloads</source>
+        <translation>&lt;10k baixades</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="316"/>
+        <source>&lt;100k downloads</source>
+        <translation>&lt;100k baixades</translation>
+    </message>
+    <message>
+        <source>100k+ downloads</source>
+        <translation>100k+ baixades</translation>
+    </message>
+    <message>
+        <source>%1 stars</source>
+        <translation>%1 estrelles</translation>
+    </message>
+    <message>
+        <source>Click to go to app</source>
+        <translation>Fes clic per anar a l&apos;aplicació</translation>
+    </message>
+    <message>
+        <source>Sunday</source>
+        <translation>Diumenge</translation>
+    </message>
+    <message>
+        <source>Monday</source>
+        <translation>Dilluns</translation>
+    </message>
+    <message>
+        <source>Tuesday</source>
+        <translation>Dimarts</translation>
+    </message>
+    <message>
+        <source>Wednesday</source>
+        <translation>Dimecres</translation>
+    </message>
+    <message>
+        <source>Thursday</source>
+        <translation>Dijous</translation>
+    </message>
+    <message>
+        <source>Friday</source>
+        <translation>Divendres</translation>
+    </message>
+    <message>
+        <source>Saturday</source>
+        <translation>Dissabte</translation>
+    </message>
+    <message>
+        <source>MCP Servers</source>
+        <translation>Servidors MCP</translation>
+    </message>
+    <message>
+        <source>Select All MCP Servers</source>
+        <translation>Selecciona tots els servidors MCP</translation>
+    </message>
+    <message>
+        <source>You can add and manage MCP servers</source>
+        <translation>Podeu afegir i gestionar servidors MCP</translation>
+    </message>
+    <message>
+        <source>Describe</source>
+        <translation>Descriure</translation>
+    </message>
+    <message>
+        <source>JSON configuration</source>
+        <translation>Configuració JSON</translation>
+    </message>
+    <message>
+        <source>Please paste the MCP JSON configuration code into the input box.</source>
+        <translation>Si us plau, enganxeu el codi de configuració JSON del MCP al quadre d&apos;entrada.</translation>
+    </message>
+    <message>
+        <source>Describe MCP server functions to facilitate quick search tools</source>
+        <translation>Descriu les funcions del servidor MCP per facilitar les eines de cerca ràpida</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Enrere</translation>
+    </message>
+    <message>
+        <source>Free Credits Delivered</source>
+        <translation>Crèdits gratuïts entregats</translation>
+    </message>
+    <message>
+        <source>You&apos;ve&apos;ve used up the free generation credits for your trial account. We&apos;ve given you an extra 200 free credits valid this month. Explore more features and unlock UOS AI&apos;s limitless capabilities!</source>
+        <translation>Heu esgotat els crèdits de generació gratuïts del vostre compte de prova. Us hem donat 200 crèdits gratuïts addicionals vàlids aquest mes. Exploreu més característiques i desbloquegeu les capacitats il·limitades de UOS AI!</translation>
+    </message>
+    <message>
+        <source>Not Now</source>
+        <translation>Ara no</translation>
+    </message>
+    <message>
+        <source>I am {{enter identity/position}}. Help me write a {{report/article/outline/WeChat public account post/notice/research report/work summary/speech}} about {{enter topic}}, around {{1000}} words in length. The content requirements are {{enter requirements/content focus/writing style, etc..}}</source>
+        <translation>Soc {{introduïu identitat/càrrec}}. Ajudeu-me a escriure un {{informe/article/esquema/publicació de compte de WeChat/avís/informe de treball/resum de feina/discurs}} sobre {{introduïu tema}}, d&apos;una longitud d&apos;unes {{1000}} paraules. Els requisits del contingut són {{introduïu requisits/enfocament del contingut/estil d&apos;escriptura, etc.}}</translation>
+    </message>
+    <message>
+        <source>Manage Chat History</source>
+        <translation>Gestionar l&apos;historial de xat</translation>
+    </message>
+    <message>
+        <source>Voice Chat</source>
+        <translation>Xat de veu</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>Expandir</translation>
+    </message>
+    <message>
+        <source>Collapse</source>
+        <translation>Replegar</translation>
+    </message>
+    <message>
+        <source>Edited on</source>
+        <translation>Editat el</translation>
+    </message>
+    <message>
+        <source>Created</source>
+        <translation>Creat</translation>
+    </message>
+    <message>
+        <source>You have %1 newly answered chats</source>
+        <translation>Teniu %1 xats amb resposta nova</translation>
+    </message>
+    <message>
+        <source>Search History</source>
+        <translation>Historial de cerca</translation>
+    </message>
+    <message>
+        <source>Confirm delete this conversation</source>
+        <translation>Confirmeu la supressió d&apos;aquesta conversa</translation>
+    </message>
+    <message>
+        <source>This will remove all related content from UOS AI</source>
+        <translation>Això eliminarà tot el contingut relacionat de l&apos;UOS AI</translation>
+    </message>
+    <message>
+        <source>Use it now</source>
+        <translation>Utilitzeu-lo ara</translation>
+    </message>
+    <message>
+        <source>My Skills</source>
+        <translation>Les meves habilitats</translation>
+    </message>
+    <message>
+        <source>Open installation directory</source>
+        <translation>Obre el directori d&apos;instal·lació</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>Actualitza</translation>
+    </message>
+    <message>
+        <source>Import Skill</source>
+        <translation>Importa una habilitat</translation>
+    </message>
+    <message>
+        <source>You can add and manage Skills</source>
+        <translation>Podeu afegir i gestionar habilitats</translation>
+    </message>
+    <message>
+        <source>Exit Voice Chat</source>
+        <translation>Surt del xat de veu</translation>
+    </message>
+    <message>
+        <source>The following %1 files are invalid and unavailable. Continue?</source>
+        <translation>Els %1 fitxers següents no són vàlids i no estan disponibles. Voleu continuar?</translation>
+    </message>
+    <message>
+        <source>The following file is invalid and unavailable. Continue?</source>
+        <translation>El fitxer següent no és vàlid i no està disponible. Voleu continuar?</translation>
+    </message>
+    <message>
+        <source>Previous</source>
+        <translation>Anterior</translation>
+    </message>
+    <message>
+        <source>UOS AI 3.0: All-New UI Upgrade</source>
+        <translation>UOS AI 3.0: Actualització total de la interfície</translation>
+    </message>
+    <message>
+        <source>New Windowed Mode for a fresh interaction experience</source>
+        <translation>Nou mode de finestra per a una experiència d&apos;interacció nova</translation>
+    </message>
+    <message>
+        <source>Clear sidebar navigation for organized access and ease of use</source>
+        <translation>Navegació clara a la barra lateral per a un accés organitzat i fàcil d&apos;usar</translation>
+    </message>
+    <message>
+        <source>A wider, focused workspace with richer content</source>
+        <translation>Un espai de treball més ampli i centrat amb contingut més ric</translation>
+    </message>
+    <message>
+        <source>Clearer hierarchy to keep core tasks focused and immersive</source>
+        <translation>Jerarquia més clara per mantenir les tasques principals enfocades i immersives</translation>
+    </message>
+    <message>
+        <source>Multi-tasking to save your valuable time</source>
+        <translation>Multitasca per estalviar el teu temps valuós</translation>
+    </message>
+    <message>
+        <source>Silent background multi-tasking: No more waiting</source>
+        <translation>Multitasca silenciosa en segon pla: No esperis més</translation>
+    </message>
+    <message>
+        <source>Assign tasks anytime without breaking your flow</source>
+        <translation>Assigna tasques en qualsevol moment sense trencar el teu flux</translation>
+    </message>
+    <message>
+        <source>Get instant progress updates without constant monitoring</source>
+        <translation>Rebre actualitzacions de progrés instantànies sense una supervisió constant</translation>
+    </message>
+    <message>
+        <source>Immersive split-screen writing: Accurate, secure, and traceable</source>
+        <translation>Escriptura en pantalla dividida immersiva: Precisa, segura i traçable</translation>
+    </message>
+    <message>
+        <source>Split-screen chat &amp; edit: No more window switching</source>
+        <translation>Xat i edició en pantalla dividida: No canviïs més de finestra</translation>
+    </message>
+    <message>
+        <source>Deep data &quot;feeding&quot; for well-grounded content creation</source>
+        <translation>Alimentació profunda de dades per a la creació de contingut sòlid</translation>
+    </message>
+    <message>
+        <source>Outline first with manual correction and one-click export</source>
+        <translation>Esquema primer amb correcció manual i exportació amb un clic</translation>
+    </message>
+    <message>
+        <source>On-device/Private models ensure data privacy and security</source>
+        <translation>Els models locals/privats garanteixen la privadesa i seguretat de les dades</translation>
+    </message>
+    <message>
+        <source>System control &amp; vast Skills: All within a single command</source>
+        <translation>Control del sistema i habilitats vastes: Tot amb una sola ordre</translation>
+    </message>
+    <message>
+        <source>Visual system control: Adjust fonts, toggle Wi-Fi, and more</source>
+        <translation>Control visual del sistema: Ajusta les fonts, activa el Wi-Fi i més</translation>
+    </message>
+    <message>
+        <source>High-frequency office skills: Writing, translation, and merging</source>
+        <translation>Habilitats d&apos;oficina d&apos;alta freqüència: Escriptura, traducció i fusió</translation>
+    </message>
+    <message>
+        <source>One-click Skill import to unlock endless capabilities</source>
+        <translation>Importació d&apos;habilitats amb un clic per desbloquejar capacitats infinites</translation>
+    </message>
+    <message>
+        <source>Batch management and precise search for history</source>
+        <translation>Gestió per lots i cerca precisa per a l&apos;historial</translation>
+    </message>
+    <message>
+        <source>Global quick search: Access history in seconds</source>
+        <translation>Cerca ràpida global: Accedeix a l&apos;historial en segons</translation>
+    </message>
+    <message>
+        <source>Agent-based filtering for precise chat history search</source>
+        <translation>Filtrat basat en agents per a una cerca precisa de l&apos;historial de xat</translation>
+    </message>
+    <message>
+        <source>Efficient batch management for a clean and organized workspace</source>
+        <translation>Gestió per lots eficient per a un espai de treball net i organitzat</translation>
+    </message>
+    <message>
         <source>Go to configuration</source>
-        <translation type="unfinished">Anar a configuració</translation>
+        <translation>Vés a la configuració</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="317"/>
         <source>No account</source>
-        <translation type="unfinished">Sense compte</translation>
+        <translation>Cap compte</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="318"/>
         <source>Input question</source>
-        <translation type="unfinished">Pregunta d&apos;entrada</translation>
+        <translation>Pregunta d&apos;entrada</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="319"/>
         <source>The content generated by AI is for reference only, please pay attention to the accuracy of the information.</source>
-        <translation type="unfinished"></translation>
+        <translation>El contingut generat per la IA només és de referència; presteu atenció a la precisió de la informació.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="320"/>
         <source>Welcome to UOS AI</source>
-        <translation type="unfinished">Benvingut/da a UOS AI</translation>
+        <translation>Benvingut al UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="321"/>
         <source>Here are some of the things UOS AI can help you do</source>
-        <translation type="unfinished">Aquí tens algunes de les coses que UOS AI pot ajudar-te a fer</translation>
+        <translation>Aquí teniu algunes de les coses que el UOS AI us pot ajudar a fer</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="322"/>
         <source>Stop</source>
-        <translation type="unfinished">Aturar</translation>
+        <translation>Atura</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="323"/>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Reprodueix</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="324"/>
         <source>Retry</source>
-        <translation type="unfinished"></translation>
+        <translation>Reintenta</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="325"/>
         <source>Clear conversation history</source>
-        <translation type="unfinished">Esborrar historial de conversa</translation>
+        <translation>Neteja l&apos;historial de converses</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="326"/>
         <source>Please connect the microphone and try again</source>
-        <translation type="unfinished">Si us plau, connecta el micròfon i torna a provar</translation>
+        <translation>Connecteu el micròfon i torneu-ho a provar</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="327"/>
         <source>Chat history cleared</source>
-        <translation type="unfinished">Historial de xat esborrat</translation>
+        <translation>Historial de converses netejat</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="328"/>
         <source>Click to start/stop recording</source>
-        <translation type="unfinished">Fes clic per iniciar/aturar la gravació</translation>
+        <translation>Feu clic per iniciar/aturar l&apos;enregistrament</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="329"/>
         <source>Listening</source>
-        <translation type="unfinished">Escoltant</translation>
+        <translation>Escoltant</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="330"/>
         <source>Sleeping</source>
-        <translation type="unfinished">En repòs</translation>
+        <translation>Dormint</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="331"/>
-        <source>Microphone not detected</source>
-        <translation type="unfinished">No s&apos;ha detectat el micròfon</translation>
+        <source>No microphone detected</source>
+        <translation>No s&apos;ha detectat cap micròfon</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="332"/>
         <source>Connection failed, click to try again</source>
-        <translation type="unfinished">Connexió fallida, fes clic per tornar a provar</translation>
+        <translation>Ha fallat la connexió, feu clic per tornar-ho a provar</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="333"/>
-        <source>Click on the animation or Ctrl+Super+Space to activate</source>
-        <translation type="unfinished">Fes clic a l&apos;animació o prem Ctrl+Super+Espai per activar</translation>
+        <source>Click on the animation%1 to activate</source>
+        <translation>Feu clic a l&apos;animació%1 per activar</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="334"/>
         <source>Voice input is temporarily unavailable, please check the network!</source>
-        <translation type="unfinished">L&apos;entrada de veu no està disponible temporalment, si us plau, comprova la xarxa!</translation>
+        <translation>L&apos;entrada de veu no està disponible temporalment; comproveu la xarxa!</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="335"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut connectar al servidor; comproveu la vostra xarxa o torneu-ho a provar més tard.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="336"/>
         <source>Voice conversation</source>
-        <translation type="unfinished">Conversa de veu</translation>
+        <translation>Conversa de veu</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="337"/>
         <source>Click the animation or press Enter to send</source>
-        <translation type="unfinished">Fes clic a l&apos;animació o prem Retorn per enviar</translation>
+        <translation>Feu clic a l&apos;animació o premeu Retorn per enviar</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="338"/>
         <source>Stop recording after %1 seconds</source>
-        <translation type="unfinished">Aturar la gravació després de %1 segons</translation>
+        <translation>Atura l&apos;enregistrament després de %1 segons</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="339"/>
         <source>Thinking</source>
-        <translation type="unfinished">Pensant</translation>
+        <translation>Pensant</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="340"/>
         <source>Click animation to interrupt</source>
-        <translation type="unfinished">Fes clic a l&apos;animació per interrompre</translation>
+        <translation>Feu clic a l&apos;animació per interrompre</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="341"/>
         <source>Answering</source>
-        <translation type="unfinished">Responent</translation>
+        <translation>Responent</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="342"/>
         <source>Your free account quota has been exhausted, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
+        <translation>El vostre compte gratuït s&apos;ha esgotat; configureu el vostre compte de model per continuar utilitzant-lo.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="343"/>
         <source>Your free account has expired, please configure your model account to continue using it.</source>
-        <translation type="unfinished"></translation>
+        <translation>El vostre compte gratuït ha caducat; configureu el vostre compte de model per continuar utilitzant-lo.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="344"/>
         <source>UOS AI requires an AI model account to be configured before it can be used. Please configure a model account first.</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;UOS AI requereix que es configuri un compte de model d&apos;IA abans de poder-se utilitzar. Configureu primer un compte de model.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="345"/>
         <source>Activate</source>
-        <translation type="unfinished">Activar</translation>
+        <translation>Activa</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="346"/>
         <source>Voice input</source>
-        <translation type="unfinished">Entrada de veu</translation>
+        <translation>Entrada de veu</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="347"/>
         <source>Voice broadcast is temporarily unavailable, please check the network!</source>
-        <translation type="unfinished">La transmissió de veu està temporalment no disponible, si us plau, comproveu la xarxa!</translation>
+        <translation>La difusió per veu no està disponible temporalment; comproveu la xarxa!</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="348"/>
         <source>Turn off voice conversation</source>
-        <translation type="unfinished">Desactivar la conversa de veu</translation>
+        <translation>Desactiva la conversa per veu</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="349"/>
         <source>The picture has been generated, please switch to the chat interface to view it.</source>
-        <translation type="unfinished">La imatge ha estat generada, si us plau, canvieu a la interfície de xat per veure-la.</translation>
+        <translation>S&apos;ha generat la imatge; canvieu a la interfície de xat per veure-la.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="350"/>
         <source>No account, please configure an account</source>
-        <translation type="unfinished">No hi ha compte, si us plau, configureu un compte</translation>
+        <translation>No hi ha cap compte; configureu un compte</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="351"/>
         <source>Answer each question up to 5 times</source>
-        <translation type="unfinished">Respon cada pregunta fins a 5 vegades</translation>
+        <translation>Respon cada pregunta fins a 5 vegades</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="352"/>
         <source>Copied successfully</source>
-        <translation type="unfinished">Copiat amb èxit</translation>
+        <translation>S&apos;ha copiat correctament</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="353"/>
         <source>Sound output device not detected</source>
-        <translation type="unfinished">No s&apos;ha detectat cap dispositiu de sortida de so</translation>
+        <translation>No s&apos;ha detectat cap dispositiu de sortida de so</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="354"/>
         <source>The sound output device is not detected, please check and try again!</source>
-        <translation type="unfinished">No s&apos;ha detectat cap dispositiu de sortida de so, si us plau, comproveu-ho i torneu-ho a provar!</translation>
+        <translation>No s&apos;ha detectat el dispositiu de sortida de so; comproveu-ho i torneu-ho a provar!</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="355"/>
         <source>Mode</source>
-        <translation type="unfinished">Mode</translation>
+        <translation>Mode</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="356"/>
         <source>Window Mode</source>
-        <translation type="unfinished">Mode finestra</translation>
+        <translation>Mode de finestra</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="357"/>
         <source>Sidebar Mode</source>
-        <translation type="unfinished">Mode barra lateral</translation>
+        <translation>Mode de barra lateral</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="358"/>
         <source>Assistant List</source>
-        <translation type="unfinished">Llista d&apos;assistents</translation>
+        <translation>Llista d&apos;assistents</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="359"/>
         <source>Agent List</source>
-        <translation type="unfinished">Llista d&apos;agents</translation>
+        <translation>Llista d&apos;agents</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="360"/>
         <source>UOS System Assistant</source>
-        <translation type="unfinished">Assistent del sistema UOS</translation>
+        <translation>Assistent del sistema UOS</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="361"/>
         <source>Deepin System Assistant</source>
-        <translation type="unfinished">Assistent del sistema Deepin</translation>
+        <translation>Assistent del sistema Deepin</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="362"/>
         <source>Personal Knowledge Assistant</source>
-        <translation type="unfinished">Assistent de coneixement personal</translation>
+        <translation>Assistent de coneixement personal</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="363"/>
         <source>Please configure the knowledge base</source>
-        <translation type="unfinished">Si us plau, configureu la base de coneixement</translation>
+        <translation>Configureu la base de coneixement</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="364"/>
         <source>Before using the [Personal Knowledge Assistant], it is necessary to configure the knowledge base. After configuring the knowledge base, AI will answer questions or generate content based on the content you have configured in the knowledge base.</source>
-        <translation type="unfinished">Abans d&apos;utilitzar l&apos;[Assistent de Coneixement Personal], cal configurar la base de coneixement. Després de configurar la base de coneixement, la IA respondrà preguntes o generarà contingut basat en el contingut que hàgiu configurat a la base de coneixement.</translation>
+        <translation>Abans d&apos;utilitzar l&apos;[Assistent de coneixement personal], cal configurar la base de coneixement. Després de configurar la base de coneixement, la IA respondrà preguntes o generarà contingut basat en el contingut que heu configurat a la base de coneixement.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="365"/>
         <source>Please configure the large model</source>
-        <translation type="unfinished">Si us plau, configureu el model gran</translation>
+        <translation>Configureu el model gran</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="366"/>
         <source>The personal knowledge assistant can only be used after configuring a large model.</source>
-        <translation type="unfinished">L&apos;assistent de coneixement personal només es pot utilitzar després de configurar un model gran.</translation>
+        <translation>L&apos;assistent de coneixement personal només es pot utilitzar després de configurar un model gran.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="367"/>
         <source>To configure</source>
-        <translation type="unfinished">Per configurar</translation>
+        <translation>Per configurar</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="368"/>
         <source>To install</source>
-        <translation type="unfinished">Per instal·lar</translation>
+        <translation>Per instal·lar</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="369"/>
         <source>Please install [EmbeddingPlugins]</source>
-        <translation type="unfinished">Si us plau, instal·leu [EmbeddingPlugins]</translation>
+        <translation>Instal·leu els [EmbeddingPlugins]</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="370"/>
         <source>This assistant requires the installation of the EmbeddingPlugins to run</source>
-        <translation type="unfinished">Aquest assistent requereix la instal·lació dels EmbeddingPlugins per funcionar</translation>
+        <translation>Aquest assistent requereix la instal·lació dels EmbeddingPlugins per funcionar</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="373"/>
         <source>Drag files here to add them.</source>
-        <translation type="unfinished">Arrossega fitxers aquí per afegir-los.</translation>
+        <translation>Arrossegueu fitxers aquí per afegir-los.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="374"/>
         <source>You can only add 3 files, supported file types include: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, code files, etc.</source>
-        <translation type="unfinished">Només podeu afegir 3 fitxers; els tipus de fitxer admesos inclouen: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, fitxers de codi, etc.</translation>
+        <translation>Només podeu afegir 3 fitxers. Els tipus de fitxer compatibles inclouen: txt, doc, docx, xls, xlsx, ppt, pptx, pdf, md, png, jpg, jpeg, fitxers de codi, etc.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="375"/>
         <source>You can only add a maximum of one file.</source>
-        <translation type="unfinished">Només pots afegir un fitxer com a màxim.</translation>
+        <translation>Només podeu afegir com a màxim un fitxer.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="376"/>
         <source>The file format is not supported.</source>
-        <translation type="unfinished">El format del fitxer no està suportat.</translation>
+        <translation>El format del fitxer no és compatible.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="377"/>
         <source>Summarize the key content of the file.</source>
-        <translation type="unfinished">Resum el contingut clau del fitxer.</translation>
+        <translation>Resumeix el contingut clau del fitxer.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="378"/>
         <source>File Error</source>
-        <translation type="unfinished">Error de fitxer</translation>
+        <translation>Error de fitxer</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="379"/>
         <source>File has been deleted.</source>
-        <translation type="unfinished">El fitxer s&apos;ha eliminat.</translation>
+        <translation>S&apos;ha suprimit el fitxer.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="380"/>
         <source>The file size exceeds the 100MB limit.</source>
-        <translation type="unfinished">La mida del fitxer supera el límit de 100MB.</translation>
+        <translation>La mida del fitxer supera el límit de 100 MB.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="381"/>
         <source>Upload a document</source>
-        <translation type="unfinished">Puja un document</translation>
+        <translation>Puja un document</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="382"/>
         <source>File deleted</source>
-        <translation type="unfinished">Fitxer eliminat</translation>
+        <translation>Fitxer suprimit</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="383"/>
         <source>No text was parsed</source>
-        <translation type="unfinished">No s&apos;ha analitzat cap text</translation>
+        <translation>No s&apos;ha extret cap text</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="384"/>
         <source>Reference</source>
-        <translation type="unfinished">Referència</translation>
+        <translation>Referència</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="387"/>
         <source>Instruction</source>
-        <translation type="unfinished">Instrucció</translation>
+        <translation>Instrucció</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="388"/>
         <source>Type &quot;/&quot; in the input box to activate.</source>
-        <translation type="unfinished">Escriu &quot;/&quot; a la caixa d&apos;entrada per activar.</translation>
+        <translation>Escriu &quot;/&quot; al quadre d&apos;entrada per activar.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="389"/>
         <source>Please enter; “Ctrl+Enter” to change the line.</source>
-        <translation type="unfinished">Si us plau, prem &quot;Ctrl+Retorn&quot; per canviar de línia.</translation>
+        <translation>Prem «Enter»; «Ctrl+Enter» per canviar de línia.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="390"/>
         <source>Enter your question, or enter &quot;/&quot; to select a command
 &quot;Ctrl+Enter&quot;  to start a new line</source>
-        <translation type="unfinished">Introdueix la teva pregunta, o escriu &quot;/&quot; per seleccionar una ordre
-&quot;Ctrl+Retorn&quot; per començar una nova línia</translation>
+        <translation>Escriu la teva pregunta, o escriu &quot;/&quot; per seleccionar una ordre
+«Ctrl+Enter» per començar una línia nova</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="393"/>
         <source>Search complete.</source>
-        <translation type="unfinished">Cerca completada.</translation>
+        <translation>Cerca completada.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="394"/>
         <source>Click to view results</source>
-        <translation type="unfinished">Fes clic per veure els resultats</translation>
+        <translation>Fes clic per veure els resultats</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="397"/>
         <source>edit</source>
-        <translation type="unfinished">edita</translation>
+        <translation>edita</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="398"/>
         <source>save</source>
-        <translation type="unfinished">desa</translation>
+        <translation>desa</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="399"/>
         <source>copy</source>
-        <translation type="unfinished">copia</translation>
+        <translation>copia</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="402"/>
+        <source>lines of code collapsed</source>
+        <translation>línies de codi col·lapsades</translation>
+    </message>
+    <message>
+        <source>Save As</source>
+        <translation>Anomena i desa</translation>
+    </message>
+    <message>
         <source>Thinking has stopped</source>
-        <translation type="unfinished">El pensament s&apos;ha aturat</translation>
+        <translation>S&apos;ha aturat el pensament</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="403"/>
-        <source>Back to bottom</source>
-        <translation type="unfinished">Torna a baix</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="404"/>
         <source>Deeply thought (%1 seconds)</source>
-        <translation type="unfinished">Pensament profund (%1 segons)</translation>
+        <translation>Pensament profund (%1 segons)</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="407"/>
         <source>New Conversation</source>
-        <translation type="unfinished">Nova conversa</translation>
+        <translation>Conversa nova</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="408"/>
         <source>History</source>
-        <translation type="unfinished">Historial</translation>
+        <translation>Historial</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="409"/>
         <source>No History Records</source>
-        <translation type="unfinished">No hi ha registres d&apos;historial</translation>
+        <translation>Sense historial</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="410"/>
         <source>Are you sure to delete the conversation? It will be unrecoverable once deleted.</source>
-        <translation type="unfinished">Esteu segur que voleu suprimir la conversa? Un cop suprimida, no es podrà recuperar.</translation>
+        <translation>Segur que voleu suprimir la conversa? Un cop suprimida, no es podrà recuperar.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="411"/>
         <source>The %1 agent used in this conversation has been deleted</source>
-        <translation type="unfinished">L&apos;agent %1 utilitzat en aquesta conversa ha estat suprimit</translation>
+        <translation>L&apos;agent %1 utilitzat en aquesta conversa s&apos;ha suprimit</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="412"/>
         <source>This conversation cannot be viewed. To view it, please install the %1 agent and try again.</source>
-        <translation type="unfinished">Aquesta conversa no es pot visualitzar. Per veure-la, instal·leu l&apos;agent %1 i torneu-ho a provar.</translation>
+        <translation>Aquesta conversa no es pot visualitzar. Per veure-la, instal·leu l&apos;agent %1 i torneu-ho a provar.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="413"/>
         <source>The original conversation model has been deleted. We have switched to a new model for you to continue the conversation.</source>
-        <translation type="unfinished">El model original de la conversa ha estat suprimit. Hem canviat a un model nou perquè pugueu continuar la conversa.</translation>
+        <translation>El model original de la conversa s&apos;ha suprimit. Hem canviat a un model nou perquè pugueu continuar la conversa.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="416"/>
         <source>Recommendations</source>
-        <translation type="unfinished">Recomanacions</translation>
+        <translation>Recomanacions</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="417"/>
         <source>No Model</source>
-        <translation type="unfinished">Sense model</translation>
+        <translation>Cap model</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="418"/>
         <source>No model available. Please install or configure a model in the settings.</source>
-        <translation type="unfinished">No hi ha cap model disponible. Instal·leu o configureu un model a la configuració.</translation>
+        <translation>No hi ha cap model disponible. Instal·leu o configureu un model a la configuració.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="419"/>
         <source>Please Describe the Content Theme and Requirements for Your Creation.</source>
-        <translation type="unfinished">Descriviu el tema del contingut i els requisits per a la vostra creació.</translation>
+        <translation>Descriu el tema i els requisits del contingut de la teva creació.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="420"/>
         <source>Please Enter the Content You Want to Translate and Specify the Target Language. Default Translation is to Chinese.</source>
-        <translation type="unfinished">Introduïu el contingut que voleu traduir i especifiqueu l&apos;idioma de destinació. La traducció per defecte és al xinès.</translation>
+        <translation>Introduïu el contingut que voleu traduir i especifiqueu la llengua de destinació. La traducció per defecte és al xinès.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="421"/>
         <source>Please Enter the Text You Need to Process and Specify Your Requirements.</source>
-        <translation type="unfinished">Introduïu el text que necessiteu processar i especifiqueu els vostres requisits.</translation>
+        <translation>Introduïu el text que heu de processar i especifiqueu els vostres requisits.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="422"/>
         <source>New Agent Added</source>
-        <translation type="unfinished">S&apos;ha afegit un nou agent</translation>
+        <translation>S&apos;ha afegit un agent nou</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="423"/>
         <source>New Writing, Text Processing, and Translation Agents have been added. Check them out now.</source>
-        <translation type="unfinished">S&apos;han afegit nous agents d&apos;escriptura, processament de text i traducció. Consulteu-los ara.</translation>
+        <translation>S&apos;han afegit nous agents d&apos;escriptura, processament de text i traducció. Descobriu-los ara.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="424"/>
         <source>Try it</source>
-        <translation type="unfinished">Proveu-ho</translation>
+        <translation>Prova-ho</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="425"/>
         <source>Write an article based on the following document:</source>
-        <translation type="unfinished">Escriviu un article basat en el document següent:</translation>
+        <translation>Escriu un article basat en el document següent:</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="426"/>
         <source>Translate the following document into English:</source>
-        <translation type="unfinished">Traduïu el document següent a l&apos;anglès:</translation>
+        <translation>Tradueix el document següent a l&apos;anglès:</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="429"/>
         <source>Add Mcp Server</source>
-        <translation type="unfinished">Afegeix servidor MCP</translation>
+        <translation>Afegeix servidor MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="430"/>
         <source>Add Server</source>
-        <translation type="unfinished">Afegeix servidor</translation>
+        <translation>Afegeix servidor</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="431"/>
         <source>Add failed! Error reason:</source>
-        <translation type="unfinished">Error en afegir! Raó de l&apos;error:</translation>
+        <translation>S&apos;ha produït un error en afegir! Motiu de l&apos;error:</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="432"/>
         <source>MCP environment missing. Please install 【UOS AI Agent】</source>
-        <translation type="unfinished">Falta l&apos;entorn MCP. Instal·leu 【UOS AI Agent】</translation>
+        <translation>Entorn MCP inexistent. Instal·leu 【UOS AI Agent】</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="433"/>
         <source>Calling</source>
-        <translation type="unfinished">Trucant</translation>
+        <translation>S&apos;està trucant</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="434"/>
         <source>Completed</source>
-        <translation type="unfinished">Completat</translation>
+        <translation>Completat</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="435"/>
         <source>Call Failed</source>
-        <translation type="unfinished">Trucada fallida</translation>
+        <translation>Ha fallat la trucada</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="436"/>
         <source>Cancelled</source>
-        <translation type="unfinished">Cancel·lat</translation>
+        <translation>Cancel·lat</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="437"/>
         <source>params</source>
-        <translation type="unfinished">paràmetres</translation>
+        <translation>paràmetres</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="438"/>
         <source>result</source>
-        <translation type="unfinished">resultat</translation>
+        <translation>resultat</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="439"/>
         <source>For MCP Server, switch to officially released model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="unfinished">Per al servidor MCP, canvia al model publicat oficialment &quot;Compte de prova DeepSeek&quot;</translation>
+        <translation>Per al servidor MCP, canvia al model llançat oficialment &quot;DeepSeek-Trial Account&quot;</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="440"/>
         <source>Enter MCP Server command, e.g., &quot;Change system to dark mode for me&quot;</source>
-        <translation type="unfinished">Introdueix l&apos;ordre del servidor MCP, p. ex. &quot;Canvia el sistema al mode fosc&quot;</translation>
+        <translation>Introdueix l&apos;ordre del servidor MCP, p. ex., &quot;Canvia el sistema al mode fosc per a mi&quot;</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="441"/>
         <source>Agent server is not available</source>
-        <translation type="unfinished">El servidor d&apos;agents no està disponible</translation>
+        <translation>El servidor d&apos;agents no està disponible</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="442"/>
         <source>Agent server exception</source>
-        <translation type="unfinished">Excepció del servidor d&apos;agents</translation>
+        <translation>Excepció del servidor d&apos;agents</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="443"/>
         <source>MCP server is not available</source>
-        <translation type="unfinished">El servidor MCP no està disponible</translation>
+        <translation>El servidor MCP no està disponible</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="444"/>
         <source>Confirm</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirma</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="445"/>
         <source>Automate multi-file and multi-app tasks with one command using MCP Service. Try it now!</source>
-        <translation type="unfinished">Automatitza tasques multi-fitxer i multi-aplicació amb una sola ordre mitjançant el servei MCP. Prova-ho ara!</translation>
+        <translation>Automatitza tasques de múltiples fitxers i aplicacions amb una sola ordre mitjançant el servei MCP. Prova-ho ara!</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="446"/>
         <source>Use later</source>
-        <translation type="unfinished">Utilitza-ho més tard</translation>
+        <translation>Utilitzar més tard</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="447"/>
         <source>Enable MCP Server</source>
-        <translation type="unfinished">Activa el servidor MCP</translation>
+        <translation>Activa el servidor MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="448"/>
         <source>After installing the MCP environment &quot;UOS AI Agent&quot;, click the </source>
-        <translation type="unfinished">Després d&apos;instal·lar l&apos;entorn MCP &quot;UOS AI Agent&quot;, fes clic al </translation>
+        <translation>Després d&apos;instal·lar l&apos;entorn MCP &quot;UOS AI Agent&quot;, feu clic a </translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="449"/>
         <source> and select &quot;uos-mcp&quot; in the MCP server list.</source>
-        <translation type="unfinished"> i selecciona &quot;uos-mcp&quot; a la llista de servidors MCP.</translation>
+        <translation> i seleccioneu &quot;uos-mcp&quot; a la llista de servidors MCP.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="450"/>
         <source>Try saying: &quot;Change system to dark mode&quot;.</source>
-        <translation type="unfinished">Prova de dir: &quot;Canvia el sistema al mode fosc&quot;.</translation>
+        <translation>Proveu a dir: &quot;Canvia el sistema al mode fosc&quot;.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="451"/>
         <source>Try it now</source>
-        <translation type="unfinished">Prova-ho ara</translation>
+        <translation>Prova-ho ara</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="452"/>
         <source>Add Mcp Server[GuidePage]</source>
-        <translation type="unfinished">Afegeix servidor MCP [pàgina guia]</translation>
+        <translation>Afegeix servidor MCP[PàginaGuia]</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="453"/>
         <source>First-time users: Install MCP environment &quot;UOS AI Agent&quot; via App Store.</source>
-        <translation type="unfinished">Usuaris per primera vegada: instal·la l&apos;entorn MCP &quot;UOS AI Agent&quot; des de la Botiga d&apos;aplicacions.</translation>
+        <translation>Usuaris nous: Instal·leu l&apos;entorn MCP &quot;UOS AI Agent&quot; mitjançant l&apos;App Store.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="454"/>
         <source>The JSON file format is incorrect, please check and submit again</source>
-        <translation type="unfinished">El format del fitxer JSON és incorrecte; comprova-ho i torna a enviar-lo</translation>
+        <translation>El format del fitxer JSON és incorrecte, comproveu-lo i torneu-lo a enviar</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="455"/>
         <source>Install Now &gt;</source>
-        <translation type="unfinished">Instal·la ara &gt;</translation>
+        <translation>Instal·la ara &gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="458"/>
         <source>General Chat</source>
-        <translation type="unfinished">Xat general</translation>
+        <translation>Xat general</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="459"/>
         <source>Now in Private Chat</source>
-        <translation type="unfinished">Ara al xat privat</translation>
+        <translation>Ara al xat privat</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="460"/>
         <source>Private Chat messages are not saved in history and will be permanently deleted when you leave the chat.</source>
-        <translation type="unfinished">Els missatges del xat privat no es desen a l&apos;historial i s&apos;eliminaran permanentment quan surtis del xat.</translation>
+        <translation>Els missatges del xat privat no es desen a l&apos;historial i s&apos;eliminaran permanentment quan sortiu del xat.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="461"/>
         <source>Screenshot Q&amp;A    Shortcut (Ctrl+Alt+Q), up to 3 images supported.</source>
-        <translation type="unfinished">Captura de pantalla i preguntes Drecera (Ctrl+Alt+Q), admet fins a 3 imatges.</translation>
+        <translation>Captura de pantalla i Preguntes    Drecera (Ctrl+Alt+Q), admet fins a 3 imatges.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="462"/>
         <source>Cannot be used during screen recording</source>
-        <translation type="unfinished">No es pot utilitzar durant la gravació de pantalla</translation>
+        <translation>No es pot utilitzar durant l&apos;enregistrament de la pantalla</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="463"/>
         <source>You can upload up to 3 files or image</source>
-        <translation type="unfinished"></translation>
+        <translation>Podeu carregar fins a 3 fitxers o imatges</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="464"/>
         <source>Please delete the abnormal file and send it again</source>
-        <translation type="unfinished">Si us plau, esborra el fitxer anòmal i torna’l a enviar</translation>
+        <translation>Suprimiu el fitxer anormal i torneu-lo a enviar</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="465"/>
         <source>Add Private Chat</source>
-        <translation type="unfinished">Afegeix un xat privat</translation>
+        <translation>Afegir xat privat</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="466"/>
         <source>Add [Screenshot Q&amp;A]</source>
-        <translation type="unfinished">Afegeix [Captura i preguntes]</translation>
+        <translation>Afegir [Captura de pantalla i Preguntes]</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="467"/>
         <source>Take a screenshot and send the content to UOS AI. You can also upload an image directly.</source>
-        <translation type="unfinished">Fes una captura de pantalla i envia el contingut a l’UOS AI. També pots pujar una imatge directament.</translation>
+        <translation>Feu una captura de pantalla i envieu el contingut a UOS AI. També podeu carregar una imatge directament.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="468"/>
         <source>OK</source>
-        <translation type="unfinished">D&apos;acord</translation>
+        <translation>D&apos;acord</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="469"/>
         <source>Next</source>
-        <translation type="unfinished">Següent</translation>
+        <translation>Següent</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="470"/>
         <source>Add [ Private Chat Mode ] - Chats will not be saved.</source>
-        <translation type="unfinished">Afegeix [Mode de xat privat] – els xats no es desaran.</translation>
+        <translation>Afegir [Mode de xat privat] - Els xats no es desaran.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="471"/>
         <source>No text extracted</source>
-        <translation type="unfinished">No s’ha extret cap text</translation>
+        <translation>No s&apos;ha extret cap text</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="472"/>
         <source>Image size exceeds 15 MB</source>
-        <translation type="unfinished">La imatge supera els 15 MB</translation>
+        <translation>La mida de la imatge supera els 15 MB</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="475"/>
         <source>After opening the knowledge base, answers will be based on its content. Response speed depends on machine performance and the size of the knowledge base.</source>
-        <translation type="unfinished">Un cop oberta la base de coneixement, les respostes es basaran en el seu contingut. La velocitat de resposta depèn del rendiment de la màquina i de la mida de la base de coneixement.</translation>
+        <translation>Després d&apos;obrir la base de coneixement, les respostes es basaran en el seu contingut. La velocitat de resposta depèn del rendiment de la màquina i de la mida de la base de coneixement.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="476"/>
         <source>Knowledge base unavailable when any command or MCP is selected.</source>
-        <translation type="unfinished">La base de coneixement no està disponible quan s’ha seleccionat qualsevol ordre o MCP.</translation>
+        <translation>La base de coneixement no està disponible quan se selecciona qualsevol ordre o MCP.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="477"/>
         <source>MCP is disabled while the knowledge base is active.</source>
-        <translation type="unfinished">El MCP està desactivat mentre la base de coneixement està activa.</translation>
+        <translation>El MCP està desactivat mentre la base de coneixement està activa.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="478"/>
         <source>Commands disabled while knowledge base is active.</source>
-        <translation type="unfinished">Les ordres estan desactivades mentre la base de coneixement està activa.</translation>
+        <translation>Ordres desactivades mentre la base de coneixement està activa.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="479"/>
         <source>Copy succeeded.</source>
-        <translation type="unfinished">S’ha copiat correctament.</translation>
+        <translation>Còpia correcta.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="480"/>
         <source>Copy failed. Please try again.</source>
-        <translation type="unfinished">No s’ha pogut copiar. Torna-ho a provar.</translation>
+        <translation>Ha fallat la còpia. Torneu-ho a provar.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="481"/>
         <source>Searching</source>
-        <translation type="unfinished">S’està cercant</translation>
+        <translation>S&apos;està cercant</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="482"/>
         <source>%1 reference documents have been obtained (%2s)</source>
-        <translation type="unfinished">S’han obtingut %1 documents de referència (%2 s)</translation>
+        <translation>S&apos;han obtingut %1 documents de referència (%2s)</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="483"/>
         <source>Clear History</source>
-        <translation type="unfinished">Esborra l’historial</translation>
+        <translation>Netejar historial</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="484"/>
         <source>Delete all records?</source>
-        <translation type="unfinished">Vols esborrar tots els registres?</translation>
+        <translation>Voleu suprimir tots els registres?</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="485"/>
         <source>Once deleted, the content cannot be recovered!</source>
-        <translation type="unfinished">Un cop esborrat, el contingut no es podrà recuperar!</translation>
+        <translation>Un cop suprimits, el contingut no es pot recuperar!</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="486"/>
         <source>Recommend official models</source>
-        <translation type="unfinished">Recomana models oficials</translation>
+        <translation>Recomanar models oficials</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="487"/>
         <source>Disable MCP</source>
-        <translation type="unfinished">Desactiva MCP</translation>
+        <translation>Desactivar MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="490"/>
         <source>It is recommended to use the official model &quot;DeepSeek-Trial Account&quot;</source>
-        <translation type="unfinished">Es recomana utilitzar el model oficial &quot;DeepSeek-Trial Account&quot;</translation>
+        <translation>Es recomana utilitzar el model oficial «DeepSeek-Trial Account»</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="491"/>
         <source>Quick Open</source>
-        <translation type="unfinished">Obertura ràpida</translation>
+        <translation>Obertura ràpida</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="492"/>
         <source>MCP Server Upgrade to Automatic Mode</source>
-        <translation type="unfinished">Actualització del servidor MCP al mode automàtic</translation>
+        <translation>Actualització del servidor MCP al mode automàtic</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="493"/>
         <source>MCP Server have been upgraded to automatic mode, allowing you to access all MCP Server with just click </source>
-        <translation type="unfinished">El servidor MCP s’ha actualitzat al mode automàtic, cosa que et permet accedir a tots els servidors MCP amb només un clic</translation>
+        <translation>El servidor MCP s&apos;ha actualitzat al mode automàtic, permetent-vos accedir a tots els servidors MCP amb només fer clic </translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="494"/>
         <source>. This allows you to automate tasks like system setup and file processing with just one click.</source>
-        <translation type="unfinished">. Això et permet automatitzar tasques com la configuració del sistema i el processament de fitxers amb un sol clic.</translation>
+        <translation>. Això us permet automatitzar tasques com la configuració del sistema i el processament de fitxers amb un sol clic.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="495"/>
         <source>Adding MCP Server has been moved to Settings.</source>
-        <translation type="unfinished">Afegir un servidor MCP s’ha traslladat a Configuració.</translation>
+        <translation>L&apos;addició de servidors MCP s&apos;ha mogut a la configuració.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="496"/>
         <source>To add more MCP Server, go to Settings &gt; MCP Server.</source>
-        <translation type="unfinished">Per afegir més servidors MCP, ves a Configuració &gt; Servidor MCP.</translation>
+        <translation>Per afegir més servidors MCP, aneu a Configuració &gt; Servidor MCP.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="497"/>
         <source>Got it</source>
-        <translation type="unfinished">Entesos</translation>
+        <translation>Entès</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="498"/>
         <source>Complimentary Model Credits</source>
-        <translation type="unfinished">Crèdits del model de cortesia</translation>
+        <translation>Crèdits de model gratuïts</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="499"/>
         <source>The current system offers the DeepSeek trial account model, which automatically refreshes the free quota at the beginning of each month, allowing you to use it worry-free.</source>
-        <translation type="unfinished">El sistema actual ofereix el model de compte de prova DeepSeek, que actualitza automàticament la quota gratuïta a l&apos;inici de cada mes, permetent-vos utilitzar-lo sense preocupacions.</translation>
+        <translation>El sistema actual ofereix el model de compte de prova DeepSeek, que actualitza automàticament la quota gratuïta a principi de cada mes, permetent-te utilitzar-lo sense preocupacions.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="500"/>
         <source>Claim Credits</source>
-        <translation type="unfinished">Reclama crèdits</translation>
+        <translation>Reclama crèdits</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="501"/>
         <source>Get a free account</source>
-        <translation type="unfinished">Obtenir un compte gratuït</translation>
+        <translation>Obté un compte gratuït</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="502"/>
         <source>Claim Free Credits</source>
-        <translation type="unfinished">Reclama crèdits gratuïts</translation>
+        <translation>Reclama crèdits gratuïts</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="503"/>
         <source>Successfully Claimed</source>
-        <translation type="unfinished">Reclamat amb èxit</translation>
+        <translation>Reclamat correctament</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="504"/>
         <source>Failed to Claim. Please Try Again.</source>
-        <translation type="unfinished">No s&apos;ha pogut reclamar. Si us plau, torna-ho a provar.</translation>
+        <translation>No s&apos;han pogut reclamar. Torneu-ho a provar.</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="505"/>
         <source>Enable MCP Server&amp;</source>
-        <translation type="unfinished">Activa el servidor MCP&amp;</translation>
+        <translation>Activa el servidor MCP&amp;</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="506"/>
         <source>Disable MCP Server</source>
-        <translation type="unfinished">Desactiva el servidor MCP</translation>
+        <translation>Desactiva el servidor MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="507"/>
         <source>Configure MCP Server</source>
-        <translation type="unfinished">Configura el servidor MCP</translation>
+        <translation>Configura el servidor MCP</translation>
     </message>
     <message>
-        <location filename="../src/gui/web/systemchannel.cpp" line="957"/>
+        <source>Enabling MCP Server Features</source>
+        <translation>Activant les funcions del servidor MCP</translation>
+    </message>
+    <message>
+        <source>Some third-party MCP server features carry certain risks. Please use them with caution. If you enable this service, a built-in tool will detect and automatically download necessary dependencies. This download process will incur data charges. Please be aware of these risks and proceed with caution.</source>
+        <translation>Algunes funcions de servidors MCP de tercers comporten certs riscos. Utilitzeu-les amb precaució. Si activeu aquest servei, una eina integrada detectarà i baixarà automàticament les dependències necessàries. Aquest procés de baixada implicarà càrregues de dades. Tingueu en compte aquests riscos i procediu amb precaució.</translation>
+    </message>
+    <message>
+        <source>I have understood and agree to use this service</source>
+        <translation>He entès i accepto utilitzar aquest servei</translation>
+    </message>
+    <message>
         <source>UOS AI FollowAlong/Write</source>
-        <translation type="unfinished">UOS AI FollowAlong/Escriure</translation>
-    </message>
-</context>
-<context>
-    <name>uos_ai::SystemControlInst</name>
-    <message>
-        <source>System Control</source>
-        <translation type="vanished">Control del sistema</translation>
-    </message>
-    <message>
-        <source>Switch to a new wallpaper. set the screen brightness to 30%...</source>
-        <translation type="vanished">Canvia a un nou fons de pantalla. Estableix la brillantor de la pantalla al 30%...</translation>
+        <translation>UOS AI FollowAlong/Escriu</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::TtsCompositeWidget</name>
     <message>
-        <location filename="../src/gui/compliance/ttscompositewidget.cpp" line="72"/>
         <source>The text you have selected has exceeded the 5000 character limit.</source>
-        <translation type="unfinished">El text que heu seleccionat ha superat el límit de 5000 caràcters.</translation>
+        <translation>El text que heu seleccionat ha superat el límit de 5000 caràcters.</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::TtsWidget</name>
     <message>
-        <location filename="../src/audiowizard/gui/ttswidget.cpp" line="86"/>
         <source>The text you have selected has exceeded the 2000 character limit.</source>
         <translation>El text que heu seleccionat ha superat el límit de 2000 caràcters.</translation>
     </message>
     <message>
-        <location filename="../src/audiowizard/gui/ttswidget.cpp" line="141"/>
         <source>Network is offline , stop text to speech</source>
-        <translation>La xarxa està desconnectada, atura la conversió de text a veu</translation>
+        <translation>La xarxa està desconnectada, aturant la conversió de text a veu</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UOSAbilityManager</name>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="571"/>
         <source>Brightness is already at maximum and cannot be increased further.</source>
-        <translation type="unfinished">La brillantor ja està al màxim i no es pot augmentar més.</translation>
+        <translation>La brillantor ja és al màxim i no es pot augmentar més.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="581"/>
         <source>Brightness is already at minimum and cannot be decreased further.</source>
-        <translation type="unfinished">La brillantor ja està al mínim i no es pot disminuir més.</translation>
+        <translation>La brillantor ja és al mínim i no es pot disminuir més.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="715"/>
         <source>AI Meeting Schedule</source>
-        <translation type="unfinished"></translation>
+        <translation>Planificació de reunions IA</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="854"/>
         <source>Your system memory is %0.</source>
-        <translation type="unfinished">La memòria del vostre sistema és %0.</translation>
+        <translation>La memòria del sistema és %0.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="874"/>
         <source>The language setting interface has been opened. Please set it in this interface.</source>
-        <translation type="unfinished">S&apos;ha obert la interfície de configuració de l&apos;idioma. Si us plau, configureu-la en aquesta interfície.</translation>
+        <translation>S&apos;ha obert la interfície de configuració d&apos;idioma. Configureu-la en aquesta interfície.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="918"/>
         <source>The current mode is already %1 mode.</source>
-        <translation type="unfinished">El mode actual ja és el mode %1.</translation>
+        <translation>El mode actual ja és el mode %1.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="932"/>
         <source>Unable to close because the current mode %1 does not match the target mode.</source>
-        <translation type="unfinished">No es pot tancar perquè el mode actual %1 no coincideix amb el mode objectiu.</translation>
+        <translation>No s&apos;ha pogut tancar perquè el mode actual %1 no coincideix amb el mode de destinació.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="945"/>
         <source>Balance mode cannot be turned off.</source>
-        <translation type="unfinished">El mode d&apos;equilibri no es pot desactivar.</translation>
+        <translation>No es pot desactivar el mode d&apos;equilibri.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="963"/>
         <source>The lock screen has been opened for you</source>
-        <translation type="unfinished">S&apos;ha obert la pantalla de bloqueig per a vostè</translation>
+        <translation>S&apos;ha obert la pantalla de bloqueig</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="977"/>
         <source>Screen shotting or recording has been completed</source>
-        <translation type="unfinished">S&apos;ha completat la captura de pantalla o la gravació</translation>
+        <translation>S&apos;ha completat la captura de pantalla o l&apos;enregistrament</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="994"/>
         <source>Only one screen, can&apos;t switch screen mode.</source>
-        <translation type="unfinished">Només hi ha una pantalla, no es pot canviar el mode de pantalla.</translation>
+        <translation>Només hi ha una pantalla, no es pot canviar el mode de pantalla.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1006"/>
         <source>It is the same as the current display mode. Please try again.</source>
-        <translation type="unfinished">És el mateix que el mode de visualització actual. Si us plau, torneu-ho a provar.</translation>
+        <translation>És el mateix que el mode de visualització actual. Torneu-ho a provar.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1079"/>
         <source>Only one screen, can&apos;t switch screen.</source>
-        <translation type="unfinished">Només hi ha una pantalla, no es pot canviar de pantalla.</translation>
+        <translation>Només hi ha una pantalla, no es pot canviar de pantalla.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1184"/>
         <source>Your command has been issued.</source>
-        <translation type="unfinished">S&apos;ha emès la vostra ordre.</translation>
+        <translation>S&apos;ha executat l&apos;ordre.</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1689"/>
         <source>Failed to rename file %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Error en canviar el nom del fitxer %1</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1695"/>
         <source>Batch rename completed, successfully renamed %1 files, failed %2 files.
 Error details:
 %3</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha completat el canvi de nom per lots, s&apos;han canviat %1 fitxers correctament, han fallat %2 fitxers.
+Detalls de l&apos;error:
+%3</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1824"/>
         <source>Email client has been opened, please confirm to send</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha obert el client de correu, confirmeu l&apos;enviament</translation>
     </message>
     <message>
-        <location filename="../src/oscontrol/deepinabilitymanager.cpp" line="1956"/>
         <source>App store has been opened, preparing to install application: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha obert la botiga d&apos;aplicacions, s&apos;està preparant la instal·lació de l&apos;aplicació: %1</translation>
+    </message>
+    <message>
+        <source>App store target is empty</source>
+        <translation>La destinació de la botiga d&apos;aplicacions és buida</translation>
+    </message>
+    <message>
+        <source>Failed to open App Store target: %1</source>
+        <translation>Error en obrir la destinació de la botiga d&apos;aplicacions: %1</translation>
+    </message>
+    <message>
+        <source>App store has been opened for: %1</source>
+        <translation>S&apos;ha obert la botiga d&apos;aplicacions per a: %1</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::UOSClaw</name>
+    <message>
+        <source>Get system memory usage</source>
+        <translation>Obtenir l&apos;ús de memòria del sistema</translation>
+    </message>
+    <message>
+        <source>Get system CPU usage</source>
+        <translation>Obtenir l&apos;ús de la CPU del sistema</translation>
+    </message>
+    <message>
+        <source>Get system disk information</source>
+        <translation>Obtenir la informació del disc del sistema</translation>
+    </message>
+    <message>
+        <source>Switch to dark theme</source>
+        <translation>Canvia al tema fosc</translation>
+    </message>
+    <message>
+        <source>Switch to light theme</source>
+        <translation>Canvia al tema clar</translation>
+    </message>
+    <message>
+        <source>Change desktop background</source>
+        <translation>Canvia el fons de l&apos;escriptori</translation>
+    </message>
+    <message>
+        <source>Switch dock mode</source>
+        <translation>Canvia el mode de l&apos;acoblador</translation>
+    </message>
+    <message>
+        <source>Enable eye protection mode</source>
+        <translation>Activa el mode de protecció ocular</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UpdateButton</name>
     <message>
-        <location filename="../src/gui/mgmt/private/updatebutton.cpp" line="81"/>
         <source>Update</source>
-        <translation>Actualitzar</translation>
+        <translation>Actualitza</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/updatebutton.cpp" line="81"/>
         <source>Cancel Update</source>
-        <translation>Cancel·lar actualització</translation>
+        <translation>Cancel·la l&apos;actualització</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::UpdateLogDialog</name>
     <message>
-        <location filename="../src/gui/upgrade/updatelogdialog.cpp" line="40"/>
         <source>UOS AI Assistant Update Log</source>
         <translation>Registre d&apos;actualitzacions de l&apos;assistent UOS AI</translation>
     </message>
@@ -8990,203 +4781,157 @@ Error details:
 <context>
     <name>uos_ai::UserAgreementDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="46"/>
         <source>UOS AI User Agreement</source>
-        <translation type="unfinished"></translation>
+        <translation>Acord d&apos;usuari d&apos;UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="79"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree that the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="unfinished">Confirmo que tinc més de 18 anys. Reconec i accepto que els continguts que envio i rebo mitjançant l&apos;Aplicació són intercanvis de dades directes amb el proveïdor del servei de model gran i no tenen res a veure amb l&apos;Empresa.</translation>
+        <translation>Confirmo que tinc més de 18 anys. Reconec i accepto que els continguts que envio i rebo mitjançant l&apos;aplicació són intercanvis de dades directes amb el proveïdor del servei de model gran i no tenen res a veure amb l&apos;empresa.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/useragreementdialog.cpp" line="123"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="unfinished">Accepto participar en el pla d&apos;experiència d&apos;usuari de l&apos;Aplicació, i autoritzo la vostra empresa a recollir els continguts que envio mentre utilitzo l&apos;Aplicació, l&apos;hora d&apos;enviament, el tipus de model gran sol·licitat, l&apos;aplicació específica i si el text ha generat la imatge amb èxit, per tal de millorar la qualitat del servei i millorar l&apos;experiència d&apos;operació. (Si refuseu proporcionar la informació anterior, no afectarà el vostre ús normal de l&apos;Aplicació.)</translation>
+        <translation>Accepto participar en el pla d&apos;experiència d&apos;usuari de l&apos;aplicació i autoritzo la vostra empresa a recollir els continguts que envio mentre utilitzo l&apos;aplicació, l&apos;hora d&apos;enviament, el tipus de model gran sol·licitat, l&apos;aplicació específica i si el text ha generat la imatge correctament, per tal de millorar la qualitat del servei i millorar l&apos;experiència d&apos;operació. (Si us negueu a proporcionar la informació anterior, no afectarà el vostre ús normal de l&apos;aplicació.)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WelcomeDialog</name>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="74"/>
         <source>Welcome to UOS AI</source>
-        <translation type="unfinished">Benvingut/da a UOS AI</translation>
+        <translation>Benvingut a UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="80"/>
         <source>UOS AI, your smart assistant, is designed to improve your productivity and enjoy a high-quality work experience.</source>
-        <translation type="unfinished">UOS AI, el vostre assistent intel·ligent, està dissenyat per millorar la vostra productivitat i gaudir d&apos;una experiència laboral de qualitat.</translation>
+        <translation>UOS AI, el teu assistent intel·ligent, està dissenyat per millorar la teva productivitat i gaudir d&apos;una experiència de treball d&apos;alta qualitat.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="105"/>
         <source>Get a free account</source>
-        <translation type="unfinished">Obtenir un compte gratuït</translation>
+        <translation>Obtén un compte gratuït</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="126"/>
         <source>Add Model</source>
-        <translation type="unfinished">Afegir model</translation>
+        <translation>Afegeix model</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="132"/>
         <source>Start using</source>
-        <translation type="unfinished">Començar a utilitzar</translation>
+        <translation>Comença a utilitzar</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="276"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="278"/>
         <source>I confirm that I am over 18 years old. I acknowledge and agree to the &lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;UOS AI User Agreement&quot;&lt;/a&gt;, and the contents I send and receive via the Application are direct data exchanges with the large model service provider and have nothing to do with the Company.</source>
-        <translation type="unfinished">Confirmo que tinc més de 18 anys. Reconec i accepto l&apos;&lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;Acord d&apos;Usuari d&apos;UOS AI&quot;&lt;/a&gt;, i que els continguts que envio i rebo mitjançant l&apos;Aplicació són intercanvis de dades directes amb el proveïdor del servei de model gran i no tenen res a veure amb l&apos;Empresa.</translation>
+        <translation>Confirmo que tinc més de 18 anys. Reconec i accepto l&apos;&lt;a href=&quot;%1&quot; style=&quot;color: %2; text-decoration: none;&quot;&gt;&quot;Acord d&apos;usuari d&apos;UOS AI&quot;&lt;/a&gt;, i els continguts que envio i rebo mitjançant l&apos;aplicació són intercanvis de dades directes amb el proveïdor del servei de model gran i no tenen res a veure amb l&apos;empresa.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="280"/>
         <source>Receiving an account indicates that you understand and agree to the terms of the event,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Event Details&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Rebre un compte indica que enteneu i accepteu els termes de l&apos;esdeveniment,&lt;a href=&quot;%1&quot; style=&quot;color:%2; text-decoration:none;&quot;&gt;Detalls de l&apos;esdeveniment&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="339"/>
         <source>UOS AI Trial Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Compte de prova d&apos;UOS AI</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="347"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="361"/>
         <source>Save failed, please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut desar, torneu-ho a provar més tard</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="348"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="362"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="389"/>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="398"/>
         <source>Confirm</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Confirma</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="375"/>
         <source>Trial account received successfully.</source>
-        <translation type="unfinished">Compte de prova rebut amb èxit.</translation>
+        <translation>El compte de prova s&apos;ha rebut correctament.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="378"/>
         <source>The number of uses and duration of the trial account are limited, please configure your personal model account in time! See event details for details.</source>
-        <translation type="unfinished"></translation>
+        <translation>El nombre d&apos;usos i la durada del compte de prova són limitats. Configureu el vostre compte personal del model a temps! Vegeu els detalls de l&apos;esdeveniment per a més informació.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="380"/>
         <source>The English support for trial accounts is not satisfactory. And the number of uses and duration of the trial account are limited. Please configure your personal model account in time!</source>
-        <translation type="unfinished"></translation>
+        <translation>El suport en anglès per als comptes de prova no és satisfactori. A més, el nombre d&apos;usos i la durada del compte de prova són limitats. Configureu el vostre compte personal del model a temps!</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="381"/>
         <source>Start trial</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Inicia la prova</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="388"/>
         <source>The free account activity ends.</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;activitat del compte gratuït ha finalitzat.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="397"/>
         <source>Unable to connect to the server, please check your network or try again later.</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut connectar al servidor. Comproveu la vostra xarxa o torneu-ho a provar més tard.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/welcomedialog.cpp" line="418"/>
         <source>I agree to participate in the user experience plan of the Application, and authorize your company to collect the contents I send while using the Application, the time of sending, the type of requested large model ，the specific application and whether the text generated the image successfully, so as to improve the service quality and enhance the operation experience. (If you refuse to provide the above information, it will not affect your normal use of the Application.)</source>
-        <translation type="unfinished">Accepto participar en el pla d&apos;experiència d&apos;usuari de l&apos;Aplicació, i autoritzo la vostra empresa a recollir els continguts que envio mentre utilitzo l&apos;Aplicació, l&apos;hora d&apos;enviament, el tipus de model gran sol·licitat, l&apos;aplicació específica i si el text ha generat la imatge amb èxit, per tal de millorar la qualitat del servei i millorar l&apos;experiència d&apos;operació. (Si refuseu proporcionar la informació anterior, no afectarà el vostre ús normal de l&apos;Aplicació.)</translation>
+        <translation>Estic d&apos;acord en participar en el pla d&apos;experiència d&apos;usuari de l&apos;aplicació i autoritzo la vostra empresa a recollir els continguts que envio mentre utilitzo l&apos;aplicació, l&apos;hora d&apos;enviament, el tipus de model gran sol·licitat, l&apos;aplicació específica i si el text ha generat la imatge correctament, per millorar la qualitat del servei i millorar l&apos;experiència d&apos;ús. (Si us negueu a proporcionar la informació anterior, això no afectarà el vostre ús normal de l&apos;aplicació.)</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WizardWrapper</name>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="106"/>
         <source>Hide until restarting this app</source>
-        <translation>Amagar fins a reiniciar l&apos;aplicació</translation>
+        <translation>Amaga fins que es reiniciï aquesta aplicació</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="127"/>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="346"/>
-        <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
-        <translation>Aneu a &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Configuració&lt;/a&gt; per tornar-lo a activar.</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="799"/>
-        <source>The added content must be more than 10 words</source>
-        <translation>El contingut afegit ha de tenir més de 10 paraules</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="848"/>
-        <source>Search</source>
-        <translation>Cercar</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="852"/>
-        <source>Explain</source>
-        <translation>Explicar</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="856"/>
-        <source>Summary</source>
-        <translation>Resum</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="860"/>
-        <source>Translate</source>
-        <translation>Traduir</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="864"/>
-        <source>Continue Writing</source>
-        <translation>Continuar escrivint</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="868"/>
-        <source>Expand</source>
-        <translation>Ampliar</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="872"/>
-        <source>Correct</source>
-        <translation>Corregir</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="880"/>
-        <source>Add to the AI knowledge base</source>
-        <translation>Afegeix a la base de coneixement de la IA</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="107"/>
         <source>Disable in This Application</source>
-        <translation>Desactivar en aquesta aplicació</translation>
+        <translation>Inhabilita en aquesta aplicació</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="108"/>
         <source>Disable Globally</source>
-        <translation>Desactivar globalment</translation>
+        <translation>Inhabilita globalment</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="118"/>
         <source>Custom Settings</source>
         <translation>Configuració personalitzada</translation>
     </message>
     <message>
-        <location filename="../src/wordwizard/wrapper/wizardwrapper.cpp" line="876"/>
+        <source>Go to &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Settings&lt;/a&gt; to re-enable it.</source>
+        <translation>Vés a &lt;a href=&quot;#&quot; style=&quot;color:%1;text-decoration:none;&quot;&gt;Configuració&lt;/a&gt; per tornar-lo a habilitar.</translation>
+    </message>
+    <message>
+        <source>The added content must be more than 10 words</source>
+        <translation>El contingut afegit ha de tenir més de 10 paraules</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Cerca</translation>
+    </message>
+    <message>
+        <source>Explain</source>
+        <translation>Explica</translation>
+    </message>
+    <message>
+        <source>Summary</source>
+        <translation>Resum</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Tradueix</translation>
+    </message>
+    <message>
+        <source>Continue Writing</source>
+        <translation>Continua escrivint</translation>
+    </message>
+    <message>
+        <source>Expand</source>
+        <translation>Amplia</translation>
+    </message>
+    <message>
+        <source>Correct</source>
+        <translation>Corregeix</translation>
+    </message>
+    <message>
         <source>Polish</source>
-        <translation>Polir</translation>
+        <translation>Millora</translation>
+    </message>
+    <message>
+        <source>Add to the AI knowledge base</source>
+        <translation>Afegeix a la base de coneixement de la IA</translation>
     </message>
 </context>
 <context>
     <name>uos_ai::WordWizard</name>
     <message>
-        <source>UOS AI FollowAlong</source>
-        <translation type="vanished">UOS AI FollowAlong</translation>
-    </message>
-    <message>
-        <location filename="../src/wordwizard/wordwizard.cpp" line="656"/>
         <source>Added</source>
         <translation>Afegit</translation>
     </message>
@@ -9194,19 +4939,91 @@ Error details:
 <context>
     <name>uos_ai::WordWizardWidget</name>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="37"/>
         <source>UOS AI FollowAlong</source>
         <translation>UOS AI FollowAlong</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>
         <source>Automatically display the UOS AI FollowAlong toolbar when text is selected.</source>
-        <translation>Mostra automàticament la barra d&apos;eines UOS AI FollowAlong quan es seleccioni text.</translation>
+        <translation>Mostra automàticament la barra d&apos;eines UOS AI FollowAlong quan se seleccioni text.</translation>
     </message>
     <message>
-        <location filename="../src/gui/mgmt/private/wordwizardwidget.cpp" line="89"/>
         <source>After closing, the selected text can still be woken up by the shortcut Super+R bar.</source>
-        <translation>Després de tancar, el text seleccionat encara es pot activar amb la drecera de la barra Super+R.</translation>
+        <translation>Després de tancar, el text seleccionat encara es pot activar amb la drecera Super+R.</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::ChatBotCommandHandler</name>
+    <message>
+        <source>Unknown command: %1
+Send /help to see available commands.</source>
+        <translation>Ordre desconeguda: %1
+Envieu /help per veure les ordres disponibles.</translation>
+    </message>
+    <message>
+        <source>New conversation started.</source>
+        <translation>S&apos;ha iniciat una conversa nova.</translation>
+    </message>
+    <message>
+        <source>Conversation history has been cleared.</source>
+        <translation>S&apos;ha esborrat l&apos;historial de converses.</translation>
+    </message>
+    <message>
+        <source>Available commands:
+  /help   — Show this help message
+  /new    — Start a new conversation (clears current context)
+  /stop   — Cancel the current in-progress request
+  /clear  — Clear all conversation history</source>
+        <translation>Ordres disponibles:
+  /help   — Mostra aquest missatge d&apos;ajuda
+  /new    — Inicia una conversa nova (esborra el context actual)
+  /stop   — Cancel·la la sol·licitud en curs
+  /clear  — Esborra tot l&apos;historial de converses</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::ChatBotRequestProcessor</name>
+    <message>
+        <source>No model found. Please configure a model first.</source>
+        <translation>No s&apos;ha trobat cap model. Configureu primer un model.</translation>
+    </message>
+    <message>
+        <source>AI request failed</source>
+        <translation>Ha fallat la sol·licitud de la IA</translation>
+    </message>
+    <message>
+        <source>Request timed out, please try again</source>
+        <translation>La sol·licitud ha exhaurit el temps, torneu-ho a provar</translation>
+    </message>
+    <message>
+        <source>No active request to stop.</source>
+        <translation>No hi ha cap sol·licitud activa per aturar.</translation>
+    </message>
+    <message>
+        <source>Request cancelled.</source>
+        <translation>Sol·licitud cancel·lada.</translation>
+    </message>
+    <message>
+        <source>Calling tool: %1</source>
+        <translation>S&apos;està cridant l&apos;eina: %1</translation>
+    </message>
+    <message>
+        <source>Tool call failed: %1</source>
+        <translation>Ha fallat la crida de l&apos;eina: %1</translation>
+    </message>
+    <message>
+        <source>AI error (code: %1)</source>
+        <translation>Error de la IA (codi: %1)</translation>
+    </message>
+    <message>
+        <source>Platform error, request cancelled: %1</source>
+        <translation>Error de la plataforma, sol·licitud cancel·lada: %1</translation>
+    </message>
+</context>
+<context>
+    <name>uos_ai::chatbot::FeishuChannel</name>
+    <message>
+        <source>Thinking...</source>
+        <translation>Pensant...</translation>
     </message>
 </context>
 </TS>

@@ -4,8 +4,6 @@ import CardBase from "./CardBase";
 import SvgIcon from "@/components/SvgIcon";
 import { useBackendStore } from "@/stores";
 import { useThemeIcon } from "@/utils/loadThemeIcon";
-import "./CardBase.css";
-import "./CommandCard.css";
 
 /**
  * 日程卡片组件

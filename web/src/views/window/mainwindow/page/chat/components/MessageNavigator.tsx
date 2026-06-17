@@ -2,6 +2,7 @@ import { defineComponent, ref, computed, watch } from "vue";
 import type { PropType } from "vue";
 import type { Conversation, Message as MessageType } from "@/types/conversation";
 import { useConversationManagerStore } from "@/stores/conversationmanager";
+import type { Assistant } from "@/types/assistant";
 
 import { UserType } from "@/types/conversation";
 import Message from "./Message";
@@ -26,6 +27,14 @@ export default defineComponent({
             default: false,
         },
         isFromHistory: {
+            type: Boolean,
+            default: false,
+        },
+        currentAssistant: {
+            type: Object as PropType<Assistant>,
+            default: () => null,
+        },
+        shouldDisableRetry: {
             type: Boolean,
             default: false,
         },
@@ -244,6 +253,7 @@ export default defineComponent({
             handleRetryMessage,
             handleSwitchToPrevious,
             handleSwitchToNext,
+            currentAssistant: computed(() => props.currentAssistant),
         };
     },
     render() {
@@ -290,6 +300,8 @@ export default defineComponent({
                                 onPlayingMessageIdChange={this.handlePlayingMessageIdChange}
                                 onSwitchToPrevious={this.handleSwitchToPrevious}
                                 onSwitchToNext={this.handleSwitchToNext}
+                                currentAssistant={this.currentAssistant || undefined}
+                                shouldDisableRetry={this.shouldDisableRetry}
                             />
                         </div>
                     );

@@ -1507,7 +1507,7 @@ OSCallContext UOSAbilityManager::doSeek(int offset)
 }
 
 // 系统字号功能实现
-OSCallContext UOSAbilityManager::doSystemFontSize(float size)
+OSCallContext UOSAbilityManager::doSystemFontSize(int size)
 {
     qCDebug(logOsControl) << "Setting system font size:" << size;
 
@@ -1524,14 +1524,13 @@ OSCallContext UOSAbilityManager::doSystemFontSize(float size)
     };
 
     // 检查字号是否有效
-    int intSize = static_cast<int>(size);
-    if (!SIZE_MAPPING.contains(intSize)) {
+    if (!SIZE_MAPPING.contains(size)) {
         qCWarning(logOsControl) << "Invalid font size:" << size;
         return ctxByError(OSCallContext::InvalidArgs);
     }
 
     // 设置字体大小
-    double realSize = SIZE_MAPPING[intSize];
+    double realSize = SIZE_MAPPING[size];
     if (!propertiesSet(osCallDbusAppearanceService, osCallDbusAppearancePath,
                       osCallDbusAppearanceInterface, "FontSize", realSize)) {
         qCWarning(logOsControl) << "Failed to set font size";
@@ -1540,7 +1539,7 @@ OSCallContext UOSAbilityManager::doSystemFontSize(float size)
 
     OSCallContext ctx;
     ctx.error = OSCallContext::NonError;
-    ctx.result["fontSize"] = intSize;
+    ctx.result["fontSize"] = size;
     return ctx;
 }
 

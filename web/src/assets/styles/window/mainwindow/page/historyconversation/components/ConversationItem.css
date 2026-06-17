@@ -134,3 +134,7 @@ html.dark {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.conversation-item__highlight {
+    color: var(--system-active-color);
+}

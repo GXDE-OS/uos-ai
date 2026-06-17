@@ -4,10 +4,9 @@ html {
     --agentstep-title-color: rgba(0, 0, 0, 0.7);
     --agentstep-content-color: rgba(0, 0, 0, 0.5);
     --agentstep-scrollbar-thumb: rgba(0, 0, 0, 0.5);
-    --agentstep-scrollbar-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1),
-                                  0 0 0 0.5px rgba(255, 255, 255, 0.1),
-                                  0 0 0 0.5px inset rgba(0, 0, 0, 0.05),
-                                  0 0 0 0.5px rgba(0, 0, 0, 0.05);
+    --agentstep-scrollbar-shadow:
+        0 0 0 0.5px rgba(255, 255, 255, 0.1), 0 0 0 0.5px rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px inset rgba(0, 0, 0, 0.05), 0 0 0 0.5px rgba(0, 0, 0, 0.05);
     --agentstep-header-expanded-bg: rgba(248, 248, 248, 0.95);
 }
 
@@ -17,17 +16,16 @@ html.dark {
     --agentstep-title-color: rgba(255, 255, 255, 0.5);
     --agentstep-content-color: rgba(255, 255, 255, 0.5);
     --agentstep-scrollbar-thumb: rgba(255, 255, 255, 0.3);
-    --agentstep-scrollbar-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.1),
-                                  0 0 0 0.5px rgba(0, 0, 0, 0.1),
-                                  0 0 0 0.5px inset rgba(255, 255, 255, 0.05),
-                                  0 0 0 0.5px rgba(255, 255, 255, 0.05);
+    --agentstep-scrollbar-shadow:
+        0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 0 0 0.5px inset rgba(255, 255, 255, 0.05),
+        0 0 0 0.5px rgba(255, 255, 255, 0.05);
     --agentstep-header-expanded-bg: rgba(0, 0, 0, 0.15);
 }
 
 /* AgentStep - Agent 任务步骤块 */
 
 .agent-step {
-    margin: 4px 0 8px;
+    margin: 0px 0 8px;
     border-radius: 10px;
     border: 1px solid var(--agentstep-border);
     background: var(--agentstep-bg);
@@ -98,6 +96,16 @@ html.dark {
     color: #aaa;
 }
 
+/* Qt5 兼容降级：移除 inset、0.5px → 1px、去重 */
+html[data-legacy-css] {
+    --agentstep-scrollbar-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+html.dark[data-legacy-css] {
+    --agentstep-scrollbar-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
 /* 脉冲动画 */
 .agent-step__pulse {
     display: block;
@@ -109,8 +117,15 @@ html.dark {
 }
 
 @keyframes agent-step-pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.35; transform: scale(0.7); }
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.35;
+        transform: scale(0.7);
+    }
 }
 
 /* 标题文字 */

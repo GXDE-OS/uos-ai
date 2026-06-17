@@ -10,6 +10,15 @@ html {
     --icon-button-hover-box-shadow: none;
     --icon-button-active-bg: rgba(0, 0, 0, 0.2);
     --icon-button-active-box-shadow: none;
+    --icon-button-filled-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.2), 0 0 0 0.5px rgba(255, 255, 255, 0.2),
+        0 0 0 0.5px rgba(0, 0, 0, 0.08), 0 0 0 0.5px rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --icon-button-filled-hover-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.2), 0 0 0 0.5px rgba(255, 255, 255, 0.2),
+        0 0 0 0.5px rgba(0, 0, 0, 0.08), 0 0 0 0.5px rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --icon-button-filled-active-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.2), 0 0 0 0.5px rgba(255, 255, 255, 0.2),
+        0 0 0 0.5px rgba(0, 0, 0, 0.08), 0 0 0 0.5px rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 html.dark {
@@ -24,6 +33,33 @@ html.dark {
     --icon-button-hover-box-shadow: 0 1px 0 0 inset rgba(255, 255, 255, 0.1), 0 -1px 0 0 inset rgba(0, 0, 0, 0.5);
     --icon-button-active-bg: rgba(0, 0, 0, 0.15);
     --icon-button-active-box-shadow: none;
+    --icon-button-filled-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.1), 0 0 0 0.5px rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px rgba(0, 0, 0, 0.4), 0 0 0 0.5px rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    --icon-button-filled-hover-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.1), 0 0 0 0.5px rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px rgba(0, 0, 0, 0.4), 0 0 0 0.5px rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    --icon-button-filled-active-shadow:
+        0 0 0 0.5px inset rgba(255, 255, 255, 0.1), 0 0 0 0.5px rgba(255, 255, 255, 0.1),
+        0 0 0 0.5px rgba(0, 0, 0, 0.4), 0 0 0 0.5px rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Qt5 兼容降级：移除 inset、0.5px → 1px、去重 */
+html[data-legacy-css] {
+    --icon-button-filled-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --icon-button-filled-hover-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --icon-button-filled-active-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+html.dark[data-legacy-css] {
+    --icon-button-filled-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    --icon-button-filled-hover-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    --icon-button-filled-active-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.4), 0 1px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
 .icon-button {
@@ -87,12 +123,7 @@ html.dark {
 /* Filled variant */
 .icon-button--filled {
     background-color: var(--icon-button-color-filled-bg);
-    box-shadow:
-        0 0 0 0.5px inset rgba(255, 255, 255, 0.2),
-        0 0 0 0.5px rgba(255, 255, 255, 0.2),
-        0 0 0 0.5px rgba(0, 0, 0, 0.08),
-        0 0 0 0.5px rgba(0, 0, 0, 0.08),
-        0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: var(--icon-button-filled-shadow);
     color: var(--icon-button-color);
 }
 
@@ -103,27 +134,42 @@ html.dark {
 
 .icon-button--filled:hover:not(.icon-button-disabled) {
     background-color: var(--icon-button-color-filled-bg);
+    box-shadow: var(--icon-button-filled-hover-shadow);
 }
 
 .icon-button--filled--advanced:hover:not(.icon-button-disabled) {
     background-color: var(--icon-button-color-filled-bg-blur);
     backdrop-filter: blur(45px);
+    box-shadow: var(--icon-button-filled-hover-shadow);
 }
 
 .icon-button--filled:active:not(.icon-button-disabled) {
     color: var(--icon-button-active-color);
     background-color: var(--icon-button-color-filled-bg);
+    box-shadow: var(--icon-button-filled-active-shadow);
 }
 
 .icon-button--filled--advanced:active:not(.icon-button-disabled) {
     color: var(--icon-button-active-color);
     background-color: var(--icon-button-color-filled-bg-blur);
     backdrop-filter: blur(45px);
+    box-shadow: var(--icon-button-filled-active-shadow);
 }
 
 /* Disabled state child elements */
 .icon-button-disabled * {
     pointer-events: none;
+}
+
+/* Color-only hover/active: only color changes, no background/box-shadow */
+.icon-button--color-only:hover:not(.icon-button-disabled) {
+    background: transparent;
+    box-shadow: none;
+}
+
+.icon-button--color-only:active:not(.icon-button-disabled) {
+    background: transparent;
+    box-shadow: none;
 }
 
 /* Focus visible for keyboard navigation */
@@ -157,4 +203,26 @@ html.dark {
         transition: none !important;
         animation: none !important;
     }
+}
+
+/* Qt5 兼容降级：使用伪元素模拟内描边（排除 bordered、color-only、filled 变体以及 group-header 折叠按钮） */
+html.dark[data-legacy-css]
+    .icon-button:hover:not(.icon-button-disabled):not(.icon-button--bordered):not(.icon-button--color-only):not(
+        .icon-button--filled
+    ):not(.group-header__collapse-btn):not(.group-header__collapse-btn--collapsed) {
+    --icon-button-hover-box-shadow: none;
+    position: relative;
+}
+
+html.dark[data-legacy-css]
+    .icon-button:hover:not(.icon-button-disabled):not(.icon-button--bordered):not(.icon-button--color-only):not(
+        .icon-button--filled
+    ):not(.group-header__collapse-btn):not(.group-header__collapse-btn--collapsed)::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    pointer-events: none;
 }

@@ -119,7 +119,7 @@ QVariantHash OutlineAgent::processRequest(const ModelMessage &question, const QL
 
         // Preliminary search: gather topic context before generating outline
         if (params.value(STR_KEY_ONLINE).toBool() && !userText.isEmpty()) {
-            auto searchEngine = SearchEngineFactory::create(SearchEngineFactory::EngineType::Baidu);
+            auto searchEngine = SearchEngineFactory::create(SearchEngineFactory::EngineType::Volcano);
             if (!searchEngine) {
                 qCWarning(logResearch) << "OutlineAgent: failed to create search engine, skipping preliminary search";
             } else {

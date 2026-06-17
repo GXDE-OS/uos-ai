@@ -4,8 +4,6 @@ import SvgIcon from "@/components/SvgIcon";
 import { useBackendStore } from "@/stores";
 import { debounce } from "lodash-es";
 import CardBase from "./CardBase";
-import "./CardBase.css";
-import "./CommandCard.css";
 
 /**
  * 滑块卡片组件

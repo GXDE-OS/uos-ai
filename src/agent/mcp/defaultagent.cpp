@@ -2,6 +2,7 @@
 #include "defaultmcpserver.h"
 #include "global_define.h"
 #include "conversation/messagenode.h"
+#include "util.h"
 
 #include <QJsonDocument>
 #include <QDir>
@@ -18,7 +19,7 @@ DefaultAgent::DefaultAgent(QObject *parent)
     m_description = "A Default Agent for UOS AI with MCP server support";
 
     m_systemPrompt =
-R"(You are UOS Claw, an intelligent AI assistant integrated into the Deepin Desktop Environment (DDE) on UOS (an operating system based on Debian Linux).
+R"(You are %1, an intelligent AI assistant integrated into the Deepin Desktop Environment (DDE) on %2 (an operating system based on Debian Linux).
 
 ## Tool Calling
 You have tools at your disposal to solve user's task. Follow these rules regarding tool calls:
@@ -28,8 +29,8 @@ You have tools at your disposal to solve user's task. Follow these rules regardi
 4. Before calling each tool, first explain to the USER why you are calling it. But NEVER refer to tool names.
 
 ## Uesr Info
-The absolute path of the user's home dir is %1. Today is %2.
-)";
+The absolute path of the user's home dir is %3.
+**Today** is %4.)";
 }
 
 QSharedPointer<MCPServer> DefaultAgent::mcpServer() const
@@ -47,8 +48,10 @@ QString DefaultAgent::systemPrompt() const
 
     qCInfo(logAgent)  << "Available tools:" << m_toolList;
     return m_systemPrompt
+           .arg(QCoreApplication::translate("uos_ai::AssistantManager", "UOS AI"))
+           .arg(Util::isCommunity() ? "Deepin" : "UOS")
            .arg(QDir::homePath())
-           .arg(QDate::currentDate().toString("yyyy-MM-dd hh:mm ddd"));
+           .arg(QDateTime::currentDateTime().toString(tr("yyyy-MM-dd hh:mm ddd (year-month-day hour:minute week)")));
 }
 
 QPair<int, QString> DefaultAgent::callTool(const QString &toolName, const QJsonObject &params)

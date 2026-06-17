@@ -104,12 +104,11 @@ html.dark {
     background-color: var(--mcp-services-selector-dropdown-bg-color);
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: var(--radius-large);
-    box-shadow:
-        0 0 0 0.5px inset rgba(255, 255, 255, 0.1),
+    box-shadow: var(--mcp-services-selector-dropdown-shadow, 0 0 0 0.5px inset rgba(255, 255, 255, 0.1),
         0 0 0 0.5px rgba(255, 255, 255, 0.1),
         0 0 0 0.5px rgba(0, 0, 0, 0.1),
         0 0 0 0.5px rgba(0, 0, 0, 0.1),
-        0 6px 16px 0 rgba(0, 0, 0, 0.2);
+        0 6px 16px 0 rgba(0, 0, 0, 0.2));
     overflow: hidden;
     z-index: 1000;
 }
@@ -117,6 +116,13 @@ html.dark {
 .mcp-services-selector__dropdown--advanced-css {
     background-color: var(--mcp-services-selector-dropdown-bg-blur-color);
     backdrop-filter: blur(45px);
+}
+
+/* Qt5 兼容降级：移除 inset、0.5px → 1px、去重 */
+html[data-legacy-css] {
+    --mcp-services-selector-dropdown-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 0 0 1px rgba(0, 0, 0, 0.1), 0 6px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .mcp-services-selector__divider {

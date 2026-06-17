@@ -24,6 +24,7 @@
 #include <QPainter>
 #include <QFileInfo>
 #include <QImageReader>
+#include <QBuffer>
 
 #include <QLoggingCategory>
 Q_DECLARE_LOGGING_CATEGORY(logUtils)
@@ -257,16 +258,25 @@ bool Util::launchDefaultBrowser(QString url) {
 
 QString Util::imageData2TmpFile(const QString &tmpDir, const QString &imageData)
 {
-    QString dataHash = QCryptographicHash::hash(imageData.toUtf8(), QCryptographicHash::Md5).toHex(); //TODO 可能存在hash冲突
-    QString imageFileName = QString("%1/%2.jpg")
+    QByteArray imageDataBytes = QByteArray::fromBase64(imageData.toUtf8());
+
+    QBuffer probeBuffer(&imageDataBytes);
+    probeBuffer.open(QIODevice::ReadOnly);
+    QString format = QString::fromLatin1(QImageReader::imageFormat(&probeBuffer));
+    probeBuffer.close();
+
+    QString suffix = format.isEmpty() ? "jpg" : format;
+    QString dataHash = QCryptographicHash::hash(imageDataBytes, QCryptographicHash::Md5).toHex();
+    QString imageFileName = QString("%1/%2.%3")
                             .arg(tmpDir)
-                            .arg(dataHash);
+                            .arg(dataHash)
+                            .arg(suffix);
     QFile file(imageFileName);
     if (file.exists())
         return imageFileName;
 
     if (file.open(QIODevice::WriteOnly)) {
-        file.write(QByteArray::fromBase64(imageData.toUtf8()));
+        file.write(imageDataBytes);
         file.close();
     }
 

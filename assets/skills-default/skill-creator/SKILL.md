@@ -110,7 +110,9 @@ Claude reads only the relevant reference file.
 
 #### Skill Storage Location
 
-**IMPORTANT:** All skills created using this skill-creator must be stored in `$HOME/.uos-ai/skills` directory. This is the canonical location where the UOS-AI system expects to find user-created skills. When creating or packaging a skill, ensure it is placed in (or will be installed to) this directory.
+**IMPORTANT:** UOS AI user-created skills must be stored in the UOS AI user skill install path. If the chat/tool context provides a `<UOS_AI_SKILL_PATHS>` block, use its `User skill install path` value as the source of truth. If that block is unavailable, default to `$HOME/.uos-ai/skills`.
+
+Create each new skill as a subdirectory of that install path, for example `$HOME/.uos-ai/skills/<skill-name>/SKILL.md`. Do not use `$XDG_SKILLS_HOME`, `$HOME/.claude/skills`, or `$HOME/.agents/skills` as the UOS AI storage location unless the user explicitly asks for that external ecosystem. When packaging a skill instead of writing it directly into the install path, tell the user to import the package with `install_skill` or `uos-ai-cli skill-add` so UOS AI copies it into the user skill install path.
 
 #### Principle of Lack of Surprise
 

@@ -18,6 +18,12 @@ Use this skill when the user:
 - Wants to search for tools, templates, or workflows
 - Mentions they wish they had help with a specific domain (design, testing, deployment, etc.)
 
+## UOS AI Skill storage
+
+When installing a discovered skill for UOS AI, use the UOS AI user skill install path. If the chat/tool context provides a `<UOS_AI_SKILL_PATHS>` block, use its `User skill install path` value as the source of truth. If that block is unavailable, default to `$HOME/.uos-ai/skills`.
+
+The Skills CLI may download packages into an external ecosystem directory. Do not assume UOS AI scans that directory. After fetching a package, import the downloaded skill directory or archive with `install_skill` or `uos-ai-cli skill-add` so UOS AI copies it into the user skill install path.
+
 ## What is the Skills CLI?
 
 The Skills CLI (`npx skills`) is the package manager for the open agent skills ecosystem. Skills are modular packages that extend agent capabilities with specialized knowledge, workflows, and tools.
@@ -86,25 +92,34 @@ Learn more: https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practic
 
 ### Step 4: Offer to Install
 
-If the user wants to proceed, you can install the skill for them:
+If the user wants to proceed, install with the native UOS AI skill importer whenever you have a local path or direct download URL. In chat environments where the `install_skill` tool is available, call it first:
 
-```bash
-# First install the skill globally
-npx skills add <owner/repo@skill> -g -y
-
-# Then move it to $HOME/.uos-ai/skills
-# The skill is usually installed to $XDG_SKILLS_HOME or ~/.local/share/skills/<skill-name>
-SKILL_NAME=$(basename <owner/repo@skill> | cut -d'@' -f2)
-mkdir -p "$HOME/.uos-ai/skills"
-mv "$XDG_SKILLS_HOME/$SKILL_NAME" "$HOME/.uos-ai/skills/"
-
-# Alternative path fallback (if XDG_SKILLS_HOME is not set):
-mv "$HOME/.local/share/skills/$SKILL_NAME" "$HOME/.uos-ai/skills/"
+```json
+{"source":"<path-or-url>"}
 ```
 
-The `-g` flag installs globally (user-level) and `-y` skips confirmation prompts.
+If `install_skill` is unavailable, use the CLI fallback:
 
-**Important:** After installation, ensure the skill is moved from its default location to `$HOME/.uos-ai/skills` and the original location is cleaned up. The skill should only exist in `$HOME/.uos-ai/skills`.
+```bash
+uos-ai-cli skill-add "<path-or-url>"
+```
+
+Supported sources include a skill directory, `SKILL.md`, `.skill`/`.zip`/`.tar.*` archives, and direct `http(s)` URLs that download a `SKILL.md` or skill archive.
+
+If the search result only gives a package reference such as `<owner/repo@skill>`, use the Skills CLI to fetch it first. Then locate the downloaded skill directory or archive and import that concrete path with `install_skill` or `uos-ai-cli skill-add`. Do not assume `$XDG_SKILLS_HOME/<skill-name>` is the UOS AI storage path.
+
+```bash
+npx skills add <owner/repo@skill> -g -y
+uos-ai-cli skill-add "<downloaded-skill-directory-or-archive>"
+```
+
+When `install_skill` is available, use the downloaded path as the `source` instead of asking the user to run the CLI command. After import, the skill should live under the UOS AI user skill install path.
+
+After installation, verify it is available:
+
+```bash
+uos-ai-cli skills
+```
 
 ## Common Skill Categories
 

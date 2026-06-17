@@ -7,6 +7,12 @@ import SubMenu from "./SubMenu";
 import type { MenuItem as MenuItemType } from "@/types/menu";
 import "@/assets/styles/components/menu/Menu.css";
 
+/** 菜单位置坐标 */
+export interface MenuPosition {
+    x: number;
+    y: number;
+}
+
 export default defineComponent({
     name: "Menu",
     props: {
@@ -35,6 +41,11 @@ export default defineComponent({
             type: Boolean,
             default: false,
         },
+        /** 直接指定菜单位置（用于右键菜单场景），优先级高于 triggerRef */
+        position: {
+            type: Object as PropType<MenuPosition | null>,
+            default: null,
+        },
     },
     emits: {
         updateVisible: (visible: boolean) => true,
@@ -55,33 +66,44 @@ export default defineComponent({
         }));
 
         const updateMenuPosition = () => {
-            if (!menuRef.value || !props.triggerRef) return;
+            if (!menuRef.value) return;
 
             const menuRect = menuRef.value.getBoundingClientRect();
-            const triggerRect = props.triggerRef.getBoundingClientRect();
             const viewportWidth = window.innerWidth;
             const viewportHeight = window.innerHeight;
 
             let top = 0;
             let left = 0;
 
-            switch (props.placement) {
-                case "bottom":
-                    top = triggerRect.bottom + props.offset;
-                    left = triggerRect.left;
-                    break;
-                case "top":
-                    top = triggerRect.top - menuRect.height - props.offset;
-                    left = triggerRect.left;
-                    break;
-                case "left":
-                    top = triggerRect.top;
-                    left = triggerRect.left - menuRect.width - props.offset;
-                    break;
-                case "right":
-                    top = triggerRect.top;
-                    left = triggerRect.right + props.offset;
-                    break;
+            // 如果提供了 position，直接使用指定位置（右键菜单场景）
+            if (props.position) {
+                top = props.position.y;
+                left = props.position.x;
+            } else if (props.triggerRef) {
+                // 否则基于 triggerRef 元素定位
+                const triggerRect = props.triggerRef.getBoundingClientRect();
+
+                switch (props.placement) {
+                    case "bottom":
+                        top = triggerRect.bottom + props.offset;
+                        left = triggerRect.left;
+                        break;
+                    case "top":
+                        top = triggerRect.top - menuRect.height - props.offset;
+                        left = triggerRect.left;
+                        break;
+                    case "left":
+                        top = triggerRect.top;
+                        left = triggerRect.left - menuRect.width - props.offset;
+                        break;
+                    case "right":
+                        top = triggerRect.top;
+                        left = triggerRect.right + props.offset;
+                        break;
+                }
+
+                // 定位完成后，根据菜单实际位置与触发元素的相对关系决定动画方向
+                menuFromTop.value = top >= triggerRect.bottom;
             }
 
             // 边界检测：防止超出视口
@@ -99,10 +121,6 @@ export default defineComponent({
             }
             menuRef.value.style.top = `${top}px`;
             menuRef.value.style.left = `${left}px`;
-
-            // 定位完成后，根据菜单实际位置与触发元素的相对关系决定动画方向
-            // 菜单顶部 >= 触发元素底部 → 菜单在下方，从上向下入场；否则从下向上入场
-            menuFromTop.value = top >= triggerRect.bottom;
         };
 
         const handleClickOutside = (event: MouseEvent) => {

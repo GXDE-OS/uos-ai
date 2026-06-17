@@ -94,3 +94,18 @@ html.dark {
 .switch-control--disabled * {
     pointer-events: none;
 }
+
+/* Qt5 兼容降级：移除 inset、0.5px → 1px、去重 */
+html[data-legacy-css] {
+    --switch-control-bg-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    --switch-control-checked-bg-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+    --switch-control-thumb-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+    --switch-control-checked-thumb-box-shadow:
+        0 6px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 1px 1px rgba(0, 0, 0, 0.2);
+}
+html.dark[data-legacy-css] {
+    --switch-control-checked-bg-box-shadow: none;
+    --switch-control-thumb-box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 4px 6px 0 rgba(31, 31, 31, 0.4);
+}

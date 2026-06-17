@@ -238,10 +238,17 @@ bool DConfigManager::checkConfigAvailable(const QString &config, const QString &
     dialog.addButton(QObject::tr("Restart immediately"), true, DDialog::ButtonWarning);
     
     if (dialog.exec() == DDialog::Accepted) {
+#ifdef COMPILE_ON_V25
+        QDBusInterface shutdownInterface("org.deepin.dde.ShutdownFront1",
+                                        "/org/deepin/dde/ShutdownFront1",
+                                        "org.deepin.dde.ShutdownFront1",
+                                        QDBusConnection::sessionBus());
+#else
         QDBusInterface shutdownInterface("com.deepin.dde.shutdownFront",
                                         "/com/deepin/dde/shutdownFront",
                                         "com.deepin.dde.shutdownFront",
                                         QDBusConnection::sessionBus());
+#endif
         
         if (shutdownInterface.isValid()) {
             shutdownInterface.call("Restart");

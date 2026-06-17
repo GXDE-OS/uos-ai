@@ -1,242 +1,410 @@
-# UOS AI Assistant|uos-ai-assistant|
+# UOS AI|uos-ai-assistant|
 
 ## Overview
-UOS AI Assistant is a comprehensive assistant with main features including writing Q&A, text-to-image generation, natural language control, document summarization, etc. It aims to provide users with full-range AI assistance. The main capabilities are introduced as follows:
 
-**Writing Q&A**
+UOS AI is an integrated AI assistant. In the current version, its main capabilities include **AI Writing**, **AI Knowledge Base**, **AI Translation**, and **MCP&Skills**, providing a unified AI-assisted experience.
 
-UOS AI Assistant can generate various forms of content based on user questions or instructions, including text, images, etc., and provide detailed answers.  
-In office environments, you can use this feature to quickly generate meeting minutes, draft reports, etc. For learning purposes, you can query materials and obtain detailed explanations of knowledge points.
-
-**Natural Language Interaction (System Control)**
-
-This feature allows users to interact with the assistant through natural language to control the computer system or applications, such as opening apps, adjusting system parameters, creating schedules, etc.  
-Simply give instructions like "Remind me to attend the meeting at 3 PM," and the assistant will automatically set the schedule. You can also complete system settings with a single sentence, such as "Set screen brightness to 20%" or "Change wallpaper." Additionally, you can open apps with a single sentence, such as "Open WPS," without searching through the app list.
-
-**Personal Knowledge Base**
-
-The personal knowledge base allows users to add their own materials to the [Personal Knowledge Assistant]. After adding, the AI can answer questions or write based on the user's knowledge.
-
-**AI FollowAlong**
-
-You can activate the AI FollowAlong on any screen of the system (including most third-party applications) by selecting words or paragraphs. The AI FollowAlong offers features like AI search, AI explanation, AI summarization, AI translation, as well as continuation, expansion, error correction, and polishing.
+In this version, users mainly work with the main window and the settings window. The main window is used for conversations, assistant switching, and history access. The settings window is used to manage models, the knowledge base, MCP, FollowAlong, IM integration, and proxy options.
 
 ## Quick Start
-### Understanding the Interface
 
-UOS AI Assistant supports two interface modes, which can be switched based on different usage scenarios. To switch modes, go to the [More] submenu in the top toolbar and select the [Mode] option to choose the desired mode.
+### Main Window
 
-**Window Mode**
+The current UOS AI main window is composed of the left navigation area, the central content area, and the input area at the bottom. The left side is used to switch feature entries, the center displays the welcome page, conversation content, or history content, and the bottom area is used to enter and send requests.
 
-The interface is horizontal and can be moved or resized freely, suitable for an immersive experience.
+![image-20260508174703006](fig/image-20260508174703006.png)
 
-![Image](fig/1.1.png)
+The model selector in the upper-left corner currently shows **Intelligent Routing**. Click it to open the model list, switch models, or enter the model adding flow.
 
+![image-20260508174715964](fig/image-20260508174715964.png)
 
-**Sidebar Mode**
+The current dropdown includes:
 
-The interface is vertical, fixed on the left side of the screen, and cannot be moved, but its width can be adjusted. This mode is suitable for scenarios where the assistant is used alongside other applications to provide AI assistance.
+- **Online Model**: opens the online model entry.
+- **Intelligent Routing**: switches back to the current routing mode.
+- **Add Model**: opens the model adding flow.
 
-![Image](fig/1.2.png)
+### Left Navigation
 
-### Text Chat Mode
+The left side of the main window currently includes these main entries:
 
-**Voice Input**
+**New Chat**
 
-The voice input feature allows users to communicate with the AI Assistant by speaking, eliminating the need for manual typing. The steps are as follows:  
-1. Activate voice input: Click the microphone icon next to the input box to activate voice input mode.  
-2. Start speaking: After activating voice input, you can start speaking. UOS AI Assistant will listen and transcribe your voice input in real time.  
-3. Send text: After completing the input, click the send button or press Enter to send the text to the AI Assistant.
+Starts a new session and returns to the welcome page.
 
-![Image](fig/1.3.png)
+**AI Writing**
 
+Opens the writing page for reports, notices, summaries, outlines, and similar structured content.
 
-**Text Input**
+**AI Knowledge Base**
 
-Text input is the traditional method of text communication. Users can type questions, system operation commands, or writing prompts in the input box.  
-1. Click the input box: Position the cursor in the input box.  
-2. Type text: Enter the question or command you want to ask or execute.  
-3. Send text: After completing the input, click the send button or press Enter to send the text to the AI Assistant.
+Used for question answering based on imported knowledge base files. Files must be added first in **Knowledge Base Management**.
 
-![Image](fig/1.4.png)
+**MCP&Skills**
 
+Used to call built-in or enabled MCP services and to manage Skills.
 
-**Input Box Features**
+**AI Translation**
 
-1. Multilingual support: The text input of UOS AI Assistant supports Chinese, English, and other languages (depending on the supported languages of the connected large model), but voice input only supports Chinese and English.  
-2. Real-time feedback: During voice input, the input box displays dynamic icons to inform the user that the assistant is listening to the command.  
-3. File support: You can drag files into the input box and send them to the assistant. The assistant can summarize the file content or answer questions based on the file content.  
-4. Line break input: Press Ctrl+Enter to add a line break.  
-5. The chat area is where UOS AI Assistant displays conversation history and interaction feedback. It can present text and image replies and integrates enhanced features like read-aloud and copy. It also supports clearing the current chat history.  
-6. If you are not satisfied with the answer to a question, you can click [Regenerate] to generate a new answer. You can also click the answer toggle button to compare each generated answer.
+Used for bilingual translation, formal rewording, and short text translation tasks.
 
-### Voice Conversation Mode
+**More**
 
-The voice conversation feature of UOS AI Assistant allows users to directly communicate with the assistant via voice, and the AI Assistant will respond with voice as well. This feature simulates real human-to-human conversation scenarios, offering natural and friendly interaction.
+Expands additional entries. In the current UI, **Agent Store** is shown there.
 
-Users can ask questions to UOS AI and continue with follow-up questions via voice, making the questioning process as natural as discussing with a person. Users can also treat UOS AI Assistant as a companion for storytelling, chatting, or seeking advice.
+**Agent Store**
 
-![Image](fig/1.5.png)
+Located under the expanded **More** section and used to open the Agent Store entry.
 
-### Getting Started
+**Chat History**
 
-Find the UOS AI application icon in the taskbar and click to open the app.  
-Upon first entry, a pop-up will prompt you to claim a free account. Click the claim button to get a free account.  
-Note: The free account giveaway may end, and the specific activity duration is subject to the in-app display. If you do not use the free account, you can also configure your own large model account to use UOS AI Assistant.  
-After completing the account claim, enter the app, select UOS AI Assistant, and start chatting and answering questions (UOS AI Assistant is selected by default).
+Shows the current session title list.
 
-## Smart Agents
+**Chat History management button**
+
+Located on the right side of **Chat History** and used to open the history page.
+
+### Input Area
+
+The input area at the bottom is the main action area of the window.
+
+- **Input box**: used to enter questions, writing prompts, or translation requests.
+- **DeepThink**: turns deep reasoning on or off.
+- **Search**: turns online search on or off.
+- **Attachment entry**: used to add supplementary content.
+- **Microphone**: used for voice input when available.
+- **Send button**: sends the current input.
+
+## Assistants
 
 ### UOS AI Assistant
-UOS AI Assistant is a comprehensive assistant capable of completing various tasks, such as:  
-1. AI Q&A: Directly answers common sense questions. When the official free Deepseek model is selected, it can also perform online searches to answer questions with timeliness or topics not covered by the large model's knowledge.  
-2. AI Writing: Completes writing tasks based on your prompts, such as "Write a monthly work summary based on all my weekly reports this month (provided via files)."  
-3. System Control: Adjust screen brightness to 40%, open the WPS app, create schedules.  
-4. AI Image Generation: Generates images based on your needs, such as "Draw a picture: Sunset and a lone bird flying together."  
-Note: System control and AI image generation rely on specific models and do not support local models.
 
-![Image](fig/2.1.png)
+UOS AI is the default general-purpose assistant. It can be used for general Q&A, rewriting, writing assistance, and follow-up questions in the same conversation.
 
+During normal use:
 
-### UOS Play Assistant
+1. Enter a request in the input area and click **Send**.
+2. After the request is submitted, the interface enters a running state, and the send button switches to **Stop**.
+3. After the response is generated, the result remains in the current session and follow-up prompts can continue there.
 
-This assistant includes the user manual and solutions for UOS systems and related applications. It can help you answer questions about UOS systems and related applications.  
-It will be your 7x24h customer service. Any questions about UOS systems and applications can be consulted with it.
+### Running-State Interaction
 
-![Image](fig/2.2.png)
+During actual use, users most often interact with the interface after a request has already been sent. In the current version:
 
-
-### Personal Knowledge Assistant
-
-The Personal Knowledge Assistant is a knowledge management and application solution tailored for individuals. This agent allows you to add your own knowledge to the AI's knowledge base. When answering questions or writing, the AI will prioritize referencing your knowledge base. This solves the problem of the AI not knowing your private knowledge, making the AI-generated content more aligned with your work environment.  
-Select the Personal Knowledge Assistant from the agent list to start using it.  
-Note: Before using the Personal Knowledge Assistant, you need to add your documents to the knowledge base. After successful addition, you can ask questions about the knowledge base in the [Personal Knowledge Assistant] agent, and the AI-generated answers will be based on your knowledge base.  
-For specific addition methods, refer to the [Settings] - [Knowledge Base Settings] section below.
-
-![Image](fig/2.3.png)
-
-
-## Settings
-### Model Access
-
-UOS AI Assistant supports three types of models. The usage methods are as follows:
-
-**Online Models**
-
-After launching the app, claim a free account. Once claimed, you can start the trial.  
-If you miss the free account pop-up during the initial launch, you can claim it in the settings.  
-In addition to claiming a free account, you can also configure your own online models.
-
-
-![Image](fig/3.1.png)
-
-
-You can also add your own AI model accounts to adapt to various specific usage scenarios. Click the [Add] button in the [Online Models] section to bring up the [Add Model] pop-up. You can select the desired model, fill in parameters like API Key, and start using the model.
-
-
-![Image](fig/3.2.png)
-
-Currently, the officially adapted models include Baidu Qianfan, iFlytek Spark, 360 ZhiNao, and Zhipu ChatGLM.
-
-![Image](fig/3.3.png)
-
-
-If you need to access other models, you can also do so via custom model access. Custom models support all OpenAI-format API interfaces.
-
-
-![Image](fig/3.4.png)
-
-
-**Local Models**
-
-Open the settings, install the [Vectorization Model Plugin] first, then install the [Deepseek] local model. After successful installation, select the Yourong large model in the model list.  
-Note: Before installing and using the Deepseek model, you must install the [Vectorization Model Plugin]; otherwise, the local model cannot be downloaded or used.
-
-![Image](fig/3.5.png)
-
-**Privately Deployed Models**
-
-Open the settings, and in the [Privately Deployed Models] section, you can access privately deployed models, allowing UOS AI to use your own models to answer questions or write.  
-Note: Currently, only OpenAI-format APIs are supported.
-
-### Knowledge Base Management
-
-Before using the knowledge base, you need to create your knowledge base. In the [Settings] - [Knowledge Base Management] module, you can create and manage your knowledge base.  
-Click the [Add] button to add files to the knowledge base. After successful addition, you can ask questions about the knowledge base in the [Personal Knowledge Assistant] agent, and the AI-generated answers will be based on your knowledge base.  
-Click the [Delete] button to delete added documents one by one.
-
-![Image](fig/3.6.png)
-
-### General Settings
-
-In the settings, in addition to configuring models and knowledge base management, you can also:  
-1. Enable or disable the Companion feature. When disabled, the Companion icon will not appear when selecting text.  
-2. Set the app's proxy to facilitate access to all models.  
-3. View the usage agreement.
-
-## Plugins
-### AI FollowAlong
-
-**Activation Method**
-
-On any system interface (including most third-party applications), select text, and the UOS AI icon <img src="../common/uos-ai-assistant-icon.svg" alt="Image" style="zoom: 25%;" /> will appear. Hover the mouse over the icon for about 0.5 seconds, and the Companion toolbar will appear. Click anywhere outside the toolbar or press Esc to close the Companion toolbar.
-
-![Image](fig/4.1.png)
-
-**Toolbar Functions**
-
-| Function Name | Explanation                                                  |
-| ------------- | ------------------------------------------------------------ |
-| Icon          | Click to open the UOS AI Assistant panel.                    |
-| Search        | Opens AI search in the browser to provide in-depth explanations of selected words. |
-| Explain | Provides clear and easy-to-understand explanations of selected words. |
-| Summary | Concise summarization of selected words.                     |
-| Translate  | Translates selected text into Chinese/English.               |
-| Continue Writing | Continues writing content that aligns with the original meaning of the selected words. |
-| Expand     | Expands on the selected words, adding details or descriptions to enrich the content. |
-| Correct | Corrects typos and inappropriate wording in the selected words. |
-| Retouch | Adjusts and polishes the style and wording of the selected words based on the chosen polishing style. |
-| Hide         | Hides the Companion feature. It will no longer appear when selecting text, but can be re-enabled in UOS AI settings or activated using the shortcut Super+Space. |
-
-**Companion Generation Panel**
-
-Click any Companion function to open the quick generation panel and generate results in real time. At the top of the panel, you can switch to other Companion functions.
-
-If satisfied with the generated results, click **Paste to Text** in any input box to paste the results into the input box, or click **Copy** to copy the results to the clipboard.
-
-If unsatisfied with the generated results, click **Regenerate** to generate new content.
-
-To further adjust the generated results, click **Continue Conversation** or click <img src="../common/sent.svg" alt="Image" /> to bring the current conversation into the UOS AI Assistant dialog box and send new instructions for adjustments.
-
-![Image](fig/4.2.png)
+1. After entering content in the input area, click **Send** to submit it. Some scenes also support direct submission with Enter.
+2. After the request is sent, the interface enters a running state. Common states include reasoning, search, tool calls, and answer generation.
+3. While the assistant is still generating content, the send button switches to **Stop**, allowing the current task to be interrupted.
+4. After generation is complete, the current session remains open so the user can continue with follow-up requests.
+5. Both in-progress content and finished results remain in the conversation and can later be reopened from the history list.
 
 ### AI Writing
 
-**Activation Method**
+AI Writing is used to generate structured documents. In the current version, it is easiest to understand in three stages: before writing, during writing, and after writing.
 
-In most system input boxes, while in input mode, use the shortcut **Super+Space** to activate AI Writing. The panel can be closed by clicking the x or pressing Esc.
+#### Before Writing
 
-![Image](fig/5.1.png)
+After entering **AI Writing**, the input area switches to a writing template with variable placeholders. Users can fill in the template directly or enter a natural-language request.
 
-**Functions**
+![image-20260508174756636](fig/image-20260508174756636.png)
 
-AI Writing provides 7 prompt templates for writing scenarios, including articles, outlines, and notices.
+The current template includes fields such as identity, document type, topic, target length, and content requirements.
 
-Select any template, replace the [blue keywords] in the template, and press Enter or click <img src="../common/sent.svg" alt="Image"/> to send.
+The attachment entry on the lower-right side of the input area can be used to open supplementary content sources. In the current version, the main sources are:
 
-![Image](fig/5.2.png)
+1. **Outline**: used to provide a chapter structure before generating the document.
+2. **Local File**: used to upload local reference files so the generated content can use them as supporting material.
 
-After the large model generates content based on the prompts:
+#### During Writing
 
-If satisfied with the generated results, click **Paste to Text** in any input box to paste the results into the input box, or click **Copy** to copy the results to the clipboard.
+After the writing request is sent, AI Writing first enters the outline generation flow. If the task is suitable for structured writing, the page first shows **Generating outline** and then produces a chapter-based outline draft.
 
-If unsatisfied with the generated results, click **Regenerate** to generate new content.
+1. After the writing request is submitted, the page enters the outline generation state.
+2. After the outline is generated, a chapter structure appears on the left side.
+3. Users can click **Generate document from outline** to continue into the document generation flow.
 
-To further adjust the generated results, click the top input box "Modify the generated content, change the tone..." and send new instructions for adjustments.
+During outline editing, users can adjust chapter content directly:
 
-![Image](fig/5.3.png)
+1. Click the **plus** icon in the upper-right corner of a chapter to add a new item under that chapter.
+2. Click the **delete** icon in the upper-right corner of a chapter to remove it.
+3. The chapter order can be adjusted through the drag handle on the left side of each chapter.
 
-## Version Differences Explanation
+![image-20260508174820523](fig/image-20260508174820523.png)
 
-Due to differences in device performance, system versions, and other factors, features such as local models, personal knowledge base, and online models may not be supported on certain versions or devices.  
-It is recommended to use the latest system and update the UOS AI application to the newest version. Additionally, use devices with better performance to experience the full range of AI capabilities.
+After **Generate document from outline** is clicked, the page continues through the main processing stages such as collecting materials and generating the document.
+
+#### After Writing
+
+After document generation is complete, the page enters an editable document stage. The left side keeps the outline and generation summary, while the right side shows the generated article in the editor.
+
+![image-20260508174841358](fig/image-20260508174841358.png)
+
+At this stage, users can:
+
+1. Continue editing the generated article directly in the document area.
+2. Use the top toolbar for common formatting operations.
+3. Enter follow-up requirements in the bottom input area to refine the generated content.
+4. Export the current document through the export menu.
+
+Clicking the export entry on the document card opens the export menu. The current visible items include:
+
+- **Save as PDF**
+- **Save as Markdown**
+- **Save as Word**
+
+![6|writing export menu](fig/p06-writing-export-menu.png)
+
+In the verified workflow, exporting to PDF enters the save flow and produces a local output file successfully.
+
+### AI Knowledge Base
+
+AI Knowledge Base is used for question answering based on imported documents.
+
+After entering **AI Knowledge Base**, users can ask questions directly in the input area.
+
+![image-20260508175000227](fig/image-20260508175000227.png)
+
+If the knowledge base has not yet been configured, the page prompts the user to configure it first. If files have already been imported, the answer area can display both the response and its referenced source files.
+
+![image-20260508175016724](fig/image-20260508175016724.png)
+
+Based on the imported materials, the system can return a direct answer. For example, when asking when an expense report should be submitted after returning from a business trip, the current verified answer flow returns the result based on the imported reimbursement policy content.
+
+### AI Translation
+
+AI Translation is used for translation tasks.
+
+After entering **AI Translation**, the page shows example cards. Users can click an example or enter their own translation request.
+
+![image-20260508175038781](fig/image-20260508175038781.png)
+
+In the verified English UI, entering a Chinese sentence such as “本周部署已经完成，请大家查看最新看板。” produces an English result successfully.
+
+![image-20260508175046988](fig/image-20260508175046988.png)
+
+### MCP&Skills
+
+**MCP&Skills** is used to call extension capabilities and manage MCP services and Skills in one place.
+
+The top area currently provides two entries:
+
+1. **My MCP Services**
+2. **My Skills**
+
+The middle area displays sample capability cards, and the bottom input area is used to enter MCP&Skills instructions directly.
+
+![image-20260508175100240](fig/image-20260508175100240.png)
+
+In the verified workflow, after entering a request such as checking the current system time, the page enters a running state and returns the result. While the task is running, the send button switches to **Stop**.
+
+Click **My MCP Services** to open the services list page. The currently visible services include:
+
+- `uos-mcp`
+- `12306-mcp`
+- `excel`
+- `fetch`
+- `mcp-server-chart`
+- `word-document-server`
+
+Each service entry includes a switch on the right side for enabling or disabling the service.
+
+![12|mcp services](fig/p12-mcp-services.png)
+
+The filter dropdown in the upper-right corner currently includes:
+
+- **All**
+- **Built-in only**
+- **Custom only**
+
+![13|mcp filter](fig/p13-mcp-filter.png)
+
+Click **My Skills** to open the Skills list page. In the current page, the upper-right area includes actions such as refreshing the list and importing a skill, while each skill entry includes an enable switch.
+
+![14|skills page](fig/p14-skills-page.png)
+
+## Chat History
+
+Click the management button on the right side of **Chat History** to open the history page.
+
+![15|history page](fig/p15-history.png)
+
+On the history page:
+
+1. The top **search** button is used to expand the conversation search field.
+2. The **batch management** button is used to enter multi-selection mode.
+3. The filter dropdown in the upper-right corner is used to switch the visible scope.
+4. Clicking a conversation item reopens that conversation.
+
+After search is expanded, the top area shows the search input field:
+
+![16|history search](fig/p16-history-search.png)
+
+After batch management is entered, the bottom area shows the batch action bar and supports selecting conversations:
+
+![17|history batch](fig/p17-history-batch.png)
+
+The current filter dropdown can be expanded to switch the visible history scope by assistant category:
+
+![18|history filter](fig/p18-history-filter.png)
+
+## Settings
+
+Important configuration items in the current version are concentrated in the settings window. The left side of the settings window currently includes:
+
+- **Model Configuration**
+- **Online model**
+- **Local model**
+- **Private deployment model**
+- **MCP Server**
+- **UOS AI FollowAlong**
+- **Knowledge Base Management**
+- **IM Integration**
+- **Proxy Settings**
+- **User Agreement**
+
+### Model Configuration
+
+The **Model Configuration** page is used to view the overall current model setup.
+
+![19|settings model](fig/p19-settings-model.png)
+
+On the current page:
+
+1. The **Online model** section shows the current account **UOS AI Trial Account**.
+2. **Delete** and **Add** are shown in the upper-right corner.
+3. The **Local model** section shows **Embedding Plugins** and **DeepSeek-R1-1.5B**.
+4. The **Private deployment model** section currently shows **None**.
+
+### Online Model
+
+Click **Online model** on the left side to move to the online model section, where the current account can be viewed and managed through **Add** or **Delete**.
+
+![image-20260508175205712](fig/image-20260508175205712.png)
+
+On the current page:
+
+1. **Add** is used to add a new online model account.
+2. **Delete** is used to enter the account management state.
+3. Clicking an existing online model item opens the corresponding account or model details.
+
+If **Add** is clicked, the online model adding flow opens. In the current verified flow, the user needs to:
+
+1. Enter an account name.
+2. Select a service provider.
+3. Enter the **API Key**.
+4. Select the models to enable.
+5. Click **Confirm** to save the configuration.
+
+### Local Model
+
+Click **Local model** on the left side to move to the local model section and check the installation status of local models.
+
+![20|settings local](fig/p20-settings-local.png)
+
+On the current page:
+
+1. **Embedding Plugins** is already shown as installed.
+2. **DeepSeek-R1-1.5B** shows an **Install** button on the right side.
+3. When a local model is in a download or install process, the button can switch to **Cancel**.
+4. Installed items show **Uninstall** on the right side.
+
+In the current version, **Embedding Plugins** is a prerequisite component for the knowledge base and some local capabilities.
+
+### Private Deployment Model
+
+Click **Private deployment model** on the left side to move to the private deployment section.
+
+![21|settings private](fig/p21-settings-private.png)
+
+If **Add** is clicked, the private deployment model adding flow opens.
+
+![image-20260508175302132](fig/image-20260508175302132.png)
+
+In the current verified flow, the user needs to:
+
+1. Enter an account name.
+2. Select **Private deployment** as the service provider.
+3. Enter the **API Key**.
+4. Enter the request address.
+5. Add the model ID and model name in the custom section.
+6. Click **Test** to verify model availability.
+7. Click **Confirm** to save the model.
+
+### MCP Server
+
+The **MCP Server** page currently contains three main sections:
+
+1. **Mcp Environment**
+2. **UOS AI FollowAlong** preview
+3. **Skill Management**
+
+![22|settings mcp](fig/p22-settings-mcp.png)
+
+On the current page:
+
+1. The **Mcp Environment** section shows the current state of `UOS AI Agent`.
+2. The **UOS AI FollowAlong** section displays a toolbar preview.
+3. The **Skill Management** section shows the current preset skill list.
+4. The right side includes **Add Skill**.
+
+### UOS AI FollowAlong
+
+The **UOS AI FollowAlong** page is used to manage the FollowAlong toolbar behavior.
+
+![23|settings follow](fig/p23-settings-follow.png)
+
+On this page:
+
+1. The main switch controls whether the FollowAlong toolbar appears automatically when text is selected.
+2. The skill list below is used to manage the display order of toolbar skills.
+3. The current visible skills include entries such as **Search**, **Explain**, **Summary**, and **Translate**.
+4. The right side provides **Add Skill**.
+
+### Knowledge Base Management
+
+The **Knowledge Base Management** page is used to manage files for **AI Knowledge Base**.
+
+![24|settings knowledge base](fig/p24-settings-kb.png)
+
+On this page:
+
+1. **Add** in the upper-right corner is used to import knowledge base files.
+2. **Delete** in the upper-right corner is used to remove imported entries.
+3. The page displays the current capacity, for example `5.2KB/1024M`.
+4. Imported files are listed with their names and sizes.
+
+### IM Integration
+
+The **IM Integration** page is used to manage third-party message forwarding.
+
+![25|settings im](fig/p25-settings-im.png)
+
+![image-20260508175349382](fig/image-20260508175349382.png)
+
+On the current page:
+
+1. The top section includes the **Enable Message Forwarding Service** switch.
+2. The currently visible IM entries include **Lark**, **DingTalk**, and **QQ**.
+
+After the corresponding IM switch is enabled, the IM configuration dialog can be opened for that platform.
+
+### Proxy Settings
+
+The **Proxy Settings** page is used to configure the proxy environment required for model access.
+
+![26|settings proxy](fig/p26-settings-proxy.png)
+
+In the current version, proxy setup bridges to system settings through **Go to settings**.
+
+### User Agreement
+
+The **User Agreement** page is used to view the current UOS AI agreement status.
+
+![27|settings agreement](fig/p27-settings-agreement.png)
+
+## Plugin
+
+### UOS AI FollowAlong
+
+**Wake-up Method**
+
+After text is selected in the system interface, if FollowAlong is enabled, the system automatically shows the FollowAlong toolbar. If it is disabled, the toolbar no longer appears automatically after text selection, and it can be enabled again from the settings page.

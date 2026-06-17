@@ -26,9 +26,13 @@ AbstractModel* MoonshotProvider::createModel(const ModelAccountPtr &acc)
         return nullptr;
     }
 
+    QVariantHash parameters;
+    parameters.insert(STR_KEY_ATTACH_REASONING, true);
+
     OaiChatModel *model = new OaiChatModel();
     model->setAccount(acc);
     model->setApiHost(host());
+    model->setParameters(parameters);
 
     return model;
 }

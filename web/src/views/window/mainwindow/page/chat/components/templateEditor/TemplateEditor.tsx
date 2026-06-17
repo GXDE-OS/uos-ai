@@ -6,6 +6,7 @@ import { EditorView, type NodeView } from "prosemirror-view";
 import { history, redo, undo } from "prosemirror-history";
 import { keymap } from "prosemirror-keymap";
 import { baseKeymap } from "prosemirror-commands";
+import { useBackendStore } from "@/stores";
 import { parseTemplate } from "./templateParser";
 
 const schema = new Schema({
@@ -440,6 +441,7 @@ function createVariableNodeView(
     isDisabledRef: { value: boolean },
     onTabCycle: (from: HTMLElement, backward: boolean) => void,
     onEnter: () => void,
+    variablePlaceholder: string,
 ): NodeView {
     let currentNode = node;
 
@@ -458,11 +460,9 @@ function createVariableNodeView(
     input.type = "text";
     input.className = "te-pm-variable-input";
 
-    const PLACEHOLDER = "变量";
-
     const syncSizer = () => {
         // sizer 文字与 input 保持一致，决定容器宽度
-        sizer.textContent = input.value || PLACEHOLDER;
+        sizer.textContent = input.value || variablePlaceholder;
     };
 
     const render = () => {
@@ -471,7 +471,7 @@ function createVariableNodeView(
             input.value = value;
         }
         input.disabled = isDisabledRef.value;
-        input.placeholder = PLACEHOLDER;
+        input.placeholder = variablePlaceholder;
         syncSizer();
     };
 
@@ -578,6 +578,8 @@ export default defineComponent({
         const isTemplateMode = ref(false);
         const isDisabledRef = ref(props.disabled);
         const lastEmitted = ref(props.modelValue);
+        const backend = useBackendStore();
+        const variablePlaceholder = backend.translate("variable_placeholder");
 
         function syncIsEmpty(doc: PMNode) {
             let hasNonTextNode = false;
@@ -666,11 +668,41 @@ export default defineComponent({
             }
         }
 
+        function insertTextIntoActiveVariableInput(text: string): boolean {
+            const activeElement = document.activeElement;
+            if (!(activeElement instanceof HTMLInputElement)) return false;
+            if (!activeElement.classList.contains("te-pm-variable-input")) return false;
+            if (!containerRef.value?.contains(activeElement)) return false;
+
+            const start = activeElement.selectionStart ?? activeElement.value.length;
+            const end = activeElement.selectionEnd ?? start;
+            activeElement.setRangeText(text, start, end, "end");
+            activeElement.dispatchEvent(new Event("input", { bubbles: true }));
+            return true;
+        }
+
         function insertTextAtCursor(text: string) {
             const view = editorViewRef.value;
             if (!view || !text) return;
+            if (insertTextIntoActiveVariableInput(text)) return;
             const { from, to } = view.state.selection;
-            view.dispatch(view.state.tr.insertText(text, from, to));
+
+            // 处理多行文本：将 \n 转换为 hard_break 节点
+            if (text.includes("\n")) {
+                const parts = text.split("\n");
+                const inlines: PMNode[] = [];
+                parts.forEach((part, i) => {
+                    if (i > 0) inlines.push(schema.nodes.hard_break.create());
+                    if (part.length > 0) inlines.push(schema.text(part));
+                });
+
+                if (inlines.length > 0) {
+                    const slice = new Slice(Fragment.from(inlines), 0, 0);
+                    view.dispatch(view.state.tr.replaceSelection(slice));
+                }
+            } else {
+                view.dispatch(view.state.tr.insertText(text, from, to));
+            }
         }
 
         function mountEditor() {
@@ -716,6 +748,7 @@ export default defineComponent({
                             isDisabledRef,
                             (from, backward) => cycleTabFocus(from, backward),
                             () => emit("enter"),
+                            variablePlaceholder,
                         ),
                 },
                 handleDOMEvents: {
@@ -768,7 +801,10 @@ export default defineComponent({
             const target = event.target as HTMLElement;
             if (target.closest(".ProseMirror")) return;
             event.preventDefault();
-            nextTick(() => focus());
+            // 已聚焦时只阻止焦点丢失，不调用 focus() 避免光标重置到末尾
+            if (!hasFocus.value) {
+                nextTick(() => focus());
+            }
         }
 
         function getTabbableBlocks(): HTMLElement[] {
@@ -883,6 +919,7 @@ export default defineComponent({
                 ref="containerRef"
                 class={[
                     "template-editor",
+                    this.isEmpty && "template-editor--empty",
                     this.hasFocus && "template-editor--focused",
                     this.$props.disabled && "template-editor--disabled",
                     this.isTemplateMode && "template-editor--template",

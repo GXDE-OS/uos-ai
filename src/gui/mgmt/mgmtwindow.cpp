@@ -521,7 +521,7 @@ void MgmtWindow::showGetFreeAccountDlg()
 
     UosFreeAccount freeAccount;
     int status;
-    QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(1, 82, freeAccount, status);
+    QNetworkReply::NetworkError error = UosFreeAccounts::instance().getFreeAccount(1, 83, freeAccount, status);
 
     if (1 == status) {
         qCWarning(logAIGUI) << "Free account activity has ended";
